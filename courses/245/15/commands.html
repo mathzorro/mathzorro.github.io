@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mathematical Models &bull; Mathematica Commands</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="author" content="Christopher Hanusa" />
+        <link rel="shortcut icon" href="favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="../../../css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../../../css/style1.css" />
+        <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>    
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-47380773-6', 'auto');
+                ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header_wrap">
+                <div class="header">
+                    <span class="left">
+                        <a href="../../../index.html">HOME</a> > 
+                        <a href="../../index.html">Courses</a> > 
+                        <a href="index.html">245sp15</a>
+                    </span>
+                <div class="header_right">
+                    <span class="right">
+                        <a href="index.html">Home</a> &bull; 
+                        <a href="syllabus.html">Syllabus</a> &bull; 
+                        <a href="letters.html">Letters</a> &bull; 
+                        <a href="calendar.html">Calendar</a> &bull; 
+                        <a href="notes.html">Notes</a> &bull; 
+                        <a href="mathematica.html">Mathematica</a> &bull; 
+                        <a href="project.html">Project</a>
+                    </span>
+                </div>
+                </div>
+            </div>
+
+            <div class="main">
+                           
+                <div class="course_head">            
+                <div class="course_head_img"><a href="index.html"><img src="../../../images/245c.png" height="100"/></a></div>
+                <div class="course_head_suptitle_245">Mathematical Models, Spring 2015</div>
+                <div class="course_head_title_245">Mathematica</div>
+                </div>
+                
+                <div class="course_main_245">
+                    <div class="notes_section"><span style="color: red; background: #FFB">This page is for a past course.  <a href="../../../courses/archive.html">Find your current course here.</a></span><br>&nbsp;</div>
+            Quick links to: <a href="#concepts">Concepts</a> – <a href="#algebra">Algebra</a> – <a href="#lists">Lists</a> – <a href="#plotting">Plotting</a>
+            <a name=concepts></a>
+            <h2>Important Concepts</h2>
+            <ul>
+                <li><strong>If you need help with a command</strong>, use '?' (Example: <span style="font-family:courier"><strong>? Table</strong></span>) 
+                    <br>OR go directly to the <span style="color:red;font-weight:700">Documentation Center</span>.
+                </li>
+                <li>To go to the next line, push <span style="text-decoration:underline">Return</span>.
+                </li>
+                <li>To evaluate a cell, push <span style="text-decoration:underline">Shift</span>-<span style="text-decoration:underline">Return</span> (you can also use the <span style="text-decoration:underline">Enter</span> key on the number pad).
+                </li>
+                <li>To evaluate ALL cells in the notebook, go to the <span style="text-decoration:underline">Evaluation</span> menu and click on <span style="text-decoration:underline">Evaluate Notebook</span>.</li>
+                <li><strong>To stop an evaluation that is taking too long</strong>:<br>
+                <ul>
+                    <li>Type <span style="text-decoration:underline">Ctrl</span>-<span style="text-decoration:underline">.</span> (Period) on a PC or
+                    <span style="text-decoration:underline">Apple</span>-<span style="text-decoration:underline">.</span> on a Mac.
+                    </li>
+                </ul>
+                </li>
+                <ul>
+                    <li>If that doesn't work, you can go to the <span style="text-decoration:underline">Evaluation</span> menu; at the bottom, click <span style="text-decoration:underline">Quit Kernel</span> then
+                    <span style="text-decoration:underline">Local</span>.  [<em>Careful:</em> This will remove all definitions that you have entered in the session.]
+                    </li>
+                    <li>Or you can always Save, Quit, and Restart.</li>
+                </ul>
+                <li>Cells can be input cells (useful for doing Math) or text cells (useful for discussing what Math you're doing).
+                </li>
+                <li>If you do not wish to see the output of an expression, use a semicolon <span style="font-family:courier"><strong>;</strong></span> at its end.
+                </li></ul>
+                <span style="color:red;font-weight:700">Many of your initial errors will come about because of one of the following two problems:</span>
+                <ul><li>Mathematica is Case-SenSitive (<span style="font-family:courier"><strong>AA</strong></span> is not the same as <span style="font-family:courier"><strong>aA</strong></span>), so
+                be careful about what you type.
+                <br><b>In particular,</b> <span style="color:red"><i>all built-in Mathematica functions</i></span> are spelled out and capitalized, such as <span style="font-family:courier"><strong>Table</strong></span>, <span style="font-family:courier"><strong>ListPlot</strong></span>, <span style="font-family:courier"><strong>IntegerPart</strong></span>, etc.
+                </li>
+                <li>In Mathematica, it is important to distinguish between parentheses <span style="font-family:courier"><strong>()</strong></span>, brackets <span style="font-family:courier"><strong>[]</strong></span>, and braces <span style="font-family:courier"><strong>{}</strong></span>:
+                <ul>
+                    <li> <strong>Parentheses <span style="font-family:courier"><strong>()</strong></span></strong>: Used to group mathematical expressions, such as <span style="font-family:courier"><strong>(3+4)/(5+7)</strong></span>.
+                    </li>
+                    <li> <strong>Brackets <span style="font-family:courier"><strong>[]</strong></span></strong>: Used when calling functions, such as <span style="font-family:courier"><strong>N[Pi]</strong></span>.
+                    </li>
+                    <li> <strong>Braces <span style="font-family:courier"><strong>{}</strong></span></strong>: Used when making lists, such as <span style="font-family:courier"><strong>{i,1,20}</strong></span>.
+                    </li>
+                </ul>
+                If you use the wrong symbols in the wrong places or if you do not have a closing symbol for every opening symbol, Mathematica will give you an error message.
+                </li>
+                
+                <li>In Mathematica, there are four types of equals: <span style="font-family:courier"><strong>=</strong></span>, <span style="font-family:courier"><strong>:=</strong></span>, <span style="font-family:courier"><strong>==</strong></span>, and
+                <span style="font-family:courier"><strong>===</strong></span>.
+                <ul>
+                    <li>To define a variable to store it in memory, use <span style="font-family:courier"><strong>=</strong></span>.  For example, to define z to be 3, write
+                    <span style="font-family:courier"><strong>z=3</strong></span>.
+                    </li>
+                    <li>You use <span style="font-family:courier"><strong>==</strong></span> to check for equality.  For example, <span style="font-family:courier"><strong>1-1==0</strong></span> will
+                    evaluate to True and  <span style="font-family:courier"><strong>1==0</strong></span> will evaluate to False.
+                    </li>
+                    <li>You use <span style="font-family:courier"><strong>:=</strong></span> to define your own command. (This is advanced.)
+                    </li>
+                    <li>You will likely not use <span style="font-family:courier"><strong>===</strong></span> in this class.
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            <a name=algebra></a>
+            <h2>Algebra and Calculus</h2>
+            Mathematica will do everything your calculator can and more.
+            <ul>
+                <li>Use <span style="font-family:courier"><strong>^</strong></span> to put something to a power.
+                </li>
+                <li>pi is <span style="font-family:courier"><strong>Pi</strong></span>, e is <span style="font-family:courier"><strong>E</strong></span> and sqrt(-1) is <span style="font-family:courier"><strong>I</strong></span>.
+                </li>
+                <li>If you want to see the numerical approximation to a fraction or irrational number, use the function <span style="font-family:courier"><strong>N</strong></span>.  For example, to find the decimal represenation of pi, write <span style="font-family:courier"><strong>N[Pi]</strong></span>.
+                </li>
+                <li>Use <span style="font-family:courier"><strong>E^x</strong></span> or <span style="font-family:courier"><strong>Exp[x]</strong></span> to represent the function e<sup>x</sup>.
+                </li>
+                <li>To take the derivative of a function, use <span style="font-family:courier"><strong>D</strong></span> and specify the derivative with respect to which
+                variable.  For instance  <span style="font-family:courier"><strong>D[x^2 + 3x, x]</strong></span>.
+                </li>
+                <li>To take the integral of a function, use <span style="font-family:courier"><strong>Integrate</strong></span> and specify the integral with respect to
+                which variable.  For instance  <span style="font-family:courier"><strong>Integrate[x^2 + 3x, x]</strong></span>.
+                </li>
+                <li>To solve for the roots of <em>ax<sup>2</sup>+bx+c=0</em> symbolically, use <span style="font-family:courier"><strong>Solve[a x^2 + b x + c == 0, x]</strong></span>.
+                <br>
+                Notice the double equals sign. (Mathematica is searching for when the expression is True.)
+                </li>
+                <li><span style="font-family:courier"><strong>Coefficient[(1 + x)^10, x^3]</strong></span> gives the coefficient of <em>x<sup>3</sup></em> in the expansion
+                of <em>(1 + x)<sup>10</sup></em>.
+                </li>
+            </ul>
+            <a name=lists></a>
+            <h2>Lists</h2>
+            Mastering lists in Mathematica is key—they are the method by which Mathematica stores and references data.  In addition, it
+            is often the case that functions require as part of their input a list.
+            <ul>
+                <li>A list looks like <span style="font-family:courier"><strong>{1,2,3}</strong></span>.
+                </li>
+                <li>Entries in a list may be anything, even lists. For example, one might define
+                <span style="font-family:courier"><strong>A={{1,2},{2,3},{4,10}}</strong></span>.
+                </li>
+                <li>The most important list command: <span style="font-family:courier"><strong>Table</strong></span>.  Use <span style="font-family:courier"><strong>Table</strong></span> to create
+                lists based on rules.  The input is two things, first, a function of a variable, and second, a list containing (1) the variable
+                that is changing and (2) the range of values for the variable.  Here are some examples.
+                <ul>
+                    <li><span style="font-family:courier"><strong>Table[n^2,{n,10}]</strong></span> gives a list of the squares of integers from 1 (default) to 10.
+                    <br>
+                    (Output: <span style="font-family:courier"><strong>{1,4,9,16,25,36,49,64,81,100}</strong></span>)
+                    </li>
+                    <li><span style="font-family:courier"><strong>Table[n^2,{n,0,10}]</strong></span> gives a list of the squares of integers from 0 to 10.
+                    <br>
+                    (Output: <span style="font-family:courier"><strong>{0,1,4,9,16,25,36,49,64,81,100}</strong></span>)
+                    </li>
+                    <li><span style="font-family:courier"><strong>Table[n^2,{n,0,10,2}]</strong></span> gives a list of the squares of numbers from 0 to 10, incrementing by 2
+                    each time.
+                    <br>
+                    (Output: <span style="font-family:courier"><strong>{0,4,16,36,64,100}</strong></span>)
+                    </li>
+                    <li><span style="font-family:courier"><strong>Table[n^2,{n,{3,20,100}}]</strong></span> gives a list of the squares of numbers 3, 20, and 100.
+                    <br>
+                    (Output: <span style="font-family:courier"><strong>{9, 400, 10000}</strong></span>)</li>
+                </ul>
+                </li>
+                <li>In order to reference elements in a list, use DOUBLE square brackets.
+                <br>
+                Example: To determine the second entry of the list A,
+                evaluate  <span style="font-family:courier"><strong>A[[2]]</strong></span>.
+                </li>
+                <li>To count the number of elements in a list, use <span style="font-family:courier"><strong>Length[]</strong></span>.
+                </li>
+            </ul>
+          <a name=plotting></a>
+            <h2>Plotting</h2>
+            <ul>
+                <li>To plot a function f(x) for x between -10 and 10: <span style="font-family:courier"><strong>p1=Plot[x^2+3x,{x,-10,10}]</strong></span>
+                </li>
+                <li>To plot a list of points: <span style="font-family:courier"><strong>p2=ListPlot[{{1,2},{2,3},{3,10}}]</strong></span>
+                </li>
+                <li>To plot multiple plots at the same time, use <span style="font-family:courier"><strong>Show[p1,p2]]</strong></span>.
+                </li>
+                <li>There are MANY MANY options that you can use to modify these plots to your liking.
+                <br>
+                Use <span style="font-family:courier"><strong>? Plot</strong></span> and <span style="font-family:courier"><strong>? PlotStyle</strong></span> to learn more.
+                </li>
+            </ul>
+            </span>
+               
+                        
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </div> <!-- End course_main-->
+            </div>  <!-- End middle -->  
+
+            <div class="footer_wrap">
+                 <div class="footer">
+                Christopher Hanusa   
+                 <span class="right">  
+                     <a href="../../../index.html"><img width="32" height="32" style="background: #fff; " src="../../../images/h.png" alt="Home page" /></a> 
+                     <a href="http://mathzorro.blogspot.com/"><img width="32" height="32" src="../../../images/b.png" style="vertical-align: center;" alt="Home page" /></a> 
+                     <a href="https://plus.google.com/+ChristopherHanusa"><img width="32" height="32" src="../../../images/g.png" style="vertical-align: center;" alt="Home page" /></a> 
+                     <a href="http://twitter.com/mathzorro"><img width="32" height="32" src="../../../images/t.png" alt="Home page" /></a> 
+                     <a href="https://www.facebook.com/pages/Christopher-Hanusa/553568864724342"><img width="32" height="32" src="../../../images/f.png" alt="Home page" /></a></span>
+                 </div>
+                 
+            </div>
+        </div> <!-- End container -->
+    </body>
+</html>

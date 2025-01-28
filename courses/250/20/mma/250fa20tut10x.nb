@@ -1,0 +1,329 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     11667,        321]
+NotebookOptionsPosition[     10080,        286]
+NotebookOutlinePosition[     10502,        303]
+CellTagsIndexPosition[     10459,        300]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Introduction to 3D graphics", "Title",
+ CellChangeTimes->{{3.461405268132181*^9, 3.461405274978758*^9}, {
+  3.461405374110767*^9, 3.461405382736993*^9}, {3.461405964606715*^9, 
+  3.461405964996537*^9}, {3.461412674365797*^9, 3.461412678153265*^9}, {
+  3.47448983369319*^9, 3.474489837928254*^9}, {3.630696562351103*^9, 
+  3.630696568117642*^9}, {3.631988928117742*^9, 3.6319889301724463`*^9}, {
+  3.632152715690145*^9, 3.632152719687695*^9}, {3.6325873465991592`*^9, 
+  3.632587350748754*^9}, {3.633195273613469*^9, 3.633195283053203*^9}, {
+  3.634662798361207*^9, 3.634662802015071*^9}, {3.634914020212693*^9, 
+  3.634914020306204*^9}},ExpressionUUID->"19e55f01-07f8-446d-97e4-\
+b11417a786e0"],
+
+Cell["Challenge Questions", "Subtitle",
+ CellChangeTimes->{{3.8104045006053095`*^9, 3.810404504400776*^9}, {
+  3.8104881197313323`*^9, 
+  3.8104881209810643`*^9}},ExpressionUUID->"b39182fa-32e9-474e-ab5c-\
+08d7e3a31faa"],
+
+Cell["\<\
+Math 250 - Mathematical Computing
+Christopher Hanusa\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.4614053946645927`*^9, 3.4614054230893087`*^9}, {
+  3.461405971637244*^9, 3.4614060079862947`*^9}, {3.474489844264483*^9, 
+  3.474489895841402*^9}, {3.505485689221858*^9, 3.505485696180904*^9}, {
+  3.53815066431697*^9, 3.538150664587603*^9}, {3.630691352563725*^9, 
+  3.6306913589949083`*^9}, {3.632152722336176*^9, 3.6321527477452803`*^9}, {
+  3.63215587546747*^9, 3.6321558797854424`*^9}, {3.632587355469249*^9, 
+  3.632587384845799*^9}, {3.633195265968095*^9, 3.633195266341083*^9}, {
+  3.8104044801603813`*^9, 
+  3.81040448972079*^9}},ExpressionUUID->"545d8173-af64-42b4-836c-\
+e57d7d28c713"],
+
+Cell[CellGroupData[{
+
+Cell["10.7 Build your own polyhedra", "Section",
+ CellChangeTimes->{{3.810404328720434*^9, 3.8104043349339623`*^9}, {
+  3.8104531460272837`*^9, 
+  3.8104531476082935`*^9}},ExpressionUUID->"bcdb3fbb-cb5f-4596-a6ec-\
+c7359fe57645"],
+
+Cell[TextData[{
+ "If you want to create your own polyhedron, use ",
+ StyleBox["GraphicsComplex", "Input",
+  FontSize->16],
+ " by specifying the list of coordinates of all the vertices and then \
+specifying which vertices connect to be a face of the object.\n(Again, from \
+the Documentation Center:)"
+}], "Text",
+ CellChangeTimes->{{3.6349269349943857`*^9, 3.63492695152214*^9}, {
+  3.6350045930671*^9, 3.635004632341045*^9}, {3.635004682870837*^9, 
+  3.6350046909749517`*^9}},ExpressionUUID->"49f3284d-f5fa-4620-8218-\
+12dd486b5462"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"vertices", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "2", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "2", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "1", ",", "2"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"faces", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "5"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "3", ",", "5"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "4", ",", "5"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "1", ",", "5"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Opacity", "[", ".8", "]"}], ",", "Yellow", ",", 
+    RowBox[{"GraphicsComplex", "[", 
+     RowBox[{"vertices", ",", 
+      RowBox[{"Polygon", "[", "faces", "]"}]}], "]"}]}], "}"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.6350046608962297`*^9, 3.635004661718686*^9}, {
+  3.635004695521294*^9, 3.6350047128203077`*^9}},
+ CellID->23974798,ExpressionUUID->"2b573211-5b05-4837-9358-6b14e2101c9e"],
+
+Cell[TextData[{
+ "Navigate to the Documentation Center entry for ",
+ StyleBox["GraphicsComplex", "Input",
+  FontSize->16],
+ ", and look at the \[OpenCurlyDoubleQuote]Properties & Relations\
+\[CloseCurlyDoubleQuote] near the bottom."
+}], "Text",
+ CellChangeTimes->{{3.6346663039441*^9, 3.634666337401997*^9}, {
+  3.634829494390427*^9, 3.63482949492572*^9}, {3.634833108484353*^9, 
+  3.634833108898952*^9}, {3.635003318787448*^9, 3.635003321674316*^9}, {
+  3.635004833989957*^9, 3.635004855693563*^9}},
+ Background->RGBColor[
+  0.94, 0.91, 0.88],ExpressionUUID->"e6323525-8c94-4ae9-b847-423b0c70445d"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+10-X3. Create a square antiprism using GraphicsComplex.  To get you started, \
+the coordinates of the vertices are given as well as the first three faces:\
+\>", "Subsection",
+ CellChangeTimes->{{3.635004927040391*^9, 3.6350049968514023`*^9}, {
+  3.635005141210051*^9, 3.63500515622561*^9}, {3.729337325749302*^9, 
+  3.7293373260383883`*^9}, {3.729337400623694*^9, 3.729337400815324*^9}, {
+  3.729338637338537*^9, 3.729338637482347*^9}, {3.7475672337108994`*^9, 
+  3.747567233790904*^9}, {3.810404611280425*^9, 
+  3.8104046140304017`*^9}},ExpressionUUID->"d8be5e44-c297-461c-94e4-\
+7049c4ee7154"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"s", "=", 
+   RowBox[{"1", "/", 
+    RowBox[{"Sqrt", "[", "2", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"APVertices", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "1"}], ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"-", "1"}], ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", "s", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "s"}], ",", "s", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "s"}], ",", 
+       RowBox[{"-", "s"}], ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", 
+       RowBox[{"-", "s"}], ",", "1"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"APFaces", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "6", ",", "7", ",", "8"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "5"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Opacity", "[", ".8", "]"}], ",", "Yellow", ",", 
+    RowBox[{"GraphicsComplex", "[", 
+     RowBox[{"APVertices", ",", 
+      RowBox[{"Polygon", "[", "APFaces", "]"}]}], "]"}]}], "}"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.635005005703352*^9, 3.63500516233127*^9}, 
+   3.635005249638661*^9, 3.6350052990217857`*^9, 3.635005359900506*^9},
+ CellLabel->
+  "In[233]:=",ExpressionUUID->"cb95ee88-767f-4308-8642-8c06a4e91bf8"],
+
+Cell[CellGroupData[{
+
+Cell["Hint: (expand to see)", "Subsubsection",
+ CellChangeTimes->{{3.729337446328553*^9, 3.729337460013761*^9}, {
+  3.7293376751511717`*^9, 
+  3.729337686175473*^9}},ExpressionUUID->"b7ede6ab-6d83-4182-9799-\
+1d360c8993b4"],
+
+Cell["You may find it helpful to label the vertices:", "Text",
+ CellChangeTimes->{{3.729337446328553*^9, 
+  3.729337463713306*^9}},ExpressionUUID->"9895d0da-1fbf-41f9-90c1-\
+85814bf36b04"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"s", "=", 
+   RowBox[{"1", "/", 
+    RowBox[{"Sqrt", "[", "2", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"APVertices", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "1"}], ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"-", "1"}], ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", "s", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "s"}], ",", "s", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "s"}], ",", 
+       RowBox[{"-", "s"}], ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", 
+       RowBox[{"-", "s"}], ",", "1"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"APFaces", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "6", ",", "7", ",", "8"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "5"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Opacity", "[", ".8", "]"}], ",", "Yellow", ",", 
+    RowBox[{"GraphicsComplex", "[", 
+     RowBox[{"APVertices", ",", 
+      RowBox[{"Polygon", "[", "APFaces", "]"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"Black", ",", 
+      RowBox[{"MapThread", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Style", "[", 
+          RowBox[{
+           RowBox[{"Text", "[", 
+            RowBox[{"#1", ",", "#2"}], "]"}], ",", 
+           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], "&"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Range", "[", "8", "]"}], ",", "APVertices"}], "}"}]}], 
+       "]"}]}], "}"}]}], "}"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7293374743550386`*^9, 3.7293375779092493`*^9}},
+ CellLabel->
+  "In[237]:=",ExpressionUUID->"bfe88066-ff11-4583-96d9-c84f534f7c43"]
+}, Closed]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1034, 996},
+WindowMargins->{{Automatic, 152}, {Automatic, 358}},
+ShowSelection->True,
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"06e8ac28-998a-4633-b539-b697302cc2b4"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 700, 10, 96, "Title",ExpressionUUID->"19e55f01-07f8-446d-97e4-b11417a786e0"],
+Cell[1270, 34, 220, 4, 53, "Subtitle",ExpressionUUID->"b39182fa-32e9-474e-ab5c-08d7e3a31faa"],
+Cell[1493, 40, 701, 13, 51, "Subsubtitle",ExpressionUUID->"545d8173-af64-42b4-836c-e57d7d28c713"],
+Cell[CellGroupData[{
+Cell[2219, 57, 229, 4, 67, "Section",ExpressionUUID->"bcdb3fbb-cb5f-4596-a6ec-c7359fe57645"],
+Cell[2451, 63, 534, 11, 78, "Text",ExpressionUUID->"49f3284d-f5fa-4620-8218-12dd486b5462"],
+Cell[2988, 76, 1347, 39, 67, "Input",ExpressionUUID->"2b573211-5b05-4837-9358-6b14e2101c9e",
+ CellID->23974798],
+Cell[4338, 117, 599, 12, 50, "Text",ExpressionUUID->"e6323525-8c94-4ae9-b847-423b0c70445d"],
+Cell[CellGroupData[{
+Cell[4962, 133, 605, 10, 79, "Subsection",ExpressionUUID->"d8be5e44-c297-461c-94e4-7049c4ee7154"],
+Cell[5570, 145, 1811, 54, 86, "Input",ExpressionUUID->"cb95ee88-767f-4308-8642-8c06a4e91bf8"],
+Cell[CellGroupData[{
+Cell[7406, 203, 223, 4, 44, "Subsubsection",ExpressionUUID->"b7ede6ab-6d83-4182-9799-1d360c8993b4"],
+Cell[7632, 209, 188, 3, 34, "Text",ExpressionUUID->"9895d0da-1fbf-41f9-90c1-85814bf36b04"],
+Cell[7823, 214, 2205, 66, 105, "Input",ExpressionUUID->"bfe88066-ff11-4583-96d9-c84f534f7c43"]
+}, Closed]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

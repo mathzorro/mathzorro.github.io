@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Math with Mathematica &bull; Tutorial 1</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="author" content="Christopher Hanusa" />
+        <link rel="shortcut icon" href="favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="../../../css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../../../css/style1.css" />
+        <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>    
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-47380773-6', 'auto');
+                ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header_wrap">
+                <div class="header">
+                    <span class="left">
+                        <a href="../../../index.html">HOME</a> > 
+                        <a href="../../index.html">Courses</a> > 
+                        <a href="index.html">213sp16</a>
+                    </span>
+                <div class="header_right">
+                    <span class="right">
+                        <a href="index.html">Home</a> &bull; 
+                        <a href="syllabus.html">Syllabus</a> &bull; 
+                        <a href="letters.html">Letters</a> &bull; 
+                        <a href="calendar.html">Calendar</a> &bull; 
+                        <a href="notes.html">Content</a> &bull; 
+                        <a href="project.html">Projects</a>
+                    </span>
+                </div>
+                </div>
+            </div>
+
+            <div class="main">
+                           
+                <div class="course_head">            
+                <div class="course_head_img"><a href="index.html"><img src="../../../images/213c.png" height="100"/></a></div>
+                <div class="course_head_suptitle_213">Math with Mathematica, Spring 2016</div>
+                <div class="course_head_title_213">Tutorial 1</div>
+                </div>
+                
+                <div class="course_main_213">
+                    <div class="notes_section"><span style="color: red; background: #FFB">This page is for a past course.  <a href="../../../courses/archive.html">Find your current course here.</a></span><br>&nbsp;</div>
+<!--<span style="color:#900;font-size:30px;">Tutorial 1</span>-->
+            <p>            Once you have <a href="https://myqc.qc.cuny.edu/Academics/mathematics/Pages3/access.aspx">access</a> to an installation of <em>Mathematica</em>, you need to know how to
+            use it.
+            </p>
+            <h2>Opening the Program</h2>
+            <ul>
+                <li>On the computers in Kiely 061, at the bottom of the screen is the icon for <em>Mathematica</em> that looks like the icon at the top of this webpage, named <em>Spikey</em>.
+                </li>
+                <li>(If you are on a Windows machine in an on-campus computer lab, go to <span style="text-decoration:underline">Start Menu</span>, then <span style="text-decoration:underline">Programs</span>, then <span style="text-decoration:underline">Wolfram Mathematica</span>.  Click
+                on the icon for <em>Mathematica</em>, named <em>Spikey</em>.)
+                </li>
+                <li>Up will pop an introductory window.  On the left hand side of this button is an option to create a new Mathematica notebook or open an old one.  The
+                notebook is where all your interactions with the program will take place.
+                </li>
+            </ul>
+            <h2>First steps with Mathematica</h2>
+            <ul>
+                <li>Download this file and save it to your computer:  <a href="mma/213sp16tut1.nb">213sp16tut1.nb</a>  (Use Right-Click &gt; Save As...)</li>
+                <li>Open the file.  The file should look like a &quot;Powerpoint&quot; Presentation.  If it does not, go to the Format Menu and click on &quot;Format &gt; Screen Environment &gt; SlideShow&quot;.</li>
+                <li><span style="color:#900;font-weight:700">Follow this tutorial step-by-step</span> and <span style="color:#900;font-weight:700">discuss</span> the most interesting aspects
+                with your neighbors.  </li>
+                <li>At the end of the tutorial, <strong>use</strong> additional class time to explore the power of Mathematica.  For your second homework assignment, you will be compiling two cool things that Mathematica can do.  I suggest looking in the Documentation Center (in the Help Menu) or at the <a href="http://demonstrations.wolfram.com/">Wolfram Demonstrations Project</a>.  Feel free to explore on your own or with your neighbors.<br>
+                <span style="color:#900"><em>If you are having trouble getting started, here is what I do when I am exploring:</em></span>  </li>
+                <ul>
+                    <li>I go to the Documentation Center and type in a command (such as Manipulate)</li>
+                    <li>I do a quick look at the selected examples that are given and see if they are interesting.</li>
+                    <li>If so, I want to see all the examples.  So I select the entire notebook (Ctrl-A or Apple-A) and then open all subgroups (Cell Menu: &quot;Grouping &gt; Open All Subgroups&quot;).</li>
+                    <li>I play around with the examples, moving sliders, changing variables to see what happens.</li>
+                    <li>If I see a command I do not know, I will search for it in the Documentation Center</li>
+                    <li>At the bottom of the file is a &quot;See Also&quot; section, which tells you similar commands.</li>
+                    <li>Also at the bottom are links to more in depth tutorials, which can be useful sometimes.  </li>
+                </ul>
+            </ul>
+            <h2>Helpful Mathematica techniques</h2>
+            <ul>
+                <li><b>Keep a diary!</b>  Write down commands that you have explored, keeping track of syntax, interesting things that you can do, and questions that pop up.</li>
+                <li><b>Think before you code!</b> Before you start typing, think about what you want the computer to do, and how you would be able to write a logical sequence of commands to do this thing.  Write some pseudocode out first.</li>
+                <li><b>Build in stages!</b> When trying to get Mathematica to do a multi-step command, make sure each nested command works before trying to wrap it in another command.  Work from the inside of the onion outward!</li>
+                <li><b>Copy, modify, repeat!</b> When you have code that is working, don't modify it.  Copy it to the next line and then modify it.  This forms a page of scratch work.</li>
+            </ul>
+            <h2>Other Items of Note!</h2>
+                <div style="color:#900;font-weight:700;margin-top:10px">Many of your initial errors will come about because of one of the following two problems:</div>
+                <ul><li>Mathematica is Case-SenSitive (<span style="font-family:courier"><strong>AA</strong></span> is not the same as <span style="font-family:courier"><strong>aA</strong></span>), so
+                be careful about what you type.
+                <br><b>In particular,</b> <span style="color:#900"><i>all built-in Mathematica functions</i></span> are spelled out and capitalized, such as <span style="font-family:courier"><strong>Table</strong></span>, <span style="font-family:courier"><strong>ListPlot</strong></span>, <span style="font-family:courier"><strong>IntegerPart</strong></span>, etc.
+                </li>
+                <li>In Mathematica, it is important to distinguish between parentheses <span style="font-family:courier"><strong>()</strong></span>, brackets <span style="font-family:courier"><strong>[]</strong></span>, and braces <span style="font-family:courier"><strong>{}</strong></span>:
+                <ul>
+                    <li> <strong>Parentheses <span style="font-family:courier"><strong>()</strong></span></strong>: Used to group mathematical expressions, such as <span style="font-family:courier"><strong>(3+4)/(5+7)</strong></span>.
+                    </li>
+                    <li> <strong>Brackets <span style="font-family:courier"><strong>[]</strong></span></strong>: Used when calling functions, such as <span style="font-family:courier"><strong>N[Pi]</strong></span>.
+                    </li>
+                    <li> <strong>Braces <span style="font-family:courier"><strong>{}</strong></span></strong>: Used when making lists, such as <span style="font-family:courier"><strong>{i,1,20}</strong></span>.
+                    </li>
+                </ul>
+                If you use the wrong symbols in the wrong places or if you do not have a closing symbol for every opening symbol, Mathematica will give you an error message.
+                </li>
+                <li>In Mathematica, there are four types of equals: <span style="font-family:courier"><strong>=</strong></span>, <span style="font-family:courier"><strong>==</strong></span>, <span style="font-family:courier"><strong>:=</strong></span>, and
+                <span style="font-family:courier"><strong>===</strong></span>.  We will learn the difference between all of them; at the beginning of this semester, you only need the first two.
+                <ul>
+                    <li>To define a variable to store it in memory, use <span style="font-family:courier"><strong>=</strong></span>.  For example, to define z to be 3, write
+                    <span style="font-family:courier"><strong>z=3</strong></span>.
+                    </li>
+                    <li>You use <span style="font-family:courier"><strong>==</strong></span> to check for equality.  For example, <span style="font-family:courier"><strong>1-1==0</strong></span> will
+                    evaluate to True and  <span style="font-family:courier"><strong>1==0</strong></span> will evaluate to False.
+                    </li>
+                    <li>You use <span style="font-family:courier"><strong>:=</strong></span> to define your own command. (This is advanced.)
+                    </li>
+                    <li>You will likely not use <span style="font-family:courier"><strong>===</strong></span> in this class.
+                    </li>
+                </ul>
+                </li>
+                <li><span style="color:#900;font-weight:700">One of the most important things to do is explore.</span>  If you are having trouble with a certain function, use the
+                <span style="font-family:courier"><strong>?</strong></span> command to ask for help. Enter <span style="font-family:courier"><strong>? Table</strong></span> and the output will be a yellow box
+                with a quick synopsis of the command.  For more detailed information, click the blue <em>&gt;&gt;</em> at the bottom
+                right of this yellow box.  This will open the <em>Documentation Center</em>
+                which gives examples of using the
+                command in action, available options for this command,
+                and anything else you might want to know about the command.
+                </li>
+            </ul>
+            <h2>Algebra and Calculus</h2>
+            Mathematica will do everything your calculator can and more.
+            <ul>
+                <li>Use <span style="font-family:courier"><strong>^</strong></span> to put something to a power.
+                </li>
+                <li>pi is <span style="font-family:courier"><strong>Pi</strong></span>, e is <span style="font-family:courier"><strong>E</strong></span> and sqrt(-1) is <span style="font-family:courier"><strong>I</strong></span>.
+                </li>
+                <li>If you want to see the numerical approximation to a fraction or irrational number, use the function <span style="font-family:courier"><strong>N</strong></span>.  For example, to find the decimal represenation of pi, write <span style="font-family:courier"><strong>N[Pi]</strong></span>.
+                </li>
+                <li>Use <span style="font-family:courier"><strong>E^x</strong></span> or <span style="font-family:courier"><strong>Exp[x]</strong></span> to represent the function e<sup>x</sup>.
+                </li>
+                <li>To take the derivative of a function, use <span style="font-family:courier"><strong>D</strong></span> and specify the derivative with respect to which
+                variable.  For instance  <span style="font-family:courier"><strong>D[x^2 + 3x, x]</strong></span>.
+                </li>
+                <li>To take the integral of a function, use <span style="font-family:courier"><strong>Integrate</strong></span> and specify the integral with respect to
+                which variable.  For instance  <span style="font-family:courier"><strong>Integrate[x^2 + 3x, x]</strong></span>.
+                </li>
+                <li>To solve for the roots of <em>ax<sup>2</sup>+bx+c=0</em> symbolically, use <span style="font-family:courier"><strong>Solve[a x^2 + b x + c == 0, x]</strong></span>.
+                <br>
+                Notice the double equals sign. (Mathematica is searching for when the expression is True.)
+                </li>
+                <li><span style="font-family:courier"><strong>Coefficient[(1 + x)^10, x^3]</strong></span> gives the coefficient of <em>x<sup>3</sup></em> in the expansion
+                of <em>(1 + x)<sup>10</sup></em>.
+                </li>
+            </ul>
+
+                        
+                        
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </div> <!-- End course_main-->
+            </div>  <!-- End middle -->  
+
+            <div class="footer_wrap">
+                 <div class="footer">
+                Christopher Hanusa   
+                 <span class="right">  
+                     <a href="../../../index.html"><img width="32" height="32" style="background: #fff; " src="../../../images/h.png" alt="Home page" /></a> 
+                     <a href="http://mathzorro.blogspot.com/"><img width="32" height="32" src="../../../images/b.png" style="vertical-align: center;" alt="Home page" /></a> 
+                     <a href="https://plus.google.com/+ChristopherHanusa"><img width="32" height="32" src="../../../images/g.png" style="vertical-align: center;" alt="Home page" /></a> 
+                     <a href="http://twitter.com/mathzorro"><img width="32" height="32" src="../../../images/t.png" alt="Home page" /></a> 
+                     <a href="https://www.facebook.com/pages/Christopher-Hanusa/553568864724342"><img width="32" height="32" src="../../../images/f.png" alt="Home page" /></a></span>
+                 </div>
+                 
+            </div>
+        </div> <!-- End container -->
+    </body>
+</html>

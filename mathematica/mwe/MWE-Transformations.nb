@@ -1,0 +1,525 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     19757,        517]
+NotebookOptionsPosition[     17518,        452]
+NotebookOutlinePosition[     17873,        468]
+CellTagsIndexPosition[     17830,        465]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["MWE: MeshRegion Transformations", "Title",
+ CellChangeTimes->{{3.748173119854766*^9, 3.7481731328405447`*^9}, 
+   3.7481744591493073`*^9},ExpressionUUID->"49470dff-d569-41b4-9188-\
+92a47853b771"],
+
+Cell[CellGroupData[{
+
+Cell["Our object", "Section",
+ CellChangeTimes->{{3.7481742308373203`*^9, 
+  3.74817423400473*^9}},ExpressionUUID->"153e25af-039a-4115-b0bd-\
+2d3215266a7a"],
+
+Cell["Consider the following cube:", "Text",
+ CellChangeTimes->{{3.748173136968601*^9, 
+  3.7481731543290243`*^9}},ExpressionUUID->"d3599bb4-3b51-42fd-8137-\
+ab99c1b04b1c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"cube", "=", 
+   RowBox[{"BoundaryDiscretizeGraphics", "[", 
+    RowBox[{"Cuboid", "[", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", 
+  RowBox[{"cube", ",", 
+   RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "True"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}], "}"}]}], ",", 
+   " ", 
+   RowBox[{"ImageSize", "\[Rule]", "150"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.748173156233482*^9, 3.7481732600448*^9}, {
+  3.7481738965460777`*^9, 3.7481739442349463`*^9}, {3.748174035517625*^9, 
+  3.748174037420127*^9}},ExpressionUUID->"ed959d13-23e2-48c1-bac3-\
+44101b2d4d00"],
+
+Cell[BoxData[
+ Graphics3DBox[
+  GraphicsComplex3DBox[{{1., 1., 0.}, {0., 0., 0.}, {0., 1., 0.}, {1., 0., 
+   1.}, {1., 0., 0.}, {1., 1., 1.}, {0., 1., 1.}, {0., 0., 1.}}, 
+   {Hue[0.6, 0.3, 0.85], EdgeForm[Hue[0.6, 0.3, 0.75]], 
+    TagBox[
+     Polygon3DBox[{{1, 2, 3}, {4, 2, 5}, {6, 5, 1}, {7, 1, 3}, {7, 2, 8}, {6, 
+      8, 4}, {2, 1, 5}, {2, 4, 8}, {5, 6, 4}, {1, 7, 6}, {2, 7, 3}, {8, 6, 
+      7}}],
+     Annotation[#, "Geometry"]& ]}],
+  Axes->True,
+  AxesLabel->{
+    FormBox["\"x\"", TraditionalForm], 
+    FormBox["\"y\"", TraditionalForm], 
+    FormBox["\"z\"", TraditionalForm]},
+  Boxed->True,
+  ImageSize->150,
+  Lighting->{{"Ambient", 
+     GrayLevel[0.45]}, {"Directional", 
+     GrayLevel[0.3], 
+     ImageScaled[{2, 0, 2}]}, {"Directional", 
+     GrayLevel[0.33], 
+     ImageScaled[{2, 2, 2}]}, {"Directional", 
+     GrayLevel[0.3], 
+     ImageScaled[{0, 2, 2}]}},
+  Method->{"ShrinkWrap" -> True},
+  PlotRange->All,
+  ViewPoint->{0.838631387521809, -3.245752982579642, 0.46020101253539425`},
+  ViewVertical->{0.2003335472450966, -0.4403377699141151, 
+   0.8751966169011742}]], "Output",
+ CellChangeTimes->{{3.748173252457529*^9, 3.748173260395184*^9}, {
+   3.748173896981866*^9, 3.7481739448200827`*^9}, 
+   3.74817403794807*^9},ExpressionUUID->"c6268e03-c334-4756-a568-\
+e5ba2a96d571"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Translations", "Section",
+ CellChangeTimes->{{3.748174143498657*^9, 
+  3.748174145810071*^9}},ExpressionUUID->"3806d58a-e2f8-4b62-94eb-\
+1f2b54f9682c"],
+
+Cell[TextData[{
+ "To translate the object use ",
+ StyleBox["TransformedRegion", "Input"],
+ " and ",
+ StyleBox["TranslationTransform", "Input"],
+ ":"
+}], "Text",
+ CellChangeTimes->{{3.748173278445644*^9, 3.7481732850210533`*^9}, {
+  3.7481736475925198`*^9, 
+  3.748173672312731*^9}},ExpressionUUID->"5ae81bd7-358c-4efa-9a3e-\
+0958528c5126"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"translated", "=", 
+   RowBox[{"TransformedRegion", "[", 
+    RowBox[{"cube", ",", 
+     RowBox[{"TranslationTransform", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "1", ",", "0"}], "}"}], "]"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Opacity", "[", ".4", "]"}], ",", "Green", ",", 
+        RowBox[{"MeshPrimitives", "[", 
+         RowBox[{"cube", ",", "2"}], "]"}]}], "}"}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"{", 
+       RowBox[{"Red", ",", 
+        RowBox[{"MeshPrimitives", "[", 
+         RowBox[{"translated", ",", "2"}], "]"}]}], "}"}], "]"}]}], "}"}], 
+   ",", 
+   RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "True"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}], "}"}]}], ",", 
+   " ", 
+   RowBox[{"ImageSize", "\[Rule]", "300"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.748173675683063*^9, 3.748173724018731*^9}, {
+  3.7481737783898277`*^9, 3.7481738824477367`*^9}, {3.748174031589765*^9, 
+  3.748174040636101*^9}, {3.748174346538378*^9, 
+  3.74817434700038*^9}},ExpressionUUID->"91fac975-68c1-4f8b-a778-\
+bde8276c2f3a"],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   {RGBColor[0, 1, 0], Opacity[0.4], 
+    Polygon3DBox[{{1., 1., 0.}, {0., 0., 0.}, {0., 1., 0.}}], 
+    Polygon3DBox[{{1., 0., 1.}, {0., 0., 0.}, {1., 0., 0.}}], 
+    Polygon3DBox[{{1., 1., 1.}, {1., 0., 0.}, {1., 1., 0.}}], 
+    Polygon3DBox[{{0., 1., 1.}, {1., 1., 0.}, {0., 1., 0.}}], 
+    Polygon3DBox[{{0., 1., 1.}, {0., 0., 0.}, {0., 0., 1.}}], 
+    Polygon3DBox[{{1., 1., 1.}, {0., 0., 1.}, {1., 0., 1.}}], 
+    Polygon3DBox[{{0., 0., 0.}, {1., 1., 0.}, {1., 0., 0.}}], 
+    Polygon3DBox[{{0., 0., 0.}, {1., 0., 1.}, {0., 0., 1.}}], 
+    Polygon3DBox[{{1., 0., 0.}, {1., 1., 1.}, {1., 0., 1.}}], 
+    Polygon3DBox[{{1., 1., 0.}, {0., 1., 1.}, {1., 1., 1.}}], 
+    Polygon3DBox[{{0., 0., 0.}, {0., 1., 1.}, {0., 1., 0.}}], 
+    Polygon3DBox[{{0., 0., 1.}, {1., 1., 1.}, {0., 1., 1.}}]}, 
+   {RGBColor[1, 0, 0], 
+    Polygon3DBox[{{2., 2., 0.}, {1., 1., 0.}, {1., 2., 0.}}], 
+    Polygon3DBox[{{2., 1., 1.}, {1., 1., 0.}, {2., 1., 0.}}], 
+    Polygon3DBox[{{2., 2., 1.}, {2., 1., 0.}, {2., 2., 0.}}], 
+    Polygon3DBox[{{1., 2., 1.}, {2., 2., 0.}, {1., 2., 0.}}], 
+    Polygon3DBox[{{1., 2., 1.}, {1., 1., 0.}, {1., 1., 1.}}], 
+    Polygon3DBox[{{2., 2., 1.}, {1., 1., 1.}, {2., 1., 1.}}], 
+    Polygon3DBox[{{1., 1., 0.}, {2., 2., 0.}, {2., 1., 0.}}], 
+    Polygon3DBox[{{1., 1., 0.}, {2., 1., 1.}, {1., 1., 1.}}], 
+    Polygon3DBox[{{2., 1., 0.}, {2., 2., 1.}, {2., 1., 1.}}], 
+    Polygon3DBox[{{2., 2., 0.}, {1., 2., 1.}, {2., 2., 1.}}], 
+    Polygon3DBox[{{1., 1., 0.}, {1., 2., 1.}, {1., 2., 0.}}], 
+    Polygon3DBox[{{1., 1., 1.}, {2., 2., 1.}, {1., 2., 1.}}]}},
+  Axes->True,
+  AxesLabel->{
+    FormBox["\"x\"", TraditionalForm], 
+    FormBox["\"y\"", TraditionalForm], 
+    FormBox["\"z\"", TraditionalForm]},
+  Boxed->True,
+  ImageSize->300,
+  PlotRange->All,
+  ViewPoint->{1.9770049118628898`, -2.3429597707236445`, 1.4324772567969841`},
+  
+  ViewVertical->{0.16693151203190285`, -0.11398768199059847`, 
+   1.9587145566877813`}]], "Output",
+ CellChangeTimes->{
+  3.748173724977334*^9, {3.748173785921557*^9, 3.748173819757226*^9}, {
+   3.748173858736945*^9, 3.748173882900147*^9}, {3.748174032622306*^9, 
+   3.748174041110937*^9}, 
+   3.7481743478956833`*^9},ExpressionUUID->"f42075dc-edf6-4e38-ab33-\
+d0a2f60577b4"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Rotations", "Section",
+ CellChangeTimes->{{3.748174151570681*^9, 
+  3.748174153058215*^9}},ExpressionUUID->"7c672991-143c-4103-a890-\
+80c26d362086"],
+
+Cell[TextData[{
+ "To rotate the object use ",
+ StyleBox["TransformedRegion", "Input"],
+ " and ",
+ StyleBox["RotationTransform", "Input"],
+ ":"
+}], "Text",
+ CellChangeTimes->{{3.748173278445644*^9, 3.7481732850210533`*^9}, {
+  3.7481736475925198`*^9, 3.748173672312731*^9}, {3.748173872191822*^9, 
+  3.7481738741511993`*^9}, {3.74817395807428*^9, 
+  3.7481739605213747`*^9}},ExpressionUUID->"00769722-069e-4bde-81bb-\
+489db3cb0224"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"rotated", "=", 
+   RowBox[{"TransformedRegion", "[", 
+    RowBox[{"cube", ",", 
+     RowBox[{"RotationTransform", "[", 
+      RowBox[{
+       RowBox[{"Pi", "/", "4"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"1", "/", "2"}], ",", 
+         RowBox[{"1", "/", "2"}], ",", "0"}], "}"}]}], "]"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Opacity", "[", ".4", "]"}], ",", "Green", ",", 
+        RowBox[{"MeshPrimitives", "[", 
+         RowBox[{"cube", ",", "2"}], "]"}]}], "}"}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"{", 
+       RowBox[{"Red", ",", 
+        RowBox[{"MeshPrimitives", "[", 
+         RowBox[{"rotated", ",", "2"}], "]"}]}], "}"}], "]"}]}], "}"}], ",", 
+   RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "True"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}], "}"}]}], ",", 
+   " ", 
+   RowBox[{"ImageSize", "\[Rule]", "300"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.748173675683063*^9, 3.748173724018731*^9}, {
+  3.7481737783898277`*^9, 3.7481738581267033`*^9}, {3.748173969060946*^9, 
+  3.748174044908401*^9}, {3.748174342978215*^9, 
+  3.74817434344879*^9}},ExpressionUUID->"cbccdaa8-9ca0-4932-8041-\
+080a69fe1823"],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   {RGBColor[0, 1, 0], Opacity[0.4], 
+    Polygon3DBox[{{1., 1., 0.}, {0., 0., 0.}, {0., 1., 0.}}], 
+    Polygon3DBox[{{1., 0., 1.}, {0., 0., 0.}, {1., 0., 0.}}], 
+    Polygon3DBox[{{1., 1., 1.}, {1., 0., 0.}, {1., 1., 0.}}], 
+    Polygon3DBox[{{0., 1., 1.}, {1., 1., 0.}, {0., 1., 0.}}], 
+    Polygon3DBox[{{0., 1., 1.}, {0., 0., 0.}, {0., 0., 1.}}], 
+    Polygon3DBox[{{1., 1., 1.}, {0., 0., 1.}, {1., 0., 1.}}], 
+    Polygon3DBox[{{0., 0., 0.}, {1., 1., 0.}, {1., 0., 0.}}], 
+    Polygon3DBox[{{0., 0., 0.}, {1., 0., 1.}, {0., 0., 1.}}], 
+    Polygon3DBox[{{1., 0., 0.}, {1., 1., 1.}, {1., 0., 1.}}], 
+    Polygon3DBox[{{1., 1., 0.}, {0., 1., 1.}, {1., 1., 1.}}], 
+    Polygon3DBox[{{0., 0., 0.}, {0., 1., 1.}, {0., 1., 0.}}], 
+    Polygon3DBox[{{0., 0., 1.}, {1., 1., 1.}, {0., 1., 1.}}]}, 
+   {RGBColor[1, 0, 0], 
+    Polygon3DBox[{{0.5, 1.2071067811865475`, 0.}, {0.5, -0.20710678118654757`,
+      0.}, {-0.20710678118654746`, 0.4999999999999999, 0.}}], 
+    Polygon3DBox[{{1.2071067811865475`, 0.4999999999999999, 1.}, {
+     0.5, -0.20710678118654757`, 0.}, {1.2071067811865475`, 
+     0.4999999999999999, 0.}}], 
+    Polygon3DBox[{{0.5, 1.2071067811865475`, 1.}, {1.2071067811865475`, 
+     0.4999999999999999, 0.}, {0.5, 1.2071067811865475`, 0.}}], 
+    Polygon3DBox[{{-0.20710678118654746`, 0.4999999999999999, 1.}, {0.5, 
+     1.2071067811865475`, 0.}, {-0.20710678118654746`, 0.4999999999999999, 
+     0.}}], Polygon3DBox[{{-0.20710678118654746`, 0.4999999999999999, 1.}, {
+     0.5, -0.20710678118654757`, 0.}, {0.5, -0.20710678118654757`, 1.}}], 
+    Polygon3DBox[{{0.5, 1.2071067811865475`, 1.}, {0.5, -0.20710678118654757`,
+      1.}, {1.2071067811865475`, 0.4999999999999999, 1.}}], 
+    Polygon3DBox[{{0.5, -0.20710678118654757`, 0.}, {0.5, 1.2071067811865475`,
+      0.}, {1.2071067811865475`, 0.4999999999999999, 0.}}], 
+    Polygon3DBox[{{0.5, -0.20710678118654757`, 0.}, {1.2071067811865475`, 
+     0.4999999999999999, 1.}, {0.5, -0.20710678118654757`, 1.}}], 
+    Polygon3DBox[{{1.2071067811865475`, 0.4999999999999999, 0.}, {0.5, 
+     1.2071067811865475`, 1.}, {1.2071067811865475`, 0.4999999999999999, 
+     1.}}], Polygon3DBox[{{0.5, 1.2071067811865475`, 
+     0.}, {-0.20710678118654746`, 0.4999999999999999, 1.}, {0.5, 
+     1.2071067811865475`, 1.}}], 
+    Polygon3DBox[{{0.5, -0.20710678118654757`, 0.}, {-0.20710678118654746`, 
+     0.4999999999999999, 1.}, {-0.20710678118654746`, 0.4999999999999999, 
+     0.}}], Polygon3DBox[{{0.5, -0.20710678118654757`, 1.}, {0.5, 
+     1.2071067811865475`, 1.}, {-0.20710678118654746`, 0.4999999999999999, 
+     1.}}]}},
+  Axes->True,
+  AxesLabel->{
+    FormBox["\"x\"", TraditionalForm], 
+    FormBox["\"y\"", TraditionalForm], 
+    FormBox["\"z\"", TraditionalForm]},
+  Boxed->True,
+  ImageSize->300,
+  PlotRange->All,
+  ViewPoint->{1.5743537550384263`, -2.2553291700056306`, 1.9710151163596181`},
+  
+  ViewVertical->{-0.048948874580328566`, 0.0022538077141522894`, 
+   1.4125147277307288`}]], "Output",
+ CellChangeTimes->{
+  3.748173724977334*^9, {3.748173785921557*^9, 3.748173819757226*^9}, 
+   3.748173858736945*^9, {3.7481739943649*^9, 3.748174045442411*^9}, 
+   3.748174344045677*^9},ExpressionUUID->"9c489e1b-1550-4d42-8c81-\
+f365d71668f1"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Resizing", "Section",
+ CellChangeTimes->{{3.7481741349303207`*^9, 
+  3.748174137153701*^9}},ExpressionUUID->"f8bb340a-cf44-403a-a032-\
+92d574bb4c30"],
+
+Cell[TextData[{
+ "To change the size of the object, use ",
+ StyleBox["RegionResize", "Input"]
+}], "Text",
+ CellChangeTimes->{{3.748174067277478*^9, 
+  3.748174086573881*^9}},ExpressionUUID->"6cb15421-9e64-46be-bf08-\
+4f753d5f6908"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"resized", "=", 
+   RowBox[{"RegionResize", "[", 
+    RowBox[{"cube", ",", 
+     RowBox[{"{", 
+      RowBox[{"1.5", ",", "0.5", ",", "0.75"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Opacity", "[", ".4", "]"}], ",", "Green", ",", 
+        RowBox[{"MeshPrimitives", "[", 
+         RowBox[{"cube", ",", "2"}], "]"}]}], "}"}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"{", 
+       RowBox[{"Red", ",", 
+        RowBox[{"MeshPrimitives", "[", 
+         RowBox[{"resized", ",", "2"}], "]"}]}], "}"}], "]"}]}], "}"}], ",", 
+   RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "True"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}], "}"}]}], ",", 
+   " ", 
+   RowBox[{"ImageSize", "\[Rule]", "300"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.748173675683063*^9, 3.748173724018731*^9}, {
+   3.7481737783898277`*^9, 3.7481738581267033`*^9}, {3.748173969060946*^9, 
+   3.748174044908401*^9}, {3.748174088424141*^9, 3.748174111616953*^9}, 
+   3.748174338954131*^9},ExpressionUUID->"a6cbbf54-3350-408b-a01c-\
+e4f43e0605eb"],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   {RGBColor[0, 1, 0], Opacity[0.4], 
+    Polygon3DBox[{{1., 1., 0.}, {0., 0., 0.}, {0., 1., 0.}}], 
+    Polygon3DBox[{{1., 0., 1.}, {0., 0., 0.}, {1., 0., 0.}}], 
+    Polygon3DBox[{{1., 1., 1.}, {1., 0., 0.}, {1., 1., 0.}}], 
+    Polygon3DBox[{{0., 1., 1.}, {1., 1., 0.}, {0., 1., 0.}}], 
+    Polygon3DBox[{{0., 1., 1.}, {0., 0., 0.}, {0., 0., 1.}}], 
+    Polygon3DBox[{{1., 1., 1.}, {0., 0., 1.}, {1., 0., 1.}}], 
+    Polygon3DBox[{{0., 0., 0.}, {1., 1., 0.}, {1., 0., 0.}}], 
+    Polygon3DBox[{{0., 0., 0.}, {1., 0., 1.}, {0., 0., 1.}}], 
+    Polygon3DBox[{{1., 0., 0.}, {1., 1., 1.}, {1., 0., 1.}}], 
+    Polygon3DBox[{{1., 1., 0.}, {0., 1., 1.}, {1., 1., 1.}}], 
+    Polygon3DBox[{{0., 0., 0.}, {0., 1., 1.}, {0., 1., 0.}}], 
+    Polygon3DBox[{{0., 0., 1.}, {1., 1., 1.}, {0., 1., 1.}}]}, 
+   {RGBColor[1, 0, 0], 
+    Polygon3DBox[{{1.25, 0.75, 0.125}, {-0.25, 0.25, 0.125}, {-0.25, 0.75, 
+     0.125}}], 
+    Polygon3DBox[{{1.25, 0.25, 0.875}, {-0.25, 0.25, 0.125}, {1.25, 0.25, 
+     0.125}}], 
+    Polygon3DBox[{{1.25, 0.75, 0.875}, {1.25, 0.25, 0.125}, {1.25, 0.75, 
+     0.125}}], 
+    Polygon3DBox[{{-0.25, 0.75, 0.875}, {1.25, 0.75, 0.125}, {-0.25, 0.75, 
+     0.125}}], 
+    Polygon3DBox[{{-0.25, 0.75, 0.875}, {-0.25, 0.25, 0.125}, {-0.25, 0.25, 
+     0.875}}], 
+    Polygon3DBox[{{1.25, 0.75, 0.875}, {-0.25, 0.25, 0.875}, {1.25, 0.25, 
+     0.875}}], 
+    Polygon3DBox[{{-0.25, 0.25, 0.125}, {1.25, 0.75, 0.125}, {1.25, 0.25, 
+     0.125}}], 
+    Polygon3DBox[{{-0.25, 0.25, 0.125}, {1.25, 0.25, 0.875}, {-0.25, 0.25, 
+     0.875}}], 
+    Polygon3DBox[{{1.25, 0.25, 0.125}, {1.25, 0.75, 0.875}, {1.25, 0.25, 
+     0.875}}], 
+    Polygon3DBox[{{1.25, 0.75, 0.125}, {-0.25, 0.75, 0.875}, {1.25, 0.75, 
+     0.875}}], 
+    Polygon3DBox[{{-0.25, 0.25, 0.125}, {-0.25, 0.75, 0.875}, {-0.25, 0.75, 
+     0.125}}], 
+    Polygon3DBox[{{-0.25, 0.25, 0.875}, {1.25, 0.75, 0.875}, {-0.25, 0.75, 
+     0.875}}]}},
+  Axes->True,
+  AxesLabel->{
+    FormBox["\"x\"", TraditionalForm], 
+    FormBox["\"y\"", TraditionalForm], 
+    FormBox["\"z\"", TraditionalForm]},
+  Boxed->True,
+  ImageSize->300,
+  PlotRange->All,
+  ViewPoint->{1.2842785761508622`, -2.8180801341825004`, 1.3634709003736958`},
+  
+  ViewVertical->{0.07891902260082831, -0.3020375588101786, 
+   1.464499858579502}]], "Output",
+ CellChangeTimes->{3.748174111940208*^9, 
+  3.748174339969695*^9},ExpressionUUID->"f7b74179-54f9-4c10-994b-\
+e6e25b8a44a2"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 507},
+WindowMargins->{{12, Automatic}, {Automatic, 23}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 18, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 201, 3, 92, "Title", "ExpressionUUID" -> \
+"49470dff-d569-41b4-9188-92a47853b771"],
+Cell[CellGroupData[{
+Cell[806, 29, 156, 3, 64, "Section", "ExpressionUUID" -> \
+"153e25af-039a-4115-b0bd-2d3215266a7a"],
+Cell[965, 34, 172, 3, 30, "Text", "ExpressionUUID" -> \
+"d3599bb4-3b51-42fd-8137-ab99c1b04b1c"],
+Cell[CellGroupData[{
+Cell[1162, 41, 788, 18, 75, "Input", "ExpressionUUID" -> \
+"ed959d13-23e2-48c1-bac3-44101b2d4d00"],
+Cell[1953, 61, 1307, 33, 150, "Output", "ExpressionUUID" -> \
+"c6268e03-c334-4756-a568-e5ba2a96d571"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3309, 100, 157, 3, 64, "Section", "ExpressionUUID" -> \
+"3806d58a-e2f8-4b62-94eb-1f2b54f9682c"],
+Cell[3469, 105, 339, 10, 31, "Text", "ExpressionUUID" -> \
+"5ae81bd7-358c-4efa-9a3e-0958528c5126"],
+Cell[CellGroupData[{
+Cell[3833, 119, 1466, 38, 117, "Input", "ExpressionUUID" -> \
+"91fac975-68c1-4f8b-a778-bde8276c2f3a"],
+Cell[5302, 159, 2264, 45, 263, "Output", "ExpressionUUID" -> \
+"f42075dc-edf6-4e38-ab33-d0a2f60577b4"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7615, 210, 154, 3, 64, "Section", "ExpressionUUID" -> \
+"7c672991-143c-4103-a890-80c26d362086"],
+Cell[7772, 215, 431, 11, 31, "Text", "ExpressionUUID" -> \
+"00769722-069e-4bde-81bb-489db3cb0224"],
+Cell[CellGroupData[{
+Cell[8228, 230, 1648, 43, 117, "Input", "ExpressionUUID" -> \
+"cbccdaa8-9ca0-4932-8041-080a69fe1823"],
+Cell[9879, 275, 3252, 59, 283, "Output", "ExpressionUUID" -> \
+"9c489e1b-1550-4d42-8c81-f365d71668f1"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13180, 340, 155, 3, 64, "Section", "ExpressionUUID" -> \
+"f8bb340a-cf44-403a-a032-92d574bb4c30"],
+Cell[13338, 345, 231, 6, 31, "Text", "ExpressionUUID" -> \
+"6cb15421-9e64-46be-bf08-4f753d5f6908"],
+Cell[CellGroupData[{
+Cell[13594, 355, 1432, 36, 117, "Input", "ExpressionUUID" -> \
+"a6cbbf54-3350-408b-a01c-e4f43e0605eb"],
+Cell[15029, 393, 2449, 54, 273, "Output", "ExpressionUUID" -> \
+"f7b74179-54f9-4c10-994b-e6e25b8a44a2"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

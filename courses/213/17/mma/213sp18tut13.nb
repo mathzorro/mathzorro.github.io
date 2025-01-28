@@ -1,0 +1,493 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     18444,        485]
+NotebookOptionsPosition[     15541,        427]
+NotebookOutlinePosition[     15902,        443]
+CellTagsIndexPosition[     15859,        440]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Tutorial 13: Exploring Interactivity", "Title",
+ CellChangeTimes->{{3.6384616704776087`*^9, 3.638461711350432*^9}, 
+   3.731166601934917*^9},ExpressionUUID->"b3a821ae-0b22-4b49-ac00-\
+e99a34dd05b9"],
+
+Cell[TextData[{
+ "In this tutorial, we focus on different ways in which you can interact with \
+",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ ".  Different people will explore different techniques based on their \
+project."
+}], "Text",
+ CellChangeTimes->{{3.638461681686727*^9, 3.638461699502666*^9}, {
+  3.638461776532834*^9, 3.6384617876124687`*^9}, {3.638470637416901*^9, 
+  3.638470666926819*^9}},ExpressionUUID->"a8539a72-fd57-4318-93f7-\
+20055e782b8f"],
+
+Cell[TextData[{
+ "The most versatile and portable method to interact with ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " is to use Manipulate.  If you want to create a Demonstration for the \
+Wolfram Demonstrations Project, you should base your ideas around a \
+Manipulate command that doesn\[CloseCurlyQuote]t involve too many fancy types \
+of input.  This might be a good time to go back into the Documentation Center \
+and read some of the advanced techniques for Manipulate: ",
+ StyleBox[ButtonBox["ref/Manipulate",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/Manipulate"],
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.638470679446968*^9, 3.638470714351685*^9}, {
+  3.6384707704967318`*^9, 3.638470774695503*^9}, {3.6384710510372562`*^9, 
+  3.63847108367246*^9}, {3.638471121199841*^9, 
+  3.6384711714198303`*^9}},ExpressionUUID->"1b88a919-54a3-47af-975a-\
+86f0be7cc718"],
+
+Cell[CellGroupData[{
+
+Cell["Dynamic", "Section",
+ CellChangeTimes->{{3.6384633780057077`*^9, 
+  3.638463379172862*^9}},ExpressionUUID->"05eea51f-eba9-43ec-b27b-\
+7979432e3e3f"],
+
+Cell[TextData[{
+ "You explored the Dynamic Command in Tutorial 12.   To see how to use \
+Dynamic in Sync with Manipulate, it will be helpful to work through this \
+tutorial: ",
+ StyleBox[ButtonBox["tutorial/AdvancedManipulateFunctionality",
+  BaseStyle->"Link",
+  ButtonData->"paclet:tutorial/AdvancedManipulateFunctionality"],
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.63846378630309*^9, 3.6384638103920603`*^9}, {
+   3.638470781991621*^9, 3.638470870512763*^9}, 3.638471027959855*^9, {
+   3.638471259119014*^9, 3.6384712709894667`*^9}, {3.6384713194952993`*^9, 
+   3.638471321524823*^9}, {3.7311665376616507`*^9, 
+   3.731166573252253*^9}},ExpressionUUID->"3dac9da7-3cda-4d58-8510-\
+24bd0c6ca8e4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Text input", "Section",
+ CellChangeTimes->{{3.63846328674846*^9, 3.638463289980488*^9}, {
+  3.638470718843009*^9, 
+  3.638470721001555*^9}},ExpressionUUID->"980840a4-68b2-4186-95c5-\
+2edba860a7f8"],
+
+Cell[TextData[{
+ "To request data from users inside a Manipulate command use  ",
+ StyleBox["ControlType->InputField", "Input"],
+ ".  Or more generally, construct your own ",
+ StyleBox["InputField", "Input"],
+ ".\nSee here: ",
+ StyleBox[ButtonBox["ref/InputField",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/InputField"],
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.638461885689396*^9, 3.638461916105143*^9}, {
+   3.638462085247377*^9, 3.638462095821515*^9}, {3.638462187781919*^9, 
+   3.638462222604042*^9}, 3.63846242618188*^9, {3.638470728919301*^9, 
+   3.638470742493795*^9}, {3.638470873250547*^9, 3.6384709440052443`*^9}, {
+   3.638471757013365*^9, 
+   3.638471815558049*^9}},ExpressionUUID->"917a564c-d41c-4def-87b8-\
+7e20cd01b53e"],
+
+Cell["You can request all sorts of information from a user. ", "Text",
+ CellChangeTimes->{{3.638461885689396*^9, 3.638461916105143*^9}, {
+   3.638462085247377*^9, 3.638462095821515*^9}, {3.638462187781919*^9, 
+   3.638462222604042*^9}, 3.63846242618188*^9, {3.638470728919301*^9, 
+   3.638470742493795*^9}, {3.638470873250547*^9, 3.6384709440052443`*^9}, {
+   3.638471757013365*^9, 
+   3.638471785051463*^9}},ExpressionUUID->"59e07484-6284-47c2-8d88-\
+902f7265de23"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{"f", ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "10"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"f", ",", 
+       RowBox[{"x", "^", "3"}], ",", "\"\<Insert a function of x:\>\""}], 
+      "}"}], ",", 
+     RowBox[{"ControlType", "\[Rule]", "InputField"}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.638462270317293*^9, 
+  3.638462404962819*^9}},ExpressionUUID->"d4d3dad7-f33b-47d2-894f-\
+d5bb06f4a767"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`f$$ = $CellContext`x^3, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`f$$], $CellContext`x^3, "Insert a function of x:"}}},
+     Typeset`size$$ = {360., {110., 114.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`f$$ = $CellContext`x^3}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[$CellContext`f$$, {$CellContext`x, 0, 10}], 
+      "Specifications" :> {{{$CellContext`f$$, $CellContext`x^3, 
+          "Insert a function of x:"}, ControlType -> InputField}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {152., 158.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.638462351900671*^9, 
+  3.63846240573101*^9}},ExpressionUUID->"c7be7356-363c-439c-9ecf-\
+c355f3732a4f"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Sometimes you need to modify the input so that ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " can use it, and you might need to convert between Strings and Expressions. \
+ \nSee ",
+ StyleBox[ButtonBox["guide/ConvertingBetweenExpressionsAndStrings",
+  BaseStyle->"Link",
+  ButtonData->"paclet:guide/ConvertingBetweenExpressionsAndStrings"],
+  FontWeight->"Bold"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.638462430017633*^9, 3.638462458189015*^9}, {
+  3.638470948893559*^9, 
+  3.638471018742056*^9}},ExpressionUUID->"650942b8-232c-4f0f-839b-\
+1fed8d1d096a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Permutations", "[", 
+    RowBox[{"Characters", "[", "text", "]"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"{", 
+     RowBox[{"text", ",", "\"\<word\>\"", ",", "\"\<Insert text here\>\""}], 
+     "}"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6384624642881804`*^9, 3.638462514825403*^9}, {
+  3.638462563011861*^9, 3.638462564729056*^9}, {3.6384626527306433`*^9, 
+  3.638462686629562*^9}, {3.638462721717476*^9, 3.638462728013081*^9}, {
+  3.6384628291567087`*^9, 
+  3.63846284491096*^9}},ExpressionUUID->"285a7687-4c20-484e-a63f-\
+f6168dad84ca"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`text$$ = "word", Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`text$$], "word", "Insert text here"}}}, 
+    Typeset`size$$ = {
+    803.3000001907349, {45.54893493652344, 12.791915893554688`}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`text$$ = "word"}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Permutations[
+        Characters[$CellContext`text$$]], 
+      "Specifications" :> {{{$CellContext`text$$, "word", 
+          "Insert text here"}}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{849., {70., 76.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.638462852888999*^9, 3.638462945098702*^9, 
+  3.638463041670906*^9},ExpressionUUID->"54f0e2fe-e8d3-4b3c-8260-\
+75efa5d37fdf"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Input by clicking", "Section",
+ CellChangeTimes->{{3.6384632982543697`*^9, 3.638463300558161*^9}, {
+  3.638470336491906*^9, 
+  3.638470346434814*^9}},ExpressionUUID->"89a47338-7186-44f2-af18-\
+a2648b747bd5"],
+
+Cell[TextData[{
+ "If you want to get simple Yes/No information or Multiple Choice information \
+from a user, you could use a dialog box.  More information here: ",
+ StyleBox[ButtonBox["guide/DialogBoxes",
+  BaseStyle->"Link",
+  ButtonData->"paclet:guide/DialogBoxes"],
+  FontWeight->"Bold"],
+ " "
+}], "Text",
+ CellChangeTimes->{{3.638472188926353*^9, 
+  3.638472238826879*^9}},ExpressionUUID->"d2a3a6f9-4ef5-4c9c-9b8f-\
+8c79953051fb"],
+
+Cell[BoxData[
+ RowBox[{"ChoiceDialog", "[", 
+  RowBox[{"\"\<Pick one\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "\[Rule]", "\"\<a\>\""}], ",", 
+     RowBox[{"2", "\[Rule]", "\"\<b\>\""}], ",", 
+     RowBox[{"3", "\[Rule]", "\"\<c\>\""}], ",", 
+     RowBox[{"4", "\[Rule]", "\"\<d\>\""}]}], "}"}]}], "]"}]], "Input",Express\
+ionUUID->"9f92a2b0-1007-434c-aea1-5ef8a8692fd8"],
+
+Cell[TextData[{
+ "To use clicking as a source of user interactivity, you might use the ",
+ StyleBox["ControlType->Locator", "Input"],
+ " option in ",
+ StyleBox["Manipulate", "Input"],
+ ".  It is also possible to build clicking on top of Graphics using ",
+ StyleBox["ClickPane", "Input"],
+ ".\nDocumentation: ",
+ StyleBox[ButtonBox["ref/ClickPane",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/ClickPane"],
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.638470359890627*^9, 3.638470573159947*^9}, {
+  3.63847109784826*^9, 
+  3.638471107775531*^9}},ExpressionUUID->"ae879782-4944-48d3-9140-\
+7a6e07f74143"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"pt", "=", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0"}], "}"}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"ClickPane", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Dynamic", "@", 
+      RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"Yellow", ",", 
+          RowBox[{"Disk", "[", "]"}], ",", "\[IndentingNewLine]", "Black", 
+          ",", 
+          RowBox[{"Point", "[", "pt", "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Round", "[", 
+             RowBox[{"pt", ",", ".01"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}]}], "]"}]}], "\[IndentingNewLine]",
+          "}"}], ",", 
+        RowBox[{"ImageSize", "\[Rule]", "Tiny"}]}], "\[IndentingNewLine]", 
+       "]"}]}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"pt", "=", "#"}], ")"}], "&"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.638463889661086*^9, 3.63846391142997*^9}, {
+  3.638470580661661*^9, 
+  3.638470625681993*^9}},ExpressionUUID->"3cf0407b-d8cb-46db-b188-\
+436fbb7aa6a0"],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`pt$$ = {-0.4757865109427608, 
+  0.3999734322390572}}, 
+  TagBox[
+   DynamicBox[ToBoxes[
+     Graphics[{Yellow, 
+       Disk[], Black, 
+       Point[$CellContext`pt$$], 
+       Text[
+        Round[$CellContext`pt$$, 0.01], {0, 0}]}, ImageSize -> Tiny], 
+     StandardForm],
+    ImageSizeCache->{100., {48., 52.}}],
+   EventHandlerTag[{"MouseClicked" :> (($CellContext`pt$$ = #)& )[
+       MousePosition["EventHandlerAutomatic"]], PassEventsDown -> Automatic, 
+     PassEventsUp -> True}]],
+  DynamicModuleValues:>{}]], "Output",
+ CellChangeTimes->{
+  3.638463911944528*^9},ExpressionUUID->"34590bef-2e74-4412-a764-\
+05db52bf7b29"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Using a game controller", "Section",
+ CellChangeTimes->{{3.638463266349962*^9, 
+  3.638463269511839*^9}},ExpressionUUID->"71db0eac-02a7-4e8c-a420-\
+69fad0010bd8"],
+
+Cell[TextData[{
+ "Read this information: ",
+ StyleBox[ButtonBox["howto/UseBuiltinGamepadSupport",
+  BaseStyle->"Link",
+  ButtonData->"paclet:howto/UseBuiltinGamepadSupport"],
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.638470283244364*^9, 
+  3.638470307870203*^9}},ExpressionUUID->"bcc756c4-e228-4cdc-a3e2-\
+e45440a58b29"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Importing data, spreadsheets, images", "Section",
+ CellChangeTimes->{{3.638471349605095*^9, 
+  3.6384713749636917`*^9}},ExpressionUUID->"7512afdf-06e1-44c5-91fc-\
+fc7e094bce46"],
+
+Cell[TextData[{
+ "A more basic level for interacting with the user is to import information \
+that you then go on to modify.  (Analyzing data, Modifying images...)  Use \
+the Import command to to this.\nSee here: ",
+ StyleBox[ButtonBox["tutorial/ImportingAndExportingData",
+  BaseStyle->"Link",
+  ButtonData->"paclet:tutorial/ImportingAndExportingData"],
+  FontWeight->"Bold"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.638471384539517*^9, 
+  3.6384714616196127`*^9}},ExpressionUUID->"95429608-2039-4782-b879-\
+6dc99a8c7530"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Using curated data", "Section",
+ CellChangeTimes->{{3.638471576431678*^9, 
+  3.63847157909422*^9}},ExpressionUUID->"dd7f9a7d-4ce6-48ff-8534-\
+50b7ae7fabeb"],
+
+Cell[TextData[{
+ "You can access all of Wolfram\[CloseCurlyQuote]s curated data on many many \
+subjects. See here for all the different types of data available: ",
+ StyleBox[ButtonBox["guide/ComputableDataOverview",
+  BaseStyle->"Link",
+  ButtonData->"paclet:guide/ComputableDataOverview"],
+  FontWeight->"Bold"],
+ ButtonBox[".",
+  BaseStyle->"Link",
+  ButtonData->"paclet:guide/ComputableDataOverview"]
+}], "Text",
+ CellChangeTimes->{{3.6384715829266043`*^9, 3.6384716352365913`*^9}, 
+   3.6384716854141397`*^9},ExpressionUUID->"08c262ef-0b9d-4042-b895-\
+ae12a5f589d1"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1065, 1005},
+WindowMargins->{{Automatic, 121}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 204, 3, 98, "Title",ExpressionUUID->"b3a821ae-0b22-4b49-ac00-e99a34dd05b9"],
+Cell[787, 27, 465, 11, 58, "Text",ExpressionUUID->"a8539a72-fd57-4318-93f7-20055e782b8f"],
+Cell[1255, 40, 897, 18, 81, "Text",ExpressionUUID->"1b88a919-54a3-47af-975a-86f0be7cc718"],
+Cell[CellGroupData[{
+Cell[2177, 62, 154, 3, 67, "Section",ExpressionUUID->"05eea51f-eba9-43ec-b27b-7979432e3e3f"],
+Cell[2334, 67, 713, 14, 58, "Text",ExpressionUUID->"3dac9da7-3cda-4d58-8510-24bd0c6ca8e4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3084, 86, 203, 4, 67, "Section",ExpressionUUID->"980840a4-68b2-4186-95c5-2edba860a7f8"],
+Cell[3290, 92, 754, 17, 58, "Text",ExpressionUUID->"917a564c-d41c-4def-87b8-7e20cd01b53e"],
+Cell[4047, 111, 466, 7, 35, "Text",ExpressionUUID->"59e07484-6284-47c2-8d88-902f7265de23"],
+Cell[CellGroupData[{
+Cell[4538, 122, 564, 17, 30, "Input",ExpressionUUID->"d4d3dad7-f33b-47d2-894f-d5bb06f4a767"],
+Cell[5105, 141, 1729, 35, 329, "Output",ExpressionUUID->"c7be7356-363c-439c-9ecf-c355f3732a4f"]
+}, Open  ]],
+Cell[6849, 179, 580, 15, 58, "Text",ExpressionUUID->"650942b8-232c-4f0f-839b-1fed8d1d096a"],
+Cell[CellGroupData[{
+Cell[7454, 198, 620, 14, 30, "Input",ExpressionUUID->"285a7687-4c20-484e-a63f-f6168dad84ca"],
+Cell[8077, 214, 1723, 36, 165, "Output",ExpressionUUID->"54f0e2fe-e8d3-4b3c-8260-75efa5d37fdf"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9849, 256, 213, 4, 67, "Section",ExpressionUUID->"89a47338-7186-44f2-af18-a2648b747bd5"],
+Cell[10065, 262, 434, 11, 58, "Text",ExpressionUUID->"d2a3a6f9-4ef5-4c9c-9b8f-8c79953051fb"],
+Cell[10502, 275, 389, 9, 30, "Input",ExpressionUUID->"9f92a2b0-1007-434c-aea1-5ef8a8692fd8"],
+Cell[10894, 286, 615, 16, 81, "Text",ExpressionUUID->"ae879782-4944-48d3-9140-7a6e07f74143"],
+Cell[CellGroupData[{
+Cell[11534, 306, 1230, 32, 178, "Input",ExpressionUUID->"3cf0407b-d8cb-46db-b188-436fbb7aa6a0"],
+Cell[12767, 340, 675, 18, 117, "Output",ExpressionUUID->"34590bef-2e74-4412-a764-05db52bf7b29"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13491, 364, 168, 3, 67, "Section",ExpressionUUID->"71db0eac-02a7-4e8c-a420-69fad0010bd8"],
+Cell[13662, 369, 334, 9, 35, "Text",ExpressionUUID->"bcc756c4-e228-4cdc-a3e2-e45440a58b29"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14033, 383, 183, 3, 67, "Section",ExpressionUUID->"7512afdf-06e1-44c5-91fc-fc7e094bce46"],
+Cell[14219, 388, 522, 12, 81, "Text",ExpressionUUID->"95429608-2039-4782-b879-6dc99a8c7530"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14778, 405, 162, 3, 67, "Section",ExpressionUUID->"dd7f9a7d-4ce6-48ff-8534-50b7ae7fabeb"],
+Cell[14943, 410, 570, 13, 58, "Text",ExpressionUUID->"08c262ef-0b9d-4042-b895-ae12a5f589d1"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,559 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     20372,        551]
+NotebookOptionsPosition[     18203,        506]
+NotebookOutlinePosition[     18624,        523]
+CellTagsIndexPosition[     18581,        520]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["2D Graphics Primitives", "Title",
+ CellChangeTimes->{{3.461405268132181*^9, 3.461405274978758*^9}, {
+  3.461405374110767*^9, 3.461405382736993*^9}, {3.461405964606715*^9, 
+  3.461405964996537*^9}, {3.461412674365797*^9, 3.461412678153265*^9}, {
+  3.47448983369319*^9, 3.474489837928254*^9}, {3.630696562351103*^9, 
+  3.630696568117642*^9}, {3.631988928117742*^9, 3.6319889301724463`*^9}, {
+  3.632152715690145*^9, 3.632152719687695*^9}, {3.6325873465991592`*^9, 
+  3.632587350748754*^9}, {3.633195273613469*^9, 3.633195283053203*^9}, {
+  3.634662798361207*^9, 3.634662802015071*^9}, {3.809769332567151*^9, 
+  3.8097693405475855`*^9}},ExpressionUUID->"5f753982-94c8-4c4c-ab0f-\
+0d5c4050c0cb"],
+
+Cell["Challenge Questions", "Subtitle",
+ CellChangeTimes->{{3.8097693517175198`*^9, 3.809769354966945*^9}, {
+  3.809769425491793*^9, 
+  3.8097694273574686`*^9}},ExpressionUUID->"8fe8557e-0732-49aa-bbfd-\
+4621c5f57f11"],
+
+Cell[TextData[{
+ "Math 250 - Math with ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ "\nChristopher Hanusa"
+}], "Subsubtitle",
+ CellChangeTimes->{{3.4614053946645927`*^9, 3.4614054230893087`*^9}, {
+  3.461405971637244*^9, 3.4614060079862947`*^9}, {3.474489844264483*^9, 
+  3.474489895841402*^9}, {3.505485689221858*^9, 3.505485696180904*^9}, {
+  3.53815066431697*^9, 3.538150664587603*^9}, {3.630691352563725*^9, 
+  3.6306913589949083`*^9}, {3.632152722336176*^9, 3.6321527477452803`*^9}, {
+  3.63215587546747*^9, 3.6321558797854424`*^9}, {3.632587355469249*^9, 
+  3.632587384845799*^9}, {3.633195265968095*^9, 
+  3.633195266341083*^9}},ExpressionUUID->"f6e6b71f-e510-4253-be20-\
+8bb56852f0f4"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+8-X1. Create a discrete spiral that visits points that get further and \
+further away from the origin, similar to this: \
+\>", "Subsection",
+ CellChangeTimes->{{3.746783044413932*^9, 3.7467830717399263`*^9}, {
+  3.746783205624852*^9, 3.746783215136076*^9}, {3.746783252146378*^9, 
+  3.746783266161436*^9}, {3.809769431897112*^9, 
+  3.809769437437435*^9}},ExpressionUUID->"e5aa5ef2-10df-49e1-978c-\
+e8f2042f96fe"],
+
+Cell[BoxData[
+ GraphicsBox[
+  LineBox[{{0, 0}, {1, -1}, {-2, -2}, {-3, 3}, {4, 4}, {5, -5}, {-6, -6}, {-7,
+    7}, {8, 8}, {9, -9}, {-10, -10}}]]], "Output",
+ CellChangeTimes->{{3.746783156283396*^9, 3.746783189873661*^9}},
+ CellLabel->"Out[10]=",ExpressionUUID->"06723164-d915-4a82-8741-e0689e89df81"],
+
+Cell[CellGroupData[{
+
+Cell["Hint: ", "Subsubsection",
+ CellChangeTimes->{{3.746783283731203*^9, 
+  3.746783294146227*^9}},ExpressionUUID->"52ab7ac5-6c90-4813-aa24-\
+d767b46dfa27"],
+
+Cell["The points in the given spiral are:", "Text",
+ CellChangeTimes->{{3.746783295434227*^9, 
+  3.746783306138588*^9}},ExpressionUUID->"041f8bf8-720c-494e-b6e6-\
+b1645997adca"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     RowBox[{"-", "1"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "2"}], ",", 
+     RowBox[{"-", "2"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", 
+     RowBox[{"-", "5"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "6"}], ",", 
+     RowBox[{"-", "6"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "8"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", 
+     RowBox[{"-", "9"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "10"}], ",", 
+     RowBox[{"-", "10"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.746783179078925*^9, 3.7467831874101543`*^9}},
+ CellLabel->"Out[9]=",ExpressionUUID->"32433cef-21da-4134-b45d-e89d635dbae1"]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+8-X2. Comprehension Question 8-3 asked you to draw a grid of vertical and \
+horizontal lines that looks like graph paper, just like this.  Make sure \
+everyone is on the same page to create it.\
+\>", "Subsection",
+ CellChangeTimes->{{3.63477979338795*^9, 3.634779828015649*^9}, {
+  3.634825908993174*^9, 3.634825914285077*^9}, {3.634826379284554*^9, 
+  3.6348263816750717`*^9}, {3.63482839613761*^9, 3.634828398216661*^9}, {
+  3.634828693842081*^9, 3.634828694050105*^9}, {3.6660205407076187`*^9, 
+  3.666020542858429*^9}, {3.809769555272238*^9, 3.8097695786166325`*^9}, {
+  3.810365587812585*^9, 
+  3.810365605792815*^9}},ExpressionUUID->"6b4e41da-35de-453d-8bcd-\
+83c7e4205d5e"],
+
+Cell[BoxData[
+ GraphicsBox[{{LineBox[{{0, 0}, {8, 0}}], LineBox[{{0, 1}, {8, 1}}], 
+    LineBox[{{0, 2}, {8, 2}}], LineBox[{{0, 3}, {8, 3}}], 
+    LineBox[{{0, 4}, {8, 4}}], LineBox[{{0, 5}, {8, 5}}], 
+    LineBox[{{0, 6}, {8, 6}}], LineBox[{{0, 7}, {8, 7}}], 
+    LineBox[{{0, 8}, {8, 8}}]}, {LineBox[{{0, 0}, {0, 8}}], 
+    LineBox[{{1, 0}, {1, 8}}], LineBox[{{2, 0}, {2, 8}}], 
+    LineBox[{{3, 0}, {3, 8}}], LineBox[{{4, 0}, {4, 8}}], 
+    LineBox[{{5, 0}, {5, 8}}], LineBox[{{6, 0}, {6, 8}}], 
+    LineBox[{{7, 0}, {7, 8}}], LineBox[{{8, 0}, {8, 8}}]}},
+  ImageSize->{117.68359375, Automatic}]], "Output",
+ CellChangeTimes->{
+  3.66602060674517*^9},ExpressionUUID->"9da5ae5a-42ec-451f-9dfa-65dec27d5b18"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Color the lines in the grid in either rainbow or random colors, like this:\
+\>", "Subsection",
+ CellChangeTimes->{{3.746783332707616*^9, 3.746783373340703*^9}, {
+   3.8097694395374703`*^9, 3.8097694564129643`*^9}, {3.8097695870348787`*^9, 
+   3.8097695918436575`*^9}, 
+   3.809769652908564*^9},ExpressionUUID->"dba63506-408e-4ac7-a712-\
+ee919acd9cdd"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   GraphicsBox[
+    {Thickness[Large], {
+      {Hue[0], LineBox[{{0, 0}, {8, 0}}]}, 
+      {Hue[
+        NCache[
+         Rational[1, 8], 0.125]], LineBox[{{0, 1}, {8, 1}}]}, 
+      {Hue[
+        NCache[
+         Rational[1, 4], 0.25]], LineBox[{{0, 2}, {8, 2}}]}, 
+      {Hue[
+        NCache[
+         Rational[3, 8], 0.375]], LineBox[{{0, 3}, {8, 3}}]}, 
+      {Hue[
+        NCache[
+         Rational[1, 2], 0.5]], LineBox[{{0, 4}, {8, 4}}]}, 
+      {Hue[
+        NCache[
+         Rational[5, 8], 0.625]], LineBox[{{0, 5}, {8, 5}}]}, 
+      {Hue[
+        NCache[
+         Rational[3, 4], 0.75]], LineBox[{{0, 6}, {8, 6}}]}, 
+      {Hue[
+        NCache[
+         Rational[7, 8], 0.875]], LineBox[{{0, 7}, {8, 7}}]}, 
+      {Hue[1], LineBox[{{0, 8}, {8, 8}}]}}, {
+      {Hue[0], LineBox[{{0, 0}, {0, 8}}]}, 
+      {Hue[
+        NCache[
+         Rational[1, 8], 0.125]], LineBox[{{1, 0}, {1, 8}}]}, 
+      {Hue[
+        NCache[
+         Rational[1, 4], 0.25]], LineBox[{{2, 0}, {2, 8}}]}, 
+      {Hue[
+        NCache[
+         Rational[3, 8], 0.375]], LineBox[{{3, 0}, {3, 8}}]}, 
+      {Hue[
+        NCache[
+         Rational[1, 2], 0.5]], LineBox[{{4, 0}, {4, 8}}]}, 
+      {Hue[
+        NCache[
+         Rational[5, 8], 0.625]], LineBox[{{5, 0}, {5, 8}}]}, 
+      {Hue[
+        NCache[
+         Rational[3, 4], 0.75]], LineBox[{{6, 0}, {6, 8}}]}, 
+      {Hue[
+        NCache[
+         Rational[7, 8], 0.875]], LineBox[{{7, 0}, {7, 8}}]}, 
+      {Hue[1], LineBox[{{8, 0}, {8, 8}}]}}}], ",", 
+   GraphicsBox[
+    {Thickness[Large], {
+      {Hue[0.7999643410419122], LineBox[{{0, 0}, {8, 0}}]}, 
+      {Hue[0.6706765458079424], LineBox[{{0, 1}, {8, 1}}]}, 
+      {Hue[0.5478306140281273], LineBox[{{0, 2}, {8, 2}}]}, 
+      {Hue[0.14490820780107505`], LineBox[{{0, 3}, {8, 3}}]}, 
+      {Hue[0.07353684013249362], LineBox[{{0, 4}, {8, 4}}]}, 
+      {Hue[0.37852716210418946`], LineBox[{{0, 5}, {8, 5}}]}, 
+      {Hue[0.056634811468791124`], LineBox[{{0, 6}, {8, 6}}]}, 
+      {Hue[0.7108942345112419], LineBox[{{0, 7}, {8, 7}}]}, 
+      {Hue[0.6504328325653081], LineBox[{{0, 8}, {8, 8}}]}}, {
+      {Hue[0.22945733445269134`], LineBox[{{0, 0}, {0, 8}}]}, 
+      {Hue[0.7412626191552236], LineBox[{{1, 0}, {1, 8}}]}, 
+      {Hue[0.3258041976575494], LineBox[{{2, 0}, {2, 8}}]}, 
+      {Hue[0.5945717122499898], LineBox[{{3, 0}, {3, 8}}]}, 
+      {Hue[0.9812365545019883], LineBox[{{4, 0}, {4, 8}}]}, 
+      {Hue[0.10612747292350044`], LineBox[{{5, 0}, {5, 8}}]}, 
+      {Hue[0.29341703292519505`], LineBox[{{6, 0}, {6, 8}}]}, 
+      {Hue[0.9935108387284466], LineBox[{{7, 0}, {7, 8}}]}, 
+      {Hue[0.7429440874051154], LineBox[{{8, 0}, {8, 8}}]}}}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.7467834037365828`*^9, 3.746783443477042*^9}},
+ CellLabel->"Out[14]=",ExpressionUUID->"3955a7b0-f7d3-41c1-95a4-4708f7c33116"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+8-X3. Now, instead of coloring the lines, put colored circles inside every \
+square of the grid.\
+\>", "Subsection",
+ CellChangeTimes->{{3.7467838190506573`*^9, 3.746783861771269*^9}, {
+  3.746784160539613*^9, 3.746784161683723*^9}, {3.7467847287574797`*^9, 
+  3.7467847289963207`*^9}, {3.746784793688614*^9, 3.746784794710267*^9}, {
+  3.809771229922042*^9, 3.8097712344389095`*^9}, {3.8103656178929234`*^9, 
+  3.810365636222642*^9}},ExpressionUUID->"a621ba60-c46c-496e-bed7-\
+f45f2d0fcd6f"],
+
+Cell[BoxData[
+ GraphicsBox[{{LineBox[{{0, 0}, {8, 0}}], LineBox[{{0, 1}, {8, 1}}], 
+    LineBox[{{0, 2}, {8, 2}}], LineBox[{{0, 3}, {8, 3}}], 
+    LineBox[{{0, 4}, {8, 4}}], LineBox[{{0, 5}, {8, 5}}], 
+    LineBox[{{0, 6}, {8, 6}}], LineBox[{{0, 7}, {8, 7}}], 
+    LineBox[{{0, 8}, {8, 8}}]}, {LineBox[{{0, 0}, {0, 8}}], 
+    LineBox[{{1, 0}, {1, 8}}], LineBox[{{2, 0}, {2, 8}}], 
+    LineBox[{{3, 0}, {3, 8}}], LineBox[{{4, 0}, {4, 8}}], 
+    LineBox[{{5, 0}, {5, 8}}], LineBox[{{6, 0}, {6, 8}}], 
+    LineBox[{{7, 0}, {7, 8}}], LineBox[{{8, 0}, {8, 8}}]}, {{
+     {Hue[0], DiskBox[{0.5, 0.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[1, 64], 0.015625]], DiskBox[{0.5, 1.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[1, 32], 0.03125]], DiskBox[{0.5, 2.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[3, 64], 0.046875]], DiskBox[{0.5, 3.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[1, 16], 0.0625]], DiskBox[{0.5, 4.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[5, 64], 0.078125]], DiskBox[{0.5, 5.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[3, 32], 0.09375]], DiskBox[{0.5, 6.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[7, 64], 0.109375]], DiskBox[{0.5, 7.5}, 0.45]}}, {
+     {Hue[
+       NCache[
+        Rational[1, 8], 0.125]], DiskBox[{1.5, 0.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[9, 64], 0.140625]], DiskBox[{1.5, 1.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[5, 32], 0.15625]], DiskBox[{1.5, 2.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[11, 64], 0.171875]], DiskBox[{1.5, 3.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[3, 16], 0.1875]], DiskBox[{1.5, 4.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[13, 64], 0.203125]], DiskBox[{1.5, 5.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[7, 32], 0.21875]], DiskBox[{1.5, 6.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[15, 64], 0.234375]], DiskBox[{1.5, 7.5}, 0.45]}}, {
+     {Hue[
+       NCache[
+        Rational[1, 4], 0.25]], DiskBox[{2.5, 0.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[17, 64], 0.265625]], DiskBox[{2.5, 1.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[9, 32], 0.28125]], DiskBox[{2.5, 2.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[19, 64], 0.296875]], DiskBox[{2.5, 3.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[5, 16], 0.3125]], DiskBox[{2.5, 4.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[21, 64], 0.328125]], DiskBox[{2.5, 5.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[11, 32], 0.34375]], DiskBox[{2.5, 6.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[23, 64], 0.359375]], DiskBox[{2.5, 7.5}, 0.45]}}, {
+     {Hue[
+       NCache[
+        Rational[3, 8], 0.375]], DiskBox[{3.5, 0.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[25, 64], 0.390625]], DiskBox[{3.5, 1.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[13, 32], 0.40625]], DiskBox[{3.5, 2.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[27, 64], 0.421875]], DiskBox[{3.5, 3.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[7, 16], 0.4375]], DiskBox[{3.5, 4.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[29, 64], 0.453125]], DiskBox[{3.5, 5.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[15, 32], 0.46875]], DiskBox[{3.5, 6.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[31, 64], 0.484375]], DiskBox[{3.5, 7.5}, 0.45]}}, {
+     {Hue[
+       NCache[
+        Rational[1, 2], 0.5]], DiskBox[{4.5, 0.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[33, 64], 0.515625]], DiskBox[{4.5, 1.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[17, 32], 0.53125]], DiskBox[{4.5, 2.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[35, 64], 0.546875]], DiskBox[{4.5, 3.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[9, 16], 0.5625]], DiskBox[{4.5, 4.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[37, 64], 0.578125]], DiskBox[{4.5, 5.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[19, 32], 0.59375]], DiskBox[{4.5, 6.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[39, 64], 0.609375]], DiskBox[{4.5, 7.5}, 0.45]}}, {
+     {Hue[
+       NCache[
+        Rational[5, 8], 0.625]], DiskBox[{5.5, 0.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[41, 64], 0.640625]], DiskBox[{5.5, 1.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[21, 32], 0.65625]], DiskBox[{5.5, 2.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[43, 64], 0.671875]], DiskBox[{5.5, 3.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[11, 16], 0.6875]], DiskBox[{5.5, 4.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[45, 64], 0.703125]], DiskBox[{5.5, 5.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[23, 32], 0.71875]], DiskBox[{5.5, 6.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[47, 64], 0.734375]], DiskBox[{5.5, 7.5}, 0.45]}}, {
+     {Hue[
+       NCache[
+        Rational[3, 4], 0.75]], DiskBox[{6.5, 0.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[49, 64], 0.765625]], DiskBox[{6.5, 1.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[25, 32], 0.78125]], DiskBox[{6.5, 2.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[51, 64], 0.796875]], DiskBox[{6.5, 3.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[13, 16], 0.8125]], DiskBox[{6.5, 4.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[53, 64], 0.828125]], DiskBox[{6.5, 5.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[27, 32], 0.84375]], DiskBox[{6.5, 6.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[55, 64], 0.859375]], DiskBox[{6.5, 7.5}, 0.45]}}, {
+     {Hue[
+       NCache[
+        Rational[7, 8], 0.875]], DiskBox[{7.5, 0.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[57, 64], 0.890625]], DiskBox[{7.5, 1.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[29, 32], 0.90625]], DiskBox[{7.5, 2.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[59, 64], 0.921875]], DiskBox[{7.5, 3.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[15, 16], 0.9375]], DiskBox[{7.5, 4.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[61, 64], 0.953125]], DiskBox[{7.5, 5.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[31, 32], 0.96875]], DiskBox[{7.5, 6.5}, 0.45]}, 
+     {Hue[
+       NCache[
+        Rational[63, 64], 0.984375]], DiskBox[{7.5, 7.5}, 0.45]}}}},
+  ImageSize->{155.328125, Automatic}]], "Output",
+ CellChangeTimes->{
+  3.746784788094775*^9, {3.746784821028947*^9, 3.746784830456634*^9}},
+ CellLabel->"Out[32]=",ExpressionUUID->"5b19571c-6157-4b08-8014-58175230f90d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+8-X4. Using the technique for making a regular polygon using trigonometry, \
+make a star.\
+\>", "Subsection",
+ CellChangeTimes->{{3.746783659653906*^9, 3.746783712374556*^9}, {
+   3.7467838696111603`*^9, 3.746783910820346*^9}, {3.746784163100832*^9, 
+   3.7467841632035427`*^9}, {3.7467847318934107`*^9, 3.746784732125435*^9}, {
+   3.809771239992302*^9, 3.8097712420686255`*^9}, 
+   3.8103656464327693`*^9},ExpressionUUID->"6b7613da-7806-4210-acd7-\
+941bb535df81"],
+
+Cell[BoxData[
+ GraphicsBox[
+  PolygonBox[{{1.5, 0.}, {0.4045084971874737, 0.29389262614623657`}, {
+   0.4635254915624212, 1.4265847744427302`}, {-0.15450849718747373`, 
+   0.47552825814757677`}, {-1.250525491562421, 0.8816778784387097}, {-0.5, 
+   0.}, {-1.250525491562421, -0.8816778784387097}, {-0.15450849718747373`, \
+-0.47552825814757677`}, {0.4635254915624212, -1.4265847744427302`}, {
+   0.4045084971874737, -0.29389262614623657`}, {1.5, 0.}}],
+  ImageSize->{181.21875, Automatic}]], "Output",
+ CellChangeTimes->{{3.7467850039330873`*^9, 3.7467850305425377`*^9}},
+ CellLabel->"Out[39]=",ExpressionUUID->"ca6d29c2-8f61-410c-9cc3-8b013f7e380c"]
+}, Open  ]],
+
+Cell["\<\
+8-X5. When we created regular n-gons using trigonometry, we drew the n points \
+on the circle and connected each vertex with its two neighbors.  What will \
+happen if you instead connect each vertex not with its neighbors but with the \
+neighbors of its neighbors (distance two away)?  Or further away?  \
+\>", "Subsection",
+ CellChangeTimes->{{3.634779454308889*^9, 3.634779510276991*^9}, {
+  3.634780149293449*^9, 3.634780264725855*^9}, {3.6348346144093847`*^9, 
+  3.634834625240801*^9}, {3.6348347393273582`*^9, 3.634834739557798*^9}, {
+  3.746785078038578*^9, 3.7467850783437634`*^9}, {3.809771245368616*^9, 
+  3.8097712467889137`*^9}, {3.810365663253234*^9, 
+  3.8103656914128323`*^9}},ExpressionUUID->"559db951-2030-448a-b11d-\
+6462feb3a5b1"]
+}, Open  ]]
+},
+WindowSize->{1618, 1007},
+WindowMargins->{{-8, Automatic}, {-8, Automatic}},
+ShowSelection->True,
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"299fbd5a-20b7-436f-b265-3bfb04d62415"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 697, 10, 96, "Title",ExpressionUUID->"5f753982-94c8-4c4c-ab0f-0d5c4050c0cb"],
+Cell[1267, 34, 218, 4, 53, "Subtitle",ExpressionUUID->"8fe8557e-0732-49aa-bbfd-4621c5f57f11"],
+Cell[1488, 40, 701, 14, 51, "Subsubtitle",ExpressionUUID->"f6e6b71f-e510-4253-be20-8bb56852f0f4"],
+Cell[CellGroupData[{
+Cell[2214, 58, 422, 8, 53, "Subsection",ExpressionUUID->"e5aa5ef2-10df-49e1-978c-e8f2042f96fe"],
+Cell[2639, 68, 302, 5, 358, "Output",ExpressionUUID->"06723164-d915-4a82-8741-e0689e89df81"],
+Cell[CellGroupData[{
+Cell[2966, 77, 157, 3, 44, "Subsubsection",ExpressionUUID->"52ab7ac5-6c90-4813-aa24-d767b46dfa27"],
+Cell[3126, 82, 177, 3, 34, "Text",ExpressionUUID->"041f8bf8-720c-494e-b6e6-b1645997adca"],
+Cell[3306, 87, 1081, 37, 32, "Output",ExpressionUUID->"32433cef-21da-4134-b45d-e89d635dbae1"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4436, 130, 690, 12, 79, "Subsection",ExpressionUUID->"6b4e41da-35de-453d-8bcd-83c7e4205d5e"],
+Cell[5129, 144, 709, 12, 134, "Output",ExpressionUUID->"9da5ae5a-42ec-451f-9dfa-65dec27d5b18"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5875, 161, 361, 7, 53, "Subsection",ExpressionUUID->"dba63506-408e-4ac7-a712-ee919acd9cdd"],
+Cell[6239, 170, 2859, 73, 199, "Output",ExpressionUUID->"3955a7b0-f7d3-41c1-95a4-4708f7c33116"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9135, 248, 501, 9, 53, "Subsection",ExpressionUUID->"a621ba60-c46c-496e-bed7-f45f2d0fcd6f"],
+Cell[9639, 259, 6612, 203, 172, "Output",ExpressionUUID->"5b19571c-6157-4b08-8014-58175230f90d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16288, 467, 474, 9, 53, "Subsection",ExpressionUUID->"6b7613da-7806-4210-acd7-941bb535df81"],
+Cell[16765, 478, 649, 10, 204, "Output",ExpressionUUID->"ca6d29c2-8f61-410c-9cc3-8b013f7e380c"]
+}, Open  ]],
+Cell[17429, 491, 758, 12, 79, "Subsection",ExpressionUUID->"559db951-2030-448a-b11d-6462feb3a5b1"]
+}, Open  ]]
+}
+]
+*)
+

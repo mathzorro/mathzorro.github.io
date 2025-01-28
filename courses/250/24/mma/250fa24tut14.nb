@@ -1,0 +1,998 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     38497,        990]
+NotebookOptionsPosition[     32714,        893]
+NotebookOutlinePosition[     33114,        909]
+CellTagsIndexPosition[     33071,        906]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Tutorial 14: Interactivity", "Title",
+ CellChangeTimes->{{3.6384616704776087`*^9, 3.638461711350432*^9}, 
+   3.731166601934917*^9, 3.750414264728857*^9, {3.750590940260089*^9, 
+   3.750590949370248*^9}, {3.8907272973349543`*^9, 3.890727311725038*^9}, {
+   3.890835976918997*^9, 3.890835982991601*^9}, {3.940690226589815*^9, 
+   3.9406902267091103`*^9}},ExpressionUUID->"b3a821ae-0b22-4b49-ac00-\
+e99a34dd05b9"],
+
+Cell["MATH 250: Mathematical Computing", "Text",
+ CellChangeTimes->{{3.8139373281130433`*^9, 
+  3.8139373419633703`*^9}},ExpressionUUID->"e572f334-0bd3-4eb8-88e5-\
+f331aa5f2ed0"],
+
+Cell[TextData[{
+ "In this tutorial, we focus on different ways in which users can interact \
+with ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.638461681686727*^9, 3.638461699502666*^9}, {
+  3.638461776532834*^9, 3.6384617876124687`*^9}, {3.638470637416901*^9, 
+  3.638470666926819*^9}, {3.890836119167557*^9, 
+  3.890836127281007*^9}},ExpressionUUID->"a8539a72-fd57-4318-93f7-\
+20055e782b8f"],
+
+Cell[CellGroupData[{
+
+Cell["14.1 Buttons", "Section",
+ CellChangeTimes->{{3.750589206138734*^9, 3.7505892069705963`*^9}, {
+   3.750590098505814*^9, 3.750590102735787*^9}, {3.8139373480833445`*^9, 
+   3.8139373503327746`*^9}, {3.890827947391766*^9, 3.890827947504993*^9}, 
+   3.890836142837833*^9, {3.940690228420252*^9, 
+   3.9406902285574512`*^9}},ExpressionUUID->"410ff8ea-c86c-4ee0-bb76-\
+b733658e7f68"],
+
+Cell[TextData[{
+ "A simple way for a user to interact with an interface is through the use of \
+a button.\nTo create a button for your users, use the ",
+ StyleBox["Button", "Input"],
+ " command, which needs to know the text to display in the button and what to \
+do when the button is pressed.  "
+}], "Text",
+ CellChangeTimes->{{3.75058919230597*^9, 3.750589216571033*^9}, {
+   3.750589267352068*^9, 3.750589278910297*^9}, {3.750589507530116*^9, 
+   3.750589527791437*^9}, {3.7824616917432485`*^9, 3.782461738248873*^9}, 
+   3.890836152378447*^9, {3.890836196990581*^9, 
+   3.890836268904204*^9}},ExpressionUUID->"528dfec6-104b-424d-87e4-\
+8ddf9e228e23"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Button", "[", 
+  RowBox[{"\"\<Name of button\>\"", ",", 
+   RowBox[{"Print", "[", "\"\<You pressed the button.\>\"", "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8908361601244087`*^9, 3.890836179959115*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"283afa66-0068-4694-a97d-1bb0e36b6907"],
+
+Cell[BoxData[
+ ButtonBox["\<\"Name of button\"\>",
+  Appearance->Automatic,
+  ButtonFunction:>Print["You pressed the button."],
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Output",
+ CellChangeTimes->{3.890836181058917*^9, 3.9406895074271164`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"7ab3f18d-3330-144b-88b9-7b530a03fc61"]
+}, Open  ]],
+
+Cell["\<\
+It is possible to change the style of a button as well by inserting a \
+graphics object. After you click the following button the variable m \
+increases by 1.\
+\>", "Text",
+ CellChangeTimes->{{3.8908362783198833`*^9, 3.8908362987115307`*^9}, {
+  3.890836412292083*^9, 3.8908364220162973`*^9}, {3.8908365262695*^9, 
+  3.8908365648811083`*^9}},ExpressionUUID->"ff830e82-19f8-43c0-bc0c-\
+c6efccc4a3dc"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"m", "=", "10"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"Button", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Darker", "@", "Green"}], ",", 
+       RowBox[{"Disk", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", 
+           RowBox[{"1", "/", "2"}]}], "}"}]}], "]"}], ",", "Black", ",", 
+       RowBox[{"Text", "[", 
+        RowBox[{"\"\<I am a button\>\"", ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], "]"}]}], "}"}], ",", 
+     RowBox[{"m", "++"}]}], "]"}], ",", 
+   RowBox[{"ImageSize", "->", "100"}]}], 
+  "]"}], "\[IndentingNewLine]", "m"}], "Input",
+ CellChangeTimes->{{3.890836432992783*^9, 3.890836510652585*^9}, {
+  3.890836558922903*^9, 3.890836559657978*^9}, {3.89083665963061*^9, 
+  3.890836665948265*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"27a3748a-a606-4f02-aa0a-f6fef53ccbc4"],
+
+Cell["\<\
+Click on the button multiple times. Then you need to reevaluate m to see its \
+new value\
+\>", "Text",
+ CellChangeTimes->{{3.8908366710100727`*^9, 
+  3.890836700089747*^9}},ExpressionUUID->"5e601d6c-f57b-405f-bd0e-\
+1781b04cc0fc"],
+
+Cell[BoxData["m"], "Input",
+ CellChangeTimes->{3.890836390019656*^9},
+ CellLabel->"In[5]:=",ExpressionUUID->"e7850497-b7e5-41d5-a249-48c2e045b4c8"],
+
+Cell[TextData[{
+ "You might want to be able to see how m is changing in real time. So use ",
+ StyleBox["Dynamic", "Input"],
+ "!"
+}], "Text",
+ CellChangeTimes->{{3.89083659099371*^9, 
+  3.890836636897442*^9}},ExpressionUUID->"4994b7c3-8703-4829-9885-\
+211d5d37157e"],
+
+Cell[BoxData[
+ RowBox[{"Dynamic", "[", "m", "]"}]], "Input",
+ CellChangeTimes->{{3.890836613611278*^9, 3.890836615681258*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"919eee6e-c246-4245-882e-6f2bca5f64a7"],
+
+Cell[TextData[{
+ "Here is an example of using multiple buttons to change the same variable.  \
+Notice how the ",
+ StyleBox["Dynamic", "Input"],
+ " command is used to see the current value of y.  "
+}], "Text",
+ CellChangeTimes->{
+  3.8908361562830973`*^9, {3.89083670925954*^9, 3.890836746617312*^9}, {
+   3.89083678415799*^9, 
+   3.890836800591159*^9}},ExpressionUUID->"2a055f7d-af9d-422f-94de-\
+50104d8848c2"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"y", "=", "3"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Column", "[", 
+  RowBox[{"{", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Button", "[", 
+     RowBox[{"\"\<Add one to y\>\"", ",", 
+      RowBox[{"y", "++"}]}], "]"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Button", "[", 
+     RowBox[{"\"\<Subtract one from y\>\"", ",", 
+      RowBox[{"y", "--"}]}], "]"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Button", "[", 
+     RowBox[{"\"\<Square y\>\"", ",", 
+      RowBox[{"y", "=", 
+       RowBox[{"y", "*", "y"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Button", "[", 
+     RowBox[{"\"\<Reset y to 3\>\"", ",", 
+      RowBox[{"y", "=", "3"}]}], "]"}]}], "\[IndentingNewLine]", "}"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Dynamic", "[", "\[IndentingNewLine]", 
+  RowBox[{"Framed", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Style", "[", 
+     RowBox[{
+      RowBox[{"\"\< y is \>\"", "<>", 
+       RowBox[{"ToString", "[", "y", "]"}], "<>", "\"\< \>\""}], ",", 
+      RowBox[{"FontSize", "\[Rule]", "30"}], ",", 
+      RowBox[{"FontFamily", "\[Rule]", "\"\<Arial\>\""}], ",", " ", "Bold", 
+      ",", " ", 
+      RowBox[{"Darker", "[", "Green", "]"}]}], "]"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Background", "\[Rule]", "LightYellow"}]}], "]"}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.750589220749487*^9, 3.750589463528592*^9}, {
+  3.750589543168693*^9, 3.750589624648654*^9}, {3.8907269024806223`*^9, 
+  3.890726934367086*^9}, {3.890826599722281*^9, 3.890826616675353*^9}, {
+  3.89083672194876*^9, 3.890836767721109*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"b01c592f-5ce4-40b7-b33c-9a5a61839dc2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["14.2 Control Objects", "Section",
+ CellChangeTimes->{{3.890827967514974*^9, 3.890827976777193*^9}, {
+  3.9406902310969353`*^9, 
+  3.940690231187172*^9}},ExpressionUUID->"0bec8ea2-f984-465f-8c83-\
+350466c23806"],
+
+Cell[TextData[{
+ "There are a number of different types of ",
+ ButtonBox["Control Objects",
+  BaseStyle->"Link",
+  ButtonData->"paclet:guide/ControlObjects"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.8908368206504793`*^9, 3.8908368749142303`*^9}, {
+  3.940690097792465*^9, 3.9406901074421043`*^9}, {3.940690160199812*^9, 
+  3.940690160200903*^9}},ExpressionUUID->"40adb86d-be2c-4bcf-a993-\
+a9490a872d41"],
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"v1", "=", "False"}], ",", 
+     RowBox[{"v2", "=", "0"}], ",", "v3", ",", "v4"}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Column", "[", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Row", "[", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Check me! \>\"", ",", " ", 
+         RowBox[{"Checkbox", "[", 
+          RowBox[{"Dynamic", "[", "v1", "]"}], "]"}], ",", 
+         RowBox[{"Dynamic", "[", 
+          RowBox[{"If", "[", 
+           RowBox[{"v1", ",", 
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<  You did it!\>\"", ",", 
+              RowBox[{"FontFamily", "->", "\"\<Arial\>\""}], ",", "Bold", ",",
+               " ", "Red"}], "]"}], ",", "\"\<\>\""}], "]"}], "]"}]}], "}"}], 
+       "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"Row", "[", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Set me! \>\"", ",", " ", 
+         RowBox[{"SetterBar", "[", 
+          RowBox[{
+           RowBox[{"Dynamic", "[", "v2", "]"}], ",", 
+           RowBox[{"Range", "[", "5", "]"}]}], "]"}], ",", 
+         RowBox[{"Dynamic", "[", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{"v2", "<", "5"}], ",", 
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<  Too low!\>\"", ",", 
+              RowBox[{"FontFamily", "->", "\"\<Arial\>\""}], ",", " ", 
+              "Blue"}], "]"}], ",", 
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<  You got it!\>\"", ",", 
+              RowBox[{"FontFamily", "->", "\"\<Arial\>\""}], ",", "Bold", ",",
+               " ", "Red"}], "]"}]}], "]"}], "]"}]}], "}"}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Row", "[", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Slide me! \>\"", ",", " ", 
+         RowBox[{"Slider", "[", 
+          RowBox[{
+           RowBox[{"Dynamic", "[", "v3", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}], ",", 
+           RowBox[{"ImageSize", "->", "100"}]}], "]"}], ",", 
+         RowBox[{"Dynamic", "[", 
+          RowBox[{"Which", "[", 
+           RowBox[{
+            RowBox[{"v3", "==", "0"}], ",", "\"\<\>\"", ",", 
+            RowBox[{"v3", "<", "1"}], ",", 
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<  Keep Going!\>\"", ",", 
+              RowBox[{"FontFamily", "->", "\"\<Arial\>\""}], ",", " ", 
+              "Blue"}], "]"}], ",", 
+            RowBox[{"v3", "==", "1"}], ",", 
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<  You got it!\>\"", ",", 
+              RowBox[{"FontFamily", "->", "\"\<Arial\>\""}], ",", "Bold", ",",
+               " ", "Red"}], "]"}]}], "]"}], "]"}]}], "}"}], "]"}]}], 
+     "\[IndentingNewLine]", "}"}], "]"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.890836908320689*^9, 3.890837084785616*^9}, {
+  3.8908371164548903`*^9, 3.8908373388524218`*^9}, {3.890837371193181*^9, 
+  3.8908374131251297`*^9}, {3.890837443888208*^9, 3.890837444426133*^9}},
+ CellLabel->"In[85]:=",ExpressionUUID->"dc22b89b-3749-42bf-91f5-3af042f8b909"],
+
+Cell[CellGroupData[{
+
+Cell["Exploration Time!", "Subsection",
+ CellChangeTimes->{{3.750589502450532*^9, 3.750589505033581*^9}, {
+  3.750590107216124*^9, 
+  3.750590113984231*^9}},ExpressionUUID->"c4f17f91-7622-4672-8e53-\
+5595d96e8c0d"],
+
+Cell[TextData[{
+ "Visit ",
+ StyleBox[ButtonBox["tutorial/IntroductionToControlObjects",
+  BaseStyle->"Link",
+  ButtonData->"paclet:tutorial/IntroductionToControlObjects"],
+  FontWeight->"Bold"],
+ " and copy some examples of Controls like Checkbox, SetterBar, and PopupMenu \
+here to try them out."
+}], "Text",
+ CellChangeTimes->{{3.750590116704444*^9, 
+  3.750590215853792*^9}},ExpressionUUID->"10860485-2540-4419-bba8-\
+7fdfbd34e5bd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Comprehension Question", "Subsection",
+ CellChangeTimes->{{3.750590226934196*^9, 
+  3.75059023034214*^9}},ExpressionUUID->"a6c69059-1b55-495c-bdbe-\
+a6cbbdc3149d"],
+
+Cell["\<\
+Create one interface using a DynamicModule and a PopupMenu to let the user \
+decide whether to show the graph of a Sine, Cosine, Tangent, Cotangent, \
+Secant, or Cosecant function for x between -2\[Pi] and 2\[Pi].\
+\>", "Text",
+ CellChangeTimes->{{3.750590233414237*^9, 
+  3.750590336808901*^9}},ExpressionUUID->"f38039bc-2452-4c21-8de6-\
+8650dbee4549"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["14.3 Text input", "Section",
+ CellChangeTimes->{{3.63846328674846*^9, 3.638463289980488*^9}, {
+   3.638470718843009*^9, 3.638470721001555*^9}, {3.813937344642803*^9, 
+   3.8139373458033104`*^9}, 3.890837480001955*^9, {3.940690233821228*^9, 
+   3.940690233925583*^9}},ExpressionUUID->"980840a4-68b2-4186-95c5-\
+2edba860a7f8"],
+
+Cell[TextData[{
+ "To request text data from users use an ",
+ StyleBox["InputField", "Input"],
+ ". See here: ",
+ StyleBox[ButtonBox["ref/InputField",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/InputField"],
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.638461885689396*^9, 3.638461916105143*^9}, {
+   3.638462085247377*^9, 3.638462095821515*^9}, {3.638462187781919*^9, 
+   3.638462222604042*^9}, 3.63846242618188*^9, {3.638470728919301*^9, 
+   3.638470742493795*^9}, {3.638470873250547*^9, 3.6384709440052443`*^9}, {
+   3.638471757013365*^9, 3.638471815558049*^9}, {3.890837496319602*^9, 
+   3.890837512533904*^9}},ExpressionUUID->"917a564c-d41c-4def-87b8-\
+7e20cd01b53e"],
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"input", "=", "0"}], "}"}], ",", 
+   RowBox[{"Column", "[", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Row", "[", 
+       RowBox[{"{", 
+        RowBox[{
+        "\"\<Input text here and press the Enter key:\>\"", ",", " ", 
+         RowBox[{"InputField", "[", 
+          RowBox[{"Dynamic", "[", "input", "]"}], "]"}]}], "}"}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Dynamic", "[", 
+       RowBox[{"\"\<The input variable is now equal to: \>\"", "<>", 
+        RowBox[{"ToString", "[", "input", "]"}]}], "]"}]}], 
+     "\[IndentingNewLine]", "}"}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8908269500234547`*^9, 3.890827149599831*^9}},
+ CellLabel->"In[86]:=",ExpressionUUID->"4dfcb24a-70f1-4830-ba13-b0d06ee833ef"],
+
+Cell[TextData[{
+ "Sometimes you need to modify the input so that ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " can use it, and you might need to convert between Strings and Expressions. \
+ \nSee ",
+ StyleBox[ButtonBox["guide/ConvertingBetweenExpressionsAndStrings",
+  BaseStyle->"Link",
+  ButtonData->"paclet:guide/ConvertingBetweenExpressionsAndStrings"],
+  FontWeight->"Bold"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.638462430017633*^9, 3.638462458189015*^9}, {
+  3.638470948893559*^9, 
+  3.638471018742056*^9}},ExpressionUUID->"650942b8-232c-4f0f-839b-\
+1fed8d1d096a"],
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"text", "=", "word"}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Panel", "[", 
+    RowBox[{"Column", "[", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Row", "[", 
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{"\"\<Insert text here\>\"", ",", 
+          RowBox[{"InputField", "[", 
+           RowBox[{"Dynamic", "[", "text", "]"}], "]"}]}], " ", "}"}], "]"}], 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"Panel", "[", 
+        RowBox[{
+         RowBox[{"Style", "[", 
+          RowBox[{
+           RowBox[{"Dynamic", "[", 
+            RowBox[{"Permutations", "[", 
+             RowBox[{"Characters", "[", 
+              RowBox[{"ToString", "[", "text", "]"}], "]"}], "]"}], "]"}], 
+           ",", 
+           RowBox[{"FontFamily", "->", "\"\<Arial\>\""}], ",", "15"}], "]"}], 
+         ",", 
+         RowBox[{"Background", "->", "White"}], ",", 
+         RowBox[{"ImageSize", "->", 
+          RowBox[{"{", 
+           RowBox[{"1000", ",", "100"}], "}"}]}]}], "]"}]}], 
+      "\[IndentingNewLine]", "}"}], "]"}], "]"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.6384624642881804`*^9, 3.638462514825403*^9}, {
+  3.638462563011861*^9, 3.638462564729056*^9}, {3.6384626527306433`*^9, 
+  3.638462686629562*^9}, {3.638462721717476*^9, 3.638462728013081*^9}, {
+  3.6384628291567087`*^9, 3.63846284491096*^9}, {3.8908375437109833`*^9, 
+  3.8908376618518963`*^9}, {3.890837702493848*^9, 3.89083787765862*^9}},
+ CellLabel->
+  "In[104]:=",ExpressionUUID->"285a7687-4c20-484e-a63f-f6168dad84ca"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["14.4 Input by clicking", "Section",
+ CellChangeTimes->{{3.750589120711504*^9, 3.750589123894437*^9}, {
+  3.81393735457304*^9, 3.8139373553430214`*^9}, {3.9406902356944923`*^9, 
+  3.940690235766678*^9}},ExpressionUUID->"678b7f92-7b59-47a4-8d55-\
+8de5e18c443b"],
+
+Cell[TextData[{
+ "To use clicking as a source of user interactivity, you can build clicking \
+on top of a Graphics object using ",
+ StyleBox["ClickPane", "Input"],
+ ".\nDocumentation: ",
+ StyleBox[ButtonBox["ref/ClickPane",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/ClickPane"],
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.638470359890627*^9, 3.638470573159947*^9}, {
+  3.63847109784826*^9, 3.638471107775531*^9}, {3.8908379696168003`*^9, 
+  3.8908379834781837`*^9}},ExpressionUUID->"ae879782-4944-48d3-9140-\
+7a6e07f74143"],
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"pt", "=", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0"}], "}"}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"ClickPane", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Dynamic", "@", 
+      RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"Yellow", ",", 
+          RowBox[{"Disk", "[", "]"}], ",", "\[IndentingNewLine]", "Black", 
+          ",", 
+          RowBox[{"Point", "[", "pt", "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Round", "[", 
+             RowBox[{"pt", ",", ".01"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}]}], "]"}]}], "\[IndentingNewLine]",
+          "}"}], ",", 
+        RowBox[{"ImageSize", "\[Rule]", "Tiny"}]}], "\[IndentingNewLine]", 
+       "]"}]}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"pt", "=", "#"}], ")"}], "&"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.638463889661086*^9, 3.63846391142997*^9}, {
+  3.638470580661661*^9, 3.638470625681993*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"3cf0407b-d8cb-46db-b188-436fbb7aa6a0"],
+
+Cell["\<\
+In this example, the color of the Graphics object gets updated depending on \
+the distance the clicked point is from (0,0).\
+\>", "Text",
+ CellChangeTimes->{{3.8908380096069603`*^9, 
+  3.8908380576147327`*^9}},ExpressionUUID->"f0648045-be8d-487c-a9cf-\
+3bebf16b64ca"],
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"pt", "=", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0"}], "}"}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"ClickPane", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Dynamic", "@", 
+      RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Which", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Norm", "[", "pt", "]"}], "<=", ".4"}], ",", "Red", ",", 
+            
+            RowBox[{
+             RowBox[{"Norm", "[", "pt", "]"}], "<=", ".75"}], ",", "Yellow", 
+            ",", "True", ",", "Green"}], " ", "]"}], ",", 
+          RowBox[{"Disk", "[", "]"}], ",", "\[IndentingNewLine]", "Black", 
+          ",", 
+          RowBox[{"Point", "[", "pt", "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Round", "[", 
+             RowBox[{"pt", ",", ".01"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", 
+              RowBox[{"-", "1.1"}]}], "}"}]}], "]"}]}], "\[IndentingNewLine]",
+          "}"}], ",", 
+        RowBox[{"ImageSize", "\[Rule]", "100"}]}], "\[IndentingNewLine]", 
+       "]"}]}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"pt", "=", "#"}], ")"}], "&"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.89082670059977*^9, 3.8908268482630157`*^9}, {
+  3.890838087423297*^9, 3.890838095613658*^9}},
+ CellLabel->
+  "In[107]:=",ExpressionUUID->"80d613ef-0d8a-4ea0-8cc7-95f3a76467dc"],
+
+Cell["\<\
+To involve more points, you can append the point to a list of points\
+\>", "Text",
+ CellChangeTimes->{{3.890838066789673*^9, 3.8908380786690903`*^9}, {
+  3.8908381138008757`*^9, 
+  3.890838128868225*^9}},ExpressionUUID->"7fcf5ad2-47f7-4b39-b55e-\
+ea5076cac0bd"],
+
+Cell[BoxData[
+ RowBox[{"Framed", "@", 
+  RowBox[{"DynamicModule", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"pts", "=", 
+      RowBox[{"{", "}"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"ClickPane", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Dynamic", "@", 
+       RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"LightBlue", ",", 
+           RowBox[{"Disk", "[", "]"}], ",", "\[IndentingNewLine]", "Black", 
+           ",", 
+           RowBox[{"Point", "[", "pts", "]"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"Text", "[", 
+            RowBox[{
+             RowBox[{"\"\<Number of clicks: \>\"", "<>", 
+              RowBox[{"ToString", "[", 
+               RowBox[{"Length", "[", "pts", "]"}], "]"}]}], ",", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", 
+               RowBox[{"-", "1.1"}]}], "}"}]}], "]"}]}], 
+          "\[IndentingNewLine]", "}"}], ",", 
+         RowBox[{"ImageSize", "\[Rule]", "100"}]}], "\[IndentingNewLine]", 
+        "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"pts", "=", 
+         RowBox[{"Append", "[", 
+          RowBox[{"pts", ",", "#"}], "]"}]}], ")"}], "&"}]}], "]"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.89082670059977*^9, 3.8908268482630157`*^9}, {
+  3.890838087423297*^9, 3.890838095613658*^9}, {3.890838138998994*^9, 
+  3.89083827196482*^9}},
+ CellLabel->
+  "In[114]:=",ExpressionUUID->"e386ed09-86c8-4fd9-9ba9-a154f8b04742"],
+
+Cell[CellGroupData[{
+
+Cell["Comprehension Question", "Subsection",
+ CellChangeTimes->{{3.750590226934196*^9, 
+  3.75059023034214*^9}},ExpressionUUID->"cb923e18-87e7-44a0-958a-\
+167ece80f8b3"],
+
+Cell["\<\
+How can you make sure that the only clicks that are recorded lie *inside* the \
+circle?\
+\>", "Text",
+ CellChangeTimes->{{3.750590233414237*^9, 3.750590336808901*^9}, {
+  3.890838296964862*^9, 
+  3.890838320553496*^9}},ExpressionUUID->"4eadf3fb-6963-47fc-b4f3-\
+63bf2e91a15f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Locators", "Subsection",
+ CellChangeTimes->{{3.890838336466772*^9, 
+  3.890838338666628*^9}},ExpressionUUID->"bc38369d-412c-470d-a4bc-\
+8525a52393b8"],
+
+Cell[TextData[{
+ "If you preferred the locators that were present in Manipulate, you can \
+instead use a ",
+ StyleBox["LocatorPane", "Input"],
+ ".\nDocumentation: ",
+ StyleBox[ButtonBox["ref/LocatorPane",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/LocatorPane"],
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.890838344145671*^9, 
+  3.8908384106393347`*^9}},ExpressionUUID->"bf380ee5-ad5d-43dd-9fa2-\
+4d5ad90edcc1"],
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"pts", "=", 
+     RowBox[{"N", "@", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", "1"}], "}"}], "/", "2"}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", "1"}], "}"}], "/", "2"}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", 
+           RowBox[{"-", "1"}]}], "}"}], "/", "2"}]}], "}"}]}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"LocatorPane", "[", 
+    RowBox[{
+     RowBox[{"Dynamic", "[", "pts", "]"}], ",", 
+     RowBox[{"Dynamic", "[", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Lighter", "[", 
+           RowBox[{
+            RowBox[{"Blend", "[", 
+             RowBox[{"{", 
+              RowBox[{"Blue", ",", "Green"}], "}"}], "]"}], ",", ".5"}], 
+           "]"}], ",", 
+          RowBox[{"Disk", "[", "]"}], ",", "Black", ",", 
+          RowBox[{"Text", "[", 
+           RowBox[{"\"\<Points: \>\"", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "1.1"}], ",", 
+              RowBox[{"-", "1.1"}]}], "}"}]}], "]"}], ",", 
+          RowBox[{"Text", "[", 
+           RowBox[{"pts", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "0.9"}], ",", 
+              RowBox[{"-", "1.1"}]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"Left", ",", "Center"}], "}"}], ",", 
+            RowBox[{"FormatType", "\[Rule]", "StandardForm"}]}], "]"}]}], 
+         "}"}], ",", 
+        RowBox[{"ImageSize", "->", "400"}]}], "]"}], "]"}]}], "]"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.890838435311158*^9, 3.8908386962140217`*^9}},
+ CellLabel->
+  "In[130]:=",ExpressionUUID->"3a11f677-0514-4f6a-b273-02e7da2a3a8b"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["14.5 EventHandler", "Section",
+ CellChangeTimes->{{3.750589093861992*^9, 3.750589097805159*^9}, {
+  3.8139373574031715`*^9, 3.813937359412967*^9}, {3.9406902384559307`*^9, 
+  3.9406902385421963`*^9}},ExpressionUUID->"6ff8a39c-6997-4563-ac8c-\
+df78b4e7b82f"],
+
+Cell[TextData[{
+ "If you want your users to convey information by typing keys on the keyboard \
+or clicking a mouse or touching an interface, you will probably want to use \
+an ",
+ StyleBox[ButtonBox["EventHandler",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/EventHandler"],
+  FontWeight->"Bold"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.750589647441736*^9, 3.7505897024756393`*^9}, {
+  3.7505897534954576`*^9, 3.7505897630309973`*^9}, {3.7505898034982643`*^9, 
+  3.750589826842162*^9}, {3.7505898618557673`*^9, 
+  3.7505898915946913`*^9}},ExpressionUUID->"752f663a-148c-4292-b6af-\
+72317448add1"],
+
+Cell["\<\
+Here is an example from that help page that when you click the circle, its \
+color changes.\
+\>", "Text",
+ CellChangeTimes->{{3.750589647441736*^9, 3.7505897024756393`*^9}, {
+  3.7505897534954576`*^9, 3.7505897630309973`*^9}, {3.7505898034982643`*^9, 
+  3.750589826842162*^9}, {3.7505898618557673`*^9, 
+  3.750589894894466*^9}},ExpressionUUID->"2eefd9dc-b635-48ad-9322-\
+e79e18fbdc4a"],
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"col", "=", "Green"}], "}"}], ",", 
+   RowBox[{"EventHandler", "[", 
+    RowBox[{
+     RowBox[{"Dynamic", "[", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"col", ",", 
+          RowBox[{"Disk", "[", "]"}]}], "}"}], ",", 
+        RowBox[{"ImageSize", "\[Rule]", "Tiny"}]}], "]"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<MouseClicked\>\"", "\[RuleDelayed]", 
+       RowBox[{"(", 
+        RowBox[{"col", "=", 
+         RowBox[{"col", "/.", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Red", "\[Rule]", "Green"}], ",", 
+            RowBox[{"Green", "\[Rule]", "Red"}]}], "}"}]}]}], ")"}]}], 
+      "}"}]}], "]"}]}], "]"}]], "Input",
+ CellLabel->"In[87]:=",
+ CellID->431171395,ExpressionUUID->"d7e6b265-6d63-494b-b885-582d9e8a41ea"],
+
+Cell["\<\
+Here is an example from that help page that when you click the circle (to \
+bring it into focus) and type the letter \[OpenCurlyDoubleQuote]x\
+\[CloseCurlyDoubleQuote], it appends an element to a list.\
+\>", "Text",
+ CellChangeTimes->{{3.750589882138296*^9, 
+  3.750589935447507*^9}},ExpressionUUID->"de90a8fd-208e-48d6-95b7-\
+53a733b3a19a"],
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"someList", "=", 
+     RowBox[{"{", "}"}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"EventHandler", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Graphics", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"Blue", ",", 
+         RowBox[{"Disk", "[", "]"}]}], "}"}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "100"}]}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\"\<KeyDown\>\"", ",", "\"\<x\>\""}], "}"}], 
+       "\[RuleDelayed]", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"AppendTo", "[", 
+          RowBox[{"someList", ",", "1"}], "]"}], ";", 
+         RowBox[{"Print", "[", "someList", "]"}]}], ")"}]}], "}"}]}], "]"}]}],
+   "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.7341672624527435`*^9, 3.734167267822627*^9}, {
+  3.750589772801949*^9, 3.750589789472642*^9}, {3.9406905237195225`*^9, 
+  3.940690524031164*^9}},ExpressionUUID->"fdb69d3e-8d7c-4c2c-8cb6-\
+ece2f5d8805a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["14.6 Using a game controller", "Section",
+ CellChangeTimes->{{3.638463266349962*^9, 3.638463269511839*^9}, {
+  3.8139373609432507`*^9, 3.8139373634730206`*^9}, {3.940690240780388*^9, 
+  3.940690240896141*^9}},ExpressionUUID->"71db0eac-02a7-4e8c-a420-\
+69fad0010bd8"],
+
+Cell[TextData[{
+ "Read this information: ",
+ StyleBox[ButtonBox["howto/UseBuiltinGamepadSupport",
+  BaseStyle->"Link",
+  ButtonData->"paclet:howto/UseBuiltinGamepadSupport"],
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.638470283244364*^9, 
+  3.638470307870203*^9}},ExpressionUUID->"bcc756c4-e228-4cdc-a3e2-\
+e45440a58b29"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["14.7 Other interactivity possibilities", "Section",
+ CellChangeTimes->{{3.7505903659899387`*^9, 3.7505903965424767`*^9}, {
+  3.813937364845995*^9, 3.813937366612942*^9}, {3.9406902421849766`*^9, 
+  3.940690242258625*^9}},ExpressionUUID->"a2a18707-283c-4b18-93f1-\
+edb21dbd973d"],
+
+Cell[TextData[{
+ "To learn more about other available interactivity options, go here: ",
+ StyleBox[ButtonBox["guide/CustomInterfaceConstruction",
+  BaseStyle->"Link",
+  ButtonData->"paclet:guide/CustomInterfaceConstruction"],
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.7505903998114233`*^9, 
+  3.75059043276016*^9}},ExpressionUUID->"effaeb71-b931-4944-ae0f-\
+95053acb29ea"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["14.8 Importing data, spreadsheets, images", "Section",
+ CellChangeTimes->{{3.638471349605095*^9, 3.6384713749636917`*^9}, {
+  3.8139373696529574`*^9, 3.813937371033258*^9}, {3.9406902440034084`*^9, 
+  3.9406902441070004`*^9}},ExpressionUUID->"7512afdf-06e1-44c5-91fc-\
+fc7e094bce46"],
+
+Cell[TextData[{
+ "A more basic level for interacting with the user is to import information \
+(spreadsheet data, images, midi files ...) that you then go on to modify.  \
+(Analyzing data, Modifying images...)  Use the Import command to to this. \
+\[LineSeparator]See here: ",
+ StyleBox[ButtonBox["tutorial/ImportingAndExporting",
+  BaseStyle->"Link",
+  ButtonData->"paclet:tutorial/ImportingAndExporting"],
+  FontWeight->"Bold"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.638471384539517*^9, 3.6384714616196127`*^9}, {
+  3.7824618984480667`*^9, 3.7824619238650646`*^9}, {3.940690553963627*^9, 
+  3.9406905644757767`*^9}},ExpressionUUID->"95429608-2039-4782-b879-\
+6dc99a8c7530"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["14.9 Using curated data", "Section",
+ CellChangeTimes->{{3.638471576431678*^9, 3.63847157909422*^9}, {
+  3.813937372552876*^9, 3.813937374053522*^9}, {3.94069024574222*^9, 
+  3.9406902458123417`*^9}},ExpressionUUID->"dd7f9a7d-4ce6-48ff-8534-\
+50b7ae7fabeb"],
+
+Cell[TextData[{
+ "You can access all of Wolfram\[CloseCurlyQuote]s curated data on many many \
+subjects. ",
+ ButtonBox["See here for all the different types of data available.",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://datarepository.wolframcloud.com/"], None},
+  ButtonNote->"https://datarepository.wolframcloud.com/"]
+}], "Text",
+ CellChangeTimes->{{3.6384715829266043`*^9, 3.6384716352365913`*^9}, 
+   3.6384716854141397`*^9, {3.9406904611172943`*^9, 
+   3.940690474983799*^9}},ExpressionUUID->"08c262ef-0b9d-4042-b895-\
+ae12a5f589d1"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1188, 594.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c535617e-f678-f14c-96d2-ca4f258bca7d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 416, 6, 96, "Title",ExpressionUUID->"b3a821ae-0b22-4b49-ac00-e99a34dd05b9"],
+Cell[999, 30, 178, 3, 33, "Text",ExpressionUUID->"e572f334-0bd3-4eb8-88e5-f331aa5f2ed0"],
+Cell[1180, 35, 439, 11, 33, "Text",ExpressionUUID->"a8539a72-fd57-4318-93f7-20055e782b8f"],
+Cell[CellGroupData[{
+Cell[1644, 50, 384, 6, 66, "Section",ExpressionUUID->"410ff8ea-c86c-4ee0-bb76-b733658e7f68"],
+Cell[2031, 58, 654, 12, 55, "Text",ExpressionUUID->"528dfec6-104b-424d-87e4-8ddf9e228e23"],
+Cell[CellGroupData[{
+Cell[2710, 74, 315, 6, 28, "Input",ExpressionUUID->"283afa66-0068-4694-a97d-1bb0e36b6907"],
+Cell[3028, 82, 331, 7, 38, "Output",ExpressionUUID->"7ab3f18d-3330-144b-88b9-7b530a03fc61"]
+}, Open  ]],
+Cell[3374, 92, 409, 8, 33, "Text",ExpressionUUID->"ff830e82-19f8-43c0-bc0c-c6efccc4a3dc"],
+Cell[3786, 102, 1022, 27, 66, "Input",ExpressionUUID->"27a3748a-a606-4f02-aa0a-f6fef53ccbc4"],
+Cell[4811, 131, 240, 6, 33, "Text",ExpressionUUID->"5e601d6c-f57b-405f-bd0e-1781b04cc0fc"],
+Cell[5054, 139, 147, 2, 28, "Input",ExpressionUUID->"e7850497-b7e5-41d5-a249-48c2e045b4c8"],
+Cell[5204, 143, 265, 7, 33, "Text",ExpressionUUID->"4994b7c3-8703-4829-9885-211d5d37157e"],
+Cell[5472, 152, 204, 3, 28, "Input",ExpressionUUID->"919eee6e-c246-4245-882e-6f2bca5f64a7"],
+Cell[5679, 157, 410, 10, 33, "Text",ExpressionUUID->"2a055f7d-af9d-422f-94de-50104d8848c2"],
+Cell[6092, 169, 1717, 38, 237, "Input",ExpressionUUID->"b01c592f-5ce4-40b7-b33c-9a5a61839dc2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7846, 212, 216, 4, 66, "Section",ExpressionUUID->"0bec8ea2-f984-465f-8c83-350466c23806"],
+Cell[8065, 218, 402, 10, 33, "Text",ExpressionUUID->"40adb86d-be2c-4bcf-a993-a9490a872d41"],
+Cell[8470, 230, 3127, 72, 199, "Input",ExpressionUUID->"dc22b89b-3749-42bf-91f5-3af042f8b909"],
+Cell[CellGroupData[{
+Cell[11622, 306, 214, 4, 53, "Subsection",ExpressionUUID->"c4f17f91-7622-4672-8e53-5595d96e8c0d"],
+Cell[11839, 312, 435, 11, 33, "Text",ExpressionUUID->"10860485-2540-4419-bba8-7fdfbd34e5bd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12311, 328, 169, 3, 53, "Subsection",ExpressionUUID->"a6c69059-1b55-495c-bdbe-a6cbbdc3149d"],
+Cell[12483, 333, 363, 7, 55, "Text",ExpressionUUID->"f38039bc-2452-4c21-8de6-8650dbee4549"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12895, 346, 330, 5, 66, "Section",ExpressionUUID->"980840a4-68b2-4186-95c5-2edba860a7f8"],
+Cell[13228, 353, 685, 15, 33, "Text",ExpressionUUID->"917a564c-d41c-4def-87b8-7e20cd01b53e"],
+Cell[13916, 370, 853, 20, 85, "Input",ExpressionUUID->"4dfcb24a-70f1-4830-ba13-b0d06ee833ef"],
+Cell[14772, 392, 580, 15, 55, "Text",ExpressionUUID->"650942b8-232c-4f0f-839b-1fed8d1d096a"],
+Cell[15355, 409, 1653, 38, 142, "Input",ExpressionUUID->"285a7687-4c20-484e-a63f-f6168dad84ca"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17045, 452, 265, 4, 66, "Section",ExpressionUUID->"678b7f92-7b59-47a4-8d55-8de5e18c443b"],
+Cell[17313, 458, 541, 13, 55, "Text",ExpressionUUID->"ae879782-4944-48d3-9140-7a6e07f74143"],
+Cell[17857, 473, 1249, 31, 161, "Input",ExpressionUUID->"3cf0407b-d8cb-46db-b188-436fbb7aa6a0"],
+Cell[19109, 506, 277, 6, 33, "Text",ExpressionUUID->"f0648045-be8d-487c-a9cf-3bebf16b64ca"],
+Cell[19389, 514, 1595, 41, 161, "Input",ExpressionUUID->"80d613ef-0d8a-4ea0-8cc7-95f3a76467dc"],
+Cell[20987, 557, 271, 6, 33, "Text",ExpressionUUID->"7fcf5ad2-47f7-4b39-b55e-ea5076cac0bd"],
+Cell[21261, 565, 1514, 38, 161, "Input",ExpressionUUID->"e386ed09-86c8-4fd9-9ba9-a154f8b04742"],
+Cell[CellGroupData[{
+Cell[22800, 607, 169, 3, 53, "Subsection",ExpressionUUID->"cb923e18-87e7-44a0-958a-167ece80f8b3"],
+Cell[22972, 612, 286, 7, 33, "Text",ExpressionUUID->"4eadf3fb-6963-47fc-b4f3-63bf2e91a15f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23295, 624, 156, 3, 53, "Subsection",ExpressionUUID->"bc38369d-412c-470d-a4bc-8525a52393b8"],
+Cell[23454, 629, 428, 12, 55, "Text",ExpressionUUID->"bf380ee5-ad5d-43dd-9fa2-4d5ad90edcc1"],
+Cell[23885, 643, 1923, 55, 104, "Input",ExpressionUUID->"3a11f677-0514-4f6a-b273-02e7da2a3a8b"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25857, 704, 263, 4, 66, "Section",ExpressionUUID->"6ff8a39c-6997-4563-ac8c-df78b4e7b82f"],
+Cell[26123, 710, 601, 14, 33, "Text",ExpressionUUID->"752f663a-148c-4292-b6af-72317448add1"],
+Cell[26727, 726, 395, 8, 33, "Text",ExpressionUUID->"2eefd9dc-b635-48ad-9322-e79e18fbdc4a"],
+Cell[27125, 736, 890, 25, 47, "Input",ExpressionUUID->"d7e6b265-6d63-494b-b885-582d9e8a41ea",
+ CellID->431171395],
+Cell[28018, 763, 351, 7, 33, "Text",ExpressionUUID->"de90a8fd-208e-48d6-95b7-53a733b3a19a"],
+Cell[28372, 772, 1095, 29, 104, "Input",ExpressionUUID->"fdb69d3e-8d7c-4c2c-8cb6-ece2f5d8805a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29504, 806, 272, 4, 66, "Section",ExpressionUUID->"71db0eac-02a7-4e8c-a420-69fad0010bd8"],
+Cell[29779, 812, 334, 9, 33, "Text",ExpressionUUID->"bcc756c4-e228-4cdc-a3e2-e45440a58b29"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30150, 826, 284, 4, 66, "Section",ExpressionUUID->"a2a18707-283c-4b18-93f1-edb21dbd973d"],
+Cell[30437, 832, 386, 9, 33, "Text",ExpressionUUID->"effaeb71-b931-4944-ae0f-95053acb29ea"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30860, 846, 289, 4, 66, "Section",ExpressionUUID->"7512afdf-06e1-44c5-91fc-fc7e094bce46"],
+Cell[31152, 852, 675, 14, 77, "Text",ExpressionUUID->"95429608-2039-4782-b879-6dc99a8c7530"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31864, 871, 263, 4, 66, "Section",ExpressionUUID->"dd7f9a7d-4ce6-48ff-8534-50b7ae7fabeb"],
+Cell[32130, 877, 556, 12, 33, "Text",ExpressionUUID->"08c262ef-0b9d-4042-b895-ae12a5f589d1"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

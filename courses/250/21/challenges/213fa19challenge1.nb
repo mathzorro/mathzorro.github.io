@@ -1,0 +1,126 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3542,        116]
+NotebookOptionsPosition[      2302,         83]
+NotebookOutlinePosition[      2646,         98]
+CellTagsIndexPosition[      2603,         95]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["This is the Title", "Title",
+ CellChangeTimes->{{3.77652347003892*^9, 3.7765234977524595`*^9}},
+ Background->RGBColor[
+  0.9, 1, 1],ExpressionUUID->"151a47fb-f9b5-4b95-8e94-17584987df71"],
+
+Cell[CellGroupData[{
+
+Cell["This is a Section Cell", "Section",
+ CellChangeTimes->{{3.7765234992725782`*^9, 
+  3.776523503672388*^9}},ExpressionUUID->"9070ab11-9f38-4650-b1bb-\
+9da78256631b"],
+
+Cell["Here is some text.", "Text",
+ CellChangeTimes->{{3.776523507532338*^9, 
+  3.7765235135319433`*^9}},ExpressionUUID->"02b8b5ea-bc55-4003-abe0-\
+5aa2cb956e33"],
+
+Cell[CellGroupData[{
+
+Cell["In Mathematica", "Item",
+ CellChangeTimes->{{3.7765235446418867`*^9, 
+  3.7765235500025015`*^9}},ExpressionUUID->"bbbb43b0-4436-42e2-bc57-\
+4dd2410e9924"],
+
+Cell["You can make bulleted lists!", "Item",
+ CellChangeTimes->{{3.7765235446418867`*^9, 
+  3.7765235590123634`*^9}},ExpressionUUID->"ab4ee97b-f81c-4aaf-9ce9-\
+eaa26afe1202"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Look out below!", "Section",
+ CellChangeTimes->{{3.776523574422327*^9, 
+  3.7765236047122145`*^9}},ExpressionUUID->"ee4d6a6f-87a5-4c61-93d2-\
+5360ce62b714"],
+
+Cell[CellGroupData[{
+
+Cell["Look out below!", "Subsection",
+ CellChangeTimes->{{3.7765236064223537`*^9, 
+  3.7765236208523703`*^9}},ExpressionUUID->"df9df925-22c8-4446-bd97-\
+2e1bcd432571"],
+
+Cell[CellGroupData[{
+
+Cell["Look out below!", "Subsubsection",
+ CellChangeTimes->{{3.776523623021857*^9, 
+  3.776523627102359*^9}},ExpressionUUID->"e73ce073-0f64-4671-89af-\
+762c6cd65ce6"],
+
+Cell["You found me!", "Text",
+ CellChangeTimes->{{3.7765236292208896`*^9, 
+  3.7765236316521187`*^9}},ExpressionUUID->"be970db9-4973-4005-9fd2-\
+0723db3f75b9"]
+}, Closed]]
+}, Closed]]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{759, 833},
+WindowMargins->{{-1017, Automatic}, {Automatic, 8}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 193, 3, 112, "Title",ExpressionUUID->"151a47fb-f9b5-4b95-8e94-17584987df71"],
+Cell[CellGroupData[{
+Cell[798, 29, 169, 3, 67, "Section",ExpressionUUID->"9070ab11-9f38-4650-b1bb-9da78256631b"],
+Cell[970, 34, 162, 3, 34, "Text",ExpressionUUID->"02b8b5ea-bc55-4003-abe0-5aa2cb956e33"],
+Cell[CellGroupData[{
+Cell[1157, 41, 160, 3, 31, "Item",ExpressionUUID->"bbbb43b0-4436-42e2-bc57-4dd2410e9924"],
+Cell[1320, 46, 174, 3, 31, "Item",ExpressionUUID->"ab4ee97b-f81c-4aaf-9ce9-eaa26afe1202"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1543, 55, 162, 3, 67, "Section",ExpressionUUID->"ee4d6a6f-87a5-4c61-93d2-5360ce62b714"],
+Cell[CellGroupData[{
+Cell[1730, 62, 167, 3, 53, "Subsection",ExpressionUUID->"df9df925-22c8-4446-bd97-2e1bcd432571"],
+Cell[CellGroupData[{
+Cell[1922, 69, 166, 3, 44, "Subsubsection",ExpressionUUID->"e73ce073-0f64-4671-89af-762c6cd65ce6"],
+Cell[2091, 74, 159, 3, 34, "Text",ExpressionUUID->"be970db9-4973-4005-9fd2-0723db3f75b9"]
+}, Closed]]
+}, Closed]]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

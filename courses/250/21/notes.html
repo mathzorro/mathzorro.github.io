@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mathematical Computing &bull; Course Content</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="author" content="Christopher Hanusa" />
+        <link rel="shortcut icon" href="favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="../../../css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../../../css/style1.css" />
+        <link href='https://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>    
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-47380773-6', 'auto');
+                ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header_wrap">
+                <div class="header">
+                    <span class="left">
+                        <a href="../../../index.html">HOME</a> > 
+                        <a href="../../index.html">Courses</a> > 
+                        <a href="index.html">250fa21</a>
+                    </span>
+                <div class="header_right">
+                    <span class="right">
+                        <a href="index.html">Home</a> &bull; 
+                        <a href="syllabus.html">Syllabus</a> &bull; 
+                        <a href="letters.html">Letters</a> &bull; 
+                        <a href="calendar.html">Calendar</a> &bull; 
+                        <a href="project.html">Projects</a> &bull; 
+                        <a href="notes.html">Content</a> 
+                    </span>
+                </div>
+                </div>
+            </div>
+
+            <div class="main">
+                           
+                <div class="course_head">            
+                <div class="course_head_img"><a href="index.html"><img src="../../../images/250c.png" height="100"/></a></div>
+                <div class="course_head_suptitle_250">Mathematical Computing, Fall 2021</div>
+                <div class="course_head_title_250">Course Content</div>
+                </div>
+                
+                <div class="course_main_250">
+                    <p>Check back often for homework assignments, tutorials, and key topics covered each day.</p>
+                        
+                    <p><font size=+2><b>"This is the plan, until it is no longer the plan"!</b></font>
+                        <br><span style="color: #A00;"><font size=+1><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Words to live by in the time of Corona.</i></font></span></p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <div class="notes_section">Homework 0:</div>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<!-- Goal: Create screencasts about the tutorials for them to work on outside class.  -->       <!-- Goal: Give them better direction for their projects so that they can work on together.  In Project 2: Are they going to be using ParametricPlot, or Graphics Objects, or PolyhedronData?  In Project 3: Are they going to use ClickPane or EventHandler KeyDown or DynamicModule something else? -->       
+                    
+<!-- I suggest teaching Switch, revisit If statements in Project 3 tutorials. Also Row, Column, Pane for developing the interfaces. How do we take an input and do something? Have homeworks with the most basic examples of each of these "input + doing something with it" that can be used to build things. And multiple examples of putting "Dynamic" in the right places. -->
+                    
+<div class="date">Before class on Wednesday, August 25:</div>
+<ul>
+    <li>Visit <a href="https://flipgrid.com/6aa34370">Flipgrid</a> and record a 1-minute introductory video about yourself. Click on "Join with Microsoft" and use your Queens College Office 365 account email account to log in.  Reminder: that will look something like Alicia.Lastname25@qmail.cuny.edu.</li>
+    <li>Go to our <a href="https://campuswire.com/c/">Campuswire Community</a>. Sign up for an account and sign in using code 3922. In the Class Feed there is a post asking you to say hi and share a fun link.  Please contribute.</li>
+    <li>Follow the instructions on the <a href="syllabus.html">Course Syllabus page</a> to get access to Mathematica online and install Mathematica on your home computer.  <b>Remember to use your QC account when you sign up!</b></li>
+    <li><a href="http://cuny.zoom.us">Create an account with Zoom</a> so you can join our class Zoom session.</li>
+    <li>Get pumped to join us at 1:40pm on Wednesday, August 25!</li>
+</ul>
+
+                    
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <div class="notes_section">Introduction to Mathematica (4 tutorials)</div>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+                    
+<div class="date">Wednesday, August 25</div>
+
+<div class="defn" style="color: #A00;">Today's class is online! (As with ALL first class sessions at Queens College.)<br>The class Zoom link is available on Campuswire. See below for access.</div>
+<div class="defn">In class: </div>
+<ul>
+    <li>Today we are setting the stage for a thought-provoking semester.</li>
+    <li><a href="notes/250fa21day1.pdf">Introduction &amp; Syllabus Discussion</a></li>
+    <li>Breakout room discussion and exploration.</li>
+    <li>First steps in Mathematica<!-- and then I'll set you loose to exploring Mathematica and thinking about how it can be helpful in your past and future classes-->.</li>
+    <li>Together work through Tutorial 1: <a href="mma/250fa21tut01.nb">Welcome to Mathematica</a>. Right click, then choose Save As... 
+<!--        <ul> 
+            <li>Use password "qc" to access the file.</li>
+            <li>If you have installed Mathematica on your own computer, click on "Download" to save a copy to your computer and work on it there.</li>
+            <li>If you only have access to Mathematica online, click on "Make Your Own Copy" and open it in Mathematica Online.  You will need to sign in with your Wolfram Account if you haven't done so yet.</li>
+            <li>These are interactive notebooks! You should be trying things out and exploring.</li>
+        </ul>  -->
+        <ul>
+            <li>These are interactive notebooks! You should be trying things out and exploring.</li>
+        </ul>
+    <li>Once you complete Tutorial 1, Explore the following locations:</li>
+        <ul>
+            <li>Explore the Documentation Center.  It's in the Help Menu.  There is also an <a href="https://reference.wolfram.com/">online version</a> with the same information that is less interactive.</li>
+            <li>Explore the <a href="http://demonstrations.wolfram.com/">Wolfram Demonstrations Project</a> to see what type of interactive things people have created in Mathematica. </li>
+        </ul>
+    <li>If you ran into problems accessing the technology, let Prof. Hanusa know and he'll help get you up and running.</li>
+</ul>
+                
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Monday, August 30</div> 
+<div class="defn"><span style="color: #A00; font-size: 14pt">IMPORTANT UPDATE: Class on Monday 8/30 and Wednesday 9/1 will both be online in the same Zoom Room as last week.</span> <s><span style="color: #A00;">Today's class is in person! To get to our classroom Rosenthal Library 227, enter the library, go down one flight of stairs, turn left and the classroom is right there on the left.</span> <br>Make sure to give yourself extra time to get on campus, into the library, and to find our classroom so we can be ready to start at 1:40pm.</s></div>
+<div class="defn">Before class:</div>
+<ul>
+    <li>If you didn't yet record a video on <a href="https://flipgrid.com/6aa34370">Flipgrid</a>, please do so!</li>
+    <li>Make sure you have Mathematica up and running on your home computer. If are running into problems let Prof. Hanusa know!</li>
+    <li>Answer this <a href="https://forms.gle/BM97jFqDRkvMExRy9">First Day Survey</a> so I can better tailor the class and understand about your learning situation.</li>
+    <li>Complete Tutorial 1 that you started in class.</li>
+    <li>Thoroughly read all pages of the course webpage. This should answer all the questions that you may have about the class.</li>
+    <li>Watch and work through these two video tutorials.  Remember to follow along with Mathematica open alongside and try out the presented commands yourself. </li>
+    <ul>
+        <li>Watch at least the first 17 minutes of the <a href="http://www.wolfram.com/broadcast/screencasts/handsonstart/">Hands-on Start to Mathematica</a>.  You'll learn how to add sections, text, and mathematical input into your notebooks directly and through "free-form input".</li>
+        <li>Here is Tutorial 2: <a href="mma/250fa21tut02.nb">Introduction to Lists</a>.
+        <br>Follow along as I work through Tutorial 2 on YouTube: <a href="https://youtu.be/jtgvSl2TdU4">Watch Part 1</a>.  <a href="https://youtu.be/ot6zU3-otsc">Watch Part 2</a>. (Do try to get through at least Part 1 to prepare for class Monday.)</li>
+    </ul>
+<!--    <li>Answer these <a href="mma/250fa21tut02q.nb">Comprehension Questions for Tutorial 2</a>. (Same password: qc)</li>-->
+    <li>Remember: If you have questions, be sure to ask a question in our <a href="https://campuswire.com/c/">Campuswire community</a>.</li>
+    <li>Last: Go to our <a href="https://campuswire.com/c/">Campuswire community</a>. Answer the <b>Office Hours Poll</b> and contribute to the <b>Daily Question for August 30</b>.
+    </li>
+</ul>
+
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Get to know each other in person!</li>
+    <li>Work in groups to puzzle through questions related to Tutorial 2 presented in class.</li>
+</ul>
+
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Wednesday, September 1</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li><a href="project.html">Your first project</a> will be creating a tutorial for people who want to learn more about Mathematica's capabilities.  Keep an eye out for (and make a note about) something that you want to investigate further.</li>
+    <li>At the very least, complete Tutorial 2. If you have more energy, work through Tutorial 3 too:</li>
+    <li>Here is Tutorial 3: <a href="mma/250fa21tut03.nb">Introduction to Lists</a>.
+        <br>Follow along as I work through Tutorial 3 on YouTube: <a href="https://youtu.be/0b693OU7_SE">Watch Part 1</a>.  <a href="https://youtu.be/2hBhQST1vL0">Watch Part 2</a>.
+    </li>
+    <li>If you have questions or comments, be sure to ask a question in our <a href="https://campuswire.com/c/">Campuswire community</a>.</li>
+    <li>Start exploring the Documentation Center.  Follow the links at the bottom of the pages to other commands, and keep going. (Kinda like when you get lost in Wikipedia!) Keep track of commands that seem particularly interesting to share below.</li>
+    <li>Check out the Wolfram Demonstrations Project. (Or another of the "Inspiring Links" on our homepage.)  Explore what people have been able to do with Mathematica, and keep track of a project that seems particularly interesting to share below.</li>    
+    <li>Go to our <a href="https://campuswire.com/c/">Campuswire community</a> and contribute to the <b>Daily Question for September 1</b> to share what you found above.</li>
+<!--    <li>Remember: Feel free to schedule a time to meet using <a href="https://calendly.com/chanusa/office-hours">Calendly</a>.</li> -->
+</ul>
+<div class="defn">In class: </div>
+<ul>
+    <li>We'll address questions that people have brought up on Campuswire.</li>
+    <li>We'll break into groups to work on the Challenge Questions for Tutorial 3.</li>
+    <li>Plan to meet with another classmate to work together before Monday 9/13.</li>
+</ul>
+
+<!----------------------------
+******************************
+------------------------------>                    
+                    
+<div class="date"><span style="color: #A00;"><i><b>No class on Monday, September 6 or Wednesday, September 8</b></i></span></div>                    
+<div class="date"><b>If you are eligible and you haven't yet done so: <a href="https://vote.nyc/page/register-vote">Register to Vote!</a></b></div>
+
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Monday, September 13</div>
+<div class="defn"><span style="color: #A00; font-size: 14pt">Class on Monday 9/13 will be online in the same Zoom Room as before.</span></div>                    
+<div class="defn">Before class:</div>
+<ul>
+    <li>Meet for one hour <b>outside of classtime</b> with at least one other classmate.  Your goal is to get together to talk about Mathematica, working together to complete tutorials or questions. You may even want to discuss what you want to work on for Project 1. Feel free to use the DM or class chatroom feature on Campuswire to find a partner (or partners) to work with.
+    <br>Type up one paragraph (5&ndash;7 sentences) about something that you learned or experienced that you would not have if you had worked alone. <a href="https://forms.gle/UrryojCfkruD2k319">Submit your paragraph and the name of the person you met with</a> and it will count toward your class participation grade.</li>
+    <li>Today's focus is cataloging useful Mathematica Techniques and Shortcuts</li>
+    <ul>
+            <li><a href="helpfulinfo.html">Here is some useful information</a> that can be helpful to know when you are using Mathematica.</li>
+            <li>Here is Tutorial 4: <a href="mma/250fa21tut04.nb">Mathematica Shortcuts</a>.
+            <br>Follow along as I work through Tutorial 4 on YouTube: <a href="https://www.youtube.com/watch?v=K3-crFse7jM">Watch Now</a>. </li>
+    </ul>
+    <li>Take some time to catch up on the Tutorials 2 and 3 and their Comprehension and Challenge Questions.</li>
+    <li>Explore the Table command in the Documentation center. Go to our <a href="https://campuswire.com/c/">Campuswire community</a> and contribute to the <b>Daily Question for September 13</b> to share what you found.</li>
+    <li>Spend some time thinking about the topic you would like to work on for <a href="project.html">Project 1</a>.  Think about the following:
+        <blockquote>Which class or general concept will you focus on? Who will be the audience for your Mathematica notebook? Was there a specific topic in that class was difficult to understand and would benefit from a Mathematica tutorial? - OR - Is there a specific topic that you'd like to learn more about in Mathematica?</blockquote></li>
+        <li><a href="https://forms.gle/f9Eu7cYqrnwJbDhJA"><b>Use this form to submit your initial project thoughts</b></a> before you go to bed on Sunday, September 12.
+    </li>
+</ul>
+<div class="defn">In class: </div>
+<ul>
+    <li>General discussion about the Table command.</li>
+    <li>More of your questions from Tutorials 2 and 3.</li>
+    <li>Getting to know Project 1 groupmates.</li>
+    <li>Prof. Hanusa will meet with the groups to discuss their project topics.</li>
+</ul>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <div class="notes_section">Keys to Functional Programming (2 tutorials)</div>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Monday, September 20</div>
+<div class="defn"><span style="color: #A00; font-size: 14pt">Class on Monday 9/20 will be online in the same Zoom Room as before.</span></div>                    
+<div class="defn">Before class:</div>
+<ul>
+    <li>Your homework involves learning some new techniques and working on your project. Tutorials 5 and 6 form the basis for everything we are going to do this semester, so make sure to pay attention, ask questions, and investigate further!</li>
+    <li>Here is Tutorial 5: <a href="mma/250fa21tut05.nb">Functions and the Map command</a>.
+        <br>Follow along as I work through Tutorial 5 on YouTube: <a href="https://www.youtube.com/watch?v=6DkVxESNuzk&list=PLj76nfNlZz17KQaRw4OgvyEgE5ohg-307&index=7&t=0s">Watch Part 1</a>.  <a href="https://www.youtube.com/watch?v=jxoQbJ9lf8A&list=PLj76nfNlZz17KQaRw4OgvyEgE5ohg-307&index=7">Watch Part 2</a>.  <a href="https://www.youtube.com/watch?v=POhxTv7jtlY&list=PLj76nfNlZz17KQaRw4OgvyEgE5ohg-307&index=8">Watch Part 3</a>.
+    </li>
+    <li>Additional resources:</li>
+    <ul>
+        <li>Highly recommended: Watch this video on <a href="http://www.wolfram.com/broadcast/video.php?c=89&v=299">Elementary Programming in Mathematica</a> from time 0:00 to time 2:47 and then from time 6:47 to time 8:37 for an additional perspective about defining functions, using Map, and Nest. (Advanced students should watch the whole video.)</li>
+        <li>Recommended: Watch this video on <a href="https://www.wolfram.com/wolfram-u/an-elementary-introduction-to-the-wolfram-language/25-ways-to-apply-functions.html">Ways to apply functions</a> starting at time 1:52. It gives a number of examples that compare the difference between using @ and /@.</li>
+        <li>Optional: A bit more advanced resource is this video from Wolfram U on <a href="http://www.wolfram.com/wolfram-u/an-elementary-introduction-to-the-wolfram-language/40-defining-your-own-functions.html">Defining your own functions</a>.</li>
+    </ul>
+    <li>Sometime this week you are expected to contribute a <b>question or answer</b> about Tutorial 5, Tutorial 6, or the associated videos in the <b>Class Feed</b> of our <a href="https://campuswire.com/c/">Campuswire community</a>.</li>
+    <li>Research some concepts that you will need for your project.  Start a Mathematica notebook where you play around with some of these concepts and developed an outline of your tutorial.  Bring this notebook to class.</li>
+    <li>If you have questions or comments about the project and its requirements, <a href="https://forms.gle/t82Sp5LwWbvsR7is8">submit them here</a>.</li>
+    <li>Remember to sign up for <a href="http://calendly.com/chanusa">office hours</a> if you want to talk about homework or your project.</li>
+</ul>
+<div class="defn">In class: </div>
+<ul>
+    <li>We'll discuss questions you have about the project.</li>
+    <li>Groupwork on Tutorial 5 Comprehension questions.</li>
+    <li>Prof. Hanusa will visit each group and talk with everyone about their projects.</li> 
+</ul>
+
+<!----------------------------
+******************************
+------------------------------>
+                                        
+<div class="date">Wednesday, September 22</div>
+<div class="defn"><span style="color: #A00; font-size: 14pt">Class on Wednesday 9/22 will be online in the same Zoom Room as before.</span></div>                    
+<div class="defn">Before class:</div>
+<ul>
+    <li>Here is Tutorial 6: <a href="mma/250fa21tut06.nb">Anonymous Functions</a>.
+        <br>Follow along as I work through Tutorial 6 on YouTube:  <a href="https://www.youtube.com/watch?v=ERbiEnVZOyY&list=PLj76nfNlZz17KQaRw4OgvyEgE5ohg-307&index=9">Watch the video</a>. 
+    </li>
+    <li>Watch this video that has <a href="https://www.wolfram.com/wolfram-u/an-elementary-introduction-to-the-wolfram-language/26-pure-anonymous-functions.en.html">more examples of applying anonymous functions</a>.</li>
+<!--    <li>Answer the <a href="mma/250fa21tut06q.nb">Comprehension Questions for Tutorial 6</a>.</li>-->
+
+    <li>Especially if you didn't post a question (or answer) earlier this week, contribute a question (or answer) about Tutorial 5 or Tutorial 6 in our <a href="https://campuswire.com/c/">Campuswire community</a>.</li>
+    <li>We are now defining our own functions and applying techniques of Functional Programming. There is a list of Mathematica commands related to this on the Documentation Center page "guide/FunctionalProgramming". This can be another good place to find questions that you'd like to learn more about and that you can post about on Campuswire.</li>
+    <li>Make good progress on your <a href="project.html">tutorial project</a>.  Aim to know all the commands you will be teaching and spend the time to be about half-way done with the tutorial.</li>
+</ul>
+<div class="defn">In class: </div>
+<ul>
+    <li>Discussion about items people have brought up on Campuswire.</li>
+    <li>Groupwork on Tutorial 6 Comprehension questions.</li>
+    <li>Prof. Hanusa will visit each group and talk with everyone about their projects.</li> 
+</ul>
+
+                                        
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Monday, September 27</div>
+<div class="defn"><span style="color: #A00; font-size: 14pt">Class Monday 9/27 is asynchronous. See below.</span></div>                    
+<div class="defn">Before class:</div>
+<ul>
+    <li><span style="color:#900;font-weight:900">No later than Sunday night:</span> Complete your Mathematica Tutorial notebook, your presentation video, and your one-to-two page writeup. They should be in a final form. Send these files to your peer review partner.  If you want to use Flipgrid to record and post your presentation video, <a href="https://flipgrid.com/6dae740c">you can do that here.</a> </li>
+    <li><span style="color:#900;font-weight:900">No later than Monday night:</span> Complete <a href="../20/notes/250fa20p1peer.pdf">this peer review worksheet</a> and determine a good time to meet by video to give feedback to your partner about their presentation.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Today's class time is asynchronous.  (There is no formal class time.)  Prof. Hanusa will connect to the Zoom Room during class time in case you have questions you want to ask about the project or anything else.</li>
+</ul>
+                    
+<!----------------------------
+******************************
+------------------------------>
+                                        
+<div class="date">Wednesday, September 29</div>
+<div class="defn"><span style="color: #A00; font-size: 14pt">Class on Wednesday 9/29 will be online in the same Zoom Room as before.</span></div>                    
+<div class="defn">Before class:</div>
+<ul>
+    <li>Incorporate the feedback from your partner into a revised tutorial, presentation, and writeup.  <b>Make sure you address how your project changed during the revision process.</b> </li>
+    <li>Submit your project <b>before class</b> by doing the following:
+    <ul>
+        <li><a href="https://flipgrid.com/f4e92a26">Post your video presentation here.</a>  If you recorded or edited your presentation on another platform, you can upload it after you click over to "Record a response".</li>
+        <li><a href="https://www.dropbox.com/request/YOg4rqiCZxcpBylVwsj6">Upload your Mathematica file here</a>. </li>
+        <li><a href="https://www.dropbox.com/request/5mGftyOG7UZsrwQIbimY">Upload your Writeup file here</a>.</li>
+    </ul>
+        You will be asked to watch at least five of the presentations before Monday's class.
+    </li>
+    <li>In class, Professor Hanusa will discuss topics from Tutorials 2&ndash;6. Please prepare questions about this content that you would like him to go over. No matter how small the questions, please ask. The goal is to become fluent in creating and modifying lists as well as creating and using named and unnamed functions. It would be great if you could post the questions before class in the <a href="https://campuswire.com/c/">Campuswire community</a>, although it's okay to keep them for class.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Professor Hanusa will go over the questions you have about Tutorials 2&ndash;6.</li>
+</ul>
+
+                 
+
+
+                                   
+
+                    
+                    
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<div class="notes_section">Graphics and 3D Printing (6 tutorials)</div>
+                    
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+                    
+
+
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Monday, October 4</div>
+<div class="defn"><span style="color: #A00; font-size: 14pt">Class on Monday 10/4 is IN PERSON! See details posted on Campuswire.</span><br>Make sure to give yourself extra time to get on campus, into the library, and to find our classroom so we can be ready to start at 1:40pm.</div>                    
+<div class="defn">Before class:</div>
+<ul>
+    <li>You are assigned five other presentations to watch and comment on (using a video response) and you should choose at least five other presentations to watch. This is posted on Campuswire.</li>
+    <li><a href="https://forms.gle/hf3dG4vbB5GUgKSh9">Provide feedback about two presentations that you thought were well done and about how class is going for you.</a></li>
+    <li>Sign up for a <a href="https://www.shapeways.com/education-discount">Shapeways for Education</a> account <b>with your Queens College email address</b>.</li>
+    <li>If you did not yet sign up to visit and have an orientation at the QC Makerspace, <a href="https://library.qc.cuny.edu/makerspace/">sign up for an appointment online</a>.</li>
+    <li>Today we are learning about two topics:</li>
+    <li>Here is Tutorial 7: <a href="mma/250fa21tut07.nb">Booleans</a>.
+        <br>Follow along as I work through Tutorial 7 on YouTube: <a href="https://www.youtube.com/watch?v=xntc7nGJqTc&list=PLj76nfNlZz17KQaRw4OgvyEgE5ohg-307&index=10">Watch Here</a>.
+    </li>
+    <li>Here is Tutorial 8: <a href="mma/250fa21tut08.nb">Basics of 2D Graphics</a>.
+        <br>Follow along as I work through Tutorial 8 on YouTube: <a href="https://www.youtube.com/watch?v=mXE4KM3g32U&list=PLj76nfNlZz17KQaRw4OgvyEgE5ohg-307&index=11">Watch Part 1</a>.  <a href="https://www.youtube.com/watch?v=EoPRQFQRMzo&list=PLj76nfNlZz17KQaRw4OgvyEgE5ohg-307&index=12">Watch Part 2</a>.
+    </li>
+    <li>Feel free to ask a question about Tutorials 7 or 8 on our <a href="https://campuswire.com/c/">Campuswire community</a>.</li>
+</ul>
+                    
+<div class="defn">In class:</div>
+<ul>
+    <li>We're IN PERSON!</li>
+    <li>Discussion about Tutorials 7 and 8.</li>
+    <li>Groupwork on Tutorial 8 Comprehension and Challenge questions.</li>
+</ul>                
+
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Wednesday, October 6</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li>Here is Tutorial 9: <a href="mma/250fa21tut09.nb">Curves and Regions in Two Dimensions</a>.
+        <br>Follow along as I work through Tutorial 9 on YouTube: <a href="https://www.youtube.com/watch?v=FgItIdhd2qY&list=PLj76nfNlZz17KQaRw4OgvyEgE5ohg-307&index=13">Watch Here</a>.
+    </li>
+<!--    <li>Answer the <a href="mma/250fa21tut09q.nb">Comprehension Questions for Tutorial 9</a>.</li>
+    <li>Go to our <a href="https://campuswire.com/c/">Campuswire community</a> and contribute to the <b>Daily Question for September 30</b>.</li>-->
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Discussion about items people have brought up on Campuswire.</li>
+    <li>Groupwork on Tutorial 9 Comprehension and Challenge questions.</li>
+</ul>          
+
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date"><span style="color: #A00;"><i><b>No class on Monday, October 11</b></i></span></div>                         
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Wednesday, October 13</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li>Read through the information about <a href="project.html">Project 2</a>.</li>
+    <li>Read through the following mathematical blogs to start to get an idea about interesting mathematical concepts and the types of mathematical art that has been created.  Here are some suggested <i><b>starting</b></i> links; include more of whatever you find in the discussion board for your classmates.
+    </li>
+    <ul>
+        <li>http://www.shapeways.com/shops/bathsheba</li>
+        <li>http://www.shapeways.com/shops/henryseg </li>
+        <li>http://www.shapeways.com/art/mathematical-art</li>
+        <li>http://gallery.bridgesmathart.org/exhibitions/2014-Bridges-Conference</li>
+        <li>http://www.bugman123.com/Math/</li>
+        <li>http://www.thingiverse.com/mathgrrl/about</li>
+        <li>http://mathgrrl.com/hacktastic/ </li>
+        <li>http://recodeproject.com/</li>
+        <li>http://blog.matthen.com/ </li>
+        <li>http://blog.wolfram.com/ </li>
+        <li>http://mathmunch.org/</li>
+        <li>http://aperiodical.com/</li>
+    </ul>
+    <li><span style="color:#900"><b>Important:</b></span> Go to Campuswire and contribute to the <b>Daily Question: October 13</b> by providing a link to two or three pieces of mathematical animations, visualizations, or art that is particularly striking or inspiring to you, along with why you selected each piece.
+    </li>
+    <li>Here is Tutorial 10: <a href="mma/250fa21tut10.nb">Basic 3D Graphics</a>.
+        <br>Follow along as I work through Tutorial 10 on YouTube: <a href="https://www.youtube.com/watch?v=nDEhyfV0nwI&list=PLj76nfNlZz17KQaRw4OgvyEgE5ohg-307&index=14">Watch Here</a>.
+    </li>
+    <li>Here is Tutorial 11: <a href="mma/250fa21tut11.nb">Using Functions to create Curves, Surfaces, and Shapes in 3D</a>.
+        <br>Follow along as I work through Tutorial 11 on YouTube: <a href="https://www.youtube.com/watch?v=yjrOAMzLh0U&list=PLj76nfNlZz17KQaRw4OgvyEgE5ohg-307&index=15">Watch Here</a>. 
+    </li>
+    <li>Here are some <a href="mma/250fa21tut10q.nb">Comprehension Questions for Tutorial 10</a> and <a href="mma/250fa21tut11q.nb">Comprehension Questions for Tutorial 11</a>.</li>
+</ul>
+                    
+
+<div class="defn">In class:</div>
+<ul>
+    <li>Discussion of your questions about Tutorials 10 and 11.</li>
+    <li>Discussion of 3D printing and the aesthetics of sculpture.</li>
+    <li>Discussion of <a href="http://www.getty.edu/education/teachers/building_lessons/elements_art.pdf">elements of art</a> and <a href="http://www.getty.edu/education/teachers/building_lessons/principles_design.pdf">principles of design</a>.</li>
+    <li>Discussion of the mathematical art you shared on Campuswire.</li>
+</ul>
+
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Monday, October 18</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li>Catch up with Tutorials 10 and 11.</li>
+    <li>Here is Tutorial 12: <a href="mma/250fa21tut12.nb">Making High Quality 3D Prints</a>.
+        <br>Follow along as I work through Tutorial 12 on YouTube: <a href="https://www.youtube.com/watch?v=-nIIsONlSPs&list=PLj76nfNlZz17KQaRw4OgvyEgE5ohg-307&index=16">Watch Part 1</a>.  <a href="https://www.youtube.com/watch?v=ogHvhAReO2c&list=PLj76nfNlZz17KQaRw4OgvyEgE5ohg-307&index=17">Watch Part 2</a>.  <a href="https://www.youtube.com/watch?v=3NoRIVqP9wI&list=PLj76nfNlZz17KQaRw4OgvyEgE5ohg-307&index=18">Watch Part 3</a>.
+    </li>
+    <li>Here are some <a href="mma/250fa21tut12q.nb">Comprehension and Challenge Questions for Tutorial 12</a>. </li>
+    <li><b>Devote a good chunk of time</b> to research your mathematical topic and start sketching <b>on paper</b> some of the concepts you are considering.  Determine the types of artistic elements or design principles that you would like your project to convey.</li>
+    <li>Either this week or next, you are expected to contribute a <b>question or answer</b> about Tutorial 10, 11, 12, 3D design, or 3D printing in our <a href="https://campuswire.com/c">Campuswire community</a>.</li>
+</ul>
+                    
+<div class="defn">In class:</div>
+<ul>
+    <li>Your Questions about Tutorials 10, 11, and 12.</li>
+    <li>Groupwork on Comprehension and Challenge Questions.</li>
+    <li>You will work with groupmates and Prof. Hanusa will come to each group and discuss where you plan to go with your project.</li>
+</ul>                    
+                   
+               
+                   
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Wednesday, October 20</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li>Watch <a href="https://www.youtube.com/watch?v=BTTnaI4EYnY">How Products are Made with 3D printing</a>. (4 minutes)</li>
+    <li>Check out some <a href="../../../mathematica/index.html#mwe">Minimal Working Examples</a>.</li>
+    <li>Read through a couple of my blog posts about <a href="http://blog.mathzorro.com/">3D Design in Mathematica</a>.</li>
+    <li>Here are some additional <a href="mma/250fa21tut13.nb">3D Design Technique Examples</a>. </li>
+    <li>If you didn't ask or answer a question last week on <a href="https://campuswire.com/c">Campuswire</a> about the tutorials or 3D design / 3D printing, do so by today.</li>
+    <li>Start a Mathematica notebook that plays around with some of these ideas.  <b>Bring your sketches and notebook to class.</b></li>
+    <li><font color="red">As you work on your project, keep a notebook of your conscious decisions you are making in its construction.  Also keep track of the mathematical concepts or the pieces of mathematical art that inspired your art.</font>  You will need these things when you write the discussion that will accompany your piece of art.</li>
+</ul>
+                    
+<div class="defn">In class:</div>
+<ul>
+    <li>Daily Question Discussion</li>
+    <li>You will work with groupmates and Prof. Hanusa will come to each group and discuss where you plan to go with your project.</li>
+</ul>
+                   
+<!----------------------------
+******************************
+------------------------------>
+                   
+<div class="date">Monday, October 25</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li>Some advanced techniques are shown in this video:  <a href="http://www.wolfram.com/broadcast/video.php?v=644">Scan, Convert, and Print</a>, a Wolfram Screencast.  You may find it interesting to watch, play, and explore!</li>    
+    <li>If you didn't ask or answer a question on <a href="https://campuswire.com/c">Campuswire</a> about the tutorials or 3D design / 3D printing, please do so.</li>
+    <li><b>Devote a good chunk of time</b> to research your mathematical topic. Your ideas should be taking full form.  Start assembling your ideas in Mathematica</li>
+</ul>
+                    
+<div class="defn">In class:</div>
+<ul>
+    <li>3D Printing Materials</li>
+    <li>You will work with groupmates and Prof. Hanusa will come to each group and discuss where you plan to go with your project.</li>
+    <li>Working with the QC Makerspace.</li>
+</ul>
+
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Wednesday, October 27</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li>Make progress on your project. Your 3D object should be getting close to complete.</li>
+</ul>
+                    
+<div class="defn">In class:</div>
+<ul>
+    <li>Uploading your file to Shapeways.</li>    
+    <li>Repairing your STL file using <a href="https://tools3d.azurewebsites.net/">Microsoft</a> or <a href="https://fusion.online.autodesk.com/">Autodesk Fusion 360</a> (Register for a <a href="https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual">free Education account</a> (click "Get Started" and register using your qmail account) and then see the <a href="https://service.netfabb.com/">Steps here</a>.).</li>
+    <li>You will work with groupmates and Prof. Hanusa will come to each group and discuss how your project is going.</li>
+</ul>
+
+               
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Monday, November 1</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li>Complete your 3D model in Mathematica and bring it to class for in-class polishing.</li>
+    <li>Once your model is complete, upload your unfinished STL file to Shapeways to see the problem spots.</li>
+</ul>
+                    
+<div class="defn">In class:</div>
+<ul>
+    <li>Final refining of project.</li>
+    <li>Start the prototyping phase:</li>
+    <li>If you are using Shapeways:</li>
+    <ul>
+        <li>Upload final draft to Shapeways.</li>
+        <li>Order prototype <b>IN WHITE VERSATILE PLASTIC</b> for delivery within 10 days.</li>
+        <li><a href="https://www.dropbox.com/request/eXolyLbzKEzVhsJerVSX">Upload a screenshot of the Shapeways page</a> that shows that your model has been ordered with a projected shipping date.</li>
+    </ul>
+    <li>If you are using the QC Makerspace:</li>
+    <ul>
+        <li>Upload final draft to Shapeways.</li>
+        <li>Make sure your model passes all the tests in the 3D Tools.</li>
+        <li><a href="https://www.dropbox.com/request/eXolyLbzKEzVhsJerVSX">Upload a screenshot of the Shapeways page</a> that shows that your model has passed all the 3D tools tests.</li>
+        <li>Confirm with the QC Makerspace a time when you will be visiting THIS WEEK to use the 3D printer.</li>
+    </ul>
+</ul>
+
+<div class="date"><span style="color: #A00;"><i><b>Don't forget to vote on Tuesday, November 2</b></i></span></div>                    
+
+                
+                    
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<div class="notes_section">Interactivity (4 tutorials)</div>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+                    
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Wednesday, November 3</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li>We will be learning skills that will help with Project 3; once our prototypes come back, we will polish and finalize Project 2.</li>
+    <li>Watch <a href="http://www.wolfram.com/wolfram-u/an-elementary-introduction-to-the-wolfram-language/09-interactive-manipulation.html">this seven minute introduction to the Manipulate function</a>.  (You will have to log in with your Wolfram ID.)  There are some Exercises available for you to try on the right side of the screen.</li>
+    <li>Search for "Introduction to Manipulate" in the Documentation Center and try to work through the sections "Manipulate Is as Easy as Table" through "All Types of Output Are Supported". Think of this as Tutorial 14.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li><a href="mma/250fa21tut14q.nb">Comprehension questions about Manipulate</a></li>
+</ul>
+
+
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Monday, November 8</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li>Explore the Manipulate command in the Documentation Center. Search for "Introduction to Manipulate" in the Documentation Center and skim through the remainder of the tutorial.  Then search for "Advanced Manipulate Functionality" and interact with that tutorial. Go to our <a href="https://campuswire.com/c/">Campuswire community</a> and contribute to the <b>Daily Question for November 8</b> to share one or two things that caught your eye.</li>
+    <li>A very short Tutorial 15: <a href="mma/250fa21tut15.nb">Module</a>.</li>
+    <li>Search for "Introduction to Dynamic" in the Documentation Center and work from the beginning through "Where Should Dynamic Be Placed in an Expression?".  <b>Users with experience coding should complete the entire tutorial.</b> Think of this as Tutorial 16.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Your questions about Manipulate and Dynamic.</li>
+    <li>Complete <a href="mma/250fa21tut16q.nb">Comprehension questions about Tutorial 16</a>.</li>
+</ul>
+                    
+
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Wednesday, November 10</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li>Read through the information about <a href="project.html">Project 3</a>. (Posted soon!)</li>
+    <li>Get your brain juices flowing about ways in which users can interact with Mathematica by exploring the following areas.  Share two things that Mathematica can do that pique your interest on our <a href="https://campuswire.com/c/">Campuswire community</a> as an answer to the <b>Daily Question for November 10</b>.</li>
+    <ul>
+        <li>Explore the Documentation Center and various areas of interest that you see along the way.</li>
+        <li>Browse <a href="http://www.wolframalpha.com/examples/">this list of curated data sources that Mathematica can import seamlessly</a>.</li>
+        <li>Read through some <a href="http://blog.wolfram.com/category/recreational-computation/">Wolfram Blog</a> entries.</li>
+        <li>Try multiple of the demonstrations posted at the <a href="http://demonstrations.wolfram.com/index.php">Wolfram Demonstrations Project</a>.  <b>Download and investigate the source code for them!</b> (Use the link/button on the webpage below the demonstration.)</li>
+    </ul>
+    <li>Use these ideas to start a background process in your brain about what you would be interested in creating for Project 3.</li>
+    <li>Tutorial 17: <a href="mma/250fa21tut17.nb">Control Objects and User Interfaces</a>.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Discussion of the Daily Question.</li>
+    <li>Explore various ways in which a user can interact with Mathematica.</li>
+    <!-- Are there some minimal working examples we could explore? -->
+</ul>         
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<div class="notes_section">Revising Your 3D Model</div>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+                    
+        
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Monday, November 15</div>
+
+<div class="defn"><font color="red">Once your prototype arrives:</font></div>
+<ul>
+    <li>Spend some quality time with your prototype.  Think about what you want people to think when they see your object.  Look at it from multiple points of view.  Show it to your friends and family and ask them to tell you their first impressions.  Do these impressions (from you and others) match what you want them to be?</li>
+    <li>Be curious about and open to possible changes you might make to your model. Come up with a list of three things you like about your object and a list of three things you think might be improved about your object.</li>
+    <li>Complete a draft of your writeup (which will be missing a discussion of the revision and peer review process) and clean up your Mathematica file.</li>
+    <li>Finalize which <a href="https://www.shapeways.com/materials">type of material</a> you would like the final object to be printed in.</li>
+    <li>Coordinate with at least one other person in the class to meet and critique their work and provide a peer review.</li>
+    <li>Here is that video about <a href="https://ny.pbslearningmedia.org/resource/critique-video-artassign-1029/critique-video-art-assignment/">How to critique</a>. </li> 
+    <li>Complete <a href="https://forms.gle/Yj4fcPgPo2xKn9MV7">this peer review form</a>, request a copy of your submission by email, and forward this email to your partner.  (<i>When you submit the form, the submission goes to me&mdash;I am verifying that everyone is providing and receiving constructive and usable comments. You <b>must</b> forward your confirmation email to your partner.</i>)  Determine a good time to meet to give oral feedback about their work.</li>
+    <li>Your goal will be to get some actionable introspective and peer feedback to be able to send your final model to Shapeways within a week's time.</li>
+</ul>
+                    
+<div class="defn"><font color="red">Until your prototype arrives:</font></div>
+<ul>
+    <li>Spend time thinking about how you want to approach Project 3. What area of Mathematica do you want to explore more deeply and what type of interactivity do you want to create?  Come up with a plan and bring it to class.  Prof. Hanusa will give you some feedback about the feasibility of your project topic.</li>
+</ul>
+               
+                    
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Wednesday, November 17</div>
+
+<div class="defn"><font color="red">Second class day once your prototype arrives:</font></div>
+<ul>
+    <li>Think carefully about the peer feedback on your project and the possible changes you identified.</li>
+    <li>Spend time exploring alternative versions of your model. Change the size of the model, or of a part of the model. Change something round into something sharp? Modify a parameter? Consider a variation on a theme? This is part of the process and can only make your model better, even if you end up determining that your original decisions work the best. <b>It will be expected that you write about alternative process decisions you could have made in your writeup and that your Mathematica file has an alternate version in it.</b></li>
+    <li>Answer the <b>Daily Question: Model Variations</b> on the <a href="https://campuswire.com/c/">Campuswire community</a> </li>
+    <li>Finalize your model and verify that it is printable through Shapeways in the material you desire. If you are having trouble, sign up for office hours on Tuesday or I can help troubleshoot in class on Wednesday.</li>
+    <li>Incorporate the revision and peer review process into your writeup as well as the comments from your peer review partner.</li>
+        <li><span style="color:#900;font-weight:900">By the end of the week, turn in your final notebook, writeup, and 3D Printable File.</span></li>
+    <ul>
+        <li><a href="https://www.dropbox.com/request/loP9VDG4qRJlhiE7wWxU">Upload your Writeup file here</a>. (Word or PDF file ONLY)</li>
+        <li><a href="https://www.dropbox.com/request/CkpwSa5JneyIJ3wwV6xa">Upload your Mathematica notebook here</a>.</li>
+        <li><a href="https://www.dropbox.com/request/EPRnyIWmOjjLOjlFR5aI">Upload your 3D Printable file here</a> (stl or wrl).</li>
+    </ul>
+
+</ul>
+                    
+<div class="defn"><font color="red">Until your prototype arrives:</font></div>
+<ul>
+    <li>Answer <a href="https://forms.gle/dSJExNZ8pxXer8AS9">this short survey</a> to confirm your topic, your project's interactivity, and the Mathematica commands you anticipate relying on.</li>
+    <li>Start a Mathematica notebook in which you play around with some of these concepts and create some minimal working examples for your interactivity.</li>
+    <li>Answer the <b>Daily Question: Coding Interactivity</b> on the <a href="https://campuswire.com/c/">Campuswire community</a> with a complexity that you are having trouble with.</li>
+</ul>
+               
+                    
+                    
+
+
+<!----------------------------
+******************************
+------------------------------>
+               
+<div class="date">Wednesday, November 18</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li><b>Group A</b> should Revise Project 2 based on the feedback from Monday's class. Answer the <b>Daily Question: Peer Review</b> on the <a href="https://campuswire.com/c/">Campuswire community</a> with the most helpful comment you received during peer review.  If you are having trouble, sign up for office hours on Tuesday or I can help troubleshoot in class on Wednesday.  You should also be cleaning up your Mathematica file and finalizing your writeup of Project 2, which should now include a discussion about the critiquing and revision process.  </li>
+    <li><span style="color:#900;font-weight:900">By the end of the week, turn in your final notebook, writeup, and 3D Printable File.</span></li>
+    <ul>
+        <li><a href="https://www.dropbox.com/request/Bu7VmK5iEQ1iETIsBlHt">Upload your Writeup file here</a>. (Word or PDF file ONLY)</li>
+        <li><a href="https://www.dropbox.com/request/KsTfL4jh8i7AFt44cSgR">Upload your Mathematica notebook here</a>.</li>
+        <li><a href="https://www.dropbox.com/request/c015IfMKobDdCi9mmSQd">Upload your 3D Printable file here</a>.</li>
+    </ul>
+    <li><b>Group B</b> should be starting to code Project 3.  Answer the <b>Daily Question: Coding Interactivity</b> on the <a href="https://campuswire.com/c/">Campuswire community</a> with a complexity that you are having trouble with.  Prof. Hanusa will come around and give some feedback about the progress you have made.  You should also be figuring out who you want to work with on your peer review for Project 2 and making a plan for doing so by <b>Sunday</b>.  Monday (and office hours Tuesday) will be for finalizing your model and sending it to Shapeways.</li>
+
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>You will either be working on Project 2 or Project 3.</li>
+    <li>In-class work to clean your notebook and writeup for submission.</li>
+    <li>Prof. Hanusa will come around and discuss your various brainstormed topics for Project 3.</li> 
+</ul>
+
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Monday, November 22</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li>People whose models arrived before last week should have submitted their Project 2 (above). Spend time over weekend thinking about how you want to approach Project 3. What area of Mathematica do you want to explore more deeply and what type of interactivity do you want to create?</li>
+    <li>People who haven't done the peer review yet should have found someone for peer reviewing Project 2, completing the peer review before <b>Tuesday</b>.  (If this is not possible, make sure you have a plan to complete it as soon as your model arrives!)  As a reminder, answer the Daily Question: Model Variations on <a href="https://campuswire.com/c/">Campuswire</a>.</li>
+
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>You will either be working on Project 2 or Project 3 and Prof. Hanusa will come around and discuss them with you.  If you haven't completed Project 2, get it done and get your file submitted to Shapeways.</li>
+</ul>                    
+                    
+
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Wednesday, November 24</div>
+<div class="defn">Before class:</div>
+<ul>    
+    <li>Everyone should be working on Project 3 by now. Answer <a href="https://forms.gle/dSJExNZ8pxXer8AS9">this short survey</a> to confirm your topic, your project's interactivity, and the Mathematica commands you anticipate relying on.</li>
+    <li>Start a Mathematica notebook in which you play around with some of these concepts and create some minimal working examples for your interactivity.</li>
+    <li>Contribute to the <b>Daily Question: Coding Interactivity</b> on the <a href="https://campuswire.com/c/">Campuswire community</a> with a coding complexity that you are having trouble with.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Discussion about coding complexities.</li>
+    <li>In-class work day.</li>
+</ul>
+                    
+<!----------------------------
+******************************
+------------------------------ >
+
+<div class="date">Monday, November 30</div>
+<div class="defn">Before class:</div>
+<ul>    
+    <li>Everyone should be working on Project 3 by now. Answer <a href="https://forms.gle/FxPN4GYrhAp5jRYo9">this short survey</a> to confirm your topic, your project's interactivity, and the Mathematica commands you anticipate relying on.</li>
+    <li>Start a Mathematica notebook in which you play around with some of these concepts and create some minimal working examples for your interactivity.</li>
+    <li>Contribute to the <b>Daily Question: Coding Interactivity</b> on the <a href="https://campuswire.com/c/">Campuswire community</a> with a coding complexity that you are having trouble with.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Discussion about coding complexities.</li>
+    <li>In-class work day.</li>
+</ul>
+                    
+<!----------------------------
+******************************
+------------------------------ >
+                     
+<div class="date">Wednesday, December 2</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li>Continue to make progress on your project. Your goal is to have it in a roughly usable state by Monday, December 7th.</li>
+</ul>
+                    
+<div class="defn">In class:</div>
+<ul>
+    <li>In-class work day.</li>
+</ul>
+
+<!----------------------------
+******************************
+------------------------------ >
+                    
+<div class="date">Monday, December 7</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li>Continue to make progress on your project.  Get it to a serviceable state.  We will be doing a preliminary peer review day during our synchronous class session.  (We ARE meeting today!)</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Stage One Peer Review Day (in groups).</li>
+    <li>In-class work day.</li>
+</ul>
+
+<font size="+1"><font color=red>•</font><font color=orange>•</font><font color=yellow>•</font><font color=green>•</font><font color=blue>•</font><font color=purple>•</font></font> Please fill out the college-wide <a href="http://www.qc.cuny.edu/evaluate">course evaluations</a>, distinct from any course evaluations that will be given out in class.  Thank you for your feedback! <font size="+1"><font color=purple>•</font><font color=blue>•</font><font color=green>•</font><font color=yellow>•</font><font color=orange>•</font><font color=red>•</font></font>
+                    
+<!----------------------------
+******************************
+------------------------------ >
+                    
+<div class="date">(Wednesday, December 9)</div>
+<div class="defn">Before class:</div>
+<ul>
+    <li>Your project should be complete, and you should have prepared a draft of your presentation.</li>
+    <li>Note the updated expectations: your writeup should be at least one page long (&ge;~600 words), and your presentation should be at least four minutes long.</li>
+    <li>Before you share your files for peer review, make sure they will be able to use your file.  In particular:
+        <ul>
+            <li>Close all open Mathematica windows and quit the Mathematica program.</li>
+            <li>Make a new copy of your Mathematica file.</li>
+            <li>Open this new Mathematica file and click "Evaluate All".</li>
+            <li>Verify that there are no errors and that the instructions in your Mathematica notebook make it clear how the user is supposed to interact with your file.</li>
+        </ul>
+    <li><span style="color:#900;font-weight:900">No later than Thursday night:</span> Send your completed Mathematica notebook, your presentation video, and your two-page writeup. They should be in a final form.  Send these files to your peer review partner.  If you want to use Flipgrid to record and post a draft presentation video, <a href="https://flipgrid.com/38dd2e30">you can do that here.</a> </li>
+    <li><span style="color:#900;font-weight:900">No later than Friday night:</span> Complete <a href="https://forms.gle/F7YFzQgDqTR1NKG29">this peer review form</a>, request a copy of your submission by email, and forward this email to your partner.  Determine a good time to meet to give oral feedback about their work.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Today's class time is asynchronous.  (There is no formal class time.)  Prof. Hanusa will connect to the Zoom Room during class time in case you have questions you want to ask about the project or anything else.</li>
+    <li>Prof. Hanusa will be completely unavailable from December 14&ndash;18, so if you need help after December 11, you will need to get help from your classmates.</li>
+</ul>
+                    
+<!----------------------------
+******************************
+------------------------------ >
+                    
+<div class="date">No later than Friday, December 18:</div>
+<div class="defn">For Project 2:</div>
+<ul>
+    <li>Take a 360° video of your final piece of art when it arrives, along with 1&ndash;2 minutes of commentary, and <a href="https://flipgrid.com/628f1706">upload it here</a>. Don't forget to include the description of your artwork in the <b>title</b> of your Flipgrid submission.  If your artwork is still being 3D printed, upload it when it arrives. (Even if it's January!)</li>
+    <li>Leave some comments on a couple videos to give props about their artwork.</li>
+</ul>
+<div class="defn">For Project 3:</div>
+<ul>
+    <li>Incorporate the feedback from your partner into a finalized Project 3. In your writeup, <b>make sure you address how your project changed during the revision process.</b> </li>
+    <li>Ensure that Prof. Hanusa will be able to interact with your file by following the same steps as above.</li>
+    <li>Submit your project by doing the following:</li>
+    <ul>
+        <li><a href="https://flipgrid.com/208d62c3">Post your video presentation here.</a></li>
+        <li><a href="https://www.dropbox.com/request/ZhTHic4GzpzjNyi055lR">Upload your Mathematica file here</a>.</li>
+        <li><a href="https://www.dropbox.com/request/gii4ZUq6fHzUuxZaIbCy">Upload your Writeup file here</a>.</li>
+    </ul>
+    <li>You are assigned five other presentations to watch and comment on (using a video response) and you should choose at least five other presentations to watch. (The list is posted on Campuswire.) <a href="https://forms.gle/meZHDLbfrV1eeHWCA">Give props to two fellow classmates whose presentations that you thought were well done and answer a few questions about how this class went for you.</a></li>
+    <li>Thanks for all your hard work in this class!</li>
+</ul>         
+                    
+<font size="+1"><font color=red>•</font><font color=orange>•</font><font color=yellow>•</font><font color=green>•</font><font color=blue>•</font><font color=purple>•</font></font> Please fill out the college-wide <a href="http://www.qc.cuny.edu/evaluate">course evaluations</a>, distinct from any course evaluations that will be given out in class.  Thank you for your feedback! <font size="+1"><font color=purple>•</font><font color=blue>•</font><font color=green>•</font><font color=yellow>•</font><font color=orange>•</font><font color=red>•</font></font>
+                    
+
+<!-->
+                        
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </div> <!-- End course_main-->
+            </div>  <!-- End middle -->  
+
+            <div class="footer_wrap">
+                 <div class="footer">
+                Christopher Hanusa   
+                 <span class="right">  
+                     <a href="../../../index.html"><img width="32" height="32" style="background: #fff; " src="../../../images/h.png" alt="Home page" /></a> 
+                     <a href="http://hanusadesign.com/"><img width="32" height="32" src="../../../images/hd.png" style="vertical-align: center;" alt="Hanusa Design - Mathematical Art and Jewelry" /></a> 
+                     <a href="http://instagram.com/mathzorro/"><img width="32" height="32" src="../../../images/i.png" style="vertical-align: center;" alt="Christopher Hanusa on Instagram" /></a> 
+                     <a href="http://twitter.com/mathzorro"><img width="32" height="32" src="../../../images/t.png" alt="Christopher Hanusa on Twitter" /></a> 
+                     <a href="https://www.facebook.com/ChristopherHanusa"><img width="32" height="32" src="../../../images/f.png" alt="Christopher Hanusa on Facebook" /></a></span>
+                 </div>
+                 
+            </div>
+        </div> <!-- End container -->
+    </body>
+</html>

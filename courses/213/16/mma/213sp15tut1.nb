@@ -1,0 +1,3967 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[    125236,       3958]
+NotebookOptionsPosition[    111743,       3563]
+NotebookOutlinePosition[    113928,       3623]
+CellTagsIndexPosition[    113805,       3617]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[TextData[{
+ StyleBox["Welcome to ", "Subtitle"],
+ StyleBox["Mathematica.", "Subtitle",
+  FontSlant->"Italic"]
+}], "Title",
+ CellChangeTimes->{{3.5370980358531523`*^9, 3.5370980414596043`*^9}}],
+
+Cell[TextData[StyleBox["Tutorial 1: Getting Started", "Subsubtitle"]], \
+"Subtitle",
+ CellChangeTimes->{{3.537098054322164*^9, 3.537098091795752*^9}, {
+  3.537107549059627*^9, 3.537107579873459*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Overview of ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ "\[CloseCurlyQuote]s capabilities"
+}], "Item",
+ CellChangeTimes->{{3.537098185072391*^9, 3.537098200551671*^9}}],
+
+Cell["Introduction to Notebooks", "Item",
+ CellChangeTimes->{{3.537098210318412*^9, 3.537098250198907*^9}}],
+
+Cell["Practicing getting help", "Item",
+ CellChangeTimes->{
+  3.5370982220877047`*^9, {3.5370982560707808`*^9, 3.537098256073051*^9}}],
+
+Cell["Exploring the documentation center", "Item",
+ CellChangeTimes->{{3.537098256591024*^9, 3.53709827662322*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ "\nClick on the forward arrow below to continue.\n\n\n",
+ StyleBox["This tutorial is based on and uses materials from Wolfram ",
+  FontSize->16],
+ StyleBox["Mathematica",
+  FontSize->16,
+  FontSlant->"Italic"],
+ StyleBox[" 7's \"Learn with guided examples\"",
+  FontSize->16]
+}], "Text",
+ CellChangeTimes->{{3.537098291169738*^9, 3.537098324824643*^9}, {
+   3.5371068244316187`*^9, 3.537106863805872*^9}, 3.537107537621867*^9, {
+   3.537108624023034*^9, 3.537108628510449*^9}, 3.5371184436850777`*^9, {
+   3.600524424767112*^9, 3.600524426279298*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Using ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " as a calculator"
+}], "Section",
+ CellChangeTimes->{{3.537098381076377*^9, 3.537098389450186*^9}, {
+  3.537106872696314*^9, 3.537106879469314*^9}}],
+
+Cell[TextData[{
+ "You can use ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " as a calculator.  "
+}], "Text",
+ CellChangeTimes->{{3.537106939508602*^9, 3.537107049099292*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Move your cursor below this text ", "Item"],
+ StyleBox["until it becomes a horizontal cursor", "Item",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox[".  Then click.", "Item"]
+}], "Item",
+ CellChangeTimes->{{3.537107029919181*^9, 3.537107030952484*^9}, {
+   3.537107148429864*^9, 3.537107173003873*^9}, 3.537107331681837*^9}],
+
+Cell[TextData[{
+ StyleBox["Next, type in ", "Item"],
+ StyleBox["2+2", "Input"],
+ StyleBox[".", "Item"]
+}], "Item",
+ CellChangeTimes->{{3.537107031412386*^9, 3.537107060868875*^9}, {
+  3.5371071755888233`*^9, 3.537107176347258*^9}}],
+
+Cell[TextData[StyleBox["Then press Shift-Return  (Hold down Shift and press \
+Return).", "Item"]], "Item",
+ CellChangeTimes->{{3.5371070648183727`*^9, 3.5371071202714663`*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Using ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " as a calculator"
+}], "Section",
+ CellChangeTimes->{{3.537107197301382*^9, 3.537107206089161*^9}, 
+   3.537107374568975*^9}],
+
+Cell[TextData[{
+ StyleBox["Try it again",
+  FontWeight->"Bold"],
+ " with something more complicated like ",
+ StyleBox["500!", "Input"],
+ " or ",
+ StyleBox["78^3", "Input"],
+ ".  Remember: ",
+ StyleBox["To calculate an expression, you must use Shift-Return",
+  FontSlant->"Italic"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.537107210561178*^9, 3.5371072417187023`*^9}, {
+   3.53710736259918*^9, 3.537107410963561*^9}, {3.5371077954864197`*^9, 
+   3.537107844548402*^9}, 3.6005244611542063`*^9}],
+
+Cell[TextData[{
+ "You can modify anything you type and re-evaluate.  ",
+ StyleBox["Do this now",
+  FontWeight->"Bold"],
+ " to see how your calculation changes."
+}], "Text",
+ CellChangeTimes->{{3.537107210561178*^9, 3.5371072417187023`*^9}, {
+  3.53710736259918*^9, 3.537107410963561*^9}, {3.5371077954864197`*^9, 
+  3.537107844548402*^9}, {3.6005244611542063`*^9, 3.600524464919921*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Making and modifying a plot", "Section",
+ CellChangeTimes->{{3.5371074337239647`*^9, 3.537107435433877*^9}, {
+  3.537107649775412*^9, 3.537107656709182*^9}}],
+
+Cell[TextData[{
+ "When you have existing input/output cells it's easy to go back and edit \
+them, just as you would in a word processor.\nTry changing ",
+ StyleBox["Cos[3\[ThinSpace]x]", "Output"],
+ " to ",
+ StyleBox["Cos[5\[ThinSpace]x]", "Output"],
+ " in the ",
+ StyleBox["Plot", "Output"],
+ " command below, then press ",
+ Cell[BoxData[
+  FormBox[
+   DynamicBox[StyleBox[
+     FEPrivate`Switch[FEPrivate`$OperatingSystem, "MacOSX", 
+      StyleBox["\"Shift+Return\"", Bold, StripOnInput -> False], "Windows", 
+      StyleBox["\"Shift+Enter\"", Bold, StripOnInput -> False], "Unix", 
+      StyleBox["\"Shift+Enter\"", Bold, StripOnInput -> False]], 
+     ShowStringCharacters -> False],
+    ImageSizeCache->{86., {1., 10.}}], TraditionalForm]]],
+ " to reevaluate the input. The new output will replace the old."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Sin", "[", "x", "]"}], "+", 
+    RowBox[{"Cos", "[", 
+     RowBox[{"3", " ", "x"}], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"2", "Pi"}]}], "}"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {}, 
+   {Hue[0.67, 0.6, 0.6], LineBox[CompressedData["
+1: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
+hYK1tUn4H3jNVTw=
+     "]]}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->True,
+  AxesOrigin->{0, 0},
+  ImageSize->{243., Automatic},
+  PlotRange->
+   NCache[{{0, 2 Pi}, {-1.878705443544225, 1.8787054104167287`}}, {{
+     0, 6.283185307179586}, {-1.878705443544225, 1.8787054104167287`}}],
+  PlotRangeClipping->True,
+  PlotRangePadding->{
+    Scaled[0.02], 
+    Scaled[0.02]}]], "Output"]
+}, Open  ]],
+
+Cell[TextData[StyleBox["Try making some changes to the input on this page \
+before moving to the next page.",
+ FontWeight->"Bold"]], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Captial Letters and Square Brackets", "Section",
+ CellChangeTimes->{{3.537108336054985*^9, 3.53710834155665*^9}}],
+
+Cell[TextData[{
+ "Now that you've learned how to get around in ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ ", we'll start looking at the ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " language in more detail.\nThe most basic rule to know is that all built-in \
+",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " functions start with capital letters and enclose their arguments in square \
+brackets.\n",
+ StyleBox["Click in each of these input cells and press ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   DynamicBox[StyleBox[
+     FEPrivate`Switch[FEPrivate`$OperatingSystem, "MacOSX", 
+      StyleBox["\"Shift+Return\"", Bold, StripOnInput -> False], "Windows", 
+      StyleBox["\"Shift+Enter\"", Bold, StripOnInput -> False], "Unix", 
+      StyleBox["\"Shift+Enter\"", Bold, StripOnInput -> False]], 
+     ShowStringCharacters -> False],
+    ImageSizeCache->{86., {1., 10.}}], TraditionalForm]]],
+ StyleBox[" to see the result.",
+  FontWeight->"Bold"]
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"BesselJ", "[", 
+    RowBox[{"1", ",", "x"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "30"}], "}"}]}], "]"}]], "Input"],
+
+Cell["Multiword function names use internal capitalization.", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Prime", "[", "n", "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "1", ",", "30"}], "}"}]}], "]"}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "Even standard math functions like ",
+ StyleBox["sin",
+  FontFamily->"Times",
+  FontSize->14],
+ " and ",
+ StyleBox["cos",
+  FontFamily->"Times",
+  FontSize->14],
+ " start with a capital letter."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Cos", "[", "0", "]"}]], "Input"],
+
+Cell[TextData[{
+ "The constants ",
+ StyleBox["e",
+  FontFamily->"Times",
+  FontSize->14,
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["i",
+  FontFamily->"Times",
+  FontSize->14,
+  FontSlant->"Italic"],
+ ", and ",
+ StyleBox["\[Pi]",
+  FontFamily->"Times",
+  FontSize->14,
+  FontSlant->"Italic"],
+ " also use capital letters."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"{", 
+   RowBox[{"E", ",", "I", ",", "Pi"}], "}"}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "Because of this strict rule, you are free to use ",
+ StyleBox["any",
+  FontSlant->"Italic"],
+ " name that starts with a lowercase letter for your own purposes",
+ ". ",
+ "For example, you can use lowercase ",
+ StyleBox["i", "Output"],
+ " as an index variable."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{"i", ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "1", ",", "10"}], "}"}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Lists", "Section",
+ CellChangeTimes->{{3.537108714571143*^9, 3.537108715233135*^9}}],
+
+Cell[TextData[{
+ "Curly brackets are used to hold lists of expressions separated by commas: \
+anything can be made into a list.\nWhen you evaluate a list, each of the \
+elements in the list is evaluated and the results returned in another list.\n",
+ StyleBox["Evaluate the examples below and you'll see how this works.",
+  FontWeight->"Bold"]
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "2", ",", "3", ",", "x", ",", " ", "y", ",", "z"}], 
+  "}"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     RowBox[{"x", "^", "2"}], ",", " ", "x"}], "]"}], ",", 
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", "x", "]"}], ",", "x"}], "]"}], ",", 
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     RowBox[{"Tan", "[", "x", "]"}], ",", "x"}], "]"}]}], "}"}]], "Input"],
+
+Cell["Lists really can hold anything, including 2D or 3D graphics.", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", "x", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", 
+       RowBox[{"2", "Pi"}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"2", "x"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", 
+       RowBox[{"2", "Pi"}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"3", "x"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", 
+       RowBox[{"2", "Pi"}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"4", "x"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", 
+       RowBox[{"2", "Pi"}]}], "}"}]}], "]"}]}], "}"}]], "Input"],
+
+Cell["\<\
+Evaluate this example to see three interesting knots in a list.\
+\>", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"KnotData", "[", "\"\<Trefoil\>\"", "]"}], ",", 
+   RowBox[{"KnotData", "[", "\"\<FigureEight\>\"", "]"}], ",", 
+   RowBox[{"KnotData", "[", "\"\<Stevedore\>\"", "]"}]}], "}"}]], "Input"],
+
+Cell[TextData[StyleBox["Click and drag the individual knots to see them from \
+any angle.",
+ FontWeight->"Bold"]], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Returning and Manipulating Lists", "Section",
+ CellChangeTimes->{{3.537108743123411*^9, 3.537108747799472*^9}}],
+
+Cell[TextData[{
+ "Many commands return lists as their result",
+ ". ",
+ "For example, the list of plots from the previous page can be created more \
+efficiently using the ",
+ StyleBox["Table", "Output"],
+ " command."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"n", " ", "x"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", 
+       RowBox[{"2", "Pi"}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "1", ",", "4"}], "}"}]}], "]"}]], "Input"],
+
+Cell["\<\
+Many functions allow you to create, operate on, or restructure lists. Here \
+are just a few.\
+\>", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Sort", "[", 
+  RowBox[{"{", 
+   RowBox[{"3", ",", "1", ",", "2", ",", "5", ",", "4"}], "}"}], 
+  "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Reverse", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "5"}], "}"}], 
+  "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Permutations", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3"}], "}"}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "To see the full range of functions for dealing with lists, see the guide \
+page for ",
+ ButtonBox["List Manipulation",
+  BaseStyle->"LinkNewWindow",
+  ButtonData->"paclet:guide/ListManipulation"],
+ " (which will open in a separate window)."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Range Specifications", "Section",
+ CellChangeTimes->{{3.5371089976601467`*^9, 3.537109000873794*^9}}],
+
+Cell[TextData[{
+ "One important use of lists is to hold range specifications (also commonly \
+known as iterators).\nEach of the commands below contains a set of three \
+elements enclosed in curly brackets.\n\t",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox[
+     RowBox[{"{", 
+      RowBox[{
+       StyleBox["variable",
+        FontSlant->"Italic"], ",", 
+       StyleBox["min",
+        FontSlant->"Italic"], ",", 
+       StyleBox["max",
+        FontSlant->"Italic"]}], "}"}], "Output",
+     FontFamily->"Times",
+     FontSize->14], " "}], TraditionalForm]]],
+ " \n",
+ StyleBox["Evaluate each of the inputs on this page. Some of them are quite \
+fun!",
+  FontWeight->"Bold"]
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{"i", ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "1", ",", "10"}], "}"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"2", "Pi"}]}], "}"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"n", " ", "x"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", 
+       RowBox[{"2", "Pi"}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "1", ",", "10"}], "}"}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "This iterator form is found in hundreds of ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " functions with slight variations in interpretation and allowed elements.\n\
+In many cases an optional fourth element specifies a step size."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"i", "^", "2"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "0", ",", "10", ",", "2"}], "}"}]}], "]"}]], "Input"],
+
+Cell["\<\
+A two-element form assumes a minimum of 1 and a step size of 1.\
+\>", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"i", "^", "2"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "10"}], "}"}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "The iterator used in ",
+ StyleBox["Plot", "Output"],
+ " requires exactly three elements",
+ ". ",
+ "The effective step size is variable and is determined automatically in \
+order to make a smooth curve."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"2", "Pi"}]}], "}"}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "In ",
+ StyleBox["Manipulate", "Output"],
+ " a step size can be specified. If it is omitted, the variable is allowed to \
+take on a continuous range of values.\nThis example allows ",
+ StyleBox["n", "Output"],
+ " to take on a continuous range of real numbers."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Expand", "[", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "+", "x"}], ")"}], "^", "n"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "0", ",", "100"}], "}"}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "Here ",
+ StyleBox["n", "Output"],
+ " is restricted to exact integers, allowing the ",
+ StyleBox["Expand", "Output"],
+ " function to do its job."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Expand", "[", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "+", "x"}], ")"}], "^", "n"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "0", ",", "100", ",", "1"}], "}"}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ StyleBox["Manipulate", "Output"],
+ " in particular allows for a very wide range of such forms, extending well \
+beyond the simple min-max range. See the ",
+ ButtonBox["full documentation on ",
+  BaseStyle->"LinkNewWindow",
+  ButtonData->"paclet:ref/Manipulate"],
+ StyleBox[ButtonBox["Manipulate",
+  BaseStyle->"LinkNewWindow",
+  ButtonData->"paclet:ref/Manipulate"], "Output"],
+ " (which will open in a separate window)."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Options", "Section",
+ CellChangeTimes->{{3.537109092686512*^9, 3.537109093308523*^9}}],
+
+Cell[TextData[{
+ "Many ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " functions allow you to control their behavior using ",
+ StyleBox["options",
+  FontSlant->"Italic"],
+ ", which are placed after any required or optional arguments in the function \
+call.\nFor example, by default ",
+ StyleBox["Plot", "Output"],
+ " gives you a set of axes."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"2", "Pi"}]}], "}"}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "If you want a box around the plot instead of axes, you can add the option \
+",
+ StyleBox["Frame\[ThinSpace]\[Rule]\[ThinSpace]True", "Output"],
+ "."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"2", "Pi"}]}], "}"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}]], "Input"],
+
+Cell["\<\
+Options always come at the end, and multiple options are separated by commas.\
+\
+\>", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"2", "Pi"}]}], "}"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+   RowBox[{"PlotStyle", "\[Rule]", "Green"}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "You get the arrow character (",
+ StyleBox["\[Rule]", "Output"],
+ ") by typing dash (",
+ StyleBox["-", "Output"],
+ ") followed by the greater-than sign (",
+ StyleBox[">", "Output"],
+ "). When you type the next character after the greater-than sign, the ",
+ StyleBox["->", "Output"],
+ " is automatically converted into ",
+ StyleBox["\[Rule]", "Output"],
+ ".\nTo find out what options a given function supports, you can look it up \
+in the help system (the easiest way is to select the name of the function \
+somewhere in your notebook, then press ",
+ Cell[BoxData[
+  FormBox[
+   DynamicBox[StyleBox[
+     FEPrivate`Switch[FEPrivate`$OperatingSystem, "MacOSX", 
+      StyleBox["\"Command+Shift+F\"", Bold, StripOnInput -> False], "Windows", 
+      StyleBox["\"F1\"", Bold, StripOnInput -> False], "Unix", 
+      StyleBox["\"F1\"", Bold, StripOnInput -> False]], ShowStringCharacters -> 
+     False],
+    ImageSizeCache->{123., {1., 10.}}], TraditionalForm]]],
+ ").\nTry it on the word ",
+ StyleBox["Integrate", "Output"],
+ " below."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData["Integrate"], "Input"],
+
+Cell[TextData[{
+ "Or if you already know what you're looking for and just need a reminder of \
+the name, you can evaluate ",
+ StyleBox["Options[", "Output"],
+ StyleBox["function", "Output",
+  FontSlant->"Italic"],
+ StyleBox["]", "Output"],
+ ", for example."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Options", "[", "Integrate", "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"Assumptions", "\[RuleDelayed]", "$Assumptions"}], ",", 
+   RowBox[{"GenerateConditions", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"PrincipalValue", "\[Rule]", "False"}]}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Multiline Input and Suppressing Output", "Section",
+ CellChangeTimes->{{3.537109073983601*^9, 3.537109082349186*^9}}],
+
+Cell["\<\
+Single input expressions can be more than one line long: wordwrapping is \
+automatic and intelligent, based on the nesting structure of the expression. \
+\
+\>", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"2", "Pi"}]}], "}"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+   RowBox[{"PlotStyle", "\[Rule]", "Green"}], ",", 
+   RowBox[{"PlotLabel", "\[Rule]", "\"\<A plot of the sine function\>\""}], 
+   ",", 
+   RowBox[{"ImageSize", "\[Rule]", "200"}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "You can use the ",
+ Cell[BoxData[
+  FormBox[
+   DynamicBox[StyleBox[
+     FEPrivate`Switch[FEPrivate`$OperatingSystem, "MacOSX", 
+      StyleBox["\"Return\"", Bold, StripOnInput -> False], "Windows", 
+      StyleBox["\"Enter\"", Bold, StripOnInput -> False], "Unix", 
+      StyleBox["\"Enter\"", Bold, StripOnInput -> False]], 
+     ShowStringCharacters -> False],
+    ImageSizeCache->{46., {1., 9.}}], TraditionalForm]]],
+ " key to add manual line breaks if you like."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"2", "Pi"}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Frame", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"PlotStyle", "\[Rule]", "Green"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"PlotLabel", "\[Rule]", "\"\<A plot of the sine function\>\""}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"ImageSize", "\[Rule]", "200"}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "You can also put more than one independent expression in the same input \
+cell, using the ",
+ Cell[BoxData[
+  FormBox[
+   DynamicBox[StyleBox[
+     FEPrivate`Switch[FEPrivate`$OperatingSystem, "MacOSX", 
+      StyleBox["\"Return\"", Bold, StripOnInput -> False], "Windows", 
+      StyleBox["\"Enter\"", Bold, StripOnInput -> False], "Unix", 
+      StyleBox["\"Enter\"", Bold, StripOnInput -> False]], 
+     ShowStringCharacters -> False],
+    ImageSizeCache->{46., {1., 9.}}], TraditionalForm]]],
+ " key to separate them.\nEach line of syntactically complete input results \
+in a separate output cell.\n",
+ StyleBox["Try it now by evaluating the input cell below.",
+  FontWeight->"Bold"]
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[{
+ RowBox[{"100", "!"}], "\[IndentingNewLine]", 
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{"1", "/", 
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      RowBox[{"x", "^", "3"}]}], ")"}]}], ",", "x"}], "]"}]}], "Input"],
+
+Cell["\<\
+A semicolon can be used to suppress output.
+When assigning a variable, for example, you may not want to see the value \
+printed out.\
+\>", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"a", "=", "10"}], ";"}]], "Input"],
+
+Cell[TextData[{
+ "(Even after evaluation, this input cell is not followed by an output cell.)\
+\nIt's common to use semicolons to suppress output from all but the last line \
+in a multiline input cell.\n",
+ StyleBox["Evaluate this input cell and note that you get only one output.",
+  FontWeight->"Bold"]
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", "2"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{"-", "10"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"c", "=", "12"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"a", " ", 
+      RowBox[{"x", "^", "2"}]}], "+", 
+     RowBox[{"b", " ", "x"}], "+", "c"}], "\[Equal]", "0"}], ",", "x"}], 
+  "]"}]}], "Input"],
+
+Cell[TextData[{
+ "When evaluating multiline inputs you can place the insertion point anywhere \
+in the text of the input cell. When you press ",
+ Cell[BoxData[
+  FormBox[
+   DynamicBox[StyleBox[
+     FEPrivate`Switch[FEPrivate`$OperatingSystem, "MacOSX", 
+      StyleBox["\"Shift+Return\"", Bold, StripOnInput -> False], "Windows", 
+      StyleBox["\"Shift+Enter\"", Bold, StripOnInput -> False], "Unix", 
+      StyleBox["\"Shift+Enter\"", Bold, StripOnInput -> False]], 
+     ShowStringCharacters -> False],
+    ImageSizeCache->{86., {1., 10.}}], TraditionalForm]]],
+ ", the entire input cell will be evaluated regardless of where the insertion \
+point was placed.\nYou can also click the cell bracket at the right edge of \
+the window before pressing ",
+ Cell[BoxData[
+  FormBox[
+   DynamicBox[StyleBox[
+     FEPrivate`Switch[FEPrivate`$OperatingSystem, "MacOSX", 
+      StyleBox["\"Shift+Return\"", Bold, StripOnInput -> False], "Windows", 
+      StyleBox["\"Shift+Enter\"", Bold, StripOnInput -> False], "Unix", 
+      StyleBox["\"Shift+Enter\"", Bold, StripOnInput -> False]], 
+     ShowStringCharacters -> False],
+    ImageSizeCache->{86., {1., 10.}}], TraditionalForm]]],
+ ". If you select multiple cell brackets, all the selected input cells will \
+be evaluated in order when you press ",
+ Cell[BoxData[
+  FormBox[
+   DynamicBox[StyleBox[
+     FEPrivate`Switch[FEPrivate`$OperatingSystem, "MacOSX", 
+      StyleBox["\"Shift+Return\"", Bold, StripOnInput -> False], "Windows", 
+      StyleBox["\"Shift+Enter\"", Bold, StripOnInput -> False], "Unix", 
+      StyleBox["\"Shift+Enter\"", Bold, StripOnInput -> False]], 
+     ShowStringCharacters -> False],
+    ImageSizeCache->{86., {1., 10.}}], TraditionalForm]]],
+ "."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Exact and Approximate Numbers", "Section",
+ CellChangeTimes->{{3.537109170090887*^9, 3.537109174968129*^9}}],
+
+Cell[TextData[{
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " distinguishes between exact integers and approximate real numbers. When \
+given exact input, the system will not make approximations, even if it means \
+nothing can be done with the input. For example, compare the output of these \
+two commands."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Sqrt", "[", "2", "]"}]], "Input"],
+
+Cell[BoxData[
+ SqrtBox["2"]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Sqrt", "[", "2.", "]"}]], "Input"],
+
+Cell[BoxData["1.4142135623730951`"], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "In the first case, the system has not computed the square root because \
+there is no simpler way to represent the square root of two ",
+ StyleBox["exactly",
+  FontSlant->"Italic"],
+ ", other than by saying it's the square root of two.\nIn the second case, \
+the input included a decimal point, indicating that it was meant as an \
+approximate real number. This caused ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " to give an approximate real-number result.\nThe command ",
+ StyleBox["N", "Output"],
+ " can be used to request a numerical approximation to inputs given in exact \
+form."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"Sqrt", "[", "2", "]"}], "]"}]], "Input"],
+
+Cell[BoxData["1.4142135623730951`"], "Output"]
+}, Open  ]],
+
+Cell["\<\
+An optional second argument can be used to specify the number of digits of \
+precision you would like.\
+\>", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{
+   RowBox[{"Sqrt", "[", "2", "]"}], ",", "100"}], "]"}]], "Input"],
+
+Cell[BoxData["1.\
+414213562373095048801688724209698078569671875376948073176679737990732478462107\
+038850387534327641572735013846230912297024924836055850737`100."], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "There is no arbitrary limit to the number of digits in exact integer or \
+floating-point numbers in ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ ". Each of these examples gives a result with about half a million digits in \
+it, and finishes in a couple of seconds on most computers. Try them now by \
+clicking in and evaluating each of these input cells."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"100000", "!"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"Pi", ",", "500000"}], "]"}]], "Input"],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Equality versus Assignment", "Section",
+ CellChangeTimes->{{3.5371092168399267`*^9, 3.5371092220966387`*^9}}],
+
+Cell[TextData[{
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " distinguishes between equality testing and variable or function \
+assignment.\nEquality testing is done with ",
+ StyleBox["==", "Output"],
+ ", and the return value, if equality can be determined, is ",
+ StyleBox["True", "Output"],
+ " or ",
+ StyleBox["False", "Output"],
+ "."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"1", "\[Equal]", "2"}]], "Input"],
+
+Cell[BoxData["False"], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"1.0", "\[Equal]", "1"}]], "Input"],
+
+Cell[BoxData["True"], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Anywhere equations are used, ",
+ StyleBox["==", "Output"],
+ " is the appropriate operator to use",
+ ". ",
+ "For example, you can solve a simple algebraic equation."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "\[Equal]", "9"}], ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", 
+     RowBox[{"-", "3"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", "3"}], "}"}]}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "The more specialized ",
+ StyleBox["===", "Output"],
+ " (three equal signs) operator tests for exact identity rather than \
+mathematical equality.\nFor example, the equality of two variables cannot be \
+established without knowing their values, so this example returns unevaluated \
+unless ",
+ StyleBox["x", "Output"],
+ " and ",
+ StyleBox["y", "Output"],
+ " both have values assigned to them."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"x", "\[Equal]", "y"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"x", "\[Equal]", "y"}]], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "On the other hand, using ",
+ StyleBox["===", "Output"],
+ " results in ",
+ StyleBox["False", "Output"],
+ " because the two expressions are not literally identical."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"x", "===", "y"}]], "Input"],
+
+Cell[BoxData["False"], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Using ",
+ StyleBox["===", "Output"],
+ " will ",
+ StyleBox["always",
+  FontSlant->"Italic"],
+ " return ",
+ StyleBox["True", "Output"],
+ " or ",
+ StyleBox["False", "Output"],
+ ", while ",
+ StyleBox["==", "Output"],
+ " may return ",
+ StyleBox["True", "Output"],
+ ", ",
+ StyleBox["False", "Output"],
+ ", or remain unevaluated."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Assignment", "Section",
+ CellChangeTimes->{{3.537109241286681*^9, 3.537109243028635*^9}}],
+
+Cell[TextData[{
+ "Simple variable assignment is done with the = operator",
+ ". ",
+ "When this cell is evaluated, the symbol ",
+ StyleBox["a", "Output"],
+ " is given the value ",
+ StyleBox["5", "Output"],
+ "."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"a", "=", "5"}], ";"}]], "Input"],
+
+Cell[TextData[{
+ "The value can then be used anywhere.  \n",
+ StyleBox["Be sure to evaluate the cell above before trying these examples, \
+otherwise the assignment won't have been made.",
+  FontWeight->"Bold"]
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"a", "^", "2"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", 
+    RowBox[{"a", " ", "x"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"2", "Pi"}]}], "}"}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "Multiple assignments can be placed in a single cell. It is not necessary to \
+select all the lines you want evaluated before pressing ",
+ Cell[BoxData[
+  FormBox[
+   DynamicBox[StyleBox[
+     FEPrivate`Switch[FEPrivate`$OperatingSystem, "MacOSX", 
+      StyleBox["\"Shift+Return\"", Bold, StripOnInput -> False], "Windows", 
+      StyleBox["\"Shift+Enter\"", Bold, StripOnInput -> False], "Unix", 
+      StyleBox["\"Shift+Enter\"", Bold, StripOnInput -> False]], 
+     ShowStringCharacters -> False],
+    ImageSizeCache->{86., {1., 10.}}], TraditionalForm]]],
+ ". An insertion point anywhere in the cell will do."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", "2"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", "4"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"c", "=", "8"}], ";"}]}], "Input"],
+
+Cell[TextData[{
+ "Functions are defined using ",
+ StyleBox[":=", "Output"],
+ " instead of ",
+ StyleBox["=", "Output"],
+ ". (The difference between ",
+ StyleBox["=", "Output"],
+ " and ",
+ StyleBox[":=", "Output"],
+ " is explained in the tutorial \"",
+ ButtonBox["Immediate and Delayed Definitions",
+  BaseStyle->"LinkNewWindow",
+  ButtonData->"paclet:tutorial/ImmediateAndDelayedDefinitions"],
+ "\".)\nHere is a function that squares its argument."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "x_", "]"}], ":=", 
+  RowBox[{"x", "^", "2"}]}]], "Input"],
+
+Cell[TextData[{
+ "The ",
+ StyleBox["_", "Output"],
+ " (blank) character on the left-hand side is critical: it must appear after \
+the argument name on the left but not on the right of the equal sign. The \
+meaning of the blank is explained in the \"",
+ ButtonBox["Patterns",
+  BaseStyle->"LinkNewWindow",
+  ButtonData->"paclet:guide/Patterns"],
+ "\" tutorial.\nOne of the powerful features of ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " is that once you have defined a function you can apply it to all kinds of \
+input.\n",
+ StyleBox["Be sure to evaluate the definition above before trying the \
+examples below.",
+  FontWeight->"Bold"],
+ "\nYou can give it smple numbers."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"f", "[", "5", "]"}]], "Input"],
+
+Cell["Or high-precision floating-point numbers or large integers.", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"f", "[", 
+  RowBox[{"N", "[", 
+   RowBox[{"Pi", ",", "100"}], "]"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"f", "[", 
+  RowBox[{"100", "!"}], "]"}]], "Input"],
+
+Cell["Or symbolic quantities.", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"f", "[", 
+  RowBox[{"q", "+", "w"}], "]"}]], "Input"],
+
+Cell["\<\
+You can plot your function using any of the built-in plotting functions.\
+\>", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"f", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "10"}], "}"}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "Because ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " processes functions symbolically, you can even integrate or differentiate \
+the function, getting exact symbolic results."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{"f", "[", "x", "]"}], ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"D", "[", 
+  RowBox[{
+   RowBox[{"f", "[", "x", "]"}], ",", "x"}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "Further details on functions and patterns can be found in the tutorial \"",
+ ButtonBox["Defining Variables and Functions",
+  BaseStyle->"LinkNewWindow",
+  ButtonData->"paclet:guide/VariablesAndFunctions"],
+ "\"."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Automatic Syntax Coloring", "Section",
+ CellChangeTimes->{{3.537109263245652*^9, 3.537109268539331*^9}}],
+
+Cell[TextData[{
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " automatically colors symbols, brackets, and operators to indicate errors \
+or likely errors",
+ ". ",
+ "\nWhen you type a function name, it starts out blue and turns black when it \
+matches the name of a built-in or user-defined symbol."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[{"P", "\[IndentingNewLine]", "Pl", "\[IndentingNewLine]", "Plo", \
+"\[IndentingNewLine]", "Plot", "\[IndentingNewLine]", "Plot3", "\
+\[IndentingNewLine]", "Plot3D"}], "Input"],
+
+Cell[TextData[{
+ "A blue symbol is not necessarily an error; it simply means that the symbol \
+does not currently have any value or definition associated with it",
+ ". ",
+ "For example, before the following line is evaluated, the symbol name on the \
+left-hand side is blue, but after evaluation it turns black because a value \
+has been assigned to it. \n",
+ StyleBox["Try this now by evaluating the input cell.",
+  FontWeight->"Bold"]
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"value", "=", "7"}], ";"}]], "Input"],
+
+Cell["\<\
+Unmatched brackets or parentheses are given a reddish purple color that \
+indicates a syntax error.\
+\>", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Table", "[", 
+   RowBox[{"i", ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", "10"}]}]}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "If you nevertheless evaluate such an input, emphasis is added to the \
+unmatched elements in the form of a yellow background",
+ ". ",
+ "Clicking the yellow ",
+ Cell[BoxData[
+  GraphicsBox[
+   TagBox[RasterBox[CompressedData["
+1:eJxTTMoPSmJmYGDghmIQe2OPDX40LVfm/0yG/zersaA7jRAFv3oY/q+HoXVg
+BGHfrEZXsJHB00oaoRhNwUaQXhcbGag5aAo2MnjYyHhZynlaSgPVeFrIoitY
+BzYBrAzhGEwr1jP4WkhDVIIQqhUI90NMW42iACsChg9EAR4EVAAAQpe7uA==
+
+     "], {{0, 11}, {11, 0}}, {0, 255},
+     ColorFunction->RGBColor],
+    BoxForm`ImageTag[
+    "Byte", ColorSpace -> "RGB", ImageSize -> Automatic, Interleaving -> True,
+      Magnification -> Automatic],
+    Selectable->False],
+   BaseStyle->"ImageGraphics",
+   ImageSize->Magnification[1],
+   ImageSizeRaw->{11, 11},
+   PlotRange->{{0, 11}, {0, 11}}]]],
+ " symbol near the cell bracket will print out an error message describing \
+the problem (but only after you have evaluated the input)."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Table", "[", 
+   RowBox[{"i", ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", "10"}]}]}]}], "]"}]], "Input",
+ EmphasizeSyntaxErrors->True],
+
+Cell["\<\
+When a function requires more arguments than you've given it, a red caret \
+indicates where more are needed. Conversely, when a function has been given \
+too many arguments, the excess arguments are colored red.\
+\>", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[{
+ RowBox[{"Integrate", "[", "x", "]"}], "\n", 
+ RowBox[{"Sin", "[", 
+  RowBox[{"a", ",", "b"}], "]"}]}], "Input"],
+
+Cell["Incorrect option names are colored red.", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"2", "Pi"}]}], "}"}], ",", 
+   RowBox[{"PlotArea", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "1"}], ",", "1"}], "}"}]}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "Local variables of several types are specially colored: in each case below, \
+the variable ",
+ StyleBox["x", "Output"],
+ " is colored (or italicized) because during evaluation it will be given a \
+local value that overrides any global value that may be assigned to it."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"func", "[", "x_", "]"}], ":=", 
+  RowBox[{"x", "^", "2"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", "x", "}"}], ",", 
+   RowBox[{"x", "+", "2"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Table", "[", 
+  RowBox[{"x", ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "10"}], "}"}]}], "]"}]}], "Input"],
+
+Cell[TextData[{
+ "The ",
+ StyleBox["Preferences",
+  FontWeight->"Bold"],
+ " panel allows you to control these and other syntax coloring features, or \
+turn them off."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Interactivity using ",
+ StyleBox["Manipulate", "Input"]
+}], "Section",
+ CellChangeTimes->{{3.537109312283332*^9, 3.5371093189448233`*^9}}],
+
+Cell[TextData[{
+ "Nearly any command can be made interactive by wrapping it in ",
+ StyleBox["Manipulate", "Output"],
+ ". \n",
+ StyleBox["Be sure to evaluate the inputs below. This page won't make much \
+sense if you don't.",
+  FontWeight->"Bold"],
+ "\nThe first argument to ",
+ StyleBox["Manipulate", "Output"],
+ " is the function to be made interactive",
+ ". ",
+ "The second and subsequent arguments specify parameters and ranges."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"n", "!"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "1", ",", "1000", ",", "1"}], "}"}]}], "]"}]], "Input"],
+
+Cell["\<\
+You can specify multiple parameters by giving multiple range specifications.\
+\>", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"a", ",", "b"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "1", ",", "1000", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"b", ",", "1", ",", "1000", ",", "1"}], "}"}]}], "]"}]], "Input"],
+
+Cell["\<\
+If the step size is omitted, the parameter is allowed to vary continuously.\
+\>", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"n", " ", "x"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", 
+       RowBox[{"2", "Pi"}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "1", ",", "10"}], "}"}]}], "]"}]], "Input"],
+
+Cell["\<\
+You can use a sublist in place of the range to give a parameter a discrete \
+set of values.\
+\>", "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"n", " ", "x"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", 
+       RowBox[{"2", "Pi"}]}], "}"}], ",", 
+     RowBox[{"Filling", "\[Rule]", "filling"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "1", ",", "10"}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"filling", ",", 
+     RowBox[{"{", 
+      RowBox[{"None", ",", "Axis", ",", "Bottom", ",", "Top"}], "}"}]}], 
+    "}"}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "In order to ensure good interactive performance, many ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " plotting functions automatically simplify their results while sliders are \
+being used, then generate a higher-quality result when the slider is released",
+ ". ",
+ "Note how this plot looks jagged, but only while the slider is being dragged."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot3D", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"n", " ", "x", " ", "y"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "3"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "0", ",", "3"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "1", ",", "4"}], "}"}]}], "]"}]], "Input"],
+
+Cell[TextData[{
+ "Complete details, including information about how to use ",
+ StyleBox["Manipulate", "Output"],
+ " with slower functions, is available in the tutorial \"",
+ ButtonBox["Introduction to Manipulate",
+  BaseStyle->"LinkNewWindow",
+  ButtonData->"paclet:tutorial/IntroductionToManipulate"],
+ "\"."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Getting Help", "Section",
+ CellChangeTimes->{{3.537109348011628*^9, 3.537109349495824*^9}}],
+
+Cell[TextData[{
+ "The ",
+ ButtonBox["Documentation Center",
+  BaseStyle->"LinkNewWindow",
+  ButtonData->"paclet:guide/Mathematica"],
+ " is the starting point for all help, including tutorials, guide pages, and \
+function home pages",
+ ". ",
+ "It's always available from the top of the ",
+ StyleBox["Help",
+  FontWeight->"Bold"],
+ " menu."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[TextData[{
+ "The ",
+ ButtonBox["Function Navigator",
+  BaseStyle->"Hyperlink",
+  Evaluator->Automatic,
+  ButtonFunction:>(TreeBrowse`DocsNavigatorLookup[True]& ),
+  ButtonData->"paclet:ref/Wolfram"],
+ " is a convenient way to find the function you need if you have a specific \
+operation in mind. It's available from the ",
+ StyleBox["Help",
+  FontWeight->"Bold"],
+ " menu or the Documentation Center."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[TextData[{
+ "The online ",
+ ButtonBox["Learning Center",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://wolfram.com/learningcenter"], None},
+  ButtonNote->"http://wolfram.com/learningcenter"],
+ " is a resource for finding tutorial videos."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[TextData[{
+ "If you already know or can guess the function you need, and just want to be \
+reminded of its arguments, the ",
+ StyleBox["?", "Output"],
+ " operator is a quick way to get information without opening a new window."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "Integrate"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\\!\\(\\*RowBox[{\\\"Integrate\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], \\\",\\\",               StyleBox[\\\
+\"x\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) gives the indefinite integral \
+\\!\\(\\*RowBox[{\\\"\[Integral]\\\", \\\"f\\\", \\\" \\\", \\\"d\\\", \
+\\\"x\\\"}]\\). \\n\\!\\(\\*RowBox[{\\\"Integrate\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{StyleBox[\\\"x\\\", \\\"TI\\\"], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"min\\\", \
+\\\"TI\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], \
+StyleBox[\\\"max\\\", \\\"TI\\\"]]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) gives the \
+definite integral \\!\\(\\*RowBox[{SubsuperscriptBox[\\\"\[Integral]\\\", \
+SubscriptBox[\\\"x\\\", StyleBox[\\\"min\\\", \\\"TI\\\"]], \
+SubscriptBox[\\\"x\\\", StyleBox[\\\"max\\\", \\\"TI\\\"]]], \\\" \\\", \\\"f\
+\\\", \\\" \\\", \\\"d\\\", \\\"x\\\"}]\\). \\n\\!\\(\\*RowBox[{\\\"Integrate\
+\\\", \\\"[\\\",               RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], \\\",\
+\\\", RowBox[{\\\"{\\\", RowBox[{StyleBox[\\\"x\\\", \\\"TI\\\"], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"min\\\", \
+\\\"TI\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], \
+StyleBox[\\\"max\\\", \\\"TI\\\"]]}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\
+\", RowBox[{StyleBox[\\\"y\\\", \\\"TI\\\"], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"y\\\", \\\"TI\\\"], StyleBox[\\\"min\\\", \
+\\\"TI\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"y\\\", \\\"TI\\\"], \
+StyleBox[\\\"max\\\", \\\"TI\\\"]]}], \\\"}\\\"}], \\\",\\\", StyleBox[\\\"\
+\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) gives the multiple integral \
+\\!\\(\\*RowBox[{SubsuperscriptBox[\\\"\[Integral]\\\",               \
+SubscriptBox[\\\"x\\\", StyleBox[\\\"min\\\", \\\"TI\\\"]],               \
+SubscriptBox[\\\"x\\\", StyleBox[\\\"max\\\", \\\"TI\\\"]]],               \
+RowBox[{\\\"d\\\", \\\"x\\\",               RowBox[{SubsuperscriptBox[\\\"\
+\[Integral]\\\", SubscriptBox[\\\"y\\\", StyleBox[\\\"min\\\", \\\"TI\\\"]], \
+SubscriptBox[\\\"y\\\", StyleBox[\\\"max\\\", \\\"TI\\\"]]], \
+RowBox[{\\\"d\\\", \\\"\[InvisibleSpace]\\\", \\\"y\\\", \\\" \\\", \\\"\
+\[Ellipsis]\\\", \\\" \\\", \\\"f\\\"}]}]}]}]\\). \"\>", "MSG"], 
+  "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/Integrate"]}]], "Print", "PrintUsage",
+ CellTags->"Info3432882987-3079471"]
+}, Open  ]],
+
+Cell[TextData[{
+ "The ",
+ StyleBox[ButtonBox["\[RightSkeleton]",
+  BaseStyle->"Link",
+  Active->True,
+  ButtonData->"paclet:ref/Integrate"], "SR"],
+ " at the end of the message is a link that takes you directly to the \
+function's full reference page.\nYou can also select any word or function \
+name and press ",
+ Cell[BoxData[
+  FormBox[
+   DynamicBox[StyleBox[
+     FEPrivate`Switch[FEPrivate`$OperatingSystem, "MacOSX", 
+      StyleBox["\"Command+Shift+F\"", Bold, StripOnInput -> False], "Windows", 
+      StyleBox["\"F1\"", Bold, StripOnInput -> False], "Unix", 
+      StyleBox["\"F1\"", Bold, StripOnInput -> False]], ShowStringCharacters -> 
+     False],
+    ImageSizeCache->{123., {1., 10.}}], TraditionalForm]]],
+ " to open its function reference page."
+}], "Text",
+ Editable->False,
+ Selectable->False,
+ Deletable->False,
+ CellFrame->1,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {10, 10}},
+ Deployed->True,
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellFrameMargins->{{40, 20}, {8, 8}},
+ CellFrameColor->GrayLevel[0.9],
+ ParagraphSpacing->{0.6, 0},
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.3],
+ Background->GrayLevel[0.95]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Upward and Onward", "Section",
+ CellChangeTimes->{{3.5371099342971773`*^9, 3.537109937195047*^9}}],
+
+Cell["Where to go from here?  Explore!  I suggest the following", "Text",
+ CellChangeTimes->{{3.537109941195307*^9, 3.537109973937194*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Explore the Documentation Center.  (Click on Help > Documentation Center)\
+\[LineSeparator]This is the best place to:\
+\>", "Item",
+ CellChangeTimes->{{3.5371099833306103`*^9, 3.537110027974259*^9}, {
+  3.5371102587228107`*^9, 3.537110261857141*^9}, {3.5371176289336863`*^9, 
+  3.537117642844515*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Learn how to use a function in Mathematica.", "Subitem",
+ CellChangeTimes->{{3.537110015584811*^9, 3.537110067950116*^9}}],
+
+Cell[TextData[{
+ "Get ready-to-go examples to ",
+ StyleBox["practice",
+  FontWeight->"Bold"],
+ " with and ",
+ StyleBox["build on",
+  FontWeight->"Bold"],
+ "."
+}], "Subitem",
+ CellChangeTimes->{{3.537110070020287*^9, 3.537110086419405*^9}}],
+
+Cell[TextData[{
+ "Explore ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ "'s capabilities."
+}], "Subitem",
+ CellChangeTimes->{{3.537110054100965*^9, 3.537110066284367*^9}, {
+  3.537110147904345*^9, 3.537110147908348*^9}}],
+
+Cell[TextData[{
+ "Especially explore the documentation on: ",
+ StyleBox["Manipulate", "Input"],
+ " and ",
+ StyleBox["Plot", "Input"],
+ StyleBox[".", "Text"]
+}], "Subitem",
+ CellChangeTimes->{{3.5371104065373898`*^9, 3.537110416689932*^9}}]
+}, Open  ]],
+
+Cell["\<\
+Visit the Demonstrations Project online.   \
+(http://www.demonstrations.wolfram.com/)\
+\>", "Item",
+ CellChangeTimes->{{3.5371099952251577`*^9, 3.537110002807585*^9}, {
+  3.5371101053306932`*^9, 3.537110114274098*^9}, {3.53711025453111*^9, 
+  3.537110256194545*^9}, {3.537117646412385*^9, 3.537117651076507*^9}, {
+  3.5371176897782373`*^9, 3.5371176909751263`*^9}}],
+
+Cell[TextData[{
+ "See examples of ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " in action in many fields of science and mathematics."
+}], "Subitem",
+ CellChangeTimes->{{3.537110102644376*^9, 3.5371101452166767`*^9}}],
+
+Cell[TextData[{
+ "Visit Wolfram Alpha to get started, and then download as \"Live ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ "\" (bottom of output) to modify and edit in ",
+ StyleBox["Mathematica.",
+  FontSlant->"Italic"],
+ " "
+}], "Item",
+ CellChangeTimes->{{3.537110448383625*^9, 3.537110530492463*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"SlideShow",
+WindowSize->{878, 605},
+WindowMargins->{{21, Automatic}, {Automatic, 12}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
+StyleDefinitions->FrontEnd`FileName[{"Creative"}, "PastelColor.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3432882987-3079471"->{
+  Cell[103863, 3352, 2563, 40, 211, "Print",
+   CellTags->"Info3432882987-3079471"]},
+ "SlideShowHeader"->{
+  Cell[579, 22, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[3034, 96, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[5177, 167, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[7185, 231, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[29149, 652, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[34830, 866, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[39678, 1036, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[43282, 1169, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[51053, 1457, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[57152, 1674, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[65914, 1948, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[70927, 2129, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[76389, 2353, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[85680, 2699, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[93926, 2988, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[100721, 3230, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[108445, 3456, 64, 1, 1, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3432882987-3079471", 112171, 3576},
+ {"SlideShowHeader", 112279, 3579}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[646, 25, 197, 5, 74, "Title"],
+Cell[846, 32, 199, 3, 36, "Subtitle"],
+Cell[CellGroupData[{
+Cell[1070, 39, 195, 6, 46, "Item"],
+Cell[1268, 47, 107, 1, 46, "Item"],
+Cell[1378, 50, 134, 2, 46, "Item"],
+Cell[1515, 54, 115, 1, 46, "Item"]
+}, Open  ]],
+Cell[1645, 58, 568, 13, 157, "Text"],
+Cell[2216, 73, 781, 18, 41, "PreviousNext"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3034, 96, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[3123, 101, 225, 7, 124, "Section"],
+Cell[3351, 110, 182, 6, 45, "Text"],
+Cell[CellGroupData[{
+Cell[3558, 120, 361, 8, 71, "Item"],
+Cell[3922, 130, 231, 6, 46, "Item"],
+Cell[4156, 138, 176, 2, 46, "Item"]
+}, Open  ]],
+Cell[4347, 143, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5177, 167, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[5266, 172, 202, 7, 124, "Section"],
+Cell[5471, 181, 491, 14, 75, "Text"],
+Cell[5965, 197, 387, 8, 75, "Text"],
+Cell[6355, 207, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7185, 231, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[7274, 236, 163, 2, 124, "Section"],
+Cell[7440, 240, 1221, 35, 107, "Text"],
+Cell[CellGroupData[{
+Cell[8686, 279, 275, 9, 56, "Input"],
+Cell[8964, 290, 18801, 315, 178, "Output"]
+}, Open  ]],
+Cell[27780, 608, 536, 18, 54, "Text"],
+Cell[28319, 628, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29149, 652, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[29238, 657, 119, 1, 124, "Section"],
+Cell[29360, 660, 1391, 42, 136, "Text"],
+Cell[30754, 704, 200, 6, 56, "Input"],
+Cell[30957, 712, 465, 16, 54, "Text"],
+Cell[31425, 730, 213, 6, 56, "Input"],
+Cell[31641, 738, 619, 26, 55, "Text"],
+Cell[32263, 766, 56, 1, 56, "Input"],
+Cell[32322, 769, 728, 33, 55, "Text"],
+Cell[33053, 804, 112, 3, 56, "Input"],
+Cell[33168, 809, 685, 25, 80, "Text"],
+Cell[33856, 836, 141, 4, 56, "Input"],
+Cell[34000, 842, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34830, 866, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[34919, 871, 90, 1, 124, "Section"],
+Cell[35012, 874, 750, 22, 114, "Text"],
+Cell[35765, 898, 120, 3, 56, "Input"],
+Cell[35888, 903, 365, 11, 56, "Input"],
+Cell[36256, 916, 472, 16, 54, "Text"],
+Cell[36731, 934, 866, 29, 82, "Input"],
+Cell[37600, 965, 483, 18, 54, "Text"],
+Cell[38086, 985, 238, 5, 82, "Input"],
+Cell[38327, 992, 518, 18, 54, "Text"],
+Cell[38848, 1012, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39678, 1036, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[39767, 1041, 117, 1, 124, "Section"],
+Cell[39887, 1044, 623, 23, 80, "Text"],
+Cell[40513, 1069, 344, 11, 56, "Input"],
+Cell[40860, 1082, 512, 19, 54, "Text"],
+Cell[41375, 1103, 137, 4, 56, "Input"],
+Cell[41515, 1109, 140, 4, 56, "Input"],
+Cell[41658, 1115, 122, 3, 56, "Input"],
+Cell[41783, 1120, 666, 23, 54, "Text"],
+Cell[42452, 1145, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43282, 1169, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[43371, 1174, 107, 1, 124, "Section"],
+Cell[43481, 1177, 1088, 38, 145, "Text"],
+Cell[44572, 1217, 141, 4, 56, "Input"],
+Cell[44716, 1223, 192, 6, 56, "Input"],
+Cell[44911, 1231, 350, 11, 56, "Input"],
+Cell[45264, 1244, 664, 22, 84, "Text"],
+Cell[45931, 1268, 175, 5, 56, "Input"],
+Cell[46109, 1275, 483, 18, 54, "Text"],
+Cell[46595, 1295, 155, 5, 56, "Input"],
+Cell[46753, 1302, 628, 23, 80, "Text"],
+Cell[47384, 1327, 192, 6, 56, "Input"],
+Cell[47579, 1335, 685, 23, 91, "Text"],
+Cell[48267, 1360, 259, 8, 56, "Input"],
+Cell[48529, 1370, 570, 22, 59, "Text"],
+Cell[49102, 1394, 269, 8, 56, "Input"],
+Cell[49374, 1404, 846, 27, 85, "Text"],
+Cell[50223, 1433, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[51053, 1457, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[51142, 1462, 92, 1, 124, "Section"],
+Cell[51237, 1465, 757, 27, 107, "Text"],
+Cell[51997, 1494, 192, 6, 56, "Input"],
+Cell[52192, 1502, 574, 21, 59, "Text"],
+Cell[52769, 1525, 239, 7, 56, "Input"],
+Cell[53011, 1534, 499, 19, 54, "Text"],
+Cell[53513, 1555, 291, 8, 56, "Input"],
+Cell[53807, 1565, 1455, 42, 169, "Text"],
+Cell[55265, 1609, 35, 0, 56, "Input"],
+Cell[55303, 1611, 665, 24, 80, "Text"],
+Cell[CellGroupData[{
+Cell[55993, 1639, 68, 1, 56, "Input"],
+Cell[56064, 1642, 243, 5, 85, "Output"]
+}, Open  ]],
+Cell[56322, 1650, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[57152, 1674, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[57241, 1679, 123, 1, 124, "Section"],
+Cell[57367, 1682, 574, 20, 75, "Text"],
+Cell[57944, 1704, 427, 11, 82, "Input"],
+Cell[58374, 1717, 895, 28, 55, "Text"],
+Cell[59272, 1747, 519, 11, 157, "Input"],
+Cell[59794, 1760, 1113, 32, 115, "Text"],
+Cell[60910, 1794, 236, 7, 82, "Input"],
+Cell[61149, 1803, 552, 20, 84, "Text"],
+Cell[61704, 1825, 68, 2, 56, "Input"],
+Cell[61775, 1829, 712, 22, 114, "Text"],
+Cell[62490, 1853, 456, 15, 132, "Input"],
+Cell[62949, 1870, 2132, 52, 129, "Text"],
+Cell[65084, 1924, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[65914, 1948, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[66003, 1953, 114, 1, 124, "Section"],
+Cell[66120, 1956, 722, 23, 75, "Text"],
+Cell[CellGroupData[{
+Cell[66867, 1983, 57, 1, 56, "Input"],
+Cell[66927, 1986, 39, 1, 64, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[67003, 1992, 58, 1, 56, "Input"],
+Cell[67064, 1995, 46, 0, 59, "Output"]
+}, Open  ]],
+Cell[67125, 1998, 1019, 30, 158, "Text"],
+Cell[CellGroupData[{
+Cell[68169, 2032, 85, 2, 56, "Input"],
+Cell[68257, 2036, 46, 0, 59, "Output"]
+}, Open  ]],
+Cell[68318, 2039, 522, 19, 54, "Text"],
+Cell[CellGroupData[{
+Cell[68865, 2062, 111, 3, 56, "Input"],
+Cell[68979, 2067, 173, 2, 85, "Output"]
+}, Open  ]],
+Cell[69167, 2072, 789, 24, 96, "Text"],
+Cell[69959, 2098, 49, 1, 56, "Input"],
+Cell[70011, 2101, 83, 2, 56, "Input"],
+Cell[70097, 2105, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[70927, 2129, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[71016, 2134, 115, 1, 124, "Section"],
+Cell[71134, 2137, 750, 27, 86, "Text"],
+Cell[CellGroupData[{
+Cell[71909, 2168, 56, 1, 56, "Input"],
+Cell[71968, 2171, 32, 0, 59, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[72037, 2176, 58, 1, 56, "Input"],
+Cell[72098, 2179, 31, 0, 59, "Output"]
+}, Open  ]],
+Cell[72144, 2182, 590, 22, 59, "Text"],
+Cell[CellGroupData[{
+Cell[72759, 2208, 137, 4, 56, "Input"],
+Cell[72899, 2214, 204, 7, 59, "Output"]
+}, Open  ]],
+Cell[73118, 2224, 818, 27, 115, "Text"],
+Cell[CellGroupData[{
+Cell[73961, 2255, 56, 1, 56, "Input"],
+Cell[74020, 2258, 57, 1, 59, "Output"]
+}, Open  ]],
+Cell[74092, 2262, 589, 22, 59, "Text"],
+Cell[CellGroupData[{
+Cell[74706, 2288, 51, 1, 56, "Input"],
+Cell[74760, 2291, 32, 0, 59, "Output"]
+}, Open  ]],
+Cell[74807, 2294, 749, 33, 59, "Text"],
+Cell[75559, 2329, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[76389, 2353, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[76478, 2358, 95, 1, 124, "Section"],
+Cell[76576, 2361, 616, 24, 59, "Text"],
+Cell[77195, 2387, 67, 2, 56, "Input"],
+Cell[77265, 2391, 617, 21, 84, "Text"],
+Cell[77885, 2414, 49, 1, 56, "Input"],
+Cell[77937, 2417, 217, 7, 56, "Input"],
+Cell[78157, 2426, 1039, 29, 76, "Text"],
+Cell[79199, 2457, 205, 6, 107, "Input"],
+Cell[79407, 2465, 855, 30, 110, "Text"],
+Cell[80265, 2497, 102, 3, 57, "Input"],
+Cell[80370, 2502, 1091, 34, 170, "Text"],
+Cell[81464, 2538, 54, 1, 56, "Input"],
+Cell[81521, 2541, 471, 16, 54, "Text"],
+Cell[81995, 2559, 109, 3, 56, "Input"],
+Cell[82107, 2564, 74, 2, 56, "Input"],
+Cell[82184, 2568, 435, 16, 54, "Text"],
+Cell[82622, 2586, 77, 2, 56, "Input"],
+Cell[82702, 2590, 492, 18, 54, "Text"],
+Cell[83197, 2610, 169, 5, 56, "Input"],
+Cell[83369, 2617, 611, 22, 54, "Text"],
+Cell[83983, 2641, 114, 3, 56, "Input"],
+Cell[84100, 2646, 106, 3, 56, "Input"],
+Cell[84209, 2651, 638, 22, 54, "Text"],
+Cell[84850, 2675, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[85680, 2699, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[85769, 2704, 110, 1, 124, "Section"],
+Cell[85882, 2707, 712, 24, 84, "Text"],
+Cell[86597, 2733, 188, 2, 182, "Input"],
+Cell[86788, 2737, 844, 25, 126, "Text"],
+Cell[87635, 2764, 71, 2, 56, "Input"],
+Cell[87709, 2768, 519, 19, 54, "Text"],
+Cell[88231, 2789, 152, 5, 56, "Input"],
+Cell[88386, 2796, 1331, 40, 75, "Text"],
+Cell[89720, 2838, 182, 6, 56, "Input"],
+Cell[89905, 2846, 631, 20, 75, "Text"],
+Cell[90539, 2868, 127, 3, 82, "Input"],
+Cell[90669, 2873, 451, 16, 54, "Text"],
+Cell[91123, 2891, 312, 10, 56, "Input"],
+Cell[91438, 2903, 695, 22, 80, "Text"],
+Cell[92136, 2927, 380, 11, 108, "Input"],
+Cell[92519, 2940, 574, 22, 54, "Text"],
+Cell[93096, 2964, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[93926, 2988, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[94015, 2993, 156, 4, 124, "Section"],
+Cell[94174, 2999, 840, 28, 142, "Text"],
+Cell[95017, 3029, 177, 5, 56, "Input"],
+Cell[95197, 3036, 496, 18, 54, "Text"],
+Cell[95696, 3056, 301, 8, 56, "Input"],
+Cell[96000, 3066, 495, 18, 54, "Text"],
+Cell[96498, 3086, 350, 11, 56, "Input"],
+Cell[96851, 3099, 511, 19, 54, "Text"],
+Cell[97365, 3120, 610, 18, 107, "Input"],
+Cell[97978, 3140, 777, 24, 96, "Text"],
+Cell[98758, 3166, 410, 12, 56, "Input"],
+Cell[99171, 3180, 717, 24, 80, "Text"],
+Cell[99891, 3206, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[100721, 3230, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[100810, 3235, 97, 1, 124, "Section"],
+Cell[100910, 3238, 746, 28, 75, "Text"],
+Cell[101659, 3268, 815, 28, 75, "Text"],
+Cell[102477, 3298, 663, 24, 54, "Text"],
+Cell[103143, 3324, 640, 21, 80, "Text"],
+Cell[CellGroupData[{
+Cell[103808, 3349, 52, 1, 56, "Input"],
+Cell[103863, 3352, 2563, 40, 211, "Print",
+ CellTags->"Info3432882987-3079471"]
+}, Open  ]],
+Cell[106441, 3395, 1171, 35, 85, "Text"],
+Cell[107615, 3432, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[108445, 3456, 64, 1, 1, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[108534, 3461, 104, 1, 124, "Section"],
+Cell[108641, 3464, 139, 1, 45, "Text"],
+Cell[CellGroupData[{
+Cell[108805, 3469, 311, 6, 97, "Item"],
+Cell[CellGroupData[{
+Cell[109141, 3479, 128, 1, 27, "Subitem"],
+Cell[109272, 3482, 239, 9, 27, "Subitem"],
+Cell[109514, 3493, 227, 7, 27, "Subitem"],
+Cell[109744, 3502, 239, 7, 30, "Subitem"]
+}, Open  ]],
+Cell[109998, 3512, 375, 7, 71, "Item"],
+Cell[110376, 3521, 225, 6, 48, "Subitem"],
+Cell[110604, 3529, 315, 9, 97, "Item"]
+}, Open  ]],
+Cell[110934, 3541, 781, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

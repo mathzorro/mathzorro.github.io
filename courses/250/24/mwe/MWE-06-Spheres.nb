@@ -1,0 +1,1255 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     45299,       1247]
+NotebookOptionsPosition[     43363,       1188]
+NotebookOutlinePosition[     43717,       1204]
+CellTagsIndexPosition[     43674,       1201]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["MWE: Many Spheres of different sizes", "Title",
+ CellChangeTimes->{{3.748604495913685*^9, 
+  3.7486045104266567`*^9}},ExpressionUUID->"6b9b9f31-a191-4f96-911e-\
+69de3279c423"],
+
+Cell[CellGroupData[{
+
+Cell["Create the centers and radii of the spheres", "Section",
+ CellChangeTimes->{{3.748604726660275*^9, 
+  3.748604735403742*^9}},ExpressionUUID->"61b1ae12-aeeb-42eb-a700-\
+05131368b902"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"centers", "=", 
+  RowBox[{"RandomReal", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"0", ",", "1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"20", ",", "3"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7486045142356462`*^9, 
+  3.7486045320995493`*^9}},ExpressionUUID->"9aa6d723-e3d1-4fcc-985e-\
+b15224424d1c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "0.6475951476190318`", ",", "0.40681804077854533`", ",", 
+     "0.7689849925452938`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.6611207461037218`", ",", "0.835327182758137`", ",", 
+     "0.3318245143436698`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.8600300113234074`", ",", "0.5662166526999868`", ",", 
+     "0.3438809466834565`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.8604487555102416`", ",", "0.7792027191091837`", ",", 
+     "0.6096454112095462`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.7844527221143149`", ",", "0.6818360682195408`", ",", 
+     "0.948858824366196`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.47275263363325704`", ",", "0.7634219940617728`", ",", 
+     "0.7593499991513724`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.6174852953513916`", ",", "0.9004705002425732`", ",", 
+     "0.2409762023291131`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.07151642550676551`", ",", "0.8982584508973872`", ",", 
+     "0.09258267230226447`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.9054062143140247`", ",", "0.2559701589350101`", ",", 
+     "0.004395104600442679`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.9916047829003878`", ",", "0.07141553478343798`", ",", 
+     "0.8543501085029777`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.9155810679143237`", ",", "0.24815884037436597`", ",", 
+     "0.7272280095464891`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.8862683818212778`", ",", "0.5791087145972249`", ",", 
+     "0.3075769099507282`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.37135051527900353`", ",", "0.9343746616407724`", ",", 
+     "0.09642690131107012`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.9941392551805377`", ",", "0.28568578578562875`", ",", 
+     "0.025749659812014825`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.3911304503417874`", ",", "0.7040390841726081`", ",", 
+     "0.28920191611525636`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.0015631952417001216`", ",", "0.6925400663954793`", ",", 
+     "0.11762788362743093`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.36756451661577727`", ",", "0.06988710136875254`", ",", 
+     "0.17441711726589748`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.00794129641656327`", ",", "0.2945585439843643`", ",", 
+     "0.4360314056164456`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.4421172296155469`", ",", "0.15417366098206986`", ",", 
+     "0.3687700775911833`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.9057686609011524`", ",", "0.27569597277687974`", ",", 
+     "0.8431228938672042`"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.748604522321928*^9, 
+  3.748604535865597*^9}},ExpressionUUID->"26101838-b52d-4924-bd63-\
+a60837aa5676"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"sizes", "=", 
+  RowBox[{"RandomReal", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{".1", ",", ".2"}], "}"}], ",", "20"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7486045388165207`*^9, 
+  3.74860455417237*^9}},ExpressionUUID->"2e50ea72-236b-4ed6-827a-\
+644f680e8fbf"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.17140716753279323`", ",", "0.11446280823594249`", ",", 
+   "0.18971993383750763`", ",", "0.13816446041800803`", ",", 
+   "0.1298309650734996`", ",", "0.12043440635279107`", ",", 
+   "0.11504410593341075`", ",", "0.12753880722832409`", ",", 
+   "0.1240681148128887`", ",", "0.1483541517106864`", ",", 
+   "0.15365238219753585`", ",", "0.1955818585176421`", ",", 
+   "0.15370251990413245`", ",", "0.10819374017692643`", ",", 
+   "0.14631699447758345`", ",", "0.15603231543692342`", ",", 
+   "0.15172525635020376`", ",", "0.12206496934801264`", ",", 
+   "0.17866568446480866`", ",", "0.11781550597638249`"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.748604554998221*^9},ExpressionUUID->"b9f545b0-6307-4ee2-be25-\
+652fa52b98bc"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Use ",
+ StyleBox["MapThread", "Input",
+  FontSize->24],
+ " to assemble them."
+}], "Section",
+ CellChangeTimes->{{3.748604739739875*^9, 
+  3.748604749052134*^9}},ExpressionUUID->"25f25af9-83aa-41f2-bc33-\
+31c87f96f61a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"MapThread", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Sphere", "[", 
+      RowBox[{"#1", ",", "#2"}], "]"}], "&"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"centers", ",", "sizes"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.748604558786207*^9, 
+  3.74860458368501*^9}},ExpressionUUID->"687bf742-cb68-4fdd-9900-\
+89353364d654"],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   SphereBox[{0.6475951476190318, 0.40681804077854533`, 0.7689849925452938}, 
+    0.17140716753279323`], 
+   SphereBox[{0.6611207461037218, 0.835327182758137, 0.3318245143436698}, 
+    0.11446280823594249`], 
+   SphereBox[{0.8600300113234074, 0.5662166526999868, 0.3438809466834565}, 
+    0.18971993383750763`], 
+   SphereBox[{0.8604487555102416, 0.7792027191091837, 0.6096454112095462}, 
+    0.13816446041800803`], 
+   SphereBox[{0.7844527221143149, 0.6818360682195408, 0.948858824366196}, 
+    0.1298309650734996], 
+   SphereBox[{0.47275263363325704`, 0.7634219940617728, 0.7593499991513724}, 
+    0.12043440635279107`], 
+   SphereBox[{0.6174852953513916, 0.9004705002425732, 0.2409762023291131}, 
+    0.11504410593341075`], 
+   SphereBox[{0.07151642550676551, 0.8982584508973872, 0.09258267230226447}, 
+    0.12753880722832409`], 
+   SphereBox[{0.9054062143140247, 0.2559701589350101, 0.004395104600442679}, 
+    0.1240681148128887], 
+   SphereBox[{0.9916047829003878, 0.07141553478343798, 0.8543501085029777}, 
+    0.1483541517106864], 
+   SphereBox[{0.9155810679143237, 0.24815884037436597`, 0.7272280095464891}, 
+    0.15365238219753585`], 
+   SphereBox[{0.8862683818212778, 0.5791087145972249, 0.3075769099507282}, 
+    0.1955818585176421], 
+   SphereBox[{0.37135051527900353`, 0.9343746616407724, 0.09642690131107012}, 
+    0.15370251990413245`], 
+   SphereBox[{0.9941392551805377, 0.28568578578562875`, 
+    0.025749659812014825`}, 0.10819374017692643`], 
+   SphereBox[{0.3911304503417874, 0.7040390841726081, 0.28920191611525636`}, 
+    0.14631699447758345`], 
+   SphereBox[{0.0015631952417001216`, 0.6925400663954793, 
+    0.11762788362743093`}, 0.15603231543692342`], 
+   SphereBox[{0.36756451661577727`, 0.06988710136875254, 
+    0.17441711726589748`}, 0.15172525635020376`], 
+   SphereBox[{0.00794129641656327, 0.2945585439843643, 0.4360314056164456}, 
+    0.12206496934801264`], 
+   SphereBox[{0.4421172296155469, 0.15417366098206986`, 0.3687700775911833}, 
+    0.17866568446480866`], 
+   SphereBox[{0.9057686609011524, 0.27569597277687974`, 0.8431228938672042}, 
+    0.11781550597638249`]},
+  ImageSize->{350.8563478604967, 327.22746091148673`},
+  ImageSizeRaw->Automatic,
+  ViewPoint->{0.4111053793929768, -3.354461986265108, 0.1690477735331205},
+  ViewVertical->{0.08469198117093471, -0.601636134315608, 
+   0.9018869325814036}]], "Output",
+ CellChangeTimes->{
+  3.748604584104789*^9},ExpressionUUID->"a90c8e5b-e73a-4f9f-9707-\
+f3b15b2d4281"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Color them", "Section",
+ CellChangeTimes->{{3.748604644992309*^9, 
+  3.748604646079548*^9}},ExpressionUUID->"ae4dcb8e-08b3-4d2e-ad2c-\
+0c57388564b7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"colors", "=", 
+  RowBox[{"Hue", "/@", 
+   RowBox[{"RandomReal", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", ".3"}], "}"}], ",", "20"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.748604617267232*^9, 3.748604637310787*^9}, {
+  3.748604677074185*^9, 
+  3.7486046818341017`*^9}},ExpressionUUID->"ec9e637a-5da0-451c-afb0-\
+abf6b24a1cde"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.22136800156231712`], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.2213680015623171, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.22136800156231712]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.22136800156231712`, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.22136800156231712`],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.005593320395704593], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.005593320395704592, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.005593320395704593]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.005593320395704593, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.005593320395704593],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.15799976971010454`], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.15799976971010452`, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.15799976971010454]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.15799976971010454`, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.15799976971010454`],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.20229880880813517`], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.20229880880813514`, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.20229880880813517]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.20229880880813517`, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.20229880880813517`],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.0017342288133732064`], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.0017342288133732062`, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.0017342288133732064]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.0017342288133732064`, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.0017342288133732064`],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.18609412197510178`], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.18609412197510178`, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.18609412197510178]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.18609412197510178`, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.18609412197510178`],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.04399570266130737], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.04399570266130736, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.04399570266130737]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.04399570266130737, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.04399570266130737],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.13590932661729355`], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.13590932661729352`, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.13590932661729355]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.13590932661729355`, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.13590932661729355`],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.04693249968755009], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.04693249968755008, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.04693249968755009]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.04693249968755009, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.04693249968755009],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.17391025567153928`], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.17391025567153928`, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.17391025567153928]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.17391025567153928`, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.17391025567153928`],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.17551142291002797`], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.17551142291002797`, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.17551142291002797]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.17551142291002797`, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.17551142291002797`],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.018440313598706293`], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.01844031359870629, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.018440313598706293]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.018440313598706293`, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.018440313598706293`],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.07895451423651079], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.07895451423651077, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.07895451423651079]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.07895451423651079, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.07895451423651079],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.25313801132208885`], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.25313801132208885`, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.25313801132208885]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.25313801132208885`, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.25313801132208885`],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.055807565575079154`], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.05580756557507915, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.055807565575079154]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.055807565575079154`, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.055807565575079154`],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.1759976174323188], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.1759976174323188, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.1759976174323188]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.1759976174323188, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.1759976174323188],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.2459463977814697], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.24594639778146968`, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.2459463977814697]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.2459463977814697, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.2459463977814697],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.0021343995913751246`], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.002134399591375124, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.0021343995913751246]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.0021343995913751246`, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.0021343995913751246`],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.24878539872075617`], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.24878539872075614`, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.24878539872075617]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.24878539872075617`, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.24878539872075617`],
+    Editable->False,
+    Selectable->False], ",", 
+   InterpretationBox[
+    ButtonBox[
+     TooltipBox[
+      GraphicsBox[{
+        {GrayLevel[0], RectangleBox[{0, 0}]}, 
+        {GrayLevel[0], RectangleBox[{1, -1}]}, 
+        {Hue[0.26214346098201663`], RectangleBox[{0, -1}, {2, 1}]}},
+       AspectRatio->1,
+       Frame->True,
+       FrameStyle->Hue[0.26214346098201663`, 1., 0.6666666666666667],
+       FrameTicks->None,
+       ImageSize->
+        Dynamic[{
+         Automatic, 1.35 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+          Magnification]}],
+       PlotRangePadding->None],
+      "Hue[0.26214346098201663]"],
+     Appearance->None,
+     BaseStyle->{},
+     BaselinePosition->Baseline,
+     ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+       If[
+        Not[
+         AbsoluteCurrentValue["Deployed"]], 
+        SelectionMove[Typeset`box$, All, Expression]; 
+        FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+        FrontEnd`Private`$ColorSelectorInitialColor = 
+         Hue[0.26214346098201663`, 0.5, 0.5]; 
+        FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+        MathLink`CallFrontEnd[
+          FrontEnd`AttachCell[Typeset`box$, 
+           FrontEndResource["HueColorValueSelector"], {0, {Left, Bottom}}, {
+           Left, Top}, 
+           "ClosingActions" -> {
+            "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+     DefaultBaseStyle->{},
+     Evaluator->Automatic,
+     Method->"Preemptive"],
+    Hue[0.26214346098201663`],
+    Editable->False,
+    Selectable->False]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.748604638263547*^9, {3.748604677652347*^9, 
+   3.748604682275878*^9}},ExpressionUUID->"3a39e0fa-4f1a-476d-bff3-\
+b40ef327365c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"MapThread", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"#3", ",", 
+       RowBox[{"Sphere", "[", 
+        RowBox[{"#1", ",", "#2"}], "]"}]}], "}"}], "&"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"centers", ",", "sizes", ",", "colors"}], "}"}]}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.748604654945734*^9, 
+  3.748604664713707*^9}},ExpressionUUID->"9185597b-2010-4492-aae0-\
+e15209b51907"],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   {Hue[0.22136800156231712`], 
+    SphereBox[{0.6475951476190318, 0.40681804077854533`, 0.7689849925452938}, 
+     0.17140716753279323`]}, 
+   {Hue[0.005593320395704593], 
+    SphereBox[{0.6611207461037218, 0.835327182758137, 0.3318245143436698}, 
+     0.11446280823594249`]}, 
+   {Hue[0.15799976971010454`], 
+    SphereBox[{0.8600300113234074, 0.5662166526999868, 0.3438809466834565}, 
+     0.18971993383750763`]}, 
+   {Hue[0.20229880880813517`], 
+    SphereBox[{0.8604487555102416, 0.7792027191091837, 0.6096454112095462}, 
+     0.13816446041800803`]}, 
+   {Hue[0.0017342288133732064`], 
+    SphereBox[{0.7844527221143149, 0.6818360682195408, 0.948858824366196}, 
+     0.1298309650734996]}, 
+   {Hue[0.18609412197510178`], 
+    SphereBox[{0.47275263363325704`, 0.7634219940617728, 0.7593499991513724}, 
+     0.12043440635279107`]}, 
+   {Hue[0.04399570266130737], 
+    SphereBox[{0.6174852953513916, 0.9004705002425732, 0.2409762023291131}, 
+     0.11504410593341075`]}, 
+   {Hue[0.13590932661729355`], 
+    SphereBox[{0.07151642550676551, 0.8982584508973872, 0.09258267230226447}, 
+     0.12753880722832409`]}, 
+   {Hue[0.04693249968755009], 
+    SphereBox[{0.9054062143140247, 0.2559701589350101, 0.004395104600442679}, 
+     0.1240681148128887]}, 
+   {Hue[0.17391025567153928`], 
+    SphereBox[{0.9916047829003878, 0.07141553478343798, 0.8543501085029777}, 
+     0.1483541517106864]}, 
+   {Hue[0.17551142291002797`], 
+    SphereBox[{0.9155810679143237, 0.24815884037436597`, 0.7272280095464891}, 
+     0.15365238219753585`]}, 
+   {Hue[0.018440313598706293`], 
+    SphereBox[{0.8862683818212778, 0.5791087145972249, 0.3075769099507282}, 
+     0.1955818585176421]}, 
+   {Hue[0.07895451423651079], 
+    SphereBox[{0.37135051527900353`, 0.9343746616407724, 0.09642690131107012},
+      0.15370251990413245`]}, 
+   {Hue[0.25313801132208885`], 
+    SphereBox[{0.9941392551805377, 0.28568578578562875`, 
+     0.025749659812014825`}, 0.10819374017692643`]}, 
+   {Hue[0.055807565575079154`], 
+    SphereBox[{0.3911304503417874, 0.7040390841726081, 0.28920191611525636`}, 
+     0.14631699447758345`]}, 
+   {Hue[0.1759976174323188], 
+    SphereBox[{0.0015631952417001216`, 0.6925400663954793, 
+     0.11762788362743093`}, 0.15603231543692342`]}, 
+   {Hue[0.2459463977814697], 
+    SphereBox[{0.36756451661577727`, 0.06988710136875254, 
+     0.17441711726589748`}, 0.15172525635020376`]}, 
+   {Hue[0.0021343995913751246`], 
+    SphereBox[{0.00794129641656327, 0.2945585439843643, 0.4360314056164456}, 
+     0.12206496934801264`]}, 
+   {Hue[0.24878539872075617`], 
+    SphereBox[{0.4421172296155469, 0.15417366098206986`, 0.3687700775911833}, 
+     0.17866568446480866`]}, 
+   {Hue[0.26214346098201663`], 
+    SphereBox[{0.9057686609011524, 0.27569597277687974`, 0.8431228938672042}, 
+     0.11781550597638249`]}},
+  ImageSize->{389.98053036409135`, 384.0162758149265},
+  ViewPoint->{0.9855304491140754, -3.225661498965523, 0.27173080053704673`},
+  ViewVertical->{0.15182321357150813`, -0.5553297299445588, 
+   0.919747993960274}]], "Output",
+ CellChangeTimes->{{3.748604665195568*^9, 
+  3.748604683255588*^9}},ExpressionUUID->"0103b2a4-4c27-4bcc-9416-\
+8efa4a49b40b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{811, 603},
+WindowMargins->{{78, Automatic}, {1, Automatic}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 18, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 181, 3, 92, "Title", "ExpressionUUID" -> \
+"6b9b9f31-a191-4f96-911e-69de3279c423"],
+Cell[CellGroupData[{
+Cell[786, 29, 188, 3, 64, "Section", "ExpressionUUID" -> \
+"61b1ae12-aeeb-42eb-a700-05131368b902"],
+Cell[CellGroupData[{
+Cell[999, 36, 349, 10, 32, "Input", "ExpressionUUID" -> \
+"9aa6d723-e3d1-4fcc-985e-b15224424d1c"],
+Cell[1351, 48, 2881, 85, 222, "Output", "ExpressionUUID" -> \
+"26101838-b52d-4924-bd63-a60837aa5676"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4269, 138, 295, 8, 32, "Input", "ExpressionUUID" -> \
+"2e50ea72-236b-4ed6-827a-644f680e8fbf"],
+Cell[4567, 148, 770, 15, 75, "Output", "ExpressionUUID" -> \
+"b9f545b0-6307-4ee2-be25-652fa52b98bc"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5386, 169, 236, 8, 64, "Section", "ExpressionUUID" -> \
+"25f25af9-83aa-41f2-bc33-31c87f96f61a"],
+Cell[CellGroupData[{
+Cell[5647, 181, 394, 11, 32, "Input", "ExpressionUUID" -> \
+"687bf742-cb68-4fdd-9900-89353364d654"],
+Cell[6044, 194, 2491, 49, 342, "Output", "ExpressionUUID" -> \
+"a90c8e5b-e73a-4f9f-9707-f3b15b2d4281"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8584, 249, 155, 3, 64, "Section", "ExpressionUUID" -> \
+"ae4dcb8e-08b3-4d2e-ad2c-0c57388564b7"],
+Cell[CellGroupData[{
+Cell[8764, 256, 375, 10, 32, "Input", "ExpressionUUID" -> \
+"ec9e637a-5da0-451c-afb0-abf6b24a1cde"],
+Cell[9142, 268, 30480, 826, 32, "Output", "ExpressionUUID" -> \
+"3a39e0fa-4f1a-476d-bff3-b40ef327365c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39659, 1099, 471, 14, 32, "Input", "ExpressionUUID" -> \
+"9185597b-2010-4492-aae0-e15209b51907"],
+Cell[40133, 1115, 3190, 68, 399, "Output", "ExpressionUUID" -> \
+"0103b2a4-4c27-4bcc-9416-8efa4a49b40b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

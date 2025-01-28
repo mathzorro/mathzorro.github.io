@@ -1,0 +1,684 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     24885,        676]
+NotebookOptionsPosition[     20398,        602]
+NotebookOutlinePosition[     21005,        624]
+CellTagsIndexPosition[     20920,        619]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Booleans", "Title",
+ CellChangeTimes->{{3.665057288946838*^9, 3.6650572916258917`*^9}, {
+   3.745229011284326*^9, 3.745229016675178*^9}, {3.7458553846772823`*^9, 
+   3.745855418899973*^9}, {3.808243267466956*^9, 3.8082432697079797`*^9}, {
+   3.808245963230233*^9, 3.8082459660484056`*^9}, {3.808246637478354*^9, 
+   3.8082466494376736`*^9}, {3.808247812074217*^9, 3.808247864447414*^9}, {
+   3.8095876802797174`*^9, 3.8095876838741436`*^9}, 
+   3.8095877907933464`*^9},ExpressionUUID->"19d29882-2dd6-42b6-995f-\
+76f9e6d5fcc0"],
+
+Cell["\<\
+Math 250 - Mathematical Computing
+Christopher Hanusa\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.4614053946645927`*^9, 3.4614054230893087`*^9}, {
+  3.461405971637244*^9, 3.4614060079862947`*^9}, {3.474489844264483*^9, 
+  3.474489895841402*^9}, {3.505485689221858*^9, 3.505485696180904*^9}, {
+  3.53815066431697*^9, 3.538150664587603*^9}, {3.630691352563725*^9, 
+  3.6306913589949083`*^9}, {3.632152722336176*^9, 3.6321527477452803`*^9}, {
+  3.63215587546747*^9, 3.6321558797854424`*^9}, {3.632587355469249*^9, 
+  3.632587384845799*^9}, {3.633195265968095*^9, 3.633195266341083*^9}, {
+  3.8082460004234085`*^9, 
+  3.8082460137025967`*^9}},ExpressionUUID->"df9c28a9-4852-4473-90df-\
+a5c47b5f04d0"],
+
+Cell[CellGroupData[{
+
+Cell["7.1 Overview", "Section",
+ CellChangeTimes->{{3.505485680414241*^9, 3.50548573910983*^9}, {
+   3.6325873644380608`*^9, 3.632587396150113*^9}, {3.8082463468390255`*^9, 
+   3.8082463483193254`*^9}, 
+   3.8095879126833344`*^9},ExpressionUUID->"9f0f2aeb-a8e7-430d-9d0c-\
+753503bb8b1f"],
+
+Cell["\<\
+In this tutorial, we learn about Boolean values, comparison operators, \
+built-in commands that produce Boolean values, and the If statement. \
+\>", "Text",
+ CellChangeTimes->{{3.505485741709942*^9, 3.505485911210339*^9}, {
+   3.5054859461638536`*^9, 3.505486140785309*^9}, {3.569597235122435*^9, 
+   3.56959724256273*^9}, {3.631988357249017*^9, 3.631988375104192*^9}, {
+   3.631988705128955*^9, 3.63198874613913*^9}, {3.63198884890553*^9, 
+   3.631988859824958*^9}, {3.631993478341037*^9, 3.631993482877342*^9}, {
+   3.632152755553952*^9, 3.632152780995129*^9}, {3.6321554348424473`*^9, 
+   3.6321554505553493`*^9}, {3.632587400518695*^9, 3.632587452903551*^9}, {
+   3.633195287509656*^9, 3.6331953613595057`*^9}, {3.633277712877695*^9, 
+   3.633277789110469*^9}, {3.665058030383543*^9, 3.665058082548888*^9}, {
+   3.727621581207267*^9, 3.727621581916885*^9}, 3.74585542719634*^9, {
+   3.7460962114683003`*^9, 3.746096225883184*^9}, 3.8082433841396904`*^9, {
+   3.809587802418022*^9, 3.8095878049382606`*^9}, {3.809587847745882*^9, 
+   3.809587908099547*^9}, {3.809587939026884*^9, 
+   3.809587940099017*^9}},ExpressionUUID->"49583eb5-0c22-4406-82e3-\
+88dc982af6c8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["7.2 Boolean values", "Section",
+ CellChangeTimes->{{3.80958791683524*^9, 
+  3.80958792104198*^9}},ExpressionUUID->"2a8368fe-4d31-4686-8ad3-\
+cf6f425cdd73"],
+
+Cell[TextData[{
+ "Determining whether an expression is logically true or logically false is \
+one of the things programming languages do well. In every programming \
+language, there are special words for the logical concepts of true and false. \
+As you might expect with anything pre-defined in Mathematica, they start with \
+a capital letter: ",
+ StyleBox["True", "Input",
+  FontSize->16],
+ " and ",
+ StyleBox["False", "Input",
+  FontSize->16],
+ ". These are not the same as the strings \[OpenCurlyDoubleQuote]True\
+\[CloseCurlyDoubleQuote] and \[OpenCurlyDoubleQuote]False\
+\[CloseCurlyDoubleQuote]."
+}], "Text",
+ CellChangeTimes->{{3.809765631398552*^9, 3.809765651936335*^9}, {
+  3.809765792146432*^9, 3.8097658047860928`*^9}, {3.8097658619164085`*^9, 
+  3.8097659922743435`*^9}, {3.809766043404224*^9, 
+  3.809766138132617*^9}},ExpressionUUID->"19aae3f0-166f-48e2-80fc-\
+708572f0cb83"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"True", ",", "False"}], "}"}]], "Input",
+ CellChangeTimes->{{3.8097661517178917`*^9, 3.8097661551376176`*^9}, {
+  3.809766204702882*^9, 3.8097662069231296`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"ce7bcc4b-c8fc-4718-b4e2-2098069cd968"],
+
+Cell[TextData[{
+ "The exclamation mark (when applied to a logical expression) changes a ",
+ StyleBox["True", "Input",
+  FontSize->16],
+ " to a ",
+ StyleBox["False", "Input",
+  FontSize->16],
+ " and vice versa.  I read it as \[OpenCurlyDoubleQuote]NOT\
+\[CloseCurlyDoubleQuote]."
+}], "Text",
+ CellChangeTimes->{{3.809766402722142*^9, 
+  3.809766488787773*^9}},ExpressionUUID->"862d8087-3600-4a0e-8034-\
+34649ada89a3"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"!", "True"}], ",", 
+   RowBox[{"!", "False"}]}], "}"}]], "Input",
+ CellChangeTimes->{{3.80976649018262*^9, 3.8097664956578064`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"341eb7d2-b4ea-4131-9216-71ed4a265e1e"],
+
+Cell[TextData[{
+ "When you have two or more expressions and you want to verify that all are \
+true, use ",
+ StyleBox["And", "Input",
+  FontSize->16],
+ " (or ",
+ StyleBox["&&", "Input",
+  FontSize->16],
+ "). If you want to verify that at least one is true, use ",
+ StyleBox["Or", "Input",
+  FontSize->16],
+ " (or ",
+ StyleBox["||", "Input",
+  FontSize->16],
+ ")."
+}], "Text",
+ CellChangeTimes->{{3.80976655729809*^9, 
+  3.809766622088559*^9}},ExpressionUUID->"288d88f8-7e14-4267-9d16-\
+33fd3794a4d7"],
+
+Cell[BoxData[
+ RowBox[{"True", " ", "&&", " ", "True", " ", "&&", " ", "True", " ", "&&", 
+  " ", "True"}]], "Input",
+ CellChangeTimes->{{3.80976664282025*^9, 3.8097666519177537`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"df63051b-2d98-444e-8982-81fcdbf2e497"],
+
+Cell[BoxData[
+ RowBox[{"True", " ", "&&", " ", "False", " ", "&&", " ", "True", " ", "&&", 
+  " ", "True"}]], "Input",
+ CellChangeTimes->{{3.80976664282025*^9, 3.8097666668681173`*^9}, {
+  3.809766733455347*^9, 3.8097667347807245`*^9}, {3.884786961972344*^9, 
+  3.884786986624104*^9}},ExpressionUUID->"c5899cf7-ac1e-48d3-89eb-\
+ce56f1682271"],
+
+Cell[BoxData[
+ RowBox[{"False", " ", "||", "False", "||", "False", "||", "False"}]], "Input",\
+
+ CellChangeTimes->{{3.8097666687683754`*^9, 3.809766678364555*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"c2ebe8ce-1f98-4279-b2a5-fa937d6a8a59"],
+
+Cell[BoxData[
+ RowBox[{"False", " ", "||", "False", "||", "False", "||", "True"}]], "Input",\
+
+ CellChangeTimes->{{3.8097666687683754`*^9, 3.8097666864804497`*^9}, {
+  3.8097667314156303`*^9, 3.809766732041049*^9}, {3.88478699059755*^9, 
+  3.884786991345479*^9}},ExpressionUUID->"61036417-e798-4dd0-bc0e-\
+90893f71d5a4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["7.3 Comparison operators", "Section",
+ CellChangeTimes->{{3.8095879243211875`*^9, 
+  3.8095879292819595`*^9}},ExpressionUUID->"d7ea6215-5385-4eff-a6b6-\
+3785f693456a"],
+
+Cell[TextData[{
+ "One type of operation that will give an answer of ",
+ StyleBox["True", "Input",
+  FontSize->16],
+ " or ",
+ StyleBox["False", "Input",
+  FontSize->16],
+ " is when you compare two quantities.  You can ask if a first quantity is \
+less than (",
+ StyleBox["<", "Input",
+  FontSize->16],
+ "), less than or equal to (",
+ StyleBox["<=", "Input",
+  FontSize->16],
+ "), equal to (",
+ StyleBox["==", "Input",
+  FontSize->16],
+ "), greater than or equal to (",
+ StyleBox[">=", "Input",
+  FontSize->16],
+ ") or greater than (",
+ StyleBox[">", "Input",
+  FontSize->16],
+ ") a second quantity.  These are called comparison operators"
+}], "Text",
+ CellChangeTimes->{{3.8097663139420986`*^9, 3.809766394861677*^9}, {
+  3.8097667768107452`*^9, 3.8097668430825577`*^9}, {3.809766938607176*^9, 
+  3.8097669522466354`*^9}},ExpressionUUID->"6889eb4d-dc45-460d-a719-\
+7149aca68a03"],
+
+Cell[TextData[{
+ StyleBox["Important: We are using a double equals ",
+  FontSize->14],
+ StyleBox["==", "Input",
+  FontSize->16],
+ StyleBox[" instead of a single equals ",
+  FontSize->14],
+ StyleBox["=", "Input",
+  FontSize->16],
+ StyleBox[" because ",
+  FontSize->14],
+ StyleBox["=", "Input",
+  FontSize->16],
+ StyleBox[" is exclusively used to define variables.  I read ",
+  FontSize->14],
+ StyleBox["==", "Input",
+  FontSize->16],
+ StyleBox[" as a question, kind of like ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["=", "?"], TraditionalForm]],
+  FontSize->16,ExpressionUUID->"4aca26ed-10ef-42d7-85fa-52e6456186f0"],
+ " ."
+}], "Text",
+ CellChangeTimes->{{3.7461074546681275`*^9, 3.74610754628941*^9}, {
+  3.746107576422747*^9, 3.746107584443391*^9}, {3.8097668511708508`*^9, 
+  3.809766889870756*^9}, {3.8097669565568433`*^9, 3.8097670605564547`*^9}},
+ FontSize->12,ExpressionUUID->"e7753dea-e459-4aeb-8563-a6f20a2d67a5"],
+
+Cell["\<\
+Compare the following. The first defines x to be 4 and the second asks the \
+question whether x is equal to 4.\
+\>", "Text",
+ CellChangeTimes->{{3.746107587744073*^9, 3.746107635737362*^9}, {
+  3.809767076266817*^9, 
+  3.8097670774671307`*^9}},ExpressionUUID->"da67322a-b3b7-4a23-8811-\
+30242cb1343a"],
+
+Cell[BoxData[
+ RowBox[{"x", "=", "4"}]], "Input",
+ CellChangeTimes->{{3.7461075972868967`*^9, 3.7461076102926207`*^9}},
+ CellLabel->"In[42]:=",ExpressionUUID->"de4954df-6307-426e-9fa4-cbdb1661e2eb"],
+
+Cell[BoxData[
+ RowBox[{"x", "\[Equal]", "4"}]], "Input",
+ CellChangeTimes->{{3.7461076003609977`*^9, 3.7461076124467535`*^9}},
+ CellLabel->"In[43]:=",ExpressionUUID->"36af96cd-4d4e-4391-8354-5ae74f4d7a8d"],
+
+Cell[TextData[{
+ StyleBox["Example 7.3.1.",
+  FontWeight->"Bold"],
+ " Which is larger, ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["2.2", "3.3"], TraditionalForm]],ExpressionUUID->
+  "9cb86b83-129b-474e-bd7a-b48376e1d5e7"],
+ " or ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["3.3", "2.2"], TraditionalForm]],ExpressionUUID->
+  "b1c0bc98-1eba-4ce9-bebe-699844099472"],
+ " ?"
+}], "Text",
+ CellChangeTimes->{{3.809767097926603*^9, 
+  3.8097671398368773`*^9}},ExpressionUUID->"392e225a-4ed6-4030-afe6-\
+11901ca860ff"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "7.4 ",
+ StyleBox["Q", "Input",
+  FontSize->24],
+ " Commands"
+}], "Section",
+ CellChangeTimes->{{3.46202665715469*^9, 3.462026663717319*^9}, {
+   3.745159248699823*^9, 3.745159269939271*^9}, {3.8082464011583157`*^9, 
+   3.8082464015984416`*^9}, 3.808246464011655*^9, {3.809587932177189*^9, 
+   3.809587956729568*^9}},ExpressionUUID->"f5013379-3ef9-4c7a-99c2-\
+45a6578fcd95"],
+
+Cell[TextData[{
+ "There are a number of commands in ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " that ask and answer a True or False question --- they all end in the \
+letter ",
+ StyleBox["Q", "Input",
+  FontSize->14],
+ ".  For example, ",
+ StyleBox["EvenQ", "Input",
+  FontSize->14],
+ " determines if the number is even or not.  Evaluate the next cell."
+}], "Text",
+ CellChangeTimes->{{3.4620266724460297`*^9, 3.462026760318223*^9}, {
+  3.4620275120006027`*^9, 3.46202757113981*^9}, {3.462185523039946*^9, 
+  3.46218553473556*^9}, {3.633349880437868*^9, 3.633349891899396*^9}, {
+  3.665058316057919*^9, 3.665058316906046*^9}, {3.809767170496872*^9, 
+  3.809767297452331*^9}},ExpressionUUID->"ed086651-0bf5-41af-a1af-\
+204d5393549a"],
+
+Cell[BoxData[{
+ RowBox[{"EvenQ", "[", "3", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"EvenQ", "[", "4", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"EvenQ", "[", 
+  RowBox[{"Sqrt", "[", "2", "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.4620263760891037`*^9, 3.4620263829418497`*^9}, {
+   3.462026765433791*^9, 3.462026782369804*^9}, 3.4620275012763987`*^9},
+ CellLabel->"In[13]:=",ExpressionUUID->"aec11ee4-da58-4c94-b331-5f7f881c1602"],
+
+Cell[TextData[{
+ "The command ",
+ StyleBox["PrimeQ", "Input",
+  FontSize->14],
+ " determines if a number is prime.  Evaluate the next cell."
+}], "Text",
+ CellChangeTimes->{{3.665058311569517*^9, 3.665058327857527*^9}, {
+   3.665058400375558*^9, 3.66505842272672*^9}, 
+   3.746107317454811*^9},ExpressionUUID->"aeb8cb79-b110-4afa-b4ec-\
+b576d3171255"],
+
+Cell[BoxData[{
+ RowBox[{"PrimeQ", "[", "1", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PrimeQ", "[", "55", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PrimeQ", "[", "97", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PrimeQ", "[", "1234577", "]"}]}], "Input",
+ CellChangeTimes->{{3.6650583342273817`*^9, 3.6650583972958508`*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"32e14c44-bec8-4477-8a6b-8a293dd02299"],
+
+Cell[TextData[{
+ "The ",
+ ButtonBox["Testing Expressions Guide",
+  BaseStyle->"Link",
+  ButtonData->"paclet:guide/TestingExpressions"],
+ " in the Documentation Center gives a list of many \[OpenCurlyDoubleQuote]Q\
+\[CloseCurlyDoubleQuote] functions; you can find more by searching for \
+\[OpenCurlyDoubleQuote]Q\[CloseCurlyDoubleQuote] in the Documentation Center \
+and scrolling through the results. This will give you a good feel for all the \
+sorts of True/False questions you can have ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " answer."
+}], "Text",
+ CellChangeTimes->{{3.8097673712921762`*^9, 
+  3.809767482267295*^9}},ExpressionUUID->"fcb585ff-be92-40d7-beee-\
+919c42809508"],
+
+Cell[TextData[{
+ StyleBox["Example 7.4.1.",
+  FontWeight->"Bold"],
+ "  Is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["2", "31"], "-", "1"}], TraditionalForm]],ExpressionUUID->
+  "959486ac-3628-426c-bd54-df4f8d1d348a"],
+ " prime?"
+}], "Text",
+ CellChangeTimes->{{3.8097674921125717`*^9, 
+  3.809767538157179*^9}},ExpressionUUID->"0204728b-10cf-419f-a7ac-\
+426f57f75a35"],
+
+Cell[TextData[{
+ StyleBox["Example 7.4.2.",
+  FontWeight->"Bold"],
+ "  Is ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["e", "i\[Pi]"], TraditionalForm]],ExpressionUUID->
+  "ccf23046-9890-4fce-b89c-a4ea360bcb09"],
+ " an integer?"
+}], "Text",
+ CellChangeTimes->{{3.8097675428074083`*^9, 
+  3.809767654277005*^9}},ExpressionUUID->"34fc1d84-a74b-4d8f-b439-\
+c37c2f943991"],
+
+Cell[TextData[{
+ StyleBox["Example 7.4.3.",
+  FontWeight->"Bold"],
+ "  Is the number 91 one of the first 100 prime numbers?"
+}], "Text",
+ CellChangeTimes->{{3.809767708221963*^9, 3.8097677254317303`*^9}, {
+  3.8097677646619344`*^9, 
+  3.8097677791816115`*^9}},ExpressionUUID->"6d464164-d65f-46c2-accf-\
+b7ec3383ff9e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "7.5 ",
+ StyleBox["If", "Input",
+  FontSize->24],
+ " Statements"
+}], "Section",
+ CellChangeTimes->{{3.809587977169937*^9, 
+  3.8095879851465406`*^9}},ExpressionUUID->"8bfe5d3c-a857-4ee1-bef4-\
+b7fc43426778"],
+
+Cell[TextData[{
+ "The natural habitat of comparison operators and ",
+ StyleBox["Q", "Input",
+  FontSize->16],
+ " commands is in an ",
+ StyleBox["If", "Input",
+  FontSize->16],
+ " statement.  An ",
+ StyleBox["If", "Input",
+  FontSize->16],
+ " statement evaluates in different ways depending on whether a the condition \
+you specify is ",
+ StyleBox["True", "Input",
+  FontSize->16],
+ ".  The syntax for ",
+ StyleBox["If", "Input",
+  FontSize->16],
+ " is:"
+}], "Text",
+ CellChangeTimes->{{3.809767797681656*^9, 3.8097678466421537`*^9}, {
+  3.809768325873128*^9, 3.809768373936041*^9}, {3.809768492575525*^9, 
+  3.8097684978760643`*^9}, {3.809768747248516*^9, 
+  3.809768752738304*^9}},ExpressionUUID->"623f9d9e-0e4e-4e09-8444-\
+418f58449581"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "If"}]], "Input",
+ CellChangeTimes->{{3.4620275315261183`*^9, 3.462027532966929*^9}, {
+  3.462185579347001*^9, 
+  3.46218557996957*^9}},ExpressionUUID->"18099320-2912-48ae-b0d7-\
+7c26a2b9e374"],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\\!\\(\\*RowBox[{\\\"If\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"condition\\\", \\\"TI\\\"], \\\",\\\", \
+StyleBox[\\\"t\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"f\\\", \
+\\\"TI\\\"]}], \\\"]\\\"}]\\) gives \\!\\(\\*StyleBox[\\\"t\\\", \
+\\\"TI\\\"]\\) if \\!\\(\\*StyleBox[\\\"condition\\\", \\\"TI\\\"]\\) \
+evaluates to True, and \\!\\(\\*StyleBox[\\\"f\\\", \\\"TI\\\"]\\) if it \
+evaluates to False. \\n\\!\\(\\*RowBox[{\\\"If\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"condition\\\", \\\"TI\\\"], \\\",\\\", \
+StyleBox[\\\"t\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"f\\\", \\\"TI\\\"], \
+\\\",\\\", StyleBox[\\\"u\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) gives \
+\\!\\(\\*StyleBox[\\\"u\\\", \\\"TI\\\"]\\) if \
+\\!\\(\\*StyleBox[\\\"condition\\\", \\\"TI\\\"]\\) evaluates to neither True \
+nor False. \"\>", "MSG"], "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/If"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.46218558079972*^9},
+ CellTags->
+  "Info3462171180-3614501",ExpressionUUID->"d807cde0-18ad-4be8-99b1-\
+46d76d152b52"]
+}, Open  ]],
+
+Cell[TextData[{
+ "That is, when you type ",
+ StyleBox["If[", "Input",
+  FontSize->14],
+ StyleBox["condition",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["expression1",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["expression2",
+  FontSlant->"Italic"],
+ StyleBox["]", "Input",
+  FontSize->14],
+ ", ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " will first check the ",
+ StyleBox["condition",
+  FontSlant->"Italic"],
+ ".  If the ",
+ StyleBox["condition",
+  FontSlant->"Italic"],
+ " evaluates to ",
+ StyleBox["True", "Input",
+  FontSize->16],
+ ", then it will do ",
+ StyleBox["expression1",
+  FontSlant->"Italic"],
+ "; whereas, if it evaluates to ",
+ StyleBox["False", "Input",
+  FontSize->16],
+ ", it will do ",
+ StyleBox["expression2.",
+  FontSlant->"Italic"]
+}], "Text",
+ CellChangeTimes->{{3.462185595882409*^9, 3.4621857149009867`*^9}, {
+   3.462185895954235*^9, 3.462185917210628*^9}, 3.6650581500698357`*^9, {
+   3.665058271242539*^9, 3.6650582718587*^9}, {3.8097682906236963`*^9, 
+   3.8097683066429653`*^9}, {3.809768762729122*^9, 
+   3.809768804501848*^9}},ExpressionUUID->"268edbb2-665b-45d7-8d1d-\
+cf7b22fe882a"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"z", "=", "10"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"If", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"z", "^", "2"}], "<", "50"}], ",", 
+   RowBox[{"Print", "[", "\"\<z is small\>\"", "]"}], ",", 
+   RowBox[{"Print", "[", "\"\<z is large\>\"", "]"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.665059314677824*^9, 3.665059322528603*^9}, {
+  3.6650593670633507`*^9, 3.665059480210266*^9}, {3.808246495050249*^9, 
+  3.808246496354564*^9}},ExpressionUUID->"dfbeb8d0-58de-4f47-a036-\
+d60c7b46fe2c"],
+
+Cell[TextData[{
+ StyleBox["Example 7.5.1.",
+  FontWeight->"Bold"],
+ " Use an ",
+ StyleBox["If", "Input",
+  FontSize->16],
+ " statement to define a function ",
+ StyleBox["abs", "Input",
+  FontSize->16],
+ " that gives the absolute value of an input."
+}], "Text",
+ CellChangeTimes->{{3.8097690974858103`*^9, 
+  3.8097691240955005`*^9}},ExpressionUUID->"b67e68a7-b5c0-4d3f-9bf8-\
+e612ec1c431c"],
+
+Cell[TextData[{
+ "In Mathematica, use the ",
+ StyleBox["Which", "Input",
+  FontSize->16],
+ " command instead of nested ",
+ StyleBox["If", "Input",
+  FontSize->16],
+ " statements."
+}], "Text",
+ CellChangeTimes->{{3.8097678730119343`*^9, 3.80976794511056*^9}, {
+  3.8097684532260027`*^9, 
+  3.8097684696606894`*^9}},ExpressionUUID->"f1100553-4fde-4d4f-97a8-\
+20dcbbf316d4"],
+
+Cell[TextData[{
+ StyleBox["Example 7.5.2.",
+  FontWeight->"Bold"],
+ " Replace the following nested ",
+ StyleBox["If", "Input",
+  FontSize->16],
+ " statement by a ",
+ StyleBox["Which", "Input",
+  FontSize->16],
+ " command."
+}], "Text",
+ CellChangeTimes->{{3.809768996351632*^9, 
+  3.8097690222953672`*^9}},ExpressionUUID->"4ee4ac48-4d21-46b8-80a6-\
+543f1f99542d"],
+
+Cell[BoxData[
+ RowBox[{"If", "[", 
+  RowBox[{
+   RowBox[{"grade", "\[GreaterEqual]", "90"}], ",", "\"\<A\>\"", ",", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"grade", "\[GreaterEqual]", "80"}], ",", "\"\<B\>\"", ",", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"grade", "\[GreaterEqual]", "70"}], ",", "\"\<C\>\"", ",", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"grade", "\[GreaterEqual]", "60"}], ",", "\"\<D\>\"", ",", 
+         "\"\<F\>\""}], "]"}]}], "]"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.80976887351645*^9, 3.809768932751445*^9}, 
+   3.8097690351953354`*^9},ExpressionUUID->"c7600ffd-e7ac-4b43-87d8-\
+67d76b391cc4"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{962, 934},
+WindowMargins->{{149, Automatic}, {9, Automatic}},
+FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (November 18, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"943fd500-6b96-4e41-bae1-e5454b7724e2"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3462171180-3614501"->{
+  Cell[15718, 455, 1165, 23, 70, "Print",ExpressionUUID->"d807cde0-18ad-4be8-99b1-46d76d152b52",
+   CellTags->"Info3462171180-3614501"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3462171180-3614501", 20759, 613}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 532, 8, 98, "Title",ExpressionUUID->"19d29882-2dd6-42b6-995f-76f9e6d5fcc0"],
+Cell[1115, 32, 704, 13, 53, "Subsubtitle",ExpressionUUID->"df9c28a9-4852-4473-90df-a5c47b5f04d0"],
+Cell[CellGroupData[{
+Cell[1844, 49, 287, 5, 67, "Section",ExpressionUUID->"9f0f2aeb-a8e7-430d-9d0c-753503bb8b1f"],
+Cell[2134, 56, 1177, 18, 58, "Text",ExpressionUUID->"49583eb5-0c22-4406-82e3-88dc982af6c8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3348, 79, 161, 3, 67, "Section",ExpressionUUID->"2a8368fe-4d31-4686-8ad3-cf6f425cdd73"],
+Cell[3512, 84, 890, 19, 82, "Text",ExpressionUUID->"19aae3f0-166f-48e2-80fc-708572f0cb83"],
+Cell[4405, 105, 278, 5, 30, "Input",ExpressionUUID->"ce7bcc4b-c8fc-4718-b4e2-2098069cd968"],
+Cell[4686, 112, 416, 12, 36, "Text",ExpressionUUID->"862d8087-3600-4a0e-8034-34649ada89a3"],
+Cell[5105, 126, 262, 6, 30, "Input",ExpressionUUID->"341eb7d2-b4ea-4131-9216-71ed4a265e1e"],
+Cell[5370, 134, 499, 18, 60, "Text",ExpressionUUID->"288d88f8-7e14-4267-9d16-33fd3794a4d7"],
+Cell[5872, 154, 262, 4, 30, "Input",ExpressionUUID->"df63051b-2d98-444e-8982-81fcdbf2e497"],
+Cell[6137, 160, 342, 6, 30, "Input",ExpressionUUID->"c5899cf7-ac1e-48d3-89eb-ce56f1682271"],
+Cell[6482, 168, 241, 4, 30, "Input",ExpressionUUID->"c2ebe8ce-1f98-4279-b2a5-fa937d6a8a59"],
+Cell[6726, 174, 320, 6, 30, "Input",ExpressionUUID->"61036417-e798-4dd0-bc0e-90893f71d5a4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7083, 185, 173, 3, 67, "Section",ExpressionUUID->"d7ea6215-5385-4eff-a6b6-3785f693456a"],
+Cell[7259, 190, 878, 28, 83, "Text",ExpressionUUID->"6889eb4d-dc45-460d-a719-7149aca68a03"],
+Cell[8140, 220, 942, 28, 64, "Text",ExpressionUUID->"e7753dea-e459-4aeb-8563-a6f20a2d67a5"],
+Cell[9085, 250, 311, 7, 35, "Text",ExpressionUUID->"da67322a-b3b7-4a23-8811-30242cb1343a"],
+Cell[9399, 259, 198, 3, 30, "Input",ExpressionUUID->"de4954df-6307-426e-9fa4-cbdb1661e2eb"],
+Cell[9600, 264, 205, 3, 30, "Input",ExpressionUUID->"36af96cd-4d4e-4391-8354-5ae74f4d7a8d"],
+Cell[9808, 269, 518, 17, 35, "Text",ExpressionUUID->"392e225a-4ed6-4030-afe6-11901ca860ff"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10363, 291, 391, 10, 67, "Section",ExpressionUUID->"f5013379-3ef9-4c7a-99c2-45a6578fcd95"],
+Cell[10757, 303, 743, 18, 58, "Text",ExpressionUUID->"ed086651-0bf5-41af-a1af-204d5393549a"],
+Cell[11503, 323, 432, 7, 73, "Input",ExpressionUUID->"aec11ee4-da58-4c94-b331-5f7f881c1602"],
+Cell[11938, 332, 350, 9, 35, "Text",ExpressionUUID->"aeb8cb79-b110-4afa-b4ec-b576d3171255"],
+Cell[12291, 343, 398, 6, 94, "Input",ExpressionUUID->"32e14c44-bec8-4477-8a6b-8a293dd02299"],
+Cell[12692, 351, 692, 16, 81, "Text",ExpressionUUID->"fcb585ff-be92-40d7-beee-919c42809508"],
+Cell[13387, 369, 386, 13, 35, "Text",ExpressionUUID->"0204728b-10cf-419f-a7ac-426f57f75a35"],
+Cell[13776, 384, 370, 12, 35, "Text",ExpressionUUID->"34fc1d84-a74b-4d8f-b439-c37c2f943991"],
+Cell[14149, 398, 317, 8, 35, "Text",ExpressionUUID->"6d464164-d65f-46c2-accf-b7ec3383ff9e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14503, 411, 224, 8, 67, "Section",ExpressionUUID->"8bfe5d3c-a857-4ee1-bef4-b7fc43426778"],
+Cell[14730, 421, 739, 23, 60, "Text",ExpressionUUID->"623f9d9e-0e4e-4e09-8444-418f58449581"],
+Cell[CellGroupData[{
+Cell[15494, 448, 221, 5, 30, "Input",ExpressionUUID->"18099320-2912-48ae-b0d7-7c26a2b9e374"],
+Cell[15718, 455, 1165, 23, 70, "Print",ExpressionUUID->"d807cde0-18ad-4be8-99b1-46d76d152b52",
+ CellTags->"Info3462171180-3614501"]
+}, Open  ]],
+Cell[16898, 481, 1123, 41, 59, "Text",ExpressionUUID->"268edbb2-665b-45d7-8d1d-cf7b22fe882a"],
+Cell[18024, 524, 532, 12, 52, "Input",ExpressionUUID->"dfbeb8d0-58de-4f47-a036-d60c7b46fe2c"],
+Cell[18559, 538, 390, 13, 36, "Text",ExpressionUUID->"b67e68a7-b5c0-4d3f-9bf8-e612ec1c431c"],
+Cell[18952, 553, 371, 12, 36, "Text",ExpressionUUID->"f1100553-4fde-4d4f-97a8-20dcbbf316d4"],
+Cell[19326, 567, 362, 13, 36, "Text",ExpressionUUID->"4ee4ac48-4d21-46b8-80a6-543f1f99542d"],
+Cell[19691, 582, 679, 16, 30, "Input",ExpressionUUID->"c7600ffd-e7ac-4b43-87d8-67d76b391cc4"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

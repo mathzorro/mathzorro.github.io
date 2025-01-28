@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Graph Theory &bull; Topics, Notes, and Homework</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="author" content="Christopher Hanusa" />
+        <link rel="shortcut icon" href="favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="../../../css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../../../css/style1.css" />
+        <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>    
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-47380773-6', 'auto');
+                ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header_wrap">
+                <div class="header">
+                    <span class="left">
+                        <a href="../../../index.html">HOME</a> > 
+                        <a href="../../index.html">Courses</a> > 
+                        <a href="index.html">634sp14</a>
+                    </span>
+                <div class="header_right">
+                    <span class="right">
+                        <a href="index.html">Home</a> &bull; 
+                        <a href="syllabus.html">Syllabus</a> &bull; 
+                        <a href="letters.html">Letters</a> &bull; 
+                        <a href="calendar.html">Calendar</a> &bull; 
+<!--
+                        <a href="homework.html">Homework</a> &bull; 
+-->
+                        <a href="notes.html">Notes</a> &bull; 
+                        <a href="project.html">Project</a>
+                    </span>
+                </div>
+                </div>
+            </div>
+
+            <div class="main">
+                           
+                <div class="course_head">            
+                <div class="course_head_img"><a href="index.html"><img src="../../../images/634c.png" height="100"/></a></div>
+                <div class="course_head_suptitle_634">Graph Theory, Spring 2014</div>
+                <div class="course_head_title_634">Topics, Notes, and Homework</div>
+                </div>
+                
+                <div class="course_main_634">
+                    <p>For each date below, you will find the day's new definitions, the homework assignment that is due that day, any lecture notes for downloading, and the key topics that are covered that day. 
+                    <br>This schedule is approximate and subject to change!</p>
+
+                    <div class="notes_section">Introduction (4 classes)</div>
+
+<div class="date">Monday, January 27</div>
+<div class="defn">New definitions: graph, vertex, edge, finite graph, multiple edges, loop, simple graph, adjacent, neighbors, incident, endpoint, degree, degree sum, isolated vertex, leaf, end vertex, degree sequence, graphic, Havel-Hakimi algorithm</b></div>
+
+<ul>
+<li>Notes from Section 1.1  (<a href="notes/634sp14ch11.pdf">Notes pages 0&ndash;14</a>) <a href="notes/634sp14ch11c.pdf">'</a></li>
+<li>Syllabus discussion. </li>
+<li>What is a graph?</li>
+<li>How to describe a graph.</li>
+<li>Degree sequence of a graph.</li>
+<li>Theorem 1.1.2.</li>
+</ul>
+                
+<div class="date">Wednesday, January 29</div> 
+<div class="hwk"><a href="homework/634sp14hw1.pdf">Homeworks #0 and #1</a> are due on Wednesday, January 29.&nbsp; 
+                (<a href="homework/634sp14hw1.tex">.tex file</a>)</div>
+<div class="hwk"><a href="guidelines.html">Link to the homework guidelines.</a></div>
+<div class="defn">New definitions: path graph P<sub>n</sub>, cycle C<sub>n</sub>, complete graph K<sub>n</sub>, bipartite graph, complete bipartite graph K<sub>m,n</sub>, wheel graph W<sub>n</sub>, star graph St<sub>n</sub>, cube graph</div>
+
+<ul>
+<li>Proof of Theorem 1.1.2.</li>
+<li>Notes from Section 1.2  (<a href="notes/634sp14ch12.pdf">Notes pages 15&ndash;23</a>) <a href="notes/634sp14ch12c.pdf">'</a> </li>
+<li>A dictionary of graphs.</li>
+<li>Schlegel diagrams of Platonic solids.</li>
+<li>When are two graphs the same?</li>
+</ul>
+                
+    
+<div class="date">Monday, February 3</div>
+<div class="hwk"><a href="homework/634sp14hw2.pdf">Homework #2</a> is due on Monday, February 3.&nbsp; 
+                (<a href="homework/634sp14hw2.tex">.tex file</a>)</div>
+<div class="defn">New definitions: Petersen graph, Grotzsch graph, Platonic solid, Schlegel diagram, Tetrahedron, Cube, Octahedron, Dodecahedron, Icosahedron, equal graphs, isomorphic graphs, disjoint union, union, graph complement, self-complementary graph, subgraph, induced subgraph, proper subgraph</div>
+
+<ul>
+<li>Larger graphs from smaller graphs.</li>
+<li>Smaller graphs from larger graphs.</li>
+<li>Groupwork on definitions.</li>
+</ul>
+    
+<div class="date">Wednesday, February 5</div>
+<div class="hwk"><a href="homework/634sp14hw3.pdf">Homework #3</a> is due on Wednesday, February 5.&nbsp; 
+                (<a href="homework/634sp14hw3.tex">.tex file</a>)</div>
+<div class="defn">New definitions: path in G from a to b, connected graph, tree, forest, bridge</div>
+
+<ul>
+<li>Notes from Section 1.3. (<a href="notes/634sp14ch13.pdf">Notes pages 24&ndash;31</a>) <a href="notes/634sp14ch13c.pdf">'</a> </li>
+<li>Connected graphs</li>
+<li><b>Lemma A.</b> If there is a path from a to b in G and a path from b to c in G, then there is a path from a to c in G.</li>
+<li><b>Lemma B.</b> Let G be a connected graph. Suppose that G contains a cycle C and e is an edge of C. The graph H=G \ e is connected.</li>
+<li>Theorems 1.3.1, 1.3.2, 1.3.3, and 1.3.5.</li>
+<li>Trees and forests.</li>
+<li>Theorems 2.4.1 and 3.2.1</li>
+    </ul>
+    
+<div class="date">Monday, February 10</div>
+<div class="hwk"><a href="homework/634sp14hw4.pdf">Homework #4</a> is to be prepared for presentation on Monday, February 10.&nbsp; 
+                (<a href="homework/634sp14hw4.tex">.tex file</a>)</div>
+
+<ul>
+    <li>Discussion Day</li>
+</ul>
+
+                    <div class="notes_section">Coloring (2 classes)</div>
+
+<div class="date">Wednesday, February 19</div>
+<div class="hwk">There is no homework due today.</div>
+<div class="defn">New definitions: (vertex) coloring, proper coloring, clique, clique number, critical graph,</div>
+
+<ul>
+<li>Theorems 2.4.1 and 3.2.1</li>
+<li>Notes from Sections 2.1 and 2.2 (<a href="notes/634sp14ch21.pdf">Notes pages 32&ndash;44</a>) <a href="notes/634sp14ch21c.pdf">'</a></li>
+<li>(Vertex) coloring, proper coloring</li>
+<li>Chromatic number</li>
+<li><b>Lemma C.</b> If H is a subgraph of G, then χ(H)≤χ(G).</li>
+</ul>
+
+<div class="date">Thursday, February 20</div>
+<div class="hwk"><a href="homework/634sp14hw5.pdf">Homework #5</a> is due on Thursday, February 20.&nbsp; 
+                (<a href="homework/634sp14hw5.tex">.tex file</a>)</div>
+<div class="defn">New definitions:  bipartite graph, edge coloring, edge chromatic number, snark, turning trick</div>
+
+<ul>
+<li>Critical graphs</li>
+<li>Bipartite graphs</li>
+<li>Edge coloring</li>
+<li>Vizing's Theorem</li>
+<li>Snarks</li>
+<li>Edge chromatic number of complete graphs</li>
+</ul>
+
+                   <div class="notes_section">Cycles and Circuits (2 classes)</div>
+
+<div class="date">Monday, February 24</div>
+<div class="hwk"><a href="homework/634sp14hw6.pdf">Homework #6</a> is due on Monday, February 24.&nbsp; 
+                (<a href="homework/634sp14hw6.tex">.tex file</a>)</div>
+<div class="defn">New definitions: Spanning subgraph, decomposition, perfect matching, Hamiltonian path, Hamiltonian cycle</div>
+
+<ul>
+<li>Notes from Section 2.3. (<a href="notes/634sp14ch23.pdf">Notes pages 45&ndash;51</a>) <a href="notes/634sp14ch23c.pdf">'</a></li>
+<li>Knight's tours. (<a href="notes/634sp14ch24.pdf">Notes pages 52&ndash;57</a>) <a href="notes/634sp14ch24c.pdf">'</a></li>
+<li>Spanning subgraphs</li>
+<li>Decomposition</li>
+<li>Perfect matchings, Perfect matching decompositions</li>
+<li>Hamiltonian cycle, Hamiltonian cycle decompositions</li>
+<li>History of Knight's Tours: http://faculty.olin.edu/~sadams/DM/ktpaper.pdf</li>
+<li>Knight's Tours on a Torus: http://www.mimuw.edu.pl/~rytter/TEACHING/ALCOMB/knight_torus.pdf</li>
+</ul>
+
+<div class="date">Wednesday, February 26</div>
+<div class="hwk"><a href="homework/634sp14hw7.pdf">Homework #7</a> is due on Wednesday, February 26.&nbsp; 
+                (<a href="homework/634sp14hw7.tex">.tex file</a>)</div>
+<div class="defn">New definitions: (closed) knight's tour, walk, trail, path, open, closed, circuit, cycle, loop, Eulerian circuit, Eulerian Trail, Eulerian circuit, Eulerian Trail, sequence, binary sequence, de Bruijn sequence, de Bruijn graph</div>
+
+
+<ul>
+<li>Eulerian graphs and de Bruijn cycles (<a href="notes/634sp14ch31.pdf">Notes pages 58&ndash;69</a>) <a href="notes/634sp14ch31c.pdf">'</a> </li>
+<li>Vocabulary of pseudographs.</li>
+<li>Eulerian circuits.</li>
+<li>Thm 3.1.2. Even degrees implies Eulerian.</li>
+<li>Eulerian Trails.</li>
+<li>de Bruijn sequences.</li>
+</ul>
+
+<div class="date">Monday, March 3</div>
+<div class="hwk"><a href="homework/634sp14hw8.pdf">Homework #8</a> is to be prepared for presentation on Monday, March 3.&nbsp; 
+                (<a href="homework/634sp14hw8.tex">.tex file</a>)</div>
+
+<ul>
+    <li>Discussion Day</li>
+</ul>
+
+                                   <div class="notes_section">Graph Statistics (2 classes)</div>
+
+
+<div class="date">Wednesday, March 5</div>
+<div class="hwk"><span style="color:rgb(192, 0, 0)">Project topic due today.</span>  
+    <br><a href="homework/634sp14hw9.pdf">Homework #9</a> is due on Wednesday, March 5.&nbsp; 
+                (<a href="homework/634sp14hw9.tex">.tex file</a>) It only contains definitions.</div>
+<div class="defn">New definitions: connected component, cut vertex, cut set, disconnecting set, connectivity, edge connectivity, maximum, maximal, girth, distance, diameter, independent set, independence number, vertex cover, vertex cover number</div>
+
+<ul>
+<li>Graph Statistics (<a href="notes/634sp14ch32.pdf">Notes pages 70&ndash;76</a>) <a href="notes/634sp14ch32c.pdf">'</a></li>
+<li>Connectivity and Edge connectivity</li>
+<li>Girth, distance, and diameter</li>
+<li>Cliques, Independent sets, Vertex covers</li>
+</ul>
+
+
+<div class="date">Monday, March 10</div>
+<div class="hwk"><a href="homework/634sp14hw10.pdf">Homework #10</a> is due on Monday, March 10.&nbsp; 
+                (<a href="homework/634sp14hw10.tex">.tex file</a>)</div>
+
+<ul>
+    <li>Graph Statistics worksheet</li>
+</ul>
+
+
+<div class="date" style="color:rgb(192, 0, 0)">Exam 1 Information</div>
+<ul>
+    <li>The first exam of the semester will take place on Monday, March 17.</li>
+    <li>The exam covers all material covered through March 10.</li>
+    <li><a href="homework/634sp14hwp.pdf">Here are more details about the first exam.</a></li>
+    <li>My students often ask for an example of the style of exam that I am liable to give.  I am including my exam from last year.  The topics covered by the exam are the same topics, but you should expect your exam to be <span style="color:#c00;font-weight:700;">very different</span> because there are many ways for me to ask questions that test your knowledge on these topics.  <a href="homework/m634exm1.pdf">Click here for last year's exam</a>.  </li>
+</ul>
+
+                
+<div class="date">Wednesday, March 12</div>
+
+<ul>
+    <li>Question and Answer Day</li>
+</ul>
+
+ 
+<div class="date">Monday, March 17</div>
+
+<ul>
+    <li>Exam 1</li>
+</ul>
+
+                
+<div class="notes_section">Planarity (4 classes)</div>
+                   
+<div class="date">Wednesday, March 19</div>
+<div class="hwk"><span style="color:rgb(192, 0, 0)">Before class,</span> compare and constrast the definitions of <b>plane drawing</b> and <b>planar graph</b>.</div>
+<div class="defn">New definitions: drawing, simple curve, plane drawing, plane graph, planar graph, region, face, outside face, maximal planar, dual graph</div>
+
+<ul>
+    <li>Notes from Sections 8.1 and 8.2 (<a href="notes/634sp14ch81.pdf">Notes pages 77&ndash;88</a>) <a href="notes/634sp14ch81c.pdf">'</a></li>
+    <li>Planar graphs.</li>
+    <li>Euler's Formula.</li>
+    <li>Maximal planar graphs.</li>
+</ul>
+
+
+<div class="date">Monday, March 24</div>
+<div class="hwk"><span style="color:rgb(192, 0, 0);font-weight:700">Project outline due Monday.</span></div>
+<div class="hwk"><a href="homework/634sp14hw11.pdf">Homework #11</a> is due on Monday, March 24.&nbsp; 
+                (<a href="homework/634sp14hw11.tex">.tex file</a>)</div>
+<div class="defn">New definitions: dual graph, map, normal map, Kempe chain</div>
+
+<ul>
+    <li>Notes from Sections 8.2, 8.3, and 9.1 (<a href="notes/634sp14ch82.pdf">Notes pages 89&ndash;98</a>) <a href="notes/634sp14ch82c.pdf">'</a></li>
+    <li>dual graph, self-dual graph</li>
+    <li>Maps, normal maps.</li>
+    <li>Four Color Theorem (not proved).</li>
+    <li>History of the four color theorem.</li>
+    <li>Six Color Theorem (proved)</li>
+</ul>
+
+               
+
+
+
+<div class="date">Wednesday, March 26</div>
+<div class="hwk"><a href="homework/634sp14hw12.pdf">Homework #12</a> is due on Wednesday, March 26.&nbsp; 
+                (<a href="homework/634sp14hw12.tex">.tex file</a>)</div>
+<div class="defn">New definitions: deletion, contraction, minor, subdivision</div>
+
+<ul>
+    <li>Five Color Theorem (proved)</li>
+    <li>Kempe Chains argument</li>
+    <li>Modifications of graphs.</li>
+    <li>Kuratowski's Theorem.</li>
+</ul>
+                
+<div class="date">Monday, March 31</div>
+<div class="hwk"><span style="color:rgb(192, 0, 0);font-weight:700">Continue Wikipedia work.</span></div>
+<div class="defn">New definitions: crossing number, thickness, genus of a graph, torus</div>
+<ul>
+    <li>Notes from Sections 9.1, 9.2, and 10.3 (<a href="notes/634sp14ch91.pdf">Notes pages 99&ndash;105</a>) <a href="notes/634sp14ch91c.pdf">'</a></li>
+    <li>Statistics of nonplanarity.</li>
+    <li>Crossing number of a graph</li>
+    <li>Thickness of a graph</li>
+    <li>Genus of a graph</li>
+</ul>
+                                        <div class="notes_section">Graph Algorithms (6 classes)</div>
+
+<div class="date">Wednesday, April 2</div>
+<div class="hwk"><span style="color:rgb(192, 0, 0);font-weight:700">Draft started in Wikipedia.</span></div>
+<div class="defn">New definitions: algorithm, correctness, matching, Hungarian algorithm, M-alternating path, M-augmenting path</div>
+                    
+<ul>
+    <li>Notes from Section 7.2 and more (<a href="notes/634sp14ch72.pdf">Notes pages 106&ndash;113</a>) <a href="notes/634sp14ch72c.pdf">'</a></li>
+    <li>Algorithms.</li>
+    <li>Maximal, maximum, perfect matchings.</li>
+    <li>Hungarian algorithm.</li>
+    <li>Correctness of the Hungarian algorithm.</li>
+</ul>              
+
+<div class="date">Monday, April 7</div>
+<div class="hwk"><a href="homework/634sp14hw13.pdf">Homework #13</a> is to be prepared for presentation on Monday, April 7.&nbsp; 
+                (<a href="homework/634sp14hw13.tex">.tex file</a>)</div>
+
+<ul>
+    <li>Discussion Day</li>
+</ul>
+
+<div class="date">Wednesday, April 9</div>
+<ul>
+    <li>(no class)</li>
+</ul>
+
+<div class="date"><b>&mdash; Spring Break &mdash;</b></div>
+                
+<div class="date">Wednesday, April 23</div>
+<div class="hwk"><a href="homework/634sp14hw14.pdf">Homework #14</a> is due on Wednesday, April 23.&nbsp; 
+                (<a href="homework/634sp14hw14.tex">.tex file</a>)</div>
+<div class="defn">New definitions: stable matching</div>
+<ul>
+    <li>Notes about stable matchings (<a href="notes/634sp14ch73.pdf">Notes pages 114&ndash;122</a>) <a href="notes/634sp14ch73c.pdf">'</a></li>
+    <li>Stable matchings</li>
+    <li>The play</li>
+    <li>Proof of correctness</li>
+    <li>Proof of male optimality</li>
+</ul>
+    
+                
+<div class="date">Monday, April 28</div>
+<div class="hwk"><span style="color:rgb(192, 0, 0);font-weight:700">Complete Wikipedia Project.</span></div>
+<div class="defn">New definitions: directed edges, network, flow, cut, max flow, min cut, augment a flow</div>
+<ul>
+    <li>Notes about network flow (<a href="notes/634sp14ch74.pdf">Notes pages 123&ndash;135</a>) <a href="notes/634sp14ch74c.pdf">'</a></li>
+    <li>Network</li>
+    <li>Flow in a network, MAX FLOW</li>
+    <li>Edge cuts, MIN CUT</li>
+</ul>
+          
+<div class="date">Wednesday, April 30</div>
+<div class="defn">New definitions: Ford-Fulkerson algorithm, companion graph, transshipment, dynamic network</div>
+<ul>
+    <li>Ford-Fulkerson algorithm and examples</li>
+    <li>Notes about transshipment (<a href="notes/634sp14ch75.pdf">Notes pages 136&ndash;142</a>) <a href="notes/634sp14ch75c.pdf">'</a></li>
+    <li>Transshipment</li>
+    <li>Dynamic Network</li>
+</ul>
+
+<font size="+1"><font color=red>•</font><font color=orange>•</font><font color=yellow>•</font><font color=green>•</font><font color=blue>•</font><font color=purple>•</font></font> Please fill out the college-wide <a href="https://ce5.connectedu.net/etw/crseval.asp?i=23">course evaluations</a>, distinct from the course evaluations that will be given out in class.  Thank you for your feedback! <font size="+1"><font color=purple>•</font><font color=blue>•</font><font color=green>•</font><font color=yellow>•</font><font color=orange>•</font><font color=red>•</font></font>
+
+<div class="date">Monday, May 5</div>
+<div class="hwk"><a href="homework/634sp14hw15.pdf">Homework #15</a> is due on Monday, May 5.&nbsp; 
+                (<a href="homework/634sp14hw15.tex">.tex file</a>)</div>
+<div class="defn">New definitions: weighted graph, Kruskal's Algorithm, Hamiltonian Cycle, Traveling Salesman Tour</div>
+
+<ul>
+    <li>Notes from Section 7.1 and TSP (<a href="notes/634sp14ch71.pdf">Notes pages 143&ndash;150</a>) <a href="notes/634sp14ch71c.pdf">'</a></li>
+    <li>Minimum Weight Spanning Trees</li>
+    <li>Traveling Salesman Problem</li>
+</ul>
+
+<div class="date" style="color:rgb(192, 0, 0)">Exam 2 Information</div>
+<ul>
+    <li>The second exam of the semester will take place on Monday, May 12.</li>
+    <li>The exam covers all material covered since the first exam.</li>
+    <li><a href="homework/634sp14hwq.pdf">Here are more details about the second exam.</a></li>
+    <li>My students often ask for an example of the style of exam that I am liable to give.  I am including my exam from last year.  The topics covered by the exam are the same topics, but you should expect your exam to be <span style="color:#c00;font-weight:700;">very different</span> because there are many ways for me to ask questions that test your knowledge on these topics.  <a href="homework/m634exm2.pdf">Click here for last year's exam</a>.  (Recognize that material from Questions 1b and 2 is not covered on this exam.) </li>
+</ul>
+
+<div class="date">Wednesday, May 7</div>
+
+<ul>
+    <li>Question and Answer Day</li>
+</ul>
+
+<div class="date">Monday, May 12</div>
+
+<ul>
+    <li>Exam 2</li>
+</ul>
+
+<div class="date">Wednesday, May 14</div>
+
+<ul>
+    <li>Presentations</li>
+</ul>
+
+<font size="+1"><font color=red>•</font><font color=orange>•</font><font color=yellow>•</font><font color=green>•</font><font color=blue>•</font><font color=purple>•</font></font> Please fill out the college-wide <a href="https://ce5.connectedu.net/etw/crseval.asp?i=23">course evaluations</a>, distinct from the course evaluations that will be given out in class.  Thank you for your feedback! <font size="+1"><font color=purple>•</font><font color=blue>•</font><font color=green>•</font><font color=yellow>•</font><font color=orange>•</font><font color=red>•</font></font>
+
+<div class="date">Wednesday, May 21, 4&ndash;6pm (Final Exam Period)</div>
+<ul>
+    <li>Presentations</li>
+</ul>
+
+                            <!--
+-->
+                        
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </div> <!-- End course_main-->
+            </div>  <!-- End middle -->  
+
+            <div class="footer_wrap">
+                 <div class="footer">
+                Christopher Hanusa   
+                 <span class="right">  
+                     <a href="../../../index.html"><img width="32" height="32" style="background: #fff; " src="../../../images/h.png" alt="Home page" /></a> 
+                     <a href="http://mathzorro.blogspot.com/"><img width="32" height="32" src="../../../images/b.png" style="vertical-align: center;" alt="Home page" /></a> 
+                     <a href="https://plus.google.com/+ChristopherHanusa"><img width="32" height="32" src="../../../images/g.png" style="vertical-align: center;" alt="Home page" /></a> 
+                     <a href="http://twitter.com/mathzorro"><img width="32" height="32" src="../../../images/t.png" alt="Home page" /></a> 
+                     <a href="https://www.facebook.com/pages/Christopher-Hanusa/553568864724342"><img width="32" height="32" src="../../../images/f.png" alt="Home page" /></a></span>
+                 </div>
+                 
+            </div>
+        </div> <!-- End container -->
+    </body>
+</html>

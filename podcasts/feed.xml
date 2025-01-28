@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunesu="http://www.itunesu.com/feed" version="2.0">
+    <channel>
+        <title>The MathZorro Podcast</title>
+        <itunes:subtitle>A podcast you can count on</itunes:subtitle>
+        <link>http://podcast.mathzorro.com</link>
+        <language>en-us</language>
+        <copyright>&#xA9;2015 Christopher Hanusa</copyright>
+        <itunes:author>Christopher Hanusa</itunes:author>
+        <description>Professor Christopher R. H. Hanusa (Queens College of the City University of New York) interviews fellow mathematicians and student researchers about their research in combinatorics.  Guests present counting problems and discuss their methods of attack. </description>
+        <itunes:summary>Professor Christopher R. H. Hanusa (Queens College of the City University of New York) interviews fellow mathematicians and student researchers about their research in combinatorics.  Guests present counting problems and discuss their methods of attack. </itunes:summary>
+        <itunes:author>Christopher Hanusa</itunes:author>
+        <webMaster>chanusa@qc.cuny.edu (Christopher Hanusa)</webMaster>
+        <managingEditor>chanusa@qc.cuny.edu (Christopher Hanusa)</managingEditor>
+        <image>
+            <url>http://qcpages.qc.edu/~chanusa/podcasts/zorrop.png</url>
+            <title>MathZorro Podcast</title>
+            <link>http://podcast.mathzorro.com</link>
+        </image>
+        <itunes:owner>
+            <itunes:name>Christopher Hanusa</itunes:name>
+            <itunes:email>chanusa@qc.cuny.edu</itunes:email>
+        </itunes:owner>
+        <itunes:category text="Science &amp; Medicine">
+            <itunes:category text="Natural Sciences" />
+        </itunes:category>
+        <itunes:category text="Education">
+            <itunes:category text="Higher Education" />
+            </itunes:category>
+        <itunes:keywords>math, maths, mathematics, combinatorics, counting, research, interview, Queens College, CUNY, </itunes:keywords>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:image href="http://qcpages.qc.edu/~chanusa/podcasts/zorrop.png" />
+        <atom:link href="http://qcpages.qc.edu/~chanusa/podcasts/feed.xml" rel="self" type="application/rss+xml" />
+        <pubDate>Thu, 16 Jul 2015 10:00:00 EDT</pubDate>
+        <lastBuildDate>Thu, 16 Jul 2015 10:00:00 EDT</lastBuildDate>
+        <item>
+            <title>Card Collecting</title>
+            <itunes:author>Christopher Hanusa</itunes:author>
+            <itunes:subtitle>Ray Chin answers a counting question related to card collecting.</itunes:subtitle>
+            <description>Ray Chin discusses his childhood hobby involving card collecting. (Cards such as Pokemon, Yu-Gi-Oh, Magic the Gathering, Baseball cards, etc.) He asks the question "In how many ways can you collect a full set of 10 cards when every deck you buy contains five random cards each?".  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</description>
+            <itunes:summary>Ray Chin discusses his childhood hobby involving card collecting. (Cards such as Pokemon, Yu-Gi-Oh, Magic the Gathering, Baseball cards, etc.) He asks the question "In how many ways can you collect a full set of 10 cards when every deck you buy contains five random cards each?".  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</itunes:summary>
+            <itunesu:category itunesu:code="108100" />
+            <enclosure url="http://qcpages.qc.edu/~chanusa/podcasts/episodes/CardCollecting.mp3" type="audio/mpeg" length="1" />
+            <guid>CardCollecting</guid>
+            <itunes:duration>9:58</itunes:duration>
+            <pubDate>Wed, 15 Jul 2015 20:00:00 EDT</pubDate>
+        </item>
+
+        
+        <item>
+            <title>Chess Piece Placements</title>
+            <itunes:author>Christopher Hanusa</itunes:author>
+            <itunes:subtitle>Candice Sands and Gaitrie Sackichand count non-attacking placements of chess pieces on a chessboard.</itunes:subtitle>
+            <description>Candice Sands and Gaitrie Sackichand ask the question "In how many ways can you place two chess pieces on a chessboard so that they don't attack one another?".  They investigate the king, rook, bishop, queen, and nightrider.  Part of the interview is a discussion of teamwork in research.  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</description>
+            <itunes:summary>Candice Sands and Gaitrie Sackichand ask the question "In how many ways can you place two chess pieces on a chessboard so that they don't attack one another?".  They investigate the king, rook, bishop, queen, and nightrider.  Part of the interview is a discussion of teamwork in research.  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</itunes:summary>
+            <itunesu:category itunesu:code="108100" />
+            <enclosure url="http://qcpages.qc.edu/~chanusa/podcasts/episodes/ChessPiecePlacements.mp3" type="audio/mpeg" length="1" />
+            <guid>ChessPiecePlacements</guid>
+            <itunes:duration>11:47</itunes:duration>
+            <pubDate>Wed, 15 Jul 2015 19:00:00 EDT</pubDate>
+        </item>
+
+        
+        <item>
+            <title>Chevron Tilings</title>
+            <itunes:author>Christopher Hanusa</itunes:author>
+            <itunes:subtitle>Varindra Hart counts square and domino tilings of a region composed of nested chevrons.</itunes:subtitle>
+            <description>Varindra Hart counts square and domino tilings of a region composed of nested chevrons.</description>
+            <itunes:summary>Varindra Hart counts square and domino tilings of a region composed of nested chevrons.  Includes a surprise appearance by the square root of 17. This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</itunes:summary>
+            <itunesu:category itunesu:code="108100" />
+            <enclosure url="http://qcpages.qc.edu/~chanusa/podcasts/episodes/ChevronTilings.mp3" type="audio/mpeg" length="1" />
+            <guid>ChevronTilings</guid>
+            <itunes:duration>14:59</itunes:duration>
+            <pubDate>Wed, 15 Jul 2015 18:00:00 EDT</pubDate>
+        </item>
+
+        
+        <item>
+            <title>Nurikabe</title>
+            <itunes:author>Christopher Hanusa</itunes:author>
+            <itunes:subtitle>Nikki counts solvable Nurikabe boards.</itunes:subtitle>
+            <description>Nikki investigates her favorite puzzle game Nurikabe, and asks how many 4x4 solvable Nurikabe boards exist.   This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</description>
+            <itunes:summary>Nikki investigates her favorite puzzle game Nurikabe, and asks how many 4x4 solvable Nurikabe boards exist.   This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</itunes:summary>
+            <itunesu:category itunesu:code="108100" />
+            <enclosure url="http://qcpages.qc.edu/~chanusa/podcasts/episodes/Nurikabe.mp3" type="audio/mpeg" length="1" />
+            <guid>Nurikabe</guid>
+            <itunes:duration>8:19</itunes:duration>
+            <pubDate>Wed, 15 Jul 2015 17:00:00 EDT</pubDate>
+        </item>
+
+        
+        <item>
+            <title>Lattice Paths</title>
+            <itunes:author>Christopher Hanusa</itunes:author>
+            <itunes:subtitle>Jan Bazant counts lattice paths in Manhattan.</itunes:subtitle>
+            <description>Jan Bazant asks the question "How many lattice paths are there from (0,0) to (m,n) where each step can be North, East, or West?".  He addresses the trials he faced throughout his research.  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</description>
+            <itunes:summary>Jan Bazant asks the question "How many lattice paths are there from (0,0) to (m,n) where each step can be North, East, or West?".  He addresses the trials he faced throughout his research.  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</itunes:summary>
+            <itunesu:category itunesu:code="108100" />
+            <enclosure url="http://qcpages.qc.edu/~chanusa/podcasts/episodes/LatticePaths.mp3" type="audio/mpeg" length="1" />
+            <guid>LatticePaths</guid>
+            <itunes:duration>6:16</itunes:duration>
+            <pubDate>Wed, 15 Jul 2015 16:00:00 EDT</pubDate>
+        </item>
+
+        
+        <item>
+            <title>Basketball</title>
+            <itunes:author>Christopher Hanusa</itunes:author>
+            <itunes:subtitle>Seung Park counts the number of ways in which the NY Knicks can shoot the basketball.</itunes:subtitle>
+            <description>Seung Park asks "In how many ways can the New York Knicks shoot the basketball?".  He explains how he uses generating functions to answer this question. This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</description>
+            <itunes:summary>Seung Park asks "In how many ways can the New York Knicks shoot the basketball?".  He explains how he uses generating functions to answer this question. This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</itunes:summary>
+            <itunesu:category itunesu:code="108100" />
+            <enclosure url="http://qcpages.qc.edu/~chanusa/podcasts/episodes/Basketball.mp3" type="audio/mpeg" length="1" />
+            <guid>Basketball</guid>
+            <itunes:duration>9:53</itunes:duration>
+            <pubDate>Wed, 15 Jul 2015 15:00:00 EDT</pubDate>
+        </item>
+
+        
+        <item>
+            <title>Dominosa</title>
+            <itunes:author>Christopher Hanusa</itunes:author>
+            <itunes:subtitle>Connie Durso and Davida investigate the game Dominosa.</itunes:subtitle>
+            <description>Connie Durso and Davida investigate the game Dominosa.  They count the number of possible ways to place dominoes on boards of different sizes before researching the number of possible valid Dominosa boards.  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</description>
+            <itunes:summary>Connie Durso and Davida investigate the game Dominosa.  They count the number of possible ways to place dominoes on boards of different sizes before researching the number of possible valid Dominosa boards.  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</itunes:summary>
+            <itunesu:category itunesu:code="108100" />
+            <enclosure url="http://qcpages.qc.edu/~chanusa/podcasts/episodes/Dominosa.mp3" type="audio/mpeg" length="1" />
+            <guid>Dominosa</guid>
+            <itunes:duration>19:53</itunes:duration>
+            <pubDate>Wed, 15 Jul 2015 14:00:00 EDT</pubDate>
+        </item>
+
+        
+        <item>
+            <title>Cycle Graphs</title>
+            <itunes:author>Christopher Hanusa</itunes:author>
+            <itunes:subtitle>Annette Paciorek investigates graphs that have the same degree sequence.</itunes:subtitle>
+            <description>Annette Paciorek investigates graphs that have the same degree sequence, focusing mainly on cycle graphs and when one additional edge is added.  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</description>
+            <itunes:summary>Annette Paciorek investigates graphs that have the same degree sequence, focusing mainly on cycle graphs and when one additional edge is added.  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</itunes:summary>
+            <itunesu:category itunesu:code="108100" />
+            <enclosure url="http://qcpages.qc.edu/~chanusa/podcasts/episodes/CycleGraphs.mp3" type="audio/mpeg" length="1" />
+            <guid>CycleGraphs</guid>
+            <itunes:duration>10:39</itunes:duration>
+            <pubDate>Wed, 15 Jul 2015 13:00:00 EDT</pubDate>
+        </item>
+
+        
+        <item>
+            <title>Monopoly</title>
+            <itunes:author>Christopher Hanusa</itunes:author>
+            <itunes:subtitle>Alex Yaroslavskiy investigates a question related to the board game Monopoly.</itunes:subtitle>
+            <description>Alex Yaroslavskiy likes board games and focused his research on the classic game Monopoly.  He counts the number of ways to land on Boardwalk before passing Go and without landing in jail.  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</description>
+            <itunes:summary>Alex Yaroslavskiy likes board games and focused his research on the classic game Monopoly.  He counts the number of ways to land on Boardwalk before passing Go and without landing in jail.  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</itunes:summary>
+            <itunesu:category itunesu:code="108100" />
+            <enclosure url="http://qcpages.qc.edu/~chanusa/podcasts/episodes/Monopoly.mp3" type="audio/mpeg" length="1" />
+            <guid>Monopoly</guid>
+            <itunes:duration>8:30</itunes:duration>
+            <pubDate>Wed, 15 Jul 2015 12:00:00 EDT</pubDate>
+        </item>
+
+        
+        <item>
+            <title>Triangles</title>
+            <itunes:author>Christopher Hanusa</itunes:author>
+            <itunes:subtitle>Shao Xin counts the number of triangles on an nxn square grid.</itunes:subtitle>
+            <description>Shao Xin is interested in polygons with integer vertex coordinates.  He counts the number of triangles that have vertices somewhere on an nxn square grid. This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</description>
+            <itunes:summary>Shao Xin is interested in polygons with integer vertex coordinates.  He counts the number of triangles that have vertices somewhere on an nxn square grid. This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</itunes:summary>
+            <itunesu:category itunesu:code="108100" />
+            <enclosure url="http://qcpages.qc.edu/~chanusa/podcasts/episodes/Triangles.mp3" type="audio/mpeg" length="1" />
+            <guid>Triangles</guid>
+            <itunes:duration>11:10</itunes:duration>
+            <pubDate>Wed, 15 Jul 2015 11:00:00 EDT</pubDate>
+        </item>
+
+        
+        <item>
+            <title>Growing Children</title>
+            <itunes:author>Christopher Hanusa</itunes:author>
+            <itunes:subtitle>Hanying Dong investigates the ways in which children can grow from ages 3 to 13.</itunes:subtitle>
+            <description>Hanying Dong is interested in the factors that contribute to the growth of children.  He uses generating functions to count the number of ways in which children can grow from ages 3 to 13. This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</description>
+            <itunes:summary>Hanying Dong is interested in the factors that contribute to the growth of children.  He uses generating functions to count the number of ways in which children can grow from ages 3 to 13. This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</itunes:summary>
+            <itunesu:category itunesu:code="108100" />
+            <enclosure url="http://qcpages.qc.edu/~chanusa/podcasts/episodes/GrowingChildren.mp3" type="audio/mpeg" length="1" />
+            <guid>GrowingChildren</guid>
+            <itunes:duration>11:18</itunes:duration>
+            <pubDate>Wed, 15 Jul 2015 10:00:00 EDT</pubDate>
+        </item>
+
+        
+        <item>
+            <title>Walking Paths</title>
+            <itunes:author>Christopher Hanusa</itunes:author>
+            <itunes:subtitle>Yidi Yao counts the number of walking paths in a city containing a park.</itunes:subtitle>
+            <description>Yidi Yao takes inspiration from a walk in Manhattan; she counts the number of walking paths from one corner of a city to the other that do not pass through a park along the way. This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</description>
+            <itunes:summary>Yidi Yao takes inspiration from a walk in Manhattan; she counts the number of walking paths from one corner of a city to the other that do not pass through a park along the way. This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</itunes:summary>
+            <itunesu:category itunesu:code="108100" />
+            <enclosure url="http://qcpages.qc.edu/~chanusa/podcasts/episodes/WalkingPaths.mp3" type="audio/mpeg" length="1" />
+            <guid>WalkingPaths</guid>
+            <itunes:duration>8:15</itunes:duration>
+            <pubDate>Wed, 15 Jul 2015 9:00:00 EDT</pubDate>
+        </item>             
+
+        
+        <item>
+            <title>Go</title>
+            <itunes:author>Christopher Hanusa</itunes:author>
+            <itunes:subtitle>InSu Chang answers a question about playing Go on a 5x5 board.</itunes:subtitle>
+            <description>InSu Chang is interested in the game Go, which has simple rules but is both mentally challenging and mathematically complex.  He answers a question about the end game possibilities when playing Go on a 5x5 board.  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</description>
+            <itunes:summary>InSu Chang is interested in the game Go, which has simple rules but is both mentally challenging and mathematically complex.  He answers a question about the end game possibilities when playing Go on a 5x5 board.  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</itunes:summary>
+            <itunesu:category itunesu:code="108100" />
+            <enclosure url="http://qcpages.qc.edu/~chanusa/podcasts/episodes/Go.mp3" type="audio/mpeg" length="1" />
+            <guid>Go</guid>
+            <itunes:duration>20:14</itunes:duration>
+            <pubDate>Wed, 15 Jul 2015 8:00:00 EDT</pubDate>
+        </item>
+
+        
+        <item>
+            <title>Hallway Tiles</title>
+            <itunes:author>Christopher Hanusa</itunes:author>
+            <itunes:subtitle>Synthia Viaud asks a question about walking on hallway tiles.</itunes:subtitle>
+            <description>Synthia Viaud noticed the patterns involved in the tiles on the hallway floor, and asks about the number of ways in which a person can walk around a closed square hallway respecting certain rules about walking on hallway tiles.  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</description>
+            <itunes:summary>Synthia Viaud noticed the patterns involved in the tiles on the hallway floor, and asks about the number of ways in which a person can walk around a closed square hallway respecting certain rules about walking on hallway tiles.  This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</itunes:summary>
+            <itunesu:category itunesu:code="108100" />
+            <enclosure url="http://qcpages.qc.edu/~chanusa/podcasts/episodes/HallwayTiles.mp3" type="audio/mpeg" length="1" />
+            <guid>HallwayTiles</guid>
+            <itunes:duration>7:50</itunes:duration>
+            <pubDate>Wed, 15 Jul 2015 7:00:00 EDT</pubDate>
+        </item>
+
+        
+        <item>
+            <title>Stable Marriages</title>
+            <itunes:author>Christopher Hanusa</itunes:author>
+            <itunes:subtitle>Elisse Ferraro investigates the structure of stable marriages.</itunes:subtitle>
+            <description>Elisse Ferraro investigates the structure of stable marriages by using the Gale-Shapely algorithm. This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</description>
+            <itunes:summary>Elisse Ferraro investigates the structure of stable marriages by using the Gale-Shapely algorithm. This research was conducted during Fall 2014 in Professor Hanusa's Combinatorics class at Queens College of the City University of New York.</itunes:summary>
+            <itunesu:category itunesu:code="108100" />
+            <enclosure url="http://qcpages.qc.edu/~chanusa/podcasts/episodes/StableMarriages.mp3" type="audio/mpeg" length="1" />
+            <guid>StableMarriages</guid>
+            <itunes:duration>6:35</itunes:duration>
+            <pubDate>Wed, 15 Jul 2015 6:00:00 EDT</pubDate>
+        </item>
+        
+   
+    </channel>
+</rss>

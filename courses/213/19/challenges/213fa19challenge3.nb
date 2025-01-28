@@ -1,0 +1,118 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3841,        110]
+NotebookOptionsPosition[      2980,         86]
+NotebookOutlinePosition[      3323,        101]
+CellTagsIndexPosition[      3280,         98]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Group Challenges for 9/9/19", "Title",
+ CellChangeTimes->{{3.7770219016322813`*^9, 
+  3.7770219070371904`*^9}},ExpressionUUID->"0c997e44-cf0d-40e7-b10f-\
+69b7ce694cd0"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+3-1. Use various commands that you have learned so far to create the list\
+\>", "Section",
+ CellChangeTimes->{{3.7770221354919634`*^9, 3.7770221367260523`*^9}, {
+  3.7770222133530245`*^9, 3.7770222306069903`*^9}, {3.7770222993385553`*^9, 
+  3.7770222994323373`*^9}},ExpressionUUID->"d86510d2-0d08-4fe8-ac17-\
+92f73f65417b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "1", ",", "1", ",", "2", ",", "4", ",", "8", ",", "3", ",", "9", 
+   ",", "27", ",", "4", ",", "16", ",", "64", ",", "5", ",", "25", ",", "125",
+    ",", "6", ",", "36", ",", "216", ",", "7", ",", "49", ",", "343", ",", 
+   "8", ",", "64", ",", "512", ",", "9", ",", "81", ",", "729", ",", "10", 
+   ",", "100", ",", "1000"}], "}"}]], "Output",
+ CellChangeTimes->{{3.7770222500183945`*^9, 3.7770222592864084`*^9}},
+ CellLabel->"Out[7]=",ExpressionUUID->"14fdbf5c-6f06-4e39-8a9b-4b33c3a3858a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+3-2. Below is the Mathematica input and output for someone hoping to make a \
+list of square numbers and then append the next square number to the end of \
+that list. How should the code be modified to do these two desired operations?\
+\>", "Section",
+ CellChangeTimes->{{3.7770218281839395`*^9, 3.7770218475419273`*^9}, {
+  3.777021913807872*^9, 3.777021914854497*^9}, {3.7770223013068414`*^9, 
+  3.777022301447489*^9}},ExpressionUUID->"605fc77b-e275-4889-9f2d-\
+ba6288415c2d"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"squares", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"i", "^", "2"}], ",", 
+     RowBox[{"{", "5", "}"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Append", "[", 
+   RowBox[{
+    RowBox[{"6", "^", "2"}], ",", "%%"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", "squares"}], "Input",
+ CellChangeTimes->{{3.7770218281839395`*^9, 3.7770218702011843`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"3d9e4b1d-995e-4683-a784-0ae52e9b7cd3"]
+}, Open  ]],
+
+Cell["\<\
+When you finish: choose one of the challenge questions from Tutorial 3 that \
+was difficult and discuss how you approached it.\
+\>", "Section",
+ CellChangeTimes->{{3.777022341749689*^9, 
+  3.7770223866173296`*^9}},ExpressionUUID->"7ea8b2a3-2767-46d3-b39d-\
+860d942aece0"]
+}, Open  ]]
+},
+WindowSize->{1280, 646},
+WindowMargins->{{Automatic, 82}, {Automatic, 62}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 174, 3, 96, "Title",ExpressionUUID->"0c997e44-cf0d-40e7-b10f-69b7ce694cd0"],
+Cell[CellGroupData[{
+Cell[779, 29, 333, 6, 67, "Section",ExpressionUUID->"d86510d2-0d08-4fe8-ac17-92f73f65417b"],
+Cell[1115, 37, 544, 9, 32, "Output",ExpressionUUID->"14fdbf5c-6f06-4e39-8a9b-4b33c3a3858a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1696, 51, 488, 8, 143, "Section",ExpressionUUID->"605fc77b-e275-4889-9f2d-ba6288415c2d"],
+Cell[2187, 61, 481, 13, 67, "Input",ExpressionUUID->"3d9e4b1d-995e-4683-a784-0ae52e9b7cd3"]
+}, Open  ]],
+Cell[2683, 77, 281, 6, 105, "Section",ExpressionUUID->"7ea8b2a3-2767-46d3-b39d-860d942aece0"]
+}, Open  ]]
+}
+]
+*)
+

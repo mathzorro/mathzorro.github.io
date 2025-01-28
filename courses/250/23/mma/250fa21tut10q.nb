@@ -1,0 +1,729 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     29845,        721]
+NotebookOptionsPosition[     25684,        643]
+NotebookOutlinePosition[     26106,        660]
+CellTagsIndexPosition[     26063,        657]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Introduction to 3D graphics", "Title",
+ CellChangeTimes->{{3.461405268132181*^9, 3.461405274978758*^9}, {
+  3.461405374110767*^9, 3.461405382736993*^9}, {3.461405964606715*^9, 
+  3.461405964996537*^9}, {3.461412674365797*^9, 3.461412678153265*^9}, {
+  3.47448983369319*^9, 3.474489837928254*^9}, {3.630696562351103*^9, 
+  3.630696568117642*^9}, {3.631988928117742*^9, 3.6319889301724463`*^9}, {
+  3.632152715690145*^9, 3.632152719687695*^9}, {3.6325873465991592`*^9, 
+  3.632587350748754*^9}, {3.633195273613469*^9, 3.633195283053203*^9}, {
+  3.634662798361207*^9, 3.634662802015071*^9}, {3.634914020212693*^9, 
+  3.634914020306204*^9}},ExpressionUUID->"19e55f01-07f8-446d-97e4-\
+b11417a786e0"],
+
+Cell["Comprehension Questions", "Subtitle",
+ CellChangeTimes->{{3.8104045006053095`*^9, 
+  3.810404504400776*^9}},ExpressionUUID->"b39182fa-32e9-474e-ab5c-\
+08d7e3a31faa"],
+
+Cell["\<\
+Math 250 - Mathematical Computing
+Christopher Hanusa\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.4614053946645927`*^9, 3.4614054230893087`*^9}, {
+  3.461405971637244*^9, 3.4614060079862947`*^9}, {3.474489844264483*^9, 
+  3.474489895841402*^9}, {3.505485689221858*^9, 3.505485696180904*^9}, {
+  3.53815066431697*^9, 3.538150664587603*^9}, {3.630691352563725*^9, 
+  3.6306913589949083`*^9}, {3.632152722336176*^9, 3.6321527477452803`*^9}, {
+  3.63215587546747*^9, 3.6321558797854424`*^9}, {3.632587355469249*^9, 
+  3.632587384845799*^9}, {3.633195265968095*^9, 3.633195266341083*^9}, {
+  3.8104044801603813`*^9, 
+  3.81040448972079*^9}},ExpressionUUID->"545d8173-af64-42b4-836c-\
+e57d7d28c713"],
+
+Cell[CellGroupData[{
+
+Cell["10-1. Create a grid of spheres.", "Subsection",
+ CellChangeTimes->{{3.729336631082374*^9, 3.7293366358814163`*^9}, {
+  3.8104045610106063`*^9, 
+  3.810404561530276*^9}},ExpressionUUID->"8ab70a7e-5dc8-40e9-a5c0-\
+87968343a9c8"],
+
+Cell[BoxData[
+ Graphics3DBox[{SphereBox[{0, 0, 0}, 0.2], SphereBox[{0, 0, 1}, 0.2], 
+   SphereBox[{0, 0, 2}, 0.2], SphereBox[{0, 0, 3}, 0.2], 
+   SphereBox[{0, 1, 0}, 0.2], SphereBox[{0, 1, 1}, 0.2], 
+   SphereBox[{0, 1, 2}, 0.2], SphereBox[{0, 1, 3}, 0.2], 
+   SphereBox[{0, 2, 0}, 0.2], SphereBox[{0, 2, 1}, 0.2], 
+   SphereBox[{0, 2, 2}, 0.2], SphereBox[{0, 2, 3}, 0.2], 
+   SphereBox[{0, 3, 0}, 0.2], SphereBox[{0, 3, 1}, 0.2], 
+   SphereBox[{0, 3, 2}, 0.2], SphereBox[{0, 3, 3}, 0.2], 
+   SphereBox[{1, 0, 0}, 0.2], SphereBox[{1, 0, 1}, 0.2], 
+   SphereBox[{1, 0, 2}, 0.2], SphereBox[{1, 0, 3}, 0.2], 
+   SphereBox[{1, 1, 0}, 0.2], SphereBox[{1, 1, 1}, 0.2], 
+   SphereBox[{1, 1, 2}, 0.2], SphereBox[{1, 1, 3}, 0.2], 
+   SphereBox[{1, 2, 0}, 0.2], SphereBox[{1, 2, 1}, 0.2], 
+   SphereBox[{1, 2, 2}, 0.2], SphereBox[{1, 2, 3}, 0.2], 
+   SphereBox[{1, 3, 0}, 0.2], SphereBox[{1, 3, 1}, 0.2], 
+   SphereBox[{1, 3, 2}, 0.2], SphereBox[{1, 3, 3}, 0.2], 
+   SphereBox[{2, 0, 0}, 0.2], SphereBox[{2, 0, 1}, 0.2], 
+   SphereBox[{2, 0, 2}, 0.2], SphereBox[{2, 0, 3}, 0.2], 
+   SphereBox[{2, 1, 0}, 0.2], SphereBox[{2, 1, 1}, 0.2], 
+   SphereBox[{2, 1, 2}, 0.2], SphereBox[{2, 1, 3}, 0.2], 
+   SphereBox[{2, 2, 0}, 0.2], SphereBox[{2, 2, 1}, 0.2], 
+   SphereBox[{2, 2, 2}, 0.2], SphereBox[{2, 2, 3}, 0.2], 
+   SphereBox[{2, 3, 0}, 0.2], SphereBox[{2, 3, 1}, 0.2], 
+   SphereBox[{2, 3, 2}, 0.2], SphereBox[{2, 3, 3}, 0.2], 
+   SphereBox[{3, 0, 0}, 0.2], SphereBox[{3, 0, 1}, 0.2], 
+   SphereBox[{3, 0, 2}, 0.2], SphereBox[{3, 0, 3}, 0.2], 
+   SphereBox[{3, 1, 0}, 0.2], SphereBox[{3, 1, 1}, 0.2], 
+   SphereBox[{3, 1, 2}, 0.2], SphereBox[{3, 1, 3}, 0.2], 
+   SphereBox[{3, 2, 0}, 0.2], SphereBox[{3, 2, 1}, 0.2], 
+   SphereBox[{3, 2, 2}, 0.2], SphereBox[{3, 2, 3}, 0.2], 
+   SphereBox[{3, 3, 0}, 0.2], SphereBox[{3, 3, 1}, 0.2], 
+   SphereBox[{3, 3, 2}, 0.2], SphereBox[{3, 3, 3}, 0.2]},
+  ImageSize->{368.31222246545695`, 374.17090147302645`},
+  ViewPoint->{-1.4441820214059933`, -3.0584742863883307`, 
+   0.10036597306408392`},
+  ViewVertical->{-0.19462355380269175`, -0.5350436351878127, 
+   0.8221009553273988}]], "Input",ExpressionUUID->"765940c4-8151-421b-b65d-\
+fcb6fad47175"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+10-2. Create a square with some thickness.  It should look something like \
+this:\
+\>", "Subsection",
+ CellChangeTimes->{{3.729335478641519*^9, 3.7293355096253223`*^9}, {
+  3.7293367530944242`*^9, 3.729336753181974*^9}, {3.7475654961845007`*^9, 
+  3.7475654967755938`*^9}, {3.8104045637103977`*^9, 
+  3.81040456412064*^9}},ExpressionUUID->"51347c9f-1ea4-4edf-81f1-\
+6252f9848094"],
+
+Cell[BoxData[
+ Graphics3DBox[
+  TubeBox[{{0, 0, 0}, {0, 1, 0}, {1, 1, 0}, {1, 0, 0}, {0, 0, 0}}, 0.1],
+  ImageSize->{329.34245133501645`, 330.6510215859151},
+  ImageSizeRaw->Automatic,
+  ViewPoint->{0.6096911099318032, -0.12081895740884828`, 3.3262109869941754`},
+  
+  ViewVertical->{0.08151364310294867, 0.7844307424389829, 
+   3.689019071104079}]], "Output",
+ CellChangeTimes->{{3.729335549170929*^9, 
+  3.729335565927891*^9}},ExpressionUUID->"7e402ab1-ca46-40b2-8abc-\
+4c3a59327b6a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "10-3. Put spheres on the corners of your square from Question 2 using the \
+",
+ StyleBox["Map", "Input",
+  FontSize->18],
+ " command, similar to this:"
+}], "Subsection",
+ CellChangeTimes->{{3.747565798936404*^9, 3.747565824017275*^9}, {
+  3.7475661689006157`*^9, 3.747566174411834*^9}, {3.8104045677012224`*^9, 
+  3.8104045681800995`*^9}},ExpressionUUID->"e1d00e46-0f25-43fd-ac48-\
+ce55b37dc3e8"],
+
+Cell[BoxData[
+ Graphics3DBox[{{TubeBox[{{0, 0, 0}, {0, 1, 0}}, 0.1], 
+    TubeBox[{{0, 1, 0}, {1, 1, 0}}, 0.1], 
+    TubeBox[{{1, 1, 0}, {1, 0, 0}}, 0.1], 
+    TubeBox[{{1, 0, 0}, {0, 0, 0}}, 0.1]}, {SphereBox[{0, 0, 0}, 0.15], 
+    SphereBox[{0, 1, 0}, 0.15], SphereBox[{1, 1, 0}, 0.15], 
+    SphereBox[{1, 0, 0}, 0.15]}},
+  ImageSize->{357.08320970918635`, 356.9731340395602},
+  ImageSizeRaw->Automatic,
+  ViewPoint->{-0.09117736400942493, -0.0646113972612931, 3.381939096973249},
+  ViewVertical->{-0.0036724080370494497`, 0.28968098350607957`, 
+   0.957116210924337}]], "Input",ExpressionUUID->"67bb4f6c-87da-404a-ae15-\
+e392f045a12b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["10-4. Create three sides of a house using polygonal faces. ", \
+"Subsection",
+ CellChangeTimes->{{3.729335927917449*^9, 3.729335940341794*^9}, {
+  3.729336020690055*^9, 3.729336026688195*^9}, {3.729336768590461*^9, 
+  3.729336768645866*^9}, {3.729337035221026*^9, 3.729337035493021*^9}, {
+  3.747566899948786*^9, 3.747566901157907*^9}, {3.747567522096463*^9, 
+  3.747567528639996*^9}, {3.8104045737302976`*^9, 
+  3.810404577400601*^9}},ExpressionUUID->"94b24837-69c4-49b6-92de-\
+8b89ac6e1293"],
+
+Cell[BoxData[
+ Graphics3DBox[{Polygon3DBox[{{0, 0, 0}, {0, 0, 1}, {0, 1, 1}, {0, 1, 0}}], 
+   Polygon3DBox[{{0, 0, 0}, {0, 0, 1}, {1, 0, 1}, {1, 0, 0}}], 
+   Polygon3DBox[{{0, 0, 0}, {1, 0, 0}, {1, 1, 0}, {0, 1, 0}}]},
+  ImageSize->{186.9767400797935, 194.},
+  ViewPoint->{2.665871657272128, -1.431839249069785, 1.5142538333372109`},
+  ViewVertical->{0.2093610952937805, 0.026729296375209433`, 
+   0.9774730055058681}]], "Output",
+ CellChangeTimes->{
+  3.747567722435794*^9},ExpressionUUID->"cb19e9f7-fab0-492b-86b3-\
+4eb168bee8bd"],
+
+Cell[CellGroupData[{
+
+Cell["Hint 1: (expand to see)", "Subsubsection",
+ CellChangeTimes->{{3.729335944133919*^9, 3.7293359489979277`*^9}, 
+   3.729337698452718*^9},ExpressionUUID->"f112e152-f679-40af-a0ad-\
+06b8d599069f"],
+
+Cell["\<\
+First determine the coordinates of each of the corners of the faces.\
+\>", "Text",
+ CellChangeTimes->{{3.7293359530244017`*^9, 3.7293359616143007`*^9}, {
+  3.747567534335824*^9, 3.7475675350484247`*^9}, {3.747567577497328*^9, 
+  3.747567591209712*^9}},ExpressionUUID->"01965113-028c-4b7f-8111-\
+c5007a9437d2"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Hint 2: (expand to see)", "Subsubsection",
+ CellChangeTimes->{{3.729336077089793*^9, 3.729336079819047*^9}, 
+   3.72933769898104*^9},ExpressionUUID->"d5f20560-3b09-41ab-af35-\
+a82cea47de11"],
+
+Cell["You can create one face of the tetrahedron in this way:", "Text",
+ CellChangeTimes->{{3.729336084190689*^9, 
+  3.729336097346158*^9}},ExpressionUUID->"f3c01e6a-b4e6-412b-8e72-\
+77f83632239e"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"v1", "=", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"v2", "=", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"v3", "=", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1", ",", "1"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"v4", "=", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1", ",", "0"}], "}"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.7293360533626013`*^9, 3.7293360700737457`*^9}, {
+  3.7475676019635763`*^9, 
+  3.747567630234836*^9}},ExpressionUUID->"5b36ca09-0319-4970-834f-\
+77936826cba8"],
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"Polygon", "[", 
+   RowBox[{"{", 
+    RowBox[{"v1", ",", "v2", ",", "v3", ",", "v4"}], "}"}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.729336103858411*^9, 3.729336119602968*^9}, {
+  3.747567635915263*^9, 
+  3.747567637875201*^9}},ExpressionUUID->"f4c60f4d-5697-4443-9b3d-\
+18e2f8a8cf6f"]
+}, Closed]]
+}, Open  ]],
+
+Cell[TextData[{
+ "10-5. Create a tetrahedron using ",
+ StyleBox["PolyhedronData", "Input",
+  FontSize->18],
+ ".  Use one line of code."
+}], "Subsection",
+ CellChangeTimes->{{3.729337341406698*^9, 3.729337381814682*^9}, {
+  3.729338635578519*^9, 3.729338635754252*^9}, {3.7475672309348993`*^9, 
+  3.74756723125487*^9}, {3.8104045810202837`*^9, 3.810404583433775*^9}, {
+  3.810486537566143*^9, 
+  3.810486542000862*^9}},ExpressionUUID->"14c0c0fb-fcdc-4035-9511-\
+72bf917c6485"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+10-6. Create an ice cream cone with three different flavors of ice cream, \
+like this:\
+\>", "Subsection",
+ CellChangeTimes->{{3.8104864843264694`*^9, 
+  3.8104865182056446`*^9}},ExpressionUUID->"d30dfe46-7ba0-4301-b2d7-\
+d6e818ad26f8"],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   {RGBColor[1, 0.6666666666666666, 
+     NCache[
+      Rational[1, 3], 0.3333333333333333]], 
+    ConeBox[{{0, 0, 0}, {0, 0, -2}}, 0.8]}, 
+   {GrayLevel[1], SphereBox[{0, 0, 0.5}]}, 
+   {RGBColor[0.6, 0.4, 0.2], SphereBox[{0, 0, 1.5}]}, 
+   {RGBColor[1, 0.5, 0.5], SphereBox[{0, 0, 2.5}]}},
+  Boxed->False,
+  ImageSize->{217.12562806535857`, 432.7085734307289},
+  ImageSizeRaw->Automatic,
+  Lighting->"Neutral",
+  ViewPoint->{-2.6909420703492044`, -2.036626834234253, 0.24694516010989948`},
+  
+  ViewVertical->{-0.6649909066184491, -0.5532404944953783, 
+   0.5017091282459215}]], "Output",
+ CellChangeTimes->{{3.810486730234728*^9, 3.8104867395443287`*^9}},
+ CellLabel->
+  "Out[255]=",ExpressionUUID->"3d471be3-c2b5-4471-8d23-836df3cef52b"],
+
+Cell[CellGroupData[{
+
+Cell["Hint 1: (expand to see)", "Subsubsection",
+ CellChangeTimes->{{3.729335944133919*^9, 3.7293359489979277`*^9}, 
+   3.729337698452718*^9},ExpressionUUID->"e69dd54d-5923-441b-b04e-\
+251549d26fb6"],
+
+Cell["\<\
+Use the options Lighting\[Rule]\[CloseCurlyDoubleQuote]Neutral\
+\[CloseCurlyDoubleQuote] and Boxed\[Rule]False to make the colors work \
+correctly and to have no box around the final form.\
+\>", "Text",
+ CellChangeTimes->{{3.7293359530244017`*^9, 3.7293359616143007`*^9}, {
+  3.747567534335824*^9, 3.7475675350484247`*^9}, {3.747567577497328*^9, 
+  3.747567591209712*^9}, {3.8104866930850487`*^9, 
+  3.810486762304734*^9}},ExpressionUUID->"02df44ea-6b8d-4720-bd9d-\
+f9aa4896b01b"]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Challenge Questions:", "Section",
+ CellChangeTimes->{{3.810404328720434*^9, 3.8104043349339623`*^9}, {
+  3.8104531460272837`*^9, 3.8104531476082935`*^9}, {3.8426152483890524`*^9, 
+  3.8426152518524237`*^9}, {3.8426152819338865`*^9, 
+  3.842615284942067*^9}},ExpressionUUID->"bcdb3fbb-cb5f-4596-a6ec-\
+c7359fe57645"],
+
+Cell["\<\
+10-X1. Make your grid of spheres from Question 10-1 vary in size and color.  \
+\
+\>", "Subsection",
+ CellChangeTimes->{{3.7293366509622393`*^9, 3.7293367465738153`*^9}, {
+  3.7475655010563498`*^9, 3.747565501655664*^9}, {3.7475657729446898`*^9, 
+  3.747565776399776*^9}, {3.7475661922367067`*^9, 3.747566193148404*^9}, {
+  3.810404601730348*^9, 3.810404604690789*^9}, {3.810486403056369*^9, 
+  3.810486404836953*^9}},ExpressionUUID->"3d2c6ec5-712d-4470-ae21-\
+c8e1ad0b90c9"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+10-X2. Create a 3D grid that looks like this, analogous to the 2D grid we did \
+in earlier tutorials:\
+\>", "Subsection",
+ CellChangeTimes->{{3.634998753627596*^9, 3.634998771197053*^9}, {
+  3.634998948821113*^9, 3.634998980102557*^9}, {3.7293355801966743`*^9, 
+  3.729335580275523*^9}, {3.72933675533423*^9, 3.729336755388987*^9}, {
+  3.747566194045569*^9, 3.747566195476425*^9}, {3.8104046065601044`*^9, 
+  3.810404626370529*^9}},ExpressionUUID->"13d7d3c2-bfbf-4708-afef-\
+416db905a3f1"],
+
+Cell[BoxData[
+ Graphics3DBox[{{{TubeBox[{{0, 0, 0}, {0, 0, 5}}], 
+     TubeBox[{{0, 1, 0}, {0, 1, 5}}], TubeBox[{{0, 2, 0}, {0, 2, 5}}], 
+     TubeBox[{{0, 3, 0}, {0, 3, 5}}], TubeBox[{{0, 4, 0}, {0, 4, 5}}], 
+     TubeBox[{{0, 5, 0}, {0, 5, 5}}]}, {TubeBox[{{1, 0, 0}, {1, 0, 5}}], 
+     TubeBox[{{1, 1, 0}, {1, 1, 5}}], TubeBox[{{1, 2, 0}, {1, 2, 5}}], 
+     TubeBox[{{1, 3, 0}, {1, 3, 5}}], TubeBox[{{1, 4, 0}, {1, 4, 5}}], 
+     TubeBox[{{1, 5, 0}, {1, 5, 5}}]}, {TubeBox[{{2, 0, 0}, {2, 0, 5}}], 
+     TubeBox[{{2, 1, 0}, {2, 1, 5}}], TubeBox[{{2, 2, 0}, {2, 2, 5}}], 
+     TubeBox[{{2, 3, 0}, {2, 3, 5}}], TubeBox[{{2, 4, 0}, {2, 4, 5}}], 
+     TubeBox[{{2, 5, 0}, {2, 5, 5}}]}, {TubeBox[{{3, 0, 0}, {3, 0, 5}}], 
+     TubeBox[{{3, 1, 0}, {3, 1, 5}}], TubeBox[{{3, 2, 0}, {3, 2, 5}}], 
+     TubeBox[{{3, 3, 0}, {3, 3, 5}}], TubeBox[{{3, 4, 0}, {3, 4, 5}}], 
+     TubeBox[{{3, 5, 0}, {3, 5, 5}}]}, {TubeBox[{{4, 0, 0}, {4, 0, 5}}], 
+     TubeBox[{{4, 1, 0}, {4, 1, 5}}], TubeBox[{{4, 2, 0}, {4, 2, 5}}], 
+     TubeBox[{{4, 3, 0}, {4, 3, 5}}], TubeBox[{{4, 4, 0}, {4, 4, 5}}], 
+     TubeBox[{{4, 5, 0}, {4, 5, 5}}]}, {TubeBox[{{5, 0, 0}, {5, 0, 5}}], 
+     TubeBox[{{5, 1, 0}, {5, 1, 5}}], TubeBox[{{5, 2, 0}, {5, 2, 5}}], 
+     TubeBox[{{5, 3, 0}, {5, 3, 5}}], TubeBox[{{5, 4, 0}, {5, 4, 5}}], 
+     TubeBox[{{5, 5, 0}, {5, 5, 5}}]}}, {{TubeBox[{{0, 0, 0}, {5, 0, 0}}], 
+     TubeBox[{{0, 0, 1}, {5, 0, 1}}], TubeBox[{{0, 0, 2}, {5, 0, 2}}], 
+     TubeBox[{{0, 0, 3}, {5, 0, 3}}], TubeBox[{{0, 0, 4}, {5, 0, 4}}], 
+     TubeBox[{{0, 0, 5}, {5, 0, 5}}]}, {TubeBox[{{0, 1, 0}, {5, 1, 0}}], 
+     TubeBox[{{0, 1, 1}, {5, 1, 1}}], TubeBox[{{0, 1, 2}, {5, 1, 2}}], 
+     TubeBox[{{0, 1, 3}, {5, 1, 3}}], TubeBox[{{0, 1, 4}, {5, 1, 4}}], 
+     TubeBox[{{0, 1, 5}, {5, 1, 5}}]}, {TubeBox[{{0, 2, 0}, {5, 2, 0}}], 
+     TubeBox[{{0, 2, 1}, {5, 2, 1}}], TubeBox[{{0, 2, 2}, {5, 2, 2}}], 
+     TubeBox[{{0, 2, 3}, {5, 2, 3}}], TubeBox[{{0, 2, 4}, {5, 2, 4}}], 
+     TubeBox[{{0, 2, 5}, {5, 2, 5}}]}, {TubeBox[{{0, 3, 0}, {5, 3, 0}}], 
+     TubeBox[{{0, 3, 1}, {5, 3, 1}}], TubeBox[{{0, 3, 2}, {5, 3, 2}}], 
+     TubeBox[{{0, 3, 3}, {5, 3, 3}}], TubeBox[{{0, 3, 4}, {5, 3, 4}}], 
+     TubeBox[{{0, 3, 5}, {5, 3, 5}}]}, {TubeBox[{{0, 4, 0}, {5, 4, 0}}], 
+     TubeBox[{{0, 4, 1}, {5, 4, 1}}], TubeBox[{{0, 4, 2}, {5, 4, 2}}], 
+     TubeBox[{{0, 4, 3}, {5, 4, 3}}], TubeBox[{{0, 4, 4}, {5, 4, 4}}], 
+     TubeBox[{{0, 4, 5}, {5, 4, 5}}]}, {TubeBox[{{0, 5, 0}, {5, 5, 0}}], 
+     TubeBox[{{0, 5, 1}, {5, 5, 1}}], TubeBox[{{0, 5, 2}, {5, 5, 2}}], 
+     TubeBox[{{0, 5, 3}, {5, 5, 3}}], TubeBox[{{0, 5, 4}, {5, 5, 4}}], 
+     TubeBox[{{0, 5, 5}, {5, 5, 5}}]}}, {{TubeBox[{{0, 0, 0}, {0, 5, 0}}], 
+     TubeBox[{{0, 0, 1}, {0, 5, 1}}], TubeBox[{{0, 0, 2}, {0, 5, 2}}], 
+     TubeBox[{{0, 0, 3}, {0, 5, 3}}], TubeBox[{{0, 0, 4}, {0, 5, 4}}], 
+     TubeBox[{{0, 0, 5}, {0, 5, 5}}]}, {TubeBox[{{1, 0, 0}, {1, 5, 0}}], 
+     TubeBox[{{1, 0, 1}, {1, 5, 1}}], TubeBox[{{1, 0, 2}, {1, 5, 2}}], 
+     TubeBox[{{1, 0, 3}, {1, 5, 3}}], TubeBox[{{1, 0, 4}, {1, 5, 4}}], 
+     TubeBox[{{1, 0, 5}, {1, 5, 5}}]}, {TubeBox[{{2, 0, 0}, {2, 5, 0}}], 
+     TubeBox[{{2, 0, 1}, {2, 5, 1}}], TubeBox[{{2, 0, 2}, {2, 5, 2}}], 
+     TubeBox[{{2, 0, 3}, {2, 5, 3}}], TubeBox[{{2, 0, 4}, {2, 5, 4}}], 
+     TubeBox[{{2, 0, 5}, {2, 5, 5}}]}, {TubeBox[{{3, 0, 0}, {3, 5, 0}}], 
+     TubeBox[{{3, 0, 1}, {3, 5, 1}}], TubeBox[{{3, 0, 2}, {3, 5, 2}}], 
+     TubeBox[{{3, 0, 3}, {3, 5, 3}}], TubeBox[{{3, 0, 4}, {3, 5, 4}}], 
+     TubeBox[{{3, 0, 5}, {3, 5, 5}}]}, {TubeBox[{{4, 0, 0}, {4, 5, 0}}], 
+     TubeBox[{{4, 0, 1}, {4, 5, 1}}], TubeBox[{{4, 0, 2}, {4, 5, 2}}], 
+     TubeBox[{{4, 0, 3}, {4, 5, 3}}], TubeBox[{{4, 0, 4}, {4, 5, 4}}], 
+     TubeBox[{{4, 0, 5}, {4, 5, 5}}]}, {TubeBox[{{5, 0, 0}, {5, 5, 0}}], 
+     TubeBox[{{5, 0, 1}, {5, 5, 1}}], TubeBox[{{5, 0, 2}, {5, 5, 2}}], 
+     TubeBox[{{5, 0, 3}, {5, 5, 3}}], TubeBox[{{5, 0, 4}, {5, 5, 4}}], 
+     TubeBox[{{5, 0, 5}, {5, 5, 5}}]}}},
+  ImageSize->{204.01679046366388`, 194.},
+  ViewPoint->{-2.757886154886767, -1.585338259075605, 1.1535885579334633`},
+  ViewVertical->{-0.2767578752983273, -0.08351446020855727, 
+   0.9573037205591699}]], "Output",
+ CellChangeTimes->{{3.634998803094707*^9, 
+  3.634998888828115*^9}},ExpressionUUID->"02a0338e-0f10-44d0-b4fd-\
+d9f70601d9c4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Additional construction: Build your own polyhedra", "Subsection",
+ CellChangeTimes->{{3.810404328720434*^9, 3.8104043349339623`*^9}, {
+  3.8104531460272837`*^9, 3.8104531476082935`*^9}, {3.8426152483890524`*^9, 
+  3.8426152518524237`*^9}, {3.8426152819338865`*^9, 
+  3.8426152980615435`*^9}},ExpressionUUID->"f4df76b0-a1fc-4ed7-a83a-\
+8024bddf08d8"],
+
+Cell[TextData[{
+ "If you want to create your own polyhedron, use ",
+ StyleBox["GraphicsComplex", "Input",
+  FontSize->16],
+ " by specifying the list of coordinates of all the vertices and then \
+specifying which vertices connect to be a face of the object.\n(Again, from \
+the Documentation Center:)"
+}], "Text",
+ CellChangeTimes->{{3.6349269349943857`*^9, 3.63492695152214*^9}, {
+  3.6350045930671*^9, 3.635004632341045*^9}, {3.635004682870837*^9, 
+  3.6350046909749517`*^9}},ExpressionUUID->"49f3284d-f5fa-4620-8218-\
+12dd486b5462"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"vertices", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "2", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "2", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "1", ",", "2"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"faces", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "5"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "3", ",", "5"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "4", ",", "5"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "1", ",", "5"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Opacity", "[", ".8", "]"}], ",", "Yellow", ",", 
+    RowBox[{"GraphicsComplex", "[", 
+     RowBox[{"vertices", ",", 
+      RowBox[{"Polygon", "[", "faces", "]"}]}], "]"}]}], "}"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.6350046608962297`*^9, 3.635004661718686*^9}, {
+  3.635004695521294*^9, 3.6350047128203077`*^9}},
+ CellID->23974798,ExpressionUUID->"2b573211-5b05-4837-9358-6b14e2101c9e"],
+
+Cell[TextData[{
+ "Navigate to the Documentation Center entry for ",
+ StyleBox["GraphicsComplex", "Input",
+  FontSize->16],
+ ", and look at the \[OpenCurlyDoubleQuote]Properties & Relations\
+\[CloseCurlyDoubleQuote] near the bottom."
+}], "Text",
+ CellChangeTimes->{{3.6346663039441*^9, 3.634666337401997*^9}, {
+  3.634829494390427*^9, 3.63482949492572*^9}, {3.634833108484353*^9, 
+  3.634833108898952*^9}, {3.635003318787448*^9, 3.635003321674316*^9}, {
+  3.635004833989957*^9, 3.635004855693563*^9}},
+ Background->RGBColor[
+  0.94, 0.91, 0.88],ExpressionUUID->"e6323525-8c94-4ae9-b847-423b0c70445d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+10-X3. Create a square antiprism using GraphicsComplex.  To get you started, \
+the coordinates of the vertices are given as well as the first three faces:\
+\>", "Subsection",
+ CellChangeTimes->{{3.635004927040391*^9, 3.6350049968514023`*^9}, {
+  3.635005141210051*^9, 3.63500515622561*^9}, {3.729337325749302*^9, 
+  3.7293373260383883`*^9}, {3.729337400623694*^9, 3.729337400815324*^9}, {
+  3.729338637338537*^9, 3.729338637482347*^9}, {3.7475672337108994`*^9, 
+  3.747567233790904*^9}, {3.810404611280425*^9, 
+  3.8104046140304017`*^9}},ExpressionUUID->"d8be5e44-c297-461c-94e4-\
+7049c4ee7154"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"s", "=", 
+   RowBox[{"1", "/", 
+    RowBox[{"Sqrt", "[", "2", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"APVertices", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "1"}], ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"-", "1"}], ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", "s", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "s"}], ",", "s", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "s"}], ",", 
+       RowBox[{"-", "s"}], ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", 
+       RowBox[{"-", "s"}], ",", "1"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"APFaces", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "6", ",", "7", ",", "8"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "5"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Opacity", "[", ".8", "]"}], ",", "Yellow", ",", 
+    RowBox[{"GraphicsComplex", "[", 
+     RowBox[{"APVertices", ",", 
+      RowBox[{"Polygon", "[", "APFaces", "]"}]}], "]"}]}], "}"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.635005005703352*^9, 3.63500516233127*^9}, 
+   3.635005249638661*^9, 3.6350052990217857`*^9, 3.635005359900506*^9},
+ CellLabel->
+  "In[233]:=",ExpressionUUID->"cb95ee88-767f-4308-8642-8c06a4e91bf8"],
+
+Cell[CellGroupData[{
+
+Cell["Hint: (expand to see)", "Subsubsection",
+ CellChangeTimes->{{3.729337446328553*^9, 3.729337460013761*^9}, {
+  3.7293376751511717`*^9, 
+  3.729337686175473*^9}},ExpressionUUID->"b7ede6ab-6d83-4182-9799-\
+1d360c8993b4"],
+
+Cell["You may find it helpful to label the vertices:", "Text",
+ CellChangeTimes->{{3.729337446328553*^9, 
+  3.729337463713306*^9}},ExpressionUUID->"9895d0da-1fbf-41f9-90c1-\
+85814bf36b04"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"s", "=", 
+   RowBox[{"1", "/", 
+    RowBox[{"Sqrt", "[", "2", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"APVertices", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "1"}], ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"-", "1"}], ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", "s", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "s"}], ",", "s", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "s"}], ",", 
+       RowBox[{"-", "s"}], ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", 
+       RowBox[{"-", "s"}], ",", "1"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"APFaces", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "6", ",", "7", ",", "8"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "5"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Opacity", "[", ".8", "]"}], ",", "Yellow", ",", 
+    RowBox[{"GraphicsComplex", "[", 
+     RowBox[{"APVertices", ",", 
+      RowBox[{"Polygon", "[", "APFaces", "]"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"Black", ",", 
+      RowBox[{"MapThread", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Style", "[", 
+          RowBox[{
+           RowBox[{"Text", "[", 
+            RowBox[{"#1", ",", "#2"}], "]"}], ",", 
+           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], "&"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Range", "[", "8", "]"}], ",", "APVertices"}], "}"}]}], 
+       "]"}]}], "}"}]}], "}"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7293374743550386`*^9, 3.7293375779092493`*^9}},
+ CellLabel->
+  "In[237]:=",ExpressionUUID->"bfe88066-ff11-4583-96d9-c84f534f7c43"]
+}, Closed]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1185, 816},
+WindowMargins->{{1373, Automatic}, {Automatic, 345}},
+ShowSelection->True,
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (July 9, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"2e255dd5-9b19-4022-b86a-66739210a505"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 700, 10, 98, "Title",ExpressionUUID->"19e55f01-07f8-446d-97e4-b11417a786e0"],
+Cell[1270, 34, 171, 3, 53, "Subtitle",ExpressionUUID->"b39182fa-32e9-474e-ab5c-08d7e3a31faa"],
+Cell[1444, 39, 701, 13, 53, "Subsubtitle",ExpressionUUID->"545d8173-af64-42b4-836c-e57d7d28c713"],
+Cell[CellGroupData[{
+Cell[2170, 56, 232, 4, 54, "Subsection",ExpressionUUID->"8ab70a7e-5dc8-40e9-a5c0-87968343a9c8"],
+Cell[2405, 62, 2178, 38, 387, "Input",ExpressionUUID->"765940c4-8151-421b-b65d-fcb6fad47175"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4620, 105, 390, 8, 54, "Subsection",ExpressionUUID->"51347c9f-1ea4-4edf-81f1-6252f9848094"],
+Cell[5013, 115, 486, 11, 348, "Output",ExpressionUUID->"7e402ab1-ca46-40b2-8abc-4c3a59327b6a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5536, 131, 414, 10, 54, "Subsection",ExpressionUUID->"e1d00e46-0f25-43fd-ac48-ce55b37dc3e8"],
+Cell[5953, 143, 638, 12, 370, "Input",ExpressionUUID->"67bb4f6c-87da-404a-ae15-e392f045a12b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6628, 160, 499, 8, 54, "Subsection",ExpressionUUID->"94b24837-69c4-49b6-92de-8b89ac6e1293"],
+Cell[7130, 170, 532, 10, 211, "Output",ExpressionUUID->"cb19e9f7-fab0-492b-86b3-4eb168bee8bd"],
+Cell[CellGroupData[{
+Cell[7687, 184, 199, 3, 45, "Subsubsection",ExpressionUUID->"f112e152-f679-40af-a0ad-06b8d599069f"],
+Cell[7889, 189, 319, 6, 34, "Text",ExpressionUUID->"01965113-028c-4b7f-8111-c5007a9437d2"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[8245, 200, 196, 3, 37, "Subsubsection",ExpressionUUID->"d5f20560-3b09-41ab-af35-a82cea47de11"],
+Cell[8444, 205, 197, 3, 34, "Text",ExpressionUUID->"f3c01e6a-b4e6-412b-8e72-77f83632239e"],
+Cell[8644, 210, 703, 23, 86, "Input",ExpressionUUID->"5b36ca09-0319-4970-834f-77936826cba8"],
+Cell[9350, 235, 348, 9, 28, "Input",ExpressionUUID->"f4c60f4d-5697-4443-9b3d-18e2f8a8cf6f"]
+}, Closed]]
+}, Open  ]],
+Cell[9725, 248, 475, 11, 54, "Subsection",ExpressionUUID->"14c0c0fb-fcdc-4035-9511-72bf917c6485"],
+Cell[CellGroupData[{
+Cell[10225, 263, 246, 6, 38, "Subsection",ExpressionUUID->"d30dfe46-7ba0-4301-b2d7-d6e818ad26f8"],
+Cell[10474, 271, 772, 19, 450, "Output",ExpressionUUID->"3d471be3-c2b5-4471-8d23-836df3cef52b"],
+Cell[CellGroupData[{
+Cell[11271, 294, 199, 3, 45, "Subsubsection",ExpressionUUID->"e69dd54d-5923-441b-b04e-251549d26fb6"],
+Cell[11473, 299, 490, 9, 34, "Text",ExpressionUUID->"02df44ea-6b8d-4720-bd9d-f9aa4896b01b"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12012, 314, 321, 5, 67, "Section",ExpressionUUID->"bcdb3fbb-cb5f-4596-a6ec-c7359fe57645"],
+Cell[12336, 321, 484, 9, 54, "Subsection",ExpressionUUID->"3d2c6ec5-712d-4470-ae21-c8e1ad0b90c9"],
+Cell[CellGroupData[{
+Cell[12845, 334, 499, 9, 38, "Subsection",ExpressionUUID->"13d7d3c2-bfbf-4708-afef-416db905a3f1"],
+Cell[13347, 345, 4301, 62, 211, "Output",ExpressionUUID->"02a0338e-0f10-44d0-b4fd-d9f70601d9c4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17685, 412, 355, 5, 54, "Subsection",ExpressionUUID->"f4df76b0-a1fc-4ed7-a83a-8024bddf08d8"],
+Cell[18043, 419, 534, 11, 81, "Text",ExpressionUUID->"49f3284d-f5fa-4620-8218-12dd486b5462"],
+Cell[18580, 432, 1347, 39, 70, "Input",ExpressionUUID->"2b573211-5b05-4837-9358-6b14e2101c9e",
+ CellID->23974798],
+Cell[19930, 473, 599, 12, 51, "Text",ExpressionUUID->"e6323525-8c94-4ae9-b847-423b0c70445d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20566, 490, 605, 10, 81, "Subsection",ExpressionUUID->"d8be5e44-c297-461c-94e4-7049c4ee7154"],
+Cell[21174, 502, 1811, 54, 90, "Input",ExpressionUUID->"cb95ee88-767f-4308-8642-8c06a4e91bf8"],
+Cell[CellGroupData[{
+Cell[23010, 560, 223, 4, 45, "Subsubsection",ExpressionUUID->"b7ede6ab-6d83-4182-9799-1d360c8993b4"],
+Cell[23236, 566, 188, 3, 34, "Text",ExpressionUUID->"9895d0da-1fbf-41f9-90c1-85814bf36b04"],
+Cell[23427, 571, 2205, 66, 105, "Input",ExpressionUUID->"bfe88066-ff11-4583-96d9-c84f534f7c43"]
+}, Closed]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

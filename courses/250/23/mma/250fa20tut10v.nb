@@ -1,0 +1,1224 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     53981,       1216]
+NotebookOptionsPosition[     48174,       1107]
+NotebookOutlinePosition[     48625,       1125]
+CellTagsIndexPosition[     48582,       1122]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Basic 3D graphics", "Title",
+ CellChangeTimes->{{3.461405268132181*^9, 3.461405274978758*^9}, {
+  3.461405374110767*^9, 3.461405382736993*^9}, {3.461405964606715*^9, 
+  3.461405964996537*^9}, {3.461412674365797*^9, 3.461412678153265*^9}, {
+  3.47448983369319*^9, 3.474489837928254*^9}, {3.630696562351103*^9, 
+  3.630696568117642*^9}, {3.631988928117742*^9, 3.6319889301724463`*^9}, {
+  3.632152715690145*^9, 3.632152719687695*^9}, {3.6325873465991592`*^9, 
+  3.632587350748754*^9}, {3.633195273613469*^9, 3.633195283053203*^9}, {
+  3.634662798361207*^9, 3.634662802015071*^9}, {3.634914020212693*^9, 
+  3.634914020306204*^9}, {3.810486333577052*^9, 
+  3.8104863350273523`*^9}},ExpressionUUID->"19e55f01-07f8-446d-97e4-\
+b11417a786e0"],
+
+Cell["\<\
+Math 250 - Mathematical Computing
+Christopher Hanusa\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.4614053946645927`*^9, 3.4614054230893087`*^9}, {
+  3.461405971637244*^9, 3.4614060079862947`*^9}, {3.474489844264483*^9, 
+  3.474489895841402*^9}, {3.505485689221858*^9, 3.505485696180904*^9}, {
+  3.53815066431697*^9, 3.538150664587603*^9}, {3.630691352563725*^9, 
+  3.6306913589949083`*^9}, {3.632152722336176*^9, 3.6321527477452803`*^9}, {
+  3.63215587546747*^9, 3.6321558797854424`*^9}, {3.632587355469249*^9, 
+  3.632587384845799*^9}, {3.633195265968095*^9, 3.633195266341083*^9}, {
+  3.8104044801603813`*^9, 
+  3.81040448972079*^9}},ExpressionUUID->"545d8173-af64-42b4-836c-\
+e57d7d28c713"],
+
+Cell[CellGroupData[{
+
+Cell["10.1 Overview", "Section",
+ CellChangeTimes->{{3.505485680414241*^9, 3.50548573910983*^9}, {
+  3.6325873644380608`*^9, 3.632587396150113*^9}, {3.809794499692609*^9, 
+  3.8097945026786685`*^9}},ExpressionUUID->"4459f6ad-40ea-41c3-97db-\
+da31f21fbb68"],
+
+Cell["\<\
+In this tutorial, we start working with 3D graphics objects that are the \
+analogues of their 2D counterparts.\
+\>", "Text",
+ CellChangeTimes->{{3.505485741709942*^9, 3.505485911210339*^9}, {
+  3.5054859461638536`*^9, 3.505486140785309*^9}, {3.569597235122435*^9, 
+  3.56959724256273*^9}, {3.631988357249017*^9, 3.631988375104192*^9}, {
+  3.631988705128955*^9, 3.63198874613913*^9}, {3.63198884890553*^9, 
+  3.631988859824958*^9}, {3.631993478341037*^9, 3.631993482877342*^9}, {
+  3.632152755553952*^9, 3.632152780995129*^9}, {3.6321554348424473`*^9, 
+  3.6321554505553493`*^9}, {3.632587400518695*^9, 3.632587452903551*^9}, {
+  3.633195287509656*^9, 3.6331953613595057`*^9}, {3.634662809071232*^9, 
+  3.6346628710010853`*^9}, {3.6348281169343977`*^9, 3.634828145709795*^9}, {
+  3.634914023714526*^9, 3.6349140472113237`*^9}, {3.8104043008506556`*^9, 
+  3.8104043058407354`*^9}},ExpressionUUID->"2c192b60-db36-4644-b26a-\
+278b004f9e41"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["10.2 Graphics3D and you\[CloseCurlyQuote]re good to go.", "Section",
+ CellChangeTimes->{{3.634914062164793*^9, 3.634914065140032*^9}, {
+  3.634914522240987*^9, 3.634914532888133*^9}, {3.8097945043389826`*^9, 
+  3.809794505419177*^9}},ExpressionUUID->"9ad0d59a-6b4d-43e3-b3be-\
+017fe274733f"],
+
+Cell[TextData[{
+ "The major difference is that instead of using ",
+ StyleBox["Graphics", "Input",
+  FontSize->16],
+ ", you use ",
+ StyleBox["Graphics3D", "Input",
+  FontSize->16],
+ " to tell ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " that your object is a 3D object.\nOnce you change your (x,y)-coordinates \
+to (x,y,z)-coordinates, you can re-use many of the 2D commands you learned, \
+including ",
+ StyleBox["Point", "Input",
+  FontSize->16],
+ ", ",
+ StyleBox["Line", "Input",
+  FontSize->16],
+ ", ",
+ StyleBox["BSplineCurve", "Input",
+  FontSize->16],
+ ", and ",
+ StyleBox["Polygon", "Input",
+  FontSize->16],
+ StyleBox[".",
+  FontSize->16]
+}], "Text",
+ CellChangeTimes->{{3.634914070564323*^9, 3.634914102293709*^9}, {
+   3.63491418637845*^9, 3.6349142450918293`*^9}, {3.634914296863186*^9, 
+   3.63491430687068*^9}, {3.634914338815998*^9, 3.634914366897142*^9}, {
+   3.634914405259984*^9, 3.634914406202744*^9}, {3.634998246639073*^9, 
+   3.6349982503320827`*^9}, {3.634998650755135*^9, 3.634998670256586*^9}, 
+   3.7293334622974854`*^9, {3.810404259030614*^9, 
+   3.810404264650413*^9}},ExpressionUUID->"d1fffa2d-c75b-4996-86c5-\
+ad54572f5e20"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["10.3 Points (0D)", "Section",
+ CellChangeTimes->{{3.729333767352581*^9, 3.7293337713834877`*^9}, {
+  3.729336844783772*^9, 3.72933684761544*^9}, {3.8097945083792467`*^9, 
+  3.80979450904911*^9}, {3.8104043871604624`*^9, 
+  3.810404391790469*^9}},ExpressionUUID->"5dee5163-8086-459d-8e9d-\
+58572c591b10"],
+
+Cell[CellGroupData[{
+
+Cell["Points", "Subsection",
+ CellChangeTimes->{{3.729333713222962*^9, 
+  3.729333714213974*^9}},ExpressionUUID->"1c6b1dee-4898-4d01-aa39-\
+c00cffbb1acf"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"Point", "[", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0"}], "}"}], "]"}], "]"}], ",", 
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{"Point", "[", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "0"}], "}"}], "]"}], "]"}]}], 
+  "}"}]], "Input",
+ CellChangeTimes->{{3.634914103724283*^9, 3.634914132831912*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"2d580532-c102-47f9-97a6-b69c0465284f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   GraphicsBox[PointBox[{0, 0}]], ",", 
+   Graphics3DBox[Point3DBox[{0, 0, 0}],
+    ImageSize->{180., 180.},
+    SphericalRegion->True,
+    ViewAngle->0.5011114127587017,
+    ViewPoint->{2.161383235730566, -2.6023615131614966`, 0.07833940974168342},
+    
+    ViewVertical->{0.39237595561343286`, -0.41798107522746086`, 
+     0.8193490893435722}]}], "}"}]], "Output",
+ CellChangeTimes->{3.810648024890724*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"2aef145a-c203-40ad-9b80-5ed12097e40e"]
+}, Open  ]],
+
+Cell["\<\
+You can compare the following code with the 2D graphics code from the \
+previous tutorial:\
+\>", "Text",
+ CellChangeTimes->{{3.7293338417922993`*^9, 
+  3.729333873162446*^9}},ExpressionUUID->"c64f8123-b2a4-4e96-9427-\
+ea289d978a60"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"pointlist", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "0", ",", "0"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"Map", "[", 
+   RowBox[{"Point", ",", "pointlist"}], "]"}], "]"}]}], "Input",
+ CellLabel->"In[2]:=",ExpressionUUID->"8aae9611-ea62-4413-884b-835b31cfa20c"],
+
+Cell[BoxData[
+ Graphics3DBox[{Point3DBox[{0, 0, 0}], Point3DBox[{1, 1, 0}], 
+   Point3DBox[{2, 0, 0}], Point3DBox[{3, 1, 0}], Point3DBox[{4, 0, 0}], 
+   Point3DBox[{5, 1, 0}], Point3DBox[{6, 0, 0}], Point3DBox[{7, 1, 0}], 
+   Point3DBox[{8, 0, 0}]},
+  ImageSize->{419.7157934610271, 153.0365707065176},
+  ImageSizeRaw->Automatic,
+  ViewPoint->{-1.5805597144070398`, -2.9159818909816364`, 0.669985522724706},
+  ViewVertical->{-0.046383822468565726`, -0.6215546574799472, 
+   0.7819963866784744}]], "Output",
+ CellChangeTimes->{3.810648054273673*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"b3575c59-3280-4955-aae3-0ec9939b1848"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Spheres", "Subsection",
+ CellChangeTimes->{{3.634663449945277*^9, 3.63466345137746*^9}, {
+  3.71644372747033*^9, 
+  3.716443728343319*^9}},ExpressionUUID->"ea89f8ae-a54c-4a9e-be51-\
+c94916d68733"],
+
+Cell[TextData[{
+ "To display a point in space, you can use the ",
+ StyleBox["Point", "Input",
+  FontSize->16],
+ " command, but instead you\[CloseCurlyQuote]ll probably want to use the ",
+ StyleBox["Sphere", "Input",
+  FontSize->16],
+ " command or ",
+ StyleBox["Ball", "Input",
+  FontSize->16],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.634665032142611*^9, 3.634665063438737*^9}, {
+  3.634667745266288*^9, 3.634667770122072*^9}, {3.634853219754401*^9, 
+  3.6348533325415277`*^9}, {3.716443783542245*^9, 3.7164437976054316`*^9}, {
+  3.8104530831582565`*^9, 3.8104530837286863`*^9}, {3.8106480864956865`*^9, 
+  3.810648088831441*^9}},ExpressionUUID->"be469812-22fe-441b-b1ef-\
+511daaeb2986"],
+
+Cell[BoxData[
+ RowBox[{"?", "Sphere"}]], "Input",
+ CellChangeTimes->{{3.63485324978668*^9, 3.6348532521405582`*^9}, {
+  3.7164437998327985`*^9, 
+  3.7164438014709787`*^9}},ExpressionUUID->"12946138-5b1c-4684-a9b6-\
+8f8a834f5ebd"],
+
+Cell["Here is a bunch of spheres all lined up.", "Text",
+ CellChangeTimes->{{3.729333742735709*^9, 
+  3.7293337569113493`*^9}},ExpressionUUID->"7e901645-b819-4f0b-aa79-\
+10d8a967f217"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Sphere", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"i", ",", "0", ",", "0"}], "}"}], ",", ".2"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "0", ",", "10"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.63485333663517*^9, 3.6348533807170877`*^9}, {
+  3.7164438101205072`*^9, 3.716443818752827*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"5b44adc6-a6f3-48f6-9913-ad0df52e0b7a"],
+
+Cell[BoxData[
+ Graphics3DBox[{SphereBox[{0, 0, 0}, 0.2], SphereBox[{1, 0, 0}, 0.2], 
+   SphereBox[{2, 0, 0}, 0.2], SphereBox[{3, 0, 0}, 0.2], 
+   SphereBox[{4, 0, 0}, 0.2], SphereBox[{5, 0, 0}, 0.2], 
+   SphereBox[{6, 0, 0}, 0.2], SphereBox[{7, 0, 0}, 0.2], 
+   SphereBox[{8, 0, 0}, 0.2], SphereBox[{9, 0, 0}, 0.2], 
+   SphereBox[{10, 0, 0}, 0.2]},
+  ImageSize->{698.3703895668237, 72.8},
+  ViewPoint->{0.6314417582159061, -3.0154176941905284`, 1.3994775580708265`},
+  ViewVertical->{0.0027706013913345556`, -0.1946622205063586, 
+   0.9808664249914277}]], "Output",
+ CellChangeTimes->{3.8106481070396037`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"bf4f218b-d976-4f06-aab3-dfed6dcc3a8e"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["Example 10.3.1.",
+  FontWeight->"Bold"],
+ " Use the ",
+ StyleBox["Map",
+  FontFamily->"Consolas",
+  FontWeight->"Bold"],
+ " command to put a sphere at a given set of coordinates:"
+}], "Text",
+ CellChangeTimes->{{3.7293339017634087`*^9, 3.729333915699616*^9}, {
+  3.8104531041080337`*^9, 
+  3.8104531080694323`*^9}},ExpressionUUID->"5ce65101-22e1-4f57-9972-\
+2d04722df1d6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"spherelist", "=", 
+   RowBox[{"Map", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Sphere", "[", 
+       RowBox[{"#", ",", ".2"}], "]"}], "&"}], ",", "pointlist"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics3D", "[", "spherelist", "]"}]}], "Input",
+ CellChangeTimes->{{3.7293338968206167`*^9, 3.729333898355549*^9}, {
+   3.729333983423085*^9, 3.729334017710813*^9}, 3.729334297441257*^9, {
+   3.8104531006849623`*^9, 3.810453102458293*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"878a1e09-a16c-4e82-a532-139258bd7aab"],
+
+Cell[BoxData[
+ Graphics3DBox[{SphereBox[{0, 0, 0}, 0.2], SphereBox[{1, 1, 0}, 0.2], 
+   SphereBox[{2, 0, 0}, 0.2], SphereBox[{3, 1, 0}, 0.2], 
+   SphereBox[{4, 0, 0}, 0.2], SphereBox[{5, 1, 0}, 0.2], 
+   SphereBox[{6, 0, 0}, 0.2], SphereBox[{7, 1, 0}, 0.2], 
+   SphereBox[{8, 0, 0}, 0.2]},
+  ImageSize->{367.41057035405015`, 86.994247990596},
+  ImageSizeRaw->Automatic,
+  ViewPoint->{-0.7270766909609906, -0.5707513885483118, 3.2550886835739807`},
+  ViewVertical->{-0.01162202572116401, 0.2740881725979507, 
+   0.9616343391123533}]], "Output",
+ CellChangeTimes->{3.7475653112136183`*^9, 3.810648173739128*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"dd2e37d7-4c5b-4895-b416-b11bab7f7271"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["10.4 Line Segments (1D)", "Section",
+ CellChangeTimes->{{3.729333777184709*^9, 3.729333779183649*^9}, {
+  3.729334350609168*^9, 3.729334354384383*^9}, {3.8104043418506346`*^9, 
+  3.8104043515205264`*^9}, {3.8104043824704742`*^9, 
+  3.810404384280083*^9}},ExpressionUUID->"e40c4dc7-3d9a-492e-b8f3-\
+3a3b8fb464bc"],
+
+Cell[TextData[{
+ "The easiest way to take a 1D object like ",
+ StyleBox["Line", "Input",
+  FontSize->16],
+ " and make it 3-dimensional is to use the ",
+ StyleBox["Tube", "Input",
+  FontSize->16],
+ " command, which acts like a ",
+ StyleBox["Line", "Input",
+  FontSize->16],
+ " command, taking as input a sequence of points and creating a cylindrical \
+path along the specified line segments that connect adjacent sets of points.  "
+}], "Text",
+ CellChangeTimes->{{3.6349986752086487`*^9, 3.63499870558611*^9}, {
+   3.635003844247364*^9, 3.6350039381378107`*^9}, {3.635004002037476*^9, 
+   3.6350041747960157`*^9}, {3.635004236029297*^9, 3.635004277952795*^9}, 
+   3.635004311851617*^9, {3.729333791320733*^9, 
+   3.729333803320779*^9}},ExpressionUUID->"4cac8ca4-f140-439c-a92d-\
+5348b760b848"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{
+     RowBox[{"Line", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "1"}], "}"}]}], "}"}], "]"}], ",", 
+     RowBox[{"PlotLabel", "\[Rule]", "\"\<2D Line\>\""}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{
+     RowBox[{"Line", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], "}"}], "]"}], ",", 
+     RowBox[{"PlotLabel", "\[Rule]", "\"\<3D Line\>\""}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{
+     RowBox[{"Tube", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], "}"}], ",", ".05"}], 
+      "]"}], ",", 
+     RowBox[{"PlotLabel", "\[Rule]", "\"\<3D Tube\>\""}]}], "]"}]}], 
+  "}"}]], "Input",
+ CellChangeTimes->{{3.63491415748448*^9, 3.634914175297516*^9}, {
+  3.6349987096203423`*^9, 3.634998714316785*^9}, {3.6350031463677673`*^9, 
+  3.6350031762056847`*^9}, {3.635003234992187*^9, 3.635003268843343*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"3e1f012c-9e3c-40eb-8d8a-48f43b0c1c69"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   GraphicsBox[LineBox[{{0, 0}, {1, 1}}],
+    PlotLabel->FormBox["\"2D Line\"", TraditionalForm]], ",", 
+   Graphics3DBox[Line3DBox[{{0, 0, 0}, {1, 1, 1}}],
+    ImageSize->{180., 193.6},
+    PlotLabel->FormBox["\"3D Line\"", TraditionalForm],
+    SphericalRegion->True,
+    ViewAngle->0.5011114127587019,
+    ViewPoint->{1.1038598646875117`, -2.6602430840618894`, 
+     1.7761194027522351`},
+    ViewVertical->{0.13866382097944957`, -0.033446867491658816`, 
+     0.9897745459479016}], ",", 
+   Graphics3DBox[TubeBox[{{0, 0, 0}, {1, 1, 1}}, 0.05],
+    ImageSize->{180., 193.6},
+    PlotLabel->FormBox["\"3D Tube\"", TraditionalForm],
+    SphericalRegion->True,
+    ViewAngle->0.5011114127587016,
+    ViewPoint->{
+     1.8639905124485066`, -2.823960283283717, -0.028065778772404792`},
+    ViewVertical->{0.3629572424658469, -0.4766083911098493, 
+     0.8006912523971206}]}], "}"}]], "Output",
+ CellChangeTimes->{3.810648218635598*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"7c219f45-da9e-4c0c-81e7-c415f81d3775"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"zigzag", "=", 
+  RowBox[{"Graphics3D", "[", 
+   RowBox[{"Tube", "[", 
+    RowBox[{"pointlist", ",", ".2"}], "]"}], "]"}]}]], "Input",
+ CellLabel->"In[8]:=",ExpressionUUID->"7d74ee62-8a0d-4883-b9f1-3724f93972b2"],
+
+Cell[BoxData[
+ Graphics3DBox[
+  TubeBox[{{0, 0, 0}, {1, 1, 0}, {2, 0, 0}, {3, 1, 0}, {4, 0, 0}, {5, 1, 0}, {
+   6, 0, 0}, {7, 1, 0}, {8, 0, 0}}, 0.2],
+  ImageSize->{398.1877171448808, 78.5901554888775},
+  ImageSizeRaw->Automatic,
+  ViewPoint->{-0.8116202346688599, -0.24435428364675413`, 3.275906527778158},
+  ViewVertical->{-0.008654823763421774, 0.3230712670579097, 
+   0.9463350624526289}]], "Output",
+ CellChangeTimes->{3.8106482652255273`*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"b08a881e-f41e-4cb2-927b-628afbfed019"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Unfortunately, the line segments created by this pure ",
+ StyleBox["Tube", "Input",
+  FontSize->16],
+ " object are not exportable to be 3D printed!  However, the concept of a ",
+ StyleBox["Tube", "Input",
+  FontSize->16],
+ " will be used to create 3D curves in the next tutorial.  "
+}], "Text",
+ CellChangeTimes->{{3.8104575682300425`*^9, 3.810457736717586*^9}, 
+   3.810489393525092*^9},ExpressionUUID->"4fb4aff8-3b50-4c04-b483-\
+a1d816279ce7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["10.5 Polygons (2D)", "Section",
+ CellChangeTimes->{{3.72933503434*^9, 3.729335039875951*^9}, {
+  3.810404355960534*^9, 
+  3.8104043688607473`*^9}},ExpressionUUID->"3f35fc7a-82e4-4fc7-92ae-\
+5dcf91828e94"],
+
+Cell["\<\
+Just like in 2D Graphics, you can create polygons in three dimensions.  \
+Remember to wrap it in a Graphics3D command.\
+\>", "Text",
+ CellChangeTimes->{{3.729335615501616*^9, 3.7293356171484203`*^9}, {
+  3.7293358657837057`*^9, 
+  3.729335915917068*^9}},ExpressionUUID->"ee3fe268-fc8e-4924-9227-\
+e4890501509c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "}"}], "]"}], "]"}], ",", 
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{"Polygon", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1", ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1", ",", 
+         RowBox[{"1", "/", "2"}]}], "}"}]}], "}"}], "]"}], "]"}]}], 
+  "}"}]], "Input",
+ CellChangeTimes->{{3.634998579807581*^9, 3.634998598037868*^9}, {
+  3.634999052500494*^9, 3.6349990592841663`*^9}, {3.634999103145095*^9, 
+  3.634999103439303*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"e32fa061-4fa4-47a4-a724-6a5d42be5c96"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   GraphicsBox[PolygonBox[{{0, 0}, {1, 1}, {0, 1}}]], ",", 
+   Graphics3DBox[
+    Polygon3DBox[
+     NCache[{{0, 0, 0}, {1, 1, 1}, {0, 1, Rational[1, 2]}}, {{0, 0, 0}, {1, 1,
+        1}, {0, 1, 0.5}}]],
+    ImageSize->{180., 180.},
+    SphericalRegion->True,
+    ViewAngle->0.5011114127587019,
+    ViewPoint->{0.2483636300308926, -3.1655774653195334`, 1.1693736863548085`},
+    ViewVertical->{0.03606275635315211, -0.2739451446876176, 
+     0.9610689545013373}]}], "}"}]], "Output",
+ CellChangeTimes->{3.810648305379403*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"48f1a5a6-20bd-4e67-a38a-9c4c54e4592e"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["10.6 Polyhedra (3D)", "Section",
+ CellChangeTimes->{{3.729336831640414*^9, 3.729336835806982*^9}, {
+  3.729337182018306*^9, 3.7293371872091913`*^9}, {3.810404371380438*^9, 
+  3.810404375360614*^9}},ExpressionUUID->"8db0386e-5148-4b41-b2c6-\
+c632222f581e"],
+
+Cell[TextData[{
+ "A polyhedron can be thought of as the three-dimensional analog of a \
+polygon.  (And the plural of polyhedron is polyhedra!!)  The corners are \
+called vertices, line segments connecting vertices are called edges, and the \
+2-D polygons are called faces.  ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " has a large number of built-in polyhedra, accessible using the command ",
+ StyleBox["PolyhedronData", "Input",
+  FontSize->16],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.635003353620278*^9, 3.635003529210631*^9}, {
+  3.635004427038103*^9, 
+  3.635004439349492*^9}},ExpressionUUID->"baf7c6aa-007d-492b-a008-\
+5d3cd40d9d4f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", 
+  RowBox[{"PolyhedronData", "[", "All", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.635003560059183*^9, 3.635003567597375*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"7c60790b-6e03-419b-b516-7474c576c06e"],
+
+Cell[BoxData["203"], "Output",
+ CellChangeTimes->{3.810648390644352*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"58fca7a9-a722-4f0e-9885-ff9e5eaf6085"]
+}, Open  ]],
+
+Cell["\<\
+For example, here is a visualization of the 20-sided polyhedron called an \
+icosohedron.\
+\>", "Text",
+ CellChangeTimes->{{3.635004535777883*^9, 
+  3.635004560770166*^9}},ExpressionUUID->"3acdbffa-cf2d-4c77-b5c7-\
+0a631cc5f222"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"{", 
+   RowBox[{"PolyhedronData", "[", 
+    RowBox[{"\"\<Icosahedron\>\"", ",", "\"\<Faces\>\""}], "]"}], "}"}], 
+  "]"}]], "Input",
+ CellLabel->"In[10]:=",ExpressionUUID->"f0de4659-3e8e-497d-8698-638733308b41"],
+
+Cell[BoxData[
+ Graphics3DBox[
+  GraphicsComplex3DBox[
+   NCache[{{0, 0, (-5) (50 - 10 5^Rational[1, 2])^Rational[-1, 2]}, {
+     0, 0, 5 (50 - 10 5^Rational[1, 2])^
+       Rational[-1, 2]}, {-(2/(5 - 5^Rational[1, 2]))^Rational[1, 2], 
+      0, -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {(2/(5 - 5^
+       Rational[1, 2]))^Rational[1, 2], 0, (10 - 2 5^Rational[1, 2])^
+      Rational[-1, 2]}, {
+     Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+       5^Rational[1, 2]), 
+      Rational[-1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+     Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+       5^Rational[1, 2]), Rational[
+      1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+     Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+       5^Rational[1, 2]), Rational[-1, 2], (10 - 2 5^Rational[1, 2])^
+      Rational[-1, 2]}, {
+     Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+       5^Rational[1, 2]), Rational[1, 2], (10 - 2 5^Rational[1, 2])^
+      Rational[-1, 2]}, {
+     Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+       5^Rational[1, 2]), 
+      Rational[-1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+       Rational[1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+     Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+       5^Rational[1, 2]), 
+      Rational[1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+       Rational[1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+     Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+       5^Rational[1, 2]), 
+      Rational[-1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+       Rational[1, 2], (10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+     Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+       5^Rational[1, 2]), 
+      Rational[1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+       Rational[1, 2], (10 - 2 5^Rational[1, 2])^Rational[-1, 2]}}, {{
+     0, 0, -0.9510565162951536}, {
+     0, 0, 0.9510565162951536}, {-0.85065080835204, 
+      0, -0.42532540417601994`}, {
+     0.85065080835204, 0, 0.42532540417601994`}, {
+     0.6881909602355868, -0.5, -0.42532540417601994`}, {0.6881909602355868, 
+     0.5, -0.42532540417601994`}, {-0.6881909602355868, -0.5, 
+     0.42532540417601994`}, {-0.6881909602355868, 0.5, 
+     0.42532540417601994`}, {-0.2628655560595668, -0.8090169943749475, \
+-0.42532540417601994`}, {-0.2628655560595668, 
+     0.8090169943749475, -0.42532540417601994`}, {
+     0.2628655560595668, -0.8090169943749475, 0.42532540417601994`}, {
+     0.2628655560595668, 0.8090169943749475, 0.42532540417601994`}}], 
+   Polygon3DBox[{{2, 12, 8}, {2, 8, 7}, {2, 7, 11}, {2, 11, 4}, {2, 4, 12}, {
+    5, 9, 1}, {6, 5, 1}, {10, 6, 1}, {3, 10, 1}, {9, 3, 1}, {12, 10, 8}, {8, 
+    3, 7}, {7, 9, 11}, {11, 5, 4}, {4, 6, 12}, {5, 11, 9}, {6, 4, 5}, {10, 12,
+     6}, {3, 8, 10}, {9, 7, 3}}]],
+  ImageSize->{357.98597231170356`, 432.9478452159377},
+  ImageSizeRaw->Automatic,
+  ViewPoint->{0.10628286847868025`, -2.968381558900279, 1.620930249162094},
+  ViewVertical->{-0.011675371633538972`, -0.15577190470199165`, 
+   0.9877240502299882}]], "Output",
+ CellChangeTimes->{3.8106483562064114`*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"28a4e90c-3cf1-47c2-b4d4-04d41de86d1b"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Copied directly from the ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " Documentation Center, here is an explorer of the polyhedra that ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " has built in along with their properties:"
+}], "Text",
+ CellChangeTimes->{{3.6350030098954153`*^9, 3.635003040711687*^9}, {
+  3.635004461303035*^9, 3.635004465542124*^9}, {3.635004511521234*^9, 
+  3.635004522976609*^9}},ExpressionUUID->"b35d32d9-a6a1-4480-8ff6-\
+22a76548946e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Column", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"PolyhedronData", "[", "g", "]"}], ",", 
+      RowBox[{"PolyhedronData", "[", 
+       RowBox[{"g", ",", "p"}], "]"}]}], "}"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"g", ",", 
+     RowBox[{"PolyhedronData", "[", "All", "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"p", ",", 
+     RowBox[{"Complement", "@@", 
+      RowBox[{"PolyhedronData", "/@", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Properties\>\"", ",", "\"\<Classes\>\""}], "}"}]}]}]}], 
+    "}"}]}], "]"}]], "Input",
+ CellLabel->"In[12]:=",ExpressionUUID->"d578f45a-5827-4c03-97b7-ea489b842fb8"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`g$$ = 
+    "GreatDodecahedron", $CellContext`p$$ = "Region", Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`g$$], {
+      "AcuteGoldenRhombohedron", {"Antiprism", 4}, {"Antiprism", 5}, {
+       "Antiprism", 6}, {"Antiprism", 7}, {"Antiprism", 8}, {
+       "Antiprism", 9}, {"Antiprism", 10}, "AugmentedDodecahedron", 
+       "AugmentedHexagonalPrism", "AugmentedPentagonalPrism", 
+       "AugmentedSphenocorona", "AugmentedTriangularPrism", 
+       "AugmentedTridiminishedIcosahedron", "AugmentedTruncatedCube", 
+       "AugmentedTruncatedDodecahedron", "AugmentedTruncatedTetrahedron", 
+       "BiaugmentedPentagonalPrism", "BiaugmentedTriangularPrism", 
+       "BiaugmentedTruncatedCube", "BigyrateDiminishedRhombicosidodecahedron",
+        "BilinskiDodecahedron", "Bilunabirotunda", "CsaszarPolyhedron", 
+       "Cube", "CubeFiveCompound", {"CubeFourCompound", 1}, {
+       "CubeFourCompound", 2}, "CubeOctahedronCompound", 
+       "CubeOctahedronFiveCompound", "CubeOctahedronThreeCompound", 
+       "CubeSixCompound", "CubeTenCompound", "CubeThreeCompound", 
+       "CubeTwoCompound", "Cuboctahedron", "DeltoidalHexecontahedron", 
+       "DeltoidalIcositetrahedron", "DiminishedRhombicosidodecahedron", {
+       "Dipyramid", 3}, {"Dipyramid", 5}, "DisdyakisDodecahedron", 
+       "DisdyakisTriacontahedron", "Disphenocingulum", "Dodecahedron", 
+       "DodecahedronFiveCompound", "DodecahedronIcosahedronCompound", 
+       "DodecahedronSixCompound", 
+       "DodecahedronSmallTriambicIcosahedronCompound", {
+       "DodecahedronStellation", 1}, {"DodecahedronStellation", 2}, {
+       "DodecahedronStellation", 3}, "DodecahedronTwoCompound", "DuererSolid",
+        "Echidnahedron", "ElongatedDodecahedron", "ElongatedPentagonalCupola",
+        "ElongatedPentagonalDipyramid", "ElongatedPentagonalGyrobicupola", 
+       "ElongatedPentagonalGyrobirotunda", 
+       "ElongatedPentagonalGyrocupolarotunda", 
+       "ElongatedPentagonalOrthobicupola", 
+       "ElongatedPentagonalOrthobirotunda", 
+       "ElongatedPentagonalOrthocupolarotunda", "ElongatedPentagonalPyramid", 
+       "ElongatedPentagonalRotunda", "ElongatedSquareCupola", 
+       "ElongatedSquareDipyramid", "ElongatedSquareGyrobicupola", 
+       "ElongatedSquarePyramid", "ElongatedTriangularCupola", 
+       "ElongatedTriangularDipyramid", "ElongatedTriangularGyrobicupola", 
+       "ElongatedTriangularOrthobicupola", "ElongatedTriangularPyramid", 
+       "EquilateralAugmentedCube", "EquilateralAugmentedDodecahedron", 
+       "EquilateralAugmentedTetrahedron", "EscherSolid", "GreatDodecahedron", 
+       "GreatIcosahedron", "GreatRhombicosidodecahedron", 
+       "GreatRhombicTriacontahedron", "GreatRhombicuboctahedron", 
+       "GreatStellatedDodecahedron", 
+       "GyrateBidiminishedRhombicosidodecahedron", 
+       "GyrateRhombicosidodecahedron", "Gyrobifastigium", 
+       "GyroelongatedPentagonalBicupola", "GyroelongatedPentagonalBirotunda", 
+       "GyroelongatedPentagonalCupola", 
+       "GyroelongatedPentagonalCupolarotunda", 
+       "GyroelongatedPentagonalPyramid", "GyroelongatedPentagonalRotunda", 
+       "GyroelongatedSquareBicupola", "GyroelongatedSquareCupola", 
+       "GyroelongatedSquareDipyramid", "GyroelongatedSquarePyramid", 
+       "GyroelongatedTriangularBicupola", "GyroelongatedTriangularCupola", 
+       "Hebesphenomegacorona", "Icosahedron", "IcosahedronFiveCompound", 
+       "IcosahedronSixCompound", {"IcosahedronStellation", 11}, 
+       "IcosahedronTwoCompound", "Icosidodecahedron", "JabulaniPolyhedron", 
+       "JessensOrthogonalIcosahedron", "MathematicaPolyhedron", 
+       "MetabiaugmentedDodecahedron", "MetabiaugmentedHexagonalPrism", 
+       "MetabiaugmentedTruncatedDodecahedron", "MetabidiminishedIcosahedron", 
+       "MetabidiminishedRhombicosidodecahedron", 
+       "MetabigyrateRhombicosidodecahedron", 
+       "MetagyrateDiminishedRhombicosidodecahedron", 
+       "ObtuseGoldenRhombohedron", "Octahedron", "OctahedronFiveCompound", {
+       "OctahedronFourCompound", 1}, {"OctahedronFourCompound", 2}, 
+       "OctahedronTenCompound", "OctahedronThreeCompound", 
+       "ParabiaugmentedDodecahedron", "ParabiaugmentedHexagonalPrism", 
+       "ParabiaugmentedTruncatedDodecahedron", 
+       "ParabidiminishedRhombicosidodecahedron", 
+       "ParabigyrateRhombicosidodecahedron", 
+       "ParagyrateDiminishedRhombicosidodecahedron", "PentagonalCupola", 
+       "PentagonalGyrobicupola", "PentagonalGyrocupolarotunda", 
+       "PentagonalHexecontahedron", "PentagonalIcositetrahedron", 
+       "PentagonalOrthobicupola", "PentagonalOrthobirotunda", 
+       "PentagonalOrthocupolarotunda", "PentagonalPrismSixCompound", 
+       "PentagonalRotunda", "PentakisDodecahedron", {"Prism", 3}, {
+       "Prism", 5}, {"Prism", 6}, {"Prism", 7}, {"Prism", 8}, {"Prism", 9}, {
+       "Prism", 10}, {"Pyramid", 4}, {"Pyramid", 5}, "RhombicDodecahedron", {
+       "RhombicDodecahedronStellation", 2}, {
+       "RhombicDodecahedronStellation", 3}, "RhombicEnneacontahedron", 
+       "RhombicHexecontahedron", "RhombicIcosahedron", 
+       "RhombicTriacontahedron", "SmallRhombicosidodecahedron", 
+       "SmallRhombicuboctahedron", "SmallStellatedDodecahedron", 
+       "SmallTriakisOctahedron", "SmallTriambicIcosahedron", "SnubCube", 
+       "SnubDisphenoid", "SnubDodecahedron", "SnubSquareAntiprism", 
+       "Sphenocorona", "Sphenomegacorona", "SquareCupola", 
+       "SquareGyrobicupola", "SquareOrthobicupola", "StellaOctangula", 
+       "SzilassiPolyhedron", "TetragonalAntiwedge", "Tetrahedron", 
+       "TetrahedronFiveCompound", {"TetrahedronFourCompound", 1}, {
+       "TetrahedronFourCompound", 2}, {"TetrahedronFourCompound", 3}, 
+       "TetrahedronSixCompound", "TetrahedronTenCompound", 
+       "TetrahedronThreeCompound", "TetrahedronTwoCompound", 
+       "TetrakisHexahedron", "TrapezoRhombicDodecahedron", 
+       "TriakisIcosahedron", "TriakisTetrahedron", 
+       "TriakisTruncatedTetrahedron", "TriangularCupola", 
+       "TriangularHebesphenorotunda", "TriangularOrthobicupola", 
+       "TriaugmentedDodecahedron", "TriaugmentedHexagonalPrism", 
+       "TriaugmentedTriangularPrism", "TriaugmentedTruncatedDodecahedron", 
+       "TridiminishedIcosahedron", "TridiminishedRhombicosidodecahedron", 
+       "TrigyrateRhombicosidodecahedron", "TruncatedCube", 
+       "TruncatedDodecahedron", "TruncatedIcosahedron", "TruncatedOctahedron",
+        "TruncatedTetrahedron"}}, {
+      Hold[$CellContext`p$$], {
+      "AlternateNames", "AlternateStandardNames", "BoundaryMeshRegion", 
+       "Centroid", "Circumcenter", "Circumdiameter", "Circumradius", 
+       "Circumsphere", "Classes", "DefaultOrientation", "DihedralAngles", 
+       "Dual", "DualCompound", "EdgeCount", "EdgeIndices", "EdgeLengths", 
+       "Entity", "FaceCount", "FaceIndices", "GeneralizedDiameter", 
+       "Graphics3D", "GraphicsComplex", "Image", "ImplicitRegion", "Incenter",
+        "InertiaTensor", "Information", "Inradius", "Insphere", "Lines", 
+       "MeshRegion", "Midcenter", "Midradius", "Midsphere", 
+       "MultipieceNetCoordinates", "MultipieceNetFaceIndices", 
+       "MultipieceNetImage", "Name", "Names", "Net", "NetCount", 
+       "NotationRules", "Orientations", "Points", "Polygons", "Polyhedron", 
+       "PolyhedronCompoundComponents", "Region", "RegionFunction", 
+       "SchlaefliSymbol", "Skeleton", "StandardName", "StandardNames", 
+       "StellationCount", "SurfaceArea", "SymmetryGroup", "VertexCoordinates",
+        "VertexCount", "VertexSubsetHulls", "Volume", "WythoffSymbol"}}}, 
+    Typeset`size$$ = {437., {143., 150.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`g$$ = 
+        "AcuteGoldenRhombohedron", $CellContext`p$$ = "AlternateNames"}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Column[{
+         PolyhedronData[$CellContext`g$$], 
+         PolyhedronData[$CellContext`g$$, $CellContext`p$$]}], 
+      "Specifications" :> {{$CellContext`g$$, {
+         "AcuteGoldenRhombohedron", {"Antiprism", 4}, {"Antiprism", 5}, {
+          "Antiprism", 6}, {"Antiprism", 7}, {"Antiprism", 8}, {
+          "Antiprism", 9}, {"Antiprism", 10}, "AugmentedDodecahedron", 
+          "AugmentedHexagonalPrism", "AugmentedPentagonalPrism", 
+          "AugmentedSphenocorona", "AugmentedTriangularPrism", 
+          "AugmentedTridiminishedIcosahedron", "AugmentedTruncatedCube", 
+          "AugmentedTruncatedDodecahedron", "AugmentedTruncatedTetrahedron", 
+          "BiaugmentedPentagonalPrism", "BiaugmentedTriangularPrism", 
+          "BiaugmentedTruncatedCube", 
+          "BigyrateDiminishedRhombicosidodecahedron", "BilinskiDodecahedron", 
+          "Bilunabirotunda", "CsaszarPolyhedron", "Cube", 
+          "CubeFiveCompound", {"CubeFourCompound", 1}, {
+          "CubeFourCompound", 2}, "CubeOctahedronCompound", 
+          "CubeOctahedronFiveCompound", "CubeOctahedronThreeCompound", 
+          "CubeSixCompound", "CubeTenCompound", "CubeThreeCompound", 
+          "CubeTwoCompound", "Cuboctahedron", "DeltoidalHexecontahedron", 
+          "DeltoidalIcositetrahedron", "DiminishedRhombicosidodecahedron", {
+          "Dipyramid", 3}, {"Dipyramid", 5}, "DisdyakisDodecahedron", 
+          "DisdyakisTriacontahedron", "Disphenocingulum", "Dodecahedron", 
+          "DodecahedronFiveCompound", "DodecahedronIcosahedronCompound", 
+          "DodecahedronSixCompound", 
+          "DodecahedronSmallTriambicIcosahedronCompound", {
+          "DodecahedronStellation", 1}, {"DodecahedronStellation", 2}, {
+          "DodecahedronStellation", 3}, "DodecahedronTwoCompound", 
+          "DuererSolid", "Echidnahedron", "ElongatedDodecahedron", 
+          "ElongatedPentagonalCupola", "ElongatedPentagonalDipyramid", 
+          "ElongatedPentagonalGyrobicupola", 
+          "ElongatedPentagonalGyrobirotunda", 
+          "ElongatedPentagonalGyrocupolarotunda", 
+          "ElongatedPentagonalOrthobicupola", 
+          "ElongatedPentagonalOrthobirotunda", 
+          "ElongatedPentagonalOrthocupolarotunda", 
+          "ElongatedPentagonalPyramid", "ElongatedPentagonalRotunda", 
+          "ElongatedSquareCupola", "ElongatedSquareDipyramid", 
+          "ElongatedSquareGyrobicupola", "ElongatedSquarePyramid", 
+          "ElongatedTriangularCupola", "ElongatedTriangularDipyramid", 
+          "ElongatedTriangularGyrobicupola", 
+          "ElongatedTriangularOrthobicupola", "ElongatedTriangularPyramid", 
+          "EquilateralAugmentedCube", "EquilateralAugmentedDodecahedron", 
+          "EquilateralAugmentedTetrahedron", "EscherSolid", 
+          "GreatDodecahedron", "GreatIcosahedron", 
+          "GreatRhombicosidodecahedron", "GreatRhombicTriacontahedron", 
+          "GreatRhombicuboctahedron", "GreatStellatedDodecahedron", 
+          "GyrateBidiminishedRhombicosidodecahedron", 
+          "GyrateRhombicosidodecahedron", "Gyrobifastigium", 
+          "GyroelongatedPentagonalBicupola", 
+          "GyroelongatedPentagonalBirotunda", "GyroelongatedPentagonalCupola",
+           "GyroelongatedPentagonalCupolarotunda", 
+          "GyroelongatedPentagonalPyramid", "GyroelongatedPentagonalRotunda", 
+          "GyroelongatedSquareBicupola", "GyroelongatedSquareCupola", 
+          "GyroelongatedSquareDipyramid", "GyroelongatedSquarePyramid", 
+          "GyroelongatedTriangularBicupola", "GyroelongatedTriangularCupola", 
+          "Hebesphenomegacorona", "Icosahedron", "IcosahedronFiveCompound", 
+          "IcosahedronSixCompound", {"IcosahedronStellation", 11}, 
+          "IcosahedronTwoCompound", "Icosidodecahedron", "JabulaniPolyhedron",
+           "JessensOrthogonalIcosahedron", "MathematicaPolyhedron", 
+          "MetabiaugmentedDodecahedron", "MetabiaugmentedHexagonalPrism", 
+          "MetabiaugmentedTruncatedDodecahedron", 
+          "MetabidiminishedIcosahedron", 
+          "MetabidiminishedRhombicosidodecahedron", 
+          "MetabigyrateRhombicosidodecahedron", 
+          "MetagyrateDiminishedRhombicosidodecahedron", 
+          "ObtuseGoldenRhombohedron", "Octahedron", 
+          "OctahedronFiveCompound", {"OctahedronFourCompound", 1}, {
+          "OctahedronFourCompound", 2}, "OctahedronTenCompound", 
+          "OctahedronThreeCompound", "ParabiaugmentedDodecahedron", 
+          "ParabiaugmentedHexagonalPrism", 
+          "ParabiaugmentedTruncatedDodecahedron", 
+          "ParabidiminishedRhombicosidodecahedron", 
+          "ParabigyrateRhombicosidodecahedron", 
+          "ParagyrateDiminishedRhombicosidodecahedron", "PentagonalCupola", 
+          "PentagonalGyrobicupola", "PentagonalGyrocupolarotunda", 
+          "PentagonalHexecontahedron", "PentagonalIcositetrahedron", 
+          "PentagonalOrthobicupola", "PentagonalOrthobirotunda", 
+          "PentagonalOrthocupolarotunda", "PentagonalPrismSixCompound", 
+          "PentagonalRotunda", "PentakisDodecahedron", {"Prism", 3}, {
+          "Prism", 5}, {"Prism", 6}, {"Prism", 7}, {"Prism", 8}, {
+          "Prism", 9}, {"Prism", 10}, {"Pyramid", 4}, {"Pyramid", 5}, 
+          "RhombicDodecahedron", {"RhombicDodecahedronStellation", 2}, {
+          "RhombicDodecahedronStellation", 3}, "RhombicEnneacontahedron", 
+          "RhombicHexecontahedron", "RhombicIcosahedron", 
+          "RhombicTriacontahedron", "SmallRhombicosidodecahedron", 
+          "SmallRhombicuboctahedron", "SmallStellatedDodecahedron", 
+          "SmallTriakisOctahedron", "SmallTriambicIcosahedron", "SnubCube", 
+          "SnubDisphenoid", "SnubDodecahedron", "SnubSquareAntiprism", 
+          "Sphenocorona", "Sphenomegacorona", "SquareCupola", 
+          "SquareGyrobicupola", "SquareOrthobicupola", "StellaOctangula", 
+          "SzilassiPolyhedron", "TetragonalAntiwedge", "Tetrahedron", 
+          "TetrahedronFiveCompound", {"TetrahedronFourCompound", 1}, {
+          "TetrahedronFourCompound", 2}, {"TetrahedronFourCompound", 3}, 
+          "TetrahedronSixCompound", "TetrahedronTenCompound", 
+          "TetrahedronThreeCompound", "TetrahedronTwoCompound", 
+          "TetrakisHexahedron", "TrapezoRhombicDodecahedron", 
+          "TriakisIcosahedron", "TriakisTetrahedron", 
+          "TriakisTruncatedTetrahedron", "TriangularCupola", 
+          "TriangularHebesphenorotunda", "TriangularOrthobicupola", 
+          "TriaugmentedDodecahedron", "TriaugmentedHexagonalPrism", 
+          "TriaugmentedTriangularPrism", "TriaugmentedTruncatedDodecahedron", 
+          "TridiminishedIcosahedron", "TridiminishedRhombicosidodecahedron", 
+          "TrigyrateRhombicosidodecahedron", "TruncatedCube", 
+          "TruncatedDodecahedron", "TruncatedIcosahedron", 
+          "TruncatedOctahedron", 
+          "TruncatedTetrahedron"}}, {$CellContext`p$$, {
+         "AlternateNames", "AlternateStandardNames", "BoundaryMeshRegion", 
+          "Centroid", "Circumcenter", "Circumdiameter", "Circumradius", 
+          "Circumsphere", "Classes", "DefaultOrientation", "DihedralAngles", 
+          "Dual", "DualCompound", "EdgeCount", "EdgeIndices", "EdgeLengths", 
+          "Entity", "FaceCount", "FaceIndices", "GeneralizedDiameter", 
+          "Graphics3D", "GraphicsComplex", "Image", "ImplicitRegion", 
+          "Incenter", "InertiaTensor", "Information", "Inradius", "Insphere", 
+          "Lines", "MeshRegion", "Midcenter", "Midradius", "Midsphere", 
+          "MultipieceNetCoordinates", "MultipieceNetFaceIndices", 
+          "MultipieceNetImage", "Name", "Names", "Net", "NetCount", 
+          "NotationRules", "Orientations", "Points", "Polygons", "Polyhedron",
+           "PolyhedronCompoundComponents", "Region", "RegionFunction", 
+          "SchlaefliSymbol", "Skeleton", "StandardName", "StandardNames", 
+          "StellationCount", "SurfaceArea", "SymmetryGroup", 
+          "VertexCoordinates", "VertexCount", "VertexSubsetHulls", "Volume", 
+          "WythoffSymbol"}}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{498., {221., 228.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.810648410148209*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"038654e0-4d8b-40bf-afcf-98ec577385ba"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["10.7 Other 3D primitives", "Section",
+ CellChangeTimes->{{3.810457489213538*^9, 3.8104575000609503`*^9}, 
+   3.81048634800721*^9, {3.8104893737252398`*^9, 
+   3.810489374355091*^9}},ExpressionUUID->"84b3d110-7c12-415d-a16f-\
+e405feb95540"],
+
+Cell[TextData[{
+ "There are other basic 3D shapes available in ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ ".  Unfortunately many of them are not exportable to be 3D printed.  \
+Mathematica developers are working to improve this functionality.  Except for \
+",
+ StyleBox["Cuboid", "Input",
+  FontSize->16],
+ ", don\[CloseCurlyQuote]t use these in your project."
+}], "Text",
+ CellChangeTimes->{{3.8104575015738497`*^9, 3.8104575535973854`*^9}, {
+  3.810457749541383*^9, 3.810457885821757*^9}, {3.810486312437419*^9, 
+  3.8104863136774087`*^9}},ExpressionUUID->"9413e4a4-8d7e-42cd-879d-\
+c3e5ec4a2aad"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"Cuboid", "[", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8104578944325075`*^9, 3.8104579024296503`*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"5fd91b82-6b87-4c1e-a193-93a6cbfa1f6a"],
+
+Cell[BoxData[
+ Graphics3DBox[CuboidBox[{0, 0, 0}],
+  ImageSize->{355.19076948098353`, 325.99962703483607`},
+  ImageSizeRaw->Automatic,
+  ViewPoint->{1.608208109919284, -2.89297519461952, 0.7031082409600921},
+  ViewVertical->{0.20818689960356968`, -0.3539996573573371, 
+   0.9117798294678059}]], "Output",
+ CellChangeTimes->{3.810648475653973*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"cb323e9b-78c8-4606-9da6-6882b9f8a031"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Map", "[", 
+  RowBox[{"Graphics3D", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Tetrahedron", "[", "]"}], ",", 
+     RowBox[{"Cylinder", "[", "]"}], ",", 
+     RowBox[{"Cone", "[", "]"}], ",", 
+     RowBox[{"Parallelepiped", "[", "]"}], ",", 
+     RowBox[{"CapsuleShape", "[", "]"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.81048609865946*^9, 3.8104862420976067`*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"afcc524d-5b5d-4c60-b26a-64c001c7b430"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   Graphics3DBox[
+    InterpretationBox[
+     TagBox[
+      GraphicsComplex3DBox[
+       NCache[{{
+         0, 0, Rational[2, 3]^Rational[1, 2] + 
+          Rational[-1, 2] 6^Rational[-1, 2]}, {
+         Rational[-1, 2] 3^Rational[-1, 2], Rational[-1, 2], Rational[-1, 2] 
+          6^Rational[-1, 2]}, {
+         Rational[-1, 2] 3^Rational[-1, 2], Rational[1, 2], Rational[-1, 2] 
+          6^Rational[-1, 2]}, {
+         3^Rational[-1, 2], 0, Rational[-1, 2] 6^Rational[-1, 2]}}, {{
+         0, 0, 0.6123724356957945}, {-0.2886751345948129, -0.5, \
+-0.20412414523193154`}, {-0.2886751345948129, 0.5, -0.20412414523193154`}, {
+         0.5773502691896258, 0, -0.20412414523193154`}}], 
+       Polygon3DBox[{{2, 3, 4}, {3, 2, 1}, {4, 1, 2}, {1, 4, 3}}]],
+      "Polyhedron"],
+     Tetrahedron[]]], ",", 
+   Graphics3DBox[CylinderBox[{{0, 0, -1}, {0, 0, 1}}]], ",", 
+   Graphics3DBox[ConeBox[{{0, 0, -1}, {0, 0, 1}}]], ",", 
+   Graphics3DBox[
+    InterpretationBox[
+     HexahedronBox[{{0, 0, 0}, {1, 0, 0}, {2, 1, 0}, {1, 1, 0}, {1, 1, 1}, {2,
+       1, 1}, {3, 2, 1}, {2, 2, 1}}],
+     Parallelepiped[{0, 0, 0}, {{1, 0, 0}, {1, 1, 0}, {1, 1, 1}}]]], ",", 
+   Graphics3DBox[
+    InterpretationBox[BSplineSurface3DBox[CompressedData["
+1:eJylVEEOwiAQJPHQ+Aw/An/wCSae/SH7JW72YFJpSg3M7hTUTUhhOjvMEtjL
+7XG9n5xzUx7nPNb5vDyXHMGVeOXF5FLc8bL2DN/zCN8TfQ/8yHCiH9EP+l/n
+qcK3SNLiKRzjZaX5gegDvulyXOlL/WX+0Z/Gk7m/kWfWNcDr7KfyxM5D/xg9
+PcRVPqmH5f3q79v/7DxGz+nfcx/2dcjL97ODq/dl1mXwQ4u3dVV8fF+mX4NP
+/Zd+8sGhzwjph0L6IfI90ffAx34opB8iPzL/b/xoysQ=
+      "],
+      Method->{"SurfaceCaps" -> True},
+      SplineClosed->{False, True},
+      SplineDegree->{2, 2},
+      SplineKnots->NCache[{{0, 0, 0, 
+          Rational[1, 3], 
+          Rational[1, 3], 
+          Rational[2, 3], 
+          Rational[2, 3], 1, 1, 1}, {0, 0, 0, 
+          Rational[1, 4], 
+          Rational[1, 4], 
+          Rational[1, 2], 
+          Rational[1, 2], 
+          Rational[3, 4], 
+          Rational[3, 4], 1, 1, 1}}, {{
+         0, 0, 0, 0.3333333333333333, 0.3333333333333333, 0.6666666666666666, 
+          0.6666666666666666, 1, 1, 1}, {
+         0, 0, 0, 0.25, 0.25, 0.5, 0.5, 0.75, 0.75, 1, 1, 1}}],
+      SplineWeights->CompressedData["
+1:eJxTTMoPSmViYGBgB2JOBhjYYI9KH0CjL6DRD9DoD0Cag0GAYQEavQGNPoBG
+X0CjH4yaQ9Ac6sQXAL95RPU=
+       "]],
+     CapsuleShape[{{-1, 0, 0}, {1, 0, 0}}, 1]]]}], "}"}]], "Output",
+ CellChangeTimes->{3.8106484879464417`*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"df28d716-237a-4c74-a9ce-70cafd360906"]
+}, Open  ]],
+
+Cell[TextData[{
+ "See more in ",
+ ButtonBox["guide/GeometricSpecialRegions",
+  BaseStyle->"Link",
+  ButtonData->"paclet:guide/GeometricSpecialRegions"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.8104862595088873`*^9, 
+  3.810486283357895*^9}},ExpressionUUID->"ca60d1b7-3dc0-41ac-8e20-\
+b415a59207a5"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1451, 999},
+WindowMargins->{{-8, Automatic}, {Automatic, -1}},
+ShowSelection->True,
+Magnification:>1.25 Inherited,
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"017c1f81-0321-49d3-97cd-eeb56311a070"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 741, 11, 121, "Title",ExpressionUUID->"19e55f01-07f8-446d-97e4-b11417a786e0"],
+Cell[1311, 35, 701, 13, 65, "Subsubtitle",ExpressionUUID->"545d8173-af64-42b4-836c-e57d7d28c713"],
+Cell[CellGroupData[{
+Cell[2037, 52, 256, 4, 83, "Section",ExpressionUUID->"4459f6ad-40ea-41c3-97db-da31f21fbb68"],
+Cell[2296, 58, 946, 15, 43, "Text",ExpressionUUID->"2c192b60-db36-4644-b26a-278b004f9e41"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3279, 78, 297, 4, 83, "Section",ExpressionUUID->"9ad0d59a-6b4d-43e3-b3be-017fe274733f"],
+Cell[3579, 84, 1162, 34, 100, "Text",ExpressionUUID->"d1fffa2d-c75b-4996-86c5-ad54572f5e20"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4778, 123, 309, 5, 83, "Section",ExpressionUUID->"5dee5163-8086-459d-8e9d-58572c591b10"],
+Cell[CellGroupData[{
+Cell[5112, 132, 154, 3, 67, "Subsection",ExpressionUUID->"1c6b1dee-4898-4d01-aa39-c00cffbb1acf"],
+Cell[CellGroupData[{
+Cell[5291, 139, 477, 13, 35, "Input",ExpressionUUID->"2d580532-c102-47f9-97a6-b69c0465284f"],
+Cell[5771, 154, 526, 13, 248, "Output",ExpressionUUID->"2aef145a-c203-40ad-9b80-5ed12097e40e"]
+}, Open  ]],
+Cell[6312, 170, 242, 6, 43, "Text",ExpressionUUID->"c64f8123-b2a4-4e96-9427-ea289d978a60"],
+Cell[CellGroupData[{
+Cell[6579, 180, 974, 27, 60, "Input",ExpressionUUID->"8aae9611-ea62-4413-884b-835b31cfa20c"],
+Cell[7556, 209, 626, 11, 212, "Output",ExpressionUUID->"b3575c59-3280-4955-aae3-0ec9939b1848"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8231, 226, 202, 4, 67, "Subsection",ExpressionUUID->"ea89f8ae-a54c-4a9e-be51-c94916d68733"],
+Cell[8436, 232, 685, 17, 43, "Text",ExpressionUUID->"be469812-22fe-441b-b1ef-511daaeb2986"],
+Cell[9124, 251, 229, 5, 35, "Input",ExpressionUUID->"12946138-5b1c-4684-a9b6-8f8a834f5ebd"],
+Cell[9356, 258, 184, 3, 43, "Text",ExpressionUUID->"7e901645-b819-4f0b-aa79-10d8a967f217"],
+Cell[CellGroupData[{
+Cell[9565, 265, 504, 12, 35, "Input",ExpressionUUID->"5b44adc6-a6f3-48f6-9913-ad0df52e0b7a"],
+Cell[10072, 279, 687, 12, 112, "Output",ExpressionUUID->"bf4f218b-d976-4f06-aab3-dfed6dcc3a8e"]
+}, Open  ]],
+Cell[10774, 294, 399, 12, 43, "Text",ExpressionUUID->"5ce65101-22e1-4f57-9972-2d04722df1d6"],
+Cell[CellGroupData[{
+Cell[11198, 310, 575, 13, 60, "Input",ExpressionUUID->"878a1e09-a16c-4e82-a532-139258bd7aab"],
+Cell[11776, 325, 687, 12, 130, "Output",ExpressionUUID->"dd2e37d7-4c5b-4895-b416-b11bab7f7271"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12524, 344, 318, 5, 83, "Section",ExpressionUUID->"e40c4dc7-3d9a-492e-b8f3-3a3b8fb464bc"],
+Cell[12845, 351, 792, 18, 71, "Text",ExpressionUUID->"4cac8ca4-f140-439c-a92d-5348b760b848"],
+Cell[CellGroupData[{
+Cell[13662, 373, 1484, 41, 84, "Input",ExpressionUUID->"3e1f012c-9e3c-40eb-8d8a-48f43b0c1c69"],
+Cell[15149, 416, 1050, 24, 265, "Output",ExpressionUUID->"7c219f45-da9e-4c0c-81e7-c415f81d3775"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16236, 445, 235, 5, 35, "Input",ExpressionUUID->"7d74ee62-8a0d-4883-b9f1-3724f93972b2"],
+Cell[16474, 452, 526, 10, 119, "Output",ExpressionUUID->"b08a881e-f41e-4cb2-927b-628afbfed019"]
+}, Open  ]],
+Cell[17015, 465, 463, 11, 71, "Text",ExpressionUUID->"4fb4aff8-3b50-4c04-b483-a1d816279ce7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17515, 481, 210, 4, 83, "Section",ExpressionUUID->"3f35fc7a-82e4-4fc7-92ae-5dcf91828e94"],
+Cell[17728, 487, 321, 7, 43, "Text",ExpressionUUID->"ee3fe268-fc8e-4924-9227-e4890501509c"],
+Cell[CellGroupData[{
+Cell[18074, 498, 993, 28, 35, "Input",ExpressionUUID->"e32fa061-4fa4-47a4-a724-6a5d42be5c96"],
+Cell[19070, 528, 642, 15, 248, "Output",ExpressionUUID->"48f1a5a6-20bd-4e67-a38a-9c4c54e4592e"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19761, 549, 261, 4, 83, "Section",ExpressionUUID->"8db0386e-5148-4b41-b2c6-c632222f581e"],
+Cell[20025, 555, 648, 15, 99, "Text",ExpressionUUID->"baf7c6aa-007d-492b-a008-5d3cd40d9d4f"],
+Cell[CellGroupData[{
+Cell[20698, 574, 247, 4, 35, "Input",ExpressionUUID->"7c60790b-6e03-419b-b516-7474c576c06e"],
+Cell[20948, 580, 151, 2, 58, "Output",ExpressionUUID->"58fca7a9-a722-4f0e-9885-ff9e5eaf6085"]
+}, Open  ]],
+Cell[21114, 585, 238, 6, 43, "Text",ExpressionUUID->"3acdbffa-cf2d-4c77-b5c7-0a631cc5f222"],
+Cell[CellGroupData[{
+Cell[21377, 595, 265, 6, 35, "Input",ExpressionUUID->"f0de4659-3e8e-497d-8698-638733308b41"],
+Cell[21645, 603, 3358, 59, 562, "Output",ExpressionUUID->"28a4e90c-3cf1-47c2-b4d4-04d41de86d1b"]
+}, Open  ]],
+Cell[25018, 665, 494, 12, 43, "Text",ExpressionUUID->"b35d32d9-a6a1-4480-8ff6-22a76548946e"],
+Cell[CellGroupData[{
+Cell[25537, 681, 692, 19, 60, "Input",ExpressionUUID->"d578f45a-5827-4c03-97b7-ea489b842fb8"],
+Cell[26232, 702, 16944, 268, 472, "Output",ExpressionUUID->"038654e0-4d8b-40bf-afcf-98ec577385ba"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43225, 976, 245, 4, 83, "Section",ExpressionUUID->"84b3d110-7c12-415d-a16f-e405feb95540"],
+Cell[43473, 982, 609, 14, 71, "Text",ExpressionUUID->"9413e4a4-8d7e-42cd-879d-c3e5ec4a2aad"],
+Cell[CellGroupData[{
+Cell[44107, 1000, 240, 4, 35, "Input",ExpressionUUID->"5fd91b82-6b87-4c1e-a193-93a6cbfa1f6a"],
+Cell[44350, 1006, 425, 8, 428, "Output",ExpressionUUID->"cb323e9b-78c8-4606-9da6-6882b9f8a031"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44812, 1019, 487, 11, 35, "Input",ExpressionUUID->"afcc524d-5b5d-4c60-b26a-64c001c7b430"],
+Cell[45302, 1032, 2532, 59, 248, "Output",ExpressionUUID->"df28d716-237a-4c74-a9ce-70cafd360906"]
+}, Open  ]],
+Cell[47849, 1094, 297, 9, 43, "Text",ExpressionUUID->"ca60d1b7-3dc0-41ac-8e20-b415a59207a5"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

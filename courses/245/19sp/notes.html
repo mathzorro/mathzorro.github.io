@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mathematical Models &bull; Topics, Notes, and Homework</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="author" content="Christopher Hanusa" />
+        <link rel="shortcut icon" href="favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="../../../css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../../../css/style1.css" />
+        <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>    
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-47380773-6', 'auto');
+                ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header_wrap">
+                <div class="header">
+                    <span class="left">
+                        <a href="../../../index.html">HOME</a> > 
+                        <a href="../../index.html">Courses</a> > 
+                        <a href="index.html">245sp19</a>
+                    </span>
+                <div class="header_right">
+                    <span class="right">
+                        <a href="index.html">Home</a> &bull; 
+                        <a href="syllabus.html">Syllabus</a> &bull; 
+                        <a href="letters.html">Letters</a> &bull;
+                        <a href="calendar.html">Calendar</a> &bull; 
+                        <a href="software.html">Software</a> &bull; 
+                        <a href="project.html">Projects</a> &bull; 
+                        <a href="notes.html">Content</a> 
+                    </span>
+                </div>
+                </div>
+            </div>
+
+            <div class="main">
+                           
+                <div class="course_head">            
+                <div class="course_head_img"><a href="index.html"><img src="../../../images/245c.png" height="100"/></a></div>
+                <div class="course_head_suptitle_245">Mathematical Models, Spring 2019</div>
+                <div class="course_head_title_245">Course Content</div>
+                </div>
+                
+                <div class="course_main_245">
+                    <div class="notes_section"><span style="color: red; background: #FFB">This page is for a past course.  <a href="../../../courses/archive.html">Find your current course here.</a></span><br>&nbsp;</div>
+                    
+                    <p>Check back often for homework assignments, tutorials, and key topics covered each day.
+                    <br><i>This schedule is approximate and subject to change!</i></p>
+
+<!----------------------------
+******************************
+------------------------------>
+                    
+                    
+<!-- I really don't like Chapter 1.  Figure out how to replace, perhaps by something with more calculations.   -->
+
+<div class="date">Monday, January 28</div>
+
+<div class="defn">In class: </div>
+<ul>
+    <li>Welcome!</li>
+    <li><a href="notes/245sp19day1.pdf">Introduction &amp; Syllabus Discussion</a> <a href="notes/245sp19day1c.pdf">'</a></li>
+    <li>Sections 1.0 and 2.1 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.</li>
+    <li>What is Mathematical Modeling?</li>
+    <li>Steps of the Modeling Process</li>
+    <li>Course Philosophy</li>
+    <li>Meet the model(er)s</li>
+    <li>Visit the course webpage.  <!--<span style="color: #A0A;">⬅ <b>You are here!</b></span>--></li>
+    <li>Getting started with a Jupyter Notebook. (<a href="software.html">Instructions here</a>)</li>
+    <li>Go to Google Classroom and answer the Daily Question.</li>
+    <ul>
+        <li>Here is how to log on:  Visit <a href="http://gdrive.qc.cuny.edu/">Google Drive</a> (on Google Apps for Education). Enter your QC Email Address.  This will take you to a QC login page.  Log in with your CAMS information.</li>
+        <li>Then go to <a href="http://classroom.google.com/">Google Classroom</a>.</li>
+        <li>Click on the + in the upper right corner to add a new class using course code <b>bex47bg</b>.</li>
+        <li>Click on the assignment labeled "Daily Question: January 28" and respond.</li>
+    </ul>
+    <li>Randomness and flipping coins in Python</li>
+    <li><span style="font-family: monospace; font-weight: 700">flip()</span>: Adding in Randomness</li>
+    <li>Link to in-class modified notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/coinflip-inclass.ipynb">Coin Flip Notebook</a></li>
+</ul>
+        
+                    
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Wednesday, January 30</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Make sure you have access to a copy of Python and the course content <b>outside of class</b>, by either installing it on your own machine or using Azure Notebooks on a campus machine.  (<a href="software.html">Detailed instructions here</a>)</li>
+    <li>Acquire a ≈100 page notebook to serve as your "Homework Notebook".</li>
+        <ul>
+            <li>Put your name and contact information in the notebook so you'll be able to get it back.</li>
+            <li>Set aside the first five pages of the notebook.  Label this section "Objects" for building a list of objects that we'll be using in this class.</li>
+            <li>Set aside the next five pages of the notebook.  Label this section "Syntax" for building a list of functions that we'll be using in this class.</li>
+            <li>Answers to all other homework questions go afterward.</li>
+        </ul>
+    <li>Thoroughly read all of the course webpage. </li>
+    <li>Go to <a href="http://classroom.google.com/">Google Classroom</a>.  (Reminder: You must be <a href="http://gdrive.qc.cuny.edu/">logged in through your QC account</a> and NOT be on your personal Gmail account!) Complete the following two tasks:</li>
+        <ul>
+            <li>Complete the First Day Survey, so I can learn about everyone's background and experience. </li>
+            <li>Take the <b>Syllabus Quiz</b>.  Feel free to refer back to the course webpage to search for more in form.  <b>Retake the quiz as many times as necessary</b> to earn a score of 100%.  This will count toward your participation grade.</li>
+        </ul>
+    <li><a href="https://doodle.com/poll/zfxitgq837dygx3h">Fill out this Doodle</a> to let me know when you are available for office hours this semester. I will try to choose times that work for most people.</li>
+    <li>Read Chapter 0, Section 1.0 (pages 1&ndash;3), and Sections 2.1&ndash;2.5 (pages 7&ndash;14) of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.  We will be starting with Chapter 2 in class Wednesday.  It is OK if you do not understand everything.  You are priming your brain for our in-class discussion.  You may wish to write yourself some notes about questions that come up or concepts that you'd like to discuss in class.</li>
+    <li><b>Homework Questions:</b> Complete the following homework questions in your homework notebook (working after the objects and syntax sections) and be prepared to discuss them in class.  Work in your homework notebook.</li>
+    <b>Objects</b> (Add to your Objects section.)
+    <ul>
+        <li><b>1-1.</b> Write a sentence that explains what a <span style="font-family: monospace">State</span> object is. </li>
+    </ul>
+    <b>Comprehension/Vocabulary</b> (Requires some research in the text)
+    <ul>
+        <li><b>1-2.</b> In the introduction to Chapter 1, the author explains a quality of a model that might be desirable. Copy down the paragraph that starts "But often ". </li>
+        <li><b>1-3.</b> How do we read the variables inside a <span style="font-family: monospace">State</span> object? </li>
+    </ul>
+    <b>Coding</b> (Give your brain and hands some practice.)
+    <ul>
+        <li><b>1-4.</b> What is the process called that makes the functions defined in modsim.py available to Python?  What is the line of code that accomplishes this?</li>
+        <li><b>1-5.</b> What is the name of the package that allows us to work with units in python? (See page xii.) What is the line of code that imports this package into our notebooks? (See the <a href="software.html">course software page</a>.)</li>
+    </ul>
+</ul>
+           
+<div class="defn">In class: </div>
+<ul>
+    <li>Introduction to Bike Share Model</li>
+    <li>Sections 2.1 through 2.5 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.</li>
+    <li>Link to in-class modified notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/coinflip-inclass.ipynb">Coin Flip Notebook</a></li>
+</ul>
+    
+
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Monday, February 4</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Meet for one hour <b>outside of class</b> with at least one other classmate.   Your goal is to get together to talk about the class so far and compare answers to the homework questions below.  You should also make sure you are able to use Python and Jupyter notebooks outside of class.
+    </li>
+    <li>Prepare a piece of paper to bring to class on 2/4 and turn in.  At the top of the page, write your name and write down the name(s) of the classmate(s) you met with and when you met.  Below that, write one paragraph reflecting about something that you learned or experienced that you would not have if you had worked alone.  Bring your paragraph to class; I will collect them, check them off, and they will count toward your homework grade.</li>
+    <li>Go to <a href="https://classroom.google.com">Google Classroom</a> and contribute to the <b>Daily Question for February 4</b>.
+    <li><b>Read</b> all of Chapter 2 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>. </li>    
+    <li><b>Homework Questions:</b> Complete the following homework questions in your homework notebook.</li>
+    <b>Objects</b> (Add to your Objects section.)
+    <ul>
+        <li><b>2-1.</b> Write a sentence that explains what a <span style="font-family: monospace">TimeSeries</span> object is.  How does it compare to a <span style="font-family: monospace">State</span> object, if at all?</li>
+    </ul>
+    <b>Syntax</b> (Add to your Syntax section.)
+    <ul>
+        <li><b>2-2.</b> Write down the syntax for the <span style="font-family: monospace">flip</span> command.  (That it, determine the input(s) that <span style="font-family: monospace">flip</span> expects, determine the output(s) that <span style="font-family: monospace">flip</span> returns, and explain in a sentence or two how the output(s) are related to the input(s).)
+        <li><b>2-3.</b> Write down the syntax for the <span style="font-family: monospace">range</span> command. 
+    </ul>
+    <b>Comprehension/Vocabulary</b> (Fill in the blanks)
+    <ul>
+        <li><b>2-4.</b> In a function definition, the first line ends with a(n) _______ and the _______ of the function has to be indented.</li>
+        <li><b>2-5.</b> When you call a function, the values you provide are called _______; inside the function, those values get assigned to the function's _______.</li>
+        <li><b>2-6.</b> In Python, <span style="font-family: monospace">True</span> and <span style="font-family: monospace">False</span> are _______, not to be confused with <span style="font-family: monospace">'True'</span> and <span style="font-family: monospace">'False'</span>, which are _______.</li>
+    </ul>
+    <b>Analysis</b> (Reflect and Write)
+    <ul>
+        <li><b>2-7.</b> What does the author consider to be one of the most useful tools for debugging?  Write a sentence explaining why it would be a helpful tool.</li>
+    </ul>
+    <b>Coding</b> (Make sure you work in your <span style="font-family: monospace">code</span> directory.)
+    <ul>
+        <li><b>2-8(a).</b>  Create a <b>new</b> Jupyter notebook that imports <span style="font-family: monospace">modsim</span> (and also <span style="font-family: monospace">pint</span>). </li> 
+        <li><b>2-8(b).</b> In this new notebook, write code that creates a <span style="font-family: monospace">State</span> object that contains two state variables, named <span style="font-family: monospace">heads</span> and <span style="font-family: monospace">tails</span>, assigns the value 0 to both, and assigns the <span style="font-family: monospace">State</span> object to a variable named <span style="font-family: monospace">penny</span>.</li>
+        <li><b>2-8(c).</b> Once you have evaulated that line of code, write an additional line of code that verifies that <span style="font-family: monospace">penny</span> is defined correctly.</li>
+    </ul>
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Sections 2.4&ndash;2.8 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.</li>
+    <li>Arguments vs. parameters</li>
+    <li>Link to in-class modified notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/chap02-inclass.ipynb">Chapter 2</a></li>
+
+</ul>
+ 
+                    
+<!----------------------------
+******************************
+----------------------------->
+                    
+<div class="date">Wednesday, February 6</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Read Sections 2.7&ndash;2.8 and 3.1&ndash;3.5 3 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>. </li>   <li>Go to <a href="https://classroom.google.com">Google Classroom</a> and contribute to the <b>Daily Question for February 6</b>.
+ 
+    <li><b>Homework Questions:</b> Complete the following homework questions in your homework notebook. <span style="color: #A0A;"><b>It is highly suggested that you work with one or more classmates on this assignment!!!</b></span></li>
+    <b>Syntax</b> (Add to your Syntax section.)
+    <ul>
+        <li><b>3-1.</b> Write down the syntax for a <span style="font-family: monospace">for</span> loop. 
+    </ul>
+    <b>Comprehension/Vocabulary</b> (Fill in the blanks)
+    <ul>
+        <li><b>3-2.</b> Starting with a simple model and making gradual improvements is called _______.</li>
+    </ul>
+    <b>Coding</b>
+    <ul>
+        <li><b>3-3.</b> In the Jupyter notebook from Question 2-8 above, write a for loop that calls <span style="font-family: monospace">flip()</span> 10 times with 50% chance of both heads and tails.  Use your State object penny to keep track of the number of heads and tails that have been flipped. </li> 
+        <li><b>3-4.</b> Copy the code from the previous question into a new cell.  Modify the code by adding in print statements that do the following.  Each time flip() is called, it should print out whether the flip was a heads or a tail. When all the flips are done, it should print out the number of heads and tails that were seen. Check that your code also works when you increase the number of flips from 10 to something larger.</li>
+    </ul>
+    <b>Analysis</b> 
+    <ul>
+        <li><b>3-5.</b> In a paragraph or two, compare and contrast <b>arguments</b> and <b>parameters</b>.  In what ways are they similar?  In what ways are they different?  </li>
+        <li><b>3-6.</b> In a paragraph or two, Compare and contrast <b>docstrings</b> and <b>comments</b>.  In what ways are they similar?  In what ways are they different?  </li> <!-- Move to Homework Assignment 4 -->
+    </ul> 
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>For loops</li>
+    <li>TimeSeries</li>
+    <li>Plotting</li>
+    <li>Link to in-class modified notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/chap03-inclass.ipynb">Chapter 3</a></li>
+</ul>
+
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Monday, February 11</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Read through the description of <a href="project.html">Mini-Project 1</a>. Determine who you will want to work with on your project, and think about how you are interested in generalizing the simple bikeshare model.  Your project proposal will be due Wednesday.</li>
+    <li>Read Sections 3.4&ndash;3.6 and 4.5 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.</li>   <li>Do some exploration of the documentation from pyplot's plot function.  See https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html or https://matplotlib.org/users/pyplot_tutorial.html or https://matplotlib.org/2.0.2/examples/index.html.  Look to see how you can modify the style of plots in an interesting way.  Try it out on some of the plots we've seen so far and share with us the most interesting modification you were able to make as the answer to today's <b>Daily Question</b> on <a href="https://classroom.google.com">Google Classroom</a>.
+    <li><b>Homework Questions:</b> Complete the following homework questions in your homework notebook. <span style="color: #A0A;">It is highly suggested that you work with one or more classmates on this assignment!</span></li>
+    <br><b>Comprehension/Vocabulary</b> (Fill in the blanks)
+    <ul>
+
+        <li><b>4-1.</b> A _______ causes a function to end immediately without running any additional statements.</li>
+        <li><b>4-2.</b> == is a _______, and should not be confused with =, which is a(n) _______.</li>
+        <li><b>4-3.</b> Write down the fundamental steps of incremental development.</li>
+    </ul>
+    <b>Coding</b>
+    <ul>
+        <li><b>4-4.</b> Build upon our coin flipping Jupyter notebook from earlier homework assignments.  Create a new function called <span style="font-family: monospace">flip_count</span> that takes n and p as parameters, where n is the number of times to flip and p is the probability of coin flip falling heads.  It should output the number of heads and tails that are seen.  Run the function a couple of times with different parameters to make sure it works how you would expect. </li> 
+    </ul>
+        <!-- Give a definition of a metric.  Give an example of a metric. -->
+        <!-- What is the difference between the the two functions bike_to_wellesley() and bike_to_wellesley(state)?  Write a paragraph that gives one or more reasons why the first would be better than the second and one or more reasons why the second would be better than the first.-->
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Introducing Parameters</li>
+    <li>Negative bikes</li>
+    <li>Metrics</li>
+    <li>Functions that return values</li>
+    <li>Discussion of <a href="project.html">Mini-Project 1</a></li> 
+    <li><ax href="notes/245sp19day2.pdf">Constructing a Problem Statement</ax></li> 
+    <li>Link to in-class modified notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/coinflip-inclass.ipynb">Coin Flip Notebook</a></li>
+    <li>Link to in-class modified notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/chap03-inclass.ipynb">Chapter 3</a></li>
+</ul>
+
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Wednesday, February 13</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Work with your group to create a precise problem statement that you will investigate for Mini-Project 1.  Each group should send Prof. Chris one email before 9am on February 13 with (a) your group members and (b) the precise problem statement you will be investigating. </li>
+    <li>Read Chapter 4 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.</li>
+    <li>Contribute to today's Daily Question on <a href="https://classroom.google.com">Google Classroom</a>.</li>
+    <li><b>Homework Questions:</b> Complete the following homework questions in your homework notebook.</li>
+    <b>Objects</b> 
+    <ul>
+        <li><b>5-1.</b> Write a sentence that explains what a <span style="font-family: monospace">SweepSeries</span> object is.  How does it compare to a <span style="font-family: monospace">TimeSeries</span> object, if at all?</li>
+    </ul>
+    <b>Syntax</b> 
+    <ul>
+        <li><b>5-2.</b> 
+            <br><b>(a)</b> Write down the syntax for the <span style="font-family: monospace">linspace</span> command.  
+            <br><b>(b)</b> What array is generated by <span style="font-family: monospace">linspace(0,1,5)</span>?  
+            <br><b>(c)</b> What array is generated by <span style="font-family: monospace">linspace(2,10,4)</span>?  
+            <br><b>(d)</b> How would you use <span style="font-family: monospace">linspace</span> to generate the array with numbers 0.0, 0.3, 0.6, 0.9, and 1.2?  
+            <br><b>(e)</b> How would you use <span style="font-family: monospace">linspace</span> to generate the array with numbers 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, and 0.7?</li>
+    </ul>
+    <b>Coding</b>
+    <ul>
+        <li><b>5-3.</b> Complete the exercises at the end of the Chapter 3 Jupyter notebook having to do with keeping track of the time until the first customer arrives and doesn't find a bike.  Write down a few of the answers you receive for "<span style="font-family: monospace">olin_empty</span>", "<span style="font-family: monospace">wellesley_empty</span>", and "<span style="font-family: monospace">t_first_empty</span>".
+        </li>
+    </ul>
+    <b>Analysis</b> 
+    <ul>
+        <li><b>5-4.</b> In a paragraph or two, explain what it means to sweep a variable.  Why would this be a useful thing to do? </li>
+    </ul> 
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Sweeping variables</li>
+    <li>Completion of the discussion of the bikeshare model.</li>
+    <li>Determining Explicit Assumptions</li>
+    <li>Prof. Chris will walk around and talk with you about your project.</li>
+    <li>Link to in-class modified notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/chap04-inclass.ipynb">Chapter 4</a></li>
+</ul>
+                    
+<!--
+        <li><b>5-4.</b> Write a function called <span style="font-family: monospace">flip_until_tails</span> that takes as parameters a <span style="font-family: monospace">System</span> object like <span style="font-family: monospace">penny</span> and a probability <span style="font-family: monospace">p</span>.  The function should call <span style="font-family: monospace">flip</span> up to 1000 times with probability <span style="font-family: monospace">p</span> and return the number of <b>heads before the first tails</b>. 
+            <br><i>You may find it helpful to use a </i><span style="font-family: monospace">return</span><i> statement when the first tails occurs to return immediately without completing the loop.
+            </i>
+        </li>-->
+
+
+<div class="date"><span style="color: #A0A;"><i><b>No class on Monday, February 18</b></i></span></div>
+
+
+<div class="defn">Start working on your simulation early.  If you and your group are having issues with the coding of the simulation, stop by during office hours Tuesday or schedule an appointment to talk with me.</div>
+
+                    
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Wednesday, February 20</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Work in your group to modify the bikeshare simulation to address your problem statement.</li>
+    <li>Contribute to today's Daily Question on <a href="https://classroom.google.com">Google Classroom</a> with any further questions about the bikeshare model.</li>
+    <li>Prepare your homework notebook to be turned in today.</li>
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>I will collect homework notebooks.</li>
+    <li>Assumptions vs. Expectations</li>
+    <li>Results</li>
+    <li>Prof. Chris will walk around and talk with you about your project.</li>
+</ul>
+
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Monday, February 25</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Complete your project.</li>
+    <li>Each group should bring in THREE paper copies of their writeup.</li>
+    <li>Each group should have access to their python notebook for feedback too.</li>
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Peer Review Day.</li>
+</ul>
+
+
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Wednesday, February 27</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Use Monday's peer feedback to revise your project for submission.</li>  
+    <li><span style="color:#A0A;font-weight:900">Please bring in a paper version of your writeup.</span></li>
+    <li><span style="color:#A0A;font-weight:900">Turn in your final project here:</span></li>
+    <ul>
+        <li><a href="https://www.dropbox.com/request/HhQ2GSFuA4gKdpfSPoT7">Upload your writeup here</a>. Make sure its file name is of the form <i>p1-Names.pdf</i> or <i>p1-Names.pptx</i>. (Replace "Names" by the first names of your group members, so it looks like p1-AliceChrisQiang.pdf)  Only one submission per group is necessary.</li>
+        <li><a href="https://www.dropbox.com/request/NeREfOiTxGyYjOk6XQL2">Upload your code file here</a>. (You may have to download it from Azure Notebooks first.) Make sure its file name is <i>p1-Names.ipynb</i> and that it runs WITH NO ERRORS when all the cells are evaluated in order from top to bottom.  Only one submission per group is necessary.</li>
+        <li><a href="https://www.dropbox.com/request/GIpjKJMMkoECXAesiy3i">Upload your group dynamics paragraph here</a>. Make sure its file name is <i>p1-FirstName.txt</i> or <i>p1-FirstName.pdf</i> or <i>p1-FirstName.docx</i>.  Reminder: There should be one of these from each person, written independently.</li>
+    </ul>
+    <li>Read through Chapter 5, Section 6.1, and Section 10.2 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.</li>
+    <li><b>Homework Questions:</b> Complete the following homework questions in your homework notebook.</li>
+    <b>Objects</b> 
+    <ul>
+        <li><b>6-1.</b> Write a sentence that explains what a <span style="font-family: monospace">System</span> object is. How does it compare to a <span style="font-family: monospace">State</span> object, if at all?</li>
+        <li><b>6-2.</b> Write a sentence that explains what a <span style="font-family: monospace">DataFrame</span> object is.  How does it compare to a <span style="font-family: monospace">TimeSeries</span> object, if at all?</li>
+    </ul>
+    <b>Syntax</b> 
+    <ul>
+        <li><b>6-3.</b> What is the syntax of <span style="font-family: monospace">linrange</span>?  How does it compare to <span style="font-family: monospace">linspace</span>, if at all?</li>
+    </ul>
+    <li>We are going to be thinking about population growth.  Contribute to today's Daily Question on <a href="https://classroom.google.com">Google Classroom</a> with suggestions of populations that change over time.</li>
+
+</ul>
+
+<div class="defn">In class: </div>
+<ul>
+    <li>Chapters 5 and 6 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.</li>
+    <li>Link to in-class modified notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/chap05-inclass.ipynb">Chapter 5</a></li>
+    <li>Discussion of growth models.</li>
+</ul>
+
+
+<!----------------------------
+******************************
+------------------------------>
+<div class="date">No School Monday, March 4 &mdash; Snow Day!</div> 
+                    
+<div class="date">Wednesday, March 6</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Read Chapters 6 and 7 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.</li>
+    <li><b>Homework Questions:</b> Complete the following homework questions in your homework notebook.</li>
+    <b>Comprehension</b>
+    <ul>
+        <li><b>7-1.</b> Write a paragraph that explains what the author means when they talk about "factoring out the update function", the title of Section 6.3.</li>
+        <li><b>7-2.</b> What is happening in Figure 7.2 on page 54?</li>
+    </ul>
+    <b>Coding</b>
+    <ul>
+        <li><b>7-3.</b> <b>(a)</b> Find any webpage that has a table of data that changes over time <b>(b)</b> use the tools we discussed from Chapter 5 to import this data into python with the time column as the index column. <b>(c)</b> Change the column headings to have short, simple names. <b>(d)</b> Choose one column to single out as a Series object, and plot the dataset.
+        </li>
+        <li><b>7-4.</b> Read Section 7.3 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a> entitled "Dysfunctions".  The examples from the text are coded in the Chapter 7 python notebook.  Work through the examples and try to understand the issues surrounding each of the examples.  In your homework notebook, write a paragraph in your own words that explains what is happening in each example.  Contribute to today's Daily Question on <a href="https://classroom.google.com">Google Classroom</a> with a question about what is happening, or a confusion you are having, or one that you figured out!  If everything was clear to you, then help out your fellow classmates with an answer.</li>
+    </ul>
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Discussion of growth models.</li>
+    <li>Chapters 6 and 7 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.</li>
+    <li>Link to in-class modified notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/chap06-inclass.ipynb">Chapter 6</a></li>
+    <li>Link to in-class modified notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/chap07-inclass.ipynb">Chapter 7</a></li>
+</ul>
+
+
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Monday, March 11</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Revise your Project 1.</li>
+    <li><span style="color:#A0A;font-weight:900">Please bring in a paper version of your writeup.</span></li>
+    <li><span style="color:#A0A;font-weight:900">Turn in the revised project here:</span></li>
+    <ul>
+        <li><a href="https://www.dropbox.com/request/rl4WD2QwXuS8EI84Z9UD">Upload your writeup here</a>. </li>
+        <li><a href="https://www.dropbox.com/request/eZQasEBk7I7v2Yt2IAqp">Upload your code file here</a>. </li>
+    </ul>
+    <li>Contribute to today's Daily Question on <a href="https://classroom.google.com">Google Classroom</a> by sharing two populations that have growth functions that are not the same type and justify your reasoning.</li>
+    
+    <!-- Note: the responses I got really were not populations!  They were just numerical quantities that changed over time instead.  Maybe that's OK.  But maybe insist that one be a population? -->
+
+    <li>Upload your Python notebook from Homework Question 7-3 by 9am on 3/11.  At the top of your notebook in a text cell write a small paragraph about where the data comes from.  If you ran into trouble, use this space to describe your troubles. 
+        <ul>
+            <li><a href="https://www.dropbox.com/request/4NIDfYmoKRlasUVpT5Y9">Upload your Python notebook here</a>. </li>
+        </ul>
+    </li>
+</ul>
+                    
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Coding our population model.</li>
+    <li>Link to in-class modified notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/chap07-inclass.ipynb">Chapter 7</a></li>
+</ul>
+                    
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Wednesday, March 13</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Read through the description of <a href="project.html">Project 2</a>. Start to think about which of the options you are most interested in simulating. 
+    </li>
+    <li>In the code folder where all the python notebooks are is a file named "rabbits.ipynb". Read through the notebook through the cell containing the code
+<blockquote><pre>
+system = make_system()
+run_simulation(system)
+final_population(system)
+</pre></blockquote>
+        We will be discussing this in class.
+        </li>
+    <li>If you don't remember when we discussed sweeping variables in class, re-read Section 4.4 of our book.</li>
+    <li>Contribute to today's Daily Question on <a href="https://classroom.google.com">Google Classroom</a> by asking a question about the population model. If you also share a similar concern to a classmate, let them know, and if you are able to answer any questions, please share your knowledge.</li>
+</ul>
+                    
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Discussion of Daily Question</li>
+    <li>The Rabbit Model</li>
+    <li>Sweeping variables.</li>
+    <li>Link to in-class modified notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/rabbits-inclass.ipynb">Rabbit Model</a></li>
+    <li>Discussion of the Project Deliverables</li>
+</ul>
+                        
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Monday, March 18</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Decide who you want to work with on your project and decide which of the project options you are most interested in pursuing.  Start collecting data for your populations of interest.  Bring these ideas to the brainstorming session in class this day.</li>
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Explanatory vs. Predictive</li>
+    <li>Work on the <ax href="notes/245sp19p1firstcut.pdf">Brainstorming and Planning worksheet</ax></li>
+    <li>Prof. Chris will walk around and talk with you about your project and your worksheet.</li>
+</ul>
+                        
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Wednesday, March 20</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Read Chapter 8 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.</li>
+    <li>Complete the Brainstorming and Planning worksheet and bring it to class.</li>
+    <li>Hone the primary question you and your group wish to investigate and have it ready for class this day.  Bring in your strategy for modeling the growth of your population(s). Think about the growth function(s) assumptions underlying your simulation. Make progress on importing the data you want to analyze into a Python notebook.</li>
+
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Model Assumptions &amp; Methodology</li>
+    <li>Differential Equations</li>
+    <li>After that we will have an in-class project work day.  We will make sure everyone has their data in Python and has a plan for their underlying growth model and update function.</li>
+</ul>
+
+
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Monday, March 25</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Continue your project work. By this date, you must have translated your population dynamics model into Python and run the simulation.  You should have decided upon a secondary question and that you will answer by determining a metric and sweeping a parameter.
+    </li>
+<!--    <li>Contribute to today's Daily Question on <a href="https://classroom.google.com">Google Classroom</a> by sharing your thoughts on the ways in which you would judge one model to be better than another.</li>    -->
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>In what ways can a model be good?  <a href="notes/245sp19good.pdf">Download notes here</a> <a href="notes/245sp19goodc.pdf">'</a></li>
+    <li>In-class work day.  Prof. Chris will walk around and talk with you about your project.</li>
+</ul>
+                    
+<!----------------------------
+******************************
+------------------------------>
+<div class="date">Wednesday, March 27</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Continue work on your project.</li>   
+    <li>Your python project results (population simulation and variable sweep) should be complete by today, leaving time for your group to work on the analysis and complete the quad chart by Monday.  
+    </li>
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>In-class work day.  Prof. Chris will walk around and talk with you about your project.</li>
+</ul>
+                    
+<!----------------------------
+******************************
+------------------------------>
+<div class="date">Monday, April 1</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Continue work on your project.</li>
+<!--    <li>Read Chapter 11 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.</li>
+    <li><b>Homework Questions:</b> Complete the following homework questions in your homework notebook.</li>
+    <br><b>Comprehension/Vocabulary</b> (Fill in the blanks)
+    <ul>
+        <li><b>9-1.</b> An SIR model is an example of a _______ model.</li>
+        <li><b>9-2.</b> What is a <span style="font-family: monospace">TimeFrame</span> object?  How does it compare to a <span style="font-family: monospace">TimeSeries</span> object, if at all?</li>
+    </ul>-->
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Discussion of Chapter 11 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.</li> 
+    <li>The SIR model</li>
+</ul>
+                    
+
+<!----------------------------
+******************************
+------------------------------>
+                    
+<div class="date">Wednesday, April 3</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Bring the final version of your Quad Chart to class.  (Have your digital slides available to put on your table's screen and bring a print-out of the four slides too.)  Prepare for your presentation as if you were presenting to the whole class.  We will be doing a peer review.
+    </li>
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Peer Review of Project 2</li>
+    <li>Determination of the Presentation Order.</li>
+</ul>
+
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Monday, April 8</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Revise your project and prepare to present your work in class.
+    </li>
+    <li>Bring in your final Quad Chart (in poster format), your completed "Brainstorming and Planning" worksheet, and the Peer Review worksheets to class.</li>
+    <li><span style="color:#A0A;font-weight:900">Turn in your final project here:</span></li>
+    <ul>
+        <li><a href="https://www.dropbox.com/request/gTxCNOmulcSWdUMzIKOu">Upload your project slides here</a>. Make sure its file name is of the form <i>p1-Names.pdf</i> or <i>p1-Names.pptx</i>. (Replace "Names" by the first names of your group members, so it looks like p1-AliceChrisQiang.pdf)</li>
+        <li><a href="https://www.dropbox.com/request/Tnc0vW46FIXHkwI5hgqo">Upload your code file here</a>. Make sure its file name is <i>p1-Names.ipynb</i> and that it runs WITH NO ERRORS when all the cells are evaluated in order from top to bottom.</li>
+        <li><a href="https://www.dropbox.com/request/sUr0WunhlZjDtcbipoFu">Upload your group dynamics paragraph here</a>. Make sure its file name is <i>p1-FirstName.txt</i> or <i>p1-FirstName.pdf</i> or <i>p1-FirstName.docx</i>.  Reminder: There should be one of these from each person, written independently.</li>
+    </ul>
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Project Presentations</li>
+</ul>
+                    
+<!--    <li>Each group member should share one of your model's limitations for today's <b>Daily Question</b> on <a href="https://classroom.google.com/">Google Classroom</a>.</li> -->
+                    
+<!----------------------------
+******************************
+------------------------------>
+<div class="date">Wednesday, April 10</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Read Chapter 11 and Sections 12.1 and 12.2 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.</li>
+    <li><b>Homework Questions:</b> Complete the following homework questions in your homework notebook.</li>
+    <b>Objects</b> (Add to your Objects section.)
+    <ul>
+        <li><b>8-1.</b> What is a <span style="font-family: monospace">TimeFrame</span> object?  How does it compare to a <span style="font-family: monospace">TimeSeries</span> object or a <span style="font-family: monospace">DataFrame</span> object, if at all?</li>
+    </ul>
+    <b>Comprehension/Vocabulary</b> (Fill in the blanks)
+    <ul>
+        <li><b>8-2.</b> An SIR model is an example of a _______ model.</li>
+        <li><b>8-3.</b> In our model, we will model vaccination as moving people directly from the Susceptible state to the Recovered state.  Why is this a reasonable thing to do? </li>
+        <li><b>8-4.</b>  Getting vaccinated is not just good for you; it is also good for the people you might otherwise infect.  What is this phenomenon called?</li>
+    </ul>
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Programming the SIR model</li>
+    <li>Link to in-class notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/chap11-inclass.ipynb">Chapter 11</a></li>
+    <li>Link to in-class notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/chap12-inclass.ipynb">Chapter 12</a></li>
+</ul>
+
+
+<!----------------------------
+******************************
+------------------------------>
+           
+<div class="date">Monday, April 15</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Read over the information about <a href="project.html#3">Project 3</a>.</li>
+    <li>Complete the partner preferences survey posted on Google Classroom <b>before noon on Sunday, April 14</b>.</li>
+    <li>Re-read Chapter 11 from where we left off in class and read Chapter 12 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.</li>
+    <li>Contribute to today's Daily Question on <a href="https://classroom.google.com">Google Classroom</a> by asking a question about the SIR model or its implementation.</li>    
+    <li><b>Homework Questions:</b> Complete the following homework questions in your homework notebook.</li>
+    <b>Syntax</b> (Add to your Syntax section.)
+    <ul>
+        <li><b>9-1.</b> Suppose <span style="font-family: monospace">frame</span> is a <span style="font-family: monospace">TimeFrame</span> object with columns labeled 'A', 'B', 'C', and 'D'. 
+            <ul>
+                <li type="a">What do you type to access <span style="font-family: monospace">frame</span>'s first column?</li>
+                <li type="a">What do you type to access <span style="font-family: monospace">frame</span>'s first row of data?</li>
+                <li type="a">What do you type to plot all the data in <span style="font-family: monospace">frame</span>?</li>
+            </ul> 
+        </li>
+        <li><b>9-2.</b> If <span style="font-family: monospace">S</span> is a <span style="font-family: monospace">TimeSeries</span> object, What is the difference between <span style="font-family: monospace">S.max</span> and <span style="font-family: monospace">S.idxmax</span>? </li>
+    </ul>
+    <br><b>Comprehension/Vocabulary</b> (Fill in the blanks)
+    <ul>
+        <li><b>9-3.</b> For what real-world reasons might we like to know the largest value of (one or more of) S, I, or R and when it might happen?  </li>
+        <li><b>9-4.</b> What does the book say that "hand washing" does to the model?  And why should that be the case?</li>
+        <li><b>9-5.</b> If you change the time between contacts, how should that impact how many people will be infected and the dynamics of the number of people infected over time?  Similarly, if you change the recovery time, how should that impact how many people will be infected and the dynamics of the number of people infected over time?</li>
+<!--        <li><b>11-2.</b> When <span style="font-family: monospace">+</span> is used with strings, what happens and what is it called? (See Section 13.2)</li> -->
+    </ul>
+    <b>Coding</b> 
+    <ul>
+        <li><b>9-6.</b>  Modify the tc and tr numbers in the Chapter 11 Python Notebook, re-run the simulation, and determine how many people are infected as those numbers change.  See if the final result matches the expectations you gave in your answer to Question 9-5.</li>
+    </ul> 
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Implementation of SIR model in Python</li>
+    <li>Link to in-class notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/chap11-inclass.ipynb">Chapter 11</a></li>
+    <li>Link to in-class notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/chap12-inclass.ipynb">Chapter 12</a></li>
+</ul>
+                        
+<!----------------------------
+******************************
+------------------------------>
+           
+<div class="date">Wednesday, April 17</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Meet with your partner from <a href="project.html">Project 3</a> and determine which of the general project types you will have as the basis for your project and what about that project type is interesting to you.  This <a href="notes/245sp19p3brainstorming.pdf">brainstorming worksheet</a> may be helpful.</li>
+    <li>Read Chapter 17 of <a href="http://greenteapress.com/wp/modsimpy/">Modeling and Simulation in Python</a>.</li>
+    <li>Skim the Wikipedia page about <a href="https://en.wikipedia.org/wiki/System_dynamics">System Dynamics</a> and look at the pictures on this webpage about <a href="https://thesystemsthinker.com/step-by-step-stocks-and-flows-converting-from-causal-loop-diagrams/">Stocks and Flows</a>.</li>
+    <li><b>Homework Questions:</b> Complete the following homework questions in your homework notebook.</li>
+    <br><b>Comprehension/Vocabulary</b> (Fill in the blanks)
+    <ul>
+        <li><b>10-1.</b> Severe hyperglycemia is the defining symptom of  ______.</li>
+        <li><b>10-2.</b> In the glucose minimal model, the initial concentration of glucose is not really measurable so it is treated as a ______.</li>
+        <li><b>10-3.</b> What are the "populations" that change over time that are simulated in the glucose minimal model?</li>
+        <li><b>10-4.</b> What are the "populations" that change over time that are simulated in a product adoption model?</li>
+    </ul>
+    <b>Coding</b> 
+    <ul>
+        <li><b>10-5.</b> There are three metrics given in the Exercise in the Metric section of the Chapter 12 python notebook. Create functions that implement <b>each of these three metrics</b>, just as we have created a <span style="font-family: monospace">calc_total_infected</span> function that computes the metric of the number of total people who were infected during the simulation by taking as an input the <span style="font-family: monospace">TimeFrame</span> named <span style="font-family: monospace">results</span>. </li>
+    </ul>
+    
+    <!-- How does Section 17.4 interpolate() work? -->
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Pharmokinetics</li>
+    <li>Product adoption</li>
+    <li>Implementing these multi-state models in Python</li>
+    <li>Link to in-class notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/chap17-inclass.ipynb">Chapter 17</a></li>
+    <li>Link to in-class notebook: <a href="https://notebooks.azure.com/qzzq/libraries/ModSimPy-sp19/html/code/product-inclass.ipynb">Product Adoption</a></li>
+
+</ul>
+
+
+                          
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Monday, April 29</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Work to come up with a project topic / proposal with your groupmate.  Determine the precise question you want to answer for your project.  One member of each group should email this question to Prof. Chris before 9am on Monday 11/26.  It may be helpful to use the <a href="notes/245sp19p3brainstorming.pdf">brainstorming worksheet</a> as a guide.</li>
+    <li>Come up with your expectations about what your results will say about your problem statement.</li>
+    <li>Set up a skeleton python notebook with the basics of your simulation.  In other words, make sure the simplest version of your model is working correctly before you start making any modifications related to your project statement. </li>
+    <li>Contribute to today's Daily Question on <a href="https://classroom.google.com">Google Classroom</a> by suggesting modifications to your model's assumptions.</li>  
+    <!-- This did not work well.  Be clear about what I mean by model assumptions.-->
+    <li>Prepare your homework notebook for collection on Monday, April 29.</li>
+    <li>Submit your code for <a href="https://www.dropbox.com/request/uJmgwUUyaE2AJhqhhRPE">Homework 10-5</a> here.</li>
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Introduction to errors in the modeling process</li>
+<!--    <li>Adam discuss errors?</li> -->
+    <li>In-class work on your simulation.</li>
+    <li>Prof. Chris will come around to give feedback about your proposed project question.</li>
+</ul>
+
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Wednesday, May 1</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Continue your work on your project's simulation.</li>
+    <li>Do a parameter sweep for a parameter of your choosing.</li>
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>In-class work on your project.</li>
+</ul>
+
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Monday, May 6</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Complete your work on your project's simulation.</li>
+    <li>Interpret your results as real-world answers to your problem statements.</li>
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>In-class work on your project.</li>
+    <li>Focus on model assumptions, methodology, and errors.</li>
+</ul>
+
+
+<font size="+1"><font color=red>•</font><font color=orange>•</font><font color=yellow>•</font><font color=green>•</font><font color=blue>•</font><font color=purple>•</font></font> Please fill out the college-wide <a href="https://p5.courseval.net/etw/ets/et.asp?nxappid=5Q2&nxmid=start">course evaluations</a>.  This is different from any course evaluations that I request on Google Classroom.  Thank you for your feedback! <font size="+1"><font color=purple>•</font><font color=blue>•</font><font color=green>•</font><font color=yellow>•</font><font color=orange>•</font><font color=red>•</font></font>
+
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Wednesday, May 8</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Continue work on your project and writeup.</li>
+    <li>Contribute to today's Daily Question on <a href="https://classroom.google.com">Google Classroom</a> about your model's limitations.</li>    
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>In-class work on your project.</li>
+    <li>How to write an abstract</li>
+</ul>
+                    
+                    
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Monday, May 13</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Complete the writeup for your project. Bring TWO paper copies of your project to class.</li>
+    <li>Prepare for your presentation as if you were presenting to the whole class. Have your digital slides available to put on your table's screen. </li>
+    <li>Please make an effort to fill out the college-wide <a href="https://p5.courseval.net/etw/ets/et.asp?nxappid=5Q2&nxmid=start">course evaluations</a>. Thank you for your feedback!</li>
+</ul>
+                    
+<div class="defn">In class: </div>
+<ul>
+    <li>Peer Review Day.</li>
+</ul>
+
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Wednesday, May 15</div> 
+<ul>
+    <li>Incorporate the feedback from peer review day into your project.  If you would like Prof. Chris to give you feedback on your writeup and presentation so far, send the draft by today at 1:00pm.  I will reply with feedback about where you should focus your revision efforts by Friday, May 17.</li>
+    <li>For clarity: There's no class today.</li>
+</ul>
+
+
+
+<!----------------------------
+******************************
+------------------------------>
+
+<div class="date">Monday, May 20</div> 
+<div class="defn">Before class:</div>
+<ul>
+    <li>Revise your project and prepare to present your work in class.
+    </li>
+    <li><span style="color:#A0A;font-weight:900">Turn in your final project here:</span></li>
+    <ul>
+        <li><a href="https://www.dropbox.com/request/IUK0Lsyihdab8kOyXicK">Upload your presentation slides here</a>. Make sure its file name is of the form <i>p3-Names.pdf</i> or <i>p3-Names.pptx</i>. (Replace "Names" by the first names of your group members, so it looks like p1-AliceChrisQiang.pdf)</li>
+        <li><a href="https://www.dropbox.com/request/PcQDXcGQPTsyWz5KUKfI">Upload your writeup here</a>. Make sure its file name is <i>p3-Names.docx</i> or <i>p3-Names.pdf</i>.</li>
+        <li><a href="https://www.dropbox.com/request/10j7j59n7jLlArTgOEjk">Upload your python notebook here</a>. Make sure its file name is <i>p3-Names.ipynb</i> and that it runs WITH NO ERRORS when all the cells are evaluated in order from top to bottom.</li>
+        <li><a href="https://www.dropbox.com/request/iEQ1qpIGQsXkW2Wbyfkf">Upload your group dynamics paragraph here</a>. Make sure its file name is <i>p3-FirstName.txt</i> or <i>p3-FirstName.pdf</i> or <i>p3-FirstName.docx</i>.  Reminder: There should be one of these from each person, written independently.</li>
+    </ul>
+</ul>
+
+<div class="defn">In class: </div>
+<ul>
+    <li>Project Presentations.</li>
+    <li>Your writeup, presentation slides, and python code are due before class on May 20.</li>
+    <li>Your group dynamics paragraph is due by the evening of May 20.</li>
+</ul>
+
+
+        <!--       -->     
+
+
+                        
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </div> <!-- End course_main-->
+            </div>  <!-- End middle -->  
+
+            <div class="footer_wrap">
+                 <div class="footer">
+                Christopher Hanusa   
+                 <span class="right">  
+                     <a href="../../../index.html"><img width="32" height="32" style="background: #fff; " src="../../../images/h.png" alt="Home page" /></a> 
+                     <a href="http://mathzorro.blogspot.com/"><img width="32" height="32" src="../../../images/b.png" style="vertical-align: center;" alt="Home page" /></a> 
+                     <a href="https://plus.google.com/+ChristopherHanusa"><img width="32" height="32" src="../../../images/g.png" style="vertical-align: center;" alt="Home page" /></a> 
+                     <a href="http://twitter.com/mathzorro"><img width="32" height="32" src="../../../images/t.png" alt="Home page" /></a> 
+                     <a href="https://www.facebook.com/pages/Christopher-Hanusa/553568864724342"><img width="32" height="32" src="../../../images/f.png" alt="Home page" /></a></span>
+                 </div>
+                 
+            </div>
+        </div> <!-- End container -->
+    </body>
+</html>

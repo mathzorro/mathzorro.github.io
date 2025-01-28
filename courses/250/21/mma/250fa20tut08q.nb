@@ -1,0 +1,527 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     20180,        519]
+NotebookOptionsPosition[     16840,        452]
+NotebookOutlinePosition[     17261,        469]
+CellTagsIndexPosition[     17218,        466]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["2D Graphics Primitives", "Title",
+ CellChangeTimes->{{3.461405268132181*^9, 3.461405274978758*^9}, {
+  3.461405374110767*^9, 3.461405382736993*^9}, {3.461405964606715*^9, 
+  3.461405964996537*^9}, {3.461412674365797*^9, 3.461412678153265*^9}, {
+  3.47448983369319*^9, 3.474489837928254*^9}, {3.630696562351103*^9, 
+  3.630696568117642*^9}, {3.631988928117742*^9, 3.6319889301724463`*^9}, {
+  3.632152715690145*^9, 3.632152719687695*^9}, {3.6325873465991592`*^9, 
+  3.632587350748754*^9}, {3.633195273613469*^9, 3.633195283053203*^9}, {
+  3.634662798361207*^9, 3.634662802015071*^9}, {3.809769332567151*^9, 
+  3.8097693405475855`*^9}},ExpressionUUID->"5f753982-94c8-4c4c-ab0f-\
+0d5c4050c0cb"],
+
+Cell["Comprehension Questions", "Subtitle",
+ CellChangeTimes->{{3.8097693517175198`*^9, 
+  3.809769354966945*^9}},ExpressionUUID->"8fe8557e-0732-49aa-bbfd-\
+4621c5f57f11"],
+
+Cell[TextData[{
+ "Math 250 - Math with ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ "\nChristopher Hanusa"
+}], "Subsubtitle",
+ CellChangeTimes->{{3.4614053946645927`*^9, 3.4614054230893087`*^9}, {
+  3.461405971637244*^9, 3.4614060079862947`*^9}, {3.474489844264483*^9, 
+  3.474489895841402*^9}, {3.505485689221858*^9, 3.505485696180904*^9}, {
+  3.53815066431697*^9, 3.538150664587603*^9}, {3.630691352563725*^9, 
+  3.6306913589949083`*^9}, {3.632152722336176*^9, 3.6321527477452803`*^9}, {
+  3.63215587546747*^9, 3.6321558797854424`*^9}, {3.632587355469249*^9, 
+  3.632587384845799*^9}, {3.633195265968095*^9, 
+  3.633195266341083*^9}},ExpressionUUID->"f6e6b71f-e510-4253-be20-\
+8bb56852f0f4"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "8-1. Instead of typing each coordinate (as in the tutorial), use a ",
+ StyleBox["Table", "Input",
+  FontSize->18],
+ " command to create this ZigZag pattern:\n",
+ Cell[BoxData[
+  GraphicsBox[
+   LineBox[{{0, 0}, {1, 1}, {2, 0}, {3, 1}, {4, 0}, {5, 1}, {6, 0}, {7, 1}, {
+    8, 0}}]]],
+  CellChangeTimes->{3.634665652678072*^9},ExpressionUUID->
+  "9221f47a-5182-474d-a065-c84b6a562cb6"]
+}], "Subsection",
+ CellChangeTimes->{{3.634665626911276*^9, 3.634665650863975*^9}, {
+   3.6346657272744217`*^9, 3.634665857324667*^9}, {3.634828638299554*^9, 
+   3.63482867529321*^9}, 3.63482872346579*^9, {3.634832975702161*^9, 
+   3.634833011181458*^9}, {3.8097791006360493`*^9, 
+   3.8097791102373066`*^9}},ExpressionUUID->"7fb8b439-5a05-4694-a7f8-\
+3c598a80e815"],
+
+Cell[CellGroupData[{
+
+Cell["Hint 1 (Expand cell to see)", "Subsubsection",
+ CellChangeTimes->{{3.633794642141481*^9, 3.633794650029758*^9}, 
+   3.633795004710946*^9, 3.6347496894940567`*^9, {3.634828773816503*^9, 
+   3.634828774192566*^9}},ExpressionUUID->"0d1241af-c5ff-41eb-a0ae-\
+ce8ca6b0e800"],
+
+Cell["\<\
+Use the first coordinate as the indexing variable in your Table command to \
+get the list:\
+\>", "Text",
+ CellChangeTimes->{{3.633794613029624*^9, 3.633794844218945*^9}, {
+  3.633795191820142*^9, 3.63379519418806*^9}, {3.6337953171283503`*^9, 
+  3.633795318655305*^9}, {3.634749637136121*^9, 3.6347496793822107`*^9}, {
+  3.634826500361858*^9, 3.634826526087974*^9}, {3.634828311627861*^9, 
+  3.634828354169487*^9}, {3.634828737665312*^9, 3.63482873872504*^9}, {
+  3.746454187394703*^9, 
+  3.7464541957573566`*^9}},ExpressionUUID->"b3619296-034c-49f4-a764-\
+1a8afd91b9a1"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "0"}], "}"}]}], "}"}]], "Input",ExpressionUUID->\
+"ec386782-25da-431f-b8e3-5fde71f17578"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Hint 2 (Expand cell to see)", "Subsubsection",
+ CellChangeTimes->{{3.634828322985797*^9, 3.634828329249914*^9}, {
+  3.634828778248373*^9, 
+  3.6348287802161713`*^9}},ExpressionUUID->"5405c922-9651-4771-b180-\
+1f53a34d970d"],
+
+Cell[TextData[{
+ "Use an ",
+ StyleBox["If", "Input",
+  FontSize->14],
+ " statement and a ",
+ StyleBox["Q", "Input",
+  FontSize->14],
+ " command to condition on whether the first entry is even or odd."
+}], "Text",
+ CellChangeTimes->{{3.633794613029624*^9, 3.633794844218945*^9}, {
+  3.633795191820142*^9, 3.63379519418806*^9}, {3.6337953171283503`*^9, 
+  3.633795318655305*^9}, {3.634749637136121*^9, 3.6347496793822107`*^9}, {
+  3.634826500361858*^9, 3.634826526087974*^9}, {3.634828311627861*^9, 
+  3.6348283210660763`*^9}},ExpressionUUID->"e945aff0-9336-419c-a9e6-\
+f0bb64bfae6e"]
+}, Closed]]
+}, Open  ]],
+
+Cell["\<\
+8-2. Modify your code from Question 8-1 to make the zigzag pattern longer \
+(from (0,0) to (100,0)), using a thick purple line!\
+\>", "Subsection",
+ CellChangeTimes->{{3.634828678661675*^9, 3.63482869052215*^9}, {
+  3.634828755160602*^9, 3.634828760960751*^9}, {3.809779113620844*^9, 
+  3.809779118526886*^9}},ExpressionUUID->"c3416495-f670-4450-85a1-\
+7f33df6b6c7e"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "8-3. Use ",
+ StyleBox["Table", "Input",
+  FontSize->18],
+ " commands to draw a grid of vertical and horizontal lines that looks like \
+graph paper, just like this."
+}], "Subsection",
+ CellChangeTimes->{{3.63477979338795*^9, 3.634779828015649*^9}, {
+  3.634825908993174*^9, 3.634825914285077*^9}, {3.634826379284554*^9, 
+  3.6348263816750717`*^9}, {3.63482839613761*^9, 3.634828398216661*^9}, {
+  3.634828693842081*^9, 3.634828694050105*^9}, {3.6660205407076187`*^9, 
+  3.666020542858429*^9}, {3.809779121416739*^9, 
+  3.809779121764186*^9}},ExpressionUUID->"403838a8-b991-4611-8763-\
+7fe726acb84a"],
+
+Cell[BoxData[
+ GraphicsBox[{{LineBox[{{0, 0}, {8, 0}}], LineBox[{{0, 1}, {8, 1}}], 
+    LineBox[{{0, 2}, {8, 2}}], LineBox[{{0, 3}, {8, 3}}], 
+    LineBox[{{0, 4}, {8, 4}}], LineBox[{{0, 5}, {8, 5}}], 
+    LineBox[{{0, 6}, {8, 6}}], LineBox[{{0, 7}, {8, 7}}], 
+    LineBox[{{0, 8}, {8, 8}}]}, {LineBox[{{0, 0}, {0, 8}}], 
+    LineBox[{{1, 0}, {1, 8}}], LineBox[{{2, 0}, {2, 8}}], 
+    LineBox[{{3, 0}, {3, 8}}], LineBox[{{4, 0}, {4, 8}}], 
+    LineBox[{{5, 0}, {5, 8}}], LineBox[{{6, 0}, {6, 8}}], 
+    LineBox[{{7, 0}, {7, 8}}], LineBox[{{8, 0}, {8, 8}}]}},
+  ImageSize->{117.68359375, Automatic}]], "Output",
+ CellChangeTimes->{
+  3.66602060674517*^9},ExpressionUUID->"2fd0eefc-bdb2-4340-819e-5143cde73f8f"],
+
+Cell[CellGroupData[{
+
+Cell["Hint 1 (Expand cell to see)", "Subsubsection",
+ CellChangeTimes->{{3.633794642141481*^9, 3.633794650029758*^9}, 
+   3.633795004710946*^9, 3.6347496894940567`*^9, {3.6348285229978952`*^9, 
+   3.634828523149871*^9}},ExpressionUUID->"6236dc9f-d81e-4b90-a515-\
+4da441f76570"],
+
+Cell["\<\
+Combine one Table command for the horizontal line segments and one Table \
+command for the vertical line segments.\
+\>", "Text",
+ CellChangeTimes->{{3.633794613029624*^9, 3.633794844218945*^9}, {
+  3.633795191820142*^9, 3.63379519418806*^9}, {3.6337953171283503`*^9, 
+  3.633795318655305*^9}, {3.634749637136121*^9, 3.6347496793822107`*^9}, {
+  3.634826500361858*^9, 3.634826526087974*^9}, {3.634828311627861*^9, 
+  3.634828354169487*^9}, {3.634828431897193*^9, 
+  3.6348285601731453`*^9}},ExpressionUUID->"f38c8a27-093d-487c-bd18-\
+cf428b3e0c7a"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Hint 2 (Expand cell to see)", "Subsubsection",
+ CellChangeTimes->{{3.633794642141481*^9, 3.633794650029758*^9}, 
+   3.633795004710946*^9, 3.6347496894940567`*^9, {3.634828524645742*^9, 
+   3.6348285249498987`*^9}},ExpressionUUID->"8ab46a8f-2c3e-4b51-8660-\
+7a4331331b89"],
+
+Cell["\<\
+How do you create TWO parallel horizontal lines?  What changed from line one \
+to line two?  Use this to figure out what your indexing variable should be in \
+the Table command.\
+\>", "Text",
+ CellChangeTimes->{{3.633794613029624*^9, 3.633794844218945*^9}, {
+  3.633795191820142*^9, 3.63379519418806*^9}, {3.6337953171283503`*^9, 
+  3.633795318655305*^9}, {3.634749637136121*^9, 3.6347496793822107`*^9}, {
+  3.634826500361858*^9, 3.634826526087974*^9}, {3.634828311627861*^9, 
+  3.634828354169487*^9}, {3.634828431897193*^9, 3.634828492622615*^9}, {
+  3.634828538141527*^9, 3.634828544397418*^9}, {3.6348285845337*^9, 
+  3.634828626275588*^9}},ExpressionUUID->"999390aa-a7a3-48d9-b63a-\
+9161c9321ab0"]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+8-4. Create a red square with black boundary and also put a blue circle on \
+the boundary of the square.\
+\>", "Subsection",
+ CellChangeTimes->{{3.7467837260641327`*^9, 3.746783808553591*^9}, {
+  3.746784920091242*^9, 3.74678493437827*^9}, {3.746784972420788*^9, 
+  3.7467849788756323`*^9}, {3.809779165573042*^9, 
+  3.809779165968604*^9}},ExpressionUUID->"99ccaaa8-b80e-4f87-993a-\
+f35808bfeb9c"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {RGBColor[1, 0, 0], EdgeForm[{GrayLevel[0], Thickness[Large]}], 
+    PolygonBox[{{0, 0}, {1, 0}, {1, 1}, {0, 1}}]}, 
+   {RGBColor[0, 0, 1], DiskBox[NCache[{1, Rational[1, 2]}, {1, 0.5}], 0.1]}},
+  ImageSize->{160.11328125, Automatic}]], "Input",
+ CellChangeTimes->{
+  3.746784969982373*^9},ExpressionUUID->"4b4c56ad-9638-4460-b0f1-\
+762fa9c1e0d4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "8-5. For this list of pairs of coordinate pairs, use the ",
+ StyleBox["Map", "Input",
+  FontSize->18],
+ " command to display all the corresponding line segments."
+}], "Subsection",
+ CellChangeTimes->{{3.746784071091445*^9, 3.7467841573558617`*^9}, {
+  3.746784506207089*^9, 3.746784532326695*^9}, {3.809779168958693*^9, 
+  3.8097791697134285`*^9}},ExpressionUUID->"d29aa2dc-b8e2-4747-9d90-\
+9a7ba1a62ae9"],
+
+Cell[BoxData[
+ RowBox[{"segments", "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"1", "/", "2"}], ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"1", "/", "2"}], ",", "1"}], "}"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"1", "/", "2"}], ",", 
+        RowBox[{"1", "/", "2"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "1"}], "/", "2"}], ",", 
+        RowBox[{"1", "/", "2"}]}], "}"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", 
+        RowBox[{"1", "/", "2"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", 
+        RowBox[{
+         RowBox[{"-", "1"}], "/", "2"}]}], "}"}]}], "}"}]}], "}"}]}]], "Input",\
+
+ CellChangeTimes->{{3.74678436680442*^9, 3.746784496634411*^9}, 
+   3.7467845445353413`*^9},ExpressionUUID->"e7f0136d-64ab-4de5-913e-\
+8080ddb64c86"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+8-6. Now add small circles on the endpoints of all the line segments from \
+Question 7.\
+\>", "Subsection",
+ CellChangeTimes->{{3.7467845386467733`*^9, 3.746784598792459*^9}, {
+  3.7467846646903467`*^9, 3.746784666402474*^9}, {3.809779172202177*^9, 
+  3.809779173004633*^9}},ExpressionUUID->"5c44d7c5-9a27-443c-bb3e-\
+effd22652660"],
+
+Cell[CellGroupData[{
+
+Cell["Hint 1.", "Subsubsection",
+ CellChangeTimes->{{3.746784582627668*^9, 
+  3.746784605312572*^9}},ExpressionUUID->"0c54741d-c7bc-4d4f-aa8b-\
+a076ee43ce22"],
+
+Cell[TextData[{
+ "Use the ",
+ StyleBox["Flatten", "Input",
+  FontSize->16],
+ " and ",
+ StyleBox["Map", "Input",
+  FontSize->16],
+ " commands."
+}], "Text",
+ CellChangeTimes->{{3.746784589016161*^9, 3.746784602704421*^9}, {
+  3.746784655178075*^9, 
+  3.746784677314793*^9}},ExpressionUUID->"6cef21a8-e2ac-4a9a-9830-\
+a874554b3f5b"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Hint 2.", "Subsubsection",
+ CellChangeTimes->{{3.7467846100488234`*^9, 
+  3.7467846137129593`*^9}},ExpressionUUID->"10782cc8-3825-42d3-a501-\
+14bd6ef4c52b"],
+
+Cell[TextData[{
+ "Make sure to use the additional option ",
+ StyleBox["Flatten[ \[Bullet] , 1]", "Input",
+  FontSize->16]
+}], "Text",
+ CellChangeTimes->{{3.746784615728901*^9, 3.746784645944108*^9}, {
+  3.746784688179196*^9, 
+  3.7467846917392397`*^9}},ExpressionUUID->"1dd24c8a-5ded-47f3-9ed9-\
+7f4b79a205f4"]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["8-7. Create a circle of circles like this:", "Subsection",
+ CellChangeTimes->{{3.8097725251089973`*^9, 3.809772539059149*^9}, {
+  3.809779137022003*^9, 3.8097791372827773`*^9}, {3.809779175125106*^9, 
+  3.809779178085317*^9}},ExpressionUUID->"f88ffaa5-768b-4ec3-9f73-\
+c07be5617d1c"],
+
+Cell[BoxData[
+ GraphicsBox[{CircleBox[{1, 0}, 0.05], 
+   CircleBox[
+    NCache[{(Rational[5, 8] + Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2],
+       Rational[1, 4] (-1 + 5^Rational[1, 2])}, {0.9510565162951535, 
+     0.30901699437494745`}], 0.05], 
+   CircleBox[
+    NCache[{Rational[1, 4] (1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+       Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {0.8090169943749475,
+      0.5877852522924731}], 0.05], 
+   CircleBox[
+    NCache[{(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^
+      Rational[1, 2], Rational[1, 4] (1 + 5^Rational[1, 2])}, {
+     0.5877852522924731, 0.8090169943749475}], 0.05], 
+   CircleBox[
+    NCache[{Rational[1, 4] (-1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+       Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+     0.30901699437494745`, 0.9510565162951535}], 0.05], 
+   CircleBox[{0, 1}, 0.05], 
+   CircleBox[
+    NCache[{Rational[1, 4] (1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+       Rational[1, 8] 5^Rational[1, 2])^
+      Rational[1, 2]}, {-0.30901699437494745`, 0.9510565162951535}], 0.05], 
+   CircleBox[
+    NCache[{-(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^
+       Rational[1, 2], 
+      Rational[1, 4] (1 + 5^Rational[1, 2])}, {-0.5877852522924731, 
+     0.8090169943749475}], 0.05], 
+   CircleBox[
+    NCache[{Rational[1, 4] (-1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+       Rational[-1, 8] 5^Rational[1, 2])^
+      Rational[1, 2]}, {-0.8090169943749475, 0.5877852522924731}], 0.05], 
+   CircleBox[
+    NCache[{-(Rational[5, 8] + Rational[1, 8] 5^Rational[1, 2])^
+       Rational[1, 2], 
+      Rational[1, 4] (-1 + 5^Rational[1, 2])}, {-0.9510565162951535, 
+     0.30901699437494745`}], 0.05], CircleBox[{-1, 0}, 0.05], 
+   CircleBox[
+    NCache[{-(Rational[5, 8] + Rational[1, 8] 5^Rational[1, 2])^
+       Rational[1, 2], 
+      Rational[1, 4] (1 - 5^
+       Rational[1, 2])}, {-0.9510565162951535, -0.30901699437494745`}], 0.05],
+    CircleBox[
+    NCache[{Rational[1, 4] (-1 - 5^
+       Rational[1, 2]), -(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^
+       Rational[1, 2]}, {-0.8090169943749475, -0.5877852522924731}], 0.05], 
+   CircleBox[
+    NCache[{-(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^
+       Rational[1, 2], 
+      Rational[1, 4] (-1 - 5^
+       Rational[1, 2])}, {-0.5877852522924731, -0.8090169943749475}], 0.05], 
+   CircleBox[
+    NCache[{Rational[1, 4] (1 - 5^
+       Rational[1, 2]), -(Rational[5, 8] + Rational[1, 8] 5^Rational[1, 2])^
+       Rational[1, 2]}, {-0.30901699437494745`, -0.9510565162951535}], 0.05], 
+   CircleBox[{0, -1}, 0.05], 
+   CircleBox[
+    NCache[{Rational[1, 4] (-1 + 
+       5^Rational[1, 2]), -(Rational[5, 8] + Rational[1, 8] 5^Rational[1, 2])^
+       Rational[1, 2]}, {0.30901699437494745`, -0.9510565162951535}], 0.05], 
+   CircleBox[
+    NCache[{(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^
+      Rational[1, 2], Rational[1, 4] (-1 - 5^Rational[1, 2])}, {
+     0.5877852522924731, -0.8090169943749475}], 0.05], 
+   CircleBox[
+    NCache[{Rational[1, 4] (1 + 
+       5^Rational[1, 2]), -(Rational[5, 8] + 
+        Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+     0.8090169943749475, -0.5877852522924731}], 0.05], 
+   CircleBox[
+    NCache[{(Rational[5, 8] + Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2],
+       Rational[1, 4] (1 - 5^Rational[1, 2])}, {
+     0.9510565162951535, -0.30901699437494745`}], 0.05]},
+  ImageSize->{238., Automatic}]], "Output",
+ CellChangeTimes->{{3.809779200755333*^9, 3.8097792303864713`*^9}},
+ CellLabel->
+  "Out[125]=",ExpressionUUID->"661d2052-0e9f-4f55-8acd-eda9ae35a417"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1260, 961},
+WindowMargins->{{Automatic, 58}, {-19, Automatic}},
+ShowSelection->True,
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"1e544f35-02b0-4b86-96ed-aa7c1b3145af"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 697, 10, 96, "Title",ExpressionUUID->"5f753982-94c8-4c4c-ab0f-0d5c4050c0cb"],
+Cell[1267, 34, 171, 3, 53, "Subtitle",ExpressionUUID->"8fe8557e-0732-49aa-bbfd-4621c5f57f11"],
+Cell[1441, 39, 701, 14, 51, "Subsubtitle",ExpressionUUID->"f6e6b71f-e510-4253-be20-8bb56852f0f4"],
+Cell[CellGroupData[{
+Cell[2167, 57, 769, 17, 137, "Subsection",ExpressionUUID->"7fb8b439-5a05-4694-a7f8-3c598a80e815"],
+Cell[CellGroupData[{
+Cell[2961, 78, 275, 4, 44, "Subsubsection",ExpressionUUID->"0d1241af-c5ff-41eb-a0ae-ce8ca6b0e800"],
+Cell[3239, 84, 581, 11, 35, "Text",ExpressionUUID->"b3619296-034c-49f4-a764-1a8afd91b9a1"],
+Cell[3823, 97, 640, 21, 30, "Input",ExpressionUUID->"ec386782-25da-431f-b8e3-5fde71f17578"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[4500, 123, 229, 4, 36, "Subsubsection",ExpressionUUID->"5405c922-9651-4771-b180-1f53a34d970d"],
+Cell[4732, 129, 582, 14, 35, "Text",ExpressionUUID->"e945aff0-9336-419c-a9e6-f0bb64bfae6e"]
+}, Closed]]
+}, Open  ]],
+Cell[5341, 147, 377, 7, 53, "Subsection",ExpressionUUID->"c3416495-f670-4450-85a1-7f33df6b6c7e"],
+Cell[CellGroupData[{
+Cell[5743, 158, 616, 13, 37, "Subsection",ExpressionUUID->"403838a8-b991-4611-8763-7fe726acb84a"],
+Cell[6362, 173, 709, 12, 134, "Output",ExpressionUUID->"2fd0eefc-bdb2-4340-819e-5143cde73f8f"],
+Cell[CellGroupData[{
+Cell[7096, 189, 277, 4, 44, "Subsubsection",ExpressionUUID->"6236dc9f-d81e-4b90-a515-4da441f76570"],
+Cell[7376, 195, 557, 10, 34, "Text",ExpressionUUID->"f38c8a27-093d-487c-bd18-cf428b3e0c7a"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[7970, 210, 277, 4, 36, "Subsubsection",ExpressionUUID->"8ab46a8f-2c3e-4b51-8660-7a4331331b89"],
+Cell[8250, 216, 711, 12, 56, "Text",ExpressionUUID->"999390aa-a7a3-48d9-b63a-9161c9321ab0"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9010, 234, 407, 8, 53, "Subsection",ExpressionUUID->"99ccaaa8-b80e-4f87-993a-f35808bfeb9c"],
+Cell[9420, 244, 379, 8, 159, "Input",ExpressionUUID->"4b4c56ad-9638-4460-b0f1-762fa9c1e0d4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9836, 257, 423, 9, 53, "Subsection",ExpressionUUID->"d29aa2dc-b8e2-4747-9d90-9a7ba1a62ae9"],
+Cell[10262, 268, 1201, 41, 28, "Input",ExpressionUUID->"e7f0136d-64ab-4de5-913e-8080ddb64c86"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11500, 314, 342, 7, 53, "Subsection",ExpressionUUID->"5c44d7c5-9a27-443c-bb3e-effd22652660"],
+Cell[CellGroupData[{
+Cell[11867, 325, 158, 3, 44, "Subsubsection",ExpressionUUID->"0c54741d-c7bc-4d4f-aa8b-a076ee43ce22"],
+Cell[12028, 330, 329, 12, 34, "Text",ExpressionUUID->"6cef21a8-e2ac-4a9a-9830-a874554b3f5b"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[12394, 347, 162, 3, 36, "Subsubsection",ExpressionUUID->"10782cc8-3825-42d3-a501-14bd6ef4c52b"],
+Cell[12559, 352, 310, 8, 34, "Text",ExpressionUUID->"1dd24c8a-5ded-47f3-9ed9-7f4b79a205f4"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12918, 366, 289, 4, 53, "Subsection",ExpressionUUID->"f88ffaa5-768b-4ec3-9f73-c07be5617d1c"],
+Cell[13210, 372, 3602, 76, 255, "Output",ExpressionUUID->"661d2052-0e9f-4f55-8acd-eda9ae35a417"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,152 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5953,        144]
+NotebookOptionsPosition[      4886,        121]
+NotebookOutlinePosition[      5286,        137]
+CellTagsIndexPosition[      5243,        134]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Anonymous functions", "Title",
+ CellChangeTimes->{{3.665057288946838*^9, 3.6650572916258917`*^9}, {
+  3.745229011284326*^9, 3.745229016675178*^9}, {3.7458553846772823`*^9, 
+  3.745855418899973*^9}, {3.808243267466956*^9, 3.8082432697079797`*^9}, {
+  3.808245963230233*^9, 3.8082459660484056`*^9}, {3.808246637478354*^9, 
+  3.8082466494376736`*^9}},ExpressionUUID->"19d29882-2dd6-42b6-995f-\
+76f9e6d5fcc0"],
+
+Cell["Challenge Questions", "Subtitle",
+ CellChangeTimes->{{3.8085586978934803`*^9, 3.8085587016036572`*^9}, {
+  3.8085619494287453`*^9, 
+  3.8085619507647715`*^9}},ExpressionUUID->"d60e4b6a-5ac2-4e9e-878b-\
+b6123aa3791c"],
+
+Cell["\<\
+Math 250 - Mathematical Computing
+Christopher Hanusa\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.4614053946645927`*^9, 3.4614054230893087`*^9}, {
+  3.461405971637244*^9, 3.4614060079862947`*^9}, {3.474489844264483*^9, 
+  3.474489895841402*^9}, {3.505485689221858*^9, 3.505485696180904*^9}, {
+  3.53815066431697*^9, 3.538150664587603*^9}, {3.630691352563725*^9, 
+  3.6306913589949083`*^9}, {3.632152722336176*^9, 3.6321527477452803`*^9}, {
+  3.63215587546747*^9, 3.6321558797854424`*^9}, {3.632587355469249*^9, 
+  3.632587384845799*^9}, {3.633195265968095*^9, 3.633195266341083*^9}, {
+  3.8082460004234085`*^9, 
+  3.8082460137025967`*^9}},ExpressionUUID->"df9c28a9-4852-4473-90df-\
+a5c47b5f04d0"],
+
+Cell["\<\
+6-X1. Create an anonymous function that takes in two inputs, (think: a \
+function and a number) and then applies the first input to the second (think: \
+it applies the inputted function to the inputted number)\
+\>", "Subsection",
+ CellChangeTimes->{{3.746098474966758*^9, 3.746098555773922*^9}, {
+   3.746098724362012*^9, 3.7460987247428875`*^9}, {3.746099951314416*^9, 
+   3.746099952553379*^9}, 3.808243352579914*^9, {3.8085590047773*^9, 
+   3.808559005938143*^9}, 3.8085619950405455`*^9, 
+   3.808562117607666*^9},ExpressionUUID->"09182bcd-a388-4335-90c1-\
+ecbca2ee4a3d"],
+
+Cell[TextData[{
+ "6-X2. Use ",
+ StyleBox["LetterNumber", "Input",
+  FontSize->18],
+ " to find the sum of the numerical values of the letters in your name.  You \
+will probably also need the command ",
+ StyleBox["Characters", "Input",
+  FontSize->18],
+ ". "
+}], "Subsection",
+ CellChangeTimes->{{3.745230445080928*^9, 3.7452304771828337`*^9}, {
+  3.7456677603179855`*^9, 3.74566780421397*^9}, {3.8085584190964355`*^9, 
+  3.808558419678341*^9}, {3.8085584589094343`*^9, 3.808558491013881*^9}, {
+  3.8085585401209316`*^9, 3.808558540882653*^9}, {3.808562211363651*^9, 
+  3.80856221260269*^9}},ExpressionUUID->"1a1f87e7-3f7d-4c11-acab-\
+7b956a97722c"],
+
+Cell[TextData[{
+ "6-X3. Create a function that takes as input a string and finds the sum of \
+the numerical values of the letters in the string.  (Similar to 6-X2 above.)  \
+Then use ",
+ StyleBox["WordData", "Input",
+  FontSize->18],
+ " and ",
+ StyleBox["Histogram", "Input",
+  FontSize->18],
+ " to find the distribution of these sums over words in the English \
+Language."
+}], "Subsection",
+ CellChangeTimes->{{3.745669609190049*^9, 3.7456697248850465`*^9}, 
+   3.8085584257262774`*^9, {3.80855850043036*^9, 3.8085585011984377`*^9}, {
+   3.808558544124663*^9, 3.8085585449738083`*^9}, {3.8085622151098533`*^9, 
+   3.8085622313714743`*^9}},ExpressionUUID->"f5f1b1d8-f8c6-418a-96ba-\
+56d97de2468a"],
+
+Cell["\<\
+6-X4. Consider the function that takes in a list and outputs a new list that \
+consists of the reverse of the list with one more element at the end: the \
+length of the original list. Create three copies this function that all do \
+the same thing. Create one named function, create one function using the \
+Function command, and create one unnamed function.\
+\>", "Subsection",
+ CellChangeTimes->{
+  3.7776260146477118`*^9, {3.7776260875534678`*^9, 3.7776261081736403`*^9}, {
+   3.808562119351405*^9, 3.8085621207270412`*^9}, 
+   3.808562233516305*^9},ExpressionUUID->"cf775da4-64b2-44e1-b404-\
+bb55b87d3905"],
+
+Cell["\<\
+6-X5. When you finish: choose one of your recent comprehension questions that \
+was difficult and discuss how you approached it.\
+\>", "Subsection",
+ CellChangeTimes->{{3.777022341749689*^9, 3.7770223866173296`*^9}, {
+  3.8085618749556446`*^9, 3.808561891001867*^9}, {3.808562235123981*^9, 
+  3.8085622373386602`*^9}},ExpressionUUID->"7ea8b2a3-2767-46d3-b39d-\
+860d942aece0"]
+}, Open  ]]
+},
+WindowSize->{988, 867},
+WindowMargins->{{-1047, Automatic}, {Automatic, 6}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"925f19df-b841-4242-a753-b15ff9ee4574"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 411, 6, 96, "Title",ExpressionUUID->"19d29882-2dd6-42b6-995f-76f9e6d5fcc0"],
+Cell[994, 30, 222, 4, 53, "Subtitle",ExpressionUUID->"d60e4b6a-5ac2-4e9e-878b-b6123aa3791c"],
+Cell[1219, 36, 704, 13, 51, "Subsubtitle",ExpressionUUID->"df9c28a9-4852-4473-90df-a5c47b5f04d0"],
+Cell[1926, 51, 584, 10, 79, "Subsection",ExpressionUUID->"09182bcd-a388-4335-90c1-ecbca2ee4a3d"],
+Cell[2513, 63, 647, 15, 63, "Subsection",ExpressionUUID->"1a1f87e7-3f7d-4c11-acab-7b956a97722c"],
+Cell[3163, 80, 697, 16, 89, "Subsection",ExpressionUUID->"f5f1b1d8-f8c6-418a-96ba-56d97de2468a"],
+Cell[3863, 98, 619, 11, 115, "Subsection",ExpressionUUID->"cf775da4-64b2-44e1-b404-bb55b87d3905"],
+Cell[4485, 111, 385, 7, 63, "Subsection",ExpressionUUID->"7ea8b2a3-2767-46d3-b39d-860d942aece0"]
+}, Open  ]]
+}
+]
+*)
+

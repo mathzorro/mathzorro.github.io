@@ -1,0 +1,503 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     18325,        495]
+NotebookOptionsPosition[     14345,        416]
+NotebookOutlinePosition[     14933,        439]
+CellTagsIndexPosition[     14848,        434]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ "The  ",
+ StyleBox["Map",
+  FontFamily->"Courier",
+  FontWeight->"Regular"],
+ "  command"
+}], "Title",
+ CellChangeTimes->{{3.461405268132181*^9, 3.461405274978758*^9}, {
+  3.461405374110767*^9, 3.461405382736993*^9}, {3.461405964606715*^9, 
+  3.461405964996537*^9}, {3.461412674365797*^9, 3.461412678153265*^9}, {
+  3.47448983369319*^9, 3.474489837928254*^9}, {3.630696562351103*^9, 
+  3.630696568117642*^9}, {3.631988928117742*^9, 3.6319889301724463`*^9}, {
+  3.632152715690145*^9, 3.632152719687695*^9}, {3.6325873465991592`*^9, 
+  3.632587350748754*^9}, {3.633195273613469*^9, 3.633195283053203*^9}, {
+  3.727619235115794*^9, 3.727619237514101*^9}, {3.727619275020665*^9, 
+  3.7276192792597513`*^9}},ExpressionUUID->"cea6c73a-b22b-46c5-b8dc-\
+dec0e43b34ec"],
+
+Cell[TextData[{
+ "Math 213 - Math with ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ "\nChristopher Hanusa"
+}], "Subsubtitle",
+ CellChangeTimes->{{3.4614053946645927`*^9, 3.4614054230893087`*^9}, {
+  3.461405971637244*^9, 3.4614060079862947`*^9}, {3.474489844264483*^9, 
+  3.474489895841402*^9}, {3.505485689221858*^9, 3.505485696180904*^9}, {
+  3.53815066431697*^9, 3.538150664587603*^9}, {3.630691352563725*^9, 
+  3.6306913589949083`*^9}, {3.632152722336176*^9, 3.6321527477452803`*^9}, {
+  3.63215587546747*^9, 3.6321558797854424`*^9}, {3.632587355469249*^9, 
+  3.632587384845799*^9}, {3.633195265968095*^9, 
+  3.633195266341083*^9}},ExpressionUUID->"5113294e-aa3e-474a-a6d3-\
+66928eac3f14"],
+
+Cell[CellGroupData[{
+
+Cell["Overview", "Section",
+ CellChangeTimes->{{3.505485680414241*^9, 3.50548573910983*^9}, {
+  3.6325873644380608`*^9, 
+  3.632587396150113*^9}},ExpressionUUID->"2cdec5cf-9a9d-486f-adc0-\
+e3ee1ba64949"],
+
+Cell["\<\
+In this tutorial, we learn how to use the Map command
+We will visit a few useful resources along the way, which are useful for more \
+than just learning about functions.\
+\>", "Text",
+ CellChangeTimes->{{3.505485741709942*^9, 3.505485911210339*^9}, {
+  3.5054859461638536`*^9, 3.505486140785309*^9}, {3.569597235122435*^9, 
+  3.56959724256273*^9}, {3.631988357249017*^9, 3.631988375104192*^9}, {
+  3.631988705128955*^9, 3.63198874613913*^9}, {3.63198884890553*^9, 
+  3.631988859824958*^9}, {3.631993478341037*^9, 3.631993482877342*^9}, {
+  3.632152755553952*^9, 3.632152780995129*^9}, {3.6321554348424473`*^9, 
+  3.6321554505553493`*^9}, {3.632587400518695*^9, 3.632587452903551*^9}, {
+  3.633195287509656*^9, 3.6331953613595057`*^9}, {3.664674495552937*^9, 
+  3.664674501597028*^9}, {3.727619294828496*^9, 
+  3.72761930657286*^9}},ExpressionUUID->"320a16a6-6139-4e10-b000-\
+54f1ddc5878c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Key Command: ",
+  FontSize->24,
+  FontColor->RGBColor[0.5, 0, 0.5]],
+ StyleBox["Map", "Input",
+  FontSize->24,
+  FontColor->RGBColor[0.5, 0, 0.5]]
+}], "Section",
+ CellChangeTimes->{{3.4621906872507353`*^9, 3.462190687522024*^9}, 
+   3.664676645843384*^9, {3.664676691500614*^9, 
+   3.664676697340267*^9}},ExpressionUUID->"ed969ee6-f2ea-43e4-b9a2-\
+b8e8ca986dfb"],
+
+Cell[TextData[{
+ "An extremely important command is the ",
+ StyleBox["Map", "Input"],
+ " command.  What ",
+ StyleBox["Map", "Input"],
+ "[function,list] does is to take the function and evaluates the function at \
+each entry of the list individually and returns the results in a list. For \
+example, if you want to know the values of Sin[x] for multiples of Pi/6, you \
+can Map the Sin function onto the desired list."
+}], "Text",
+ CellChangeTimes->{{3.462190313095763*^9, 3.462190340840394*^9}, {
+  3.6646763678425713`*^9, 3.664676374857617*^9}, {3.664676799337915*^9, 
+  3.6646768445848007`*^9}, {3.664677121540412*^9, 
+  3.664677171169777*^9}},ExpressionUUID->"cf9cb413-ab37-4c77-a815-\
+b7bf2d678cd5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"piList", "=", 
+  RowBox[{"Range", "[", 
+   RowBox[{"0", ",", 
+    RowBox[{"2", "Pi"}], ",", 
+    RowBox[{"Pi", "/", "6"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6646770568565807`*^9, 3.664677057594927*^9}, {
+  3.6646770992551003`*^9, 3.664677116484585*^9}, {3.664677164714458*^9, 
+  3.664677182483244*^9}},ExpressionUUID->"cfa563f3-b9fa-4f99-9d32-\
+bc50fe11825f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0", ",", 
+   FractionBox["\[Pi]", "6"], ",", 
+   FractionBox["\[Pi]", "3"], ",", 
+   FractionBox["\[Pi]", "2"], ",", 
+   FractionBox[
+    RowBox[{"2", " ", "\[Pi]"}], "3"], ",", 
+   FractionBox[
+    RowBox[{"5", " ", "\[Pi]"}], "6"], ",", "\[Pi]", ",", 
+   FractionBox[
+    RowBox[{"7", " ", "\[Pi]"}], "6"], ",", 
+   FractionBox[
+    RowBox[{"4", " ", "\[Pi]"}], "3"], ",", 
+   FractionBox[
+    RowBox[{"3", " ", "\[Pi]"}], "2"], ",", 
+   FractionBox[
+    RowBox[{"5", " ", "\[Pi]"}], "3"], ",", 
+   FractionBox[
+    RowBox[{"11", " ", "\[Pi]"}], "6"], ",", 
+   RowBox[{"2", " ", "\[Pi]"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.664677103617519*^9, {3.6646771653921022`*^9, 
+   3.6646771830362053`*^9}},ExpressionUUID->"faced1fc-a48e-4a06-a861-\
+a1b28bb84d90"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Map", "[", 
+  RowBox[{"Sin", ",", "piList"}], "]"}]], "Input",ExpressionUUID->"892f32a9-\
+c4f0-461a-9399-f1591c3a633b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0", ",", 
+   FractionBox["1", "2"], ",", 
+   FractionBox[
+    SqrtBox["3"], "2"], ",", "1", ",", 
+   FractionBox[
+    SqrtBox["3"], "2"], ",", 
+   FractionBox["1", "2"], ",", "0", ",", 
+   RowBox[{"-", 
+    FractionBox["1", "2"]}], ",", 
+   RowBox[{"-", 
+    FractionBox[
+     SqrtBox["3"], "2"]}], ",", 
+   RowBox[{"-", "1"}], ",", 
+   RowBox[{"-", 
+    FractionBox[
+     SqrtBox["3"], "2"]}], ",", 
+   RowBox[{"-", 
+    FractionBox["1", "2"]}], ",", "0"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.664677103617519*^9, {3.664677165397655*^9, 
+   3.6646771853122663`*^9}},ExpressionUUID->"70e1ed31-dcb2-4757-9b52-\
+56bac8be7d17"]
+}, Open  ]],
+
+Cell["\<\
+More generically, if your list is {e1,e2,e3} and your function is fcn, then \
+Map will return a list with f evaluated at each entry:\
+\>", "Text",
+ CellChangeTimes->{{3.6646771927870817`*^9, 
+  3.664677381257264*^9}},ExpressionUUID->"823d9b98-9b4c-41ad-b99e-\
+843d83ec3d7a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Map", "[", 
+  RowBox[{"fcn", ",", 
+   RowBox[{"{", 
+    RowBox[{"e1", ",", "e2", ",", "e3"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.664677337504024*^9, 
+  3.664677359777628*^9}},ExpressionUUID->"e0700845-d1c1-4b90-a029-\
+471cda421358"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"fcn", "[", "e1", "]"}], ",", 
+   RowBox[{"fcn", "[", "e2", "]"}], ",", 
+   RowBox[{"fcn", "[", "e3", "]"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.664677368195601*^9},ExpressionUUID->"4339fdb1-b71a-4e79-a479-\
+89447ce96b3a"]
+}, Open  ]],
+
+Cell["Ask for help to see the syntax:", "Text",
+ CellChangeTimes->{{3.462190313095763*^9, 3.462190340840394*^9}, {
+  3.6646763678425713`*^9, 
+  3.664676374857617*^9}},ExpressionUUID->"735278a8-d553-418c-91d5-\
+dbc592c03da6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "Map"}]], "Input",
+ CellChangeTimes->{{3.46219034467271*^9, 
+  3.462190345233116*^9}},ExpressionUUID->"4e8f5c46-92ac-4baf-88b2-\
+a809281516bd"],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\\!\\(\\*RowBox[{\\\"Map\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"expr\\\", \\\
+\"TI\\\"]}], \\\"]\\\"}]\\) or \\!\\(\\*RowBox[{StyleBox[\\\"f\\\", \
+\\\"TI\\\"], \\\"/@\\\", StyleBox[\\\"expr\\\", \\\"TI\\\"]}]\\) applies \
+\\!\\(\\*StyleBox[\\\"f\\\", \\\"TI\\\"]\\) to each element on the first \
+level in \\!\\(\\*StyleBox[\\\"expr\\\", \\\"TI\\\"]\\). \\n\\!\\(\\*RowBox[{\
+\\\"Map\\\", \\\"[\\\", RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], \\\",\\\", \
+StyleBox[\\\"expr\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"levelspec\\\", \\\
+\"TI\\\"]}], \\\"]\\\"}]\\) applies \\!\\(\\*StyleBox[\\\"f\\\", \
+\\\"TI\\\"]\\) to parts of \\!\\(\\*StyleBox[\\\"expr\\\", \\\"TI\\\"]\\) \
+specified by \\!\\(\\*StyleBox[\\\"levelspec\\\", \\\"TI\\\"]\\). \"\>", 
+   "MSG"], "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/Map"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.4621903468573027`*^9},
+ CellTags->
+  "Info3462175946-4818723",ExpressionUUID->"55e7cc2d-b564-4325-85df-\
+5773d3dfb367"]
+}, Open  ]],
+
+Cell["The shorthand for Map is /@ (slash-at).", "Text",
+ CellChangeTimes->{{3.664675540057054*^9, 3.664675582170909*^9}, {
+  3.664675614133247*^9, 3.664675616508903*^9}, {3.664677407177788*^9, 
+  3.664677414296247*^9}},ExpressionUUID->"cc08d405-12b6-4c50-ade4-\
+7d288fa9adc1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"fcn", "/@", 
+   RowBox[{"{", 
+    RowBox[{"e1", ",", "e2", ",", "e3"}], "}"}]}], "Input"]], "Input",
+ CellChangeTimes->{{3.462190017552586*^9, 3.462190073665012*^9}, {
+   3.4621901101541967`*^9, 3.462190117210545*^9}, {3.664675408195772*^9, 
+   3.664675505923602*^9}, {3.664675587163108*^9, 3.664675627313921*^9}, 
+   3.6646760369247217`*^9, {3.6646774180327063`*^9, 
+   3.664677461455542*^9}},ExpressionUUID->"54e8978a-3f1d-4131-85c8-\
+cf15941eada1"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"fcn", "[", "e1", "]"}], ",", 
+   RowBox[{"fcn", "[", "e2", "]"}], ",", 
+   RowBox[{"fcn", "[", "e3", "]"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.664675628484438*^9, 3.6646760442156267`*^9, 
+  3.664677418876689*^9, 
+  3.664677461880184*^9},ExpressionUUID->"aff58680-f202-4a78-87bb-\
+01e65c912702"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Wolfram\[CloseCurlyQuote]s \[OpenCurlyDoubleQuote]Elementary \
+Introduction\[CloseCurlyDoubleQuote]", "Section",
+ CellChangeTimes->{{3.664674685736618*^9, 
+  3.664674696616393*^9}},ExpressionUUID->"6e286c7a-06b7-4963-869a-\
+92e1df9c2d3a"],
+
+Cell["\<\
+A tutorial that goes at a leisurely and in-depth pace is Wolfram\
+\[CloseCurlyQuote]s new \[OpenCurlyDoubleQuote]An elementary introduction to \
+the Wolfram Language\[CloseCurlyDoubleQuote].  Read through the section on \
+\[OpenCurlyDoubleQuote]Ways to Apply Functions\[CloseCurlyDoubleQuote] here: \
+http://www.wolfram.com/language/elementary-introduction/25-ways-to-apply-\
+functions.html\
+\>", "Text",
+ CellChangeTimes->{{3.664674679390683*^9, 3.664674682249687*^9}, {
+  3.664674804222786*^9, 3.664674860324152*^9}, {3.664677584605359*^9, 
+  3.6646776178196774`*^9}},ExpressionUUID->"bd613548-16e2-48da-aeda-\
+92f2549a87e2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Concept Check", "Section",
+ CellChangeTimes->{{3.66467748457478*^9, 
+  3.664677486734756*^9}},ExpressionUUID->"ed6d1b00-0dfc-4e44-8b26-\
+aa5a58299141"],
+
+Cell[TextData[{
+ "1. Explain the difference in the outputs between ",
+ StyleBox["Framed @ {x,y,z}", "Input",
+  FontSize->16,
+  Background->RGBColor[0.87, 0.94, 1]],
+ " and ",
+ StyleBox["Framed /@ {x,y,z}", "Input",
+  FontSize->16,
+  Background->RGBColor[1, 0.85, 0.85]],
+ "."
+}], "Subsection",
+ CellChangeTimes->{{3.664677626666625*^9, 3.664677700625148*^9}, 
+   3.727619525415575*^9, 
+   3.72761981951567*^9},ExpressionUUID->"91e36f16-e61b-4f20-aa27-\
+78e342fcd874"],
+
+Cell["2. Complete Exercise 25.2 from that webpage.", "Subsection",
+ CellChangeTimes->{{3.664677705905212*^9, 3.6646777070972*^9}, {
+   3.664677757673141*^9, 3.664677780319395*^9}, {3.664677983042677*^9, 
+   3.6646779883464108`*^9}, 3.7276195266221113`*^9, 
+   3.727619820322452*^9},ExpressionUUID->"b171bbe5-c652-4a31-a77d-\
+b18737bfe8b3"],
+
+Cell[CellGroupData[{
+
+Cell["3. Complete Exercise 25.9 from that webpage.", "Subsection",
+ CellChangeTimes->{{3.664677782904655*^9, 3.664677799183343*^9}, {
+   3.664677986106103*^9, 3.664677986610911*^9}, 3.727619527550068*^9, 
+   3.727619821036294*^9},ExpressionUUID->"2ea3f4f1-049c-496e-9319-\
+94d5bf4a2412"],
+
+Cell[CellGroupData[{
+
+Cell["Hint 1. (Open to see.)", "Subsubsection",
+ CellChangeTimes->{{3.664677908005579*^9, 
+  3.664677914804557*^9}},ExpressionUUID->"0fe9dede-297d-4656-a12b-\
+9cbb57992a98"],
+
+Cell[TextData[{
+ "Use the command ",
+ StyleBox["Characters", "Input",
+  FontSize->14],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.664677939500547*^9, 3.664677949243663*^9}, {
+  3.664678027121615*^9, 
+  3.6646780348333893`*^9}},ExpressionUUID->"ae6e7778-fa81-43bf-bd2a-\
+a72d0be49a51"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Hint 2. (Open to see.)", "Subsubsection",
+ CellChangeTimes->{{3.6646780683459253`*^9, 
+  3.6646780781779213`*^9}},ExpressionUUID->"5eb0b8ae-7df6-4719-8a00-\
+bc434612e27f"],
+
+Cell[TextData[{
+ "You may be running into issues if the input to ",
+ StyleBox["Characters", "Input",
+  FontSize->14],
+ " is not a ",
+ StyleBox["String", "Input",
+  FontSize->14],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.66467808085772*^9, 
+  3.664678102433167*^9}},ExpressionUUID->"f552f34d-1a18-482f-8c50-\
+fbc440ed97e6"]
+}, Closed]],
+
+Cell["Hint 3. (Open to see.)", "Subsubsection",
+ CellChangeTimes->{{3.664677877518406*^9, 3.664677921899794*^9}, 
+   3.664677977490778*^9, {3.664678023577544*^9, 3.664678023657549*^9}, {
+   3.664678120680056*^9, 
+   3.664678120904666*^9}},ExpressionUUID->"ee5e0623-77c0-435a-b70d-\
+def497e080a2"]
+}, Open  ]],
+
+Cell["\<\
+4. Use the function Prime, Map, and Range commands to generate a list of the \
+100th, 200th, ... 1000th prime numbers.\
+\>", "Subsection",
+ CellChangeTimes->{{3.7276198916895857`*^9, 
+  3.727619997953771*^9}},ExpressionUUID->"df7fa467-2fde-4482-b864-\
+fc92050f0a3d"],
+
+Cell["\<\
+5. Use a Table command to create a list of 10 to 100 points that lie in the \
+range [0,100]x[0,100].  Then use the Map command to Apply the function Disk \
+to them.  Lastly, Wrap this whole list in a Graphics command, and you will \
+see your points displayed.\
+\>", "Subsection",
+ CellChangeTimes->{{3.7276202044997053`*^9, 
+  3.7276202923105392`*^9}},ExpressionUUID->"0b3986f3-a461-4c33-84c2-\
+72d05ef5e8b1"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1212, 755},
+WindowMargins->{{1, Automatic}, {Automatic, 0}},
+ShowSelection->True,
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3462175946-4818723"->{
+  Cell[7705, 230, 1161, 22, 70, "Print",ExpressionUUID->"55e7cc2d-b564-4325-85df-5773d3dfb367",
+   CellTags->"Info3462175946-4818723"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3462175946-4818723", 14688, 428}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 777, 16, 98, "Title",ExpressionUUID->"cea6c73a-b22b-46c5-b8dc-dec0e43b34ec"],
+Cell[1347, 40, 701, 14, 53, "Subsubtitle",ExpressionUUID->"5113294e-aa3e-474a-a6d3-66928eac3f14"],
+Cell[CellGroupData[{
+Cell[2073, 58, 203, 4, 67, "Section",ExpressionUUID->"2cdec5cf-9a9d-486f-adc0-e3ee1ba64949"],
+Cell[2279, 64, 899, 15, 58, "Text",ExpressionUUID->"320a16a6-6139-4e10-b000-54f1ddc5878c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3215, 84, 389, 11, 62, "Section",ExpressionUUID->"ed969ee6-f2ea-43e4-b9a2-b8e8ca986dfb"],
+Cell[3607, 97, 703, 14, 58, "Text",ExpressionUUID->"cf9cb413-ab37-4c77-a815-b7bf2d678cd5"],
+Cell[CellGroupData[{
+Cell[4335, 115, 392, 9, 30, "Input",ExpressionUUID->"cfa563f3-b9fa-4f99-9d32-bc50fe11825f"],
+Cell[4730, 126, 807, 24, 51, "Output",ExpressionUUID->"faced1fc-a48e-4a06-a861-a1b28bb84d90"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5574, 155, 143, 3, 30, "Input",ExpressionUUID->"892f32a9-c4f0-461a-9399-f1591c3a633b"],
+Cell[5720, 160, 670, 23, 54, "Output",ExpressionUUID->"70e1ed31-dcb2-4757-9b52-56bac8be7d17"]
+}, Open  ]],
+Cell[6405, 186, 284, 6, 35, "Text",ExpressionUUID->"823d9b98-9b4c-41ad-b99e-843d83ec3d7a"],
+Cell[CellGroupData[{
+Cell[6714, 196, 269, 7, 30, "Input",ExpressionUUID->"e0700845-d1c1-4b90-a029-471cda421358"],
+Cell[6986, 205, 281, 8, 34, "Output",ExpressionUUID->"4339fdb1-b71a-4e79-a479-89447ce96b3a"]
+}, Open  ]],
+Cell[7282, 216, 224, 4, 35, "Text",ExpressionUUID->"735278a8-d553-418c-91d5-dbc592c03da6"],
+Cell[CellGroupData[{
+Cell[7531, 224, 171, 4, 30, "Input",ExpressionUUID->"4e8f5c46-92ac-4baf-88b2-a809281516bd"],
+Cell[7705, 230, 1161, 22, 70, "Print",ExpressionUUID->"55e7cc2d-b564-4325-85df-5773d3dfb367",
+ CellTags->"Info3462175946-4818723"]
+}, Open  ]],
+Cell[8881, 255, 276, 4, 35, "Text",ExpressionUUID->"cc08d405-12b6-4c50-ade4-7d288fa9adc1"],
+Cell[CellGroupData[{
+Cell[9182, 263, 487, 10, 30, "Input",ExpressionUUID->"54e8978a-3f1d-4131-85c8-cf15941eada1"],
+Cell[9672, 275, 352, 9, 34, "Output",ExpressionUUID->"aff58680-f202-4a78-87bb-01e65c912702"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10073, 290, 244, 4, 67, "Section",ExpressionUUID->"6e286c7a-06b7-4963-869a-92e1df9c2d3a"],
+Cell[10320, 296, 637, 11, 58, "Text",ExpressionUUID->"bd613548-16e2-48da-aeda-92f2549a87e2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10994, 312, 157, 3, 67, "Section",ExpressionUUID->"ed6d1b00-0dfc-4e44-8b26-aa5a58299141"],
+Cell[11154, 317, 467, 14, 54, "Subsection",ExpressionUUID->"91e36f16-e61b-4f20-aa27-78e342fcd874"],
+Cell[11624, 333, 339, 5, 38, "Subsection",ExpressionUUID->"b171bbe5-c652-4a31-a77d-b18737bfe8b3"],
+Cell[CellGroupData[{
+Cell[11988, 342, 287, 4, 38, "Subsection",ExpressionUUID->"2ea3f4f1-049c-496e-9319-94d5bf4a2412"],
+Cell[CellGroupData[{
+Cell[12300, 350, 173, 3, 45, "Subsubsection",ExpressionUUID->"0fe9dede-297d-4656-a12b-9cbb57992a98"],
+Cell[12476, 355, 280, 9, 35, "Text",ExpressionUUID->"ae6e7778-fa81-43bf-bd2a-a72d0be49a51"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[12793, 369, 177, 3, 37, "Subsubsection",ExpressionUUID->"5eb0b8ae-7df6-4719-8a00-bc434612e27f"],
+Cell[12973, 374, 320, 11, 35, "Text",ExpressionUUID->"f552f34d-1a18-482f-8c50-fbc440ed97e6"]
+}, Closed]],
+Cell[13308, 388, 296, 5, 37, "Subsubsection",ExpressionUUID->"ee5e0623-77c0-435a-b70d-def497e080a2"]
+}, Open  ]],
+Cell[13619, 396, 276, 6, 54, "Subsection",ExpressionUUID->"df7fa467-2fde-4482-b864-fc92050f0a3d"],
+Cell[13898, 404, 419, 8, 65, "Subsection",ExpressionUUID->"0b3986f3-a461-4c33-84c2-72d05ef5e8b1"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

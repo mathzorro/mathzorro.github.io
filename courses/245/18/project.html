@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mathematical Models &bull; Project</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="author" content="Christopher Hanusa" />
+        <link rel="shortcut icon" href="favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="../../../css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../../../css/style1.css" />
+        <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css' />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-47380773-6', 'auto');
+                ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header_wrap">
+                <div class="header">
+                    <span class="left">
+                        <a href="../../../index.html">HOME</a> > 
+                        <a href="../../index.html">Courses</a> > 
+                        <a href="index.html">245fa18</a>
+                    </span>
+                <div class="header_right">
+                    <span class="right">
+                        <a href="index.html">Home</a> &bull; 
+                        <a href="syllabus.html">Syllabus</a> &bull; 
+                        <a href="letters.html">Letters</a> &bull;
+                        <a href="calendar.html">Calendar</a> &bull; 
+                        <a href="software.html">Software</a> &bull; 
+                        <a href="project.html">Projects</a> &bull; 
+                        <a href="notes.html">Content</a> 
+                    </span>
+                </div>
+                </div>
+            </div>
+
+            <div class="main">
+                           
+                <div class="course_head">            
+                <div class="course_head_img"><a href="index.html"><img src="../../../images/245c.png" height="100"/></a></div>
+                <div class="course_head_suptitle_245">Mathematical Models, Fall 2018</div>
+                <div class="course_head_title_245">Projects</div>
+                </div>
+                
+                <div class="course_main_245">
+
+                    <a name="1"></a>
+                    <div class="notes_section">Skip to: <a href="#1">Project 1</a>  &bull; <a href="#2">Project 2</a> </div> <!--&bull; <a href="#3">Project 3</a> -->
+
+                    <h2>Rationale:</h2> 
+
+                    <p>Mathematical Modeling is a unique math class since its goal is to give you the tools necessary to use mathematics outside of school.  The language of mathematical modeling is the language that real-world companies and business managers understand.  If you are trying to convince your boss that she or he should follow a course of action that you suggest, you will need to justify yourself; basing your reasoning on a mathematically-sound model can provide the basis of your justification. </p>
+                    
+                    <p>In this class, you will be creating two mathematical models based on the material that we learn throughout the semester.  I would like to extend a large thank you to Allen Downey at Olin College who has been extremely generous in providing materials from when he taught this class.</p>
+                    
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+                    <div class="notes_section"><span style="color:#609">Project 1: Population Dynamics</span></div>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+                    
+                    <div class="date">Overview</div>
+
+                    <p>You will be creating and analyzing a population dynamics model, using Chapters 5&ndash;8 of the ModSimPy book as your starting point.  The book analyzes various models based on explicit assumptions that have a basis in the real world.  Your project will also relate to population dynamics and be based in real world assumptions, but you will have some choices about the population(s) you model and the type of model you build.  Here are three possible themes to consider:</p>
+
+                    <div class="date">Option A: Further World Population Investigations </div>
+                    
+                    <p>The first option is to ask and answer an interesting question about the human population on Earth. Most likely, you will take the model developed in the book and either apply it to a different population, or extend it to include additional features, or both. For example, you might identify the regions that will have the biggest effect on future population growth and model them in more detail. Or you might identify factors that have the biggest effect on growth and add them to the model.</p>
+
+                    <p>Search online to find data relevant to the questions you want to answer.  Here are two helpful links:
+                    <ul>
+                        <li><a href="https://esa.un.org/unpd/wpp/Publications/Files/WPP2017_KeyFindings.pdf">UN DESA Population Division</a></li>
+                        <li><a href="https://www.measureevaluation.org/resources/training/online-courses-and-resources/non-certificate-courses-and-mini-tutorials/population-analysis-for-planners/lesson-3/lesson-3-creating-a-demographic-profile">Useful concepts in demography</a>.</li>
+                    </ul>
+                    </p>
+
+                    <div class="date">Option B: Stochastic Population Models </div>
+                    
+                    <p>As we saw in the bike share example of Chapters 1 and 2, random processes can lead to a range of predicted outcomes. The main idea of the second project option is to apply this logic to population growth. Instead of a deterministic growth rate, consider a model in which the growth rate for each time period is drawn at random from a probability distribution (which might in turn be estimated from empirical data). This assumption might be motivated by factors that affect the growth rate in ways that vary from year to year, such as the amount of fishing activity in a marine habitat.</p>
+
+                    <p>One of the interesting questions you can address using a stochastic population model is the likelihood of a population dying out (in the sense of extinction for an entire species, or simply collapse to the point that a population in a given area can no longer sustain itself). You do not need to restrict yourself to human populations.  You will find that there is a wealth of information (including time-series data) available for many different species in many areas of the world. For example, if you were interested in fish populations, here are some useful resources:
+                    <ul>
+                        <li><a href="http://www.nmfs.noaa.gov/pr/species/esa/listed.htm">NOAA Fisheries – Endangered and Threatened Marine Species</a></li>
+                        <li><a href="http://www.nmfs.noaa.gov/pr/sars/region.htm">NOAA Fisheries – Marine Mammal Stock Assessment Reports</a>.</li>
+                        <li><a href="http://www.fishwatch.gov/profiles/all-profiles">FishWatch – U.S. Seafood Facts</a>.</li>
+                    </ul>
+                    </p>
+            
+                    <div class="date">Option C: Predator&ndash;Prey Dynamics </div>
+                    
+                    <p>As a third option for the project, you might choose to investigate the interactions between multiple species. Can you determine the populations of two competing species by using a deterministic or probabilistic model?  Just as in the other two options, you will be required to use real world data and realistic assumptions to model their interaction.</p>
+                    
+                    <div class="date">Groups</div> 
+                    
+                    <p>You will work in a group of at least two and at most three people.  It is important that you choose a group of people with whom you can <b>work</b> well.   You will have to meet outside class with your groupmates throughout the next few weeks.  Together you will come up with a project topic (vetted by Prof. Chris), determine the mathematical model you wish to study, collect relevant data, program a simulation in Python, and present your results to the class.</p>
+            
+                    <div class="date">Timeline</div>
+            
+<!--            <p>More details about the due dates for this project are forthcoming.</p> -->
+            
+                    <ul>
+                        <li><strong>Initial Planning due Monday, October 1:</strong> <p>Decide who you want to work with on your project and decide which of the project options you are most interested in pursuing.</p>
+                        </li>
+                        
+                        <li><strong>Dataset and Brainstorming by Wednesday, October 3:</strong> 
+                            <p>For this day, you and your groupmates will have started collecting data and brainstorming the topic you wish to work on for your project. </p>
+                        </li>
+                        
+                        <li><strong>Project Statement and Imported Data by Wednesday, October 10:</strong> 
+                            <p>Work on the First Cut Model worksheet in class on October 3 and turn it in on October 10.  By this date, you must have imported the data you want to analyze into a Python notebook.</p>
+                        </li>
+                        
+                        <li><strong>Simulation Complete by Wednesday, October 17:</strong> 
+                            <p>By this date, you must have translated your population dynamics model into Python and run the simulation.  You also must have worked to sweep a variable to optimize its value.</p>
+                        </li>
+                        
+                        <li><strong>Draft Quad Chart due on Monday, October 22:</strong> 
+                            <p>By this date, you are expected to be have completed the final draft of your project.  On this day, we will spend time doing peer review, sharing your project with the other group at your table and discussing ways to improve it.
+                        </li>
+                        
+                        <li><strong>Final Quad Chart Due and Project Presentation on Wednesday, October 24:</strong> 
+                            <p>On this day, your group will present your project to the entire class and turn in your quad chart for grading.  Please also turn in your brainstorming worksheet, your first cut model worksheet, and send your python notebook by email.  (One of each per group.)  Your (individual) group dynamics essay is due the evening of Wednesday, October 24.</p>
+                        </li>
+                    </ul>
+            
+            <div class="date">Specifications</div>
+                    
+                    <p><b>Here is a slideshow presentation about <a href="https://docs.google.com/presentation/d/14ehAo9Fy8zrJsytom6isF5RqRTQncruhdgnpCBP_v8o/edit?usp=sharing">the quad chart poster and presentation</a>.</b>
+                    </p>         
+
+                    <p>The final deliverables of this project will be a (group) quad chart, a (group) five-minute presentation, and an (individual) group dynamics paragraph.</p>  
+                    
+                    <p><span style="color:#609"><b>The quad chart must:</b></span>
+                    <ul>
+                        <li><b>Have a descriptive and meaningful title.</b></li>
+                        <li><b>Adhere to the correct format.</b></li>
+                        <ul>
+                            <li>Use four 8.5" &times; 11" sheets of paper.</li>
+                            <li>Each sheet should be in landscape format with at least 0.5" margin around.</li>   
+                            <li>The fonts should be no smaller than 24pt. </li>
+                            <li>Each sheet must be headed either "Objective", "Methodology", "Results", or "Conclusions".</li>
+                        </ul>
+                        
+                        <li><b>Include an Objective Section.</b></li>
+                        <ul>
+                            <li>Here you introduce the problem statement, highlighting the population being modeled, who cares about the problem, and setting the stage for the type of answer you are looking for. </li>    
+                        </ul>
+                        
+                        <li><b>Include an Methodology Section.</b></li>
+                        <ul>
+                            <li>Here you include the main assumptions you made, why you made those assumptions, the way you decided to model the  growth function, where you got your data, and the types of simulation you used, relating it back to the objective. </li>
+                        </ul>
+                        
+                        <li><b>Include an Results Section.</b></li>
+                        <ul>
+                            <li>Here you include a chart that shows your most important results, with labeled axes, and a description of what the viewer is supposed to be getting out of your figure.  You also need to explain how you validated or verified your results (variable sweeping perhaps?)</li>    
+                        </ul>
+                        
+                        <li><b>Include an Conclusions Section.</b></li> 
+                        <ul>
+                            <li>Here you interpret your results as an answer to your question.  What does the model you created say?  What are the limitations of your model?  Are the assumptions realistic?  Be honest and critical of your work.  It is OK if you say your model didn't work.  Show that you know it doesn't work and explain why.</li>    
+                        </ul>
+                                            
+                        <li><b>Be formatted in a clear and organized manner.</b> 
+                            <p>Spend time organizing your text and images.  Your quad chart should not be only text.  Work to make your final layout visually appealing.</p> </li>
+                    </ul>
+                    </p>
+            <p><span style="color:#609"><b>The presentation must:</b></span>
+                    <ul>
+                        <li><b>Include an introduction.</b>
+                            <p>Introduce yourselves, your topic, and explain who is the audience of your presentation.</p>
+                        </li>
+                        <li><b>Discuss each of the sections in the quad chart.</b>
+                        <p>Spend time making sure that the class learns about your objective, methodology, results, and conclusions.</p>
+                        </li>
+                        <li><b>Use your quad chart as a visual aide.</b>
+                        </li>
+                        <p>Use it as such.  Do not read from your chart. </p> 
+                        <li><b>Involve each of the groupmates.</b>
+                        </li>
+                        <p>Make sure each person speaks for at least two minutes (for a group with two members) or at least one minute (for a group with three members).</p>
+
+                        <li><b>Be organized and rehearsed.</b>  
+                            <p>You need to make sure that you have practiced what you are going to say a couple of times.</p>
+                        </li>
+                        <li><b>Respect the time limit.</b>  
+                            <p>Five minutes is a very short amount of time!  This means you really need to have practiced multiple times so that you use your time efficiently.</p>
+                        </li>
+                    </ul>
+                    </p>
+                <span style="color:#609"><b>For the group dynamics paragraph:</b></span>
+                    <p>Write a paragraph that includes your impression of the contributions of the group members.  Do you feel like each group member participated equally?  Did each member contribute to the project throughout the process, including forming the project topic, developing the project methodology, planning and running the python simulations and results, analyzing the model, compiling the quad sheet, and preparing for the presentation?
+                </p>
+    
+    
+                    <div class="date">Grading</div>
+
+            <p>This project represents 40% of your semester grade.  You will be graded on how well your project addresses the specifications laid out above, following the rubric below.  You are expected to arrive on time and make comments on your classmates' presentations and projects.  If you are late or absent, this will negatively affect your own grade.</p>
+
+        <ul>
+            <li>Timeliness: (5%)</li>
+            <ul>
+                <li>Did you make steady progress on your project from start to finish, respecting project deadlines?</li>
+                <li>Did you turn in your final project by the deadline?</li>
+            </ul>
+            
+            <li>Objective: (15%)</li>
+            <ul>
+                <li>Have you given a precise population dynamics question that you are trying to answer?</li>
+<!--                <li>Have you given a precise secondary question that you are trying to answer?</li> -->
+                <li>Have you been explicit about whether your project is explanatory or predictive?</li>
+                <li>Did you take the brainstorming and first cut model seriously?</li>
+                <li>Is it obvious who your target audience is?</li>
+            </ul>
+
+            <li>Methodology: (15%)</li>
+            <ul>
+                <li>Have you based your model on clear, well thought-out assumptions? (Both about the variables you included and didn't include, and the structure of the population growth.)</li>
+                <li>Did you explicitly state these assumptions?</li>
+                <li>Do you give and discuss the population change function behind your model?</li>
+                <li>Did you discuss where your data came from and why you chose it?</li>
+            </ul>
+
+            <li>Python and Results: (20%)</li>
+            <ul>
+                <li>Did you use python techniques that we learned in class?</li>
+                <li>Were you able to import real-world data into python?</li>
+                <li>Did you create a python simulation to model population growth?</li>
+                <li>Did you use python to create <b>labeled</b> plots of your model?</li>
+                <li>Did you use python to sweep a variable to verify or validate your model?</li>
+                <li>Did you choose a good plot to include in the Results section of the quad chart?</li>
+            </ul>
+
+            <li>Model Analysis: (20%)</li>
+            <ul>
+                <li>Did you explain well what your chart means?</li>
+                <li>Have you interpreted your results as an answer to your question?</li>
+                <li>Do you thoroughly analyze your model?</li>
+                <li>Have you determined if your model is a good model and simulates/predicts well?</li>
+                <li>Do you discuss the limitations of your model?</li>
+            </ul>
+
+            <li>Quad Chart Style: (5%)</li>
+            <ul>
+                <li>It your quad chart well organized?   Does it capture the attention of the audience? Is it visually appealing?</li>
+            </ul>
+
+            <li>Quad Chart formatting: (5%)</li>
+            <ul>
+                <li>Does the format of the Quad Chart meet the specifications?</li>
+            </ul>
+            
+            
+            <li>Presentation Style: (15%)</li>
+            <ul>
+                <li>Did you include an introduction?</li>
+                <li>Did you discuss each of the sections?</li>
+                <li>Did you use the quad chart as a visual aide, and not read from it?</li>
+                <li>Did you involve each of the groupmates?</li>
+                <li>Is it obvious that you were organized and had practiced for the presentation?</li>
+                <li>Do you keep the audience's attention?</li>
+                <li>Did you respect the time constraints?</li>
+                <li>Did you arrive on time for everyone else's presentation?</li>
+            </ul>
+        </ul>
+    
+    <p>You will be assigned a grade for each standard and these will be averaged based on the allocated percentages.  <b>If you did not participate equally in the groupwork, your grade will be reduced accordingly.</b>
+        <blockquote>                   
+            <table>
+<tr><td>A+&nbsp;&nbsp;</td> <td>(100+)&nbsp;&nbsp;</td>   
+    <td><b>Outstanding:</b> Goes above and beyond expectations</td></tr>
+<tr><td>A</td> <td>(95)</td>           	    
+    <td><b>Excellent:</b> Meets all requirements at a high level.</td></tr>
+<tr><td>B</td> <td>(85)</td>   	    
+    <td><b>Good:</b> Meets all requirements at an competent level.</td></tr>
+<tr><td>D</td> <td>(65)</td>           
+    <td><b>Poor:</b> Makes an effort to meet requirements but does not succeed.</td></tr><a name="2"></a>
+<tr><td>F</td> <td>(0-50)</td>               	
+    <td><b>Unacceptable:</b> No work, a weak start, or does not meet minimum acceptable standards.</td></tr>
+                                </table>   
+                            </blockquote> 
+    
+            <a name="2"></a>
+              <p>&nbsp;</p>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-->                    <div class="notes_section"><span style="color:#609">Project 2: First-order systems</span></div>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+                   
+                    <div class="date">Overview</div>
+
+                    <p>You will build a simulation model based on a first-order system, using ideas that you have learned in Chapters 11&ndash;12 or 15&ndash;17 of the ModSimPy book.  You'll also keep working on crafting interesting and appropriate questions&mdash;those that can be answered with the tools you're learning and that are reasonable in scope&mdash;and interpreting the results of your model to answer those questions.</p>   
+                        
+                    <p>Your project will also be a first-order model, probably in the domain of either epidemiology or thermodynamics (but possibly in other domains). You will begin by considering one of the models presented in the book and then you will expand on it to answer a question. Here are three possible themes to consider:</p>
+
+                    <div class="date">Option A: Epidemiology </div>
+                    
+                    <p>The first option is to begin with the SIR model in the book and find an interesting way to extend it. You will identify one or more (closely related) questions you can answer with your new model.</p>
+
+
+                    <div class="date">Option B: Thermodynamics </div>
+                    
+                    <p>The second option is to begin with the coffee cooling model in the book and find an interesting way to extend it. You will identify one or more (closely related) questions you can answer with your new model. You might also find ways to collect data from a real-world situation, but if you want to do this, you should talk with an instructor about what you plan to do and how it relates to your model.
+                    </p>
+            
+                    <div class="date">Option C: Other First-Order Systems </div>
+                 
+                    <p>The third option is to investigate some other first-order system, such as the pharmacokinetic model described in Chapter 17.  Please note that if you choose this option, you will  need to do some additional research.
+                    </p>
+
+
+                    
+                    <div class="date">Timeline</div>
+                    <ul>
+                        <li><b>Team Formation worksheet due <b>Friday, November 16</b>:</b>
+                        <p>This project will be done in teams of 2&ndash;3 students. I believe that working together leads to better learning, if all members of the team are fully engaged. I will form teams based on feedback you give us. Be sure you fill out a <a href="notes/245fa18p2partner.pdf">partner preference sheet</a> and email it to Prof. Chris no later than Friday, 11/16.  </p>
+                        </li>
+                        
+                        <li><strong>Project Proposal due Monday, November 26:</strong> <p>By noon on Monday, November 26, send Prof. Chris an email with the topic you want to simulate.</p>
+                        </li>
+                        
+                        <li><strong>Project Check-Up on Monday, December 3:</strong> 
+                        <p>Your simulation should be complete or almost complete, and you should have done a parameter sweep for a parameter of your choosing.  Bring in the current state of your project to make sure you are on track.</p>
+                        </li>
+
+                        <li><strong>Project Final Draft on Wednesday, December 12:</strong> 
+                        <p>By this date, you are expected to be have completed most of your project and be prepared for your presentation.  Bring in THREE copies of your final writeup draft.  The class period this day will be a peer-review session with some in-class polishing time.  Prof. Chris will walk around and consult with you on any last-minute questions you might have.</p>
+                        </li>
+
+                        <li><strong>Project Presentation on Monday, December 17:</strong> <p>On this day, you will present your project to the rest of the class, explaining the question you investigated, discussing your modeling approach and the simulation you created, highlighting your results, analyzing your model and sharing your thoughts on the modeling process.  You are expected to attend all presentations; your presentation grade will be reduced if you are late or do not attend.</p>
+                        </li>
+                        
+                        <li><strong>Final writeup, python notebook, and group dynamics paragraph due Monday, December 17:</strong> <p>The latest day when your group can submit your final project is Monday, December 17.</p>
+                        </li>
+                    </ul>
+
+                    <div class="date">Specifications</div>
+
+                    <p>You will be working on your project in multiple stages including work outside of class. The final product of this project will be a five-page writeup, a final Python notebook, and a ten-minute final presentation.  Please also submit a group dynamics paragraph.</p>  
+
+                    <p><span style="color:#609"><b>The five-page writeup must:</b></span>
+                    <ul>
+                        <li><b>Include each of the following sections.</b>
+                        <ul>
+                <li><em>Abstract.</em>  A <strong>brief</strong> summary of the main content of your paper. <span style="text-decoration:underline">100 words at most!</span> 
+                </li>
+                <li><em>Introduction.</em> This should provide the reader with the necessary background information about why your project is an interesting and worthwhile project, and where the project fits into real life.  <strong>Explicitly state the question you are investigating.</strong></li>
+                <li><em>Methodology.</em> Explain in depth the mathematical model you are using to solve the problem.  Explicitly state any assumptions that you are making in your research.  Discuss how you worked to make your model as representative of real life as possible.  Describe how you modified the simulation from class to address your question.  If you collected data, explain how you collected data and why you collected data in that way.  If you obtained data from elsewhere, explain where your data came from and how reliable it is.
+                </li>
+                <li><em>Results.</em>  Explain the results of the simulation.  Include a few plots that highlight the message readers should take away, and discuss what these plots mean.  Your project should include a parameter sweep; include a plot of this information.  Discuss what the simulations say and what conclusions you can draw in terms of the real-life problem.</li>
+                <li><em>Analysis.</em> Every model makes simplifying assumptions.  You need to elaborate on yours and explain what is good and what is bad about your model. Is your model accurate?  How do the results match with your expectations?  What future research should be undertaken?</li>
+                <li><em>Conclusion.</em> Explain briefly the take-away message of your project, especially the real-life consequences. </li>
+            </ul>
+                        </li>
+                        <li><b>Has a title page</b> 
+                            <p>The title page must include the name of the project, the abstract, and the names of group members.  (This page does not count toward the length of the paper.) </p>
+                        </li>
+                        <li><b>Be formatted in a clear and organized manner, using full sentences and proper English.</b> </li>
+                        <li><b>Use 1 inch margins and 1.5x spacing with Times New Roman font.</b> </li>
+                    </ul>
+                    </p>
+
+                    <p><span style="color:#609"><b>The python notebook must:</b></span>
+                    <ul>
+                        <li><b>Be commented and explained so that others can understand your work.</b>  
+                            <p>Your Python notebook will be filled with complex code; you must make sure that the code you create is readable by people familiar with programming in Python.  Use text cells to give others reading your code an explanation of the overarching philosophy behind the organization of your code.  Throughout the code,  to explain what you are doing, insert comments 
+<pre>#
+# like this. 
+#</pre></p>
+                        </li>
+                        <li><b>Use simulation techniques learned in class.</b>  
+                            <p>This project is for you to create a first-order system, similar to the SIR and coffee cooling problems.  You should be using techniques similar to (but not exactly the same as) those from class, using System objects, State objects, an update function, a run_simulation function, and collecting metric information. </p>
+                        </li>
+                        <li><b>Use sweeping techniques learned in class.</b>  
+                            <p>As you run your simulations, use SweepSeries or SweepFrame objects to collect metrics relevant to your project, and use the collected information to come to real-world conclusions related to your main question.</p>
+                        </li>
+                        <li><b>Use plotting techniques learned in class.</b>  
+                            <p>The charts you create for your writeup and presentation should be generated using Python.  They should have titles and labeled axes.</p>
+                        </li>
+                        <li><b>Only include relevant Python code.</b>
+                            <p>Do not include all your scratch work in your final Python submission.</p></li>
+                        <li><b>Have a title and the names of group members.</b></li>     </ul>
+</p>
+
+                    <p><span style="color:#609"><b>The presentation must:</b></span>
+                    
+                    <ul>
+                        <li><b>Include an introduction.</b>
+                            <p>Introduce yourselves, your topic, and why you were motivated to work on this topic.</p>
+                        </li>
+                        <li><b>Discuss each of the sections.</b>
+                            <p>Spend time making sure that the class learns the important details about your project statement, methodology, results, analysis, and conclusions.</p>
+                        </li>
+                        <li><b>Debrief about your project.</b>
+                            <p>Give us some personal stories about your project and the journey to complete it.  Some questions you might think about addressing: What was surprising along the way? What was the most difficult challenge?  What are you happiest about?  What would you like to do if you had more time to work on it? </p>
+                        </li>
+                        <li><b>Involve each of the groupmates.</b>
+                            <p>Make sure the speaking time is equitable.</p>
+                        </li>
+                        <li><b>Be organized and rehearsed.</b>  
+                            <p>You need to make sure that you have practiced what you are going to say a couple of times.</p>
+                        </li>
+                        <li><b>Use time wisely and respect the time limit.</b>  
+                            <p>Your presentation is supposed to take 8&ndash;10 minutes.  Use your limited time efficiently and plan wisely. You will need to have practiced multiple times to get the timing correct.</p>
+                        </li>
+
+
+
+                    </ul>
+                    </p>
+
+                <span style="color:#609"><b>For the group dynamics paragraph:</b></span>
+                    <p>Write <b>one</b> paragraph that includes your impression of the contributions of the group members.  Do you feel like each group member participated equally?  Did each member contribute to the project throughout the process, including forming the project topic, developing the project methodology, planning and running the python simulations and results, analyzing the model, contributing to the writing, and preparing for the presentation?  
+                </p>
+
+     
+                    <div class="date">Grading</div>
+
+            <p>This project represents 40% of your semester grade.  You will be graded on how well your project addresses the specifications laid out above, following the rubric below.  You are expected to arrive on time and make comments on your classmates' presentations and projects.  If you are late or absent, this will negatively affect your own grade.</p>
+
+   
+<ul>
+            <li>Timeliness: (5%)</li>
+            <ul>
+                <li>Did you make steady progress on your project from start to finish, respecting project deadlines?</li>
+                <li>Did you turn in your final project by the deadline?</li>
+            </ul>
+            
+            <li>Objective: (10%)</li>
+            <ul>
+                <li>Have you given a precise first-order system question that you are trying to answer?</li>
+                <li>Have you been explicit about whether your project is explanatory or predictive?</li>
+                <li>Have you situated your project in a real-world setting?</li>
+                <li>Did you give background information about why your topic is important?</li>
+            </ul>
+ <!--Should have some level of intrigue / creativity / initiative to expand from class content.--> 
+
+            <li>Methodology: (15%)</li>
+            <ul>
+                <li>Have you based your model on clear, well thought-out assumptions? (Both about the variables you included and didn't include, and the structure of the first-order system.)</li>
+                <li>Did you explicitly state these assumptions?</li>
+                <li>Do you give and discuss the first order model you used?</li>
+                <li>Were you explicit about how the model has changed from the base model taught in class?</li>
+                <li>Did you discuss where your data came from and why you chose it?</li>
+                <li>Did you discuss the metric that your model uses and why you chose it?</li>
+                <li>Have you given a precise secondary question that you are trying to answer?</li>
+            </ul>
+
+            <li>Python: (20%)</li>
+            <ul>
+                <li>Did you use python techniques that we learned in class?</li>
+                <li>Were you able to import real-world data into python?</li>
+                <li>Did you create a python simulation that models the dynamics of a first-order system over time?</li>
+                <li>Did you create a function that calculates your metric from a System object?</li>
+                <li>Did you use python to sweep a variable to verify or validate your model?</li>
+                <li>Did you use python to create <b>labeled</b> plots of your model that convey the main results well?</li>
+            </ul>
+    
+            <li>Results: (10%)</li>
+            <ul>
+                <li>Did you choose good plots to include in the Results section?</li>
+                <li>Are the plots labeled correctly and justified?</li>
+                <li>Have you interpreted your results in terms of the real world situation?</li>
+            </ul>
+
+            <li>Model Analysis: (20%)</li>
+            <ul>
+                <li>This section is the most important section of your paper and where you should spend the most time and effort.</li>
+                <li>Have you determined if your model is a good model and simulates/predicts well?</li>
+                <li>Do you discuss the validity of your assumptions?</li>
+                <li>Do you explain the errors that occur in the modeling process?</li>
+                <li>Do you compare your expectations to the results?</li>
+                <li>Do you discuss the limitations of your model?</li>
+            </ul>
+
+            <li>Writing style and formatting: (5%)</li>
+            <ul>
+                <li>Do you use complete sentences and proper English?</li>
+                <li>Did you follow the writing format requirements?</li>
+            </ul>
+            
+            
+            <li>Presentation Content and Style: (15%)</li>
+            <ul>
+                <li>Did you include an introduction?</li>
+                <li>Did you discuss each of the sections?</li>
+                <li>Did you involve each of the groupmates?</li>
+                <li>Is it obvious that you were organized and had practiced for the presentation?</li>
+                <li>Do you keep the audience's attention?</li>
+                <li>Did you respect the time constraints?</li>
+                <li>Did you arrive on time for everyone else's presentation?</li>
+            </ul>
+        </ul>
+    
+    <p>You will be assigned a grade for each standard and these will be averaged based on the allocated percentages.  <b>If you did not participate equally in the groupwork, your grade will be reduced accordingly.</b>
+        <blockquote>                   
+            <table>
+<tr><td>A+&nbsp;&nbsp;</td> <td>(100+)&nbsp;&nbsp;</td>   
+    <td><b>Outstanding:</b> Goes above and beyond expectations</td></tr>
+<tr><td>A</td> <td>(95)</td>           	    
+    <td><b>Excellent:</b> Meets all requirements at a high level.</td></tr>
+<tr><td>B</td> <td>(85)</td>   	    
+    <td><b>Good:</b> Meets all requirements at an competent level.</td></tr>
+<tr><td>D</td> <td>(65)</td>           
+    <td><b>Poor:</b> Makes an effort to meet requirements but does not succeed.</td></tr><a name="2"></a>
+<tr><td>F</td> <td>(0-50)</td>               	
+    <td><b>Unacceptable:</b> No work, a weak start, or does not meet minimum acceptable standards.</td></tr>
+                                </table>   
+                            </blockquote>
+
+<!-- -->
+                    
+                    
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </div> <!-- End course_main-->
+            </div>  <!-- End middle -->  
+
+            <div class="footer_wrap">
+                 <div class="footer">
+                Christopher Hanusa   
+                 <span class="right">  
+                     <a href="../../../index.html"><img width="32" height="32" style="background: #fff; " src="../../../images/h.png" alt="Home page" /></a> 
+                     <a href="http://mathzorro.blogspot.com/"><img width="32" height="32" src="../../../images/b.png" style="vertical-align: center;" alt="Home page" /></a> 
+                     <a href="https://plus.google.com/+ChristopherHanusa"><img width="32" height="32" src="../../../images/g.png" style="vertical-align: center;" alt="Home page" /></a> 
+                     <a href="http://twitter.com/mathzorro"><img width="32" height="32" src="../../../images/t.png" alt="Home page" /></a> 
+                     <a href="https://www.facebook.com/pages/Christopher-Hanusa/553568864724342"><img width="32" height="32" src="../../../images/f.png" alt="Home page" /></a></span>
+                 </div>
+                 
+            </div>
+        </div> <!-- End container -->
+    </body>
+</html>

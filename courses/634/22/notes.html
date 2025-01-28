@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Graph Theory &bull; Course Content</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="author" content="Christopher Hanusa" />
+        <link rel="shortcut icon" href="favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="../../../css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../../../css/style1.css" />
+        <link href='https://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>    
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-47380773-6', 'auto');
+                ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header_wrap">
+                <div class="header">
+                    <span class="left">
+                        <a href="../../../index.html">HOME</a> > 
+                        <a href="../../index.html">Courses</a> > 
+                        <a href="index.html">634fa22</a>
+                    </span>
+                <div class="header_right">
+                    <span class="right">
+                        <a href="index.html">Home</a> &bull; 
+                        <a href="syllabus.html">Syllabus</a> &bull; 
+                        <a href="standards.html">Standards</a> &bull; 
+                        <a href="project.html">Project</a> &bull; 
+                        <a href="notes.html">Content</a>
+                    </span>
+                </div>
+                </div>
+            </div>
+
+            <div class="main">
+                           
+                <div class="course_head">            
+                <div class="course_head_img"><a href="index.html"><img src="../../../images/634c.png" height="100"/></a></div>
+                <div class="course_head_suptitle_634">Graph Theory, Fall 2022</div>
+                <div class="course_head_title_634">Course Content</div>
+                </div>
+                
+                <div class="course_main_634">
+                    <p>I've posted the notes, topics, and new definitions for each day and what is expected of you in and out of class. This schedule is approximate and subject to change! <b>Check back here often.</b> </p>
+
+                    <div class="notes_section">Graph Theory Basics (3 classes)</div>
+
+<div class="date">Monday, August 29</div>
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Visit and explore our Microsoft Teams Group</li>
+    <ul>
+        <li>Visit our <a href="https://teams.microsoft.com/">Microsoft Teams</a> group. Log in with username FirstName.LastName##@<b>login.cuny.edu</b> <i>instead of</i> FirstName.LastName##@<b>qmail.cuny.edu</b>.</li>
+        <li>Go to the Introductions channel. Introduce yourself to your classmates and share a fun link or meme. Please feel free to reply to a fellow classmate's post if something they share speaks to you.</li>
+        <li>Go to the Chat section of Microsoft Teams on the far left menu. (Note: This is outside the "Graph Theory Team".) Send me (Christopher Hanusa) a quick note with a quick "Hello this is" message and the name you prefer to be called. Feel free to include your preferred pronouns. Think of this as opening a dialog with me that we can continue throughout the semester when you need to get in contact with me.</li>
+    </ul>        
+    <li>Thoroughly read all pages of the course webpage. This should answer all the questions that you may have about the class. Make sure you read carefully about how standards-based grading works.</li>
+    <li><a href="https://doodle.com/meeting/participate/id/boQQx0Be">Fill out this Doodle</a> to let me know when you are available for office hours this semester.  (Pretend like it is a normal week with no holidays &emdash; select the times when you would be able to come to office hours regularly.)  I will try to choose times that work for most people.</li>
+</ul>
+    
+<div class="defn">In class:</div>
+<ul>
+<li>Notes from Section 1.1  (<a href="notes/634fa22ch11.pdf">Notes pages 0&ndash;15</a>) <a href="notes/634fa22ch11c.pdf">'</a> (Distributed in class today only.)</li>
+<li>Syllabus discussion. </li>
+<li>What is a graph?</li>
+<li>How to describe a graph.</li>
+<li>Degree sequence of a graph.</li>
+<li>Degree sequence of a graph.</li>
+<li>Theorem 1.1.2.</li>
+</ul>
+
+<div class="defn"><span style="color: #922">New definitions:</span> graph, vertex, edge, finite graph, multiple edges, loop, simple graph, adjacent, neighbors, incident, endpoint, degree, degree sum, isolated vertex, leaf, end vertex, degree sequence, graphic, Havel-Hakimi algorithm</b></div>
+                
+                
+                
+                
+                
+                
+                
+<div class="date">Wednesday, August 31</div> 
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Complete the "Before Class" activities from August 29 if you did not yet do so.</li>
+    <li>(Download / Print out) the notes for class (links below). (Do this daily.)</li>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Sections 1.1 and 1.2.</li>
+    <li>In your notebook, complete the definition exercise for the following terms. If anything is unclear, ask about it on the discussion board.
+        <ul>
+            <li>incident, simple graph, graphic sequence, <!--bipartite graph, complete bipartite graph <i>K<sub>m,n</sub></i>-->.</li>
+        </ul>
+        "Definition Exercise" means to give (a) the precise definition of the term (b) your understanding of the term (c) an example [an object that does satisfy the definition], and (d) a non-example [an object that does not satisfy the definition].</li>
+    <li>Prepare to share answers to the following questions in class.</li>
+    <li>Exploration Question:</li>
+        <ul>
+            <li><b>Question E1.</b> Give an example of where you have seen graphs in real life. (Do not use the examples from class unless you have a unique perspective.)
+                <ol type="a">
+                    <li><b>Explain</b> what corresponds to the abstract concepts of vertices, edges, and vertex degree.</li>
+                    <li><b>Discuss</b> whether a vertex can have a degree of zero or one in your scenario.</li>
+                </ol>
+            </li>
+        </ul>
+    <li>Proof Question:</li>
+        <ul>
+            <li><b>Question P1.</b> Seven students go on vacation.  They agree that everyone should send a postcard to three of the others.
+                <ol type="a">
+                    <li>Can this happen? Explain. </li>
+                    <li>Can each student receive postcards from precisely the three to whom they send postcards? Explain.</li>
+                </ol>
+                [<i>Note: If you use graph theory, explain why your reasoning applies.</i>]
+            </li>
+        </ul>
+
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Proof of Theorem 1.1.2.</li>
+    <li>Notes from Section 1.2  (<a href="notes/634fa22ch12.pdf">Notes pages 16&ndash;24</a>) <a href="notes/634fa22ch12c.pdf">'</a> </li>
+    <li>A dictionary of graphs.</li>
+    <li>Schlegel diagrams of Platonic solids.</li>
+    <li>When are two graphs the same?</li>
+</ul>
+                
+<div class="defn"><span style="color: #922">New definitions:</span> path graph P<sub>n</sub>, cycle C<sub>n</sub>, complete graph K<sub>n</sub>, bipartite graph, complete bipartite graph K<sub>m,n</sub>, wheel graph W<sub>n</sub>, star graph St<sub>n</sub>, cube graph, Petersen graph, Grotzsch graph, Platonic solid, Schlegel diagram, Tetrahedron, Cube, Octahedron, Dodecahedron, Icosahedron</div>
+
+                    <div class="notes_section">Isomorphisms, Trees, and Forests (2 classes)</div>
+                
+<div class="date"><span style="color: #922">No class Monday, September 5 (Labor Day)</span></div>
+    
+<div class="date">Wednesday, September 7</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Section 1.2</li>
+    <li>Complete the definition exercise for the following terms:</li>
+        <ul>
+            <li>bipartite graph, complete bipartite graph K<sub>m,n</sub>, Schlegel diagram</li>
+        </ul>
+    <li>Prepare to answer the following thought questions in class.</li>
+    <li>Exploration Questions:</li>
+        <ul>
+            <li><b>Question E2.</b> Find two simple graphs that have at least five vertices and that have the same degree sequence, where one of them is a tree and where the other is not a tree</li>
+            <li><b>Question E3.</b>  Draw the Schlegel diagram for two of the following polyhedra: Icosidodecahedron, Truncated Icosahedron, Rhombicuboctahedron, Permutohedron of order 4, Snub Cube. (You will have to do some investigating to determine what these polyhedra are.)</li>
+        </ul>
+    <li>Proof Questions:</li>
+        <ul>
+            <li><b>Question P2.</b> Are any of these degree sequences graphic?
+                <ol type="a">
+                    <li> 5 5 4 4 3 2 2 </li>
+                    <li> 6 6 4 4 4 2 2</li> 
+                    <li> 6 6 6 6 6 6 </li>
+                    <li> 6 6 6 6 6 6 6</li>
+                </ol>
+                If you determine that the sequence is graphic, draw a simple graph with the given degree sequence. If you determine that the sequence is not graphic, prove it.
+            </li>
+            <li><b>Question P3.</b> Prove that no graph has all degrees different.  That is, prove that in a degree sequence of a graph, there is at least one repeated number.
+            </li>
+        </ul>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>When are two graphs the same?</li>
+    <li>Finding Isomorphisms</li>
+</ul>
+<div class="defn"><span style="color: #922">New definitions:</span> equal graphs, isomorphic graphs </div>
+
+                
+                
+                
+                
+    
+<div class="date">Monday, September 12</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Section 1.2</li>
+    <li>Complete the definition exercise for the following terms:</li>
+        <ul>
+            <li>isomorphic graphs</li>
+        </ul>
+    <li>Prepare to answer the following thought questions in class.</li>
+    <li>Exploration Questions:</li>
+        <ul>
+            <li><b>Question E4.</b> Exercise 1.3.16: There are only two non-isomorphic graphs with degree sequence (6,3,3,3,3,3,3). Find them.
+            </li>
+    </ul>
+    <li>Proof Questions:</li>
+    <ul>
+            <li><b>Question P4.</b> Consider the graphs in Figure 1.2.4. Are any two of them isomorphic? Prove you are correct.</li>
+            <li><b>Question P5.</b> Consider the graphs in Figure 1.2.7. Are any two of them isomorphic? Prove you are correct.</li>
+    </ul>
+    <li>Our first assessment will be Wednesday on Standards 1 and 2.</li>
+</ul>
+<div class="defn">In class:</div>
+
+<ul>
+    <li>Homework Discussion</li>
+    <li>Larger graphs from smaller graphs.</li>
+    <li>Smaller graphs from larger graphs.</li>
+    <li>Groupwork on definitions.</li>
+    <li>Notes from Section 1.3. (<a href="notes/634fa22ch13.pdf">Notes pages 25&ndash;32</a>) <a href="notes/634fa22ch13c.pdf">'</a> </li>
+    <li>Connected graphs</li>
+</ul>
+                
+<div class="defn"><span style="color: #922">New definitions:</span> disjoint union, union, graph complement, self-complementary graph, subgraph, induced subgraph, proper subgraph</div>
+    
+                
+<div class="date">Wednesday, September 14</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Section 1.3</li>
+    <li>Complete the definition exercise for the following terms:</li>
+        <ul>
+            <li>induced subgraph</li>
+        </ul>
+    <li>Prepare to answer the following thought questions in class.</li>
+    <li>Exploration Questions:</li>
+        <ul>
+            <li><b>Question E5.</b> 
+                <br><b>(a)</b> Determine the complement of the graph <i>K<sub>m,n</sub></i> if <i>m, n&ge;3</i>.
+                <br><b>(b)</b> Prove or disprove: Every induced subgraph of a wheel graph <i>W<sub>n</sub></i> for <i>n&ge;3</i> contains a cycle.
+                <s><br><b>(a)</b> If <i>G</i> is a <i>k</i>-regular graph, what can you say about <i>G<sup>c</sup></i>? 
+                <br><b>(b)</b> If <i>G</i> is a connected graph, what can you say about <i>G<sup>c</sup></i>?</s>
+            </li>
+
+        </ul>
+    <li>Proof Questions:</li>
+    <ul>
+        <li><b>Question P6.</b> 
+            <br><b>(a)</b> Prove that if <i>n</i> is large enough, then the following statement is true: "For all graphs on <i>n</i> vertices, either <i>G</i> or <i>G<sup>c</sup></i> contains a cycle. 
+            <br><b>(b)</b> For which <i>n</i> does this start to be true?
+        </li>
+    </ul>
+    <li>Prepare to take the assessment on Standards 1 and 2.</li>
+</ul>
+<div class="defn">In class:</div>
+
+<ul>
+    <li>Assessment 1 on Standards 1 and 2.</li>
+    <li>Homework Discussion</li>
+    <li>(No new notes)</li>
+    <li><b>Lemma A.</b> If there is a path from a to b in G and a path from b to c in G, then there is a path from a to c in G.</li>
+    <li><b>Lemma B.</b> Let G be a connected graph. Suppose that G contains a cycle C and e is an edge of C. The graph H=G \ e is connected.</li>
+    <li>Theorem 1.3.1.</li>
+</ul>
+                
+<div class="defn"><span style="color: #922">New definitions:</span> path in G from a to b, connected graph</div>
+    
+
+<!--Give two examples of self-complementary graphs with more than 4 vertices.-->                
+                
+                
+
+<div class="notes_section">Coloring (4 classes)</div>
+
+<div class="date">Monday, September 19</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Sections 1.3 and 2.1</li>
+    <li>Complete the definition exercise for the following terms:</li>
+        <ul>
+            <li>connected graph</li>
+        </ul>
+    <li>Prepare to answer the following thought questions in class.</li>
+    <li>Exploration Questions:</li>
+        <ul>
+            <li><b>Question E6.</b> Sudoku is sooo last decade! Solve this Hashi puzzle.
+                <center><img src="Hashi.png"></center>
+<br><b>Instructions:</b> Draw in lines to connect the circles such that:
+                <ol>
+                    <li>Lines must be either perfectly vertical or horizontal.</li>
+                    <li><b>Up to two lines</b> may be drawn connecting the same circles.</li>
+                    <li>The lines may not cross.</li>
+                    <li>The degree of each vertex is the enclosed number.</li>
+                    <li>The entire graph must be connected.</li>
+                </ol>
+For many more Hashi puzzles and other fun games, visit <a href="http://www.menneske.no/hashi/eng/">http://www.menneske.no/hashi/eng/</a> and <a href="http://www.puzzle-bridges.com/">http://www.puzzle-bridges.com/</a>.</li>
+        </ul>
+    <li>Proof Questions:</li>
+    <ul>
+        <li><b>Question P7.</b> Let <i>G</i> be a connected regular graph with 22 edges.  What are the possible number of vertices that <i>G</i> may have?</li> 
+    </ul>
+   
+</ul>
+<div class="defn">In class:</div>
+
+<ul>
+    <li>Theorems 1.3.2, 1.3.3, and 1.3.5.</li>
+    <li>Trees and forests.</li>
+    <li>Theorems 2.4.1 and 3.2.1</li>
+    <li>Notes from Section 2.1 (<a href="notes/634fa22ch21.pdf">Notes pages 33&ndash;39</a>) <a href="notes/634fa22ch21c.pdf">'</a></li>
+    <li>(Vertex) coloring, proper coloring</li>
+    <li>Chromatic number</li>
+    <li><b>Lemma C.</b> If H is a subgraph of G, then χ(H)≤χ(G).</li>
+</ul>
+
+
+<div class="defn"><span style="color: #922">New definitions:</span> tree, forest, bridge, (vertex) coloring, proper coloring, chromatic number</div>
+
+                
+                
+                
+
+<div class="date">Wednesday, September 21</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Read the initial information about <a href="project.html">the course project</a>.</li>
+    <li>Complete the definition exercise for the following terms:</li>
+        <ul>
+            <li>bridge, proper coloring</li>
+        </ul>
+    <li>Prepare to answer the following thought questions in class.</li>
+    <li>Exploration Questions:</li>
+        <ul>
+            <li><b>Question E7.</b> Let <i>G</i> be a graph with <i>n</i> vertices and <i>n</i> edges.
+                <br><b>(a)</b> Suppose G is connected. How many cycles does G have? Prove it.
+                <br><b>(b)</b> Suppose G is NOT connected. What can you say about the number of cycles in the graph? Can you determine a formula?
+            </li>
+        </ul>
+    <li>Proof Questions:</li>
+    <ul>
+        <li><b>Question P8.</b> For some <i>k</i> greater than or equal to 2, find a <i>k</i>-regular graph that has a bridge.</li> 
+        <li><b>Question P9.</b> Consider a tree <i>T</i> that has only vertices of degree 1, 2, and 3. Suppose that <i>T</i> has exactly 10 vertices of degree 3. Find and prove how many leaves <i>T</i> has.</li>
+    </ul>
+    <li>Background reading for class: <i>Pearls in Graph Theory</i>, Section 2.1</li>
+
+</ul>
+<div class="defn">In class:</div>
+
+<ul>
+    <li>Homework Discussion</li>
+    <li>(No new notes)</li>
+    <li>clique, clique number</li>
+    <li>Critical graphs</li>
+    <li>Bipartite graphs</li>
+</ul>
+
+<div class="defn"><span style="color: #922">New definitions:</span> clique, clique number, critical graph,  bipartite graph</div>
+                
+
+<div class="date"><span style="color: #922">Careful with this week's schedule! There is no class Monday, September 26 (Rosh Hashanah); instead there is class on Thursday, September 29!</span></div>
+
+
+<div class="date">Wednesday, September 28</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Prepare to take the assessment on Standards 3 and 4.</li>
+    <li>Complete the definition exercise for the following terms:</li>
+        <ul>
+            <li>critical</li>
+        </ul>
+    <li>Prepare to answer the following thought questions in class.</li>
+        <ul>
+            <li><b>Question 10.</b> Determine the chromatic number of the dodecahedron graph.</li>
+            <li><b>Question 11.</b> Determine the chromatic number of the <a href="https://mathworld.wolfram.com/SierpinskiGasketGraph.html">Sierpinski Graph of order <i>n</i></a>. Prove your result by induction.</li>
+            <li><b>Question 12.</b> Is Figure 2.1.5 critical? Justify. <i>[Don't believe everything you read!]</i>   
+            </li>
+            <li><b>Question 13.</b> For which <i>n</i> is <i>W<sub>n</sub></i> critical?  Prove your claim.</li>
+        </ul>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Section 2.2</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Assessment 2 on Standards 3 and 4.</li>
+    <li>Homework Discussion</li>
+</ul>
+
+<div class="defn"><span style="color: #922">New definitions:</span> edge coloring, edge chromatic number, snark, turning trick</div>
+
+            
+
+                
+                
+<div class="date">Thursday, September 29</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Section 2.2</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Theorem 2.1.6</li>
+    <li>Notes from Section 2.2 (<a href="notes/634fa22ch22.pdf">Notes pages 40&ndash;45</a>) <a href="notes/634fa22ch22c.pdf">'</a></li>
+    <li>Edge coloring</li>
+    <li>Vizing's Theorem</li>
+    <li>Snarks</li>
+    <li>Edge chromatic number of complete graphs</li>
+</ul>
+
+  <div class="notes_section">Cycles and Circuits (4 classes)</div>
+            
+                
+<div class="date">Monday, October 3</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Complete the definition exercise for the following terms:</li>
+        <ul>
+            <li>snark, turning trick</li>
+        </ul>
+    <li>Prepare to answer the following thought questions in class.</li>
+        <ul>
+            <li><b>Question 14.</b> Is <i>K<sub>4</sub></i> a snark?</li>
+            <li><b>Question 15.</b> Prove or disprove: If <i>H</i> is a subgraph of <i>G</i>, then <i>&chi;'(H)&le;&chi;'(G)</i>.</li>
+            <li><b>Question 16.</b> Determine the edge chromatic number of the dodecahedron graph.</li>
+            <li><b>Question 17.</b> Determine the edge chromatic number of the <a href="https://mathworld.wolfram.com/SierpinskiGasketGraph.html">Sierpinski Graph of order <i>n</i></a></li> 
+            <li><b>Challenge Question.</b> Consider the (highly!) infinite graph G=(V,E) where V consists of every point in the 2D plane and there is an edge between any two vertices distance 1 unit apart. [For example, vertex (0,0) is connected by an edge to infinitely many points!: those on the unit circle.] Show that the chromatic number of this graph is at least 4. [The exact chromatic number is unknown; it is either 4, 5, 6, or 7.]</li>
+        </ul>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Section 2.3</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Notes from Section 2.3 and Knight's Tours. (<a href="notes/634fa22ch23.pdf">Notes pages 46&ndash;53</a>) <a href="notes/634fa22ch23c.pdf">'</a></li>
+    <li>Hamiltonian cycles</li>
+</ul>
+
+<div class="defn"><span style="color: #922">New definitions:</span> Hamiltonian cycle, Hamiltonian path, knight's tour</div>
+ 
+                
+                
+                
+<div class="date"><span style="color: #922">There is no class Wednesday, October 5 (Yom Kippur) nor Monday, October 10.</span></div>
+
+                           
+<div class="date">Wednesday, October 12</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Start to think about the topic you want to investigate for your <a href="project.html">project</a>. </li>
+    <li>Prepare to take the assessment on Standards 5 and 6.</li>
+    <li>Prepare to answer the following thought questions in class.
+        <ul>
+            <li><b>Question 18.</b> Which of the graphs in Figure 1.2.5 are Hamiltonian?</li>
+            <li><b>Question 19.</b> How long of a knight's path can you find manually <a href="https://www.maths-resources.com/knights/">on this website</a>? Take a screenshot.</li>
+        </ul>
+    </li>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Section 3.1</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Assessment 3 on Standards 5 and 6.</li>
+    <li>Homework Discussion</li>
+    <li>Knight's Tours</li>
+    <li>History of Knight's Tours: <a href="http://www.geofhagopian.net/CS007A/assignments/Assignments_F15/ktpaper.pdf">Knight's Tours by Ben Hill and Kevin Tostado</a></li>
+    <li><a href="http://www.mimuw.edu.pl/~rytter/TEACHING/ALCOMB/knight_torus.pdf">Knight's Tours on a Torus by John Watkins and Rebecca Hoenigman</a></li>
+</ul>
+
+<div class="defn"><span style="color: #922">New definitions:</span> knight's tour</div>
+
+
+
+                           
+<div class="date">Monday, October 17</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Start to think about the topic you want to investigate for your <a href="project.html">project</a>. Submit your proposal by Wednesday, October 19.</li>
+    <li>Prepare to take the assessment on Standards 5 and 6.</li>
+    <li>Prepare to answer the following thought questions in class.
+        <ul>
+            <li><b>Question 20.</b> Prove directly that there is no closed knight's tour on the 3&times;8 grid.</li>
+            <li><b>Question 21.</b> Find a closed knight's tour on the 3&times;5 <b>torus</b>.</li>
+        </ul>
+    </li>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Section 3.1</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Notes from Section 3.1 (<a href="notes/634fa22ch31.pdf">Notes pages 54&ndash;60</a>) <a href="notes/634fa22ch31c.pdf">'</a> </li>
+    <li>Vocabulary of pseudographs.</li>
+    <li>Eulerian circuits.</li>
+    <li>Thm 3.1.2. Even degrees implies Eulerian.</li>
+    <li>Eulerian Trails.</li>
+</ul>
+
+<div class="defn"><span style="color: #922">New definitions:</span> knight's tour pseudograph, walk, trail, path, circuit, cycle, loop, Eulerian circuit, Eulerian trail</div>
+
+                   
+<div class="date">Wednesday, October 19</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li><a href="https://forms.office.com/r/4dA16eaA7e">Submit your proposed project topic.</a></li>
+    <li>Make sure you have processed the definitions of the different types of "walks".</li>
+    <li>Prepare to answer the following thought questions in class.</li>
+        <ul>
+            <li><b>Question 22.</b> 
+                <br><b>(a)</b> Find a graph <i>E</i> that has an Eulerian circuit but no Hamiltonian cycle.
+                <br><b>(b)</b> Find a graph <i>H</i> that has a Hamiltonian cycle but no Eulerian circuit.
+                <br><i>[If either is impossible, prove why you can not find such a graph.]</i>
+            </li>
+            <li><b>Question 23.</b> Find a one-way Eulerian trail in the graph of Figure 3.3.6. (p. 67)  
+                <br>[<i>Note: A discussion of one-way Eulerian trails in infinite graphs occurs above the figure.</i>]
+            </li>
+        </ul>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Notes on Directed Graphs and de Bruijn sequences (<a href="notes/634fa22ch32.pdf">Notes pages 61&ndash;66</a>) <a href="notes/634fa22ch32c.pdf">'</a> </li>
+    <li>Directed graphs (digraphs)</li>
+    <li>digraph definitions</li>
+    <li>Existence of an Eulerian circuit in a digraph</li>
+    <li>de Bruijn sequences.</li>
+</ul>
+
+<div class="defn"><span style="color: #922">New definitions:</span> directed graph, in-degree, out-degree, strongly connected digraph, de Bruijn sequence, de Bruijn graph</div>
+
+<div class="notes_section">Planarity (4 classes)</div>
+                
+<div class="date">Monday, October 24</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Send Prof. Hanusa a message with your project topic. If you do not have a topic yet, please plan to meet with Prof. Hanusa to discuss.</li>
+    <li>Prepare to answer the following thought questions in class.</li>
+        <ul>
+            <li><b>Question 24.</b> Complete the activity on the last page of the set of notes about de Bruijn sequences. Did you get the same de Bruijn sequence (up to rotation) that was given in the notes? </li>
+            <li><b>Question 25.</b> Find a de Bruijn sequence on the alphabet {<i>a,b,c</i>} of order 2.</li>
+        </ul>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Section 8.1</li>
+    <li>The assessment on Standards 7 and 8 will be on Wednesday 10/26.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Notes from Section 8.1 (<a href="notes/634fa22ch81.pdf">Notes pages 67&ndash;73</a>) <a href="notes/634fa22ch81c.pdf">'</a></li>
+    <li>Planar graphs.</li>
+    <li>Euler's Formula.</li>
+    <li>Maximal planar graphs.</li>
+    <li>Numerical Conditions on Planar Graphs.</li>
+</ul>
+
+<div class="defn"><span style="color: #922">New definitions:</span> drawing, simple curve, plane drawing, plane graph, planar graph, region, face, outside face, maximal planar</div>
+                
+                
+<div class="date">Wednesday, October 26</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Prepare to take the assessment on Standards 7 and 8.</li>
+    <li><b>Definition check:</b> Compare and constrast the definitions of <b>plane drawing</b> and <b>planar graph</b>. Make sure you are able to understand the difference.</li>
+    <li>Prepare to answer the following thought questions in class.</li>
+        <ul>
+            <li><b>Question 26.</b> 8.1.9abc [In part (c), add edges—do not subtract them.]</li>
+            <li><b>Question 27.</b> Find and prove an "Euler's formula" for disconnected planar graphs.
+        </ul>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Section 8.2</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Assessment 4 on Standards 7 and 8.</li>
+    <li>Homework Discussion</li>
+    <li>Notes from Section 8.2  (<a href="notes/634fa22ch82.pdf">Notes pages 74&ndash;78</a>) <a href="notes/634fa22ch82c.pdf">'</a></li>
+    <li>Maps, normal maps.</li>
+    <li>Four Color Theorem (not proved).</li>
+    <li>History of the four color theorem.</li>
+</ul>
+
+<div class="defn"><span style="color: #922">New definitions:</span> girth</div>
+
+                
+<div class="date">Monday, October 31</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Finalize your project topic. Ensure that you have found some sources that you can use for your project. If your sources have not yet been approved by Prof. Hanusa, please send a link to the source through Teams or by email.</li>
+    <li>Prepare to answer the following thought questions in class.</li>
+        <ul>
+            <li><b>Question 28.</b> Use an argument involving girth to prove that the Petersen graph is not planar.</li>
+            <li><b>Gain Intuition:</b> Play the planarity game at https://www.jasondavies.com/planarity/. Can you solve a graph with 10 vertices? 15? 20? 30? More? Take a screen shot of the last level you completed and share it on our Discussion Board.</li>
+        </ul>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Sections 8.2 and 8.3</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Notes from Section 8.2  (<a href="notes/634fa22ch82.pdf">Notes pages 74&ndash;78</a>) <a href="notes/634fa22ch82c.pdf">'</a></li>
+    <li>Maps, normal maps.</li>
+    <li>Four Color Theorem (not proved).</li>
+    <li>History of the Four Color Theorem.</li>
+    <li>Notes from Section 8.3  (<a href="notes/634fa22ch83.pdf">Notes pages 79&ndash;84</a>) <a href="notes/634fa22ch83c.pdf">'</a></li>
+    <li>Six Color Theorem (proved)</li>
+</ul>
+
+<div class="defn"><span style="color: #922">New definitions:</span> dual graph, map, normal map, Four Color Theorem</div>
+
+                
+                
+<div class="date">Wednesday, November 2</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Prepare to answer the following thought questions in class.</li>
+        <ul>
+            <li><b>Question 29.</b> Show that for all <i>n</i>, the wheel graph <i>W<sub>n</sub></i> is self-dual.</li>
+            <li><b>Question 30.</b> Find a graph that has two non-isomorphic dual graphs. [<i>Hint: Look for different planar embeddings.</i>]</li>
+            <li><b>Gain Intuition:</b> Find a four coloring of this map: https://www.geogebra.org/m/pjPgJdhV. Another game to build intuition is here: https://www.kongregate.com/games/toweld/four-color-theorem-coloring-puzzle-game (You don't need to sign up for an account.)</li>
+        </ul>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Sections 8.3 and 9.1</li>
+    <li>The assessment on Standards 9 and 10 will be on Monday 11/7.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Five Color Theorem (proved)</li>
+    <li>Kempe Chains argument</li>
+    <li>Notes from Section 9.1  (<a href="notes/634fa22ch91.pdf">Notes pages 85&ndash;88</a>) <a href="notes/634fa22ch91c.pdf">'</a></li>
+    <li>Modifications of graphs.</li>
+    <li>Kuratowski's Theorem.</li>
+</ul>
+
+<div class="defn"><span style="color: #922">New definitions:</span> Kempe chain, deletion, contraction, minor, subdivision</div>
+
+
+
+<div class="notes_section">Graph Algorithms (6 classes)</div>
+                
+<div class="date">Monday, November 7</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Prepare to take the assessment on Standards 9 and 10.</li>
+    <li>Make sure you are comfortable with the Kempe Chains argument.</li>
+    <li>Prepare to answer the following thought questions in class.</li>
+        <ul>
+            <li><b>Question 31.</b> Try to prove the Four Color Theorem by emulating the argument from class using Kempe Chains. What goes wrong?</li>
+            <li><b>Question 32.</b>
+                <br><b>(a)</b> Find a graph G with degree sequence (4, 4, 3, 3, 3, 3) such that G is planar. Prove it.
+                <br><b>(b)</b> Find a graph H with degree sequence (4, 4, 3, 3, 3, 3) such that H is non-planar. Prove it.
+            </li>
+            <li><b>Question 33.</b> Prove that the graph G in Figure 9.1.18 (p. 189) is non-planar using two methods:
+                <br><b>(a)</b> Find a subdivision of <i>K<sub>3,3</sub></i> or <i>K<sub>5</sub></i> that is a subgraph of G.
+                <br><b>(b)</b> Through a series of edge deletions and edge contractions, show that either <i>K<sub>3,3</sub></i> or <i>K<sub>5</sub></i> is a minor of G.</li>
+            <li><b>Question 34.</b> Prove that the Petersen graph is a minor of this graph:
+                <center><img src="minor.png" width="300"></center></li>
+        </ul>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Section 7.2</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Assessment 5 on Standards 9 and 10.</li>
+    <li>Homework Discussion</li>
+</ul>
+
+                
+<div class="date">Wednesday, November 9</div>
+            
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Prepare to answer the following thought questions in class.</li>
+        <ul>
+            <li><b>Question 35.</b> A disconnecting set is a set of edges in a connected graph that, when removed, disconnects the graph. Give an example of a minimal disconnecting set that is not a minimum disconnecting set.</li>
+            <li><b>Question 36.</b> Give an example of a graph that does not have a perfect matching. Explain why it does not have a perfect matching. What is the maximum matching in your graph?</li>
+        </ul>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Section 7.2</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Notes from Section 7.2 and more (<a href="notes/634fa22ch72.pdf">Notes pages 89&ndash;97</a>) <a href="notes/634fa22ch72c.pdf">'</a></li>
+    <li>Matchings.</li>
+    <li>Maximum vs. maximal.</li>
+    <li>Algorithms.</li>
+    <li>Hungarian algorithm.</li>
+</ul>
+<div class="defn"><span style="color: #922">New definitions:</span> matching, maximal, maximum, algorithm, correctness, Hungarian algorithm, M-alternating path, M-augmenting path</div>
+
+               
+<div class="date">Monday, November 14</div>
+            
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Collect some information about your project topic. Remember that by Monday 11/21, you will be turning in an outline about what you will be including in your presentation.</li>
+    <li>Prepare to answer the following thought questions in class.</li>
+        <ul>
+            <li><b>Question 35.</b> A disconnecting set is a set of edges in a connected graph that, when removed, disconnects the graph. Give an example of a minimal disconnecting set that is not a minimum disconnecting set.</li>
+            <li><b>Question 36.</b> Give an example of a graph that does not have a perfect matching. Explain why it does not have a perfect matching. What is the maximum matching in your graph?</li>
+            <li><b>Question 37.</b> A spanning tree in a connected graph G is a subgraph T that includes every vertex of G. Prove the correctness of the following algorithm to find a spanning tree of a graph. [Remember: Prove that the algorithm terminates and that it gives the desired output.]
+            <br><b>Input:</b> A connected graph G with n vertices.
+            <br><b>Preprocess:</b> Label the vertices 1 through n, color them all white. Let T be a set of edges, initially empty.
+            <br><b>Repeat:</b> For the lowest numbered white vertex v, order the edges incident with v based on the labels of the adjacent vertices. Going through each edge e from first to last, determine if including e in T would create a cycle in T. If it would not create a cycle, place e into T (T is growing.) If it would create a cycle, do not add e to T; go on to the next edge. Once every incident edge to v has been checked, color v black. If all vertices are black, go on to the next step. Otherwise, repeat this step.
+            <br><b>Output:</b> Output the graph T, a spanning tree of G.</li>
+        </ul>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Section 7.2</li>
+    <li>The assessment on Standards 11, 12, and 13 will be on Wednesday 11/16.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Correctness of the Hungarian algorithm.</li>
+    <li>Notes about stable marriages (<a href="notes/634fa22ch73.pdf">Notes pages 98&ndash;106</a>) <a href="notes/634fa22ch73c.pdf">'</a></li>
+    <li>Stable marriages.</li>
+    <li>The play.</li>
+</ul>
+<div class="defn"><span style="color: #922">New definitions:</span> set of stable marriages, Gale-Shapley Algorithm, human-optimal stable marriages</div>                            
+                
+<div class="date">Wednesday, November 16</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Prepare to take the assessment on Standards 11, 12, and 13.</li>
+    <li>Prepare to answer the following thought questions in class.</li>
+        <ul>
+            <li><b>Question 38.</b> Use the Hungarian algorithm to solve problem 7.2.2. Use the initial matching M = {(a, 4), (c, 6), (e, 2), (h, 5)}.</li>
+        </ul>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Assessment 6 on Standards 11, 12, and 13.</li>
+    <li>Homework Discussion</li>
+    <li>Correctness of the Gale-Shapley Algorithm.</li>
+    <li>Proof of human-optimality.</li>
+</ul>
+   
+<div class="date">Monday, November 21</div>
+            
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Turn in an outline about what you will be including in your presentation for your <a href="project.html">project</a>. What are the key definitions you will be teaching? What are the key results you will be sharing?</li>
+    <li>Prepare to answer the following thought questions in class.</li>
+        <ul>
+            <li><b>Question 39.</b> Run the Gale-Shapley algorithm twice on the following sets of preferences, once with the people proposing, and once with the pets proposing. Discuss how your results are related to the theorems on optimality and pessimality.
+                <br>&nbsp;
+                <center>
+            <table style="background-color:#FFFFFF;text-align: center">
+                <tr style="background-color:#FFFFCC">
+                    <td colspan=6 style="align:center;font-size:14pt"><center><b>Pets’ Preferences</b></center></td>
+                </tr>
+                <tr style="background-color:#FFFFFF;border-bottom: 1px solid #000;">
+                    <td>&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Art&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;Bettie&nbsp;</td>
+                    <td>&nbsp;Casper&nbsp;</td>
+                    <td>&nbsp;Delphi&nbsp;</td>
+                    <td>&nbsp;&nbsp;Ernie&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">First Choice:</td>
+                    <td style="text-align: center">F</td>
+                    <td style="text-align: center">F</td>
+                    <td style="text-align: center">G</td>
+                    <td style="text-align: center">G</td>
+                    <td style="text-align: center">H</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">Second Choice:</td>
+                    <td style="text-align: center">G</td>
+                    <td style="text-align: center">H</td>
+                    <td style="text-align: center">I</td>
+                    <td style="text-align: center">H</td>
+                    <td style="text-align: center">F</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">Third Choice:</td>
+                    <td style="text-align: center">I</td>
+                    <td style="text-align: center">I</td>
+                    <td style="text-align: center">F</td>
+                    <td style="text-align: center">J</td>
+                    <td style="text-align: center">I</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">Fourth Choice:</td>
+                    <td style="text-align: center">J</td>
+                    <td style="text-align: center">G</td>
+                    <td style="text-align: center">H</td>
+                    <td style="text-align: center">I</td>
+                    <td style="text-align: center">G</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">Fifth Choice:</td>
+                    <td style="text-align: center">H</td>
+                    <td style="text-align: center">J</td>
+                    <td style="text-align: center">J</td>
+                    <td style="text-align: center">F</td>
+                    <td style="text-align: center">J</td>
+                </tr>
+            </table>
+            <br><table style="background-color:#FFFFFF;text-align: center">
+                <tr style="background-color:#FFCCFF">
+                    <td colspan=6 style="align:center;font-size:14pt"><center><b>Human’s Preferences</b></center></td>
+                </tr>
+                <tr style="background-color:#FFFFFF;border-bottom: 1px solid #000;">
+                    <td>&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Fei&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;Georg&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;Helen&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;Ivan&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;Jin&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">First Choice:</td>
+                    <td style="text-align: center">C</td>
+                    <td style="text-align: center">E</td>
+                    <td style="text-align: center">A</td>
+                    <td style="text-align: center">E</td>
+                    <td style="text-align: center">B</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">Second Choice:</td>
+                    <td style="text-align: center">B</td>
+                    <td style="text-align: center">B</td>
+                    <td style="text-align: center">D</td>
+                    <td style="text-align: center">C</td>
+                    <td style="text-align: center">D</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">Third Choice:</td>
+                    <td style="text-align: center">E</td>
+                    <td style="text-align: center">C</td>
+                    <td style="text-align: center">B</td>
+                    <td style="text-align: center">A</td>
+                    <td style="text-align: center">A</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">Fourth Choice:</td>
+                    <td style="text-align: center">A</td>
+                    <td style="text-align: center">A</td>
+                    <td style="text-align: center">E</td>
+                    <td style="text-align: center">B</td>
+                    <td style="text-align: center">C</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">Fifth Choice:</td>
+                    <td style="text-align: center">D</td>
+                    <td style="text-align: center">D</td>
+                    <td style="text-align: center">C</td>
+                    <td style="text-align: center">D</td>
+                    <td style="text-align: center">E</td>
+                </tr>
+            </table>
+            </center>
+    </ul>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Notes about network flow (<a href="notes/634fa22ch74.pdf">Notes pages 107&ndash;119</a>) <a href="notes/634fa22ch74c.pdf">'</a></li>
+    <li>Networks.</li>
+</ul>
+
+<div class="defn"><span style="color: #922">New definitions:</span> network, flow, throughput of a flow, cut, max flow, min cut</div>
+                
+<div class="date">Wednesday, November 23</div>
+                
+<div class="defn">Before Class:</div>
+<ul>
+<!--    <li>Prepare to answer the following thought questions in class.</li>
+        <ul>
+            <li><b>Question 40.</b> 
+                <br><b>(a)</b> List all <i>st</i>-cuts in the network pictured below (there are eight). Find the capacity of each <i>st</i>-cut and determine the min cut from this information. 
+                <br><b>(b)</b> Next, find a maximum flow for the network and verify that it is a max flow.  
+                <br><b>(c)</b> Last, verify that the max flow / min cut theorem holds for this network. 
+                <br><i>[<b>Important:</b> Do NOT use the Ford-Fulkerson algorithm in this problem.]</i>
+                <center><img src="flow.png" width="300"></center>
+                
+</li>
+        </ul> -->
+    <li>The assessment on Standards 14 and 15 will be on Monday 11/28.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Flow in a network, MAX FLOW.</li>
+    <li>Edge cuts, MIN CUT.</li>
+</ul>
+<div class="defn"><span style="color: #922">New definitions:</span> flow companion graph, flow augmenting path, Ford-Fulkerson Algorithm</div>
+
+<div class="date"><span style="color: #922">Happy Thanksgiving everyone!!!!</span></div>
+
+<p>                
+<font size="+1"><font color=red>•</font><font color=orange>•</font><font color=yellow>•</font><font color=green>•</font><font color=blue>•</font><font color=purple>•</font></font> Please fill out the college-wide <a href="https://www.qc.cuny.edu/evaluate">course evaluations</a>, distinct from the course evaluations that will be given out in class.  Thank you for your feedback! <font size="+1"><font color=purple>•</font><font color=blue>•</font><font color=green>•</font><font color=yellow>•</font><font color=orange>•</font><font color=red>•</font></font></p>
+                                
+                
+<div class="date">Monday, November 28</div>                
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Prepare to answer the following thought questions in class.</li>
+        <ul>
+            <li><b>Question 40.</b> 
+                <br><b>(a)</b> List all <i>st</i>-cuts in the network pictured below (there are eight). Find the capacity of each <i>st</i>-cut and determine the min cut from this information. 
+                <br><b>(b)</b> Next, find a maximum flow for the network and verify that it is a max flow.  
+                <br><b>(c)</b> Last, verify that the max flow / min cut theorem holds for this network. 
+                <br><i>[<b>Important:</b> Do NOT use the Ford-Fulkerson algorithm in this problem.]</i>
+                <center><img src="flow.png" width="300"></center>
+                
+            </li>
+        </ul>
+    <li>Prepare to take the assessment on Standards 14 and 15.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Assessment 7 on Standards 14 and 15.</li>
+    <li>Homework Discussion</li>
+    <li>Proof of correctness of Ford-Fulkerson algorithm.</li>
+</ul>
+                
+                
+<div class="date">Wednesday, November 30</div>                
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Prepare to answer the following thought questions in class.</li>
+        <ul>
+            <li><b>Question 41.</b> Use the Ford-Fulkerson algorithm to find the max flow and min cut on <a href="flowhwk.pdf">the attached network</a>.  Prove that your flow is a max flow and your <i>st</i>-cut is a min cut.</li>
+        </ul>
+    <li>The assessment of Standards 16 and 17 will be next Wednesday, December 7.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Homework Discussion</li>
+    <li>Ford-Fulkerson examples and discussion.</li>
+</ul>
+                
+                
+<div class="date">Monday, December 5</div>                
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Work to get your project (presentation and essay) into a complete state and bring it to class for a directed peer review session.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Peer review session.</li>
+</ul>
+                
+<div class="date">Wednesday, December 7</div>                
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Improve your project with the feedback given by your classmates.</li>
+    <li>Prepare to take the assessment on Standards 16 and 17 and any other reassessments you need.</li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+    <li>Assessment 8 on Standards 16 and 17.</li>
+    <li>Time for reassessments or more feedback on your project.</li>
+    <li>We will determine a plan for who will present on which presentation day.</li>
+</ul>
+            
+
+<div class="date">Monday, December 12</div>
+
+<ul>
+    <li>Presentations</li>
+</ul>
+
+<font size="+1"><font color=red>•</font><font color=orange>•</font><font color=yellow>•</font><font color=green>•</font><font color=blue>•</font><font color=purple>•</font></font> Please fill out the college-wide <a href="https://ce5.connectedu.net/etw/crseval.asp?i=23">course evaluations</a>, distinct from the course evaluations that will be given out in class.  Thank you for your feedback! <font size="+1"><font color=purple>•</font><font color=blue>•</font><font color=green>•</font><font color=yellow>•</font><font color=orange>•</font><font color=red>•</font></font>
+
+<div class="date">Monday, December 19, 1:45pm&ndash;3:45pm (Final Exam Period)</div>
+<ul>
+    <li>Presentations</li>
+</ul>
+
+<!--
+                
+<div class="defn">Before Class:</div>
+<ul>
+    <li>Background reading: <i>Pearls in Graph Theory</i>, Sections <b>(**********)</b></li>
+    <li>Complete the definition exercise for the following terms:</li>
+        <ul>
+            <li>(**********)</li>
+        </ul>
+    <li>Prepare to answer the following thought questions in class.
+        <ul>
+            <li><b>Question <b>(XXXXXX)</b>.</b> </li>
+        </ul>
+    </li>
+</ul>
+<div class="defn">In class:</div>
+<ul>
+</ul>
+
+
+               
+
+                                   <div class="notes_section">Graph Statistics (2 classes)</div>
+
+
+<div class="date">Wednesday, March 5</div>
+    <br><a href="homework/634fa22hw9.pdf">Homework #9</a> is due on Wednesday, March 5.&nbsp; 
+                (<a href="homework/634fa22hw9.tex">.tex file</a>) It only contains definitions.</div>
+<div class="defn"><span style="color: #922">New definitions:</span> connected component, cut vertex, cut set, disconnecting set, connectivity, edge connectivity, maximum, maximal, girth, distance, diameter, independent set, independence number, vertex cover, vertex cover number</div>
+
+<ul>
+<li>Graph Statistics (<a href="notes/634fa22ch32.pdf">Notes pages 70&ndash;76</a>) <a href="notes/634fa22ch32c.pdf">'</a></li>
+<li>Connectivity and Edge connectivity</li>
+<li>Girth, distance, and diameter</li>
+<li>Cliques, Independent sets, Vertex covers</li>
+</ul>
+
+
+<div class="date">Monday, March 10</div>
+
+<ul>
+    <li>Graph Statistics worksheet</li>
+</ul>
+
+
+
+
+                            <!--
+-->
+                        
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </div> <!-- End course_main-->
+            </div>  <!-- End middle -->  
+
+            <div class="footer_wrap">
+                 <div class="footer">
+                Christopher Hanusa   
+                 <span class="right">  
+                     <a href="../../../index.html"><img width="32" height="32" style="background: #fff; " src="../../../images/h.png" alt="Home page" /></a> 
+                     <a href="http://hanusadesign.com/"><img width="32" height="32" src="../../../images/hd.png" style="vertical-align: center;" alt="Hanusa Design - Mathematical Art and Jewelry" /></a> 
+                     <a href="http://instagram.com/mathzorro/"><img width="32" height="32" src="../../../images/i.png" style="vertical-align: center;" alt="Christopher Hanusa on Instagram" /></a> 
+                     <a href="http://twitter.com/mathzorro"><img width="32" height="32" src="../../../images/t.png" alt="Christopher Hanusa on Twitter" /></a> 
+                     <a href="https://www.facebook.com/ChristopherHanusa"><img width="32" height="32" src="../../../images/f.png" alt="Christopher Hanusa on Facebook" /></a></span>
+                 </div>
+                 
+            </div>
+        </div> <!-- End container -->
+    </body>
+</html>

@@ -1,0 +1,951 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     37847,        943]
+NotebookOptionsPosition[     29501,        812]
+NotebookOutlinePosition[     30156,        836]
+CellTagsIndexPosition[     30071,        831]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Mathematica Shortcuts", "Title",
+ CellChangeTimes->{{3.461405268132181*^9, 3.461405274978758*^9}, {
+   3.461405374110767*^9, 3.461405382736993*^9}, {3.461405964606715*^9, 
+   3.461405964996537*^9}, {3.461412674365797*^9, 3.461412678153265*^9}, {
+   3.47448983369319*^9, 3.474489837928254*^9}, {3.630696562351103*^9, 
+   3.630696568117642*^9}, {3.631988928117742*^9, 3.6319889301724463`*^9}, {
+   3.744543333244906*^9, 3.744543338187427*^9}, 
+   3.8076364440231667`*^9},ExpressionUUID->"48298fc7-2660-4fd4-8675-\
+31aa0a9305ed"],
+
+Cell["\<\
+Math 250 - Mathematical Computing
+Christopher Hanusa\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.4614053946645927`*^9, 3.4614054230893087`*^9}, {
+  3.461405971637244*^9, 3.4614060079862947`*^9}, {3.474489844264483*^9, 
+  3.474489895841402*^9}, {3.505485689221858*^9, 3.505485696180904*^9}, {
+  3.53815066431697*^9, 3.538150664587603*^9}, {3.630691352563725*^9, 
+  3.6306913589949083`*^9}, {3.8076358116929846`*^9, 
+  3.807635824778818*^9}},ExpressionUUID->"5d50180e-d392-4ee0-a78c-\
+d5fe87d833f6"],
+
+Cell[CellGroupData[{
+
+Cell["4.1 Aim", "Section",
+ CellChangeTimes->{{3.505485680414241*^9, 3.50548573910983*^9}, {
+  3.8076358291956053`*^9, 3.8076358297953153`*^9}, {3.8076364463694096`*^9, 
+  3.8076364571515684`*^9}},ExpressionUUID->"6a60c3c8-73d7-438e-ace7-\
+0b68b70cd0f6"],
+
+Cell[TextData[{
+ "This tutorial is about some best practices for Mathematica, and some \
+shortcuts to make your life with ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " easier. "
+}], "Text",
+ CellChangeTimes->{{3.505485741709942*^9, 3.505485911210339*^9}, {
+   3.5054859461638536`*^9, 3.505486140785309*^9}, {3.569597235122435*^9, 
+   3.56959724256273*^9}, {3.631988357249017*^9, 3.631988375104192*^9}, {
+   3.631988705128955*^9, 3.63198874613913*^9}, {3.63198884890553*^9, 
+   3.631988859824958*^9}, {3.631993478341037*^9, 3.631993482877342*^9}, {
+   3.744545884279545*^9, 3.744545886599271*^9}, {3.74455046383361*^9, 
+   3.744550474703417*^9}, 3.8076364503511925`*^9, {3.8078259325532303`*^9, 
+   3.807825936200986*^9}},ExpressionUUID->"7a8ded6f-5a00-42f3-bb34-\
+7ebaaa516880"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["4.2 NOT losing your work", "Section",
+ CellChangeTimes->{{3.744545669341261*^9, 3.744545670645357*^9}, {
+   3.744545721010283*^9, 3.744545740682889*^9}, {3.8076358438752213`*^9, 
+   3.8076358453797874`*^9}, 
+   3.8076364580548253`*^9},ExpressionUUID->"41f3d480-0b5e-44a2-83b7-\
+22adf5327159"],
+
+Cell[CellGroupData[{
+
+Cell["Save your work", "Subsection",
+ CellChangeTimes->{{3.7445457884844227`*^9, 
+  3.744545795964588*^9}},ExpressionUUID->"c52d5344-2c00-4711-b392-\
+7d98c6cfde11"],
+
+Cell["\<\
+Mathematica is more likely to crash than other programs \
+you\[CloseCurlyQuote]re used to, especially when you\[CloseCurlyQuote]re in \
+the middle of a complex computation, or when it is right before your project \
+is due.  Save your notebooks frequently.\
+\>", "Text",
+ CellChangeTimes->{{3.7445457990047913`*^9, 3.744545850006401*^9}, {
+  3.744633094263788*^9, 
+  3.744633122566248*^9}},ExpressionUUID->"c83e0778-ef2e-4146-818a-\
+0a6e85690a29"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["AutoSave!", "Subsection",
+ CellChangeTimes->{{3.744545853942391*^9, 
+  3.7445458562705307`*^9}},ExpressionUUID->"1a850ad7-0063-4610-9e25-\
+8ce8d4e620db"],
+
+Cell["\<\
+It is possible to turn on the AutoSave feature of Mathematica.  What it will \
+do is save your work every time you do an evaluation. (Shift-Return)  Follow \
+these steps to turn it on:\
+\>", "Text",
+ CellChangeTimes->{{3.7445458956636963`*^9, 3.744545957729456*^9}, {
+  3.744547023377406*^9, 
+  3.7445470246008873`*^9}},ExpressionUUID->"1f1db770-3974-489c-8347-\
+1d9fa95b247c"],
+
+Cell["Go to Preferences > Advanced", "Item",
+ CellChangeTimes->{{3.7445471145686817`*^9, 
+  3.744547124790145*^9}},ExpressionUUID->"21bc0e19-8ab8-4a0f-a1e1-\
+7ad6202a22d5"],
+
+Cell["Click on \[OpenCurlyDoubleQuote]Open Option Inspector\
+\[CloseCurlyDoubleQuote]", "Item",
+ CellChangeTimes->{{3.7445471145686817`*^9, 3.744547153848988*^9}, {
+  3.744550951292447*^9, 
+  3.744550987914296*^9}},ExpressionUUID->"c0b585dd-92b2-4cfd-9233-\
+5a7b03ecc4c7"],
+
+Cell["\<\
+Ensure that \[OpenCurlyDoubleQuote]Global Preferences\[CloseCurlyDoubleQuote] \
+is selected in the \[OpenCurlyDoubleQuote]Scope\[CloseCurlyDoubleQuote] \
+pulldown menu.\
+\>", "Item",
+ CellChangeTimes->{{3.7445471145686817`*^9, 3.744547153848988*^9}, {
+  3.744550951292447*^9, 
+  3.744551016198403*^9}},ExpressionUUID->"5b2fed8a-71c4-42ab-8c37-\
+7d6ed42dec4b"],
+
+Cell["In the Search Bar type in AutoSave", "Item",
+ CellChangeTimes->{{3.7445471145686817`*^9, 3.744547153848988*^9}, {
+  3.744550951292447*^9, 3.7445509751730824`*^9}, {3.7445510208195057`*^9, 
+  3.744551020820017*^9}},ExpressionUUID->"72f1e00a-986b-4a67-a79e-\
+c80ba110c4e5"],
+
+Cell["Click the checkbox next to \[OpenCurlyDoubleQuote]NotebookAutoSave\
+\[CloseCurlyDoubleQuote].", "Item",
+ CellChangeTimes->{{3.7445471145686817`*^9, 3.744547153848988*^9}, {
+  3.744550951292447*^9, 3.7445509751730824`*^9}, {3.744551023334672*^9, 
+  3.744551033670876*^9}},ExpressionUUID->"2f8ac774-3e4e-4bc5-8678-\
+3c583dccbb51"],
+
+Cell["\<\
+The only problem I have found with enabling AutoSave is that it slows down \
+your coding process because it makes the computer work more often.  The piece \
+of mind you get from knowing that your work is being saved regularly is worth \
+it.  If things really start to go very slowly, it\[CloseCurlyQuote]s probably \
+because your notebook is very very large.  When this happens to me, I save my \
+work, I open a new notebook and bring over the most essential pieces of code \
+into the new notebook and work from there.\
+\>", "Text",
+ CellChangeTimes->{{3.7445510360547113`*^9, 
+  3.744551194003417*^9}},ExpressionUUID->"3cdcd814-3c2d-4821-8dc3-\
+ea8ec097ec8d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Undo", "Subsection",
+ CellChangeTimes->{{3.74454574425914*^9, 
+  3.744545746146926*^9}},ExpressionUUID->"fe517686-4581-404a-bd5d-\
+af849661650f"],
+
+Cell[TextData[{
+ "Mathematica has an undo command (Ctrl-Z or Option-Z is the keyboard \
+shortcut). BUT it doesn\[CloseCurlyQuote]t always work, and ",
+ StyleBox["don\[CloseCurlyQuote]t depend on it",
+  FontWeight->"Bold"],
+ " being able to undo more than one thing."
+}], "Text",
+ CellChangeTimes->{{3.74454567238943*^9, 3.7445457171221743`*^9}, {
+  3.744545751723431*^9, 3.7445457855724783`*^9}, {3.744551210883955*^9, 
+  3.744551224395916*^9}},ExpressionUUID->"afd7caa9-40e6-48bc-83ef-\
+668d914adf3c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Incremental Development", "Subsection",
+ CellChangeTimes->{{3.744545659750016*^9, 3.744545663077121*^9}, {
+  3.744545866238686*^9, 
+  3.744545870262967*^9}},ExpressionUUID->"7b89e3ce-c4ea-4ed0-8a70-\
+004980ba2964"],
+
+Cell["\<\
+One way to avoid using an Undo command and that is a good programming \
+practice that you should start to use is incremental development.  It boils \
+down to three principles:\
+\>", "Text",
+ CellChangeTimes->{{3.744545872854988*^9, 3.744545874614914*^9}, {
+  3.744550509201468*^9, 3.7445505443933363`*^9}, {3.744551237052528*^9, 
+  3.7445512498287582`*^9}},ExpressionUUID->"8534a1c8-583f-446d-ac4d-\
+94c23c041477"],
+
+Cell["Always start with a piece of working code. ", "Item",
+ CellChangeTimes->{{3.7445505815330048`*^9, 3.744550586521229*^9}, {
+  3.744550630541073*^9, 
+  3.7445506355638123`*^9}},ExpressionUUID->"9bc87b5c-7c0e-436a-bc68-\
+b5eca07bb211"],
+
+Cell["Make only one small modification at a time.", "Item",
+ CellChangeTimes->{{3.7445505815330048`*^9, 3.7445506105935507`*^9}, {
+  3.744550641468142*^9, 
+  3.7445506677978687`*^9}},ExpressionUUID->"0751a86a-7f0c-4a32-8144-\
+f9094622e04f"],
+
+Cell["Test the new code to see if the change worked.", "Item",
+ CellChangeTimes->{{3.7445505815330048`*^9, 3.744550624905958*^9}, {
+  3.7445506720050983`*^9, 
+  3.744550681869928*^9}},ExpressionUUID->"c2ac96f6-ba44-492e-8bb8-\
+295e8987cfef"],
+
+Cell["\<\
+This is helpful because if you change something small and it breaks, it\
+\[CloseCurlyQuote]s easy to find.  On the other hand, if you try to write a \
+piece of code that is complex all in one go, then if it doesn\
+\[CloseCurlyQuote]t work it will be much harder to find your error.\
+\>", "Text",
+ CellChangeTimes->{{3.744551258372863*^9, 3.744551264916971*^9}, {
+  3.744552168893963*^9, 
+  3.744552248200047*^9}},ExpressionUUID->"4552a047-1ead-4353-982d-\
+fb023a51b0bc"],
+
+Cell["\<\
+In a Mathematica notebook, the best way to do this is to start with a \
+\[OpenCurlyDoubleQuote]Minimal Working Example\[CloseCurlyDoubleQuote], such \
+as a piece of code from the Documentation Center.  Then as you build your \
+code and it becomes more and more complex:\
+\>", "Text",
+ CellChangeTimes->{{3.74455071555803*^9, 3.744550783775996*^9}, {
+  3.744552196854661*^9, 3.744552204030786*^9}, {3.744552254314302*^9, 
+  3.744552260336246*^9}},ExpressionUUID->"75e7145c-e3af-4b60-8b33-\
+7c12c91899aa"],
+
+Cell["\<\
+Copy a piece of code that is working the way you want it to into a new cell \
+just underneath.\
+\>", "Item",
+ CellChangeTimes->{{3.744550819569048*^9, 3.7445508541754847`*^9}, {
+  3.7445509055474463`*^9, 
+  3.7445509083632402`*^9}},ExpressionUUID->"de81fd3c-6384-49e7-a0cd-\
+523c328b199b"],
+
+Cell["Modify the code in the new cell in a new way.", "Item",
+ CellChangeTimes->{{3.744550819569048*^9, 
+  3.7445508745125027`*^9}},ExpressionUUID->"403739f0-1c89-4f0b-b5b8-\
+375bdf9f0f50"],
+
+Cell["\<\
+Run the code in the new cell to see if it does what you want it to.  If so, \
+repeat the cycle.  If not, check to see where it went wrong. \
+\>", "Item",
+ CellChangeTimes->{{3.744550819569048*^9, 3.744550944892544*^9}, {
+  3.744552280040945*^9, 
+  3.744552280192877*^9}},ExpressionUUID->"53c1f294-9f86-4a20-9eb0-\
+a51ef6614dcc"],
+
+Cell[TextData[{
+ StyleBox["Example.",
+  FontWeight->"Bold"],
+ " Join a string with its reversal."
+}], "Text",
+ CellChangeTimes->{{3.8080733182387295`*^9, 
+  3.8080733269748907`*^9}},ExpressionUUID->"ad0f2666-4305-402b-b074-\
+4897bf104e1c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Cloud Storage", "Subsection",
+ CellChangeTimes->{{3.744545963593748*^9, 
+  3.7445459711458473`*^9}},ExpressionUUID->"b8ad20c6-ec01-4ad1-b50d-\
+e23ee59824be"],
+
+Cell["\<\
+It is good practice to save your work in multiple places so that you won\
+\[CloseCurlyQuote]t lose your work if your computer dies.  One good way to do \
+this is to use cloud storage.  You can use Microsoft OneDrive (available as \
+part of QMail / Microsoft 365 account ) or Dropbox (available through your \
+login.cuny.edu account).  You should create an account on one of these \
+services and make sure to upload your files to them.  In this way you will \
+have access to them anywhere there is internet. You can also save them in the \
+Wolfram Cloud by choosing \[OpenCurlyDoubleQuote]Save to Cloud...\
+\[CloseCurlyDoubleQuote] in the File menu.\
+\>", "Text",
+ CellChangeTimes->{{3.7445459744099913`*^9, 3.744545984690333*^9}, {
+  3.7445468336923532`*^9, 3.744547014404983*^9}, {3.8080376953421316`*^9, 
+  3.808037719077694*^9}, {3.8080735728791175`*^9, 3.808073580774757*^9}, {
+  3.883821685314452*^9, 
+  3.8838218249687023`*^9}},ExpressionUUID->"de169e34-d7d2-4941-8984-\
+698ff48fbf66"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "4.3 Defining variables using the ",
+ StyleBox["=", "Input",
+  FontSize->24],
+ StyleBox[" operator", "Text",
+  FontSize->24]
+}], "Section",
+ CellChangeTimes->{{3.631972962373425*^9, 3.631972975717177*^9}, {
+   3.631988657783813*^9, 3.63198868327985*^9}, {3.8076358559868164`*^9, 
+   3.80763585679565*^9}, 
+   3.8076364608072677`*^9},ExpressionUUID->"27f472de-893d-4515-bbf1-\
+25bd41d85050"],
+
+Cell[TextData[{
+ "It is often helpful to define the output of a command to be able to reuse \
+it later.  To do this, use the ",
+ StyleBox["=", "Input",
+  FontSize->18],
+ " operator:"
+}], "Text",
+ CellChangeTimes->{{3.631972983253553*^9, 
+  3.631973041936504*^9}},ExpressionUUID->"10d2ef9d-dcd3-455d-bbd7-\
+7b12ea2b37a1"],
+
+Cell[BoxData[
+ RowBox[{"a", "=", 
+  RowBox[{"Range", "[", "3", "]"}]}]], "Input",
+ CellChangeTimes->{{3.631973046774384*^9, 3.6319730531304092`*^9}},
+ CellLabel->"In[26]:=",ExpressionUUID->"6d9ad8f2-c417-41d1-99dd-3a0de5a62722"],
+
+Cell[BoxData["a"], "Input",
+ CellChangeTimes->{3.631973090297827*^9},
+ CellLabel->"In[23]:=",ExpressionUUID->"101851ef-3b75-4e85-91f3-7a52a7b37381"],
+
+Cell["\<\
+If you don\[CloseCurlyQuote]t want to see the output of a command, you can \
+end the line with a semicolon.\
+\>", "Text",
+ CellChangeTimes->{{3.631973058053413*^9, 3.631973078618202*^9}, {
+  3.6319884747492847`*^9, 
+  3.631988481493525*^9}},ExpressionUUID->"87262e9d-94ec-47a8-89f7-\
+c2378e9d52dd"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"Range", "[", "4", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.63197308084085*^9, 3.63197308334016*^9}, 
+   3.631973118861582*^9},
+ CellLabel->"In[24]:=",ExpressionUUID->"9bdd27b2-170d-41c6-b669-b1ccfd8a43a1"],
+
+Cell[BoxData["a"], "Input",
+ CellChangeTimes->{{3.6319731149485807`*^9, 3.631973121017107*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"43bd3741-a138-427f-9f4c-dcebcafe29f9"],
+
+Cell[TextData[{
+ "Important: it matters the order in which you evaluate commands.  For \
+example, if you re-evaluate the first instance of ",
+ StyleBox["a", "Input",
+  FontSize->14],
+ ", it will return its last-defined definition, which is ",
+ StyleBox["{1,2,3,4}", "Input"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.631973098971304*^9, 3.631973155894184*^9}, {
+  3.631988490958012*^9, 
+  3.631988513151126*^9}},ExpressionUUID->"ce114402-7e87-465a-bee9-\
+6bf646a8d402"],
+
+Cell[TextData[{
+ "I HIGHLY suggest that you give descriptive names to your variables. Since \
+all built-in ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " commands start with a capital letter, a nice convention to use for your \
+own variable names is to start with a lowercase letter and if variable is \
+multiple words long, capitalize the start of each new word. "
+}], "Text",
+ CellChangeTimes->{{3.631988758323704*^9, 3.6319887862608843`*^9}, {
+  3.6319921217128763`*^9, 3.63199221394837*^9}, {3.631992382510112*^9, 
+  3.63199240287119*^9}, {3.7445522986516647`*^9, 
+  3.744552299465475*^9}},ExpressionUUID->"074c5a93-84a6-4fed-9de5-\
+e8454cc06a0a"],
+
+Cell[BoxData[
+ RowBox[{"iAmANewVariable", "=", 
+  RowBox[{"Range", "[", 
+   RowBox[{"Pi", ",", 
+    RowBox[{"2", "Pi"}], ",", 
+    RowBox[{"Pi", "/", "2"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.631992215772217*^9, 3.631992225381585*^9}, {
+  3.631992303673835*^9, 3.63199231144236*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"89e4a95b-d6f8-416c-a149-0f951267928e"],
+
+Cell[BoxData[
+ RowBox[{"heyYouWhatsThatSound", "=", 
+  RowBox[{"Play", "[", 
+   RowBox[{
+    RowBox[{"Sin", "[", 
+     RowBox[{"440", " ", "2", "Pi", " ", "t"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", "0", ",", "1"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.63199232578058*^9, 3.631992356006901*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"e1c7321d-c8e1-478a-862f-6753e7f97f2f"],
+
+Cell[TextData[{
+ " (OK, the provided example names aren\[CloseCurlyQuote]t very ",
+ StyleBox["descriptive",
+  FontSlant->"Italic"],
+ ", but you get the idea....it\[CloseCurlyQuote]s #likeAHashtag.)"
+}], "Text",
+ CellChangeTimes->{{3.631992404479724*^9, 3.631992449944283*^9}, {
+  3.6319934958137293`*^9, 
+  3.631993499589817*^9}},ExpressionUUID->"ca1a0523-3530-47d9-aafe-\
+e00d58e66284"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "4.4 Shortcut: the ",
+ StyleBox["%", "Input",
+  FontSize->24],
+ " operator"
+}], "Section",
+ CellChangeTimes->{{3.631988557106394*^9, 3.6319885624496317`*^9}, {
+   3.631988694048513*^9, 3.6319886943923492`*^9}, {3.807635859602516*^9, 
+   3.807635860180421*^9}, 
+   3.807636462782745*^9},ExpressionUUID->"72ca3935-183f-4f8a-9fb4-\
+b16fa4fe9b2a"],
+
+Cell[TextData[{
+ "A useful but slightly dangerous operator is ",
+ StyleBox["%", "Input",
+  FontSize->16],
+ ", which stands for the most recent output.  So, for instance, if you decide \
+to make a list, and then decide you want to create a scatterplot, you can do \
+the following: "
+}], "Text",
+ CellChangeTimes->{{3.6319885260595493`*^9, 3.631988529416007*^9}, {
+  3.6319885768264713`*^9, 3.631988584218792*^9}, {3.6319886980966597`*^9, 
+  3.631988700328754*^9}, {3.631992944962832*^9, 
+  3.631993047815222*^9}},ExpressionUUID->"aa3fa9cd-a5b7-49c6-bfbb-\
+5ac28cd4bb99"],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"RandomInteger", "[", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "3"}], "}"}], "]"}], ",", 
+   RowBox[{"{", "100", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.631993051129685*^9, 3.63199307071301*^9}, {
+   3.808073930259107*^9, 3.8080739320550756`*^9}, 
+   3.8838225817943277`*^9},ExpressionUUID->"72acacee-8aeb-4421-9133-\
+871669accddf"],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", "%", "]"}]], "Input",
+ CellChangeTimes->{{3.631973157818639*^9, 3.6319731585629683`*^9}, {
+   3.631993072569309*^9, 3.6319930758170757`*^9}, {3.8080739353048487`*^9, 
+   3.808073936457741*^9}, 
+   3.8838225838433943`*^9},ExpressionUUID->"b2da7f90-33f1-48c4-9731-\
+abc080627064"],
+
+Cell["\<\
+The reason it is dangerous is related to the above discussion where the order \
+in which you evaluate commands matters.  If you tried to re-evaluate the \
+previous line of code, you would get an error, because you can\
+\[CloseCurlyQuote]t create a scatterplot of a scatterplot!\
+\>", "Text",
+ CellChangeTimes->{{3.631993079128849*^9, 
+  3.631993155196473*^9}},ExpressionUUID->"07d8a1db-a460-471b-9bfa-\
+d590f30e4776"],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", "%", "]"}]], "Input",
+ CellChangeTimes->{{3.631993156677052*^9, 3.631993159918551*^9}, {
+  3.8080739415772934`*^9, 3.8080739422654266`*^9}, {3.8838225866356983`*^9, 
+  3.883822594749371*^9}},ExpressionUUID->"5961464f-e354-4846-b949-\
+58051be37b58"],
+
+Cell[TextData[{
+ "In the same vein is ",
+ StyleBox["%%", "Input",
+  FontSize->16],
+ " (for two outputs back); slightly more safe might be ",
+ StyleBox["Out[n]", "Input",
+  FontSize->14],
+ " to be explicit about wanting the nth output.  (But this will depend on the \
+session in which you are working, so it would be different each time you \
+re-open your notebook!!!!)  ",
+ StyleBox["It is best to define a new variable when you think you will be \
+using the output later.",
+  Background->RGBColor[1, 1, 0]]
+}], "Text",
+ CellChangeTimes->{{3.6319931654206657`*^9, 
+  3.631993360503044*^9}},ExpressionUUID->"3a5948dd-c74f-419e-8941-\
+9ee70aecfdfc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["4.5 When you\[CloseCurlyQuote]ve gotten yourself in trouble", "Section",
+ CellChangeTimes->{{3.63122814412682*^9, 3.631228149888968*^9}, {
+   3.8076358632354717`*^9, 3.807635865603301*^9}, 
+   3.807636464966076*^9},ExpressionUUID->"6906553d-7cc1-4312-bfa1-\
+b1f7e0d1ff96"],
+
+Cell[CellGroupData[{
+
+Cell["When you don\[CloseCurlyQuote]t understand a command.", "Subsection",
+ CellChangeTimes->{{3.631991619454792*^9, 
+  3.631991628398411*^9}},ExpressionUUID->"cb605073-71a8-43cf-b596-\
+12c1279a79f8"],
+
+Cell[TextData[{
+ "By now you should know that you can search in the Documentation Center when \
+you want more information about a command.  You can also get quick \
+information about a command directly in a ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " notebook by using the ",
+ StyleBox["?", "Input",
+  FontSize->16],
+ " operator."
+}], "Text",
+ CellChangeTimes->{{3.631991630590291*^9, 3.631991746316676*^9}, {
+  3.7446334610484133`*^9, 
+  3.74463346208032*^9}},ExpressionUUID->"53fa7c1c-2012-4396-9f20-\
+7ac0613d5633"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "Tally"}]], "Input",
+ CellChangeTimes->{{3.631991698332426*^9, 
+  3.6319917073587837`*^9}},ExpressionUUID->"ffa070d5-30e9-4ef3-9ca7-\
+8e89b11df627"],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\\!\\(\\*RowBox[{\\\"Tally\\\", \\\"[\\\", \
+StyleBox[\\\"list\\\", \\\"TI\\\"], \\\"]\\\"}]\\) tallies the elements in \
+\\!\\(\\*StyleBox[\\\"list\\\", \\\"TI\\\"]\\), listing all distinct elements \
+together with their multiplicities.\\n\\!\\(\\*RowBox[{\\\"Tally\\\", \\\"[\\\
+\", RowBox[{StyleBox[\\\"list\\\", \\\"TI\\\"], \\\",\\\", \
+StyleBox[\\\"test\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) uses \
+\\!\\(\\*StyleBox[\\\"test\\\", \\\"TI\\\"]\\) to determine whether pairs of \
+elements should be considered equivalent, and gives a list of the first \
+representatives of each equivalence class, together with their \
+multiplicities.\"\>", "MSG"], "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/Tally"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.631991708644845*^9},
+ CellTags->
+  "Info3631973708-3263596",ExpressionUUID->"b36b2096-9f68-436b-b9cb-\
+f16a2bc1efaa"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Notice the ",
+ StyleBox[">>",
+  FontSize->12],
+ " symbol at the end of the command information.  Click there to go directly \
+to the Documentation Center."
+}], "Text",
+ CellChangeTimes->{{3.631991749693323*^9, 
+  3.631991811039599*^9}},ExpressionUUID->"dd2d58ee-f085-4dc5-b6db-\
+db2944cd2cd3"],
+
+Cell["\<\
+You can also hover over a command to open up this quick command information \
+or to go directly to the Documentation Center.\
+\>", "Text",
+ CellChangeTimes->{{3.744552831104533*^9, 3.744552861000516*^9}, {
+  3.7446334900650673`*^9, 
+  3.74463349628129*^9}},ExpressionUUID->"9204c50a-78ad-45c6-83e6-\
+dec5cd4291e3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["When you define something you shouldn\[CloseCurlyQuote]t have.", \
+"Subsection",
+ CellChangeTimes->{{3.631228183612741*^9, 
+  3.6312281974764833`*^9}},ExpressionUUID->"93d63cd2-ec7f-45ec-8fa3-\
+7d5ca718d0b9"],
+
+Cell["Suppose you define a variable at some point:", "Text",
+ CellChangeTimes->{{3.631991817563799*^9, 3.631991833936761*^9}, {
+  3.631992018987096*^9, 
+  3.6319920210665407`*^9}},ExpressionUUID->"a96b0102-a5ca-407b-8171-\
+225e2033efe6"],
+
+Cell[BoxData[
+ RowBox[{"x", "=", "10"}]], "Input",
+ CellChangeTimes->{{3.631991835276457*^9, 3.631991840141756*^9}},
+ CellLabel->"In[37]:=",ExpressionUUID->"757a1536-ba47-4827-abe9-e9de23260762"],
+
+Cell[BoxData[
+ RowBox[{"x", "=", 
+  RowBox[{"Graphics", "[", 
+   RowBox[{"RegularPolygon", "[", "4", "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.808074097386108*^9, 3.8080741065918818`*^9}},
+ CellLabel->"In[39]:=",ExpressionUUID->"9ac03a48-de5a-45e6-a651-dacbde2d9e8b"],
+
+Cell[TextData[{
+ "Perhaps later in your file you wanted to generate the list ",
+ StyleBox["{x+1,x+2,x+3}", "Input",
+  FontSize->14],
+ " using the ",
+ StyleBox["Table", "Input",
+  FontSize->14],
+ " command:"
+}], "Text",
+ CellChangeTimes->{{3.63199185061872*^9, 
+  3.631991899860457*^9}},ExpressionUUID->"a8b6b6b5-344f-4f83-9dd7-\
+a79771e4cf79"],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"x", "+", "i"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "3"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6319919013601017`*^9, 3.631991909873529*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"b308dbda-3805-4475-8a8d-65e3a1994b88"],
+
+Cell[TextData[{
+ "Since ",
+ StyleBox["x", "Input",
+  FontSize->16],
+ " had been defined before, the generated list has no ",
+ StyleBox["x", "Input",
+  FontSize->14],
+ "\[CloseCurlyQuote]s in it.  When you run into such a problem, you use the \
+",
+ StyleBox["Remove", "Input",
+  FontSize->14],
+ " command:"
+}], "Text",
+ CellChangeTimes->{{3.6319919163329277`*^9, 3.631991964671803*^9}, {
+  3.6319935191215267`*^9, 3.6319935198231573`*^9}, {3.807636225025729*^9, 
+  3.8076362250868406`*^9}},ExpressionUUID->"180ea204-b718-4d89-b7be-\
+551213a24656"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Remove", "[", "x", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"x", "+", "i"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "3"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.631991965845278*^9, 3.631991976985162*^9}},
+ CellLabel->"In[41]:=",ExpressionUUID->"36e448c1-a2bd-4c1a-8341-35af1cfbae2a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["When your code won\[CloseCurlyQuote]t stop running", "Subsection",
+ CellChangeTimes->{{3.631228154705267*^9, 
+  3.631228201884366*^9}},ExpressionUUID->"a44c86b7-4bca-4f44-a060-\
+92e03a57812f"],
+
+Cell[TextData[{
+ "We all get into infinite loops sometimes.  To stop ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " in the middle of a calculation, use (Option-",
+ StyleBox[".", "Input",
+  FontSize->16],
+ ") or (Alt-",
+ StyleBox[".", "Input",
+  FontSize->16],
+ ")  (That\[CloseCurlyQuote]s the period!)  \nTry it here after removing the ",
+ StyleBox["(*", "Input",
+  FontSize->14],
+ " and ",
+ StyleBox["*)", "Input",
+  FontSize->14],
+ " which I used to comment out the command."
+}], "Text",
+ CellChangeTimes->{{3.631991534766355*^9, 3.631991536174308*^9}, {
+  3.631992050865666*^9, 3.6319920843894*^9}, {3.631993621805472*^9, 
+  3.631993678895328*^9}, {3.631993732857643*^9, 3.6319937584034863`*^9}, {
+  3.74454569221693*^9, 3.744545692864738*^9}, {3.7446335420108767`*^9, 
+  3.7446335616272707`*^9}},ExpressionUUID->"ecae3c3a-96fc-473f-a0f3-\
+a4e9f6b7b58b"],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"i", "=", "0"}], ",", 
+    RowBox[{"i", "\[GreaterEqual]", "0"}], ",", 
+    RowBox[{"i", "++"}], ",", "i"}], "]"}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.631992067436474*^9, 3.631992069395525*^9}, {
+  3.631993680424046*^9, 3.631993729834483*^9}, {3.8080741414477215`*^9, 
+  3.8080741425996675`*^9}, {3.883822639297987*^9, 
+  3.883822642169612*^9}},ExpressionUUID->"5a0368ed-8418-4800-8f0a-\
+8747c63d84d7"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "4.7 Shorthand: ",
+ StyleBox["@", "Input",
+  FontSize->36],
+ " (Prefix)"
+}], "Section",
+ CellChangeTimes->{{3.745226926917066*^9, 3.7452269481975317`*^9}, {
+   3.745227106850552*^9, 3.745227113626801*^9}, 3.745227490299828*^9, {
+   3.745227784190646*^9, 3.745227784950582*^9}, {3.808036236073204*^9, 
+   3.808036236769117*^9}},ExpressionUUID->"311487c3-d130-47f3-a071-\
+59272b3e1347"],
+
+Cell[TextData[{
+ "When your function takes ",
+ StyleBox["only one input",
+  FontWeight->"Bold"],
+ ", you can use the ",
+ StyleBox["@", "Input",
+  FontSize->16],
+ " symbol as a shortcut in lieu of the square brackets."
+}], "Text",
+ CellChangeTimes->{{3.745226950333774*^9, 3.7452270152475986`*^9}, {
+   3.745227047586668*^9, 3.745227138563466*^9}, 
+   3.7452274881482353`*^9},ExpressionUUID->"2c347d90-2e6e-4eb3-b492-\
+5d987a512ef6"],
+
+Cell[BoxData[
+ RowBox[{"Length", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.808074256155428*^9, 3.808074261906299*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"9b2c80ed-ae78-444e-bb4e-5ac3c5b80698"],
+
+Cell["For example, we can rewrite the above code as:", "Text",
+ CellChangeTimes->{{3.745227017323797*^9, 
+  3.74522703478445*^9}},ExpressionUUID->"7b55cd6a-4ef9-4834-8950-\
+40617479f597"],
+
+Cell[BoxData[
+ RowBox[{"Length", "@", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.74522703654522*^9, 3.745227040184803*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"d791902c-1ff8-436a-acf0-918c24984c83"],
+
+Cell[TextData[{
+ "You CANNOT use the ",
+ StyleBox["@", "Input",
+  FontSize->16],
+ " symbol when your function has multiple inputs. (Like ",
+ StyleBox["Table)", "Input"]
+}], "Text",
+ CellChangeTimes->{{3.8080362323314257`*^9, 
+  3.8080362618949165`*^9}},ExpressionUUID->"7a8f28ee-0e74-4481-b01e-\
+14e75d6214f9"],
+
+Cell["Key points:", "Text",
+ CellChangeTimes->{{3.808036286616568*^9, 
+  3.808036296493943*^9}},ExpressionUUID->"b26739b5-a672-4809-b1af-\
+6398f7f65431"],
+
+Cell[TextData[{
+ " You do not have to use the ",
+ StyleBox["@", "Input",
+  FontSize->16],
+ " symbol.  "
+}], "Item",
+ CellChangeTimes->{{3.745227141467457*^9, 3.745227288000043*^9}, {
+  3.7452273840351133`*^9, 3.745227541999589*^9}, {3.8080362096583843`*^9, 
+  3.8080362283652763`*^9}, {3.8080362711220655`*^9, 
+  3.8080362999157095`*^9}},ExpressionUUID->"25194b79-72fb-416e-b0f0-\
+1d6149f2235b"],
+
+Cell[TextData[{
+ " It is important to be aware of the ",
+ StyleBox["@", "Input",
+  FontSize->16],
+ " symbol because it will appear in code you find online. "
+}], "Item",
+ CellChangeTimes->{{3.745227141467457*^9, 3.745227288000043*^9}, {
+  3.7452273840351133`*^9, 3.745227541999589*^9}, {3.8080362096583843`*^9, 
+  3.8080362283652763`*^9}, {3.8080362688687963`*^9, 
+  3.8080362986694183`*^9}},ExpressionUUID->"c61d3048-48bd-4b02-ad1a-\
+01d78ba9b18b"],
+
+Cell["\<\
+ You should first work to be comfortable using functions with bracket \
+notation and eventually you may find it useful.\
+\>", "Item",
+ CellChangeTimes->{{3.745227141467457*^9, 3.745227288000043*^9}, {
+  3.7452273840351133`*^9, 3.745227541999589*^9}, {3.8080362096583843`*^9, 
+  3.8080362283652763`*^9}, {3.8080362786594687`*^9, 
+  3.8080363006764355`*^9}},ExpressionUUID->"d8830eaa-025d-4b6c-a5fd-\
+4954516c7dcc"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1192, 873},
+WindowMargins->{{34, Automatic}, {Automatic, 0}},
+ShowSelection->True,
+Magnification:>1.5 Inherited,
+FrontEndVersion->"14.1 for Mac OS X ARM (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"6e206d86-a1fd-4399-8709-89cd89d33376"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3631973708-3263596"->{
+  Cell[20308, 544, 1005, 20, 132, "Print",ExpressionUUID->"b36b2096-9f68-436b-b9cb-f16a2bc1efaa",
+   CellTags->"Info3631973708-3263596"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3631973708-3263596", 29909, 825}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 532, 8, 144, "Title",ExpressionUUID->"48298fc7-2660-4fd4-8675-31aa0a9305ed"],
+Cell[1102, 32, 506, 10, 76, "Subsubtitle",ExpressionUUID->"5d50180e-d392-4ee0-a78c-d5fe87d833f6"],
+Cell[CellGroupData[{
+Cell[1633, 46, 254, 4, 99, "Section",ExpressionUUID->"6a60c3c8-73d7-438e-ace7-0b68b70cd0f6"],
+Cell[1890, 52, 787, 15, 83, "Text",ExpressionUUID->"7a8ded6f-5a00-42f3-bb34-7ebaaa516880"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2714, 72, 298, 5, 99, "Section",ExpressionUUID->"41f3d480-0b5e-44a2-83b7-22adf5327159"],
+Cell[CellGroupData[{
+Cell[3037, 81, 164, 3, 79, "Subsection",ExpressionUUID->"c52d5344-2c00-4711-b392-7d98c6cfde11"],
+Cell[3204, 86, 456, 9, 83, "Text",ExpressionUUID->"c83e0778-ef2e-4146-818a-0a6e85690a29"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3697, 100, 159, 3, 79, "Subsection",ExpressionUUID->"1a850ad7-0063-4610-9e25-8ce8d4e620db"],
+Cell[3859, 105, 387, 8, 83, "Text",ExpressionUUID->"1f1db770-3974-489c-8347-1d9fa95b247c"],
+Cell[4249, 115, 172, 3, 46, "Item",ExpressionUUID->"21bc0e19-8ab8-4a0f-a1e1-7ad6202a22d5"],
+Cell[4424, 120, 272, 5, 46, "Item",ExpressionUUID->"c0b585dd-92b2-4cfd-9233-5a7b03ecc4c7"],
+Cell[4699, 127, 369, 8, 46, "Item",ExpressionUUID->"5b2fed8a-71c4-42ab-8c37-7d6ed42dec4b"],
+Cell[5071, 137, 277, 4, 46, "Item",ExpressionUUID->"72f1e00a-986b-4a67-a79e-c80ba110c4e5"],
+Cell[5351, 143, 334, 5, 46, "Item",ExpressionUUID->"2f8ac774-3e4e-4bc5-8678-3c583dccbb51"],
+Cell[5688, 150, 670, 11, 181, "Text",ExpressionUUID->"3cdcd814-3c2d-4821-8dc3-ea8ec097ec8d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6395, 166, 151, 3, 79, "Subsection",ExpressionUUID->"fe517686-4581-404a-bd5d-af849661650f"],
+Cell[6549, 171, 502, 10, 83, "Text",ExpressionUUID->"afd7caa9-40e6-48bc-83ef-668d914adf3c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7088, 186, 220, 4, 79, "Subsection",ExpressionUUID->"7b89e3ce-c4ea-4ed0-8a70-004980ba2964"],
+Cell[7311, 192, 424, 8, 83, "Text",ExpressionUUID->"8534a1c8-583f-446d-ac4d-94c23c041477"],
+Cell[7738, 202, 238, 4, 46, "Item",ExpressionUUID->"9bc87b5c-7c0e-436a-bc68-b5eca07bb211"],
+Cell[7979, 208, 240, 4, 46, "Item",ExpressionUUID->"0751a86a-7f0c-4a32-8144-f9094622e04f"],
+Cell[8222, 214, 241, 4, 46, "Item",ExpressionUUID->"c2ac96f6-ba44-492e-8bb8-295e8987cfef"],
+Cell[8466, 220, 480, 9, 116, "Text",ExpressionUUID->"4552a047-1ead-4353-982d-fb023a51b0bc"],
+Cell[8949, 231, 513, 9, 116, "Text",ExpressionUUID->"75e7145c-e3af-4b60-8b33-7c12c91899aa"],
+Cell[9465, 242, 299, 7, 46, "Item",ExpressionUUID->"de81fd3c-6384-49e7-a0cd-523c328b199b"],
+Cell[9767, 251, 189, 3, 46, "Item",ExpressionUUID->"403739f0-1c89-4f0b-b5b8-375bdf9f0f50"],
+Cell[9959, 256, 338, 7, 76, "Item",ExpressionUUID->"53c1f294-9f86-4a20-9eb0-a51ef6614dcc"],
+Cell[10300, 265, 239, 7, 50, "Text",ExpressionUUID->"ad0f2666-4305-402b-b074-4897bf104e1c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10576, 277, 163, 3, 79, "Subsection",ExpressionUUID->"b8ad20c6-ec01-4ad1-b50d-e23ee59824be"],
+Cell[10742, 282, 1001, 16, 214, "Text",ExpressionUUID->"de169e34-d7d2-4941-8984-698ff48fbf66"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11792, 304, 407, 11, 99, "Section",ExpressionUUID->"27f472de-893d-4515-bbf1-25bd41d85050"],
+Cell[12202, 317, 320, 9, 56, "Text",ExpressionUUID->"10d2ef9d-dcd3-455d-bbd7-7b12ea2b37a1"],
+Cell[12525, 328, 228, 4, 44, "Input",ExpressionUUID->"6d9ad8f2-c417-41d1-99dd-3a0de5a62722"],
+Cell[12756, 334, 148, 2, 44, "Input",ExpressionUUID->"101851ef-3b75-4e85-91f3-7a52a7b37381"],
+Cell[12907, 338, 308, 7, 50, "Text",ExpressionUUID->"87262e9d-94ec-47a8-89f7-c2378e9d52dd"],
+Cell[13218, 347, 269, 6, 44, "Input",ExpressionUUID->"9bdd27b2-170d-41c6-b669-b1ccfd8a43a1"],
+Cell[13490, 355, 174, 2, 44, "Input",ExpressionUUID->"43bd3741-a138-427f-9f4c-dcebcafe29f9"],
+Cell[13667, 359, 467, 12, 83, "Text",ExpressionUUID->"ce114402-7e87-465a-bee9-6bf646a8d402"],
+Cell[14137, 373, 659, 13, 116, "Text",ExpressionUUID->"074c5a93-84a6-4fed-9de5-e8454cc06a0a"],
+Cell[14799, 388, 370, 8, 44, "Input",ExpressionUUID->"89e4a95b-d6f8-416c-a149-0f951267928e"],
+Cell[15172, 398, 404, 9, 44, "Input",ExpressionUUID->"e1c7321d-c8e1-478a-862f-6753e7f97f2f"],
+Cell[15579, 409, 387, 9, 50, "Text",ExpressionUUID->"ca1a0523-3530-47d9-aafe-e00d58e66284"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16003, 423, 360, 10, 99, "Section",ExpressionUUID->"72ca3935-183f-4f8a-9fb4-b16fa4fe9b2a"],
+Cell[16366, 435, 569, 12, 85, "Text",ExpressionUUID->"aa3fa9cd-a5b7-49c6-bfbb-5ac28cd4bb99"],
+Cell[16938, 449, 401, 10, 44, "Input",ExpressionUUID->"72acacee-8aeb-4421-9133-871669accddf"],
+Cell[17342, 461, 318, 6, 44, "Input",ExpressionUUID->"b2da7f90-33f1-48c4-9731-abc080627064"],
+Cell[17663, 469, 427, 8, 116, "Text",ExpressionUUID->"07d8a1db-a460-471b-9bfa-d590f30e4776"],
+Cell[18093, 479, 288, 5, 44, "Input",ExpressionUUID->"5961464f-e354-4846-b949-58051be37b58"],
+Cell[18384, 486, 647, 16, 151, "Text",ExpressionUUID->"3a5948dd-c74f-419e-8941-9ee70aecfdfc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19068, 507, 278, 4, 99, "Section",ExpressionUUID->"6906553d-7cc1-4312-bfa1-b1f7e0d1ff96"],
+Cell[CellGroupData[{
+Cell[19371, 515, 201, 3, 79, "Subsection",ExpressionUUID->"cb605073-71a8-43cf-b596-12c1279a79f8"],
+Cell[19575, 520, 529, 14, 118, "Text",ExpressionUUID->"53fa7c1c-2012-4396-9f20-7ac0613d5633"],
+Cell[CellGroupData[{
+Cell[20129, 538, 176, 4, 44, "Input",ExpressionUUID->"ffa070d5-30e9-4ef3-9ca7-8e89b11df627"],
+Cell[20308, 544, 1005, 20, 132, "Print",ExpressionUUID->"b36b2096-9f68-436b-b9cb-f16a2bc1efaa",
+ CellTags->"Info3631973708-3263596"]
+}, Open  ]],
+Cell[21328, 567, 311, 9, 83, "Text",ExpressionUUID->"dd2d58ee-f085-4dc5-b6db-db2944cd2cd3"],
+Cell[21642, 578, 324, 7, 83, "Text",ExpressionUUID->"9204c50a-78ad-45c6-83e6-dec5cd4291e3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22003, 590, 214, 4, 79, "Subsection",ExpressionUUID->"93d63cd2-ec7f-45ec-8fa3-7d5ca718d0b9"],
+Cell[22220, 596, 237, 4, 50, "Text",ExpressionUUID->"a96b0102-a5ca-407b-8171-225e2033efe6"],
+Cell[22460, 602, 195, 3, 44, "Input",ExpressionUUID->"757a1536-ba47-4827-abe9-e9de23260762"],
+Cell[22658, 607, 273, 5, 44, "Input",ExpressionUUID->"9ac03a48-de5a-45e6-a651-dacbde2d9e8b"],
+Cell[22934, 614, 343, 11, 50, "Text",ExpressionUUID->"a8b6b6b5-344f-4f83-9dd7-a79771e4cf79"],
+Cell[23280, 627, 301, 7, 44, "Input",ExpressionUUID->"b308dbda-3805-4475-8a8d-65e3a1994b88"],
+Cell[23584, 636, 546, 16, 85, "Text",ExpressionUUID->"180ea204-b718-4d89-b7be-551213a24656"],
+Cell[24133, 654, 379, 9, 74, "Input",ExpressionUUID->"36e448c1-a2bd-4c1a-8341-35af1cfbae2a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24549, 668, 198, 3, 79, "Subsection",ExpressionUUID->"a44c86b7-4bca-4f44-a060-92e03a57812f"],
+Cell[24750, 673, 866, 23, 120, "Text",ExpressionUUID->"ecae3c3a-96fc-473f-a0f3-a4e9f6b7b58b"],
+Cell[25619, 698, 494, 11, 44, "Input",ExpressionUUID->"5a0368ed-8418-4800-8f0a-8747c63d84d7"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26162, 715, 401, 10, 114, "Section",ExpressionUUID->"311487c3-d130-47f3-a071-59272b3e1347"],
+Cell[26566, 727, 432, 12, 85, "Text",ExpressionUUID->"2c347d90-2e6e-4eb3-b492-5d987a512ef6"],
+Cell[27001, 741, 270, 5, 44, "Input",ExpressionUUID->"9b2c80ed-ae78-444e-bb4e-5ac3c5b80698"],
+Cell[27274, 748, 187, 3, 50, "Text",ExpressionUUID->"7b55cd6a-4ef9-4834-8950-40617479f597"],
+Cell[27464, 753, 264, 5, 44, "Input",ExpressionUUID->"d791902c-1ff8-436a-acf0-918c24984c83"],
+Cell[27731, 760, 310, 9, 52, "Text",ExpressionUUID->"7a8f28ee-0e74-4481-b01e-14e75d6214f9"],
+Cell[28044, 771, 153, 3, 50, "Text",ExpressionUUID->"b26739b5-a672-4809-b1af-6398f7f65431"],
+Cell[28200, 776, 395, 10, 48, "Item",ExpressionUUID->"25194b79-72fb-416e-b0f0-1d6149f2235b"],
+Cell[28598, 788, 449, 10, 48, "Item",ExpressionUUID->"c61d3048-48bd-4b02-ad1a-01d78ba9b18b"],
+Cell[29050, 800, 423, 8, 76, "Item",ExpressionUUID->"d8830eaa-025d-4b6c-a5fd-4954516c7dcc"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

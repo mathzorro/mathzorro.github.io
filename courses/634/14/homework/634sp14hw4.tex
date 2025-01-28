@@ -1,0 +1,117 @@
+% Chris Hanusa
+% chanusa@qc.cuny.edu	
+\documentclass[12pt]{article} 
+
+\usepackage{amssymb,amsthm,amsmath,epsfig}
+
+\usepackage{color}
+\definecolor{darkblue}{rgb}{0, 0, .4}
+\definecolor{grey}{rgb}{.7, .7, .7}
+
+\setlength{\topmargin}{-.5in}
+\setlength{\textheight}{9in}
+\setlength{\textwidth}{6.5in}
+%\setlength{\headheight}{26pt}
+%\setlength{\headsep}{2pt}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+\newcommand{\lam}{\lambda}
+
+\usepackage[breaklinks]{hyperref} 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    anchorcolor=darkblue,
+    citecolor=darkblue,
+    pagecolor=darkblue,
+    urlcolor=darkblue,
+    pdftitle={},
+    pdfauthor={}
+}
+
+\begin{document}
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}\large 
+MATH 634, Spring 2014
+
+{\sc Homework 4}
+
+to be prepared for presentation at  5:00{\sc pm} on Monday, February 10.
+\end{center}
+
+\noindent
+{\em Background reading:} {\em Pearls in Graph Theory}, Sections 1.1 through 1.3.
+
+
+\begin{enumerate}
+\item[\bf 4-1.] 
+%12h1, 13h1 
+%Pearls 1.1.2ab
+In parts (a) and (b) below, do not apply Theorem 1.1.2.  
+[{\em Hint: You will need to find two families of graphs that give an answer for every possible value of $n$.}]
+\begin{itemize}
+\item Prove that for every even number $n\geq 4$, there exists a graph with $n$ vertices, all of which have degree $3$.
+\item Prove that for every odd number $n\geq 5$, there exists a graph with $n+1$ vertices, $n$ of which have degree $3$.
+\end{itemize}  
+
+
+\item[\bf 4-2.]
+%09h2,12h2,13h2
+% Pearls 1.1.7
+Prove that no graph has all degrees different.  That is, prove that in a degree sequence of a graph, there is at least one repeated number.
+
+\item[\bf 4-3.]
+%09h3,11h1,13h2
+Explore the proof of Theorem 1.1.2.
+
+The graph below has degree sequence ($\mathcal S_1$) $4\,4\, 3\, 3\, 3\, 2\, 2\, 2\, 2\, 1$.  Define ($\mathcal S_2$) to be $3\, 2\, 2\, 2\, 2\, 2\, 2\, 2\, 1$. Walk through the steps of the proof of Theorem 1.1.2 in the following way.
+
+First, let us choose vertex $c$ from the graph to be vertex $S$ from the proof. Next, assign to each of the remaining vertices ($a$ -- $j$) a name of the form $T_i$ or $D_i$, just as in the proof.
+\begin{enumerate}
+\item If you delete vertex $S$, does the new graph have degree sequence ($\mathcal S_2$)?
+\item Use the method in the proof to modify the original graph (possibly applying the algorithm multiple times) so that the resulting graph is such that removing $S$ gives a graph with degree sequence ($\mathcal S_2$).
+\end{enumerate}
+
+\begin{center}
+\includegraphics[height=2in]{figures/G1.eps}
+\end{center}
+
+\item[\bf 4-4.]
+%11h2,13h3
+\begin{enumerate}
+\item Prove that if $n$ is large enough, then the following statement is true:  
+\begin{quote}For all graphs on $n$ vertices, either $G$ or $G^c$ contains a cycle.
+\end{quote}
+\item For which $n$ does this start to be true?
+\end{enumerate}
+
+
+\item[\bf 4-5.] Let $G$ be a graph with $n$ vertices and $n$ edges.
+%09h4,12p,13h3
+\begin{enumerate}
+\item Suppose $G$ is connected.  How many cycles does $G$ have?  Prove it.  
+\item Suppose $G$ is {\bf NOT} connected.  What can you say about the number of cycles in the graph?  Can you determine a formula? 
+\end{enumerate}
+[{\em Part \textup{(b)} is an exploration question.  I want you to explore what happens and write up as much as you can about what you learn.}]
+
+\end{enumerate}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

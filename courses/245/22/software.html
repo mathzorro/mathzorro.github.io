@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mathematical Models &bull; Topics, Notes, and Homework</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="author" content="Christopher Hanusa" />
+        <link rel="shortcut icon" href="favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="../../../css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../../../css/style1.css" />
+        <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>    
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-47380773-6', 'auto');
+                ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header_wrap">
+                <div class="header">
+                    <span class="left">
+                        <a href="../../../index.html">HOME</a> > 
+                        <a href="../../index.html">Courses</a> > 
+                        <a href="index.html">245sp22</a>
+                    </span>
+                <div class="header_right">
+                    <span class="right">
+                        <a href="index.html">Home</a> &bull; 
+                        <a href="syllabus.html">Syllabus</a> &bull; 
+                        <a href="letters.html">Letters</a> &bull;
+                        <a href="calendar.html">Calendar</a> &bull; 
+                        <a href="software.html">Software</a> &bull; 
+                        <a href="project.html">Projects</a> &bull; 
+                        <a href="notes.html">Content</a> 
+                    </span>
+                </div>
+                </div>
+            </div>
+
+            <div class="main">
+                           
+                <div class="course_head">            
+                <div class="course_head_img"><a href="index.html"><img src="../../../images/245c.png" height="100"/></a></div>
+                <div class="course_head_suptitle_245">Mathematical Models, Spring 2022</div>
+                <div class="course_head_title_245">Installing Software</div>
+                </div>
+                
+                <div class="course_main_245">
+                    <p>During this class we will be using the computer programming language Python which we will be interfacing with through Jupyter notebooks.  Furthermore we will be working through some notebooks created by our book's author, Allen Downey.  This page decribes how to get started with this software.</p> 
+                    
+                    <p>There are two ways to access Jupyter notebooks, depending on whether you want to run it on your personal computer or access it online.  Accessing the materials online is simpler and makes it easier to share files with your classmates, especially when you are working on projects.  On the other hand, installing it on your personal computer means that it will be available even if you are offline, and can run more seamlessly and on the faster processor of your computer. Here is how to access them in both ways.</p>
+                    
+                    <div class="date" style="color: purple;font-weight: 700">Accessing and using Google Colab</div>
+                    
+                    <ul>
+                        <li>Go to <a href="https://colab.research.google.com/">https://colab.research.google.com/</a> and make sure you are logged in with your Queens College Google account.</li>
+                        <li>You will be editing jupyter notebooks provided for you on our <a href="notes.html">course content page</a>. To get a taste of what this will feel like, visit the <a href="https://allendowney.github.io/ModSimPy/">ModSimPy Github page</a> and click on one of the links ending in "ipynb".</li>
+                        <li><b>Before</b> you start working on a file, save <b>your own copy</b> of the file to Google Drive by clicking on the "Copy to Drive" button in the menu. I also suggest changing the name of the file to something like "chap01XXXX.ipynb" where XXXX is your name.</li>
+                        <li>You're all set. You can now start using python!</li>
+                    </ul>
+                                                        
+                    <div class="date" style="color: purple;font-weight: 700">OPTIONAL: Installing Python on your own computer and importing course content.</div>
+                                        
+                    <ul>
+                        <li>Install Python on your personal computer using the Anaconda Distribution.</li>
+                            <ul>
+                                <li>Download the <a href="https://www.anaconda.com/download/">Anaconda Distribution installer</a> for your operating system.</li> 
+                                <li>Run the installer that you downloaded, agreeing to the terms and clicking "Continue" as needed.</li>
+                                <li>This will install the Anaconda Distribution on your computer and most recent version of Python.</li>
+                            </ul>
+                        <li>Install the Python Package "Pint".</li>   
+                            <ul>
+                                <li>There is one package that we need to install on our computers that does not come standard with Anaconda.  It is called pint.  The easiest way to install it is from the command line, AFTER you install Anaconda.</li> 
+                                <li>Open "Terminal" on a Mac or "Command Prompt Window" on a PC.  In the window that opens type:
+                                <blockquote><font face="monospace">pip install pint</font></blockquote>
+                                And press enter.  It will install it on your computer and be accessible each time you want it.</li> 
+                            </ul>
+                        <li>Download the course content files. There are two options.  </li>   
+                            <ul>    
+                                <li>Option 1: You can use GitHub (see directions below) to create and maintain an online copy of your files.  This option is more intense but is the way people in industry maintain files.</li>
+                                <li>Option 2: You can download a static copy of your files to your computer here: <a href="http://modsimpy.com/zip">http://modsimpy.com/zip</a>.  Unzip the files and save them in a directory where you will be able to find them easily. This option is simpler.</li>
+                        </ul>
+                    </ul>    
+                        
+                    <div class="date" style="color: purple;font-weight: 700">OPTIONAL: Working with course content on your computer.</div>
+                    
+                    <ul>
+                        <li>Open the program Anaconda Navigator. Click on "Launch" under "Jupyter Notebook".</li> 
+                        <li>Navigate to the folder that has your files in it and into the folder "notebooks"</li> 
+                        <li>Click on the Chapter you want to open.</li> 
+                        <li>The first time you open a notebook, make a copy of it so you'll always be able to go back!  Go to "File..." and click "Make a copy."  In the window that pops up, go to "File..." and "Rename", and give it a name, perhaps something like "chap01XXXX.ipynb", where XXXX is your name.</li>
+                        <li>Now you can work in the notebook.  Don't forget to evaluate the cell that imports the "modsim" package each time you open your notebook. You do not need to use the !pip install pint at the beginning of every notebook.</li>                     
+                        <li>If you are creating a new notebook, always create it in this "notebooks" directory so that jupyter can find the "modsim" package.</li>
+                    </ul>   
+                    
+
+                    <div class="date" style="color: purple;font-weight: 700"><b>EXPERTS ONLY:</b> GitHub</div>
+
+                    <b>EXPERTS ONLY:</b> You might wish to access the course content by creating your own GitHub repo.  
+                    
+                    <ul>
+                        <li>Create your own online copy of the files.</li>
+                            <ul>
+                                <li>Sign up for a <a href="https://education.github.com/">GitHub for Education account</a>. Click on "Request a discount".  At the bottom it says "New to GitHub? Create an account."  Follow the steps. </li> 
+                                <li>Now make sure you are logged in to GitHub and navigate to <a href="https://github.com/AllenDowney/ModSimPy">https://github.com/AllenDowney/ModSimPy</a>.</li>
+                                <li>Click on the "Fork" Button on the top right, which will create your own copy of this information on your account.  I suggest using the same name "ModSimPy".</li>
+                            </ul>
+                        <li>Suggested: Download a copy of the files to your computer.</li>   
+                            <ul>
+                                <li>Next we will bring it on to your own machine.  Install the program <a href="https://desktop.github.com/">GitHub Desktop</a>.</li> 
+                                <li>Log in with your GitHub account. Go to File > "Clone Repository" and enter in the URL for your copy of "ModSimPy".  For instance, it will look like: https://github.com/mathmodelstudent/ModSimPy. Choose the name "ModSimPy" for the folder on your computer.</li> 
+                                <li>The files are now on your computer, in the folder "Documents/GitHub/ModSimPy".  Then you are able to use GitHub to backup the work that you do on the GitHub website.  Prof. Hanusa will not be troubleshooting your interactions with GitHub.</li> 
+                            </ul>
+                    </ul>
+
+                        
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </div> <!-- End course_main-->
+            </div>  <!-- End middle -->  
+
+            <div class="footer_wrap">
+                 <div class="footer">
+                Christopher Hanusa   
+                 <span class="right">  
+                     <a href="../../../index.html"><img width="32" height="32" style="background: #fff; " src="../../../images/h.png" alt="Home page" /></a> 
+                     <a href="http://hanusadesign.com/"><img width="32" height="32" src="../../../images/hd.png" style="vertical-align: center;" alt="Hanusa Design - Mathematical Art and Jewelry" /></a> 
+                     <a href="http://instagram.com/mathzorro/"><img width="32" height="32" src="../../../images/i.png" style="vertical-align: center;" alt="Christopher Hanusa on Instagram" /></a> 
+                     <a href="http://twitter.com/mathzorro"><img width="32" height="32" src="../../../images/t.png" alt="Christopher Hanusa on Twitter" /></a> 
+                     <a href="https://www.facebook.com/ChristopherHanusa"><img width="32" height="32" src="../../../images/f.png" alt="Christopher Hanusa on Facebook" /></a></span>
+                 </div>
+                 
+            </div>
+        </div> <!-- End container -->
+    </body>
+</html>
