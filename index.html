@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Thanks http://cssdeck.com/labs/css3-image-slider -->
+        <!-- Thanks http://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio -->
+        <title>Christopher R. H. Hanusa</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Christopher Hanusa" />
+        <link rel="shortcut icon" href="favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+        <link rel="stylesheet" type="text/css" href="css/images.css" />
+        <link href='https://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'> 
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-47380773-6', 'auto');
+                ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header_wrap">
+            <div class="header">
+                                <span class="left">HOME</span>
+            </div></div>
+
+            <div class="main">
+                <div class="menu">            
+                <div class="menu">            
+                    <a href="#" id="here">Home</a> &nbsp;
+                    <a href="research/index.html">Research</a> &nbsp;
+                    <a href="courses/index.html">Courses</a> &nbsp;
+                    <a href="portfolio/index.html">Portfolio</a> &nbsp;
+                    <a href="about/index.html">About</a>
+                </div>
+                </div>
+<!--
+            <br>don't forget to clean up the unused CSS.
+            <br>Can I put navigation at top of animation?  I should put arrows back in.  And make at least 3 animations.  And link to projects.
+                <br>Don't forget google analytics.
+-->
+                
+                
+                <div id="slideshow-wrap">
+                    <input type="radio" id="button-1" name="controls" checked="checked"/>
+                    <label for="button-1"></label>
+                    <input type="radio" id="button-2" name="controls"/>
+                    <label for="button-2"></label>
+                    <input type="radio" id="button-3" name="controls"/>
+                    <label for="button-3"></label>
+<!--
+        <input type="radio" id="button-4" name="controls"/>
+        <label for="button-4"></label>
+        <input type="radio" id="button-5" name="controls"/>
+        <label for="button-5"></label>
+-->
+<!--
+        <label for="button-1" class="arrows" id="arrow-1">></label>
+        <label for="button-2" class="arrows" id="arrow-2">></label>
+        <label for="button-3" class="arrows" id="arrow-3">></label>
+        <label for="button-4" class="arrows" id="arrow-4">></label>
+        <label for="button-5" class="arrows" id="arrow-5">></label>
+-->
+                    <div id="slideshow-inner">
+                        <ul>
+                            <li id="slide1">
+                                <img src="images/TetrahedronReflect.gif" />
+                                <div class="description">
+                                    <input type="checkbox" id="show-description-1"/>
+                                    <label for="show-description-1" class="show-description-label"><h2>Permutations as Reflections of a Tetrahedron</h2></label>
+                                    <div class="description-text">
+                                        <p>The reflection group of the regular tetrahedron corresponds to the group of permutations of {1,2,3,4}.  Shown are three special reflections that interchange 1&amp;2, 2&amp;3, and 3&amp;4.</p>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                            <li id="slide2">
+                                <img src="images/qq.gif" />
+                                <div class="description">
+                                    <input type="checkbox" id="show-description-3"/>
+                                    <label for="show-description-3" class="show-description-label"><h2>Non-attacking queens on a chessboard</h2></label>
+                                    <div class="description-text">
+                                        <p>In how many ways can we place <i>q</i> Queens on an <i>n</i>x<i>n</i> chessboard so that no two attack each other?&nbsp; We use Ehrhart theory to answer this question by counting lattice points inside a dilating polygon.&nbsp;&nbsp; </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="slide3">
+                                <img src="images/Madelung.gif" />
+                                <div class="description">
+                                    <input type="checkbox" id="show-description-2"/>
+                                    <label for="show-description-2" class="show-description-label"><h2>Madelung Constants on Nanotubes</h2></label>
+                                    <div class="description-text">
+                                        <p>For every ion in a molecule, one can calculate the force it feels from all the other ions in the molecule.&nbsp;  This value is the ion's Madelung Constant.&nbsp;  Shown is a nanotube with 8 layers of 30 ions.&nbsp;&nbsp; </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>  <!-- End middle -->  
+            </div>  <!-- End main -->  
+            <div class="footer_wrap">
+                 <div class="footer">
+                Christopher Hanusa   
+                 <span class="right">  
+                     <a href="index.html"><img width="32" height="32" style="background: #fff; " src="images/h.png" alt="Home page" /></a> 
+<!--                     <a href="http://mathzorro.blogspot.com/"><img width="32" height="32" src="images/b.png" style="vertical-align: center;" alt="Home page" /></a> -->
+                     <a href="http://hanusadesign.com/"><img width="32" height="32" src="images/hd.png" style="vertical-align: center;" alt="Hanusa Design - Mathematical Art and Jewelry" /></a> 
+                     <a href="http://instagram.com/hanusadesign/"><img width="32" height="32" src="images/i.png" style="vertical-align: center;" alt="Hanusa Design on Instagram" /></a> <!--                     <a href="https://plus.google.com/+ChristopherHanusa"><img width="32" height="32" src="images/g.png" style="vertical-align: center;" alt="Home page" /></a> -->
+                     <a href="http://twitter.com/mathzorro"><img width="32" height="32" src="images/t.png" alt="Christopher Hanusa on Twitter" /></a> 
+                     <a href="https://www.facebook.com/ChristopherHanusa"><img width="32" height="32" src="images/f.png" alt="Christopher Hanusa on Facebook" /></a></span>
+                 </div>
+                 
+            </div>
+        </div> <!-- End container -->
+    </body>
+</html>
