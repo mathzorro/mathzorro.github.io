@@ -1,0 +1,423 @@
+{
+ "title": "MATH 141 Weekly Schedule",
+ "semester": "Spring 2015",
+ "weekdays": [
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri"
+ ],
+ "weeks": [
+  {
+   "week": "Week 1",
+   "days": [
+    {
+     "date": "01/26"
+    },
+    {
+     "date": "01/27"
+    },
+    {
+     "date": "01/28",
+     "topic": "Intro & Trig",
+     "class": true
+    },
+    {
+     "date": "01/29"
+    },
+    {
+     "date": "01/30"
+    }
+   ]
+  },
+  {
+   "week": "Week 2",
+   "days": [
+    {
+     "date": "02/02",
+     "topic": "1.1, 1.2 Disc.",
+     "class": true
+    },
+    {
+     "date": "02/03"
+    },
+    {
+     "date": "02/04",
+     "topic": "1.3 incl. δ-ε",
+     "class": true
+    },
+    {
+     "date": "02/05"
+    },
+    {
+     "date": "02/06"
+    }
+   ]
+  },
+  {
+   "week": "Week 3",
+   "days": [
+    {
+     "date": "02/09",
+     "topic": "HW Disc. 1.4",
+     "class": true
+    },
+    {
+     "date": "02/10"
+    },
+    {
+     "date": "02/11",
+     "topic": "1.5",
+     "class": true
+    },
+    {
+     "date": "02/12",
+     "topic": "No class"
+    },
+    {
+     "date": "02/13"
+    }
+   ]
+  },
+  {
+   "week": "Week 4",
+   "days": [
+    {
+     "date": "02/16",
+     "topic": "No class"
+    },
+    {
+     "date": "02/17"
+    },
+    {
+     "date": "02/18 (M)",
+     "topic": "HW Disc. 1.6",
+     "class": true
+    },
+    {
+     "date": "02/19"
+    },
+    {
+     "date": "02/20"
+    }
+   ],
+   "note": "Last day to drop is 2/17."
+  },
+  {
+   "week": "Week 5",
+   "days": [
+    {
+     "date": "02/23",
+     "topic": "Catch-up & 2.1",
+     "class": true
+    },
+    {
+     "date": "02/24"
+    },
+    {
+     "date": "02/25",
+     "topic": "Q&A Day",
+     "class": true
+    },
+    {
+     "date": "02/26"
+    },
+    {
+     "date": "02/27"
+    }
+   ]
+  },
+  {
+   "week": "Week 6",
+   "days": [
+    {
+     "date": "03/02",
+     "topic": "Exam 1",
+     "exam": true
+    },
+    {
+     "date": "03/03"
+    },
+    {
+     "date": "03/04",
+     "topic": "2.2",
+     "class": true
+    },
+    {
+     "date": "03/05"
+    },
+    {
+     "date": "03/06"
+    }
+   ],
+   "note": "Exam 1 on 3/2."
+  },
+  {
+   "week": "Week 7",
+   "days": [
+    {
+     "date": "03/09",
+     "topic": "HW Disc. 2.3, 2.4",
+     "class": true
+    },
+    {
+     "date": "03/10"
+    },
+    {
+     "date": "03/11",
+     "topic": "2.4, 2.5",
+     "class": true
+    },
+    {
+     "date": "03/12"
+    },
+    {
+     "date": "03/13"
+    }
+   ]
+  },
+  {
+   "week": "Week 8",
+   "days": [
+    {
+     "date": "03/16",
+     "topic": "HW Disc. 2.5",
+     "class": true
+    },
+    {
+     "date": "03/17"
+    },
+    {
+     "date": "03/18",
+     "topic": "2.6",
+     "class": true
+    },
+    {
+     "date": "03/19"
+    },
+    {
+     "date": "03/20"
+    }
+   ]
+  },
+  {
+   "week": "Week 9",
+   "days": [
+    {
+     "date": "03/23",
+     "topic": "HW Disc. 2.7",
+     "class": true
+    },
+    {
+     "date": "03/24"
+    },
+    {
+     "date": "03/25",
+     "topic": "2.7, 2.8",
+     "class": true
+    },
+    {
+     "date": "03/26"
+    },
+    {
+     "date": "03/27"
+    }
+   ]
+  },
+  {
+   "week": "Week 10",
+   "days": [
+    {
+     "date": "03/30",
+     "topic": "Q&A Day",
+     "class": true
+    },
+    {
+     "date": "03/31"
+    },
+    {
+     "date": "04/01",
+     "topic": "Exam 2",
+     "exam": true
+    },
+    {
+     "date": "04/02"
+    },
+    {
+     "date": "04/03",
+     "topic": "No class"
+    }
+   ],
+   "note": "Exam 2 on 4/1."
+  },
+  {
+   "week": "Spring Break",
+   "days": [
+    {
+     "date": "04/06",
+     "topic": "No class"
+    },
+    {
+     "date": "04/07",
+     "topic": "No class"
+    },
+    {
+     "date": "04/08",
+     "topic": "No class"
+    },
+    {
+     "date": "04/09",
+     "topic": "No class"
+    },
+    {
+     "date": "04/10",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 11",
+   "days": [
+    {
+     "date": "04/13",
+     "topic": "2.8",
+     "class": true
+    },
+    {
+     "date": "04/14"
+    },
+    {
+     "date": "04/15",
+     "topic": "3.1",
+     "class": true
+    },
+    {
+     "date": "04/16"
+    },
+    {
+     "date": "04/17"
+    }
+   ],
+   "note": "Last day to withdraw is 4/16."
+  },
+  {
+   "week": "Week 12",
+   "days": [
+    {
+     "date": "04/20",
+     "topic": "3.2",
+     "class": true
+    },
+    {
+     "date": "04/21"
+    },
+    {
+     "date": "04/22",
+     "topic": "3.3, 3.4",
+     "class": true
+    },
+    {
+     "date": "04/23"
+    },
+    {
+     "date": "04/24"
+    }
+   ]
+  },
+  {
+   "week": "Week 13",
+   "days": [
+    {
+     "date": "04/27",
+     "topic": "3.4",
+     "class": true
+    },
+    {
+     "date": "04/28"
+    },
+    {
+     "date": "04/29",
+     "topic": "3.5",
+     "class": true
+    },
+    {
+     "date": "04/30"
+    },
+    {
+     "date": "05/01"
+    }
+   ]
+  },
+  {
+   "week": "Week 14",
+   "days": [
+    {
+     "date": "05/04",
+     "topic": "3.5",
+     "class": true
+    },
+    {
+     "date": "05/05"
+    },
+    {
+     "date": "05/06",
+     "topic": "Q&A Day",
+     "class": true
+    },
+    {
+     "date": "05/07"
+    },
+    {
+     "date": "05/08"
+    }
+   ]
+  },
+  {
+   "week": "Week 15",
+   "days": [
+    {
+     "date": "05/11",
+     "topic": "Exam 3",
+     "exam": true
+    },
+    {
+     "date": "05/12"
+    },
+    {
+     "date": "05/13",
+     "topic": "Final Review",
+     "class": true
+    },
+    {
+     "date": "05/14"
+    },
+    {
+     "date": "05/15"
+    }
+   ],
+   "note": "Exam 3 on 5/11."
+  },
+  {
+   "week": "Finals Week",
+   "days": [
+    {
+     "date": "05/18"
+    },
+    {
+     "date": "05/19"
+    },
+    {
+     "date": "05/20"
+    },
+    {
+     "date": "05/21"
+    },
+    {
+     "date": "05/22"
+    }
+   ],
+   "note": "Final Exam to be held at Scheduled Final Exam Time."
+  }
+ ]
+}

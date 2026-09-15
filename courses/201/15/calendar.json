@@ -1,0 +1,403 @@
+{
+ "title": "MATH 201 Weekly Schedule",
+ "semester": "Fall 2015",
+ "weekdays": [
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri"
+ ],
+ "weeks": [
+  {
+   "week": "Week 1",
+   "days": [
+    {
+     "date": "08/24"
+    },
+    {
+     "date": "08/25"
+    },
+    {
+     "date": "08/26"
+    },
+    {
+     "date": "08/27",
+     "topic": "Intro & 9.1",
+     "class": true
+    },
+    {
+     "date": "08/28"
+    }
+   ]
+  },
+  {
+   "week": "Week 2",
+   "days": [
+    {
+     "date": "08/31",
+     "topic": "No class"
+    },
+    {
+     "date": "09/01",
+     "topic": "9.2, 9.3",
+     "class": true
+    },
+    {
+     "date": "09/02"
+    },
+    {
+     "date": "09/03",
+     "topic": "9.4",
+     "class": true
+    },
+    {
+     "date": "09/04"
+    }
+   ]
+  },
+  {
+   "week": "Week 3",
+   "days": [
+    {
+     "date": "09/07"
+    },
+    {
+     "date": "09/08",
+     "topic": "10.1,10.2",
+     "class": true
+    },
+    {
+     "date": "09/09"
+    },
+    {
+     "date": "09/10 (M)",
+     "topic": "No class"
+    },
+    {
+     "date": "09/11"
+    }
+   ]
+  },
+  {
+   "week": "Week 4",
+   "days": [
+    {
+     "date": "09/14"
+    },
+    {
+     "date": "09/15",
+     "topic": "No class"
+    },
+    {
+     "date": "09/16"
+    },
+    {
+     "date": "09/17",
+     "topic": "10.2,10.3",
+     "class": true
+    },
+    {
+     "date": "09/18"
+    }
+   ],
+   "note": "Last day to drop is 9/16."
+  },
+  {
+   "week": "",
+   "days": [
+    {
+     "date": "09/21"
+    },
+    {
+     "date": "09/22",
+     "topic": "No class"
+    },
+    {
+     "date": "09/23",
+     "topic": "No class"
+    },
+    {
+     "date": "09/24",
+     "topic": "10.4,10.5",
+     "class": true
+    },
+    {
+     "date": "09/25 (T)",
+     "topic": "10.5,10.6",
+     "class": true
+    }
+   ]
+  },
+  {
+   "week": "Week 5",
+   "days": [
+    {
+     "date": "09/28"
+    },
+    {
+     "date": "09/29",
+     "topic": "Catch-up / Q&A",
+     "class": true
+    },
+    {
+     "date": "09/30"
+    },
+    {
+     "date": "10/01",
+     "topic": "Exam 1 10.7",
+     "exam": true
+    },
+    {
+     "date": "10/02",
+     "topic": "No class"
+    }
+   ],
+   "note": "Exam 1 is 10/1."
+  },
+  {
+   "week": "Week 6",
+   "days": [
+    {
+     "date": "10/05"
+    },
+    {
+     "date": "10/06",
+     "topic": "10.9, 10.8",
+     "class": true
+    },
+    {
+     "date": "10/07"
+    },
+    {
+     "date": "10/08",
+     "topic": "11.1",
+     "class": true
+    },
+    {
+     "date": "10/09"
+    }
+   ]
+  },
+  {
+   "week": "Week 7",
+   "days": [
+    {
+     "date": "10/12",
+     "topic": "No class"
+    },
+    {
+     "date": "10/13",
+     "topic": "11.2,11.3",
+     "class": true
+    },
+    {
+     "date": "10/14"
+    },
+    {
+     "date": "10/15",
+     "topic": "11.3",
+     "class": true
+    },
+    {
+     "date": "10/16"
+    }
+   ]
+  },
+  {
+   "week": "Week 8",
+   "days": [
+    {
+     "date": "10/19"
+    },
+    {
+     "date": "10/20",
+     "topic": "11.4",
+     "class": true
+    },
+    {
+     "date": "10/21"
+    },
+    {
+     "date": "10/22",
+     "topic": "11.5, 11.6",
+     "class": true
+    },
+    {
+     "date": "10/23"
+    }
+   ]
+  },
+  {
+   "week": "Week 9",
+   "days": [
+    {
+     "date": "10/26"
+    },
+    {
+     "date": "10/27",
+     "topic": "11.6",
+     "class": true
+    },
+    {
+     "date": "10/28"
+    },
+    {
+     "date": "10/29",
+     "topic": "Catch-up / Q&A",
+     "class": true
+    },
+    {
+     "date": "10/30"
+    }
+   ]
+  },
+  {
+   "week": "Week 10",
+   "days": [
+    {
+     "date": "11/02"
+    },
+    {
+     "date": "11/03",
+     "topic": "Exam 2 and 11.7",
+     "exam": true
+    },
+    {
+     "date": "11/04"
+    },
+    {
+     "date": "11/05",
+     "topic": "11.8",
+     "class": true
+    },
+    {
+     "date": "11/06"
+    }
+   ],
+   "note": "Exam 2 is 11/3."
+  },
+  {
+   "week": "Week 11",
+   "days": [
+    {
+     "date": "11/09"
+    },
+    {
+     "date": "11/10",
+     "topic": "11.8, 12.1",
+     "class": true
+    },
+    {
+     "date": "11/11"
+    },
+    {
+     "date": "11/12",
+     "topic": "12.2, 12.4",
+     "class": true
+    },
+    {
+     "date": "11/13"
+    }
+   ],
+   "note": "Last day to withdraw is 11/9."
+  },
+  {
+   "week": "Week 12",
+   "days": [
+    {
+     "date": "11/16"
+    },
+    {
+     "date": "11/17",
+     "topic": "12.3, 12.4",
+     "class": true
+    },
+    {
+     "date": "11/18"
+    },
+    {
+     "date": "11/19",
+     "topic": "12.5",
+     "class": true
+    },
+    {
+     "date": "11/20"
+    }
+   ]
+  },
+  {
+   "week": "Week 13",
+   "days": [
+    {
+     "date": "11/23"
+    },
+    {
+     "date": "11/24",
+     "topic": "12.6, 12.7",
+     "class": true
+    },
+    {
+     "date": "11/25"
+    },
+    {
+     "date": "11/26",
+     "topic": "No class"
+    },
+    {
+     "date": "11/27",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 14",
+   "days": [
+    {
+     "date": "11/30"
+    },
+    {
+     "date": "12/01",
+     "topic": "12.6, 12.7",
+     "class": true
+    },
+    {
+     "date": "12/02"
+    },
+    {
+     "date": "12/03",
+     "topic": "Catch-up / Q&A",
+     "class": true
+    },
+    {
+     "date": "12/04"
+    }
+   ]
+  },
+  {
+   "week": "Week 15",
+   "days": [
+    {
+     "date": "12/07"
+    },
+    {
+     "date": "12/08",
+     "topic": "Exam 3",
+     "exam": true
+    },
+    {
+     "date": "12/09"
+    },
+    {
+     "date": "12/10",
+     "topic": "Final Q&A",
+     "class": true
+    },
+    {
+     "date": "12/11"
+    }
+   ],
+   "note": "Exam 3 is on 12/08."
+  }
+ ]
+}

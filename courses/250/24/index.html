@@ -1,151 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Mathematical Computing, Fall 2024 &bull; Christopher Hanusa</title>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="author" content="Christopher Hanusa" />
-        <link rel="shortcut icon" href="favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="../../../css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="../../../css/style1.css" />
-        <link href='https://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css' />
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>    
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-                ga('create', 'UA-47380773-6', 'auto');
-                ga('send', 'pageview');
-        </script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header_wrap">
-                <div class="header">
-                    <span class="left">
-                        <a href="../../../index.html">HOME</a> > 
-                        <a href="../../index.html">Courses</a> > 
-                        <a href="index.html">250fa24</a>
-                    </span>
-                <div class="header_right">
-                    <span class="right">
-                        <a href="index.html">Home</a> &bull; 
-                        <a href="syllabus.html">Syllabus</a> &bull; 
-                        <a href="letters.html">Letters</a> &bull; 
-                        <a href="calendar.html">Calendar</a> &bull; 
-                        <a href="project.html">Projects</a> &bull; 
-                        <a href="notes.html">Content</a> 
-                    </span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATH 250: Mathematical Computing (Fall 2024) | Christopher Hanusa</title>
+    <link rel="icon" type="image/png" href="../../../images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Fenix" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
 
-                </div>
-                </div>
-            </div>
+    <style>
+        /* MATH 250 course colors (from the old site: #C66 on black, #A33 accent) */
+        body {
+            --primary-color: #A33;
+            --course-bright: #C66;
+            --course-faded: #d99;
+            background-color: #faf4f4; /* very slight red tint */
+        }
+        .widget-header { border-bottom-color: var(--primary-color); }
+        /* keep the main site nav hover the site-wide blue, not the course color */
+        #main-nav .nav-links a:hover { color: #007bff; }
 
-            <div class="main">
-                           
-                <div class="course_head">            
-                <div class="course_head_img"><a href="index.html"><img src="../../../images/250c.png" height="100"/></a></div>
-                <div class="course_head_title_250">Mathematical Computing</div>
-                </div>
-                
-                <div class="course_main_250">
-                    <p>Welcome to Math 250, Mathematical Computing, this Fall 2024!</p>
-                                        
+        /* Course number + semester, at the very top */
+        .course-tag {
+            display: block;
+            font-size: 0.95em;
+            color: var(--primary-color);
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        /* Compact course sub-navigation bar, directly below the tag */
+        .course-nav {
+            background: var(--course-bright);
+            border-radius: 8px;
+            padding: 8px 16px;
+            margin-bottom: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4px 18px;
+        }
+        .course-nav a, .course-nav a:visited {
+            color: #000;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .course-nav a:hover { color: #fff; }
+        .course-nav a.here {
+            background: #000;
+            color: #fff;
+            font-weight: bold;
+            padding: 2px 12px;
+            border-radius: 12px;
+        }
+
+        /* Course-colored links in the page content; visited slightly lighter */
+        .section-block a { color: var(--primary-color); }
+        .section-block a:visited { color: var(--course-faded); }
+        .hero-section a { color: var(--primary-color); }
+        .hero-section a:visited { color: var(--course-faded); }
+        @media (max-width: 700px) {
+            .course-nav { padding: 6px 12px; gap: 3px 16px; }
+            .course-nav a { font-size: 0.95em; }
+        }
+        /* On mobile the layout stacks and the sub-nav bar covers navigation,
+           so the sidebar widget is redundant */
+        @media (max-width: 1000px) {
+            .sidebar { display: none; }
+        }
+        .resource-list { list-style: none; }
+        .resource-list li {
+            padding-left: 22px;
+            position: relative;
+            margin-bottom: 8px;
+            line-height: 1.5;
+            font-size: 1.1em;
+        }
+        .resource-list li::before {
+            content: "\2022";
+            color: var(--primary-color);
+            font-size: 1.2em;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* text line box is 1.5em of the li font; bullet is 1.2x that font,
+               so 1.5 / 1.2 = 1.25 makes both line boxes equal and centers it */
+            line-height: 1.25;
+        }
+        .sidebar .course-links { list-style: none; }
+        .sidebar .course-links li { border-bottom: 1px solid #eee; }
+        .sidebar .course-links li:last-child { border-bottom: none; }
+        .sidebar .course-links a {
+            display: block;
+            padding: 10px 5px;
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+        .sidebar .course-links a:hover { color: var(--primary-color); }
+        .sidebar .btn { margin-top: 18px; }
+        .btn:hover { background-color: #822; } /* darker course red, not blue */
+    </style>
+</head>
+<body>
+
+    <nav id="main-nav">
+        <div class="nav-brand">
+            <a href="../../../index.html"><img src="../../../images/hanusa-xyz.png" alt="hanusa.xyz logo" height="50px"></a>
+        </div>
+        <div class="nav-links">
+            <a href="../../../research.html">Research</a>
+            <a href="../../../design.html">Design</a> 
+            <a href="../../../education.html" class="active" style="color:#1d5adc;">Education</a>
+            <a href="../../../strategy.html">Strategy</a>
+            <a href="https://hanusa.xyz/blog">Insights</a>
+            <a href="../../../contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="page-grid">
+        <main class="main-column">
+            <span class="course-tag">MATH 250 &bull; Fall 2024</span>
+
+            <nav class="course-nav">
+                <a href="index.html" class="here">Home</a>
+                <a href="syllabus.html">Syllabus</a>
+                <a href="letters.html">Letters</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="project.html">Projects</a>
+                <a href="notes.html">Content</a>
+            </nav>
+
+            <section class="hero-section">
+                <h1>Mathematical Computing</h1>
+                <p>Welcome to Math 250, Mathematical Computing, this Fall 2024! Students learn how to program in Wolfram Mathematica in this project-based course.</p>
+            </section>
+
+            <section class="section-block">
+                <div class="text-side">
                     <h2>Course Information</h2>
-                    <ul>
+                    <ul class="resource-list">
                         <li><a href="syllabus.html">Course Syllabus</a></li>
-                        <li>Read <a href="letters.html">Letters from past students</a></li>
+                        <li>Read <a href="letters.html">letters from past students</a></li>
                         <li><a href="calendar.html">Course Calendar</a></li>
-                        <li><a href="notes.html">Course Content</a>, including a list of topics covered, in-class tutorials, and homework assignments.</li>
-                        <li>Information about the <a href="project.html">Course Projects</a>.</li>
-                        <li>Our discussion board will be on <a href="https://discord.com/">Discord</a>.</li>
-<!--                        <li><a href="http://wolframcloud.com">Mathematica Online</a></li>
-                        <li><a href="https://campuswire.com/p/G6730266B">Our Discussion Board</a> on Campuswire.</li>-->
-                        </ul>
-<!--                    
-                    <h2>Key Dates: (subject to change)</h2>
+                        <li><a href="notes.html">Course Content</a>, including a list of topics covered, in-class tutorials, and homework assignments</li>
+                        <li>Information about the <a href="project.html">Course Projects</a></li>
+                        <li>Our discussion board will be on <a href="https://discord.com/">Discord</a></li>
+                    </ul>
+                </div>
+            </section>
 
-            <ul style="list-style-type: square;">
-                <li><strong>First Day of Class:</strong> Wednesday, August 25 (online!)</li>
-                <li><strong>Project 1 Due:</strong> Wednesday, September 23</li>
-                <li><strong>Project 2 Prototype Due:</strong> Wednesday, October 23</li>
-                <li><strong>Project 2 Due:</strong> Wednesday, November 18</li>
-                <li><strong>Project 3 Due:</strong> Monday, December 7</li>
-                <li><strong>Project 3 Presentations:</strong> Monday, December 7 and Wednesday, December 9</li>
-                <li><strong>Last Day of Class:</strong> Wednesday, December 9</li>
-                <li><strong>Art Exhibit Opening:</strong> Time and place to be determined.</li>
-            </ul>
--->
+            <section class="section-block">
+                <div class="text-side">
+                    <h2>Office Hours</h2>
+                    <p>Office hours is the time that instructors set aside outside of class time for students to come and ask questions. I am happy to help you with your homework, project, and other class-related questions or concerns.</p>
+                    <p>Office hours this semester are Mondays 9:30&ndash;10:30am (<a href="https://us02web.zoom.us/j/87559867644?pwd=ZVp0NWdDS21zV3BzOGxIUGxwaUcwQT09">on Zoom</a>) and Thursdays 12:30&ndash;1:30 in Kiely 606. If those times don't work for you, send me an email or DM and we'll set up a time that works for you.</p>
+                </div>
+            </section>
 
-        <h2>Office hours:</h2>
+            <section class="section-block">
+                <div class="text-side">
+                    <h2>Inspiring Links</h2>
+                    <ul class="resource-list">
+                        <li><a href="http://demonstrations.wolfram.com/">Wolfram Demonstrations Project</a> &mdash; Browse to see what Mathematica can do.</li>
+                        <li><a href="http://blog.wolfram.com/">Wolfram Blog</a> &mdash; Using Mathematica to solve real-world problems.</li>
+                        <li><a href="https://mathematica.stackexchange.com/questions/18393/what-are-the-most-common-pitfalls-awaiting-new-users?answertab=active#tab-top">Amazing curated FAQ about Mathematica</a> on StackExchange</li>
+                        <li><a href="https://flotsam.sellingwaves.com/">Mathematical Animations</a> by Clayton Shonkwiler, including his Mathematica source code</li>
+                        <li><a href="http://blog.matthen.com/">Mathematical Animations</a> by Matt Henderson, including his Mathematica source code</li>
+                        <li><a href="https://library.wolfram.com/search/?query=piele&amp;collection=library&amp;x=0&amp;y=0">Past columns by Donald Piele</a></li>
+                        <li><a href="http://www.combinatorics.org/ojs/index.php/eljc/article/view/DS2">An introduction to and bibliography about combinatorial games</a></li>
+                        <li><a href="http://projecteuler.net/index.php?section=problems">Project Euler</a>, a list of math problems hard to solve without a computer.</li>
+                    </ul>
+                </div>
+            </section>
 
-                    <div style="position: relative; left: 40px; margin-top:10px; margin-bottom: 10px">
-<p>Office hours is the time that instructors set aside outside of class time for students to come and ask questions.  I am happy to help you with your homework, project, and other class-related questions or concerns. Office hours this semester are Mondays 9:30&ndash;10:30am (<a href="https://us02web.zoom.us/j/87559867644?pwd=ZVp0NWdDS21zV3BzOGxIUGxwaUcwQT09">on Zoom</a>) and Thursdays 12:30&ndash;1:30 in Kiely 606. <!--This semester, I will have online office hours, which we will determine the first week of class.  They will be announced in class and posted on <a href="../../../schedule/23sp.html">my schedule</a>.--> If those times don't work for you, send me an email or DM and we'll set up a time that works for you.</p>
+            <section class="section-block">
+                <div class="text-side">
+                    <h2>Additional Online Resources from Wolfram</h2>
+                    <ul class="resource-list">
+                        <li><a href="http://www.wolfram.com/language/fast-introduction-for-programmers/">Wolfram's fast introduction for programmers</a></li>
+                        <li><a href="http://www.wolfram.com/broadcast/">Mathematica screencasts</a></li>
+                        <li><a href="https://www.wolfram.com/wolfram-u/">Mathematica courses</a></li>
+                        <li><a href="http://www.wolfram.com/wolfram-u/an-elementary-introduction-to-the-wolfram-language/">Interactive course: An Elementary Introduction to the Wolfram Language</a></li>
+                    </ul>
+                </div>
+            </section>
 
-            </div> 
-        <h2>Inspiring links:</h2>
+            <section class="section-block">
+                <div class="text-side">
+                    <h2>Books about Mathematica</h2>
+                    <ul class="resource-list">
+                        <li><em>Computational Recreations in Mathematica</em> by Ilan Vardi &mdash; A moderate-to-advanced resource with topics similar to those in this class.</li>
+                        <li><em>Mathematica in Action</em> by Stan Wagon &mdash; A beginning-to-moderate introductory resource with additional topics you might decide to investigate.</li>
+                        <li><em>An Introduction to Programming with Mathematica</em> by Paul Wellin, Richard Gaylord, and Samuel Kamin &mdash; A moderate introduction to programming in Mathematica.</li>
+                        <li><em>The Student's Introduction to MATHEMATICA</em> by Bruce F. Torrence and Eve A. Torrence &mdash; Introduction to and examples of Mathematica in Calculus, Precalculus, and Linear Algebra.</li>
+                        <li><em>Computational Discrete Mathematics: Combinatorics and Graph Theory with Mathematica</em> by Sriram Pemmaraju and Steven Skiena &mdash; A guide for using Mathematica to do combinatorics and graph theory.</li>
+                        <li><em>Schaum's Outline of Mathematica</em> by Eugene Don &mdash; A beginner's introduction to using Mathematica for calculations.</li>
+                        <li><em>Mathematica by Example</em> by Martha L. Abell and James P. Braselton &mdash; A book guiding you through learning Mathematica by example.</li>
+                        <li><em>Mathematica Navigator: Mathematics, Statistics and Graphics</em> by Heikki Ruskeepaa &mdash; An introductory-to-moderate general resource, mostly for calculations.</li>
+                        <li><a href="http://www.mathematicaguidebooks.org/samples.shtml">Advanced examples of what Mathematica can do</a></li>
+                        <li><em>Mathematica for Scientists and Engineers</em> by Thomas B. Bahder &mdash; An advanced resource to understand how to use Mathematica to solve research problems.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
 
-<ul>
-     <li><a href="http://demonstrations.wolfram.com/">Wolfram Demonstrations Project</a> &mdash; Browse to see what Mathematica
-         can do.</li>
-         <li><a href="http://blog.wolfram.com/">Wolfram Blog</a>: Using Mathematica to solve real-world problems.</li>
-    <li><a href="https://mathematica.stackexchange.com/questions/18393/what-are-the-most-common-pitfalls-awaiting-new-users?answertab=active#tab-top">Amazing Curated FAQ about Mathematica</a> on StackExchange</li>    
-    <li><a href="https://flotsam.sellingwaves.com/">Mathematical Animations</a> by Clayton Shonkwiler, including his Mathematica source code</li>
-    <li><a href="http://blog.matthen.com/">Mathematical Animations</a> by Matt Henderson, including his Mathematica source code</li>    
-    <li><a href="https://library.wolfram.com/search/?query=piele&collection=library&x=0&y=0">Past columns by Donald Piele</a></li>
-<li><a href="http://www.combinatorics.org/ojs/index.php/eljc/article/view/DS2">An introduction to and bibliography about combinatorial games</a></li>
-<!-- <li><a href="http://www.comap.com/undergraduate/contests/mcm/previous-contests.php">Mathematical Contest in Modeling</a></li>-->
-<li><a href="http://projecteuler.net/index.php?section=problems">Project Euler</a>, a list of math problems hard to solve without a computer.</li>
-</ul>
-
-        <h2>Additional online resources from Wolfram:</h2>
-<ul>
-    <li><a href="http://www.wolfram.com/language/fast-introduction-for-programmers/">Wolfram's fast introduction for programmers</a></li>
-     <li><a href="http://www.wolfram.com/broadcast/">Mathematica screencasts</a></li>
-     <li><a href="https://www.wolfram.com/wolfram-u/">Mathematica courses</a></li>
-    <li><a href="http://www.wolfram.com/wolfram-u/an-elementary-introduction-to-the-wolfram-language/">Interactive course: An Elementary Introduction to the Wolfram Language</a></li>
-</ul>
-        <h2>Books about Mathematica:</h2>
-<ul>
-     <li><i>Computational Recreations in Mathematica</i> by Ilan Vardi &mdash; A moderate-to-advanced resource with topics similar
-     to those in this class.</li>
-     <li><i>Mathematica in Action</i> by Stan Wagon &mdash; A beginning-to-moderate introductory resource with additional topics
-     you might decide to investigate.</li>
-     <li><i>An Introduction to Programming with Mathematica</i> by Paul Wellin, Richard Gaylord, and Samuel Kamin &mdash; A
-     moderate introduction to programming in Mathematica.
-     <li><i>The Student's Introduction to MATHEMATICA</i> by Bruce F. Torrence and Eve A. Torrence 
-     &mdash; Introduction to and examples of Mathematica in Calculus, Precalculus, and Linear Algebra.</li>
-     <li><i>Computational discrete mathematics : combinatorics and graph theory with Mathematica</i> by Sriram Pemmaraju and
-     Steven Skiena &mdash; A guide for using Mathematica to do combinatorics and graph theory. </li>
-     <li><i>Schaum's Outline of Mathematica</i> by Eugene Don &mdash; A beginner's introduction to using Mathematica for
-     calculations. </li>
-     <li><i>Mathematica by Example</i>by Martha L. Abell and James P. Braselton &mdash; A book guiding 
-     you through learning Mathematica by example. </li>
-     <li><i>Mathematica Navigator: Mathematics, Statistics and Graphics</i> by Heikki Ruskeepaa &mdash; An
-     introductory-to-moderate general resource, mostly for calculations.</li>
-     <li><a href="http://www.mathematicaguidebooks.org/samples.shtml">Advanced examples of what Mathematica can do</a></li>
-     <li><i>Mathematica for Scientists and Engineers</i> by Thomas B. Bahder &mdash; An advanced resource to understand how to use
-     Mathematica to solve research problems.</li>
-</ul>
-
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                </div> <!-- End course_main-->
-            </div>  <!-- End middle -->  
-
-            <div class="footer_wrap">
-                 <div class="footer">
-                Christopher Hanusa   
-                 <span class="right">  
-                     <a href="../../../index.html"><img width="32" height="32" style="background: #fff; " src="../../../images/h.png" alt="Home page" /></a> 
-                     <a href="http://hanusadesign.com/"><img width="32" height="32" src="../../../images/hd.png" style="vertical-align: center;" alt="Hanusa Design - Mathematical Art and Jewelry" /></a> 
-                     <a href="http://instagram.com/mathzorro/"><img width="32" height="32" src="../../../images/i.png" style="vertical-align: center;" alt="Christopher Hanusa on Instagram" /></a> 
-                     <a href="http://twitter.com/mathzorro"><img width="32" height="32" src="../../../images/t.png" alt="Christopher Hanusa on Twitter" /></a> 
-                     <a href="https://www.facebook.com/ChristopherHanusa"><img width="32" height="32" src="../../../images/f.png" alt="Christopher Hanusa on Facebook" /></a></span>
-                 </div>
-                 
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <div class="widget-header">
+                    <h3>Course Links</h3>
+                </div>
+                <ul class="course-links">
+                    <li><a href="syllabus.html">&#128220; Syllabus</a></li>
+                    <li><a href="letters.html">&#9993;&#65039; Letters from Past Students</a></li>
+                    <li><a href="calendar.html">&#128197; Calendar</a></li>
+                    <li><a href="notes.html">&#128218; Course Content</a></li>
+                    <li><a href="project.html">&#128736;&#65039; Projects</a></li>
+                    <li><a href="helpfulinfo.html">&#128161; Helpful Info</a></li>
+                    <li><a href="https://discord.com/">&#128172; Discord</a></li>
+                    <li><a href="http://wolframcloud.com">&#9729;&#65039; Mathematica Online</a></li>
+                </ul>
+                <a href="mailto:chanusa@qc.cuny.edu" class="btn desktop-view-all" style="width:100%; text-align:center;">Contact Prof. Hanusa</a>
             </div>
-        </div> <!-- End container -->
-    </body>
+        </aside>
+    </div>
+
+    <footer>
+        <p class="footer-links">&copy; 2026 Christopher Hanusa &nbsp;&middot;&nbsp;
+            <a href="https://bsky.app/profile/mathzorro.bsky.social" aria-label="Bluesky" title="Bluesky"><svg viewBox="0 0 24 24"><path d="M12 10.8C10.9 8.5 7.9 4.4 5.1 2.4 2.4.5 1.4.8 .8 1.1.1 1.5 0 2.6 0 3.3s.4 5.5.6 6.3c.8 2.7 3.6 3.6 6.2 3.3-3.8.6-7.2 2-2.7 6.9 4.9 5.1 6.7-1.1 7.9-4.2 1.2 3.1 2.6 9 7.8 4.2 4.6-4.9 1.2-6.3-2.6-6.9 2.6.3 5.4-.6 6.2-3.3.2-.8.6-5.6.6-6.3s-.1-1.8-.8-2.2c-.6-.3-1.6-.6-4.3 1.3C16.1 4.4 13.1 8.5 12 10.8z"/></svg></a>
+            <a href="https://instagram.com/mathzorro" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2m0 3.6a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-10.5a1.4 1.4 0 11-2.9 0 1.4 1.4 0 012.9 0z"/></svg></a>
+            <a href="https://www.linkedin.com/in/christopher-hanusa/" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3-1.9 0-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.2 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7 20.4H3.4V9H7v11.4z"/></svg></a>
+        </p>
+    </footer>
+
+</body>
 </html>

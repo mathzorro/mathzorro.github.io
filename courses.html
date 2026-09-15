@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Archive | Christopher Hanusa</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Fenix" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background-color: #f3f6fc; } /* education section tint (blue #1d5adc) */
+        ul.topic-list li { border-left-color: #1d5adc; }
+
+    </style>
+
+    <style>
+        .course-bar {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            padding: 0;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: var(--text-dark);
+            overflow: hidden;
+            transition: transform 0.15s;
+        }
+        a.course-bar:hover { transform: translateX(4px); }
+        /* archived semesters with no page on this site: greyed, inert */
+        .course-bar.disabled { color: #aaa; }
+        .course-bar.disabled .course-bar-name { background: #e4e4e4; color: #999; }
+        /* the course name sits inside a bar colored like that course's sub-nav */
+        .course-bar-name {
+            background: var(--bar);
+            color: #000;
+            font-weight: bold;
+            padding: 8px 16px;
+            flex: 0 0 150px; /* uniform width, sized to fit "Math 221 (BU)" */
+            box-sizing: border-box;
+            white-space: nowrap;
+            align-self: stretch;
+            display: flex;
+            align-items: center;
+        }
+        .course-bar-rest {
+            padding: 8px 12px 8px 0;
+            font-size: 1.05em;
+            align-self: center;
+        }
+        /* year headings: same font treatment as the course tag on course pages */
+        .year-tag {
+            font-size: 0.95em;
+            color: var(--primary-color);
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin: 25px 0 8px;
+        }
+        .year-tag:first-of-type { margin-top: 0; }
+        .archive-note { color: #777; margin-bottom: 25px; }
+        @media (max-width: 700px) {
+            .course-bar { flex-direction: column; gap: 0; align-items: stretch; }
+            .course-bar-name { flex: none; padding: 6px 12px; }
+            .course-bar-rest { padding: 6px 12px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="main-nav">
+        <div class="nav-brand">
+            <a href="index.html"><img src="images/hanusa-xyz.png" alt="hanusa.xyz logo" height="50px"></a>
+        </div>
+        <div class="nav-links">
+            <a href="research.html">Research</a>
+            <a href="design.html">Design</a> 
+            <a href="education.html" class="active" style="color:#1d5adc;">Education</a>
+            <a href="strategy.html">Strategy</a>
+            <a href="https://hanusa.xyz/blog">Insights</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="single-column-layout">
+
+        <div class="controls">
+            <h2>Course Archive</h2>
+        </div>
+
+        <section>
+            <h2 style="font-size:1.6em; margin-bottom:10px;">Current courses</h2>
+            <p class="archive-note">No courses this semester.</p>
+
+            <h2 style="font-size:1.6em; margin-bottom:12px;">Past courses</h2>
+            <div class="year-tag">2026</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 128</span>
+                <span class="course-bar-rest">Mathematical Design, Spring 2026</span>
+            </div>
+            <div class="year-tag">2025</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 636</span>
+                <span class="course-bar-rest">Combinatorics, Fall 2025</span>
+            </div>
+            <div class="year-tag">2024</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 250</span>
+                <span class="course-bar-rest">Mathematical Computing, Fall 2024</span>
+            </div>
+            <a class="course-bar" href="courses/128/24/index.html" style="--bar: #CCC422;">
+                <span class="course-bar-name">Math 128</span>
+                <span class="course-bar-rest">Mathematical Design, Spring 2024</span>
+            </a>
+            <div class="year-tag">2023</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 120</span>
+                <span class="course-bar-rest">Discrete Mathematics for Computer Science, Fall 2023</span>
+            </div>
+            <a class="course-bar" href="courses/128/23/index.html" style="--bar: #CCC422;">
+                <span class="course-bar-name">Math 128</span>
+                <span class="course-bar-rest">Mathematical Design, Spring 2023</span>
+            </a>
+            <a class="course-bar" href="courses/250/23/index.html" style="--bar: #C66;">
+                <span class="course-bar-name">Math 250</span>
+                <span class="course-bar-rest">Mathematical Computing, Spring 2023</span>
+            </a>
+            <div class="year-tag">2022</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 120</span>
+                <span class="course-bar-rest">Discrete Mathematics for Computer Science, Fall 2022</span>
+            </div>
+            <a class="course-bar" href="courses/634/22/index.html" style="--bar: #fbb;">
+                <span class="course-bar-name">Math 634</span>
+                <span class="course-bar-rest">Graph Theory, Fall 2022</span>
+            </a>
+            <a class="course-bar" href="courses/245/22/index.html" style="--bar: #daf;">
+                <span class="course-bar-name">Math 245</span>
+                <span class="course-bar-rest">Mathematical Models, Spring 2022</span>
+            </a>
+            <a class="course-bar" href="courses/636/22/index.html" style="--bar: #6d7;">
+                <span class="course-bar-name">Math 636</span>
+                <span class="course-bar-rest">Combinatorics, Spring 2022</span>
+            </a>
+            <div class="year-tag">2021</div>
+            <a class="course-bar" href="courses/128/21/index.html" style="--bar: #CCC422;">
+                <span class="course-bar-name">Math 128</span>
+                <span class="course-bar-rest">Mathematical Design, Fall 2021</span>
+            </a>
+            <a class="course-bar" href="courses/141/21/index.html" style="--bar: #9CE;">
+                <span class="course-bar-name">Math 141</span>
+                <span class="course-bar-rest">Calculus I, Fall 2021</span>
+            </a>
+            <a class="course-bar" href="courses/250/21/index.html" style="--bar: #C66;">
+                <span class="course-bar-name">Math 250</span>
+                <span class="course-bar-rest">Mathematical Computing, Fall 2021</span>
+            </a>
+            <a class="course-bar" href="courses/201/21/index.html" style="--bar: #fc9;">
+                <span class="course-bar-name">Math 201</span>
+                <span class="course-bar-rest">Multivariable Calculus, Spring 2021</span>
+            </a>
+            <a class="course-bar" href="courses/245/21/index.html" style="--bar: #daf;">
+                <span class="course-bar-name">Math 245</span>
+                <span class="course-bar-rest">Mathematical Models, Spring 2021</span>
+            </a>
+            <div class="year-tag">2020</div>
+            <a class="course-bar" href="courses/128/20/index.html" style="--bar: #CCC422;">
+                <span class="course-bar-name">Math 128</span>
+                <span class="course-bar-rest">Mathematical Design, Fall 2020</span>
+            </a>
+            <a class="course-bar" href="courses/250/20/index.html" style="--bar: #C66;">
+                <span class="course-bar-name">Math 250</span>
+                <span class="course-bar-rest">Mathematical Computing, Fall 2020</span>
+            </a>
+            <a class="course-bar" href="courses/142/20/index.html" style="--bar: #4ad;">
+                <span class="course-bar-name">Math 142</span>
+                <span class="course-bar-rest">Calculus II, Spring 2020</span>
+            </a>
+            <a class="course-bar" href="courses/245/20/index.html" style="--bar: #daf;">
+                <span class="course-bar-name">Math 245</span>
+                <span class="course-bar-rest">Mathematical Models, Spring 2020</span>
+            </a>
+            <div class="year-tag">2019</div>
+            <a class="course-bar" href="courses/213/19/index.html" style="--bar: #C66;">
+                <span class="course-bar-name">Math 213W</span>
+                <span class="course-bar-rest">Math with Mathematica, Fall 2019</span>
+            </a>
+            <a class="course-bar" href="courses/245/19/index.html" style="--bar: #daf;">
+                <span class="course-bar-name">Math 245</span>
+                <span class="course-bar-rest">Mathematical Models, Fall 2019</span>
+            </a>
+            <a class="course-bar" href="courses/636/19/index.html" style="--bar: #6d7;">
+                <span class="course-bar-name">Math 636</span>
+                <span class="course-bar-rest">Combinatorics, Fall 2019</span>
+            </a>
+            <a class="course-bar" href="courses/245/19sp/index.html" style="--bar: #daf;">
+                <span class="course-bar-name">Math 245</span>
+                <span class="course-bar-rest">Mathematical Models, Spring 2019</span>
+            </a>
+            <div class="year-tag">2018</div>
+            <a class="course-bar" href="courses/213/18/index.html" style="--bar: #C66;">
+                <span class="course-bar-name">Math 213W</span>
+                <span class="course-bar-rest">Math with Mathematica, Fall 2018</span>
+            </a>
+            <a class="course-bar" href="courses/245/18/index.html" style="--bar: #daf;">
+                <span class="course-bar-name">Math 245</span>
+                <span class="course-bar-rest">Mathematical Models, Fall 2018</span>
+            </a>
+            <a class="course-bar" href="courses/636/18/index.html" style="--bar: #6d7;">
+                <span class="course-bar-name">Math 636</span>
+                <span class="course-bar-rest">Combinatorics, Fall 2018</span>
+            </a>
+            <a class="course-bar" href="courses/213/17/index.html" style="--bar: #C66;">
+                <span class="course-bar-name">Math 213W</span>
+                <span class="course-bar-rest">Math with Mathematica, Spring 2018</span>
+            </a>
+            <a class="course-bar" href="courses/245/17/index.html" style="--bar: #daf;">
+                <span class="course-bar-name">Math 245</span>
+                <span class="course-bar-rest">Mathematical Models, Spring 2018</span>
+            </a>
+            <div class="year-tag">2017</div>
+            <a class="course-bar" href="courses/142/17/index.html" style="--bar: #4ad;">
+                <span class="course-bar-name">Math 142</span>
+                <span class="course-bar-rest">Calculus II, Fall 2017</span>
+            </a>
+            <a class="course-bar" href="courses/201/17/index.html" style="--bar: #fc9;">
+                <span class="course-bar-name">Math 201</span>
+                <span class="course-bar-rest">Multivariable Calculus, Fall 2017</span>
+            </a>
+            <div class="year-tag">2016</div>
+            <a class="course-bar" href="courses/213/16/index.html" style="--bar: #C66;">
+                <span class="course-bar-name">Math 213W</span>
+                <span class="course-bar-rest">Math with Mathematica, Spring 2016</span>
+            </a>
+            <a class="course-bar" href="courses/245/16/index.html" style="--bar: #daf;">
+                <span class="course-bar-name">Math 245</span>
+                <span class="course-bar-rest">Mathematical Models, Spring 2016</span>
+            </a>
+            <a class="course-bar" href="courses/555/16/index.html" style="--bar: #4cb;">
+                <span class="course-bar-name">Math 555</span>
+                <span class="course-bar-rest">Games and Puzzles, Spring 2016</span>
+            </a>
+            <div class="year-tag">2015</div>
+            <a class="course-bar" href="courses/201/15/index.html" style="--bar: #fc9;">
+                <span class="course-bar-name">Math 201</span>
+                <span class="course-bar-rest">Multivariable Calculus, Fall 2015</span>
+            </a>
+            <a class="course-bar" href="courses/636/15/index.html" style="--bar: #6d7;">
+                <span class="course-bar-name">Math 636</span>
+                <span class="course-bar-rest">Combinatorics, Fall 2015</span>
+            </a>
+            <a class="course-bar" href="courses/141/15/index.html" style="--bar: #9CE;">
+                <span class="course-bar-name">Math 141</span>
+                <span class="course-bar-rest">Calculus I, Spring 2015</span>
+            </a>
+            <a class="course-bar" href="courses/213/15/index.html" style="--bar: #C66;">
+                <span class="course-bar-name">Math 213W</span>
+                <span class="course-bar-rest">Math with Mathematica, Spring 2015</span>
+            </a>
+            <a class="course-bar" href="courses/245/15/index.html" style="--bar: #daf;">
+                <span class="course-bar-name">Math 245</span>
+                <span class="course-bar-rest">Mathematical Models, Spring 2015</span>
+            </a>
+            <div class="year-tag">2014</div>
+            <a class="course-bar" href="courses/141/14/index.html" style="--bar: #9CE;">
+                <span class="course-bar-name">Math 141</span>
+                <span class="course-bar-rest">Calculus I, Fall 2014</span>
+            </a>
+            <a class="course-bar" href="courses/201/14f/index.html" style="--bar: #fc9;">
+                <span class="course-bar-name">Math 201</span>
+                <span class="course-bar-rest">Multivariable Calculus, Fall 2014</span>
+            </a>
+            <a class="course-bar" href="courses/636/14/index.html" style="--bar: #6d7;">
+                <span class="course-bar-name">Math 636</span>
+                <span class="course-bar-rest">Combinatorics, Fall 2014</span>
+            </a>
+            <a class="course-bar" href="courses/201/14s/index.html" style="--bar: #fc9;">
+                <span class="course-bar-name">Math 201</span>
+                <span class="course-bar-rest">Multivariable Calculus, Spring 2014</span>
+            </a>
+            <a class="course-bar" href="courses/245/14/index.html" style="--bar: #daf;">
+                <span class="course-bar-name">Math 245</span>
+                <span class="course-bar-rest">Mathematical Models, Spring 2014</span>
+            </a>
+            <a class="course-bar" href="courses/634/14/index.html" style="--bar: #fbb;">
+                <span class="course-bar-name">Math 634</span>
+                <span class="course-bar-rest">Graph Theory, Spring 2014</span>
+            </a>
+            <div class="year-tag">2013</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 201</span>
+                <span class="course-bar-rest">Multivariable Calculus, Fall 2013</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 636</span>
+                <span class="course-bar-rest">Combinatorics, Fall 2013</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 245</span>
+                <span class="course-bar-rest">Mathematical Models, Spring 2013</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 634</span>
+                <span class="course-bar-rest">Graph Theory, Spring 2013</span>
+            </div>
+            <div class="year-tag">2012</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 201</span>
+                <span class="course-bar-rest">Multivariable Calculus, Fall 2012</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 636</span>
+                <span class="course-bar-rest">Combinatorics, Fall 2012</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 245</span>
+                <span class="course-bar-rest">Mathematical Models, Spring 2012</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 634</span>
+                <span class="course-bar-rest">Graph Theory, Spring 2012</span>
+            </div>
+            <div class="year-tag">2011</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 390</span>
+                <span class="course-bar-rest">Putnam Preparation, Fall 2011</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 636</span>
+                <span class="course-bar-rest">Combinatorics, Fall 2011</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 245</span>
+                <span class="course-bar-rest">Mathematical Models, Spring 2011</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 390</span>
+                <span class="course-bar-rest">Math Colloquium, Spring 2011</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 634</span>
+                <span class="course-bar-rest">Graph Theory, Spring 2011</span>
+            </div>
+            <div class="year-tag">2010</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 636</span>
+                <span class="course-bar-rest">Combinatorics, Fall 2010</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 245</span>
+                <span class="course-bar-rest">Mathematical Models, Spring 2010</span>
+            </div>
+            <div class="year-tag">2009</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 213</span>
+                <span class="course-bar-rest">Math with Mathematica, Fall 2009</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 634</span>
+                <span class="course-bar-rest">Graph Theory, Fall 2009</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 505</span>
+                <span class="course-bar-rest">Problem Solving, Spring 2009</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 636</span>
+                <span class="course-bar-rest">Combinatorics, Spring 2009</span>
+            </div>
+            <div class="year-tag">2008</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 131</span>
+                <span class="course-bar-rest">Business Calculus, Fall 2008</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 634</span>
+                <span class="course-bar-rest">Graph Theory, Fall 2008</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 381 (BU)</span>
+                <span class="course-bar-rest">Graph Theory, Spring 2008</span>
+            </div>
+            <div class="year-tag">2007</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 221 (BU)</span>
+                <span class="course-bar-rest">Calc I, Fall 2007</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 386 (BU)</span>
+                <span class="course-bar-rest">Combinatorics, Fall 2007</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 356 (BU)</span>
+                <span class="course-bar-rest">Mathematical Modeling, Spring 2007</span>
+            </div>
+            <div class="year-tag">2006</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 221 (BU)</span>
+                <span class="course-bar-rest">Calc I, Fall 2006</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 381 (BU)</span>
+                <span class="course-bar-rest">Graph Theory, Spring 2006</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 221 (BU)</span>
+                <span class="course-bar-rest">Calc I, Spring 2006</span>
+            </div>
+            <div class="year-tag">2005</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 221 (BU)</span>
+                <span class="course-bar-rest">Calc I, Fall 2005</span>
+            </div>
+            <div class="year-tag">2004</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 308 (UW)</span>
+                <span class="course-bar-rest">Linear Algebra, Fall 2004</span>
+            </div>
+            <div class="year-tag">2003</div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 381 (UW)</span>
+                <span class="course-bar-rest">Discrete Mathematical Models, Fall 2003</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 126 (UW)</span>
+                <span class="course-bar-rest">Calc III, Spring 2003</span>
+            </div>
+            <div class="course-bar disabled">
+                <span class="course-bar-name">Math 125 (UW)</span>
+                <span class="course-bar-rest">Calc II, Winter 2003</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-links">&copy; 2026 Christopher Hanusa &nbsp;&middot;&nbsp;
+            <a href="https://bsky.app/profile/mathzorro.bsky.social" aria-label="Bluesky" title="Bluesky"><svg viewBox="0 0 24 24"><path d="M12 10.8C10.9 8.5 7.9 4.4 5.1 2.4 2.4.5 1.4.8 .8 1.1.1 1.5 0 2.6 0 3.3s.4 5.5.6 6.3c.8 2.7 3.6 3.6 6.2 3.3-3.8.6-7.2 2-2.7 6.9 4.9 5.1 6.7-1.1 7.9-4.2 1.2 3.1 2.6 9 7.8 4.2 4.6-4.9 1.2-6.3-2.6-6.9 2.6.3 5.4-.6 6.2-3.3.2-.8.6-5.6.6-6.3s-.1-1.8-.8-2.2c-.6-.3-1.6-.6-4.3 1.3C16.1 4.4 13.1 8.5 12 10.8z"/></svg></a>
+            <a href="https://instagram.com/mathzorro" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2m0 3.6a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-10.5a1.4 1.4 0 11-2.9 0 1.4 1.4 0 012.9 0z"/></svg></a>
+            <a href="https://www.linkedin.com/in/christopher-hanusa/" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3-1.9 0-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.2 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7 20.4H3.4V9H7v11.4z"/></svg></a>
+        </p>
+    </footer>
+
+</body>
+</html>

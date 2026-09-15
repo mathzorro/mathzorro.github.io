@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpful Mathematica Techniques | Christopher Hanusa</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Fenix" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background-color: #f3f6fc; } /* education section tint (blue #1d5adc) */
+        ul.topic-list li { border-left-color: #1d5adc; }
+        .course-content li::marker { color: #1d5adc; }
+
+    </style>
+    <style>
+        .course-content { line-height: 1.6; overflow-wrap: break-word; }
+        .course-content h2 { margin: 25px 0 10px; }
+        .course-content > :first-child { margin-top: 0; }
+        .course-content p { margin-bottom: 12px; }
+        .course-content ul, .course-content ol { margin: 0 0 12px 25px; }
+        .course-content li { margin-bottom: 6px; }
+        .section-block .text-side { min-width: 0; }
+        .section-block a { color: var(--primary-color); }
+    </style>
+</head>
+<body>
+
+    <nav id="main-nav">
+        <div class="nav-brand">
+            <a href="index.html"><img src="images/hanusa-xyz.png" alt="hanusa.xyz logo" height="50px"></a>
+        </div>
+        <div class="nav-links">
+            <a href="research.html">Research</a>
+            <a href="design.html">Design</a> 
+            <a href="education.html" class="active" style="color:#1d5adc;">Education</a>
+            <a href="strategy.html">Strategy</a>
+            <a href="https://hanusa.xyz/blog">Insights</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="single-column-layout">
+
+        <div class="controls">
+            <h2>Helpful Mathematica Techniques</h2>
+            <div class="profile-links">
+                Advice for working in Mathematica, from <a href="mathematica.html">3D Design in Mathematica</a>.
+            </div>
+        </div>
+
+            <section class="section-block">
+                <div class="text-side course-content">
+<h2>General guidance</h2>
+            <ul>
+                <li><b>Keep a diary!</b>  Write down commands that you have explored, keeping track of syntax, interesting things that you can do, and questions that pop up.</li>
+                <li><b>Think before you code!</b> Before you start typing, think about what you want the computer to do, and how you would be able to write a logical sequence of commands to do this thing.  Write some pseudocode out on paper first.</li>
+                <li><b>Build in stages!</b> When trying to get Mathematica to do a multi-step command, make sure each nested command works before trying to wrap it in another command.  Work from the inside of the onion outward!</li>
+                <li><b>Copy, modify, repeat!</b> When you have code that is working, don't modify it.  Copy it to the next line and then modify it.  This forms a page of scratch work.</li>
+            </ul>
+                </div>
+            </section>
+
+            <section class="section-block">
+                <div class="text-side course-content">
+<h2>Other Items of Note!</h2>
+                <div style="color:#900;font-weight:700;margin-top:10px">Many of your initial errors will come about because of one of the following two problems:</div>
+                <ul><li>Mathematica is Case-SenSitive (<span style="font-family:courier"><strong>AA</strong></span> is not the same as <span style="font-family:courier"><strong>aA</strong></span>), so
+                be careful about what you type.
+                <br><b>In particular,</b> <span style="color:#900"><i>all built-in Mathematica functions</i></span> are spelled out and capitalized, such as <span style="font-family:courier"><strong>Table</strong></span>, <span style="font-family:courier"><strong>ListPlot</strong></span>, <span style="font-family:courier"><strong>IntegerPart</strong></span>, etc.
+                </li>
+                <li>In Mathematica, it is important to distinguish between parentheses <span style="font-family:courier"><strong>()</strong></span>, brackets <span style="font-family:courier"><strong>[]</strong></span>, and braces <span style="font-family:courier"><strong>{}</strong></span>:
+                <ul>
+                    <li> <strong>Parentheses <span style="font-family:courier"><strong>()</strong></span></strong>: Used to group mathematical expressions, such as <span style="font-family:courier"><strong>(3+4)/(5+7)</strong></span>.
+                    </li>
+                    <li> <strong>Brackets <span style="font-family:courier"><strong>[]</strong></span></strong>: Used when calling functions, such as <span style="font-family:courier"><strong>N[Pi]</strong></span>.
+                    </li>
+                    <li> <strong>Braces <span style="font-family:courier"><strong>{}</strong></span></strong>: Used when making lists, such as <span style="font-family:courier"><strong>{i,1,20}</strong></span>.
+                    </li>
+                </ul>
+                If you use the wrong symbols in the wrong places or if you do not have a closing symbol for every opening symbol, Mathematica will give you an error message.
+                </li>
+                <li>In Mathematica, there are four types of equals: <span style="font-family:courier"><strong>=</strong></span>, <span style="font-family:courier"><strong>==</strong></span>, <span style="font-family:courier"><strong>:=</strong></span>, and
+                <span style="font-family:courier"><strong>===</strong></span>.  We will learn the difference between all of them; at the beginning of this semester, you only need the first two.
+                <ul>
+                    <li>To define a variable to store it in memory, use <span style="font-family:courier"><strong>=</strong></span>.  For example, to define z to be 3, write
+                    <span style="font-family:courier"><strong>z=3</strong></span>.
+                    </li>
+                    <li>You use <span style="font-family:courier"><strong>==</strong></span> to check for equality.  For example, <span style="font-family:courier"><strong>1-1==0</strong></span> will
+                    evaluate to True and  <span style="font-family:courier"><strong>1==0</strong></span> will evaluate to False.
+                    </li>
+                    <li>You use <span style="font-family:courier"><strong>:=</strong></span> to define your own command. (This is advanced.)
+                    </li>
+                    <li>You will likely not use <span style="font-family:courier"><strong>===</strong></span> in this class.
+                    </li>
+                </ul>
+                </li>
+                <li><span style="color:#900;font-weight:700">One of the most important things to do is explore.</span>  If you are having trouble with a certain function, use the
+                <span style="font-family:courier"><strong>?</strong></span> command to ask for help. Enter <span style="font-family:courier"><strong>? Table</strong></span> and the output will be a yellow box
+                with a quick synopsis of the command.  For more detailed information, click the blue <em>&gt;&gt;</em> at the bottom
+                right of this yellow box.  This will open the <em>Documentation Center</em>
+                which gives examples of using the
+                command in action, available options for this command,
+                and anything else you might want to know about the command.
+                </li>
+            </ul>
+                </div>
+            </section>
+
+            <section class="section-block">
+                <div class="text-side course-content">
+<h2>Algebra and Calculus</h2>
+            Mathematica will do everything your calculator can and more.
+            <ul>
+                <li>Use <span style="font-family:courier"><strong>^</strong></span> to put something to a power.
+                </li>
+                <li>pi is <span style="font-family:courier"><strong>Pi</strong></span>, e is <span style="font-family:courier"><strong>E</strong></span> and sqrt(-1) is <span style="font-family:courier"><strong>I</strong></span>.
+                </li>
+                <li>If you want to see the numerical approximation to a fraction or irrational number, use the function <span style="font-family:courier"><strong>N</strong></span>.  For example, to find the decimal represenation of pi, write <span style="font-family:courier"><strong>N[Pi]</strong></span>.
+                </li>
+                <li>Use <span style="font-family:courier"><strong>E^x</strong></span> or <span style="font-family:courier"><strong>Exp[x]</strong></span> to represent the function e<sup>x</sup>.
+                </li>
+                <li>To take the derivative of a function, use <span style="font-family:courier"><strong>D</strong></span> and specify the derivative with respect to which
+                variable.  For instance  <span style="font-family:courier"><strong>D[x^2 + 3x, x]</strong></span>.
+                </li>
+                <li>To take the integral of a function, use <span style="font-family:courier"><strong>Integrate</strong></span> and specify the integral with respect to
+                which variable.  For instance  <span style="font-family:courier"><strong>Integrate[x^2 + 3x, x]</strong></span>.
+                </li>
+                <li>To solve for the roots of <em>ax<sup>2</sup>+bx+c=0</em> symbolically, use <span style="font-family:courier"><strong>Solve[a x^2 + b x + c == 0, x]</strong></span>.
+                <br>
+                Notice the double equals sign. (Mathematica is searching for when the expression is True.)
+                </li>
+                <li><span style="font-family:courier"><strong>Coefficient[(1 + x)^10, x^3]</strong></span> gives the coefficient of <em>x<sup>3</sup></em> in the expansion
+                of <em>(1 + x)<sup>10</sup></em>.
+                </li>
+            </ul>
+                </div>
+            </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-links">&copy; 2026 Christopher Hanusa &nbsp;&middot;&nbsp;
+            <a href="https://bsky.app/profile/mathzorro.bsky.social" aria-label="Bluesky" title="Bluesky"><svg viewBox="0 0 24 24"><path d="M12 10.8C10.9 8.5 7.9 4.4 5.1 2.4 2.4.5 1.4.8 .8 1.1.1 1.5 0 2.6 0 3.3s.4 5.5.6 6.3c.8 2.7 3.6 3.6 6.2 3.3-3.8.6-7.2 2-2.7 6.9 4.9 5.1 6.7-1.1 7.9-4.2 1.2 3.1 2.6 9 7.8 4.2 4.6-4.9 1.2-6.3-2.6-6.9 2.6.3 5.4-.6 6.2-3.3.2-.8.6-5.6.6-6.3s-.1-1.8-.8-2.2c-.6-.3-1.6-.6-4.3 1.3C16.1 4.4 13.1 8.5 12 10.8z"/></svg></a>
+            <a href="https://instagram.com/mathzorro" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2m0 3.6a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-10.5a1.4 1.4 0 11-2.9 0 1.4 1.4 0 012.9 0z"/></svg></a>
+            <a href="https://www.linkedin.com/in/christopher-hanusa/" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3-1.9 0-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.2 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7 20.4H3.4V9H7v11.4z"/></svg></a>
+        </p>
+    </footer>
+
+</body>
+</html>

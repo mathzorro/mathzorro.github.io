@@ -1,0 +1,65 @@
+body {
+  padding-top: 10px;
+  background-color: #1F2226;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border-color: white;
+  background-color: white;
+  color: white;
+}
+
+.teampics {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#generatedart {
+  border: 1.5px solid #1F2226;
+}
+
+/* Large devices (desktops, 768px and up) */
+@media only screen and (min-width: 1000px) {
+	#responsive {
+		display: block;
+		max-width: 18rem;
+		width: 288px;
+		height: 500px; 
+		overflow: hidden;
+	}
+
+  #sitestats {
+    margin-top: 15%;
+  }
+}
+
+/* Small devices (tablets, 600px and lower) */
+@media only screen and (max-width: 1000px) {
+	#responsive {
+		display: block;
+		width: 98%;
+		height: 98%; 
+		overflow: auto;	
+  }
+
+  #aboutusnames {
+    font-size: 70%;
+    width: 98%;
+  }
+}

@@ -1,0 +1,399 @@
+{
+ "title": "MATH 142 Weekly Schedule",
+ "semester": "Fall 2017",
+ "weekdays": [
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri"
+ ],
+ "weeks": [
+  {
+   "week": "Week 1",
+   "days": [
+    {
+     "date": "08/28",
+     "topic": "Intro & 3.7",
+     "class": true
+    },
+    {
+     "date": "08/29"
+    },
+    {
+     "date": "08/30",
+     "topic": "P Σ, 4.1",
+     "class": true
+    },
+    {
+     "date": "08/31"
+    },
+    {
+     "date": "09/01"
+    }
+   ]
+  },
+  {
+   "week": "Week 2",
+   "days": [
+    {
+     "date": "09/04",
+     "topic": "No class"
+    },
+    {
+     "date": "09/05"
+    },
+    {
+     "date": "09/06",
+     "topic": "4.1",
+     "class": true
+    },
+    {
+     "date": "09/07"
+    },
+    {
+     "date": "09/08"
+    }
+   ]
+  },
+  {
+   "week": "Week 3",
+   "days": [
+    {
+     "date": "09/11",
+     "topic": "A 4.2",
+     "class": true
+    },
+    {
+     "date": "09/12"
+    },
+    {
+     "date": "09/13",
+     "topic": "4.2, 4.3",
+     "class": true
+    },
+    {
+     "date": "09/14"
+    },
+    {
+     "date": "09/15"
+    }
+   ],
+   "note": "Last day to drop is 9/14."
+  },
+  {
+   "week": "Week 4",
+   "days": [
+    {
+     "date": "09/18",
+     "topic": "4.1,4.3,4.5",
+     "class": true
+    },
+    {
+     "date": "09/19 (Th)"
+    },
+    {
+     "date": "09/20",
+     "topic": "No class"
+    },
+    {
+     "date": "09/21",
+     "topic": "No class"
+    },
+    {
+     "date": "09/22",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 5",
+   "days": [
+    {
+     "date": "09/25",
+     "topic": "A Theorems",
+     "class": true
+    },
+    {
+     "date": "09/26"
+    },
+    {
+     "date": "09/27",
+     "topic": "4.4",
+     "class": true
+    },
+    {
+     "date": "09/28"
+    },
+    {
+     "date": "09/29",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 6",
+   "days": [
+    {
+     "date": "10/02",
+     "topic": "4.4",
+     "class": true
+    },
+    {
+     "date": "10/03"
+    },
+    {
+     "date": "10/04",
+     "topic": "A 4.5",
+     "class": true
+    },
+    {
+     "date": "10/05"
+    },
+    {
+     "date": "10/06"
+    }
+   ]
+  },
+  {
+   "week": "Week 7",
+   "days": [
+    {
+     "date": "10/09",
+     "topic": "No class"
+    },
+    {
+     "date": "10/10"
+    },
+    {
+     "date": "10/11",
+     "topic": "4.5,5.1",
+     "class": true
+    },
+    {
+     "date": "10/12"
+    },
+    {
+     "date": "10/13"
+    }
+   ]
+  },
+  {
+   "week": "Week 8",
+   "days": [
+    {
+     "date": "10/16",
+     "topic": "5.1,5.6",
+     "class": true
+    },
+    {
+     "date": "10/17"
+    },
+    {
+     "date": "10/18",
+     "topic": "5.1,5.6",
+     "class": true
+    },
+    {
+     "date": "10/19"
+    },
+    {
+     "date": "10/20"
+    }
+   ]
+  },
+  {
+   "week": "Week 9",
+   "days": [
+    {
+     "date": "10/23",
+     "topic": "A 5.2",
+     "class": true
+    },
+    {
+     "date": "10/24"
+    },
+    {
+     "date": "10/25",
+     "topic": "5.2,5.3",
+     "class": true
+    },
+    {
+     "date": "10/26"
+    },
+    {
+     "date": "10/27"
+    }
+   ]
+  },
+  {
+   "week": "Week 10",
+   "days": [
+    {
+     "date": "10/30",
+     "topic": "5.4",
+     "class": true
+    },
+    {
+     "date": "10/31"
+    },
+    {
+     "date": "11/01",
+     "topic": "5.5",
+     "class": true
+    },
+    {
+     "date": "11/02"
+    },
+    {
+     "date": "11/03"
+    }
+   ]
+  },
+  {
+   "week": "Week 11",
+   "days": [
+    {
+     "date": "11/06",
+     "topic": "A 7.1",
+     "class": true
+    },
+    {
+     "date": "11/07"
+    },
+    {
+     "date": "11/08",
+     "topic": "7.1,7.2",
+     "class": true
+    },
+    {
+     "date": "11/09"
+    },
+    {
+     "date": "11/10"
+    }
+   ],
+   "note": "Last day to withdraw is 11/10."
+  },
+  {
+   "week": "Week 12",
+   "days": [
+    {
+     "date": "11/13",
+     "topic": "7.2,7.3",
+     "class": true
+    },
+    {
+     "date": "11/14"
+    },
+    {
+     "date": "11/15",
+     "topic": "7.3",
+     "class": true
+    },
+    {
+     "date": "11/16"
+    },
+    {
+     "date": "11/17"
+    }
+   ]
+  },
+  {
+   "week": "Week 13",
+   "days": [
+    {
+     "date": "11/20",
+     "topic": "A Proj",
+     "class": true
+    },
+    {
+     "date": "11/21 (F)"
+    },
+    {
+     "date": "11/22",
+     "topic": "Proj",
+     "class": true
+    },
+    {
+     "date": "11/23",
+     "topic": "No class"
+    },
+    {
+     "date": "11/24",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 14",
+   "days": [
+    {
+     "date": "11/27",
+     "topic": "7.4",
+     "class": true
+    },
+    {
+     "date": "11/28"
+    },
+    {
+     "date": "11/29",
+     "topic": "7.7",
+     "class": true
+    },
+    {
+     "date": "11/30"
+    },
+    {
+     "date": "12/01"
+    }
+   ]
+  },
+  {
+   "week": "Week 15",
+   "days": [
+    {
+     "date": "12/04",
+     "topic": "A Proj",
+     "class": true
+    },
+    {
+     "date": "12/05"
+    },
+    {
+     "date": "12/06",
+     "topic": "Final Q&A",
+     "class": true
+    },
+    {
+     "date": "12/07"
+    },
+    {
+     "date": "12/08"
+    }
+   ]
+  },
+  {
+   "week": "Week 16",
+   "days": [
+    {
+     "date": "12/11",
+     "topic": "Proj Final Q&A",
+     "class": true
+    },
+    {
+     "date": "12/12"
+    },
+    {
+     "date": "12/13"
+    },
+    {
+     "date": "12/14"
+    },
+    {
+     "date": "12/15"
+    }
+   ]
+  }
+ ]
+}

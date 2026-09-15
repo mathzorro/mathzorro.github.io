@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimental Mathematics Lab | Christopher Hanusa</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Fenix" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background-color: #fdf4f3; } /* research section tint (red #e7210e) */
+        ul.topic-list li { border-left-color: #e7210e; }
+
+    </style>
+
+    <style>
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: 0;
+            border-radius: 8px;
+        }
+        /* no sidebar on this page: single centered column */
+        .page-grid { grid-template-columns: 1fr; max-width: 1000px; }
+        .lab-photos {
+            padding-left: 15px; /* align with the indented list text */
+        }
+        .lab-photos img {
+            height: 180px;
+            border-radius: 6px;
+            margin: 8px 8px 0 0;
+        }
+        .hero-section p.footnote {
+            font-size: 0.75em;
+            color: #999;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="main-nav">
+        <div class="nav-brand">
+            <a href="index.html"><img src="images/hanusa-xyz.png" alt="hanusa.xyz logo" height="50px"></a>
+        </div>
+        <div class="nav-links">
+            <a href="research.html" class="active" style="color:#e7210e;">Research</a>
+            <a href="design.html">Design</a> 
+            <a href="education.html">Education</a>
+            <a href="strategy.html">Strategy</a>
+            <a href="https://hanusa.xyz/blog">Insights</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="page-grid">
+        <main class="main-column">
+            <section class="hero-section">
+                <h1>Experimental Mathematics Lab</h1>
+                <p>Welcome to the Queens College Experimental Mathematics Laboratory,* where undergraduate students use computation to discover and prove new mathematics.<br><font color="#990000"><font size="+0">*Who says physical scientists get to have all the fun? And all the labs? I declare my office to be a laboratory!</font></font></p>
+            </section>
+
+            <section class="section-block">
+                <div class="text-side">
+                    <h2>What is Experimental Mathematics?</h2>
+                    <p><em>Experimental mathematics</em> means using computer software to generate all objects satisfying desired conditions. We then analyze this set of objects, leading to conjectures based on the collected data, and to insight that informs proof. While in other sciences experiments give approximations, our experiments always give exact results. It's up to us to learn and prove what we can!</p>
+                </div>
+                <div class="image-side">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/5sszakemGMo" title="Experimental Mathematics Lab video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-block inverted">
+                <div class="text-side">
+                    <h2>Join the Lab</h2>
+                    <p>Prof. Hanusa supervises a few students every semester on projects in the exp(ML). The best preparation to participate is to take his Combinatorics class and to have some programming experience.</p>
+                    <ul class="topic-list">
+                        <li><strong>Interested?</strong> <a href="contact.html">Contact Prof. Hanusa directly</a> to join the fun.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section-block">
+                <div class="text-side">
+                    <h2>Lab Alumni</h2>
+                    <ul class="topic-list">
+                        <li><strong>Spring 2026:</strong> Joyce Pan, Chayim Steinberg, Lukas Tarrao</li>
+                        <li><strong>Fall 2022&ndash;Spring 2023:</strong> Rachel Brunner &mdash; co-authored <em><a href="https://hanusa.xyz/research/papers/zigzag.pdf">A triangulation of the flow polytope of the zigzag graph</a></em>
+                            <div class="lab-photos"><img src="images/lab/Rachel.jpg" alt="Experimental Mathematics Lab students"></div></li>
+                        <li><strong>Fall 2020&ndash;Spring 2022:</strong> Christopher Soto, Peter Antonaros &mdash; Created <a href="artvote/index.html">artvote.net</a> and analyzed voter preferences
+                            <div class="lab-photos"><img src="images/lab/ChrisPeter.jpg" alt="Experimental Mathematics Lab students"></div></li>
+                        <li><strong>Spring 2019:</strong> Yanxi Piao, Jeremy Quail</li>
+                        <li><strong>Fall 2018:</strong> Christopher Soto</li>
+                        <li><strong>Fall 2017&ndash;Spring 2018:</strong> Juhyun (Eunice) So</li>
+                        <li><strong>Spring 2016&ndash;Spring 2017:</strong> Arvind Mahankali &mdash; co-authored <em><a href="https://hanusa.xyz/research/papers/treachery.pdf">A billiards-like dynamical system for attacking chess pieces</a></em>
+                            <div class="lab-photos"><img src="images/lab/Arvind.jpg" alt="Experimental Mathematics Lab students"></div></li>
+                        <li><strong>Fall 2015:</strong> Tamar Ehrenreich, Davida Popik, Riley Hanson
+                            <div class="lab-photos"><img src="images/lab/Tamar.jpg" alt="Experimental Mathematics Lab students"><img src="images/lab/Davida.jpg" alt="Experimental Mathematics Lab students"></div></li>
+                        <li><strong>Spring 2015:</strong> Riley Hanson, Miriam Striks, Aleksandr Yaroslavskiy, Roman Bohdanowycz
+                            <div class="lab-photos"><img src="images/lab/NikkiMiriam.jpg" alt="Experimental Mathematics Lab students"><img src="images/lab/AlexRoman.jpg" alt="Experimental Mathematics Lab students"></div></li>
+                        <li><strong>2013:</strong> Kirsten Berger, Matthew DeAndrade</li>
+                        <li><strong>Fall 2011&ndash;Spring 2012:</strong> Amy Lee, Michael Chon &mdash; co-authored <em><a href="https://hanusa.xyz/research/papers/Multivariate.pdf">Solving multivariate functional equations</a></em>
+                            <div class="lab-photos"><img src="images/lab/AmyMichael.jpg" alt="Experimental Mathematics Lab students"></div></li>
+                        <li><strong>Spring 2010:</strong> Michael Pandazis</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p class="footer-links">&copy; 2026 Christopher Hanusa &nbsp;&middot;&nbsp;
+            <a href="https://bsky.app/profile/mathzorro.bsky.social" aria-label="Bluesky" title="Bluesky"><svg viewBox="0 0 24 24"><path d="M12 10.8C10.9 8.5 7.9 4.4 5.1 2.4 2.4.5 1.4.8 .8 1.1.1 1.5 0 2.6 0 3.3s.4 5.5.6 6.3c.8 2.7 3.6 3.6 6.2 3.3-3.8.6-7.2 2-2.7 6.9 4.9 5.1 6.7-1.1 7.9-4.2 1.2 3.1 2.6 9 7.8 4.2 4.6-4.9 1.2-6.3-2.6-6.9 2.6.3 5.4-.6 6.2-3.3.2-.8.6-5.6.6-6.3s-.1-1.8-.8-2.2c-.6-.3-1.6-.6-4.3 1.3C16.1 4.4 13.1 8.5 12 10.8z"/></svg></a>
+            <a href="https://instagram.com/mathzorro" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2m0 3.6a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-10.5a1.4 1.4 0 11-2.9 0 1.4 1.4 0 012.9 0z"/></svg></a>
+            <a href="https://www.linkedin.com/in/christopher-hanusa/" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3-1.9 0-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.2 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7 20.4H3.4V9H7v11.4z"/></svg></a>
+        </p>
+    </footer>
+</body>
+</html>

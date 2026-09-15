@@ -1,0 +1,64 @@
+body {
+  padding-top: 10px;
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.teampics {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border-color: #D3D3D3;
+  background-color: #D3D3D3;
+  color: #D3D3D3;
+}
+
+#generatedart {
+  border: 1.5px solid #D9DADB;
+}
+
+/* Large devices (desktops, 768px and up) */
+@media only screen and (min-width: 1000px) {
+	#responsive {
+		display: block;
+		max-width: 18rem;
+		width: 288px;
+		height: 500px; 
+		overflow: hidden;
+	}
+
+  #sitestats {
+    margin-top: 15%;
+  }
+}
+
+/* Small devices (tablets, 600px and lower) */
+@media only screen and (max-width: 1000px) {
+	#responsive {
+		display: block;
+		width: 98%;
+		height: 98%; 
+		overflow: auto;	
+  }
+
+  #aboutusnames {
+    font-size: 70%;
+    width: 98%;
+  }
+}

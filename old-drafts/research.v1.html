@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Christopher Hanusa</title>
+    <link href="https://fonts.googleapis.com/css?family=Fenix" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* --- PAGE SPECIFIC LAYOUT --- */
+        body {
+            overflow-x: hidden;
+            overflow-y: auto;
+            background-color: #f9f9f9;
+        }
+
+        /* The Grid Container */
+        .page-grid {
+            display: grid;
+            grid-template-columns: 3fr 1fr; /* 75% Content, 25% Sidebar */
+            gap: 40px;
+            max-width: 1400px;
+            margin: 120px auto 60px; /* Top margin accounts for fixed header */
+            padding: 0 5%;
+        }
+
+        /* --- LEFT COLUMN (Main Content) --- */
+        .main-column {
+            min-width: 0; /* Prevents grid blowout */
+        }
+
+        /* Reusing your existing section styles, adapted for the column */
+        .hero-section {
+            text-align: left; /* Aligned left looks better in a column */
+            padding: 0 0 40px 0;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+        }
+
+        .hero-section h1 { font-size: 3em; margin-bottom: 15px; color: #2c3e50; }
+        .hero-section p { font-size: 1.3em; color: #666; max-width: 90%; }
+
+        /* The "Split Layout" cards inside the left column */
+        .section-block {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            background: #fff;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .section-block.inverted { flex-direction: row-reverse; }
+        
+        .text-side { flex: 1; }
+        .image-side { flex: 1; }
+
+        .image-side img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            max-height: 350px; /* Slightly smaller to fit column */
+            object-fit: cover;
+        }
+
+        ul.topic-list { list-style: none; margin-top: 15px; }
+        ul.topic-list li { 
+            margin-bottom: 10px; 
+            padding-left: 15px; 
+            border-left: 3px solid #007bff; 
+            font-size: 1.05em;
+        }
+
+        /* --- RIGHT COLUMN (Blog Sidebar) --- */
+        .sidebar {
+            padding-top: 20px;
+        }
+
+        .sidebar-widget {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            top: 120px; /* Sticks as you scroll */
+        }
+
+        .sidebar-widget h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .blog-list {
+            list-style: none;
+        }
+
+        .blog-item {
+            margin-bottom: 25px;
+        }
+
+        .blog-date {
+            font-size: 0.85em;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .blog-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+            line-height: 1.4;
+            display: block;
+            transition: color 0.2s;
+        }
+
+        .blog-title:hover {
+            color: #007bff;
+        }
+
+        .blog-excerpt {
+            font-size: 0.95em;
+            color: #666;
+            margin-top: 5px;
+            line-height: 1.5;
+        }
+
+        /* Responsive: Stack columns on mobile */
+        @media (max-width: 1000px) {
+            .page-grid { grid-template-columns: 1fr; }
+            .sidebar-widget { position: static}
+            .section-block { flex-direction: column-reverse; padding: 30px; }
+            .section-block.inverted { flex-direction: column-reverse; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="main-nav">
+        <div class="nav-brand">
+            <a href="index6.html">
+                <img src="hanusa-xyz.png" alt="hanusa.xyz logo" height="50px">
+            </a>
+        </div>
+        
+        <div class="nav-links">
+            <a href="research.html" class="active" style="color:#007bff;">Research</a>
+            <a href="portfolio.html">Portfolio</a> 
+            <a href="teaching.html">Teaching</a>
+            <a href="admin.html">Leadership</a>
+            <a href="https://hanusa.xyz/blog">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="page-grid">
+
+        <main class="main-column">
+            
+            <section class="hero-section">
+                <h1>Research in Pure Mathematics</h1>
+                <p>Exploring the frontiers of enumerative combinatorics through experimentation, computation, visualization, and teamwork.</p>
+            </section>
+
+            <section class="section-block">
+                <div class="text-side">
+                    <h2>Topics</h2>
+                    <p>Flow Polytopes</p>
+                    <ul class="topic-list">
+                        <li><strong>Permutation Flows:</strong> <a href="#">Read the Paper</a> | <a href="#">See Visuals</a></li>
+                        <li><strong>Groves and the zigzag graph:</strong> <a href="#">Read the Paper</a></li>
+                    </ul>
+                    <p>Ehrhart Theory for Chess Piece Placements</p>
+                    <ul class="topic-list">
+                        <li><strong>Permutation Flows:</strong> <a href="#">Read the Paper</a> | <a href="#">See Visuals</a></li>
+                        <li><strong>Groves and the zigzag graph:</strong> <a href="#">Read the Paper</a></li>
+                    </ul>
+                    <p>Combinatorics of Coxeter groups</p>
+                    <ul class="topic-list">
+                        <li><strong>Permutation Flows:</strong> <a href="#">Read the Paper</a> | <a href="#">See Visuals</a></li>
+                        <li><strong>Groves and the zigzag graph:</strong> <a href="#">Read the Paper</a></li>
+                    </ul>
+                </div>
+                <div class="image-side">
+                    <img src="hanusa-research.jpg" alt="Flow Polytope Visualization">
+                </div>
+            </section>
+
+            <section class="section-block">
+                <div class="text-side">
+                    <h2>Article List</h2>
+                    <p>Click here for my articles.</p>
+                    <ul class="topic-list">
+                        <li><strong>Focus:</strong> Enumeration of fully commutative elements.</li>
+                        <li><strong>Links:</strong> <a href="#">View Diagrams</a></li>
+                    </ul>
+                </div>
+                <div class="image-side">
+                    <img src="images/coxeter-diagram.jpg" alt="Coxeter Group Diagram"> 
+                </div>
+            </section>
+
+            <section class="section-block">
+                <div class="text-side">
+                    <h2>Experimental Mathematics Lab</h2>
+                    <p>Are you a Queens College student who is interested in research opportunities? Learn more about the Experimental Mathematics Lab at Queens College. </p>
+                    <ul class="topic-list">
+                        <li><strong>Tools:</strong> SageMath, Python, Wolfram Language.</li>
+                    </ul>
+                </div>
+                <div class="image-side">
+                    <img src="images/experimental-math.jpg" alt="Computational Mathematics">
+                </div>
+            </section>
+
+        </main>
+
+<aside class="sidebar">
+    <div class="sidebar-widget">
+        
+        <div class="widget-header">
+            <h3>From the Blog</h3>
+            <a href="https://hanusa.xyz/blog/" class="mobile-view-all">View all</a>
+        </div>
+
+        <ul class="blog-list" id="sidebar-math-feed">
+            <li class="blog-item" style="text-align:center; padding:20px; color:#999;">
+                Loading updates...
+            </li>
+        </ul>
+
+        <a href="https://hanusa.xyz/blog/" class="btn desktop-view-all" style="width:100%; text-align:center;">More posts</a>
+    </div>
+</aside>
+
+    </div>
+
+    <footer style="text-align: center; padding: 40px; background: #2c3e50; color: #fff;">
+        <p>&copy; 2025 Christopher Hanusa. Queens College, CUNY.</p>
+    </footer>
+
+</body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // --- CONFIGURATION ---
+    const feedUrl = "https://hanusa.xyz/blog/index-math.xml"; 
+    const container = document.getElementById("sidebar-math-feed");
+
+    // --- FETCH & PARSE ---
+    fetch(feedUrl)
+        .then(response => {
+            if (!response.ok) throw new Error("Feed not found");
+            return response.text();
+        })
+        .then(str => {
+            const data = new window.DOMParser().parseFromString(str, "text/xml");
+            const items = data.querySelectorAll("item");
+            const topPosts = Array.from(items).slice(0, 3);
+
+            if (topPosts.length > 0) {
+                container.innerHTML = ""; 
+
+                topPosts.forEach(item => {
+                    // 1. Extract Data
+                    const title = item.querySelector("title").textContent;
+                    const link = item.querySelector("link").textContent;
+                    
+                    // --- THE FIX: Define pubDate before using it! ---
+                    const pubDateNode = item.querySelector("pubDate");
+                    const pubDate = pubDateNode ? new Date(pubDateNode.textContent) : new Date();
+                    
+                    // 2. Clean Description
+                    let rawDesc = item.querySelector("description").textContent;
+                    
+                    // Remove the specific "No matching items" ghost text if it exists
+                    rawDesc = rawDesc.replace("No matching items", "");
+                    
+                    // Strip HTML tags
+                    const cleanDesc = rawDesc.replace(/<[^>]+>/g, '').trim();
+
+                    // 3. Format Date 
+                    const dateStr = pubDate.toLocaleDateString('en-US', {
+                        month: 'short', day: 'numeric', year: 'numeric'
+                    });
+
+                    // 4. Create HTML Elements
+                    const li = document.createElement("li");
+                    li.className = "blog-item";
+                    
+                    li.innerHTML = `
+                        <span class="blog-date">${dateStr}</span>
+                        <a href="${link}" class="blog-title">
+                            <span>${title}</span>
+                            <span class="mobile-arrow">→</span>
+                        </a>
+                        <p class="blog-excerpt desc-long">${cleanDesc}</p>
+                    `;
+                    
+                    container.appendChild(li);
+                });
+            } else {
+                container.innerHTML = '<li class="blog-item" style="padding:20px; text-align:center">No recent updates.</li>';
+            }
+        })
+        .catch(error => {
+            console.error("RSS Error:", error);
+            container.innerHTML = '<li class="blog-item" style="padding:20px; text-align:center">Unable to load updates.</li>';
+        });
+});
+</script>
+</html>

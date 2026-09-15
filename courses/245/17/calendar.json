@@ -1,0 +1,399 @@
+{
+ "title": "MATH 245 Weekly Schedule",
+ "semester": "Spring 2018",
+ "weekdays": [
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri"
+ ],
+ "weeks": [
+  {
+   "week": "Week 1",
+   "days": [
+    {
+     "date": "01/29",
+     "topic": "Intro & Setup",
+     "class": true
+    },
+    {
+     "date": "01/30"
+    },
+    {
+     "date": "01/31",
+     "topic": "Setup & 1.1–1.6",
+     "class": true
+    },
+    {
+     "date": "02/01"
+    },
+    {
+     "date": "02/02"
+    }
+   ]
+  },
+  {
+   "week": "Week 2",
+   "days": [
+    {
+     "date": "02/05",
+     "topic": "1.7–1.10",
+     "class": true
+    },
+    {
+     "date": "02/06"
+    },
+    {
+     "date": "02/07",
+     "topic": "2.1–2.5",
+     "class": true
+    },
+    {
+     "date": "02/08"
+    },
+    {
+     "date": "02/09"
+    }
+   ]
+  },
+  {
+   "week": "Week 3",
+   "days": [
+    {
+     "date": "02/12",
+     "topic": "No class"
+    },
+    {
+     "date": "02/13"
+    },
+    {
+     "date": "02/14",
+     "topic": "2.6–2.10",
+     "class": true
+    },
+    {
+     "date": "02/15"
+    },
+    {
+     "date": "02/16"
+    }
+   ],
+   "note": "Last day to withdraw is 2/16."
+  },
+  {
+   "week": "Week 4",
+   "days": [
+    {
+     "date": "02/19",
+     "topic": "No class"
+    },
+    {
+     "date": "02/20 (M)",
+     "class": true
+    },
+    {
+     "date": "02/21",
+     "class": true
+    },
+    {
+     "date": "02/22"
+    },
+    {
+     "date": "02/23"
+    }
+   ],
+   "note": "Class will be held on Tuesday 2/20."
+  },
+  {
+   "week": "Week 5",
+   "days": [
+    {
+     "date": "02/26",
+     "class": true
+    },
+    {
+     "date": "02/27"
+    },
+    {
+     "date": "02/28",
+     "class": true
+    },
+    {
+     "date": "03/01"
+    },
+    {
+     "date": "03/02"
+    }
+   ]
+  },
+  {
+   "week": "Week 6",
+   "days": [
+    {
+     "date": "03/05",
+     "class": true
+    },
+    {
+     "date": "03/06"
+    },
+    {
+     "date": "03/07",
+     "class": true
+    },
+    {
+     "date": "03/08"
+    },
+    {
+     "date": "03/09"
+    }
+   ]
+  },
+  {
+   "week": "Week 7",
+   "days": [
+    {
+     "date": "03/12",
+     "class": true
+    },
+    {
+     "date": "03/13"
+    },
+    {
+     "date": "03/14",
+     "class": true
+    },
+    {
+     "date": "03/15"
+    },
+    {
+     "date": "03/16"
+    }
+   ]
+  },
+  {
+   "week": "Week 8",
+   "days": [
+    {
+     "date": "03/19",
+     "class": true
+    },
+    {
+     "date": "03/20"
+    },
+    {
+     "date": "03/21",
+     "class": true
+    },
+    {
+     "date": "03/22"
+    },
+    {
+     "date": "03/23"
+    }
+   ]
+  },
+  {
+   "week": "Week 9",
+   "days": [
+    {
+     "date": "03/26",
+     "class": true
+    },
+    {
+     "date": "03/27"
+    },
+    {
+     "date": "03/28",
+     "class": true
+    },
+    {
+     "date": "03/29"
+    },
+    {
+     "date": "03/30"
+    }
+   ]
+  },
+  {
+   "week": "Spring Break",
+   "days": [
+    {
+     "date": "04/02",
+     "topic": "No class"
+    },
+    {
+     "date": "04/03",
+     "topic": "No class"
+    },
+    {
+     "date": "04/04",
+     "topic": "No class"
+    },
+    {
+     "date": "04/05",
+     "topic": "No class"
+    },
+    {
+     "date": "04/06",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 10",
+   "days": [
+    {
+     "date": "04/09",
+     "class": true
+    },
+    {
+     "date": "04/10"
+    },
+    {
+     "date": "04/11 (F)"
+    },
+    {
+     "date": "04/12"
+    },
+    {
+     "date": "04/13"
+    }
+   ]
+  },
+  {
+   "week": "Week 11",
+   "days": [
+    {
+     "date": "04/16",
+     "class": true
+    },
+    {
+     "date": "04/17"
+    },
+    {
+     "date": "04/18",
+     "class": true
+    },
+    {
+     "date": "04/19"
+    },
+    {
+     "date": "04/20"
+    }
+   ],
+   "note": "Last day to withdraw is 4/16."
+  },
+  {
+   "week": "Week 12",
+   "days": [
+    {
+     "date": "04/23",
+     "class": true
+    },
+    {
+     "date": "04/24"
+    },
+    {
+     "date": "04/25",
+     "class": true
+    },
+    {
+     "date": "04/26"
+    },
+    {
+     "date": "04/27"
+    }
+   ]
+  },
+  {
+   "week": "Week 13",
+   "days": [
+    {
+     "date": "04/30",
+     "class": true
+    },
+    {
+     "date": "05/01"
+    },
+    {
+     "date": "05/02",
+     "class": true
+    },
+    {
+     "date": "05/03"
+    },
+    {
+     "date": "05/04"
+    }
+   ]
+  },
+  {
+   "week": "Week 14",
+   "days": [
+    {
+     "date": "05/07",
+     "class": true
+    },
+    {
+     "date": "05/08"
+    },
+    {
+     "date": "05/09",
+     "class": true
+    },
+    {
+     "date": "05/10"
+    },
+    {
+     "date": "05/11"
+    }
+   ]
+  },
+  {
+   "week": "Week 15",
+   "days": [
+    {
+     "date": "05/14",
+     "class": true
+    },
+    {
+     "date": "05/15"
+    },
+    {
+     "date": "05/16",
+     "class": true
+    },
+    {
+     "date": "05/17"
+    },
+    {
+     "date": "05/18"
+    }
+   ]
+  },
+  {
+   "week": "Finals Week",
+   "days": [
+    {
+     "date": "05/21",
+     "topic": "Final Exam Day",
+     "class": true
+    },
+    {
+     "date": "05/22"
+    },
+    {
+     "date": "05/23"
+    },
+    {
+     "date": "05/24"
+    },
+    {
+     "date": "05/25"
+    }
+   ],
+   "note": "Presentations on Final Exam Day, 5/21."
+  }
+ ]
+}

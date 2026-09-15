@@ -1,0 +1,426 @@
+{
+ "title": "MATH 128 Weekly Schedule",
+ "semester": "Spring 2024",
+ "weekdays": [
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri"
+ ],
+ "weeks": [
+  {
+   "week": "Week 1",
+   "days": [
+    {
+     "date": "01/22"
+    },
+    {
+     "date": "01/23"
+    },
+    {
+     "date": "01/24"
+    },
+    {
+     "date": "01/25",
+     "topic": "Introduction",
+     "class": true
+    },
+    {
+     "date": "01/26"
+    }
+   ],
+   "note": "First day of class is Thursday 1/25."
+  },
+  {
+   "week": "Week 2",
+   "days": [
+    {
+     "date": "01/29"
+    },
+    {
+     "date": "01/30",
+     "topic": "Plotting Points",
+     "class": true
+    },
+    {
+     "date": "01/31"
+    },
+    {
+     "date": "02/01",
+     "topic": "Makerspace & AxiDraw",
+     "class": true
+    },
+    {
+     "date": "02/02"
+    }
+   ]
+  },
+  {
+   "week": "Week 3",
+   "days": [
+    {
+     "date": "02/05"
+    },
+    {
+     "date": "02/06",
+     "topic": "Parent Functions",
+     "class": true
+    },
+    {
+     "date": "02/07"
+    },
+    {
+     "date": "02/08",
+     "topic": "Parent Functions",
+     "class": true
+    },
+    {
+     "date": "02/09"
+    }
+   ]
+  },
+  {
+   "week": "Week 4",
+   "days": [
+    {
+     "date": "02/12"
+    },
+    {
+     "date": "02/13",
+     "topic": "Translates and Copies",
+     "class": true
+    },
+    {
+     "date": "02/14"
+    },
+    {
+     "date": "02/15",
+     "topic": "Discussing Art & Design",
+     "class": true
+    },
+    {
+     "date": "02/16"
+    }
+   ],
+   "note": "Last day to drop classes is Wed 2/14."
+  },
+  {
+   "week": "Week 5",
+   "days": [
+    {
+     "date": "02/19"
+    },
+    {
+     "date": "02/20",
+     "topic": "Project 1 Work Day",
+     "class": true
+    },
+    {
+     "date": "02/21"
+    },
+    {
+     "date": "02/22 (M)",
+     "topic": "No class"
+    },
+    {
+     "date": "02/23"
+    }
+   ]
+  },
+  {
+   "week": "Week 6",
+   "days": [
+    {
+     "date": "02/26"
+    },
+    {
+     "date": "02/27",
+     "topic": "Project 1 Work Day",
+     "class": true
+    },
+    {
+     "date": "02/28"
+    },
+    {
+     "date": "02/29",
+     "topic": "Proj 1 Draft Peer Review",
+     "class": true
+    },
+    {
+     "date": "03/01"
+    }
+   ],
+   "note": "Project 1 Draft due Thurs 2/29."
+  },
+  {
+   "week": "Week 7",
+   "days": [
+    {
+     "date": "03/04"
+    },
+    {
+     "date": "03/05",
+     "topic": "Proj 1 Due Dilations",
+     "class": true
+    },
+    {
+     "date": "03/06"
+    },
+    {
+     "date": "03/07",
+     "topic": "New Functions from Old",
+     "class": true
+    },
+    {
+     "date": "03/08"
+    }
+   ],
+   "note": "Project 1 Due Tues 3/5."
+  },
+  {
+   "week": "Week 8",
+   "days": [
+    {
+     "date": "03/11"
+    },
+    {
+     "date": "03/12",
+     "topic": "Unit Circle Polar Curves",
+     "class": true
+    },
+    {
+     "date": "03/13"
+    },
+    {
+     "date": "03/14",
+     "topic": "Intentional Polar Curves",
+     "class": true
+    },
+    {
+     "date": "03/15"
+    }
+   ],
+   "note": "Project 1 Revisions due Tues 3/12."
+  },
+  {
+   "week": "Week 9",
+   "days": [
+    {
+     "date": "03/18"
+    },
+    {
+     "date": "03/19",
+     "topic": "Choosing Materials",
+     "class": true
+    },
+    {
+     "date": "03/20"
+    },
+    {
+     "date": "03/21",
+     "topic": "Project 2 Work Day",
+     "class": true
+    },
+    {
+     "date": "03/22"
+    }
+   ]
+  },
+  {
+   "week": "Week 10",
+   "days": [
+    {
+     "date": "03/25"
+    },
+    {
+     "date": "03/26",
+     "topic": "Project 2 Work Day",
+     "class": true
+    },
+    {
+     "date": "03/27"
+    },
+    {
+     "date": "03/28",
+     "topic": "Proj 2 Draft Peer Review",
+     "class": true
+    },
+    {
+     "date": "03/29"
+    }
+   ],
+   "note": "Project 2 Draft due Thurs 3/28."
+  },
+  {
+   "week": "Week 11",
+   "days": [
+    {
+     "date": "04/01"
+    },
+    {
+     "date": "04/02",
+     "topic": "Parametric Functions",
+     "class": true
+    },
+    {
+     "date": "04/03"
+    },
+    {
+     "date": "04/04",
+     "topic": "Rotations",
+     "class": true
+    },
+    {
+     "date": "04/05"
+    }
+   ],
+   "note": "Project 2 due Tues 4/2."
+  },
+  {
+   "week": "Week 12",
+   "days": [
+    {
+     "date": "04/08"
+    },
+    {
+     "date": "04/09",
+     "topic": "Machine Choices",
+     "class": true
+    },
+    {
+     "date": "04/10"
+    },
+    {
+     "date": "04/11",
+     "topic": "Interpolation",
+     "class": true
+    },
+    {
+     "date": "04/12"
+    }
+   ],
+   "note": "Project 2 Revisions due Tues 4/9."
+  },
+  {
+   "week": "Week 13",
+   "days": [
+    {
+     "date": "04/15"
+    },
+    {
+     "date": "04/16",
+     "topic": "Project 3 Work Day",
+     "class": true
+    },
+    {
+     "date": "04/17"
+    },
+    {
+     "date": "04/18",
+     "topic": "Project 3 Work Day",
+     "class": true
+    },
+    {
+     "date": "04/19"
+    }
+   ]
+  },
+  {
+   "week": "Spring Break",
+   "days": [
+    {
+     "date": "04/22"
+    },
+    {
+     "date": "04/23",
+     "topic": "No class"
+    },
+    {
+     "date": "04/24"
+    },
+    {
+     "date": "04/25",
+     "topic": "No class"
+    },
+    {
+     "date": "04/26"
+    }
+   ]
+  },
+  {
+   "week": "Week 14",
+   "days": [
+    {
+     "date": "04/29"
+    },
+    {
+     "date": "04/30",
+     "topic": "No class"
+    },
+    {
+     "date": "05/01"
+    },
+    {
+     "date": "05/02",
+     "topic": "Proj 3 Due Peer Review",
+     "class": true
+    },
+    {
+     "date": "05/03"
+    }
+   ],
+   "note": "Project 3 Draft due Thurs 5/2. Revise, Finalize by Fri 5/5. Art Exhibit Installation May 5–8"
+  },
+  {
+   "week": "Week 15",
+   "days": [
+    {
+     "date": "05/06"
+    },
+    {
+     "date": "05/07",
+     "topic": "Portfolio Work Day",
+     "class": true
+    },
+    {
+     "date": "05/08"
+    },
+    {
+     "date": "05/09",
+     "topic": "Portfolio Work Day",
+     "class": true
+    },
+    {
+     "date": "05/10"
+    }
+   ],
+   "note": "Project 3 due Tues 5/7."
+  },
+  {
+   "week": "Week 16",
+   "days": [
+    {
+     "date": "05/13"
+    },
+    {
+     "date": "05/14",
+     "topic": "Portfolio Peer Review",
+     "class": true
+    },
+    {
+     "date": "05/15"
+    },
+    {
+     "date": "05/16",
+     "topic": "Portfolio Showcase",
+     "class": true
+    },
+    {
+     "date": "05/17"
+    }
+   ],
+   "note": "Last day to withdraw is Tue 5/15. Portfolio Showcase: Thurs 5/16, 1:45PM-3:45PM."
+  }
+ ]
+}

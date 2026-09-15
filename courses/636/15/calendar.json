@@ -1,0 +1,404 @@
+{
+ "title": "MATH 636 Weekly Schedule",
+ "semester": "Fall 2015",
+ "weekdays": [
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri"
+ ],
+ "weeks": [
+  {
+   "week": "Week 1",
+   "days": [
+    {
+     "date": "08/24"
+    },
+    {
+     "date": "08/25"
+    },
+    {
+     "date": "08/26"
+    },
+    {
+     "date": "08/27",
+     "class": true
+    },
+    {
+     "date": "08/28"
+    }
+   ]
+  },
+  {
+   "week": "Week 2",
+   "days": [
+    {
+     "date": "08/31"
+    },
+    {
+     "date": "09/01",
+     "class": true
+    },
+    {
+     "date": "09/02"
+    },
+    {
+     "date": "09/03",
+     "class": true
+    },
+    {
+     "date": "09/04"
+    }
+   ]
+  },
+  {
+   "week": "Week 3",
+   "days": [
+    {
+     "date": "09/07",
+     "topic": "No class"
+    },
+    {
+     "date": "09/08",
+     "class": true
+    },
+    {
+     "date": "09/09"
+    },
+    {
+     "date": "09/10",
+     "topic": "No class"
+    },
+    {
+     "date": "09/11"
+    }
+   ]
+  },
+  {
+   "week": "Week 4",
+   "days": [
+    {
+     "date": "09/14",
+     "topic": "No class"
+    },
+    {
+     "date": "09/15",
+     "topic": "No class"
+    },
+    {
+     "date": "09/16"
+    },
+    {
+     "date": "09/17",
+     "class": true
+    },
+    {
+     "date": "09/18"
+    }
+   ],
+   "note": "Last day to drop: 9/16."
+  },
+  {
+   "week": "Week 5",
+   "days": [
+    {
+     "date": "09/21"
+    },
+    {
+     "date": "09/22",
+     "topic": "No class"
+    },
+    {
+     "date": "09/23",
+     "topic": "No class"
+    },
+    {
+     "date": "09/24",
+     "class": true
+    },
+    {
+     "date": "09/25 (T)",
+     "class": true
+    }
+   ]
+  },
+  {
+   "week": "Week 6",
+   "days": [
+    {
+     "date": "09/28"
+    },
+    {
+     "date": "09/29",
+     "class": true
+    },
+    {
+     "date": "09/30"
+    },
+    {
+     "date": "10/01",
+     "class": true
+    },
+    {
+     "date": "10/02"
+    }
+   ]
+  },
+  {
+   "week": "Week 7",
+   "days": [
+    {
+     "date": "10/05"
+    },
+    {
+     "date": "10/06",
+     "class": true
+    },
+    {
+     "date": "10/07"
+    },
+    {
+     "date": "10/08",
+     "topic": "Q & A",
+     "class": true
+    },
+    {
+     "date": "10/09"
+    }
+   ]
+  },
+  {
+   "week": "Week 8",
+   "days": [
+    {
+     "date": "10/12",
+     "topic": "No class"
+    },
+    {
+     "date": "10/13",
+     "topic": "Exam 1",
+     "exam": true
+    },
+    {
+     "date": "10/14"
+    },
+    {
+     "date": "10/15",
+     "class": true
+    },
+    {
+     "date": "10/16"
+    }
+   ],
+   "note": "Exam 1 on Tuesday!"
+  },
+  {
+   "week": "Week 9",
+   "days": [
+    {
+     "date": "10/19"
+    },
+    {
+     "date": "10/20",
+     "class": true
+    },
+    {
+     "date": "10/21"
+    },
+    {
+     "date": "10/22",
+     "class": true
+    },
+    {
+     "date": "10/23"
+    }
+   ],
+   "note": "Project topic due Thursday!"
+  },
+  {
+   "week": "Week 10",
+   "days": [
+    {
+     "date": "10/26"
+    },
+    {
+     "date": "10/27",
+     "class": true
+    },
+    {
+     "date": "10/28"
+    },
+    {
+     "date": "10/29",
+     "class": true
+    },
+    {
+     "date": "10/30"
+    }
+   ]
+  },
+  {
+   "week": "Week 11",
+   "days": [
+    {
+     "date": "11/02"
+    },
+    {
+     "date": "11/03",
+     "class": true
+    },
+    {
+     "date": "11/04"
+    },
+    {
+     "date": "11/05",
+     "class": true
+    },
+    {
+     "date": "11/06"
+    }
+   ],
+   "note": "Project outline due Thursday!"
+  },
+  {
+   "week": "Week 12",
+   "days": [
+    {
+     "date": "11/09"
+    },
+    {
+     "date": "11/10",
+     "class": true
+    },
+    {
+     "date": "11/11"
+    },
+    {
+     "date": "11/12",
+     "class": true
+    },
+    {
+     "date": "11/13"
+    }
+   ],
+   "note": "Last day to withdraw: 11/9."
+  },
+  {
+   "week": "Week 13",
+   "days": [
+    {
+     "date": "11/16"
+    },
+    {
+     "date": "11/17",
+     "class": true
+    },
+    {
+     "date": "11/18"
+    },
+    {
+     "date": "11/19",
+     "class": true
+    },
+    {
+     "date": "11/20"
+    }
+   ]
+  },
+  {
+   "week": "Week 14",
+   "days": [
+    {
+     "date": "11/23"
+    },
+    {
+     "date": "11/24",
+     "class": true
+    },
+    {
+     "date": "11/25"
+    },
+    {
+     "date": "11/26",
+     "topic": "No class"
+    },
+    {
+     "date": "11/27",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 15",
+   "days": [
+    {
+     "date": "11/30"
+    },
+    {
+     "date": "12/01",
+     "topic": "Q & A",
+     "class": true
+    },
+    {
+     "date": "12/02"
+    },
+    {
+     "date": "12/03",
+     "topic": "Exam 2",
+     "exam": true
+    },
+    {
+     "date": "12/04"
+    }
+   ],
+   "note": "Exam 2 on Thursday!"
+  },
+  {
+   "week": "Week 16",
+   "days": [
+    {
+     "date": "12/07"
+    },
+    {
+     "date": "12/08",
+     "topic": "Poster Work Day",
+     "exam": true
+    },
+    {
+     "date": "12/09"
+    },
+    {
+     "date": "12/10",
+     "topic": "Poster Session",
+     "exam": true
+    },
+    {
+     "date": "12/11"
+    }
+   ],
+   "note": "Tues: Project work day! Thurs: Poster presentation day, 3:10–5pm"
+  },
+  {
+   "week": "Finals Week",
+   "days": [
+    {
+     "date": "12/14"
+    },
+    {
+     "date": "12/15"
+    },
+    {
+     "date": "12/16"
+    },
+    {
+     "date": "12/17"
+    },
+    {
+     "date": "12/18"
+    }
+   ],
+   "note": "Schedule a podcast recording this week!"
+  }
+ ]
+}

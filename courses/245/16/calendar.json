@@ -1,0 +1,409 @@
+{
+ "title": "MATH 245 Weekly Schedule",
+ "semester": "Spring 2016",
+ "weekdays": [
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri"
+ ],
+ "weeks": [
+  {
+   "week": "Week 1",
+   "days": [
+    {
+     "date": "02/01",
+     "class": true
+    },
+    {
+     "date": "02/02"
+    },
+    {
+     "date": "02/03",
+     "class": true
+    },
+    {
+     "date": "02/04"
+    },
+    {
+     "date": "02/05"
+    }
+   ]
+  },
+  {
+   "week": "Week 2",
+   "days": [
+    {
+     "date": "02/08",
+     "class": true
+    },
+    {
+     "date": "02/09 (F)"
+    },
+    {
+     "date": "02/10",
+     "class": true
+    },
+    {
+     "date": "02/11"
+    },
+    {
+     "date": "02/12",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 3",
+   "days": [
+    {
+     "date": "02/15",
+     "topic": "No class"
+    },
+    {
+     "date": "02/16"
+    },
+    {
+     "date": "02/17",
+     "topic": "HW1",
+     "class": true
+    },
+    {
+     "date": "02/18"
+    },
+    {
+     "date": "02/19"
+    }
+   ]
+  },
+  {
+   "week": "Week 4",
+   "days": [
+    {
+     "date": "02/22",
+     "class": true
+    },
+    {
+     "date": "02/23"
+    },
+    {
+     "date": "02/24",
+     "class": true
+    },
+    {
+     "date": "02/25"
+    },
+    {
+     "date": "02/26"
+    }
+   ]
+  },
+  {
+   "week": "Week 5",
+   "days": [
+    {
+     "date": "02/29",
+     "class": true
+    },
+    {
+     "date": "03/01"
+    },
+    {
+     "date": "03/02",
+     "topic": "Statement Day"
+    },
+    {
+     "date": "03/03"
+    },
+    {
+     "date": "03/04"
+    }
+   ],
+   "note": "Project Statement Due 3/2."
+  },
+  {
+   "week": "Week 6",
+   "days": [
+    {
+     "date": "03/07",
+     "class": true
+    },
+    {
+     "date": "03/08"
+    },
+    {
+     "date": "03/09",
+     "topic": "HW2",
+     "class": true
+    },
+    {
+     "date": "03/10"
+    },
+    {
+     "date": "03/11"
+    }
+   ],
+   "note": "Finalized Project Statement Due 3/9."
+  },
+  {
+   "week": "Week 7",
+   "days": [
+    {
+     "date": "03/14",
+     "topic": "Q & A",
+     "class": true
+    },
+    {
+     "date": "03/15"
+    },
+    {
+     "date": "03/16",
+     "topic": "Exam 1",
+     "exam": true
+    },
+    {
+     "date": "03/17"
+    },
+    {
+     "date": "03/18"
+    }
+   ],
+   "note": "Exam 1 on 3/16."
+  },
+  {
+   "week": "Week 8",
+   "days": [
+    {
+     "date": "03/21",
+     "class": true
+    },
+    {
+     "date": "03/22"
+    },
+    {
+     "date": "03/23 (F)",
+     "topic": "No class"
+    },
+    {
+     "date": "03/24"
+    },
+    {
+     "date": "03/25",
+     "topic": "No class"
+    }
+   ],
+   "note": "Organizational Statement Due 3/21."
+  },
+  {
+   "week": "Week 9",
+   "days": [
+    {
+     "date": "03/28",
+     "class": true
+    },
+    {
+     "date": "03/29"
+    },
+    {
+     "date": "03/30",
+     "class": true
+    },
+    {
+     "date": "03/31"
+    },
+    {
+     "date": "04/01"
+    }
+   ]
+  },
+  {
+   "week": "Week 10",
+   "days": [
+    {
+     "date": "04/04",
+     "class": true
+    },
+    {
+     "date": "04/05"
+    },
+    {
+     "date": "04/06",
+     "topic": "HW3",
+     "class": true
+    },
+    {
+     "date": "04/07"
+    },
+    {
+     "date": "04/08"
+    }
+   ]
+  },
+  {
+   "week": "Week 11",
+   "days": [
+    {
+     "date": "04/11",
+     "class": true
+    },
+    {
+     "date": "04/12"
+    },
+    {
+     "date": "04/13",
+     "class": true
+    },
+    {
+     "date": "04/14"
+    },
+    {
+     "date": "04/15"
+    }
+   ],
+   "note": "Last day to withdraw is 4/11. Project draft due 4/11."
+  },
+  {
+   "week": "Week 12",
+   "days": [
+    {
+     "date": "04/18",
+     "topic": "In-class Critique"
+    },
+    {
+     "date": "04/19"
+    },
+    {
+     "date": "04/20",
+     "class": true
+    },
+    {
+     "date": "04/21"
+    },
+    {
+     "date": "04/22",
+     "topic": "No class"
+    }
+   ],
+   "note": "In class critique 4/19."
+  },
+  {
+   "week": "Spring Break",
+   "days": [
+    {
+     "date": "04/25",
+     "topic": "No class"
+    },
+    {
+     "date": "04/26",
+     "topic": "No class"
+    },
+    {
+     "date": "04/27",
+     "topic": "No class"
+    },
+    {
+     "date": "04/28",
+     "topic": "No class"
+    },
+    {
+     "date": "04/29",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 13",
+   "days": [
+    {
+     "date": "05/02",
+     "class": true
+    },
+    {
+     "date": "05/03"
+    },
+    {
+     "date": "05/04",
+     "topic": "Peer Review"
+    },
+    {
+     "date": "05/05"
+    },
+    {
+     "date": "05/06"
+    }
+   ],
+   "note": "Peer review day 5/4."
+  },
+  {
+   "week": "Week 14",
+   "days": [
+    {
+     "date": "05/09",
+     "topic": "HW4 Q & A",
+     "class": true
+    },
+    {
+     "date": "05/10"
+    },
+    {
+     "date": "05/11",
+     "topic": "Exam 2",
+     "exam": true
+    },
+    {
+     "date": "05/12"
+    },
+    {
+     "date": "05/13"
+    }
+   ],
+   "note": "Exam 2 on 5/11."
+  },
+  {
+   "week": "Week 15",
+   "days": [
+    {
+     "date": "05/16",
+     "topic": "Present'ns"
+    },
+    {
+     "date": "05/17"
+    },
+    {
+     "date": "05/18",
+     "topic": "Present'ns"
+    },
+    {
+     "date": "05/19"
+    },
+    {
+     "date": "05/20"
+    }
+   ],
+   "note": "Presentations start 5/16."
+  },
+  {
+   "week": "Finals Week",
+   "days": [
+    {
+     "date": "05/23",
+     "topic": "Present'ns"
+    },
+    {
+     "date": "05/24"
+    },
+    {
+     "date": "05/25"
+    },
+    {
+     "date": "05/26"
+    },
+    {
+     "date": "05/27"
+    }
+   ],
+   "note": "Presentations on Final Exam Day."
+  }
+ ]
+}

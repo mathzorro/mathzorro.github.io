@@ -1,0 +1,396 @@
+{
+ "title": "MATH 201 Weekly Schedule",
+ "semester": "Spring 2021",
+ "weekdays": [
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri"
+ ],
+ "weeks": [
+  {
+   "week": "Week 1",
+   "days": [
+    {
+     "date": "02/01",
+     "topic": "Intro & 10.1, 10.2",
+     "class": true
+    },
+    {
+     "date": "02/02"
+    },
+    {
+     "date": "02/03",
+     "topic": "10.2, 10.3, 10.4",
+     "class": true
+    },
+    {
+     "date": "02/04"
+    },
+    {
+     "date": "02/05"
+    }
+   ]
+  },
+  {
+   "week": "Week 2",
+   "days": [
+    {
+     "date": "02/08",
+     "topic": "Mathematica 9.1, 10.7",
+     "class": true
+    },
+    {
+     "date": "02/09"
+    },
+    {
+     "date": "02/10",
+     "topic": "10.5, 9.1, 10.7",
+     "class": true
+    },
+    {
+     "date": "02/11"
+    },
+    {
+     "date": "02/12",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 3",
+   "days": [
+    {
+     "date": "02/15",
+     "topic": "No class"
+    },
+    {
+     "date": "02/16"
+    },
+    {
+     "date": "02/17",
+     "topic": "9.2, 10.7",
+     "class": true
+    },
+    {
+     "date": "02/18"
+    },
+    {
+     "date": "02/19"
+    }
+   ]
+  },
+  {
+   "week": "Week 4",
+   "days": [
+    {
+     "date": "02/22",
+     "topic": "9.2, 10.9",
+     "class": true
+    },
+    {
+     "date": "02/23"
+    },
+    {
+     "date": "02/24",
+     "topic": "Verbal A. 1 9.2, 10.8",
+     "class": true
+    },
+    {
+     "date": "02/25"
+    },
+    {
+     "date": "02/26"
+    }
+   ]
+  },
+  {
+   "week": "Week 5",
+   "days": [
+    {
+     "date": "03/01",
+     "topic": "11.1, 10.6",
+     "class": true
+    },
+    {
+     "date": "03/02"
+    },
+    {
+     "date": "03/03",
+     "topic": "Verbal A. 2 11.1, 10.6",
+     "class": true
+    },
+    {
+     "date": "03/04"
+    },
+    {
+     "date": "03/05"
+    }
+   ]
+  },
+  {
+   "week": "Week 6",
+   "days": [
+    {
+     "date": "03/08",
+     "topic": "11.2, 11.3",
+     "class": true
+    },
+    {
+     "date": "03/09"
+    },
+    {
+     "date": "03/10",
+     "topic": "11.3, 11.5",
+     "class": true
+    },
+    {
+     "date": "03/11"
+    },
+    {
+     "date": "03/12"
+    }
+   ]
+  },
+  {
+   "week": "Week 7",
+   "days": [
+    {
+     "date": "03/15",
+     "topic": "11.3, 11.4",
+     "class": true
+    },
+    {
+     "date": "03/16"
+    },
+    {
+     "date": "03/17",
+     "topic": "Verbal A. 3 11.4, 11.6",
+     "class": true
+    },
+    {
+     "date": "03/18"
+    },
+    {
+     "date": "03/19"
+    }
+   ]
+  },
+  {
+   "week": "Week 8",
+   "days": [
+    {
+     "date": "03/22",
+     "topic": "11.6, 11.7",
+     "class": true
+    },
+    {
+     "date": "03/23"
+    },
+    {
+     "date": "03/24",
+     "topic": "Verbal A. 4 11.7",
+     "class": true
+    },
+    {
+     "date": "03/25"
+    },
+    {
+     "date": "03/26"
+    }
+   ]
+  },
+  {
+   "week": "Spring Break",
+   "days": [
+    {
+     "date": "03/29",
+     "topic": "No class"
+    },
+    {
+     "date": "03/30",
+     "topic": "No class"
+    },
+    {
+     "date": "03/31",
+     "topic": "No class"
+    },
+    {
+     "date": "04/01",
+     "topic": "No class"
+    },
+    {
+     "date": "04/02",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 9",
+   "days": [
+    {
+     "date": "04/05",
+     "topic": "11.8",
+     "class": true
+    },
+    {
+     "date": "04/06"
+    },
+    {
+     "date": "04/07",
+     "topic": "12.1",
+     "class": true
+    },
+    {
+     "date": "04/08"
+    },
+    {
+     "date": "04/09"
+    }
+   ]
+  },
+  {
+   "week": "Week 10",
+   "days": [
+    {
+     "date": "04/12",
+     "topic": "12.2, 12.4",
+     "class": true
+    },
+    {
+     "date": "04/13"
+    },
+    {
+     "date": "04/14",
+     "topic": "Verbal A. 5 12.2, 12.4",
+     "class": true
+    },
+    {
+     "date": "04/15"
+    },
+    {
+     "date": "04/16"
+    }
+   ]
+  },
+  {
+   "week": "Week 11",
+   "days": [
+    {
+     "date": "04/19",
+     "topic": "9.3",
+     "class": true
+    },
+    {
+     "date": "04/20"
+    },
+    {
+     "date": "04/21",
+     "topic": "Verbal A. 6 9.4",
+     "class": true
+    },
+    {
+     "date": "04/22"
+    },
+    {
+     "date": "04/23"
+    }
+   ]
+  },
+  {
+   "week": "Week 12",
+   "days": [
+    {
+     "date": "04/26",
+     "topic": "12.3, 12.4",
+     "class": true
+    },
+    {
+     "date": "04/27"
+    },
+    {
+     "date": "04/28",
+     "topic": "12.3, 12.4",
+     "class": true
+    },
+    {
+     "date": "04/29"
+    },
+    {
+     "date": "04/30"
+    }
+   ]
+  },
+  {
+   "week": "Week 13",
+   "days": [
+    {
+     "date": "05/03",
+     "topic": "12.5",
+     "class": true
+    },
+    {
+     "date": "05/04"
+    },
+    {
+     "date": "05/05",
+     "topic": "Verbal A. 11 12.6, 12.7",
+     "class": true
+    },
+    {
+     "date": "05/06"
+    },
+    {
+     "date": "05/07"
+    }
+   ]
+  },
+  {
+   "week": "Week 14",
+   "days": [
+    {
+     "date": "05/10",
+     "topic": "12.6, 12.7",
+     "class": true
+    },
+    {
+     "date": "05/11"
+    },
+    {
+     "date": "05/12",
+     "topic": "Verbal A. 12 12.6, 12.7",
+     "class": true
+    },
+    {
+     "date": "05/13"
+    },
+    {
+     "date": "05/14"
+    }
+   ]
+  },
+  {
+   "week": "Week 15",
+   "days": [
+    {
+     "date": "05/17",
+     "topic": "Q&A Session",
+     "class": true
+    },
+    {
+     "date": "05/18"
+    },
+    {
+     "date": "05/19"
+    },
+    {
+     "date": "05/20"
+    },
+    {
+     "date": "05/21"
+    }
+   ]
+  }
+ ]
+}

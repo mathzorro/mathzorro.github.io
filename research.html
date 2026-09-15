@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Christopher Hanusa</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Fenix" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background-color: #fdf4f3; } /* research section tint (red #e7210e) */
+        ul.topic-list li { border-left-color: #e7210e; }
+
+    </style>
+    <style>
+        ul.topic-list.glance-list li { font-size: 1.2em; }
+        /* topic list with small horizontal images as bullets (after the old lab page) */
+        ul.topic-rows { list-style: none; }
+        ul.topic-rows li { margin-bottom: 12px; }
+        ul.topic-rows a {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 6px 16px 6px 6px;
+            font-size: 1.4em;
+            color: var(--text-dark);
+            text-decoration: none;
+            background: #fff;
+        }
+        ul.topic-rows a:hover { border-color: #e7210e; color: #e7210e; }
+        ul.topic-rows img {
+            width: 100px; height: 40px;
+            object-fit: cover; border-radius: 5px; flex: none;
+        }
+        section[id] { scroll-margin-top: 90px; }
+        @media (max-width: 1000px) {
+            .image-side.hide-mobile { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="main-nav">
+        <div class="nav-brand">
+            <a href="index.html"><img src="images/hanusa-xyz.png" alt="hanusa.xyz logo" height="50px"></a>
+        </div>
+        <div class="nav-links">
+            <a href="research.html" class="active" style="color:#e7210e;">Research</a>
+            <a href="design.html">Design</a> 
+            <a href="education.html">Education</a>
+            <a href="strategy.html">Strategy</a>
+            <a href="https://hanusa.xyz/blog">Insights</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="page-grid">
+        <main class="main-column">
+            <section class="hero-section">
+                <h1>Research in Pure Mathematics</h1>
+                <p>I explore the frontiers of enumerative and algebraic combinatorics through experimentation, computation, visualization, and teamwork.</p>
+            </section>
+
+            <section class="section-block">
+                <div class="text-side">
+                    <h2>Research at a Glance</h2>
+                    <ul class="topic-list glance-list">
+                        <li><a href="papers.html">Publications</a> </li>
+                        <li><a href="talks.html">Talks</a></li>
+                        <li><a href="lab.html">QC Experimental Mathematics Lab</a> (research with students)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section-block">
+                <div class="text-side">
+                    <h2>Research Topics</h2>
+                    <p>My expertise is in developing combinatorical models that explain mathematical concepts. My main areas of research have been:</p>
+                    <ul class="topic-rows">
+                        <li><a href="#flowpolytopes"><img src="images/research-flow-mini.png" alt=""> Flow polytopes</a></li>
+                        <li><a href="#nonattacking"><img src="images/topic-chess.jpg" alt=""> Nonattacking chess piece placements</a></li>
+                        <li><a href="#coxeter"><img src="images/topic-coxeter.jpg" alt=""> Core partitions and Coxeter groups</a></li>
+                    </ul>
+                    <p>I also enjoy collaborating in other areas. I have written on <a href="https://hanusa.xyz/research/papers/Hecke.pdf">Hecke triangle groups</a>, <a href="https://hanusa.xyz/research/papers/treachery.pdf">dynamical systems</a>, <a href="https://hanusa.xyz/research/papers/Borda.pdf">voting theory</a>, and the <a href="https://hanusa.xyz/research/papers/Madelung.pdf">bond structure of chemical compounds</a>.</p>
+                </div>
+            </section>
+
+            <section class="section-block" id="flowpolytopes">
+                <div class="text-side">
+                    <h2>Flow polytopes</h2>
+                    <p><em><b>Flow polytopes</b></em> are high-dimensional geometric objects that characterize all ways to route flow through a network. In joint work with <a href="https://dleon.combinatoria.co/">Rafael González D'León</a> and <a href="https://www.ms.uky.edu/~myip/">Martha Yip</a>, we developed combinatorial objects called <em><b>permutation flows</b></em> that explain the structure of a much larger class of flow polytopes than was previously known.</p>
+                    <ul class="topic-list">
+                        <li><a href="https://arxiv.org/abs/2512.04078">Read the Paper</a></li>
+                        <li><a href="https://dleon.combinatoria.co/pages/minicourse/examples/Weak_Order_Lecture_notes_example.html">Interact with an example</a> (Courtesy of Rafael González D'León)</li>
+                    </ul>
+                </div>
+                <div class="image-side">
+                    <img src="images/hanusa-research.jpg" alt="Christopher Hanusa discussing flow polytope research">
+                </div>
+            </section>
+
+            <section class="section-block inverted" id="nonattacking">
+                <div class="text-side">
+                    <h2>Nonattacking chess piece placements</h2>
+                    <p>In how many ways can you place <em>q</em> chess pieces on a polygonal chessboard so that no two pieces attack one another? In joint work with Thomas Zaslavsky and Seth Chaiken, we developed a technique to count chess piece placements using Ehrhart theory (the theory of counting lattice points in polytopes) in a series of seven papers entitled <em>A q-Queens Problem</em>.</p>
+                    <ul class="topic-list">
+                        <li><a href="https://hanusa.xyz/research/papers/qqs1.pdf">Part I</a> has the General Theory while <a href="https://hanusa.xyz/research/papers/qqs2.pdf">Part II</a> specializes to the square board.</li>
+                        <li><a href="https://hanusa.xyz/research/papers/qqs3.pdf">Part III</a> provides explicit formulas for pieces that move horizontally, vertically, or along diagonals.</li>
+                        <li><a href="https://hanusa.xyz/research/papers/qqs4.pdf">Part IV</a> explores the period of these counting quasi-polynomials (by examining configurations of pieces). This led to research in <a href="https://hanusa.xyz/research/papers/treachery.pdf">dynamical systems</a> (joint with Arvind Mahankali) which sparked an interest in chess billards. </li>
+                    </ul>
+                </div>
+                <div class="image-side">
+                    <img src="images/research-queens-big.png" alt="Nonattacking chess piece placements">
+                </div>
+            </section>
+
+            <section class="section-block" id="coxeter">
+                <div class="text-side">
+                    <h2>Core partitions and Coxeter groups</h2>
+                    <p>I study the combinatorics surrounding reflection groups, which include abacus diagrams, core partitions, and bounded partitions</p>
+                    <ul class="topic-list">
+                        <li>Brant Jones and I collaborated to understand <a href="https://hanusa.xyz/research/papers/affineFC.pdf">fully commutative affine permutations</a> (type A) and then extended the idea of abacus diagrams and core partitions to <a href="https://hanusa.xyz/research/papers/affine_abacus.pdf">types B, C, and D</a>.</li>
+                        <li>This led to fundamental research in simultaneous core partitions &mdash; both exploring their <a href="https://hanusa.xyz/research/papers/alcoveC.pdf">relationship to hyperplane arrangements</a>, and developing conjectures related to <a href="https://hanusa.xyz/research/papers/SelfConj.pdf">self-conjugate core partitions</a> (with Rishi Nath).</li>
+                        <li>In joint work with Cesar Ceballos and Tom Denton we developed new techniques to explore the <a href="https://hanusa.xyz/research/papers/abCores.pdf">zeta map on (a,b)-Dyck paths</a>.</li>
+                    </ul>
+                </div>
+                <div class="image-side">
+                    <img src="images/research-cores-big.png" alt="Combinatorics of Coxeter groups">
+                </div>
+            </section>
+
+            <section class="section-block inverted">
+                <div class="text-side">
+                    <h2>The ArtVote Experiment</h2>
+                    <p>ArtVote was an investigation into the aesthetics of generative art. My students and I programmed Mathematica to generate thousands of images that varied in style, color palette, and density of composition. We set up a web-based platform for visitors to rate the generated images; we used the 147596 total ratings to help determine which properties make art the most beautiful.</p>
+                    <ul class="topic-list">
+                        <li>We're no longer processing ratings, but you can still <a href="artvote/index.html">see the interface here</a>.</li>
+                        <li>You can see the <a href="artvote/results.html">best and worst rated images here</a>.</li>
+                        <li>Learn more <a href="artvote/about.html">about the project</a>.</li>
+                    </ul>
+                </div>
+                <div class="image-side">
+                    <a href="artvote/index.html"><img src="artvote/GeneratedArt/GridOfSquares/111025.webp" alt="Grid of Squares — a top-rated ArtVote image"></a>
+                </div>
+            </section>
+
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <div class="widget-header">
+                    <h3>From the Blog</h3>
+                    <a href="https://hanusa.xyz/blog/" class="mobile-view-all">View all</a>
+                </div>
+                <ul class="blog-list" id="sidebar-feed">
+                    <li class="blog-item" style="text-align:center; padding:20px; color:#999;">Loading updates...</li>
+                </ul>
+                <a href="https://hanusa.xyz/blog/" class="btn desktop-view-all" style="width:100%; text-align:center;">More posts</a>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p class="footer-links">&copy; 2026 Christopher Hanusa &nbsp;&middot;&nbsp;
+            <a href="https://bsky.app/profile/mathzorro.bsky.social" aria-label="Bluesky" title="Bluesky"><svg viewBox="0 0 24 24"><path d="M12 10.8C10.9 8.5 7.9 4.4 5.1 2.4 2.4.5 1.4.8 .8 1.1.1 1.5 0 2.6 0 3.3s.4 5.5.6 6.3c.8 2.7 3.6 3.6 6.2 3.3-3.8.6-7.2 2-2.7 6.9 4.9 5.1 6.7-1.1 7.9-4.2 1.2 3.1 2.6 9 7.8 4.2 4.6-4.9 1.2-6.3-2.6-6.9 2.6.3 5.4-.6 6.2-3.3.2-.8.6-5.6.6-6.3s-.1-1.8-.8-2.2c-.6-.3-1.6-.6-4.3 1.3C16.1 4.4 13.1 8.5 12 10.8z"/></svg></a>
+            <a href="https://instagram.com/mathzorro" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2m0 3.6a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-10.5a1.4 1.4 0 11-2.9 0 1.4 1.4 0 012.9 0z"/></svg></a>
+            <a href="https://www.linkedin.com/in/christopher-hanusa/" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3-1.9 0-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.2 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7 20.4H3.4V9H7v11.4z"/></svg></a>
+        </p>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const feedUrl = "https://hanusa.xyz/blog/index-math.xml"; 
+        const container = document.getElementById("sidebar-feed");
+        
+        fetch(feedUrl).then(response => {
+            if (!response.ok) throw new Error("Feed not found");
+            return response.text();
+        }).then(str => {
+            const data = new window.DOMParser().parseFromString(str, "text/xml");
+            const items = Array.from(data.querySelectorAll("item")).slice(0, 3);
+            if (items.length > 0) {
+                container.innerHTML = ""; 
+                items.forEach(item => {
+                    const title = item.querySelector("title").textContent;
+                    const link = item.querySelector("link").textContent;                    
+                    const rawDesc = item.querySelector("description").textContent;
+                    const cleanDesc = rawDesc.replace(/<[^>]+>/g, '').trim();
+                    const li = document.createElement("li");
+                    li.className = "blog-item";
+                    li.innerHTML = `
+                        <a href="${link}" class="blog-title"><span>${title}</span><span class="mobile-arrow">→</span></a>
+                        <p class="blog-excerpt desc-long">${cleanDesc}</p>
+                    `;
+                    container.appendChild(li);
+                });
+            } else { container.innerHTML = '<li class="blog-item" style="padding:20px; text-align:center">No recent updates.</li>'; }
+        }).catch(err => { container.innerHTML = '<li class="blog-item" style="padding:20px; text-align:center">Unable to load updates.</li>'; });
+    });
+    </script>
+</body>
+</html>

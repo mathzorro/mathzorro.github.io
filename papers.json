@@ -1,0 +1,1383 @@
+[
+  {
+    "number": "37",
+    "id": "Hecke",
+    "title": "Densities of arithmetic Hecke triangle group orbits",
+    "authors": [
+      {
+        "name": "Samantha Fairchild",
+        "url": "https://sites.google.com/view/sfairchild"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "arXiv preprint",
+    "year": "2026",
+    "status": "Preprint",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/2607.22142"
+      }
+    ],
+    "abstract": "We give new proofs computing the asymptotic densities for orbits of the arithmetic Hecke triangle groups Γ<sub>q</sub> when q=4 and q=6. We use elementary number theory techniques along with basic properties of the Möbius function and Riemann zeta function with additional congruence conditions. This note actually came about by observing that, in the q=4 case, the underlying congruence condition partitions the set of coprime integer pairs into three classes of equal density. ",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "36",
+    "id": "permutationflows1",
+    "title": "Permutation Flows I: Triangulations of Flow Polytopes",
+    "authors": [
+      {
+        "name": "Rafael S. González D'León",
+        "url": "https://dleon.combinatoria.co/"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Martha Yip",
+        "url": "https://www.ms.uky.edu/~myip/"
+      }
+    ],
+    "venue": "arXiv preprint",
+    "year": "2025",
+    "status": "Preprint",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/2512.04078"
+      }
+    ],
+    "abstract": "We introduce a new broadly unifying family of combinatorial objects, which we call permutation flows, associated to an acyclic directed graph G together with a framing F. This new family is combinatorially rich and contains as special cases various families of combinatorial objects that are frequently studied in the literature, as is the case of classical permutations, circular permutations, multipermutations, Stirling permutations, alternating permutations, k-ary sequences, and Catalan objects and their generalizations. When permutation flows are decorated with compatible shuffles, they also include the combinatorics of parking functions and their generalizations.<br><br>This model is geometrically rich. We show that permutation flow shuffles define a family of unimodular triangulations of the flow polytope F<sub>G</sub>(a) on G with an integer balanced netflow vector a where only the last entry is negative. As an application we provide a new proof of the Lidskii volume formula of Baldoni and Vergne for this family of polytopes and a reformulation of the same formula where every term is explained by the nature of the combinatorial objects involved. Permutation flow triangulations extend the Danilov, Karzanov, and Koshevoy triangulations that were defined for the case where a=e<sub>0</sub>-e<sub>n</sub>. For this particular case we provide a formula for the h*-polynomial of the flow polytope as the descent enumerating polynomial of permutation flows. Permutation flow triangulations include among others, a family of triangulations that refines the subdivisions of a family of polytopes studied by Pitman and Stanley. They also include as special cases triangulations of products of dilated simplices.<br><br>The model comes with an order structure induced by intuitive operators on permutation flows which we call the weak order. This order includes as special cases the weak order on permutations, the Tamari lattice, order ideals in Young's lattice, and their generalizations, among others. It was conjectured in 2020 by the three authors, together with Benedetti, Harris, and Morales, that this poset is in general a lattice. This conjecture has been recently established with independent proofs by Bell and Ceballos, and by Berggren and Serhiyenko. Further properties and applications of the weak order will appear in a subsequent article.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "35",
+    "id": "axidraw",
+    "title": "Sharing the Beauty of Mathematics Through Making and Design Thinking",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "preprint",
+    "year": "2025",
+    "status": "Preprint",
+    "showPDF": true,
+
+    "abstract": "In this chapter I introduce Mathematical Design, a course developed to bring the beauty and creativity of mathematics to general education students at Queens College. In this project-based course, students learn about mathematical functions as tools to design works of art on the online graphing calculator Desmos. They then translate this digital artwork onto paper through the use of an AxiDraw  pen plotter. The course is accessible and enjoyable for college students of any background and for many it provides their first time experiencing mathematics in a positive way.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "number": "34",
+    "id": "zigzag",
+    "title": "A Triangulation of the Flow Polytope of the Zigzag Graph",
+    "authors": [
+      {
+        "name": "Rachel Brunner"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "arXiv preprint",
+    "year": "2024",
+    "status": "Preprint",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/2406.20048"
+      }
+    ],
+    "abstract": "We show that the dual graph of the triangulation of the flow polytope of the zigzag graph adorned with the length-reverse-length framing is a subgraph of a grid graph. Through Mészáros, Morales, and Striker's bijection between simplices of the triangulation, integer flows of a different, supplemental flow polytope, we provide a simple numerical characterization of the adjacency between the triangulation's simplices in terms of their corresponding integer flows. The proofs result from the development of Postnikov and Stanley's sequences of noncrossing bipartite trees as combinatorial objects we call groves. We propose two new statistics derived from this construction that we conjecture recover the h*-polynomial of the flow polytope of the zigzag graph.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "33",
+    "id": "emergence",
+    "title": "Applying the Iterative Development Process: The Creation of Fractal Emergence",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Eric Vergo"
+      }
+    ],
+    "venue": "Proceedings of Bridges 2024",
+    "year": "2024",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "Journal",
+        "url": "https://archive.bridgesmathart.org/2024/bridges2024-311.html#gsc.tab=0"
+      },
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/2405.04544"
+      }
+    ],
+    "abstract": "The iterative development process is a framework used to design products and applications across a wide range of domains. It centers around building prototypes, testing them, and updating based on the test results. We discuss how we applied this technique to create Fractal Emergence, an interactive piece of mathematical art.",
+    "tags": [
+      "design"
+    ]
+  },
+  {
+    "number": "32",
+    "id": "creativity",
+    "title": "Encouraging student creativity in mathematics through 3D design and 3D printing",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "Proceedings of Symposia in Applied Mathematics",
+    "volume": "79",
+    "year": "2023",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "Book",
+        "url": "https://bookstore.ams.org/PSAPM/79"
+      },
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/2212.07926"
+      }
+    ],
+    "abstract": "This is a case study of teaching 3D design and 3D printing in a project-based computing course for undergraduate math majors. This article discusses content organization, implementation, project grading, and includes a personal reflection. There is an emphasis on lessons learned and how to encourage student creativity and artistic expression. An appendix details 3D design techniques in Mathematica.",
+    "tags": [
+      "education",
+      "design"
+    ]
+  },
+  {
+    "number": "31",
+    "id": "column-convex",
+    "title": "Column convex matrices, G-cyclic orders, and flow polytopes",
+    "authors": [
+      {
+        "name": "Rafael S. González D'León",
+        "url": "https://dleon.combinatoria.co/"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Alejandro Morales",
+        "url": "https://sites.google.com/view/ahmorales/"
+      },
+      {
+        "name": "Martha Yip",
+        "url": "https://www.ms.uky.edu/~myip/"
+      }
+    ],
+    "venue": "Discrete and Computational Geometry",
+    "volume": "70",
+    "year": "2023",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/2107.07326"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1007/s00454-023-00518-9"
+      }
+    ],
+    "abstract": "We study polytopes defined by inequalities of the form ∑<sub>i∈I</sub> z<sub>i</sub> ≤ 1 for I⊆[d] and nonnegative z<sub>i</sub> where the inequalities can be reordered into a matrix inequality involving a column-convex {0,1}-matrix. These generalize polytopes studied by Stanley, and the consecutive coordinate polytopes of Ayyer, Josuat-Vergès, and Ramassamy. We prove an integral equivalence between these polytopes and flow polytopes of directed acyclic graphs G with a Hamiltonian path, which we call spinal graphs. We show that the volumes of these flow polytopes are given by the number of upper (or lower) G-cyclic orders defined by the graphs G. As a special case we recover results on volumes of consecutive coordinate polytopes.<br><br>We study the combinatorics of k-Euler numbers, which are generalizations of the classical Euler numbers, and which arise as volumes of flow polytopes of a special family of spinal graphs. We show that their refinements, Ramassamy's k-Entringer numbers, can be realized as values of a Kostant partition function, satisfy a family of generalized boustrophedon recurrences, and are log concave along root directions.<br><br>Finally, via our main integral equivalence and the known formula for the h*-polynomial of consecutive coordinate polytopes, we give a combinatorial formula for the h*-polynomial of flow polytopes of non-nested spinal graphs. For spinal graphs in general, we present a conjecture on upper and lower bounds for their h*-polynomial.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "30",
+    "id": "jewelry",
+    "title": "Turning Mathematics into Jewelry",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "Math Horizons",
+    "year": "2022",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1080/10724117.2022.2087378"
+      }
+    ],
+    "abstract": "Recent developments in 3D modeling make it possible to bring mathematical concepts to a wide audience. I have used various 3D design techniques in Mathematica to create precise and intricate jewelry models based on mathematical ideas. Some of the models are 3D printed in nylon and dyed in bright colors while others are 3D printed in metals such as brass or silver through a lost-wax casting method.<br><br>Here I will share mathematical ideas behind some of the pieces of jewelry I have created for Hanusa Design along with artistic decisions made to balance the ideal mathematical concept with the final physical form.",
+    "tags": [
+      "design"
+    ]
+  },
+  {
+    "number": "29",
+    "id": "humanity",
+    "title": "Humanity and Practicality During the Emergency Conversion to Online Learning",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "Journal of Mathematics Education at Teachers College",
+    "volume": "12",
+    "year": "2021",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.52214/jmetc.v12i1.8506"
+      }
+    ],
+    "abstract": "Teaching in the time of COVID.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "number": "28",
+    "id": "treachery",
+    "title": "A billiards-like dynamical system for attacking chess pieces",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Arvind Mahankali",
+        "url": "https://profiles.stanford.edu/301574"
+      }
+    ],
+    "venue": "European Journal of Combinatorics",
+    "volume": "95",
+    "year": "2021",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1901.01917"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.ejc.2021.103341"
+      }
+    ],
+    "abstract": "We apply a one-dimensional discrete dynamical system originally considered by Arnol'd reminiscent of mathematical billiards to the study of two-move riders, a type of fairy chess piece. In this model, particles travel through a bounded convex region along line segments of one of two fixed slopes.<br><br>We apply this dynamical system to characterize the vertices of the inside-out polytope arising from counting placements of nonattacking chess pieces and also to give a bound for the period of the counting quasipolynomial. The analysis focuses on points of the region that are on trajectories that contain a corner or on cycles of full rank, or are crossing points thereof.<br><br>As a consequence, we give a simple proof that the period of the bishops' counting quasipolynomial is 2, and provide formulas bounding periods of counting quasipolynomials for many two-move riders including all partial nightriders. We draw parallels to the theory of mathematical billiards and pose many new open questions.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "27",
+    "id": "multiplex",
+    "title": "Kostant's partition function and magic multiplex juggling sequences",
+    "authors": [
+      {
+        "name": "Carolina Benedetti",
+        "url": "https://sites.google.com/site/carobenedettimath/"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Pamela Harris",
+        "url": "https://www.pamelaeharris.com/"
+      },
+      {
+        "name": "Alejandro Morales",
+        "url": "https://sites.google.com/view/ahmorales/"
+      },
+      {
+        "name": "Anthony Simpson"
+      }
+    ],
+    "venue": "Annals of Combinatorics",
+    "volume": "24",
+    "year": "2020",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/2001.03219"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1007/s00026-020-00498-0"
+      }
+    ],
+    "abstract": "Kostant’s partition function is a vector partition function that counts the number of ways one can express a weight of a Lie algebra g as a nonnegative integral linear combination of the positive roots of g. Multiplex juggling sequences are generalizations of juggling sequences that specify an initial and terminal configuration of balls and allow for multiple balls at any particular discrete height. Magic multiplex juggling sequences generalize further to include magic balls, which cancel with standard balls when they meet at the same height.<br><br>In this paper, we establish a combinatorial equivalence between positive roots of a Lie algebra and throws during a juggling sequence. This provides a juggling framework to calculate Kostant’s partition functions, and a partition function framework to compute the number of juggling sequences. From this equivalence we provide a broad range of consequences and applications connecting this work to polytopes, posets, positroids, and weight multiplicities.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "26",
+    "id": "qqs5",
+    "title": "A q-queens problem. V. A few of our favorite pieces: Queens, bishops, rooks, and nightriders",
+    "authors": [
+      {
+        "name": "Seth Chaiken"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Thomas Zaslavsky",
+        "url": "https://people.math.binghamton.edu/zaslav/"
+      }
+    ],
+    "venue": "Journal of the Korean Mathematical Society",
+    "volume": "57(6)",
+    "year": "2020",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1609.00853"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.4134/JKMS.j190682"
+      }
+    ],
+    "abstract": "Parts I–III showed that the number of ways to place q nonattacking queens or similar chess pieces on an n×n chessboard is a quasipolynomial function of n whose coefficients are essentially polynomials in q and, for pieces with some of the queen's moves, proved formulas for these counting quasipolynomials for small numbers of pieces and high-order coefficients of the general counting quasipolynomials.<br><br>In this part, we focus on the periods of those quasipolynomials by calculating explicit denominators of vertices of the inside-out polytope. We find an exact formula for the denominator when a piece has one move, give intuition for the denominator when a piece has two moves, and show that when a piece has three or more moves, geometrical constructions related to the Fibonacci numbers show that the denominators grow at least exponentially with the number of pieces.<br><br>Furthermore, we provide the current state of knowledge about the counting quasipolynomials for queens, bishops, rooks, and pieces with some of their moves. We extend these results to the nightrider and its subpieces, and we compare our results with the empirical formulas of Kotěšovec.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "25",
+    "id": "qqs7",
+    "title": "A q-queens problem. VII. Combinatorial types of nonattacking chess riders",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Thomas Zaslavsky",
+        "url": "https://people.math.binghamton.edu/zaslav/"
+      }
+    ],
+    "venue": "Australasian Journal of Combinatorics",
+    "volume": "77(3)",
+    "year": "2020",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1906.08981"
+      }
+    ],
+    "abstract": "On a convex polygonal chessboard, the number of combinatorial types of nonattacking configuration of three identical chess riders with r moves, such as queens, bishops, or nightriders, equals r(r^2+3r−1)/3, as conjectured by Chaiken, Hanusa, and Zaslavsky (2019). Similarly, for any number of identical 3-move riders the number of combinatorial types is independent of the actual moves.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "24",
+    "id": "qqs4",
+    "title": "A q-queens problem. IV. Attacking configurations and their denominators",
+    "authors": [
+      {
+        "name": "Seth Chaiken"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Thomas Zaslavsky",
+        "url": "https://people.math.binghamton.edu/zaslav/"
+      }
+    ],
+    "venue": "Discrete Mathematics",
+    "volume": "343(2)",
+    "year": "2020",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1807.04741"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.disc.2019.111649"
+      }
+    ],
+    "abstract": "In Parts I-III we showed that the number of ways to place q nonattacking queens or similar chess pieces on an n × n chessboard is a quasipolynomial function of n whose coefficients are essentially polynomials in q.<br><br>In this part we focus on the periods of those quasipolynomials. We calculate denominators of vertices of the inside-out polytope, since the period is bounded by, and conjecturally equal to, their least common denominator. We find an exact formula for that denominator of every piece with one move and of two-move pieces having a horizontal move. For pieces with three or more moves, we produce geometrical constructions related to the Fibonacci numbers that show the denominator grows at least exponentially with q.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "23",
+    "id": "caracol",
+    "title": "A combinatorial model for computing volumes of flow polytopes",
+    "authors": [
+      {
+        "name": "Carolina Benedetti",
+        "url": "https://sites.google.com/site/carobenedettimath/"
+      },
+      {
+        "name": "Rafael S. González D'León",
+        "url": "https://dleon.combinatoria.co/"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Pamela Harris",
+        "url": "https://www.pamelaeharris.com/"
+      },
+      {
+        "name": "Apoorva Khare",
+        "url": "https://math.iisc.ac.in/~khare/"
+      },
+      {
+        "name": "Alejandro Morales",
+        "url": "https://sites.google.com/view/ahmorales/"
+      },
+      {
+        "name": "Martha Yip",
+        "url": "https://www.ms.uky.edu/~myip/"
+      }
+    ],
+    "venue": "Transactions of the AMS",
+    "volume": "372",
+    "year": "2019",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1801.07684"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1090/tran/7743"
+      }
+    ],
+    "abstract": "We introduce new families of combinatorial objects whose enumeration computes volumes of flow polytopes. These objects provide an interpretation, based on parking functions, of Baldoni and Vergne's generalization of a volume formula originally due to Lidskii. We recover known flow polytope volume formulas and prove new volume formulas for flow polytopes that were seemingly unapproachable. A highlight of our model is an elegant formula for the flow polytope of a graph we call the caracol graph. As by-products of our work, we uncover a new triangle of numbers that interpolates between Catalan numbers and the number of parking functions, we prove the log-concavity of rows of this triangle along with other sequences derived from volume computations, and we introduce a new Ehrhart-like polynomial for flow polytope volume and conjecture product formulas for the polytopes we consider.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "22",
+    "id": "qqs3",
+    "title": "A q-queens problem. III. Nonattacking partial queens",
+    "authors": [
+      {
+        "name": "Seth Chaiken"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Thomas Zaslavsky",
+        "url": "https://people.math.binghamton.edu/zaslav/"
+      }
+    ],
+    "venue": "Australasian Journal of Combinatorics",
+    "volume": "74(2)",
+    "year": "2019",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1402.4886"
+      },
+      {
+        "label": "Journal",
+        "url": "https://ajc.maths.uq.edu.au/pdf/74/ajc_v74_p305.pdf"
+      }
+    ],
+    "abstract": "Parts I and II showed that the number of ways to place q nonattacking queens or similar chess pieces on an n × n square chessboard is a quasipolynomial function of n in which the coefficients are essentially polynomials in q. We explore this function for partial queens, which are pieces like the rook and bishop whose moves are a subset of those of the queen. We compute the five highest-order coefficients of the counting quasipolynomial, which are constant (independent of n), and find the periodicity of the next two coefficients, which depend on the move set. For two and three pieces we derive the complete counting functions and the number of combinatorially distinct nonattacking configurations. The method, as in Parts I and II, is geometrical, using the lattice of subspaces of an inside-out polytope.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "21",
+    "id": "qqs6",
+    "title": "A q-queens problem. VI. The bishops' period",
+    "authors": [
+      {
+        "name": "Seth Chaiken"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Thomas Zaslavsky",
+        "url": "https://people.math.binghamton.edu/zaslav/"
+      }
+    ],
+    "venue": "Ars Mathematica Contemporanea",
+    "volume": "16(2)",
+    "year": "2019",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1405.3001"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.26493/1855-3974.1657.d75"
+      }
+    ],
+    "abstract": "The number of ways to place q nonattacking queens, bishops, or similar chess pieces on an n × n square chessboard is essentially a quasipolynomial function of n (by Part I of this series). The period of the quasipolynomial is difficult to settle. Here we prove that the previously empirically observed period 2 for three to ten bishops is the exact period for every number of bishops greater than 2. The proof depends on signed graphs and the Ehrhart theory of inside-out polytopes.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "20",
+    "id": "lhac",
+    "title": "Lecture hall partitions and the affine hyperoctahedral group",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Carla Savage",
+        "url": "https://csc.ncsu.edu/people/savage/"
+      }
+    ],
+    "venue": "Electronic Journal of Combinatorics",
+    "volume": "25(1)",
+    "year": "2018",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1708.01136"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.37236/7201"
+      }
+    ],
+    "abstract": "In 1997 Bousquet-Mélou and Eriksson introduced lecture hall partitions as the inversion vectors of elements of the parabolic quotient C̃/C. We provide a new view of their correspondence that allows results in one domain to be translated into the other. We determine the equivalence between combinatorial statistics in each domain and use this correspondence to translate certain generating function formulas on lecture hall partitions to new observations about C̃/C.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "19",
+    "id": "abCores",
+    "title": "Combinatorics of the zeta map on rational Dyck paths",
+    "authors": [
+      {
+        "name": "Cesar Ceballos",
+        "url": "https://www.geometrie.tugraz.at/ceballos/index.html"
+      },
+      {
+        "name": "Tom Denton",
+        "url": "https://inventingsituations.net/"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "Journal of Combinatorial Theory, Series A",
+    "volume": "141",
+    "year": "2016",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1504.06383"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.jcta.2016.02.002"
+      }
+    ],
+    "abstract": "An (a,b)-Dyck path P is a lattice path from (0,0) to (b,a) that stays above the line y=ax/b. The zeta map is a curious rule that maps the set of (a,b)-Dyck paths onto itself; it is conjecturally bijective, and we provide progress towards proof of bijectivity in this paper, by showing that knowing ζ(P) and ζ(P^c) is enough to recover P.<br><br>Our method begets an area-preserving involution χ on the set of (a,b)-Dyck paths when ζ is a bijection, as well as a new method for calculating ζ^-1 on classical Dyck paths. For certain nice (a,b)-Dyck paths we give an explicit formula for ζ^-1 and χ and for additional (a,b)-Dyck paths we discuss how to compute ζ^-1 and χ inductively.<br><br>We also explore Armstrong's skew length statistic and present two new combinatorial methods for calculating the zeta map involving lasers and interval intersections. We provide a combinatorial statistic δ that can be used to recursively compute ζ^-1, and show that δ is computable from ζ(P) in the Fuss-Catalan case.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "18",
+    "id": "qqs2",
+    "title": "A q-queens problem. II. The square board",
+    "authors": [
+      {
+        "name": "Seth Chaiken"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Thomas Zaslavsky",
+        "url": "https://people.math.binghamton.edu/zaslav/"
+      }
+    ],
+    "venue": "Journal of Algebraic Combinatorics",
+    "volume": "41",
+    "year": "2015",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1402.4880"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1007/s10801-014-0547-0"
+      }
+    ],
+    "abstract": "We apply to the n × n chessboard the counting theory from Part I for nonattacking placements of chess pieces with unbounded straight-line moves, such as the queen. Part I showed that the number of ways to place q identical nonattacking pieces is given by a quasipolynomial function of n of degree 2q, whose coefficients are (essentially) polynomials in q that depend cyclically on n. Here we study the periods of the quasipolynomial and its coefficients, which are bounded by functions, not well understood, of the piece's move directions, and we develop exact formulas for the very highest coefficients. The coefficients of the three highest powers of n do not vary with n. On the other hand, we present simple pieces for which the fourth coefficient varies periodically. We develop detailed properties of counting quasipolynomials that will be applied in sequels to partial queens, whose moves are subsets of those of the queen, and the nightrider, whose moves are extended knight's moves. We conclude with the first, though strange, formula for the classical n-Queens Problem. We state several conjectures and open problems.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "17",
+    "id": "qqs1",
+    "title": "A q-queens problem. I. General theory",
+    "authors": [
+      {
+        "name": "Seth Chaiken"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Thomas Zaslavsky",
+        "url": "https://people.math.binghamton.edu/zaslav/"
+      }
+    ],
+    "venue": "Electronic Journal of Combinatorics",
+    "volume": "21(3)",
+    "year": "2014",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1303.1879"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.37236/4093"
+      }
+    ],
+    "abstract": "By means of the Ehrhart theory of inside-out polytopes we establish a general counting theory for nonattacking placements of chess pieces with unbounded straight-line moves, such as the queen, on a polygonal convex board. The number of ways to place q identical nonattacking pieces on a board of variable size n but fixed shape is given by a quasipolynomial function of n, of degree 2q, whose coefficients are polynomials in q. The number of combinatorially distinct types of nonattacking configuration is the evaluation of our quasipolynomial at n=-1. The quasipolynomial has an exact formula that depends on a matroid of weighted graphs, which is in turn determined by incidence properties of lines in the real affine plane. We study the highest-degree coefficients and also the period of the quasipolynomial, which is needed if the quasipolynomial is to be interpolated from data, and which is bounded by some function, not well understood, of the board and the piece's move directions.<br><br>In subsequent parts we specialize to the square board and then to subsets of the queen's moves, and we prove exact formulas (most but not all already known empirically) for small numbers of queens, bishops, and nightriders.<br><br>Each part concludes with open questions, both specialized and broad.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "16",
+    "id": "alcoveC",
+    "title": "Results and conjectures on simultaneous core partitions",
+    "authors": [
+      {
+        "name": "Drew Armstrong",
+        "url": "https://www.math.miami.edu/~armstrong/index.php"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Brant C. Jones",
+        "url": "https://brant-jones.github.io/"
+      }
+    ],
+    "venue": "European Journal of Combinatorics",
+    "volume": "41",
+    "year": "2014",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1308.0572"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.ejc.2014.04.007"
+      }
+    ],
+    "abstract": "An n-core partition is an integer partition whose Young diagram contains no hook lengths equal to n. We consider partitions that are simultaneously a-core and b-core for two relatively prime integers a and b, which correspond to abacus diagrams and the combinatorics of the affine symmetric group (type A). We observe that self-conjugate simultaneous core partitions correspond to type C combinatorics, and use abacus diagrams to unite the discussion of these two sets of objects.<br><br>In particular, we prove that 2n- and (2mn+1)-core partitions correspond naturally to dominant alcoves in the m-Shi arrangement of type Cn, generalizing a result of Fishel–Vazirani for type A. We also introduce a major statistic on simultaneous n- and (n+1)-core partitions and on self-conjugate simultaneous 2n- and (2n+1)-core partitions that yield q-analogues of the type A and type C Coxeter-Catalan numbers.<br><br>We present related conjectures and open questions on the average size of a simultaneous core partition, q-analogs of generalized Catalan numbers, and generalizations to other Coxeter groups. We also discuss connections with the cyclic sieving phenomenon and q,t-Catalan numbers.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "15",
+    "id": "Multivariate",
+    "title": "Solving multivariate functional equations",
+    "authors": [
+      {
+        "name": "Michael Chon"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Amy Lee"
+      }
+    ],
+    "venue": "Discrete Mathematics",
+    "volume": "319",
+    "year": "2014",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1206.6750"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.disc.2013.11.023"
+      }
+    ],
+    "abstract": "This paper presents a new method to solve functional equations of multivariate generating functions, such as F(r,s)=e(r,s)+xf(r,s)F(1,1)+xg(r,s)F(qr,1)+xh(r,s)F(qr,qs), giving a formula for F(r,s) in terms of a sum over finite sequences. We use this method to show how one would calculate the coefficients of the generating function for parallelogram polyominoes, which is impractical using other methods. We also apply this method to answer a question from fully commutative affine permutations.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "14",
+    "id": "Bonding",
+    "title": "Bonding in Sodium Chloride Nanotubes: A New Analysis via Madelung Constants",
+    "authors": [
+      {
+        "name": "Mark D. Baker"
+      },
+      {
+        "name": "A. David Baker"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Karen Paltoo"
+      },
+      {
+        "name": "Elisha Danzig"
+      },
+      {
+        "name": "Jane Belanger"
+      }
+    ],
+    "venue": "The Journal of Physical Chemistry C",
+    "volume": "117",
+    "year": "2013",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1021/jp405978d"
+      }
+    ],
+    "abstract": "In this paper we discuss the bonding, relative stabilities and local ionic charges in sodium chloride nanotubes. A new methodology is introduced which utilizes the linear relationship that we have discovered between nanotube cohesive energies determined via Density Functional Theory (DFT) calculations and weighted-average Madelung Constants (MC(wa)). Slopes and intercepts of the plots are used to provide ionic charges and relative ionic versus covalent contributions to the bonding. A comparison between ionic and covalent energies shows that as the nanotubes lengthen, ionic bonding furnishes the principal contribution to increasing stabilization. A comparison between the total cohesive and electrostatic energies reveals the percentage ionicity of each nanotube. We also present a new linear relationship between the average ionic coordination number and the weighted-average Madelung Constant.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "13",
+    "id": "SelfConj",
+    "title": "The number of self-conjugate core partitions",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Rishi Nath",
+        "url": "https://www.york.cuny.edu/directory/rnath"
+      }
+    ],
+    "venue": "Journal of Number Theory",
+    "volume": "133",
+    "year": "2013",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1201.6629"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.jnt.2012.08.017"
+      }
+    ],
+    "abstract": "A conjecture on the monotonicity of t-core partitions in an article of Stanton [Open positivity conjectures for integer partitions, Trends Math., 2:19-25, 1999] has been the catalyst for much recent research on t-core partitions. We conjecture Stanton-like monotonicity results comparing self-conjugate (t+2)- and t-core partitions of n.<br><br>We obtain partial results toward these conjectures for values of t that are large with respect to n, and an application to the block theory of the symmetric and alternating groups. To this end we prove formulas for the number of self-conjugate t-core partitions of n as a function of the number of self-conjugate partitions of smaller n. Additionally, we discuss the positivity of self-conjugate 6-core partitions and introduce areas for future research in representation theory, asymptotic analysis, unimodality, and numerical identities and inequalities.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "12",
+    "id": "PhysChem",
+    "title": "Linear relationship between weighted-average Madelung constants and density functional theory energies for MgO nanotubes",
+    "authors": [
+      {
+        "name": "Mark D. Baker"
+      },
+      {
+        "name": "A. David Baker"
+      },
+      {
+        "name": "Jane Belanger"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Alana Michaels"
+      }
+    ],
+    "venue": "The Journal of Physical Chemistry C",
+    "volume": "116",
+    "year": "2012",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1021/jp308041d"
+      }
+    ],
+    "abstract": "For systems containing large numbers of ions, calculations using Density Functional Theory (DFT) are often impractical because of the amount of time needed to perform the computations. In this paper, we show that weighted-average Madelung constants of MgO nanotubes correlate in an essentially perfectly linear way with cohesive energies determined by DFT. We discuss this correlation in terms of the relationship between lattice energies and cohesive energies. Through this linear correlation, Madelung constants are used to predict cohesive energies and average ion charges of nanostructures containing up to 3940 ions. Cohesive energies of MgO nanotubes are shown to converge to a value lower than those of bulk MgO. Using the slopes of the DFT versus Madelung constant plots the average charges on the ions in the nanotubes are determined. For nanotubes containing the same number of ions, the relative stability of longer tubes versus disc-like structures is discussed.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "11",
+    "id": "affine_abacus",
+    "title": "Abacus models for parabolic quotients of affine Weyl groups",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Brant C. Jones",
+        "url": "https://brant-jones.github.io/"
+      }
+    ],
+    "venue": "Journal of Algebra",
+    "volume": "361",
+    "year": "2012",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1105.5333"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.jalgebra.2012.03.029"
+      }
+    ],
+    "abstract": "We introduce abacus diagrams that describe the minimal length coset representatives of affine Weyl groups in types C/C, B/D, B/B and D/D. These abacus diagrams use a realization of the affine Weyl group C due to Eriksson to generalize a construction of James for the symmetric group. We also describe several combinatorial models for these parabolic quotients that generalize classical results in type A related to core partitions.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "10",
+    "id": "Madelung",
+    "title": "Corner ion, edge-center ion, and face-center ion Madelung expressions for Sodium Chloride",
+    "authors": [
+      {
+        "name": "A. David Baker"
+      },
+      {
+        "name": "Mark D. Baker"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "Journal of Mathematical Chemistry",
+    "volume": "49",
+    "year": "2011",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1007/s10910-011-9807-6"
+      }
+    ],
+    "abstract": "Building on work of Tyagi (2005), we present expressions for calculating the corner ion, edge-center ion, and face-center ion Madelung constants for bulk sodium chloride crystals.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "9",
+    "id": "dkp",
+    "title": "Determinants in the Kronecker product of matrices: The incidence matrix of a complete graph",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Thomas Zaslavsky",
+        "url": "https://people.math.binghamton.edu/zaslav/"
+      }
+    ],
+    "venue": "Linear and Multilinear Algebra",
+    "volume": "59",
+    "year": "2011",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/0811.1930"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1080/03081081003586852"
+      }
+    ],
+    "abstract": "We investigate the least common multiple of all subdeterminants, lcmd(A ⊗ B), of a Kronecker product of matrices, of which one is an integral matrix A with two columns and the other is the incidence matrix of a complete graph with n vertices. We prove that this quantity is the least common multiple of lcmd(A) to the power n-1 and certain binomial functions of the entries of A.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "8",
+    "id": "qrs",
+    "title": "Nonattacking queens in a rectangular strip",
+    "authors": [
+      {
+        "name": "Seth Chaiken"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Thomas Zaslavsky",
+        "url": "https://people.math.binghamton.edu/zaslav/"
+      }
+    ],
+    "venue": "Annals of Combinatorics",
+    "volume": "14",
+    "year": "2010",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/1105.5087"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1007/s00026-011-0068-7"
+      }
+    ],
+    "abstract": "The function that counts the number of ways to place nonattacking identical chess or fairy chess pieces in a rectangular strip of fixed height and variable width, as a function of the width, is a piecewise polynomial which is eventually a polynomial and whose behavior can be described in some detail. We deduce this by converting the problem to one of counting lattice points outside an affinographic hyperplane arrangement, which Forge and Zaslavsky solved by means of weighted integral gain graphs.<br><br>We extend their work by developing both generating functions and a detailed analysis of deletion and contraction for weighted integral gain graphs.<br><br>For chess pieces we find the asymptotic probability that a random configuration is nonattacking, and we obtain exact counts of nonattacking configurations of small numbers of queens, bishops, knights, and nightriders.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "7",
+    "id": "affineFC",
+    "title": "The enumeration of fully commutative affine permutations",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Brant C. Jones",
+        "url": "https://brant-jones.github.io/"
+      }
+    ],
+    "venue": "European Journal of Combinatorics",
+    "volume": "31",
+    "year": "2010",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/0907.0709"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.ejc.2009.11.010"
+      }
+    ],
+    "abstract": "We give a generating function for the fully commutative affine permutations enumerated by rank and Coxeter length, extending formulas due to Stembridge and Barcucci–Del Lungo–Pergola–Pinzani. For fixed rank, the length generating functions have coefficients that are periodic with period dividing the rank. In the course of proving these formulas, we obtain results that elucidate the structure of the fully commutative affine permutations.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "6",
+    "id": "Borda",
+    "title": "Ensuring every candidate wins under positional voting",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "Social Choice and Welfare",
+    "volume": "33",
+    "year": "2009",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1007/s00355-008-0359-z"
+      }
+    ],
+    "abstract": "Given a fixed set of voter preferences, different candidates may win outright given different scoring rules. We investigate how many voters are able to allow all n candidates to win for some scoring rule. We will say that these voters impose a disordering on these candidates. The minimum number of voters it takes to impose a disordering on 3 candidates is 9. For 4 candidates, 6 voters are necessary, for 5 candidates, 4 voters are necessary, and it takes only 3 voters to disorder 9 candidates. In general, we prove that m voters can disorder n candidates when m and n are both greater than or equal to 3, except when m=3 and n≤8, when n=3 and m≤8, and when n=4 and m equals 4 or 5.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "5",
+    "id": "ComboDet",
+    "title": "Applying a combinatorial determinant to count weighted cycle systems in a directed graph",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "Discrete Mathematics",
+    "volume": "309",
+    "year": "2009",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.disc.2008.02.020"
+      }
+    ],
+    "abstract": "One method for counting weighted cycle systems in a graph entails taking the determinant of the identity matrix minus the adjacency matrix of the graph. The result of this operation is the sum over cycle systems of -1 to the power of the number of disjoint cycles times the weight of the cycle system. The author uses this fact to reprove that the determinant of a matrix of much smaller order can be computed to calculate the number of cycle systems in a hamburger graph.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "4",
+    "id": "AltCentroSymm",
+    "title": "Pseudo-centrosymmetric matrices, with applications to counting perfect matchings",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "Linear Algebra and its Applications",
+    "volume": "427",
+    "year": "2007",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/math/0609622"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.laa.2007.07.015"
+      }
+    ],
+    "abstract": "We consider square matrices A that commute with a fixed square matrix K, both with entries in a field F not of characteristic 2. When K^2=I, Tao and Yasuda defined A to be generalized centrosymmetric with respect to K. When K^2=-I, we define A to be pseudo-centrosymmetric with respect to K; we show that the determinant of every even-order pseudo-centrosymmetric matrix is the sum of two squares over F, as long as -1 is not a square in F. When a pseudo-centrosymmetric matrix A contains only integral entries and is pseudo-centrosymmetric with respect to a matrix with rational entries, the determinant of A is the sum of two integral squares. This result, when specialized to when K is the even-order alternating exchange matrix, applies to enumerative combinatorics. Using solely matrix-based methods, we reprove a weak form of Jockusch's theorem for enumerating perfect matchings of 2-even symmetric graphs. As a corollary, we reprove that the number of domino tilings of regions known as Aztec diamonds and Aztec pillows is a sum of two integral squares.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "3",
+    "id": "Hamburger",
+    "title": "A Gessel-Viennot-type method for cycle systems in a directed graph",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "Electronic Journal of Combinatorics",
+    "volume": "13",
+    "year": "2006",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "ArXiv",
+        "url": "https://arxiv.org/abs/math/0512060"
+      }
+    ],
+    "abstract": "We introduce a new determinantal method to count cycle systems in a directed graph that generalizes Gessel and Viennot's determinantal method on path systems. The method gives new insight into the enumeration of domino tilings of Aztec diamonds, Aztec pillows, and related regions.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "2",
+    "id": "tilingchain",
+    "title": "Linear Recurrences Through Tilings and Markov Chains",
+    "authors": [
+      {
+        "name": "Arthur Benjamin",
+        "url": "https://math.hmc.edu/benjamin/"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Francis Su",
+        "url": "https://math.hmc.edu/su/"
+      }
+    ],
+    "venue": "Utilitas Mathematica",
+    "volume": "64",
+    "year": "2003",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "Journal",
+        "url": "https://combinatorialpress.com/um/vol64/"
+      }
+    ],
+    "abstract": "We present a tiling interpretation for kth order linear recurrences, which yields new combinatorial proofs for recurrence identities. Moreover, viewing the tiling process as a Markov chain also yields closed form Binet-like expressions for these recurrences.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "1",
+    "id": "Floyd",
+    "title": "Jammin' with Floyd: A traffic flow analysis of South Carolina hurricane evacuation",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Ari Nieh"
+      },
+      {
+        "name": "Matthew Schnaider"
+      }
+    ],
+    "venue": "The UMAP Journal",
+    "volume": "22",
+    "year": "2001",
+    "status": "",
+    "showPDF": true,
+    "links": [
+      {
+        "label": "Journal",
+        "url": "https://www.comap.com/membership/member-resources/item/umap-journal-22-3-fall-2001-the-2001-mcm-contest-edition"
+      }
+    ],
+    "abstract": "We analyze the 1999 Hurricane Floyd evacuation with a traffic-flow model, explaining the extreme congestion on I-26. Then we look at the new South Carolina Hurricane Evacuation Plan, which includes lane reversals. We analyze their effect; they would significantly benefit traffic leaving Charleston. With lane reversals, the maximum number of vehicles passing any point on I-26 is 6,000 cars/h.<br><br>We develop two plans to evacuate the South Carolina coast: the first by geographic location, the second by license-plate parity. We explore the use of temporary shelters; we find that I-26 has sufficient capacity for oversized vehicles; and we determine the effects of evacuees from Georgia and Florida.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "-1",
+    "id": "Dissertation",
+    "title": "A Gessel-Viennot-Type Method for Cycle Systems with Applications to Aztec Pillows",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "PhD Dissertation",
+    "year": "2005",
+    "status": "",
+    "showPDF": true,
+    "links": [],
+    "abstract": "The subject area of this dissertation is the study of enumeration of tilings of certain regions, or equivalently matchings of certain bipartite graphs. In Chapter 1 of this paper, we present a brief history of the subject. In Chapter 2, we specify the concept of Aztec pillows and discuss constructions related to their study. In Chapter 3, we present purely combinatorial and matrix-theoretical results on Aztec pillows. In Chapter 4, we present a new method of cycle counting and show how it applies to the enumeration of domino tilings of Aztec diamonds and Aztec pillows. Lastly, in Chapter 5, we generalize a conjecture on Aztec pillows, present additional conjectures extrapolated from experimental calculations, and expose open questions in the vein of the research.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "-2",
+    "id": "Hanusa-General",
+    "title": "An Exploration of Aztec Pillows",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "General Exam Paper",
+    "year": "2003",
+    "status": "",
+    "showPDF": true,
+    "links": [],
+    "abstract": "The subject area of my work is the study of enumeration of tilings of regions, or equivalently matchings of certain bipartite graphs. In Chapter 1 of this paper, I present a brief history of the subject. In Chapter 2, I specify the general aim of my research and define the idea of Aztec Pillows. In Chapter 3, I present some preliminary results. Lastly, in Chapter 4, I expose various open questions in the vein of the research. Research questions that arise will be presented throughout the paper as they become posable.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "-3",
+    "id": "2001thesis",
+    "title": "A Generalized Binet's Formula for kth Order Linear Recurrences",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "Undergraduate Thesis",
+    "year": "2001",
+    "status": "",
+    "showPDF": true,
+    "links": [],
+    "abstract": "The Fibonacci Numbers are one of the most intriguing sequences in mathematics. I present generalizations of this well-known sequence. Using combinatorial proofs, I derive closed form expressions for these generalizations. Then using Markov Chains, I derive a second closed form expression for these numbers which is a generalization of Binet’s formula for Fibonacci Numbers. I expand further and determine the generalization of Binet’s formula for any k<sup>th</sup> order linear recurrence.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "-4",
+    "id": "landscapeclinic",
+    "title": "Analysis of Current and Regionally Appropriate Landscapes",
+    "authors": [
+      {
+        "name": "Greg Alexander"
+      },
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      },
+      {
+        "name": "Ryan Kirkby"
+      },
+      {
+        "name": "Marcy LaViollette"
+      },
+      {
+        "name": "Megan Ritchie"
+      },
+      {
+        "name": "Jill Sohm"
+      },
+      {
+        "name": "Tracy van Cort"
+      },
+      {
+        "name": "Erika Wolff"
+      }
+    ],
+    "venue": "",
+    "year": "2000",
+    "status": "",
+    "showPDF": false,
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://www.hmc.edu/clinic/2001/analysis-of-current-and-regionally-appropriate-landscapes/"
+      }
+    ],
+    "abstract": "The Clinic team has analyzed the Harvey Mudd College landscape, from environmental, social, and economic viewpoints. A quantitative cost-benefit analysis of the current campus and other, more regionally appropriate, landscapes was made. Subsequently alternative landscape designs and practices for HMC’s campus were proposed. As an example of possible alternative landscapes a resource-conserving garden was constructed on the HMC campus.",
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "number": "-5",
+    "id": "Sampling",
+    "title": "On successive sampling and fixed inclusion probabilities",
+    "authors": [
+      {
+        "name": "Christopher R. H. Hanusa",
+        "url": "https://hanusa.xyz"
+      }
+    ],
+    "venue": "",
+    "year": "2010",
+    "status": "Preprint",
+    "showPDF": true,
+    "links": [],
+    "abstract": "In the method of successive sampling, a sample of n distinct units is drawn from a population of N units one at a time. Each unit i is drawn with a fixed selection probability p<sub>i</sub> and any repeated units are ignored. When the p<sub>i</sub> are proportional to a given size measure, this is called probability proportional to size without replacement (PPSWOR).<br><br>The first order inclusion probabilities π<sub>i</sub> of each unit in a PPSWOR scheme are not proportional to the size measure, as proved in Kochar and Korwar (2001). This article discusses a modification to the selection probabilities which creates a successive sampling scheme where first order inclusion probabilities are proportional to size (IPPS) in the case when n = 2.",
+    "tags": [
+      "research"
+    ]
+  }
+]

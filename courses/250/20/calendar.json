@@ -1,0 +1,424 @@
+{
+ "title": "MATH 250 Weekly Schedule",
+ "semester": "Fall 2020",
+ "weekdays": [
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri"
+ ],
+ "weeks": [
+  {
+   "week": "Week 1",
+   "days": [
+    {
+     "date": "08/24"
+    },
+    {
+     "date": "08/25"
+    },
+    {
+     "date": "08/26",
+     "topic": "Intro",
+     "class": true
+    },
+    {
+     "date": "08/27"
+    },
+    {
+     "date": "08/28"
+    }
+   ]
+  },
+  {
+   "week": "Week 2",
+   "days": [
+    {
+     "date": "08/31",
+     "topic": "Lists",
+     "class": true
+    },
+    {
+     "date": "09/01"
+    },
+    {
+     "date": "09/02",
+     "topic": "Lists",
+     "class": true
+    },
+    {
+     "date": "09/03"
+    },
+    {
+     "date": "09/04"
+    }
+   ]
+  },
+  {
+   "week": "Week 3",
+   "days": [
+    {
+     "date": "09/07",
+     "topic": "No class"
+    },
+    {
+     "date": "09/08"
+    },
+    {
+     "date": "09/09",
+     "topic": "Project Group Work",
+     "class": true
+    },
+    {
+     "date": "09/10"
+    },
+    {
+     "date": "09/11"
+    }
+   ]
+  },
+  {
+   "week": "Week 4",
+   "days": [
+    {
+     "date": "09/14",
+     "topic": "Map and Functions",
+     "class": true
+    },
+    {
+     "date": "09/15"
+    },
+    {
+     "date": "09/16",
+     "topic": "Anonymous Functions",
+     "class": true
+    },
+    {
+     "date": "09/17"
+    },
+    {
+     "date": "09/18",
+     "topic": "No class"
+    }
+   ],
+   "note": "Last day to drop class is Tuesday 9/15."
+  },
+  {
+   "week": "Week 5",
+   "days": [
+    {
+     "date": "09/21",
+     "topic": "Peer Review",
+     "class": true
+    },
+    {
+     "date": "09/22"
+    },
+    {
+     "date": "09/23",
+     "topic": "Proj 1 Due & Presentations",
+     "class": true
+    },
+    {
+     "date": "09/24"
+    },
+    {
+     "date": "09/25"
+    }
+   ],
+   "note": "Project 1 due Wednesday."
+  },
+  {
+   "week": "Week 6",
+   "days": [
+    {
+     "date": "09/28",
+     "topic": "No class"
+    },
+    {
+     "date": "09/29 (M)",
+     "topic": "2D Graphics",
+     "class": true
+    },
+    {
+     "date": "09/30",
+     "topic": "3D Graphics",
+     "class": true
+    },
+    {
+     "date": "10/01"
+    },
+    {
+     "date": "10/02"
+    }
+   ]
+  },
+  {
+   "week": "Week 7",
+   "days": [
+    {
+     "date": "10/05",
+     "topic": "3D Printing",
+     "class": true
+    },
+    {
+     "date": "10/06"
+    },
+    {
+     "date": "10/07",
+     "topic": "Work Day",
+     "class": true
+    },
+    {
+     "date": "10/08"
+    },
+    {
+     "date": "10/09"
+    }
+   ]
+  },
+  {
+   "week": "Week 8",
+   "days": [
+    {
+     "date": "10/12",
+     "topic": "No class"
+    },
+    {
+     "date": "10/13"
+    },
+    {
+     "date": "10/14 (M)",
+     "topic": "Work Day",
+     "class": true
+    },
+    {
+     "date": "10/15"
+    },
+    {
+     "date": "10/16"
+    }
+   ]
+  },
+  {
+   "week": "Week 9",
+   "days": [
+    {
+     "date": "10/19",
+     "topic": "Peer Review",
+     "class": true
+    },
+    {
+     "date": "10/20"
+    },
+    {
+     "date": "10/21",
+     "topic": "Project 2 Prototype Due",
+     "class": true
+    },
+    {
+     "date": "10/22"
+    },
+    {
+     "date": "10/23"
+    }
+   ],
+   "note": "Project 2 Prototype Due Wednesday."
+  },
+  {
+   "week": "Week 10",
+   "days": [
+    {
+     "date": "10/26",
+     "topic": "Manipulate",
+     "class": true
+    },
+    {
+     "date": "10/27"
+    },
+    {
+     "date": "10/28",
+     "topic": "Dynamic",
+     "class": true
+    },
+    {
+     "date": "10/29"
+    },
+    {
+     "date": "10/30"
+    }
+   ]
+  },
+  {
+   "week": "Week 11",
+   "days": [
+    {
+     "date": "11/02",
+     "topic": "Interactivity",
+     "class": true
+    },
+    {
+     "date": "11/03",
+     "topic": "VOTE!!"
+    },
+    {
+     "date": "11/04",
+     "topic": "Interactivity",
+     "class": true
+    },
+    {
+     "date": "11/05"
+    },
+    {
+     "date": "11/06"
+    }
+   ],
+   "note": "Last day to withdraw is Thursday 11/5."
+  },
+  {
+   "week": "Week 12",
+   "days": [
+    {
+     "date": "11/09",
+     "topic": "Project 3 Work Day",
+     "class": true
+    },
+    {
+     "date": "11/10"
+    },
+    {
+     "date": "11/11",
+     "topic": "Project 3 Work Day",
+     "class": true
+    },
+    {
+     "date": "11/12"
+    },
+    {
+     "date": "11/13"
+    }
+   ]
+  },
+  {
+   "week": "Week 13",
+   "days": [
+    {
+     "date": "11/16",
+     "topic": "Project 2 Work Day",
+     "class": true
+    },
+    {
+     "date": "11/17"
+    },
+    {
+     "date": "11/18",
+     "topic": "Project 2 Due",
+     "class": true
+    },
+    {
+     "date": "11/19"
+    },
+    {
+     "date": "11/20"
+    }
+   ],
+   "note": "Project 2 Completed by Wednesday."
+  },
+  {
+   "week": "Week 14",
+   "days": [
+    {
+     "date": "11/23",
+     "topic": "Project 3 Feedback Day",
+     "class": true
+    },
+    {
+     "date": "11/24"
+    },
+    {
+     "date": "11/25 (F)",
+     "topic": "No class"
+    },
+    {
+     "date": "11/26",
+     "topic": "No class"
+    },
+    {
+     "date": "11/27",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 15",
+   "days": [
+    {
+     "date": "11/30",
+     "topic": "Project 3 Work Day",
+     "class": true
+    },
+    {
+     "date": "12/01"
+    },
+    {
+     "date": "12/02",
+     "topic": "Peer Review",
+     "class": true
+    },
+    {
+     "date": "12/03"
+    },
+    {
+     "date": "12/04"
+    }
+   ]
+  },
+  {
+   "week": "Week 16",
+   "days": [
+    {
+     "date": "12/07",
+     "topic": "Project 3 Presentations",
+     "class": true
+    },
+    {
+     "date": "12/08"
+    },
+    {
+     "date": "12/09",
+     "topic": "Project 3 Presentations",
+     "class": true
+    },
+    {
+     "date": "12/10"
+    },
+    {
+     "date": "12/11"
+    }
+   ],
+   "note": "Project 3 Due Monday. Last day of class 12/9. Last day to withdraw is Sunday 12/13."
+  },
+  {
+   "week": "Week 17",
+   "days": [
+    {
+     "date": "12/14"
+    },
+    {
+     "date": "12/15"
+    },
+    {
+     "date": "12/16"
+    },
+    {
+     "date": "12/17"
+    },
+    {
+     "date": "12/18"
+    }
+   ],
+   "note": "Art exhibition to be scheduled."
+  }
+ ]
+}

@@ -1,0 +1,370 @@
+{
+ "title": "MATH 245 Weekly Schedule",
+ "semester": "Spring 2021",
+ "weekdays": [
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri"
+ ],
+ "weeks": [
+  {
+   "week": "Week 1",
+   "days": [
+    {
+     "date": "02/01",
+     "class": true
+    },
+    {
+     "date": "02/02"
+    },
+    {
+     "date": "02/03",
+     "class": true
+    },
+    {
+     "date": "02/04"
+    },
+    {
+     "date": "02/05"
+    }
+   ]
+  },
+  {
+   "week": "Week 2",
+   "days": [
+    {
+     "date": "02/08",
+     "class": true
+    },
+    {
+     "date": "02/09"
+    },
+    {
+     "date": "02/10",
+     "class": true
+    },
+    {
+     "date": "02/11"
+    },
+    {
+     "date": "02/12",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 3",
+   "days": [
+    {
+     "date": "02/15",
+     "topic": "No class"
+    },
+    {
+     "date": "02/16"
+    },
+    {
+     "date": "02/17",
+     "class": true
+    },
+    {
+     "date": "02/18"
+    },
+    {
+     "date": "02/19"
+    }
+   ]
+  },
+  {
+   "week": "Week 4",
+   "days": [
+    {
+     "date": "02/22",
+     "class": true
+    },
+    {
+     "date": "02/23"
+    },
+    {
+     "date": "02/24",
+     "class": true
+    },
+    {
+     "date": "02/25"
+    },
+    {
+     "date": "02/26"
+    }
+   ]
+  },
+  {
+   "week": "Week 5",
+   "days": [
+    {
+     "date": "03/01",
+     "class": true
+    },
+    {
+     "date": "03/02"
+    },
+    {
+     "date": "03/03",
+     "topic": "Project 1 Due",
+     "class": true
+    },
+    {
+     "date": "03/04"
+    },
+    {
+     "date": "03/05"
+    }
+   ]
+  },
+  {
+   "week": "Week 6",
+   "days": [
+    {
+     "date": "03/08",
+     "class": true
+    },
+    {
+     "date": "03/09"
+    },
+    {
+     "date": "03/10",
+     "class": true
+    },
+    {
+     "date": "03/11"
+    },
+    {
+     "date": "03/12"
+    }
+   ]
+  },
+  {
+   "week": "Week 7",
+   "days": [
+    {
+     "date": "03/15",
+     "class": true
+    },
+    {
+     "date": "03/16"
+    },
+    {
+     "date": "03/17",
+     "class": true
+    },
+    {
+     "date": "03/18"
+    },
+    {
+     "date": "03/19"
+    }
+   ]
+  },
+  {
+   "week": "Week 8",
+   "days": [
+    {
+     "date": "03/22",
+     "class": true
+    },
+    {
+     "date": "03/23"
+    },
+    {
+     "date": "03/24",
+     "class": true
+    },
+    {
+     "date": "03/25"
+    },
+    {
+     "date": "03/26"
+    }
+   ]
+  },
+  {
+   "week": "Spring Break",
+   "days": [
+    {
+     "date": "03/29",
+     "topic": "No class"
+    },
+    {
+     "date": "03/30",
+     "topic": "No class"
+    },
+    {
+     "date": "03/31",
+     "topic": "No class"
+    },
+    {
+     "date": "04/01",
+     "topic": "No class"
+    },
+    {
+     "date": "04/02",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 9",
+   "days": [
+    {
+     "date": "04/05",
+     "class": true
+    },
+    {
+     "date": "04/06"
+    },
+    {
+     "date": "04/07",
+     "class": true
+    },
+    {
+     "date": "04/08"
+    },
+    {
+     "date": "04/09"
+    }
+   ]
+  },
+  {
+   "week": "Week 10",
+   "days": [
+    {
+     "date": "04/12",
+     "class": true
+    },
+    {
+     "date": "04/13"
+    },
+    {
+     "date": "04/14",
+     "class": true
+    },
+    {
+     "date": "04/15"
+    },
+    {
+     "date": "04/16"
+    }
+   ]
+  },
+  {
+   "week": "Week 11",
+   "days": [
+    {
+     "date": "04/19",
+     "class": true
+    },
+    {
+     "date": "04/20"
+    },
+    {
+     "date": "04/21",
+     "class": true
+    },
+    {
+     "date": "04/22"
+    },
+    {
+     "date": "04/23"
+    }
+   ]
+  },
+  {
+   "week": "Week 12",
+   "days": [
+    {
+     "date": "04/26",
+     "class": true
+    },
+    {
+     "date": "04/27"
+    },
+    {
+     "date": "04/28",
+     "class": true
+    },
+    {
+     "date": "04/29"
+    },
+    {
+     "date": "04/30"
+    }
+   ]
+  },
+  {
+   "week": "Week 13",
+   "days": [
+    {
+     "date": "05/03",
+     "class": true
+    },
+    {
+     "date": "05/04"
+    },
+    {
+     "date": "05/05",
+     "class": true
+    },
+    {
+     "date": "05/06"
+    },
+    {
+     "date": "05/07"
+    }
+   ]
+  },
+  {
+   "week": "Week 14",
+   "days": [
+    {
+     "date": "05/10",
+     "class": true
+    },
+    {
+     "date": "05/11"
+    },
+    {
+     "date": "05/12",
+     "class": true
+    },
+    {
+     "date": "05/13"
+    },
+    {
+     "date": "05/14"
+    }
+   ]
+  },
+  {
+   "week": "Week 15",
+   "days": [
+    {
+     "date": "05/17",
+     "topic": "Project 3 Due",
+     "class": true
+    },
+    {
+     "date": "05/18"
+    },
+    {
+     "date": "05/19"
+    },
+    {
+     "date": "05/20"
+    },
+    {
+     "date": "05/21"
+    }
+   ]
+  }
+ ]
+}

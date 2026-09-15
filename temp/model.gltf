@@ -216,9 +216,9 @@
       "doubleSided": true,
       "pbrMetallicRoughness": {
         "baseColorFactor": [
-          0.59,
-          0.69,
-          0.85,
+          0.5,
+          0.5,
+          0.5,
           1.0
         ]
       }
@@ -227,9 +227,9 @@
       "doubleSided": true,
       "pbrMetallicRoughness": {
         "baseColorFactor": [
-          0.59,
-          0.69,
-          0.85,
+          0.0,
+          0.0,
+          1.0,
           1.0
         ]
       }
@@ -238,9 +238,9 @@
       "doubleSided": true,
       "pbrMetallicRoughness": {
         "baseColorFactor": [
-          0.59,
-          0.69,
-          0.85,
+          1.0,
+          0.0,
+          0.0,
           1.0
         ]
       }
@@ -249,9 +249,9 @@
       "doubleSided": true,
       "pbrMetallicRoughness": {
         "baseColorFactor": [
-          0.59,
-          0.69,
-          0.85,
+          0.0,
+          1.0,
+          0.0,
           1.0
         ]
       }

@@ -1,71 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Math with Mathematica &bull; Course Content</title>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="author" content="Christopher Hanusa" />
-        <link rel="shortcut icon" href="favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="../../../css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="../../../css/style1.css" />
-        <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css' />
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>    
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-                ga('create', 'UA-47380773-6', 'auto');
-                ga('send', 'pageview');
-        </script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header_wrap">
-                <div class="header">
-                    <span class="left">
-                        <a href="../../../index.html">HOME</a> > 
-                        <a href="../../index.html">Courses</a> > 
-                        <a href="index.html">213fa18</a>
-                    </span>
-                <div class="header_right">
-                    <span class="right">
-                        <a href="index.html">Home</a> &bull; 
-                        <a href="syllabus.html">Syllabus</a> &bull; 
-                        <a href="letters.html">Letters</a> &bull; 
-                        <a href="calendar.html">Calendar</a> &bull; 
-                        <a href="notes.html">Content</a> &bull; 
-                        <a href="project.html">Projects</a>
-                    </span>
-                </div>
-                </div>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATH 213 Course Content (Fall 2018) | Christopher Hanusa</title>
+    <link rel="icon" type="image/png" href="../../../images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Fenix" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
 
-            <div class="main">
-                           
-                <div class="course_head">            
-                <div class="course_head_img"><a href="index.html"><img src="../../../images/213c.png" height="100"/></a></div>
-                <div class="course_head_suptitle_213">Math with Mathematica, Fall 2018</div>
-                <div class="course_head_title_213">Course Content</div>
-                </div>
-                
-                <div class="course_main_213">
-                    <div class="notes_section"><span style="color: red; background: #FFB">This page is for a past course.  <a href="../../../courses/archive.html">Find your current course here.</a></span><br>&nbsp;</div>
-                    <p>Check back often for homework assignments, tutorials, and key topics covered each day.
-                    <br><i>This schedule is approximate and subject to change!</i></p>
+    <link rel="stylesheet" href="../../course.css">
+    <style>
+        body {
+            --primary-color: #A33;
+            --course-bright: #C66;
+            --course-faded: #d99;
+            --course-btn: #822;
+            --nav-hover: #fff;
+            --skip-label-col: #fff;
+            --cal-band: #FCC;
+            --cal-class: #C66;
+            --cal-event: #eee;
+            --cal-exam: #F96;
+            --cal-exam-text: #000;
+            background-color: #faf4f4; /* very slight course tint */
+        }
+    </style>
+</head>
+<body>
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-    <div class="notes_section">Introduction to Mathematica (5 tutorials)</div>
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <nav id="main-nav">
+        <div class="nav-brand">
+            <a href="../../../index.html"><img src="../../../images/hanusa-xyz.png" alt="hanusa.xyz logo" height="50px"></a>
+        </div>
+        <div class="nav-links">
+            <a href="../../../research.html">Research</a>
+            <a href="../../../design.html">Design</a> 
+            <a href="../../../education.html" class="active" style="color:#1d5adc;">Education</a>
+            <a href="../../../strategy.html">Strategy</a>
+            <a href="https://hanusa.xyz/blog">Insights</a>
+            <a href="../../../contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="page-grid">
+        <main class="main-column">
+            <span class="course-tag">MATH 213 &bull; Fall 2018</span>
+
+            <nav class="course-nav">
+                <a href="index.html">Home</a>
+                <a href="syllabus.html">Syllabus</a>
+                <a href="letters.html">Letters</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="project.html">Projects</a>
+                <a href="notes.html" class="here">Content</a>
+            </nav>
+
+            <section class="hero-section">
+                <h1>Course Content</h1>
+                <div class="hero-intro"><p>Check back often for homework assignments, tutorials, and key topics covered each day.
+                    <br><i>This schedule is approximate and subject to change!</i></p></div>
+            </section>
+
+            <section class="section-block">
+                <div class="text-side course-content">
+<div class="notes_section">Introduction to Mathematica (5 tutorials)</div>
+
+
 
 <div class="date">Monday, August 27</div>
 
 <div class="defn">In class: </div>
 <ul>
     <li>Welcome!</li>
-    <li><a href="213fa18day1.pdf">Introduction &amp; Syllabus Discussion</a> <a href="213fa18day1c.pdf">'</a></li>
+    <li><a href="/courses/213/18/213fa18day1.pdf">Introduction &amp; Syllabus Discussion</a> <a href="/courses/213/18/213fa18day1c.pdf">'</a></li>
     <li>Tutorial 1: <a href="tutorial1.html">Introduction to Mathematica</a></li>
     <li>Log on to the Queens College Google Apps for Education and sign up for our Google Groups page: </li> 
         <ul>
@@ -116,12 +123,9 @@
 <div class="defn">In class: </div>
 <ul>
     <li>Discussion about the Daily Thread.</li>
-    <li>Tutorial 2: <a href="mma/213fa18tut2.nb">Creating and Visualizing Lists</a> (Download and follow along with this .nb file)</li>
+    <li>Tutorial 2: <a href="/courses/213/18/mma/213fa18tut2.nb">Creating and Visualizing Lists</a> (Download and follow along with this .nb file)</li>
 </ul>
-<!--
-<div class="defn">Today's commands:</div>
-<div class="commands">Range, Table, TableForm, TraditionalForm, ListPlot, ListLinePlot, Tally, Histogram</div>
--->    
+    
                     
       <div class="date"><span style="color: #A00;"><i><b>No class on Monday, September 3</b></i></span></div>
               
@@ -132,7 +136,7 @@
 <ul>
     <li>Make sure you have access to a copy of Mathematica outside of class!!!</li>  
     <li>Complete Tutorial 2 if you were unable to finish it in class.</li>
-    <li>In the week between August 29 and September 5, meet for one hour <b>outside of class</b> with at least one other classmate.  Your goal is to get together to talk about Mathematica, working together to complete Tutorial 2 or explore online resources together, which may include the <a href="demonstrations.wolfram.com">Wolfram Demonstrations Project</a> or another link on our <a href="index.html">home page</a>. You may also wish to work together to complete the Daily Question.
+    <li>In the week between August 29 and September 5, meet for one hour <b>outside of class</b> with at least one other classmate.  Your goal is to get together to talk about Mathematica, working together to complete Tutorial 2 or explore online resources together, which may include the <a href="/courses/213/18/demonstrations.wolfram.com">Wolfram Demonstrations Project</a> or another link on our <a href="index.html">home page</a>. You may also wish to work together to complete the Daily Question.
     </li>
     <li>Write one paragraph about something that you learned or experienced that you would not have if you had worked alone. Also write down the name of the person you met with and when you met! I will collect this paragraph Wednesday and it will count toward your class participation grade.</li>
 
@@ -144,12 +148,9 @@
     <li>Turn in your paragraph that you wrote up about your meeting with your classmate.</li>
     <li>Daily Thread Discussion</li>
     <li>Discussion about what is expected for Project 1.</li>
-    <li>Tutorial 3: <a href="mma/213fa18tut3.nb">Helpful Mathematica Techniques and Manipulating Lists</a> (.nb) </li>
+    <li>Tutorial 3: <a href="/courses/213/18/mma/213fa18tut3.nb">Helpful Mathematica Techniques and Manipulating Lists</a> (.nb) </li>
 </ul>
-                    <!--
-<div class="defn">Today's operators and commands:</div>
-<div class="commands">=, ;, %, //, Remove, Table, Length, Total, Flatten, Append, Prepend, Part, [[ ]], ;;</div>
--->
+                    
 <div class="date"><span style="color: #A00;"><i><b>No class on Monday, September 10</b></i></span></div>
                     
                     
@@ -157,13 +158,13 @@
 <div class="defn">Before class:</div>
 <ul>
     <li>Complete Tutorial 3 if you were unable to finish it in class.</li>  
-    <li>Complete <a href="assessment/assessment1.pdf">Self-Assessment #1</a> using <b>pencil and paper</b> to make sure you are understanding the key concepts so far. If you are not sure what the correct answers are, use Mathematica to help, or ask about it on the discussion board. <!--Prof. Chris in class.-->
+    <li>Complete <a href="/courses/213/18/assessment/assessment1.pdf">Self-Assessment #1</a> using <b>pencil and paper</b> to make sure you are understanding the key concepts so far. If you are not sure what the correct answers are, use Mathematica to help, or ask about it on the discussion board. 
     </li>
     <li>Go to our <a href="https://groups.google.com/a/qc.cuny.edu/forum/#!forum/213fa18-list">Discussion Board</a> on Google Groups and contribute to the <b>Daily Thread: September 12</b>.  Today you are expected to reply to <b>at least one of</b> your classmates' responses. Spend time providing answers to their questions or letting them know that they are not alone in their confusion. 
         
     <br><span style="color: #633;"><b>Important:</b></span> It is OK if you are unable to understand everything that is going on.  Since everyone will be summarizing what they learn or find interesting, we will practice and gain experience and confidence as a group.
     </li>
-<!--    <li>Watch <a href="http://www.wolfram.com/wolfram-u/an-elementary-introduction-to-the-wolfram-language/09-interactive-manipulation.html">this seven minute introduction to the Manipulate function</a> to prepare for Tutorial 4.  (You will have to log in with your Wolfram ID.)  Feel free to try to solve some of the Exercises on the right side of the screen.</li>-->
+
     <li>Spend some time thinking about the topic you would like to work on for <a href="project.html">Project 1</a>.  Write a paragraph that answers the following:
         <blockquote>Which class will you focus on? Who will be the audience for your Mathematica notebook? What topic in that class was difficult to understand and would benefit from a Mathematica tutorial?</blockquote>
         <b>Send your paragraph in the text of an email (not in a Word document) to chanusa@qc.cuny.edu before class on Wednesday, September 12.</b>
@@ -173,8 +174,8 @@
 <ul>
     <li>Daily Thread Discussion</li>
     <li>Self-assessment Discussion</li>
-<!--    <li>Discussion about <span style="font-family: monospace;">=</span>, <span style="font-family: monospace;">:=</span>, functions, and pure functions</li> -->
-    <li>Tutorial 4: <a href="mma/213fa18tut4.nb">Functions and Map</a> (.nb)</li>
+
+    <li>Tutorial 4: <a href="/courses/213/18/mma/213fa18tut4.nb">Functions and Map</a> (.nb)</li>
     <li>Prof. Chris will walk around and talk with everyone about their projects.</li>
 </ul>
                     
@@ -186,25 +187,20 @@
     <li>Watch the video <a href="http://www.wolfram.com/broadcast/video.php?c=89&v=299">Elementary Programming in Mathematica</a> through time 10:30 to learn about defining functions.  Another good resource is <a href="http://www.wolfram.com/wolfram-u/an-elementary-introduction-to-the-wolfram-language/40-defining-your-own-functions.html">this video</a>.</li>
     <li>Go to our <a href="https://groups.google.com/a/qc.cuny.edu/forum/#!forum/213fa18-list">Discussion Board</a> and contribute to the <b>Daily Thread: September 17</b>.</li>  
     <li>Research some concepts that you will need for your project.  Start a Mathematica notebook where you play around with some of these concepts and developed an outline of your tutorial.  Bring this notebook to class.</li>
-<!--    <li>Meet outside of class with one or more classmates for an hour.  Compare your answers to the self-assessment.  Each of you should spend five minutes talking how you plan to approach Project 1 and get feedback from your classmates.  You can also work together to answer the daily thread.</li>--></ul>
+</ul>
 <div class="defn">In class: </div>
 <ul>
     <li>Daily Question Discussion</li>
-<!--    <li>Introduction to <span style="font-family: monospace;">Map</span></li>-->
-    <li>Tutorial 5: <a href="mma/213fa18tut5.nb">Unnamed Functions</a> (.nb)</li>
+
+    <li>Tutorial 5: <a href="/courses/213/18/mma/213fa18tut5.nb">Unnamed Functions</a> (.nb)</li>
     <li>The second half of class will be an in-class project work day.  Prof. Chris will walk around and talk with everyone about their projects.</li>
 </ul>
                     
 <div class="date"><span style="color: #A00;"><i><b>No class on Wednesday, September 19</b></i></span></div>
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
--->
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-<div class="notes_section">Functions and Patterns (3 tutorials)</div>
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
--->
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
--->
+
+
+
                     
 <div class="date">Monday, September 24</div>
 <div class="defn">Before class:</div>
@@ -248,18 +244,16 @@
 <ul>
     <li>Project Presentations.</li>
     <li>You are expected to arrive <i><b>at 10:00am sharp</b></i> to see everyone's presentations.</li>
-</ul>                
+</ul>
+                </div>
+            </section>
 
-
-                    
-                    
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-
+            <section class="section-block">
+                <div class="text-side course-content">
 <div class="notes_section">2D and 3D Graphics (4 tutorials)</div>
                     
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
 
                     
 <div class="date">Wednesday, October 3</div>
@@ -276,13 +270,13 @@
     Let me know if you have any concerns.</li>
     <li>Sign up for a <a href="https://www.shapeways.com/education">Shapeways for Education</a> account <b>with your Queens College email address</b>. Send Prof. Chris an email with your Shapeways username.</li>
     <li>Make sure you have caught up with Tutorials 1&ndash;5.</li>
-    <li>Complete <a href="assessment/assessment2.pdf">Self-Assessment #2</a> using <b>pencil and paper</b> to make sure you are understanding the key concepts so far. If you are not sure what the correct answers are, use Mathematica to help!  Take time to meet with classmates to go over the self-assessment to make sure you are comfortable with what we have learned so far.</li>
+    <li>Complete <a href="/courses/213/18/assessment/assessment2.pdf">Self-Assessment #2</a> using <b>pencil and paper</b> to make sure you are understanding the key concepts so far. If you are not sure what the correct answers are, use Mathematica to help!  Take time to meet with classmates to go over the self-assessment to make sure you are comfortable with what we have learned so far.</li>
     <li>Read through the information about <a href="project.html">Project 2</a>.</li>
 </ul>
 <div class="defn">In class:</div>
 <ul>
     <li>Discussion of self-assessment 2</li>
-    <li>Tutorial 6: <a href="mma/213fa18tut6.nb">Introduction to 2D Graphics</a>.</li>
+    <li>Tutorial 6: <a href="/courses/213/18/mma/213fa18tut6.nb">Introduction to 2D Graphics</a>.</li>
 </ul>                
 
 
@@ -298,7 +292,7 @@
 </ul>
 <div class="defn">In class:</div>
 <ul>
-    <li>Tutorial 7: <a href="mma/213fa18tut7.nb">Introduction to 3D Graphics</a></li>
+    <li>Tutorial 7: <a href="/courses/213/18/mma/213fa18tut7.nb">Introduction to 3D Graphics</a></li>
 </ul>
 
                     
@@ -330,8 +324,8 @@
 <div class="defn">In class:</div>
 <ul>
     <li>Daily Thread Discussion</li>
-    <li>Visit by Matt Greco (QC Art), presenting 3D models and discussing sculpture. <!--(<a href="http://www.professorgreco.com/wp-content/uploads/2015/03/3D-Printing-and-The-Basic-Aesthetic-Value-of-Sculpture.pptx">Link to his slideshow</a>)--></li>
-    <li>Tutorial 8: <a href="mma/213fa18tut8.nb">3D Printing using Mathematica</a></li>
+    <li>Visit by Matt Greco (QC Art), presenting 3D models and discussing sculpture. </li>
+    <li>Tutorial 8: <a href="/courses/213/18/mma/213fa18tut8.nb">3D Printing using Mathematica</a></li>
 </ul>
 
 
@@ -349,8 +343,8 @@
 <div class="defn">In class:</div>
 <ul>
     <li>Daily Thread Discussion</li>
-    <li>Tutorial 9: <a href="mma/213fa18tut9.nb">Advanced 3D Printing with MeshRegions</a></li>
-    <li>Check out some <a href="../../../mathematica/index.html#mwe">Minimal Working Examples</a>.</li>
+    <li>Tutorial 9: <a href="/courses/213/18/mma/213fa18tut9.nb">Advanced 3D Printing with MeshRegions</a></li>
+    <li>Check out some <a href="/mathematica/index.html#mwe">Minimal Working Examples</a>.</li>
     <li>Prof. Chris will walk around and talk to you about your project ideas.</li>
 </ul>
 
@@ -410,16 +404,15 @@
     <li>Upload final draft to Shapeways.</li>
     <li>Order prototypes for delivery within 10 days.</li>
 </ul>
-                    
-                    
-                    
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> 
+                </div>
+            </section>
 
+            <section class="section-block">
+                <div class="text-side course-content">
 <div class="notes_section">Programming and Interactivity (3 tutorials)</div>
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
  
 
 <div class="date">Monday, November 5</div>
@@ -439,7 +432,7 @@
 <ul>
     <li>Discussion of Project 3</li>
     <li>Daily Thread Discussion</li>
-    <li>Tutorial 10: <a href="mma/213fa18tut10.nb">Manipulate</a></li>  
+    <li>Tutorial 10: <a href="/courses/213/18/mma/213fa18tut10.nb">Manipulate</a></li>  
 </ul>
 
       
@@ -453,7 +446,7 @@
 <div class="defn">In class:</div>
 <ul>
     <li>Discussion of the Daily Thread.</li>
-    <li>Tutorial 11: <a href="mma/213fa18tut11.nb">Dynamic Evaluation</a></li>  
+    <li>Tutorial 11: <a href="/courses/213/18/mma/213fa18tut11.nb">Dynamic Evaluation</a></li>  
 </ul>
 
 <div class="date">Monday, November 12</div>
@@ -462,7 +455,7 @@
     <li>Complete Tutorial 11 if you were unable to finish it in class.</li>
     <li>Professor Chris is out of town this week.  Today is an out-of-class work day.</li>
     <li>You are expected to work on and complete:<br>
-        Tutorial 12: <a href="mma/213fa18tut12.nb">Interactivity</a></li>  
+        Tutorial 12: <a href="/courses/213/18/mma/213fa18tut12.nb">Interactivity</a></li>  
     <li>As you work through these tutorials, start brainstorming ideas for what you might investigate interactively in Mathematica for <a href="project.html">Project 3</a>.</li>
 </ul>
 
@@ -479,7 +472,7 @@
 <div class="defn">In class:</div>
 <ul>
     <li>Bring your prototype to class.</li>
-    <li>We will be holding a peer review session.  <a href="213fa18proj2peer.pdf">Here is a copy of the peer review worksheet</a>.</li>  
+    <li>We will be holding a peer review session.  <a href="/courses/213/18/213fa18proj2peer.pdf">Here is a copy of the peer review worksheet</a>.</li>  
     <li>Professor Chris is out of town this week.  Professor Zeng will coordinate the peer review on Wednesday November 14.  He will take attendance and it will count toward your participation grade.</li>
 </ul>
 
@@ -513,7 +506,7 @@
 <div class="defn">Before class:</div>
 <ul>    
     <li>Complete Tutorials 11 and 12 if you were unable to finish them before.</li>
-    <li>Complete the <a href="assessment/assessment4.pdf">Self-assessment on Interactivity</a></li>
+    <li>Complete the <a href="/courses/213/18/assessment/assessment4.pdf">Self-assessment on Interactivity</a></li>
     <li>Comment on the course <a href="https://groups.google.com/a/qc.cuny.edu/forum/#!forum/213fa18-list">Discussion Board</a> with a question about interactivity.</li>
     <li>Finalize your proposed topic for Project 3.</li>
 </ul>
@@ -590,27 +583,34 @@
         <li><a href="https://www.dropbox.com/request/4wlPWnvxAZ0bGHGvHQ9u">Upload your Mathematica file here</a>. Make sure its file name is <i>p3-YourFirstName.nb</i>.</li>
     </ul>
 </ul>
+                </div>
+            </section>
+        </main>
 
-
-                        
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                </div> <!-- End course_main-->
-            </div>  <!-- End middle -->  
-
-            <div class="footer_wrap">
-                 <div class="footer">
-                Christopher Hanusa   
-                 <span class="right">  
-                     <a href="../../../index.html"><img width="32" height="32" style="background: #fff; " src="../../../images/h.png" alt="Home page" /></a> 
-                     <a href="http://mathzorro.blogspot.com/"><img width="32" height="32" src="../../../images/b.png" style="vertical-align: center;" alt="Home page" /></a> 
-                     <a href="https://plus.google.com/+ChristopherHanusa"><img width="32" height="32" src="../../../images/g.png" style="vertical-align: center;" alt="Home page" /></a> 
-                     <a href="http://twitter.com/mathzorro"><img width="32" height="32" src="../../../images/t.png" alt="Home page" /></a> 
-                     <a href="https://www.facebook.com/pages/Christopher-Hanusa/553568864724342"><img width="32" height="32" src="../../../images/f.png" alt="Home page" /></a></span>
-                 </div>
-                 
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <div class="widget-header">
+                    <h3>Course Links</h3>
+                </div>
+                <ul class="course-links">
+                    <li><a href="syllabus.html">&#128220; Syllabus</a></li>
+                    <li><a href="letters.html">&#9993;&#65039; Letters from Past Students</a></li>
+                    <li><a href="calendar.html">&#128197; Calendar</a></li>
+                    <li><a href="notes.html">&#128218; Course Content</a></li>
+                    <li><a href="project.html">&#128736;&#65039; Projects</a></li>
+                </ul>
+                <a href="mailto:chanusa@qc.cuny.edu" class="btn desktop-view-all" style="width:100%; text-align:center;">Contact Prof. Hanusa</a>
             </div>
-        </div> <!-- End container -->
-    </body>
+        </aside>
+    </div>
+
+    <footer>
+        <p class="footer-links">&copy; 2026 Christopher Hanusa &nbsp;&middot;&nbsp;
+            <a href="https://bsky.app/profile/mathzorro.bsky.social" aria-label="Bluesky" title="Bluesky"><svg viewBox="0 0 24 24"><path d="M12 10.8C10.9 8.5 7.9 4.4 5.1 2.4 2.4.5 1.4.8 .8 1.1.1 1.5 0 2.6 0 3.3s.4 5.5.6 6.3c.8 2.7 3.6 3.6 6.2 3.3-3.8.6-7.2 2-2.7 6.9 4.9 5.1 6.7-1.1 7.9-4.2 1.2 3.1 2.6 9 7.8 4.2 4.6-4.9 1.2-6.3-2.6-6.9 2.6.3 5.4-.6 6.2-3.3.2-.8.6-5.6.6-6.3s-.1-1.8-.8-2.2c-.6-.3-1.6-.6-4.3 1.3C16.1 4.4 13.1 8.5 12 10.8z"/></svg></a>
+            <a href="https://instagram.com/mathzorro" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2m0 3.6a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-10.5a1.4 1.4 0 11-2.9 0 1.4 1.4 0 012.9 0z"/></svg></a>
+            <a href="https://www.linkedin.com/in/christopher-hanusa/" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3-1.9 0-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.2 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7 20.4H3.4V9H7v11.4z"/></svg></a>
+        </p>
+    </footer>
+
+</body>
 </html>

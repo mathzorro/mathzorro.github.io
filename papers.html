@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Christopher Hanusa</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Fenix" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* Small styling for the number */
+        .paper-number {
+            font-weight: bold;
+            color: #888;
+            margin-right: 5px;
+        }
+
+        /* --- Tag filter pills --- */
+        .filter-row {
+            width: 100%;
+            font-size: 0.95rem;
+            margin-top: 4px;
+        }
+        .filter-pill {
+            font-family: 'Fenix', serif;
+            font-size: 0.9rem;
+            border-radius: 12px;
+            padding: 1px 12px;
+            margin-left: 4px;
+            cursor: pointer;
+            background: #fff;
+            border: 1px solid;
+            transition: all 0.15s;
+        }
+        /* pill colors extracted from the hanusa.xyz logo:
+           research red #e7210e, design teal #13b272, education blue #1d5adc
+           (strategy, for the talks page later: darker yellow #b8860b) */
+        .pill-all       { color: #555;    border-color: #999; }
+        .pill-research  { color: #e7210e; border-color: #e7210e; }
+        .pill-design    { color: #13b272; border-color: #13b272; }
+        .pill-education { color: #1d5adc; border-color: #1d5adc; }
+        .pill-all.active       { background: #555;    color: #fff; }
+        .pill-research.active  { background: #e7210e; color: #fff; }
+        .pill-design.active    { background: #13b272; color: #fff; }
+        .pill-education.active { background: #1d5adc; color: #fff; }
+        .filter-count { color: #888; margin-left: 8px; }
+        .paper-item.tag-hidden { display: none; }
+    </style>
+</head>
+<body>
+
+    <nav id="main-nav">
+        <div class="nav-brand">
+            <a href="index.html"><img src="images/hanusa-xyz.png" alt="hanusa.xyz logo" height="50px"></a>
+        </div>
+        <div class="nav-links">
+            <a href="research.html" class="active" style="color:#e7210e;">Research</a>
+            <a href="design.html">Design</a> 
+            <a href="education.html">Education</a>
+            <a href="strategy.html">Strategy</a>
+            <a href="https://hanusa.xyz/blog">Insights</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="single-column-layout">
+        
+        <div class="controls">
+            <h2>Publication List</h2>
+            <div class="button-group">
+                <button id="abstract-toggle" class="toggle-btn">Show Abstracts</button>
+                <button id="bibtex-toggle" class="toggle-btn">Show BibTeX</button>
+            </div>
+            <div class="profile-links">
+                <a href="https://arxiv.org/search/?searchtype=author&query=Hanusa%2C+C+R+H&order=-announced_date_first&size=50&abstracts=show" target="_blank">arXiv</a> | 
+                <a href="http://www.ams.org/mathscinet/search/publications.html?pg4=AUCN&amp;s4=Hanusa" target="_blank">MathSciNet</a> | 
+                <a href="https://scholar.google.com/citations?user=hGcVBdEAAAAJ" target="_blank">Google Scholar</a>
+            </div>
+            <div class="filter-row">
+                Filter this list:
+                <button class="filter-pill pill-all active" data-tag="all">All</button>
+                <button class="filter-pill pill-research" data-tag="research">Research</button>
+                <button class="filter-pill pill-design" data-tag="design">Design</button>
+                <button class="filter-pill pill-education" data-tag="education">Education</button>
+                <span class="filter-count" id="filter-count"></span>
+            </div>
+        </div>
+
+        <div id="papers-container">
+            <p style="text-align:center; color:#888;">Loading papers...</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="footer-links">&copy; 2026 Christopher Hanusa &nbsp;&middot;&nbsp;
+            <a href="https://bsky.app/profile/mathzorro.bsky.social" aria-label="Bluesky" title="Bluesky"><svg viewBox="0 0 24 24"><path d="M12 10.8C10.9 8.5 7.9 4.4 5.1 2.4 2.4.5 1.4.8 .8 1.1.1 1.5 0 2.6 0 3.3s.4 5.5.6 6.3c.8 2.7 3.6 3.6 6.2 3.3-3.8.6-7.2 2-2.7 6.9 4.9 5.1 6.7-1.1 7.9-4.2 1.2 3.1 2.6 9 7.8 4.2 4.6-4.9 1.2-6.3-2.6-6.9 2.6.3 5.4-.6 6.2-3.3.2-.8.6-5.6.6-6.3s-.1-1.8-.8-2.2c-.6-.3-1.6-.6-4.3 1.3C16.1 4.4 13.1 8.5 12 10.8z"/></svg></a>
+            <a href="https://instagram.com/mathzorro" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2m0 3.6a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-10.5a1.4 1.4 0 11-2.9 0 1.4 1.4 0 012.9 0z"/></svg></a>
+            <a href="https://www.linkedin.com/in/christopher-hanusa/" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3-1.9 0-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.2 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7 20.4H3.4V9H7v11.4z"/></svg></a>
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const container = document.getElementById('papers-container');
+            const abstractBtn = document.getElementById('abstract-toggle');
+            const bibtexBtn = document.getElementById('bibtex-toggle');
+            
+            let abstractsVisible = false;
+            let bibtexVisible = false;
+
+            // --- HELPER: FORMAT AUTHORS HTML ---
+            function formatAuthorsHtml(authors) {
+                if (!authors || authors.length === 0) return "";
+                
+                // Convert each author object to a string (clickable if url exists)
+                const parts = authors.map(a => {
+                    return a.url ? `<a href="${a.url}" target="_blank" style="color:inherit; text-decoration:none; border-bottom:1px dotted #666;">${a.name}</a>` : a.name;
+                });
+
+                // Join with commas and 'and'
+                if (parts.length === 1) return parts[0];
+                if (parts.length === 2) return parts.join(" and ");
+                return parts.slice(0, -1).join(", ") + ", and " + parts[parts.length - 1];
+            }
+
+            // --- HELPER: FORMAT AUTHORS TEXT (For BibTeX) ---
+            function formatAuthorsBibtex(authors) {
+                if (!authors) return "";
+                return authors.map(a => a.name).join(" and ");
+            }
+
+            // --- BIBTEX GENERATOR FUNCTION ---
+            function generateBibtex(p) {
+                const authorsText = formatAuthorsBibtex(p.authors);
+                let bib = `@article{${p.id},
+  title={${p.title}},
+  author={${authorsText}},
+  journal={${p.venue || p.journal || "Preprint"}},
+  year={${p.year}}`;
+                
+                // Add volume if it exists
+                if (p.volume) {
+                    bib += `,\n  volume={${p.volume}}`;
+                }
+                
+                bib += `\n}`;
+                return bib;
+            }
+
+            // 1. Fetch Data
+            fetch('papers.json')
+                .then(response => {
+                    if (!response.ok) throw new Error("Could not load papers.json");
+                    return response.json();
+                })
+                .then(papers => {
+                    container.innerHTML = ''; 
+
+                    papers.forEach(paper => {
+                        const article = document.createElement('article');
+                        article.className = 'paper-item';
+                        article.dataset.tags = (paper.tags || ['research']).join(' ');
+
+                        // --- LINKS LOGIC ---
+                        let linksHtml = '';
+                        
+                        // 1. PDF Link (Only if showPDF is not explicitly false)
+                        if (paper.showPDF !== false) {
+                            const pdfUrl = `https://hanusa.xyz/research/papers/${paper.id}.pdf`;
+                            linksHtml += `<a href="${pdfUrl}" target="_blank">[PDF]</a>`;
+                        }
+
+                        // 2. Extra Links from JSON
+                        if (paper.links && paper.links.length > 0) {
+                            linksHtml += paper.links.map(link => 
+                                `<a href="${link.url}" target="_blank">[${link.label}]</a>`
+                            ).join('');
+                        }
+
+                        // --- CONTENT GENERATION ---
+                        const authorsHtml = formatAuthorsHtml(paper.authors);
+                        const bibtexString = generateBibtex(paper);
+                        
+                        // Handle Venue and Volume Display
+                        let venueText = paper.venue || paper.journal || "";
+                        if (paper.volume) {
+                            venueText += `, Vol ${paper.volume}`;
+                        }
+                        
+                        // Handle Numbering (Ensure space after dot)
+                        const numberStr = paper.number ? `<span class="paper-number">${paper.number}.</span>` : "";
+
+                        article.innerHTML = `
+                            <span class="paper-title">${numberStr} ${paper.title}</span>
+                            <div class="paper-meta">
+                                ${authorsHtml}. <b>${venueText}</b> (${paper.year}). ${paper.status ? `(${paper.status})` : ''}
+                            </div>
+                            <div class="paper-links">
+                                ${linksHtml}
+                            </div>
+                            
+                            <div class="paper-abstract">
+                                <strong>Abstract:</strong> ${paper.abstract}
+                            </div>
+
+                            <div class="paper-bibtex"><button class="copy-btn" onclick="copyToClipboard(this)">Copy</button><span class="bibtex-text">${bibtexString}</span></div>
+                        `;
+                        container.appendChild(article);
+                    });
+
+                    // Deep link: e.g. #education pre-activates that filter
+                    const initTag = location.hash.replace('#','').toLowerCase();
+                    const initPill = document.querySelector(`.filter-pill[data-tag="${initTag}"]`);
+                    if (initPill) initPill.click();
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    container.innerHTML = '<p>Unable to load publication list.</p>';
+                });
+
+            // 1b. Tag filtering
+            const pills = document.querySelectorAll('.filter-pill');
+            const countEl = document.getElementById('filter-count');
+            function applyFilter(tag) {
+                const items = container.querySelectorAll('.paper-item');
+                let shown = 0;
+                items.forEach(item => {
+                    const match = (tag === 'all') || item.dataset.tags.split(' ').includes(tag);
+                    item.classList.toggle('tag-hidden', !match);
+                    if (match) shown++;
+                });
+                countEl.textContent = (tag === 'all') ? '' : `Showing ${shown} of ${items.length}`;
+            }
+            pills.forEach(pill => {
+                pill.addEventListener('click', function() {
+                    pills.forEach(p => p.classList.remove('active'));
+                    this.classList.add('active');
+                    applyFilter(this.dataset.tag);
+                    history.replaceState(null, '', this.dataset.tag === 'all'
+                        ? location.pathname : '#' + this.dataset.tag);
+                });
+            });
+
+            // 2. Toggle Abstracts
+            abstractBtn.addEventListener('click', function() {
+                abstractsVisible = !abstractsVisible;
+                if (abstractsVisible) {
+                    container.classList.add('show-abstracts');
+                    abstractBtn.textContent = "Hide Abstracts";
+                    abstractBtn.classList.add('active');
+                } else {
+                    container.classList.remove('show-abstracts');
+                    abstractBtn.textContent = "Show Abstracts";
+                    abstractBtn.classList.remove('active');
+                }
+            });
+
+            // 3. Toggle BibTeX
+            bibtexBtn.addEventListener('click', function() {
+                bibtexVisible = !bibtexVisible;
+                if (bibtexVisible) {
+                    container.classList.add('show-bibtex');
+                    bibtexBtn.textContent = "Hide BibTeX";
+                    bibtexBtn.classList.add('active');
+                } else {
+                    container.classList.remove('show-bibtex');
+                    bibtexBtn.textContent = "Show BibTeX";
+                    bibtexBtn.classList.remove('active');
+                }
+            });
+        });
+
+        // 4. Global Copy Function
+        function copyToClipboard(btn) {
+            const textToCopy = btn.nextElementSibling.innerText;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const originalText = btn.innerText;
+                btn.innerText = "Copied!";
+                setTimeout(() => { btn.innerText = originalText; }, 2000);
+            });
+        }
+    </script>
+
+</body>
+</html>

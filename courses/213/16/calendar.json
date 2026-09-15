@@ -1,0 +1,421 @@
+{
+ "title": "MATH 213 Weekly Schedule",
+ "semester": "Spring 2016",
+ "weekdays": [
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri"
+ ],
+ "weeks": [
+  {
+   "week": "Week 1",
+   "days": [
+    {
+     "date": "02/01",
+     "topic": "Intro",
+     "class": true
+    },
+    {
+     "date": "02/02"
+    },
+    {
+     "date": "02/03",
+     "topic": "Hwk 1 Lists",
+     "class": true
+    },
+    {
+     "date": "02/04"
+    },
+    {
+     "date": "02/05"
+    }
+   ]
+  },
+  {
+   "week": "Week 2",
+   "days": [
+    {
+     "date": "02/08",
+     "topic": "Lists",
+     "class": true
+    },
+    {
+     "date": "02/09 (F)"
+    },
+    {
+     "date": "02/10",
+     "topic": "Manipulate",
+     "class": true
+    },
+    {
+     "date": "02/11"
+    },
+    {
+     "date": "02/12",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 3",
+   "days": [
+    {
+     "date": "02/15",
+     "topic": "No class"
+    },
+    {
+     "date": "02/16"
+    },
+    {
+     "date": "02/17",
+     "topic": "Quiz 1 Apply/Map",
+     "class": true
+    },
+    {
+     "date": "02/18"
+    },
+    {
+     "date": "02/19"
+    }
+   ],
+   "note": "Quiz 1 on 2/17."
+  },
+  {
+   "week": "Week 4",
+   "days": [
+    {
+     "date": "02/22",
+     "topic": "Functions",
+     "class": true
+    },
+    {
+     "date": "02/23"
+    },
+    {
+     "date": "02/24",
+     "topic": "Patterns",
+     "class": true
+    },
+    {
+     "date": "02/25"
+    },
+    {
+     "date": "02/26"
+    }
+   ],
+   "note": "Project 1 Proposal due 2/22."
+  },
+  {
+   "week": "Week 5",
+   "days": [
+    {
+     "date": "02/29",
+     "topic": "Project Work Day",
+     "class": true
+    },
+    {
+     "date": "03/01"
+    },
+    {
+     "date": "03/02",
+     "topic": "Project 1 Critique",
+     "exam": true
+    },
+    {
+     "date": "03/03"
+    },
+    {
+     "date": "03/04"
+    }
+   ],
+   "note": "Project 1 due 3/2."
+  },
+  {
+   "week": "Week 6",
+   "days": [
+    {
+     "date": "03/07",
+     "class": true
+    },
+    {
+     "date": "03/08"
+    },
+    {
+     "date": "03/09",
+     "topic": "Quiz 2",
+     "class": true
+    },
+    {
+     "date": "03/10"
+    },
+    {
+     "date": "03/11"
+    }
+   ],
+   "note": "Quiz 2 on 3/9. Revise Project 1 for 3/9."
+  },
+  {
+   "week": "Week 7",
+   "days": [
+    {
+     "date": "03/14",
+     "class": true
+    },
+    {
+     "date": "03/15"
+    },
+    {
+     "date": "03/16",
+     "class": true
+    },
+    {
+     "date": "03/17"
+    },
+    {
+     "date": "03/18"
+    }
+   ],
+   "note": "Project 2 Proposal due 3/14."
+  },
+  {
+   "week": "Week 8",
+   "days": [
+    {
+     "date": "03/21",
+     "topic": "Quiz 3",
+     "class": true
+    },
+    {
+     "date": "03/22"
+    },
+    {
+     "date": "03/23 (F)",
+     "topic": "No class"
+    },
+    {
+     "date": "03/24"
+    },
+    {
+     "date": "03/25",
+     "topic": "No class"
+    }
+   ],
+   "note": "Quiz 3 on 3/21."
+  },
+  {
+   "week": "Week 9",
+   "days": [
+    {
+     "date": "03/28",
+     "class": true
+    },
+    {
+     "date": "03/29"
+    },
+    {
+     "date": "03/30",
+     "class": true
+    },
+    {
+     "date": "03/31"
+    },
+    {
+     "date": "04/01"
+    }
+   ]
+  },
+  {
+   "week": "Week 10",
+   "days": [
+    {
+     "date": "04/04",
+     "topic": "Project 2 Present'n",
+     "exam": true
+    },
+    {
+     "date": "04/05"
+    },
+    {
+     "date": "04/06",
+     "class": true
+    },
+    {
+     "date": "04/07"
+    },
+    {
+     "date": "04/08"
+    }
+   ],
+   "note": "Project 2 Due 4/4. Send to Shapeways by 4/6!"
+  },
+  {
+   "week": "Week 11",
+   "days": [
+    {
+     "date": "04/11",
+     "class": true
+    },
+    {
+     "date": "04/12"
+    },
+    {
+     "date": "04/13",
+     "class": true
+    },
+    {
+     "date": "04/14"
+    },
+    {
+     "date": "04/15"
+    }
+   ],
+   "note": "Last day to withdraw is 4/11."
+  },
+  {
+   "week": "Week 12",
+   "days": [
+    {
+     "date": "04/18",
+     "class": true
+    },
+    {
+     "date": "04/19"
+    },
+    {
+     "date": "04/20",
+     "class": true
+    },
+    {
+     "date": "04/21"
+    },
+    {
+     "date": "04/22",
+     "topic": "No class"
+    }
+   ],
+   "note": "Project 3 Proposal due 4/18. Revise Project 2 by 4/20."
+  },
+  {
+   "week": "Spring Break",
+   "days": [
+    {
+     "date": "04/25",
+     "topic": "No class"
+    },
+    {
+     "date": "04/26",
+     "topic": "No class"
+    },
+    {
+     "date": "04/27",
+     "topic": "No class"
+    },
+    {
+     "date": "04/28",
+     "topic": "No class"
+    },
+    {
+     "date": "04/29",
+     "topic": "No class"
+    }
+   ]
+  },
+  {
+   "week": "Week 13",
+   "days": [
+    {
+     "date": "05/02",
+     "class": true
+    },
+    {
+     "date": "05/03"
+    },
+    {
+     "date": "05/04",
+     "topic": "Quiz 4",
+     "class": true
+    },
+    {
+     "date": "05/05"
+    },
+    {
+     "date": "05/06"
+    }
+   ],
+   "note": "Quiz 4 on Wednesday!"
+  },
+  {
+   "week": "Week 14",
+   "days": [
+    {
+     "date": "05/09",
+     "class": true
+    },
+    {
+     "date": "05/10"
+    },
+    {
+     "date": "05/11",
+     "topic": "Shapeways!",
+     "class": true
+    },
+    {
+     "date": "05/12"
+    },
+    {
+     "date": "05/13"
+    }
+   ],
+   "note": "Field Trip to Shapeways Wednesday!"
+  },
+  {
+   "week": "Week 15",
+   "days": [
+    {
+     "date": "05/16",
+     "class": true
+    },
+    {
+     "date": "05/17"
+    },
+    {
+     "date": "05/18",
+     "topic": "Project 3 Present'ns",
+     "exam": true
+    },
+    {
+     "date": "05/19"
+    },
+    {
+     "date": "05/20"
+    }
+   ],
+   "note": "Project 3 due 5/18. Presentations on 5/18."
+  },
+  {
+   "week": "Finals Week",
+   "days": [
+    {
+     "date": "05/23",
+     "topic": "Project 3 Present'ns",
+     "exam": true
+    },
+    {
+     "date": "05/24"
+    },
+    {
+     "date": "05/25"
+    },
+    {
+     "date": "05/26"
+    },
+    {
+     "date": "05/27"
+    }
+   ],
+   "note": "Presentations on Final Exam Day."
+  }
+ ]
+}
