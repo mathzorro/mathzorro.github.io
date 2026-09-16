@@ -674,3 +674,75 @@ footer .footer-links svg {
     fill: currentColor;
     vertical-align: -4px;
 }
+
+
+/* --- Compact mobile navbar (<600px): logo | section name | hamburger --- */
+.nav-toggle { display: none; }
+.nav-current { display: none; }
+
+@media (max-width: 600px) {
+    #main-nav { flex-wrap: nowrap; }
+
+    .nav-brand { flex: none; }
+    .nav-brand img { height: 40px; }
+
+    /* links live only in the dropdown on mobile */
+    .nav-links { display: none; }
+
+    /* current section name: right side, beside the hamburger,
+       and it stays put when the menu is open */
+    .nav-current {
+        display: inline;
+        margin-left: auto;
+        margin-right: 14px;
+        font-weight: bold;
+        font-size: 1.25em;
+    }
+
+    /* hamburger: three bars in the logo colors */
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+        flex: none;
+        background: none;
+        border: none;
+        padding: 4px 0;
+        cursor: pointer;
+    }
+    .nav-toggle span {
+        display: block;
+        width: 28px; height: 4px;
+        border-radius: 2px;
+    }
+    .nav-toggle span:nth-child(1) { background: #e7210e; }
+    .nav-toggle span:nth-child(2) { background: #13b272; }
+    .nav-toggle span:nth-child(3) { background: #1d5adc; }
+
+    /* open: the six links drop down as a full-width panel */
+    #main-nav.nav-open .nav-links {
+        display: block;
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: rgba(255, 255, 255, 0.97);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        border-bottom: 1px solid #e0e0e0;
+        padding: 5px 5% 12px;
+        text-align: left;
+    }
+    #main-nav.nav-open .nav-links a {
+        display: block;
+        margin: 0;
+        padding: 10px 0;
+        font-size: 1.15em;
+        border-bottom: 1px solid #eee;
+        text-align: right;
+    }
+    #main-nav.nav-open .nav-links a:last-child { border-bottom: none; }
+
+    /* single-row bar needs less clearance than the old wrapped nav */
+    .page-grid { margin-top: 75px; }
+    .single-column-layout { margin-top: 75px; }
+}
