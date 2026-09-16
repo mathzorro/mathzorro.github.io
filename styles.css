@@ -676,11 +676,11 @@ footer .footer-links svg {
 }
 
 
-/* --- Compact mobile navbar (<600px): logo | section name | hamburger --- */
+/* --- Compact mobile navbar (<800px): logo | section name | hamburger --- */
 .nav-toggle { display: none; }
 .nav-current { display: none; }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     #main-nav { flex-wrap: nowrap; }
 
     .nav-brand { flex: none; }
