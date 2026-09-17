@@ -173,7 +173,7 @@
                         
                         // 1. PDF Link (Only if showPDF is not explicitly false)
                         if (paper.showPDF !== false) {
-                            const pdfUrl = `https://hanusa.xyz/research/papers/${paper.id}.pdf`;
+                            const pdfUrl = paper.pdf || `https://hanusa.xyz/research/papers/${paper.id}.pdf`;
                             linksHtml += `<a href="${pdfUrl}" target="_blank">[PDF]</a>`;
                         }
 
