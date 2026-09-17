@@ -25,17 +25,26 @@ def token():
         sys.exit(f"No token at {TOKEN_FILE}. See setup notes.")
 
 
-def api(endpoint, body):
-    req = urllib.request.Request(
-        f"https://api.dropboxapi.com/2/{endpoint}",
-        data=json.dumps(body).encode(),
-        headers={"Authorization": f"Bearer {token()}", "Content-Type": "application/json"},
-    )
-    try:
-        with urllib.request.urlopen(req) as r:
-            return json.load(r)
-    except urllib.error.HTTPError as e:
-        raise SystemExit(f"{endpoint} failed ({e.code}): {e.read().decode()}")
+def api(endpoint, body, attempts=6):
+    """POST to the Dropbox API, backing off and retrying when rate-limited (429)."""
+    import time
+    for attempt in range(attempts):
+        req = urllib.request.Request(
+            f"https://api.dropboxapi.com/2/{endpoint}",
+            data=json.dumps(body).encode(),
+            headers={"Authorization": f"Bearer {token()}", "Content-Type": "application/json"},
+        )
+        try:
+            with urllib.request.urlopen(req) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode()
+            if e.code == 429 and attempt < attempts - 1:
+                wait = int(e.headers.get("Retry-After", 0) or 0) or 2 ** attempt
+                print(f"  rate-limited on {endpoint}; waiting {wait}s", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            raise SystemExit(f"{endpoint} failed ({e.code}): {detail}")
 
 
 def to_raw(url):

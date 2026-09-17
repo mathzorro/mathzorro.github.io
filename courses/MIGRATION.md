@@ -14,6 +14,9 @@ migration is the reference implementation — read those files alongside these n
 - Assets (Mathematica notebooks in `mma/`, PDFs) are NOT copied. Links to them are
   rewritten to root-relative paths pointing at the old location:
   `href="mma/x.nb"` → `href="/courses/250/24/mma/x.nb"`.
+  **Update Sept 2026:** MATH 250 notebooks/PDFs (and `mathematica/files`, `mathematica/mwe`)
+  are now hosted on Dropbox. `webfiles.json` maps each old repo path to its Dropbox
+  `raw=1` URL; pages link to those URLs directly. Use `tools/dropbox_links.py` to add more.
 
 ## Page template anatomy (see 2026/courses/250/24/index.html)
 
