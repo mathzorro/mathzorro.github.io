@@ -1,0 +1,76 @@
+\documentclass[11pt]{amsart}
+
+
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+
+\usepackage{url}    % Need this package to display URLs properly.
+\usepackage{xcolor}  % Use this package to use colored text.
+\usepackage{epsfig} % Use this package to insert figures created externally.
+
+\newcommand{\bi}{\bigskip}  % You can define your own commands to save yourself writing.
+
+\title{An introduction to \LaTeX~for students}
+\author{Christopher Hanusa}
+\date{\today}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+\thispagestyle{empty} % Remove page numbers.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+
+Here is some text.  We now discuss the background in Section~\ref{sec:background}.  Then we will discuss my favorite equations in Section~\ref{sec:eqns}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Background}
+\label{sec:background}
+
+Here is the necessary background information.  Blah blah blah.  Blah blah blah.  Blah blah blah.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{My Favorite Equations}
+\label{sec:eqns}
+
+\begin{equation}
+\int_{1}^{9} \frac{\partial}{\partial y}\Big(yx^5+e^{xy}\Big)\, dx
+\label{eqn:int}
+\end{equation}
+
+\begin{equation}
+\sum_{n=1}^{\infty} \frac{1}{n^2} =\frac{\pi}{6}
+\label{eqn:sum}
+\end{equation}
+
+\begin{equation}
+\sqrt{a^{2} + b^{2}}
+\label{eqn:sqrt}
+\end{equation}
+
+\begin{equation}
+\alpha\beta\gamma\delta\cdots\omega\quad \mathbb{ABC\cdots Z}\quad \mathcal{ABC\cdots Z}
+\label{eqn:labels}
+\end{equation}
+
+\begin{equation}
+(A \cap B) \cup C = (A \cup C) \cap (B \cup C)
+\label{eqn:cups}
+\end{equation}
+
+\begin{equation}
+\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}
+\begin{pmatrix} -1 & 0 \\ 3 & 1 \end{pmatrix}=
+\begin{pmatrix} 5 & 2 \\ 9 & 4 \end{pmatrix}
+\label{eqn:mtx}
+\end{equation}
+
+I can now reference Equations~\eqref{eqn:int} through \eqref{eqn:mtx}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%

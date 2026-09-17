@@ -1,0 +1,455 @@
+\documentclass{beamer}  % Defining this file as a beamer presentation.
+
+\usepackage{url}    % Need this package to display URLs properly.
+\usepackage{xcolor}  % Use this package to use colored text.
+\usepackage{epsfig} % Use this package to insert figures created externally.
+
+\newcommand{\bi}{\bigskip}  % You can define your own commands to save yourself writing.
+\newcommand{\med}{\medskip}  % You can define your own commands to save yourself writing.
+\newcommand{\sm}{\smallskip}  % You can define your own commands to save yourself writing.
+
+%\title{An introduction to \LaTeX~for students}
+%\author{Christopher Hanusa}
+%\date{February 17, 2011}
+
+\setbeamertemplate{theorem begin}  %Need this to 
+{%
+\begin{\inserttheoremblockenv}
+{%
+\inserttheoremheadfont
+\inserttheoremname
+\inserttheoremnumber
+\ifx\inserttheoremaddition\@empty\fi%
+\inserttheorempunctuation
+}%
+}
+\setbeamertemplate{theorem end}{\end{\inserttheoremblockenv}}
+
+
+\begin{document}
+
+\frame
+{
+\centering
+{\color{black!30!blue!100} \Large An introduction to \LaTeX\ for students}
+
+\bi
+{\large Christopher Hanusa}
+
+\bi
+{\large February 17, 2011}
+
+\bi
+\url{Christopher.Hanusa@qc.cuny.edu}
+
+\bi
+\url{http://people.qc.cuny.edu/chanusa/} $>$ \url{Talks}
+
+
+}
+
+\section{Introduction}
+\subsection{What can you do?}
+\frame
+{
+  \frametitle{Pros and Cons of \LaTeX}
+
+Why use \LaTeX?
+\begin{itemize}
+\item Ideal for typesetting mathematics.
+\item Automatic numbering and citations!
+\item Gives the user control of page formatting.
+\item Separates the writing of content from the formatting.
+\item Free to use; support of the open source community.
+\item The output is a pdf; readable by all.
+\item It's standard.
+\item It's pretty.
+\end{itemize}
+
+\bi
+When NOT to use \LaTeX:
+\begin{itemize}
+\item Creating flyers.
+\item When you have only text. (No figs, tables, eqns, references)
+\item If you don't want to be in charge of the formatting.
+\end{itemize}
+
+}
+
+
+\frame
+{
+  \frametitle{Typesetting Mathematics}
+
+$$\int_{1}^{9} \frac{\partial}{\partial y}\Big(yx^5+e^{xy}\Big)\, dx$$ 
+
+$$\sum_{n=1}^{\infty} \frac{1}{n^2} =\frac{\pi}{6}$$
+
+$$\sqrt{a^{2} + b^{2}}$$
+
+$$\alpha\beta\gamma\delta\cdots\omega\quad \mathbb{ABC\cdots Z}\quad \mathcal{ABC\cdots Z}$$
+
+$$(A \cap B) \cup C = (A \cup C) \cap (B \cup C)$$
+
+$$\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}\begin{pmatrix} -1 & 0 \\ 3 & 1 \end{pmatrix}=\begin{pmatrix} 5 & 2 \\ 9 & 4 \end{pmatrix}$$
+
+}
+
+\frame
+{
+\frametitle{Automatic numbering}
+
+I am able to reference theorems, figures, and equations even if their numbers change.
+
+
+
+\begin{theorem}[]
+
+I am a theorem.
+\label{thm:1}
+\end{theorem}
+\begin{proof}
+Some pretty, distracting equations:
+\begin{equation*}\label{eqn0}
+|z|=\begin{cases} 
+z & \text{ if $z\geq 0$} \\
+-z &\text{ if $z<0$}
+\end{cases}
+\end{equation*}
+\begin{equation}\label{eqn1}
+z=14x-7y
+\end{equation}
+\begin{equation}\label{eqn2}
+10x=17y
+\end{equation}
+
+By Equations~\eqref{eqn1} and \eqref{eqn2}, we have proved Theorem~\ref{thm:1}.
+\end{proof}
+
+
+\vfill
+}
+
+\frame
+{
+\frametitle{Structure of a \url{.tex} file}
+
+\epsfig{figure=texsource, height=3in}
+
+\vspace{-3in}\hspace{2.1in}\begin{minipage}{2.2in}
+Always begins with {\color{red} $\backslash$documentclass}
+
+\med
+Next, import necessary packages.
+
+\med
+Insert user-created commands.
+
+\bi\med
+File content starts with
+
+{\color{red} $\backslash$begin\{document\}}
+
+
+\bi
+To break into sections, use 
+
+$\backslash$section and $\backslash$subsection
+
+\bi
+Use \% to write comments or to help with the visual structure.
+
+
+\bi\med
+File content ends with
+
+{\color{red} $\backslash$end\{document\} }
+
+\end{minipage}\!\!\!\!
+
+}
+
+\frame
+{
+\frametitle{Typing text and using fonts}
+
+To type text, type normally;  extra whitespace       does    not 
+matter.
+
+To go to a new paragraph, skip a line.  Use a pair of left quotes to open a quote; ``use a pair of right quotes to close.''
+
+\med
+The following characters are reserved:
+	\#	\$ 	\% 	\& 	\~ 	\_ 	\^{} 	\{ 	\} 	$>$ 	$<$ 	$\backslash$
+	
+\begin{itemize}
+\item $\backslash$ is what tells \LaTeX\ that you are entering a command.
+\item \% is for entering comments.
+\item \$ is for writing in math mode.
+\end{itemize}
+
+\bi
+For fonts, surround the text you wish with braces and insert\!\!\!
+
+\sm
+{\bf $\backslash$bf} (bold), 
+{\em $\backslash$em} (emphasized), 
+{\rm $\backslash$rm} (roman), 
+{\tt $\backslash$tt} (fixed width), 
+
+\sm
+as in {\color{red} \tt \{$\backslash$bf Hello\}} to produce {\bf Hello}.
+
+\vfill
+}
+
+\frame
+{
+\frametitle{Including equations}
+
+\LaTeX\ excels at integrating the writing of mathematics into text.
+
+To include math symbols or equations ``inline'', use {\color{teal} \$} to begin and to end; for example, type {\tt {\color{teal} \$a\_1\^{}2 + b\_1\^{}2\$}} to get $a_1^2+b_1^2$.
+
+\med
+Certain symbols everyone uses:
+
+\begin{tabular}{ll}
+$\sqrt{10}$ & {\color{teal} \$$\backslash$sqrt\{10\}\$ } \sm\\
+$\int_{1}^{10}$ & {\color{teal} \$$\backslash$int\_\{1\}\^{}\{10\}\$ }\sm \\
+$\sum_{n=1}^\infty$ & {\color{teal} \$$\backslash$sum\_\{n=1\}\^{}$\backslash$infty\$ }\sm \\
+$\frac{1}{n^2}$ & {\color{teal} \$$\backslash$frac\{1\}\{n\^{}2\}\$ }\sm \\
+$\alpha$ & {\color{teal} \$$\backslash$alpha\$ } \sm \\
+$\hdots$ & {\color{teal} \$$\backslash$hdots\$}; also useful {\color{teal} \$$\backslash$cdots\$} and {\color{teal} \$$\backslash$vdots\$}
+\end{tabular}
+
+\med
+Each mathematician has their own symbol needs; either peruse tables of symbols or use Detexify 
+{\small (\url{detexify.kirelabs.org})}\!\!
+
+\vfill
+}
+
+\frame
+{
+\frametitle{Referencing equations, figures, theorems}
+
+Alternatively, create equations on their own lines using 
+{\color{red} $\backslash$begin\{equation\}} and {\color{red} $\backslash$end\{equation\}}, as in 
+
+\sm
+{\color{red} $\backslash$begin\{equation\}} {\color{teal} $\backslash$frac\{a\}\{b\}+1=$\backslash$frac\{a+b\}\{b\} }{\color{red} $\backslash$end\{equation\}}
+
+\begin{equation}  \frac{a}{b}+1=\frac{a+b}{b} \end{equation}
+
+\med
+Include a {\color{orange} $\backslash$label\{{\em name}\}} to reference it later with {\color{orange} $\backslash$ref\{{\em name}\}}.
+
+\bi
+Same goes with defining figures and theorems:
+
+\med
+\begin{tabular}{ccc} 
+\begin{tabular}{|l|} \hline
+{\color{red} $\backslash$begin\{figure\}}\\
+~~~~(figure here) \\
+~~~~{\color{orange} $\backslash$label\{{\em fig:name1}\}} \\
+{\color{red} $\backslash$end\{figure\}}\\ \hline
+\end{tabular}
+& \qquad\qquad &
+\begin{tabular}{|l|}\hline
+{\color{red} $\backslash$begin\{theorem\}}\\
+~~~~(theorem here) \\
+~~~~{\color{orange} $\backslash$label\{{\em thm:name2}\}} \\
+{\color{red} $\backslash$end\{theorem\}}\\ \hline
+\end{tabular}
+\end{tabular}
+
+\bi
+$\hdots$ Figure {\color{orange} $\backslash$ref\{{\em fig:name1}\}} exhibits Theorem {\color{orange} $\backslash$ref\{{\em thm:name2}\}} $\hdots$
+
+
+}
+
+
+
+\frame
+{
+\frametitle{Lists and Tables}
+
+Lists are pretty simple; use {\color{red} itemize} (bullets) or {\color{red} enumerate} (numerals).\!\!\!\!\!\!
+
+\bi
+\begin{enumerate}
+\item Item 1.
+\item Item 2.
+\begin{itemize}
+\item Item 2a.
+\item Item 2b.
+\end{itemize}
+\end{enumerate}
+\vspace{-0.8in}\hspace{1.8in}\begin{minipage}{2in}
+\begin{tabular}{|l|} \hline
+{\color{red} $\backslash$begin\{enumerate\}}\\
+~~~~$\backslash$item  Item 1. \\
+~~~~$\backslash$item  Item 2. \\
+~~~~{\color{red} $\backslash$begin\{itemize\}}\\
+~~~~~~~~$\backslash$item  Item 2a. \\
+~~~~~~~~$\backslash$item  Item 2b. \\
+~~~~{\color{red} $\backslash$end\{itemize\}}\\ 
+{\color{red} $\backslash$end\{enumerate\}}\\ \hline
+\end{tabular}
+\end{minipage}
+
+\bi
+Tables are pretty complicated; use {\color{red} tabular}.
+
+\vspace{0.6in}
+
+}
+
+
+\frame
+{
+\frametitle{Miscellaneous}
+
+\begin{itemize}
+
+\item To include graphics, use the package  {\tt \color{red} epsfig} or {\tt \color{red} graphicx}.
+
+\par {\tt $\backslash$epsfig\{figure=residual4.eps,height=1in\}}
+
+\begin{center}
+\fbox{\epsfig{figure=residual4.eps, height=1in}}
+\end{center}
+
+\item To use color, use the package {\tt \color{red} xcolor}.
+
+For example, \{$\backslash$color\{red\} xcolor\}.
+
+\end{itemize}
+
+\begin{itemize}
+\item To organize citations, use Bib\TeX\  
+\item To create slide shows, use Beamer
+\item LaTeX integrates with the editor \url{emacs}.
+\end{itemize}
+
+}
+
+\frame
+{
+\frametitle{Installation}
+
+So you're hooked!  How to get \LaTeX\ for yourself?
+
+\begin{itemize}
+\item  On a Mac
+   \begin{itemize}
+   \item  Distribution: MacTeX (\url{tug.org/mactex/})
+   \item  Viewer: TeXShop (\url{texshop.org})
+   \end{itemize}
+\item  On a PC
+   \begin{itemize}
+   \item  Distribution: MiKTeX (\url{miktex.org})
+   \item  Viewer: TeXnicCenter (\url{texniccenter.org})
+   \end{itemize}
+\item  On Linux
+   \begin{itemize}
+   \item  Like everything else, it's possible.
+   \end{itemize}
+\end{itemize}
+
+}
+
+
+
+
+\frame
+{
+\frametitle{Tips and help}
+
+This is one academic exercise where I say: PLAGIARIZE!
+
+Read other people's files to see what they do; then copy.
+
+\med
+Search the web!  Example: ``latex tabular''
+
+\med
+Helpful reference sheets (condensed):
+\begin{itemize}
+\item Typing Math: Short Math Guide for \LaTeX\ {\small \url{ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf}}
+\item Find symbols: \url{detexify.kirelabs.org}  or search.
+\end{itemize}
+
+\med
+Helpful for getting started (some reading):
+\begin{itemize}
+\item \url{http://www.tug.org/begin.html}
+\item \url{www.ctan.org/tex-archive/info/mil/mil.pdf}
+\end{itemize}
+
+\vspace{.5in}
+}
+
+\frame
+{
+\frametitle{Let's get hands on!}
+
+\begin{enumerate}
+\item Download Empty.tex and NotEmpty.tex from my website.
+
+\item Open each using TeXShop on your computer.
+
+\item Start typing.
+
+\item When you want to see the output, click on the ``Typeset'' button or click Cmd-S (save) Cmd-T (typeset).  
+
+\item This will pop up a small window which runs the ``latex'' command, and (if you have no errors), will pop up a window with the output in pdf format.
+
+\item If you have errors, you need to decode them, fix them, and typeset again.  (often: mismatched \{ \} or misspelled command)\!\!\!\!
+\end{enumerate}
+
+\vspace{.5in}
+
+}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

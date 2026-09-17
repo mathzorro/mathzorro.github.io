@@ -12,6 +12,24 @@
     ]
   },
   {
+    "id": "Illustrating",
+    "title": "Mathematical Illustration through a combinatorial lens",
+    "materials": [
+      {
+        "label": "PDF",
+        "url": "https://hanusa.xyz/research/talks/Illustrating-handout.pdf"
+      }
+    ],
+    "venues": [
+      "<a href='https://www.nycombinatorics.org/seminar/fall-2025'>New York Combinatorics Seminar</a>, September 2025."
+    ],
+    "abstract": "<p>In this talk, I will share my decade-long journey as a mathematical artist and jewelry maker and how it intertwines with my mathematics research in combinatorics. I will describe the mathematical ideas that motivate the art pieces, many of which are combinatorial in nature. Attendees will experience first-hand a variety of mathematical sculptures and have a hands-on experience with interactive multimedia pieces: Fractal Emergence and Experiential Braid Relations. The talk will conclude with ways in which mathematicians can participate in the broader mathematical art community. All members of the CUNY mathematical community are welcome to attend.</p>",
+    "tags": [
+      "research",
+      "design"
+    ]
+  },
+  {
     "id": "Empowering",
     "title": "Empowering faculty as partners in building assessment and evaluation processes",
     "materials": [
@@ -25,7 +43,7 @@
       }
     ],
     "venues": [
-      "<a href='https://www.aacu.org/event/class'>AAC&amp;U CLASS Conference</a>, April 2025."
+      "<a href='https://aacu.my.site.com/event-information?id=a0lUt000000aENpIAM'>AAC&amp;U CLASS Conference</a>, April 2025."
     ],
     "abstract": "<p>In an environment where everyone is expected to do more with less, how do we leverage existing human capital to develop assessment infrastructure that works? This presentation describes the process of building a supportive evaluation and assessment structure at a large urban public institution through strategic elevation of faculty to lead roles.</p><p>As the campus&rsquo;s first Faculty Liaison for Evaluation and Assessment, the presenter will speak to the power of promoting the voice of faculty during the development of this human infrastructure. Key initiatives in this process include engaging assessment coordinators, creating a college-wide assessment council, developing a faculty fellow program focused on matters of general education, and a reimagination of the Academic Program Review cycle.</p><p>Participants will have the opportunity to plan ways to adapt these strategies to their own institutions.</p>",
     "tags": [
@@ -52,7 +70,12 @@
   {
     "id": "QSTEM",
     "title": "Mathematical Art at Queens College",
-    "materials": [],
+    "materials": [
+      {
+        "label": "PDF",
+        "url": "https://hanusa.xyz/research/talks/MathematicalArtAtQC.pdf"
+      }
+    ],
     "venues": [
       "Queens College Q-STEM Academy for Current LaGuardia Community College Students, January 2024."
     ],
@@ -76,7 +99,7 @@
     "venues": [
       "<a href='https://www.tu-ilmenau.de/dmv2023/'>German Mathematical Society Meeting</a>, <a href='https://ms-math-computer.science/projects/dmv_math_art_23.html'>Mathematics and Arts Minisymposium</a>, September 2023."
     ],
-    "abstract": "<p>In this talk I discuss the project-based course &ldquo;Mathematical Design&rdquo; that I developed at Queens College to give non-math students a glimpse into the beauty of mathematics. Students learn the mathematics of transformations of functions, polar equations, and parametric equations, as well as the elements of art and design. They use this knowledge to create artwork using the online graphing software Desmos and realize their artwork physically using AxiDraw Pen Plotters in the Queens College Makerspace. The final project asks students to branch out to realize their mathematical art on other machines in the Makerspace, including the 3D printer, the laser cutter, and the embroidery machine. Students get practice in design thinking and experience with productive failure. The culmination of the semester is an art exhibition that celebrates everyone's progress as a mathematician, an artist, and as a maker. I will share information about the course's implementation, best practices for student success, lessons learned, and plenty of pictures of student work.</p><p>Links discussed in the talk:</p><ul><li><a href='https://qcpages.qc.cuny.edu/~chanusa/courses/128/23/index.html'>Mathematical Design Course Webpage</a></li><li><a href='https://discord.gg/jCvndAPfh'>Illustrating Mathematics Discord</a></li><li><a href='https://discord.gg/vCBupKs9sB'>Unofficial Desmos Discord</a></li><li><a href='https://thegradingconference.com/resources/'>The Alternative Grading Community and Slack Channel</a></li><li><a href='https://gradingforgrowth.com/p/finding-common-ground-with-grading'>The Pillars of Alternative Grading</a> and <a href='https://gradingforgrowth.com/'>Grading for Growth</a></li></ul>",
+    "abstract": "<p>In this talk I discuss the project-based course &ldquo;Mathematical Design&rdquo; that I developed at Queens College to give non-math students a glimpse into the beauty of mathematics. Students learn the mathematics of transformations of functions, polar equations, and parametric equations, as well as the elements of art and design. They use this knowledge to create artwork using the online graphing software Desmos and realize their artwork physically using AxiDraw Pen Plotters in the Queens College Makerspace. The final project asks students to branch out to realize their mathematical art on other machines in the Makerspace, including the 3D printer, the laser cutter, and the embroidery machine. Students get practice in design thinking and experience with productive failure. The culmination of the semester is an art exhibition that celebrates everyone's progress as a mathematician, an artist, and as a maker. I will share information about the course's implementation, best practices for student success, lessons learned, and plenty of pictures of student work.</p><p>Links discussed in the talk:</p><ul><li><a href='/courses/128/23/index.html'>Mathematical Design Course Webpage</a></li><li><a href='https://discord.gg/jCvndAPfh'>Illustrating Mathematics Discord</a></li><li><a href='https://discord.gg/vCBupKs9sB'>Unofficial Desmos Discord</a></li><li><a href='https://centerforgradingreform.org/resources/'>The Alternative Grading Community and Slack Channel</a></li><li><a href='https://gradingforgrowth.com/p/finding-common-ground-with-grading'>The Pillars of Alternative Grading</a> and <a href='https://gradingforgrowth.com/'>Grading for Growth</a></li></ul>",
     "tags": [
       "design",
       "education"
@@ -98,7 +121,7 @@
     "venues": [
       "Queens College MakeSTEAM Grant Workshop, June 2023."
     ],
-    "abstract": "<p>I discuss how I have incorporated projects into many of my math classes at Queens College, ranging from individual modules in Calculus and Graph Theory, to half-term research projects in Combinatorics, to fully project-based courses in Mathematical Modeling, Mathematical Computing, and Mathematical Design. The second half of the presentation discusses the way I approach the grading of these projects, drawing inspiration from my experience with standards-based grading.</p><p>Links discussed in the talk:</p><ul><li>The Goblet Project: <a href='https://ultimaker.com/learn/integrating-3d-printing-and-the-goblet-project/'>The Blog Post</a> and <a href='https://qcpages.qc.cuny.edu/~chanusa/courses/142/17/project.html'>Curriculum Module</a></li><li><a href='https://gradingforgrowth.com/p/finding-common-ground-with-grading'>The Pillars of Alternative Grading</a> and <a href='https://gradingforgrowth.com/'>Grading for Growth</a></li><li><a href='https://thegradingconference.com/resources/'>The Alternative Grading Community and Slack Channel</a></li><li>Projects, as implemented in: <a href='https://qcpages.qc.cuny.edu/~chanusa/courses/128/23/project.html'>Mathematical Design</a>, <a href='https://qcpages.qc.cuny.edu/~chanusa/courses/250/23/project.html'>Mathematical Computing</a>, <a href='https://qcpages.qc.cuny.edu/~chanusa/courses/245/19/project.html'>Mathematical Modeling</a>, <a href='https://qcpages.qc.cuny.edu/~chanusa/courses/634/22/project.html'>Graph Theory</a>, and <a href='https://qcpages.qc.cuny.edu/~chanusa/courses/636/22/project.html'>Combinatorics</a></li></ul>",
+    "abstract": "<p>I discuss how I have incorporated projects into many of my math classes at Queens College, ranging from individual modules in Calculus and Graph Theory, to half-term research projects in Combinatorics, to fully project-based courses in Mathematical Modeling, Mathematical Computing, and Mathematical Design. The second half of the presentation discusses the way I approach the grading of these projects, drawing inspiration from my experience with standards-based grading.</p><p>Links discussed in the talk:</p><ul><li>The Goblet Project: <a href='https://web.archive.org/web/20250120193725/https://ultimaker.com/learn/integrating-3d-printing-and-the-goblet-project/'>The Blog Post</a> and <a href='/courses/142/17/project.html'>Curriculum Module</a></li><li><a href='https://gradingforgrowth.com/p/finding-common-ground-with-grading'>The Pillars of Alternative Grading</a> and <a href='https://gradingforgrowth.com/'>Grading for Growth</a></li><li><a href='https://centerforgradingreform.org/resources/'>The Alternative Grading Community and Slack Channel</a></li><li>Projects, as implemented in: <a href='/courses/128/23/project.html'>Mathematical Design</a>, <a href='/courses/250/23/project.html'>Mathematical Computing</a>, <a href='/courses/245/19/project.html'>Mathematical Modeling</a>, <a href='/courses/634/22/project.html'>Graph Theory</a>, and <a href='/courses/636/22/project.html'>Combinatorics</a></li></ul>",
     "tags": [
       "education"
     ]
@@ -130,7 +153,7 @@
       },
       {
         "label": "Notebook",
-        "url": "https://hanusa.xyz/research/talks/WolframEcosystem.nb"
+        "url": "https://hanusa.xyz/research/talks/wolframecosystem.nb"
       }
     ],
     "venues": [
@@ -157,11 +180,11 @@
     "venues": [
       "<a href='https://math.osu.edu/events/recreational-math-seminar-q-queens-problem'>Ohio State University</a>, October 2020.",
       "<a href='https://math.as.uky.edu/discrete-mathematics'>University of Kentucky</a>, April 2017.",
-      "<a href='https://www.math.ncsu.edu/events/abstract.php?id=3614'>North Carolina State University</a>, October 2016.",
+      "<a href='https://sites.google.com/ncsu.edu/algebracombinatoricsseminar/home'>North Carolina State University</a>, October 2016.",
       "<a href='http://userhome.brooklyn.cuny.edu/skingan/CombinatoricsSeminar/2016-Spring.html'>CUNY Graduate Center</a>, May 2016.",
-      "<a href='https://math.asu.edu/research/discrete-mathematics'>Arizona State University</a>, April 2016.",
-      "<a href='http://naumathstat.github.io/seminars/acgtSpring2016/'>Northern Arizona University</a>, April 2016.",
-      "<a href='http://momath.org/moves-conference/'>MOVES Conference</a>, August 2015."
+      "<a href='https://math.la.asu.edu/~discrete/'>Arizona State University</a>, April 2016.",
+      "<a href='https://naumathstat.github.io/seminars/old/acgtSpring2016'>Northern Arizona University</a>, April 2016.",
+      "<a href='https://momath.org/moves-conference/'>MOVES Conference</a>, August 2015."
     ],
     "abstract": "<p>The <i>n</i>-Queens Problem asks in how many ways you can place <i>n</i> queens on an <i>n</i>&times;<i>n</i> chessboard so that no two attack each other. There has been no formula for the answer to this question ... until now! We develop a mathematical theory to address the more general question &ldquo;In how many ways can you place <i>q</i> chess pieces on a polygonal chessboard so that no two pieces attack each other?&rdquo;</p><p>The theory is geometrical and combinatorial in nature and involves counting lattice points that avoid certain hyperplanes. This is joint work with Thomas Zaslavsky and Seth Chaiken.</p>",
     "tags": [
@@ -200,7 +223,7 @@
       }
     ],
     "venues": [
-      "<a href='http://www.qc.cuny.edu/'>Queens College</a> <a href='http://ctl.qc.cuny.edu/faculty-seminar-series-fall-2019/'>CTL Faculty Seminar Series</a>, October 2019."
+      "<a href='http://www.qc.cuny.edu/'>Queens College</a> CTL Faculty Seminar Series, October 2019."
     ],
     "abstract": "<p>With Standards-Based Grading, students' grades are linked to their mastery of course standards and expectations are presented to students in a completely transparent way. Students are then given the opportunity to reassess their mastery, which makes assessments lower stress and encourages students to put in the time to learn concepts that they did not initially master. I'll discuss how I've implemented Standards-Based Grading in multiple classes, and how I've used it to assess projects as well. The second half of this meeting will be formatted to be a discussion / Q and A session.</p>",
     "tags": [
@@ -213,7 +236,7 @@
     "materials": [
       {
         "label": "PDF",
-        "url": "https://hanusa.xyz/research/talks/ImaginaryMaps.pdf"
+        "url": "https://hanusa.xyz/research/talks/ImaginaryMaps-2026.pdf"
       }
     ],
     "venues": [
@@ -243,15 +266,15 @@
     "materials": [
       {
         "label": "PDF",
-        "url": "https://hanusa.xyz/research/talks/StandardsBased-handout.pdf"
+        "url": "https://hanusa.xyz/research/talks/StandardsBasedv2-handout.pdf"
       },
       {
         "label": "Slides with pauses",
-        "url": "https://hanusa.xyz/research/talks/StandardsBased-slides.pdf"
+        "url": "https://hanusa.xyz/research/talks/StandardsBasedv2-slides.pdf"
       }
     ],
     "venues": [
-      "<a href='http://www.qc.cuny.edu/'>Queens College</a> <a href='http://ctl.qc.cuny.edu/teaching-learning-showcase-november-2-2018/'>Teaching &amp; Learning Showcase</a>, November 2018."
+      "<a href='http://www.qc.cuny.edu/'>Queens College</a> Teaching &amp; Learning Showcase, November 2018."
     ],
     "abstract": "<p>With Standards-Based Grading, students' grades are linked to their mastery of course standards and expectations are presented to students in a completely transparent way. Students are then given the opportunity to reassess their mastery, which makes assessments lower stress and encourages students to put in the time to learn concepts that they did not initially master. I will share the success stories for when I taught using Standards-Based Grading in Calculus in Fall 2017 and this semester in Combinatorics.</p>",
     "tags": [
@@ -294,7 +317,7 @@
       }
     ],
     "venues": [
-      "<a href='https://www.hofstra.edu/academics/colleges/hclas/math/math-seminar.html'>Hofstra University Math Seminar</a>, October 2018."
+      "<a href='https://www.hofstra.edu/academics/colleges-and-schools/hofstra-college-of-liberal-arts-and-sciences/natural-sciences-mathematics/mathematics/seminars/'>Hofstra University Math Seminar</a>, October 2018."
     ],
     "abstract": "<p>In this talk I'll be sharing some recent 2D and 3D art derived from mathematical concepts and created using a computer and 3D printing techniques. I'll discuss my inspiration, my methods, and the math that lies behind a number of my pieces. Come learn how it works and help me to generate new mathematical art right before your eyes!</p>",
     "tags": [
@@ -380,7 +403,7 @@
       }
     ],
     "venues": [
-      "<a href='https://sites.duke.edu/construct3d/'>Construct3D 2017</a> Conference, May 2017."
+      "<a href='https://construct3d2017.sched.com/'>Construct3D 2017</a> Conference, May 2017."
     ],
     "abstract": "<p>Mathematica has amazing graphics and design capabilities that I have been using to design 3D works of art and teach my students the same. I will discuss the commands and techniques that I have found useful, along with the frustrations and work-arounds that I have had to institute in order to cajole Mathematica into creating (and then exporting!) the desired artwork. I will also focus on how I teach my students these same methods.</p>",
     "tags": [
@@ -394,12 +417,16 @@
       {
         "label": "PDF",
         "url": "https://hanusa.xyz/research/talks/PencilPuzzles-handout.pdf"
+      },
+      {
+        "label": "Slides with pauses",
+        "url": "https://hanusa.xyz/research/talks/PencilPuzzles-slides.pdf"
       }
     ],
     "venues": [
-      "<a href='http://www.qc.cuny.edu/'>Queens College</a> <a href='http://ctl.qc.cuny.edu/teaching-learning-showcase-may-6-2016/'>Teaching &amp; Learning Showcase</a>, May 2016."
+      "<a href='http://www.qc.cuny.edu/'>Queens College</a> Teaching &amp; Learning Showcase, May 2016."
     ],
-    "abstract": "<p>In Spring 2016, I taught MATH 555: Games and Puzzles as a class exploration of pencil puzzles, which are logic-based puzzles in the vein of Sudoku. We'll discuss how students were able to flex their creativity and take ownership of their learning in this class.</p><p>Course Materials are available online at <a href='http://qc.edu/~chanusa/courses/555/16/'>http://qc.edu/~chanusa/courses/555/16/</a></p>",
+    "abstract": "<p>In Spring 2016, I taught MATH 555: Games and Puzzles as a class exploration of pencil puzzles, which are logic-based puzzles in the vein of Sudoku. We'll discuss how students were able to flex their creativity and take ownership of their learning in this class.</p><p>Course Materials are available online at <a href='/courses/555/16/'>hanusa.xyz/courses/555/16/</a></p>",
     "tags": [
       "education"
     ]
@@ -416,7 +443,7 @@
     "venues": [
       "<a href='http://www.maa.org/meetings/mathfest'>MAA MathFest 2015</a>, Session on <a href='http://www.maa.org/meetings/mathfest/program-details/2015/themed-contributed-paper-sessions'>&ldquo;What Can a Mathematician Do with a 3D Printer?&rdquo;</a>, August 2015."
     ],
-    "abstract": "<p>I teach Queens College MATH 213: Math with Mathematica as a student-driven project-based class. Our second project this Spring 2015 was to design and print a piece of three-dimensional mathematical art using Mathematica. We'll discuss the project with a focus on what worked, and present the fruits of the students' labor.</p><p>Course Materials and a Virtual Art Gallery are available online at <a href='http://qc.edu/~chanusa/courses/213/15/'>http://qc.edu/~chanusa/courses/213/15/</a></p>",
+    "abstract": "<p>I teach Queens College MATH 213: Math with Mathematica as a student-driven project-based class. Our second project this Spring 2015 was to design and print a piece of three-dimensional mathematical art using Mathematica. We'll discuss the project with a focus on what worked, and present the fruits of the students' labor.</p><p>Course Materials and a Virtual Art Gallery are available online at <a href='/courses/213/15/'>hanusa.xyz/courses/213/15/</a></p>",
     "tags": [
       "education",
       "design"
@@ -440,10 +467,14 @@
       {
         "label": "PDF",
         "url": "https://hanusa.xyz/research/talks/CombPosters-handout.pdf"
+      },
+      {
+        "label": "Slides with pauses",
+        "url": "https://hanusa.xyz/research/talks/CombPosters-slides.pdf"
       }
     ],
     "venues": [
-      "<a href='http://www.qc.cuny.edu/'>Queens College</a> <a href='http://ctl.qc.cuny.edu/teaching-innovation-carnivale/'>Teaching Innovation Carnivale</a>, May 2014."
+      "<a href='http://www.qc.cuny.edu/'>Queens College</a> Teaching Innovation Carnivale, May 2014."
     ],
     "abstract": "<p>In my Combinatorics class (Math 636), students answer a counting question of their choosing. They present their individual research at a poster session held at the end of the semester. The students see the diversity of ideas that can be understood using the techniques learned in our class.</p>",
     "tags": [
@@ -457,6 +488,10 @@
       {
         "label": "PDF",
         "url": "https://hanusa.xyz/research/talks/AbacusAppl-handout.pdf"
+      },
+      {
+        "label": "Slides with pauses",
+        "url": "https://hanusa.xyz/research/talks/AbacusAppl-slides.pdf"
       }
     ],
     "venues": [
@@ -475,6 +510,10 @@
       {
         "label": "PDF",
         "url": "https://hanusa.xyz/research/talks/SelfConjTalk-handout.pdf"
+      },
+      {
+        "label": "Slides with pauses",
+        "url": "https://hanusa.xyz/research/talks/SelfConjTalk-slides.pdf"
       }
     ],
     "venues": [
@@ -494,8 +533,8 @@
         "url": "https://hanusa.xyz/research/talks/ABCDcores-handout.pdf"
       },
       {
-        "label": "Interactive animations",
-        "url": "http://people.qc.cuny.edu/faculty/christopher.hanusa/research/animations"
+        "label": "Slides with pauses",
+        "url": "https://hanusa.xyz/research/talks/ABCDcores-slides.pdf"
       }
     ],
     "venues": [
@@ -513,6 +552,10 @@
       {
         "label": "PDF",
         "url": "https://hanusa.xyz/research/talks/ReflectionGroup-handout.pdf"
+      },
+      {
+        "label": "Slides with pauses",
+        "url": "https://hanusa.xyz/research/talks/ReflectionGroup-slides.pdf"
       }
     ],
     "venues": [
@@ -532,6 +575,10 @@
       {
         "label": "PDF",
         "url": "https://hanusa.xyz/research/talks/qQueens-handout.pdf"
+      },
+      {
+        "label": "Slides with pauses",
+        "url": "https://hanusa.xyz/research/talks/qQueens-slides.pdf"
       }
     ],
     "venues": [
@@ -553,8 +600,8 @@
         "url": "https://hanusa.xyz/research/talks/BCDcores-handout.pdf"
       },
       {
-        "label": "Interactive animations",
-        "url": "http://people.qc.cuny.edu/faculty/christopher.hanusa/research/animations"
+        "label": "Slides with pauses",
+        "url": "https://hanusa.xyz/research/talks/BCDcores-slides.pdf"
       }
     ],
     "venues": [
@@ -572,6 +619,10 @@
       {
         "label": "PDF",
         "url": "https://hanusa.xyz/research/talks/affineFClong-handout.pdf"
+      },
+      {
+        "label": "Slides with pauses",
+        "url": "https://hanusa.xyz/research/talks/affineFClong-slides.pdf"
       }
     ],
     "venues": [
@@ -588,11 +639,11 @@
     "materials": [
       {
         "label": "PDF",
-        "url": "https://hanusa.xyz/research/talks/domino-handout.pdf"
+        "url": "https://hanusa.xyz/research/talks/LetsCount.pdf"
       }
     ],
     "venues": [
-      "<a href='http://www.manhattan.edu/academics/science/mathcs/'>Manhattan College</a> &Pi;&Mu;&Epsilon; &amp; &Tau;&Sigma;&Kappa; induction, April 2011."
+      "<a href='https://manhattan.edu/academics/programs/mathematics'>Manhattan College</a> &Pi;&Mu;&Epsilon; &amp; &Tau;&Sigma;&Kappa; induction, April 2011."
     ],
     "abstract": "<p>Interesting mathematics lie behind the dominoes and chessboards that live in your games closet. In this talk, we'll explore counting questions related to the arrangements of dominoes that completely tile a rectangular chessboard. Our exploration will lead us to famous number sequences, linear algebra, graph theory, and combinatorics. All are invited to come and enjoy this talk!</p>",
     "tags": [
@@ -673,7 +724,7 @@
     "materials": [
       {
         "label": "PDF",
-        "url": "https://hanusa.xyz/research/talks/VotingMethods.pdf"
+        "url": "https://hanusa.xyz/research/talks/Voting.pdf"
       }
     ],
     "venues": [
