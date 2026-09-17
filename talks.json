@@ -2,7 +2,12 @@
   {
     "id": "Accreditation",
     "title": "Accreditation for the Rest of Us: Thrive and Have Fun",
-    "materials": [],
+    "materials": [
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/scl/fi/3eliskyyvkfvwrhfcua1x/Accreditation-handout.pdf?rlkey=1j6yq572b4jyowvh6jnnqp85w&raw=1"
+      }
+    ],
     "venues": [
       "<a href='https://www.msche.org/annual-conference/'>MSCHE Conference</a>, Philadelphia, PA, December 2025."
     ],
@@ -77,7 +82,8 @@
       }
     ],
     "venues": [
-      "Queens College Q-STEM Academy for Current LaGuardia Community College Students, January 2024."
+      "Queens College Q-STEM Academy for Current LaGuardia Community College Students, January 2024.",
+      "Queens College Mathematics Competition, May 2019."
     ],
     "tags": [
       "design"
@@ -246,17 +252,6 @@
     "abstract": "<p>What can mathematics say about imaginary places? We <i>explore</i> a variety of statistical measures of sci-artist <a href='http://emilygarfield.com/'>Emily Garfield</a>'s <i>Imaginary Maps</i> collection to ask and answer questions about the demographics, neighborhoods, and fractal nature of her imagined places. Our <i>destination</i> will surprise you. <i>All aboard!</i></p>",
     "tags": [
       "research",
-      "design"
-    ]
-  },
-  {
-    "id": "MathArtCompetition",
-    "title": "Mathematical Art",
-    "materials": [],
-    "venues": [
-      "Queens College Mathematics Competition, May 2019."
-    ],
-    "tags": [
       "design"
     ]
   },
@@ -452,7 +447,12 @@
   {
     "id": "MathArtShowcase",
     "title": "Mathematical Art",
-    "materials": [],
+    "materials": [
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/scl/fi/qvx20utyexwvwovtqxqsh/MMAArt.pdf?rlkey=fltc3p6p4nykxokrlncpyu69g&raw=1"
+      }
+    ],
     "venues": [
       "<a href='http://www.qc.cuny.edu/'>Queens College</a> Teaching &amp; Learning Showcase, May 2015."
     ],
@@ -738,9 +738,14 @@
   {
     "id": "FiveDays",
     "title": "Five days of five speakers in (roughly) fifty minutes",
-    "materials": [],
+    "materials": [
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/scl/fi/gn89d2ffp2hvrru0bajp4/five_days.pdf?rlkey=ky4pzkh7xznrlb5l2os10baa4&raw=1"
+      }
+    ],
     "venues": [
-      "Binghamton University, February 2007."
+      "Binghamton University, March 2007."
     ],
     "tags": [
       "research"
