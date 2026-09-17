@@ -325,7 +325,7 @@ them requires back-porting configs first.
 
 ## Site-level additions (Sept 2026, beyond courses)
 
-New pages: podcasts.html (15 MathZorro episodes, audio via /podcasts/episodes/,
+New pages: podcasts.html (15 MathZorro episodes, audio hosted on Dropbox (see webfiles.json; local /podcasts/episodes/ removed Sept 2026),
 Apple + RSS subscribe; Stitcher dropped — service shut down), helpfulmma.html
 (from mathematica/helpful.html, linked from mathematica.html). A resources.html
 page was built then deleted per Chris (not useful enough); its redirect stub
